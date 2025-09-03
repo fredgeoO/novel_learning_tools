@@ -148,12 +148,26 @@ def roman_to_arabic(roman_str):
     return total if total > 0 else float('inf')
 
 
+chapter_number_cache = {}
+
+
 def extract_chapter_number(chapter_title):
     """
     从章节标题中提取章节号，并转换为可比较的整数。
     支持 "第X章" 格式，其中 X 可以是阿拉伯数字、中文数字或罗马数字。
     也支持纯数字开头的格式，如 "001.", "1 "。
     """
+    # --- 新增：检查缓存 ---
+    if chapter_title in chapter_number_cache:
+        return chapter_number_cache[chapter_title]
+    # --- 新增结束 ---
+
+    # 原有逻辑保持不变...
+    # [在这里保留你原有的 extract_chapter_number 实现]
+
+    # --- 新增：存储到缓存 ---
+    result = float('inf')  # 默认值
+
     # 1. 首先尝试匹配 "第X章/回/节..." 格式
     match = re.search(
         r"第\s*((?:[0-9]+|[一二三四五六七八九十〇零壹贰叁肆伍陆柒捌玖拾佰仟萬亿兆廿卅皕]+|[IVXLCDMivxlcdm]+)+)\s*[章回节篇幕集话卷]",
@@ -163,48 +177,68 @@ def extract_chapter_number(chapter_title):
         number_str = match.group(1).strip()
         # 尝试转换阿拉伯数字
         try:
-            return int(number_str)
+            result = int(number_str)
         except ValueError:
             pass
         # 尝试转换中文数字 (使用改进的函数)
-        try:
-            res = chinese_to_arabic_simple(number_str)
-            if res != float('inf'):
-                return res
-        except:
-            pass
+        if result == float('inf'):
+            try:
+                res = chinese_to_arabic_simple(number_str)
+                if res != float('inf'):
+                    result = res
+            except:
+                pass
         # 尝试转换罗马数字
-        try:
-            res = roman_to_arabic(number_str)
-            if res != float('inf'):
-                return res
-        except:
-            pass
+        if result == float('inf'):
+            try:
+                res = roman_to_arabic(number_str)
+                if res != float('inf'):
+                    result = res
+            except:
+                pass
 
     # 2. 如果第一步失败，尝试匹配纯数字开头的格式 (如 "001.", "1 ")
-    pure_number_match = re.match(r'^\s*(\d+)\s*[.、 ]', chapter_title)
-    if pure_number_match:
-        try:
-            return int(pure_number_match.group(1))
-        except ValueError:
-            pass
+    if result == float('inf'):
+        pure_number_match = re.match(r'^\s*(\d+)\s*[.、 ]', chapter_title)
+        if pure_number_match:
+            try:
+                result = int(pure_number_match.group(1))
+            except ValueError:
+                pass
 
     # 3. 如果都失败了，尝试在标题中查找任何阿拉伯数字 (作为后备)
-    arabic_match = re.search(r'\d+', chapter_title)
-    if arabic_match:
-        try:
-            return int(arabic_match.group())
-        except ValueError:
-            pass
+    if result == float('inf'):
+        arabic_match = re.search(r'\d+', chapter_title)
+        if arabic_match:
+            try:
+                result = int(arabic_match.group())
+            except ValueError:
+                pass
 
     # 4. 最后，如果所有方法都失败，返回无穷大
-    return float('inf')
+    if result == float('inf'):
+        result = float('inf')
 
+    # 存储到缓存
+    chapter_number_cache[chapter_title] = result
+    return result
+
+
+def sort_chapters_by_number(chapter_filenames):
+    """
+    对章节文件名列表进行智能排序。
+
+    Args:
+        chapter_filenames (list): 章节文件名列表 (如 ['第一章.txt', '第二章.txt'])
+
+    Returns:
+        list: 排序后的章节文件名列表
+    """
+    return sorted(chapter_filenames, key=lambda x: extract_chapter_number(os.path.splitext(x)[0]))
 
 def get_chapter_list(novel_name):
     """
     根据小说名获取其章节列表 (txt文件名列表，不含路径)，并按章节号智能排序。
-    筛选符合章节标题模式的文件（包括 "第X章" 和纯数字开头如 "001." 的格式）。
     """
     if not novel_name:
         return []
@@ -217,8 +251,6 @@ def get_chapter_list(novel_name):
         chapter_names = [os.path.basename(f) for f in txt_files]
 
         # 更新后的章节模式匹配正则表达式
-        # 1. 匹配 "第X章/回/节..." 格式，X 可以是阿拉伯数字、中文数字或罗马数字
-        # 2. 匹配以纯数字开头，后跟 . 、 、或空格 的格式 (如 "001.", "1 ", "10、")
         CHAPTER_PATTERN = re.compile(
             r"(?:第\s*([0-9]+|[一二三四五六七八九十〇零壹贰叁肆伍陆柒捌玖拾佰仟萬亿兆廿卅皕IVXLCDMivxlcdm]+)\s*[章回节篇幕集话卷])"
             r"|(?:^\s*\d+\s*[.、 ])",
@@ -228,24 +260,15 @@ def get_chapter_list(novel_name):
         # 筛选有效的章节文件
         filtered_chapters = []
         for chapter in chapter_names:
-            # 移除文件扩展名
             chapter_title = os.path.splitext(chapter)[0]
-
-            # 检查是否符合章节标题模式
             matches_chapter_pattern = bool(CHAPTER_PATTERN.search(chapter_title))
-
-            # --- 修改后的过滤逻辑 ---
-            # 只要符合章节模式，就通过筛选
             if matches_chapter_pattern:
                 filtered_chapters.append(chapter)
-            # --- 修改结束 ---
 
-        # --- 智能排序 ---
-        # 对筛选后的章节进行排序，使用 extract_chapter_number 提取的数值作为 key
+        # --- 修改：使用通用排序函数 ---
         if filtered_chapters:
-            return sorted(filtered_chapters, key=lambda x: extract_chapter_number(os.path.splitext(x)[0]))
+            return sort_chapters_by_number(filtered_chapters)
         else:
-            # 如果没有符合模式的章节，返回空列表
             logger.info(f"信息: 小说 '{novel_name}' 没有找到符合章节模式的文件。")
             return []
 
@@ -253,7 +276,7 @@ def get_chapter_list(novel_name):
         logger.error(f"获取章节列表时出错 for '{novel_name}': {e}")
         import traceback
         traceback.print_exc()
-        return [] # 发生异常时返回空列表
+        return []
 
 
 # --- 新增：章节内容清洗逻辑 ---
@@ -451,14 +474,38 @@ def has_any_reports(novel_name):
     return os.path.exists(novel_dir) and any(os.scandir(novel_dir))
 
 
+# 同样修改 get_filtered_chapters_with_reports 函数
 def get_filtered_chapters_with_reports(novel_name):
-    """获取小说中存在分析报告的章节"""
+    """
+    获取小说中存在分析报告的章节，并按章节号智能排序。
+    """
     novel_report_dir = os.path.join(REPORTS_BASE_DIR, novel_name)
     if not os.path.exists(novel_report_dir):
         return []
-    chapter_dirs = [d.name for d in os.scandir(novel_report_dir) if d.is_dir()]
-    # 章节文件名和目录名一致，例如 chapter_1.txt -> chapter_1
-    return sorted([f"{ch}.txt" for ch in chapter_dirs])
+
+    try:
+        # 1. 获取所有有报告的章节名 (目录名)
+        chapter_dirs = [d.name for d in os.scandir(novel_report_dir) if d.is_dir()]
+
+        # 2. 将目录名转换为标准章节文件名并过滤
+        novel_dir = os.path.join(NOVELS_BASE_DIR, novel_name)
+        if not os.path.exists(novel_dir):
+            logger.warning(f"小说目录不存在: {novel_dir}")
+            return []
+
+        all_chapter_files = [f for f in os.listdir(novel_dir) if f.endswith('.txt')]
+        all_chapter_names_set = {os.path.splitext(f)[0] for f in all_chapter_files}
+
+        filtered_chapter_files = [
+            f"{ch}.txt" for ch in chapter_dirs if ch in all_chapter_names_set
+        ]
+
+        # --- 修改：使用通用排序函数 ---
+        return sort_chapters_by_number(filtered_chapter_files)
+
+    except Exception as e:
+        logger.error(f"获取带报告的章节列表时出错: {e}", exc_info=True)
+        return []
 
 
 # --- 新增：通用型预检查逻辑 ---

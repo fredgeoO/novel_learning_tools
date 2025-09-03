@@ -1,0 +1,507 @@
+{
+    "novel_id": "1031866444",
+    "bookname": "整座大山都是我的猎场",
+    "save_dir": "novels\\整座大山都是我的猎场",
+    "chapters": [
+        {
+            "title": "第一章.重生1986 围猎野猪",
+            "link": "https://www.qidian.com/chapter/1031866444/687538424/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章.重生1986 围猎野猪（2）",
+            "link": "https://www.qidian.com/chapter/1031866444/687720573/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章.重生1986 围猎野猪（3）",
+            "link": "https://www.qidian.com/chapter/1031866444/687746646/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章.杀猪开膛",
+            "link": "https://www.qidian.com/chapter/1031866444/688095537/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章.86年的BBQ",
+            "link": "https://www.qidian.com/chapter/1031866444/688242982/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六章.回家",
+            "link": "https://www.qidian.com/chapter/1031866444/688526729/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七章.挨揍（上）",
+            "link": "https://www.qidian.com/chapter/1031866444/688656006/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八章.挨揍（下）",
+            "link": "https://www.qidian.com/chapter/1031866444/688701177/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九章.赵二咕咚",
+            "link": "https://www.qidian.com/chapter/1031866444/689004512/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十章.姜是老的辣",
+            "link": "https://www.qidian.com/chapter/1031866444/689132772/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十一章.谋枪",
+            "link": "https://www.qidian.com/chapter/1031866444/689260852/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十二章.大青狗",
+            "link": "https://www.qidian.com/chapter/1031866444/689624228/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十三章.56式半自动步枪",
+            "link": "https://www.qidian.com/chapter/1031866444/690058263/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十四章.枪不行 狗到手",
+            "link": "https://www.qidian.com/chapter/1031866444/690242436/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十五章.拖狗",
+            "link": "https://www.qidian.com/chapter/1031866444/690330012/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十六章.头狗、帮狗和香头",
+            "link": "https://www.qidian.com/chapter/1031866444/690414033/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十七章.秦老三",
+            "link": "https://www.qidian.com/chapter/1031866444/690418796/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十八章.冲突",
+            "link": "https://www.qidian.com/chapter/1031866444/690428964/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十九章.真正缘由",
+            "link": "https://www.qidian.com/chapter/1031866444/690556292/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十章.秦强猎熊（上）",
+            "link": "https://www.qidian.com/chapter/1031866444/690805297/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十一章.秦强猎熊（中）",
+            "link": "https://www.qidian.com/chapter/1031866444/691015842/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十二章.秦强猎熊（下）",
+            "link": "https://www.qidian.com/chapter/1031866444/691181528/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十三章.偷枪",
+            "link": "https://www.qidian.com/chapter/1031866444/691891525/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十四章.杀熊",
+            "link": "https://www.qidian.com/chapter/1031866444/692397297/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十五章.老虎崽子",
+            "link": "https://www.qidian.com/chapter/1031866444/692494511/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十六章.猞猁 熊胆",
+            "link": "https://www.qidian.com/chapter/1031866444/693731841/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十七章.有财出山",
+            "link": "https://www.qidian.com/chapter/1031866444/694265910/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十八章.红焖熊掌",
+            "link": "https://www.qidian.com/chapter/1031866444/694540606/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十九章.打虎往事",
+            "link": "https://www.qidian.com/chapter/1031866444/694562981/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十章.山大王之威",
+            "link": "https://www.qidian.com/chapter/1031866444/694812228/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十一章.黑老小子",
+            "link": "https://www.qidian.com/chapter/1031866444/694999121/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十二章.挑拨",
+            "link": "https://www.qidian.com/chapter/1031866444/695146495/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十三章.秦强算计",
+            "link": "https://www.qidian.com/chapter/1031866444/695370863/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十四章.父子之间的较量",
+            "link": "https://www.qidian.com/chapter/1031866444/695663773/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十五章.报复",
+            "link": "https://www.qidian.com/chapter/1031866444/696145405/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十六章.林祥顺",
+            "link": "https://www.qidian.com/chapter/1031866444/696662080/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十七章.分肉",
+            "link": "https://www.qidian.com/chapter/1031866444/697171460/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十八章.闹剧",
+            "link": "https://www.qidian.com/chapter/1031866444/697521680/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十九章.硬菜",
+            "link": "https://www.qidian.com/chapter/1031866444/697810708/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十章.再遭毒打",
+            "link": "https://www.qidian.com/chapter/1031866444/698178803/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十一章.落雪",
+            "link": "https://www.qidian.com/chapter/1031866444/698254788/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十二章.初败",
+            "link": "https://www.qidian.com/chapter/1031866444/698341998/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十三章.氓流子",
+            "link": "https://www.qidian.com/chapter/1031866444/698565529/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十四章.杀黑瞎子仓",
+            "link": "https://www.qidian.com/chapter/1031866444/698883533/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十五章.一头扎进黑熊怀里",
+            "link": "https://www.qidian.com/chapter/1031866444/699559833/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十六章.人心",
+            "link": "https://www.qidian.com/chapter/1031866444/700179815/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十七章.反杀",
+            "link": "https://www.qidian.com/chapter/1031866444/700463701/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十八章.粘干粮",
+            "link": "https://www.qidian.com/chapter/1031866444/700668331/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十九章.熊霸",
+            "link": "https://www.qidian.com/chapter/1031866444/700934496/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十章.重伤的周成国",
+            "link": "https://www.qidian.com/chapter/1031866444/700944379/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十一章.一枪毙熊",
+            "link": "https://www.qidian.com/chapter/1031866444/701072334/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十二章.救人",
+            "link": "https://www.qidian.com/chapter/1031866444/701139583/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十三章.借枪",
+            "link": "https://www.qidian.com/chapter/1031866444/701366592/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十四章.子弹",
+            "link": "https://www.qidian.com/chapter/1031866444/701397043/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十五章.熊孩子",
+            "link": "https://www.qidian.com/chapter/1031866444/701722769/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十六章.瘸腿的野猪",
+            "link": "https://www.qidian.com/chapter/1031866444/701479537/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十七章.黄狗护如海",
+            "link": "https://www.qidian.com/chapter/1031866444/701748419/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十八章.骚",
+            "link": "https://www.qidian.com/chapter/1031866444/701907297/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十九章.尿裤子",
+            "link": "https://www.qidian.com/chapter/1031866444/701924957/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十章.给大黄缝针",
+            "link": "https://www.qidian.com/chapter/1031866444/702065844/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十一章.慕名而来",
+            "link": "https://www.qidian.com/chapter/1031866444/701924943/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十二章.放树放出来的黑瞎子",
+            "link": "https://www.qidian.com/chapter/1031866444/702163428/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十三章.白日做梦",
+            "link": "https://www.qidian.com/chapter/1031866444/702257333/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十四章.倒踪",
+            "link": "https://www.qidian.com/chapter/1031866444/702263387/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十五章.人才",
+            "link": "https://www.qidian.com/chapter/1031866444/702448600/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十六章.抓活的",
+            "link": "https://www.qidian.com/chapter/1031866444/702483767/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十七章.老太太跳皮筋",
+            "link": "https://www.qidian.com/chapter/1031866444/702558347/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十八章.再追熊",
+            "link": "https://www.qidian.com/chapter/1031866444/702745560/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十九章.开春还来",
+            "link": "https://www.qidian.com/chapter/1031866444/702808608/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十章.姑娘",
+            "link": "https://www.qidian.com/chapter/1031866444/702981412/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十一章.马玲",
+            "link": "https://www.qidian.com/chapter/1031866444/703093221/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十二章.宝玉要学枪",
+            "link": "https://www.qidian.com/chapter/1031866444/703186283/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十三章.白大褂",
+            "link": "https://www.qidian.com/chapter/1031866444/703198571/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十四章.打溜",
+            "link": "https://www.qidian.com/chapter/1031866444/703276809/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十五章.王家狗帮",
+            "link": "https://www.qidian.com/chapter/1031866444/703416641/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十六章.大青粟子",
+            "link": "https://www.qidian.com/chapter/1031866444/703436359/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十七章.傻狍子",
+            "link": "https://www.qidian.com/chapter/1031866444/703626848/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十八章.穿糖葫芦",
+            "link": "https://www.qidian.com/chapter/1031866444/703592393/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十九章.吃货",
+            "link": "https://www.qidian.com/chapter/1031866444/703629185/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十章.俩损种",
+            "link": "https://www.qidian.com/chapter/1031866444/703779441/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十一章.今天你看我的",
+            "link": "https://www.qidian.com/chapter/1031866444/703993762/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十二章.我……",
+            "link": "https://www.qidian.com/chapter/1031866444/704381403/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十三章.“鬼才”张援民",
+            "link": "https://www.qidian.com/chapter/1031866444/704392330/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十四章.我大斧呢？",
+            "link": "https://www.qidian.com/chapter/1031866444/704482063/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十五章.他真敢砍",
+            "link": "https://www.qidian.com/chapter/1031866444/704498556/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十六章.杨炮",
+            "link": "https://www.qidian.com/chapter/1031866444/704610488/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十七章.做客",
+            "link": "https://www.qidian.com/chapter/1031866444/704621178/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十八章.买狗",
+            "link": "https://www.qidian.com/chapter/1031866444/704885912/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十九章.说服",
+            "link": "https://www.qidian.com/chapter/1031866444/704939429/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十章.白龙",
+            "link": "https://www.qidian.com/chapter/1031866444/705507437/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十一章.掏松鼠窝",
+            "link": "https://www.qidian.com/chapter/1031866444/705802603/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十二章.围杀",
+            "link": "https://www.qidian.com/chapter/1031866444/705841733/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十三章.你比我还狠啊",
+            "link": "https://www.qidian.com/chapter/1031866444/706096695/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十四章.求药",
+            "link": "https://www.qidian.com/chapter/1031866444/705841843/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十五章.又是赵军他爷说的",
+            "link": "https://www.qidian.com/chapter/1031866444/706274311/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十六章.走进猪群里",
+            "link": "https://www.qidian.com/chapter/1031866444/706300510/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十七章.连毙三猪",
+            "link": "https://www.qidian.com/chapter/1031866444/706425783/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十八章.不杀，我心刺挠",
+            "link": "https://www.qidian.com/chapter/1031866444/706444781/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十九章.油锯丢了",
+            "link": "https://www.qidian.com/chapter/1031866444/706563241/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第一百章.树炸开了",
+            "link": "https://www.qidian.com/chapter/1031866444/706572777/",
+            "status": "downloaded"
+        }
+    ]
+}

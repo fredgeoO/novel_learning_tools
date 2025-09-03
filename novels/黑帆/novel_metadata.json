@@ -1,0 +1,380 @@
+{
+    "novel_id": "1037526139",
+    "bookname": "黑帆",
+    "save_dir": "novels\\黑帆",
+    "chapters": [
+        {
+            "title": "Ⅰ. 海盗",
+            "link": "https://www.qidian.com/chapter/1037526139/759952814/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅱ. 东海岸",
+            "link": "https://www.qidian.com/chapter/1037526139/759998721/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅲ. 林登城",
+            "link": "https://www.qidian.com/chapter/1037526139/759998760/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅳ. 物以类聚",
+            "link": "https://www.qidian.com/chapter/1037526139/759998835/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅴ. 亡命徒",
+            "link": "https://www.qidian.com/chapter/1037526139/759998980/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅵ. 劳动果实",
+            "link": "https://www.qidian.com/chapter/1037526139/760084043/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅶ. 赏金猎人",
+            "link": "https://www.qidian.com/chapter/1037526139/760084726/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅷ. 祖宗之法",
+            "link": "https://www.qidian.com/chapter/1037526139/760164361/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅸ. 乱世",
+            "link": "https://www.qidian.com/chapter/1037526139/760164470/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅹ. 娼妇",
+            "link": "https://www.qidian.com/chapter/1037526139/760285216/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅺ. 宴会",
+            "link": "https://www.qidian.com/chapter/1037526139/760285306/",
+            "status": "downloaded"
+        },
+        {
+            "title": "Ⅻ. 投名状",
+            "link": "https://www.qidian.com/chapter/1037526139/760380002/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XIII. 生死与共",
+            "link": "https://www.qidian.com/chapter/1037526139/760381171/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XIV. 大学生但海盗团长",
+            "link": "https://www.qidian.com/chapter/1037526139/760519451/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XV. 独轮车",
+            "link": "https://www.qidian.com/chapter/1037526139/760519670/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XVI. 教廷",
+            "link": "https://www.qidian.com/chapter/1037526139/760616333/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XVII. 人才市场",
+            "link": "https://www.qidian.com/chapter/1037526139/760737712/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XVIII. 冒险家公会",
+            "link": "https://www.qidian.com/chapter/1037526139/760737798/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XIX. 恰同学少年",
+            "link": "https://www.qidian.com/chapter/1037526139/760815777/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XX. 博斯直聘",
+            "link": "https://www.qidian.com/chapter/1037526139/760815858/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXI. 在逃骑士",
+            "link": "https://www.qidian.com/chapter/1037526139/760898762/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXII. 应试作品",
+            "link": "https://www.qidian.com/chapter/1037526139/760898831/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXIII. 梦蓝酒店",
+            "link": "https://www.qidian.com/chapter/1037526139/761049418/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXIV. 贼船",
+            "link": "https://www.qidian.com/chapter/1037526139/761049568/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXV. 人间之毒",
+            "link": "https://www.qidian.com/chapter/1037526139/761147172/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXVI. 安家费",
+            "link": "https://www.qidian.com/chapter/1037526139/761147266/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXVII. 海盗法案",
+            "link": "https://www.qidian.com/chapter/1037526139/761266347/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXVIII. 愚者千虑",
+            "link": "https://www.qidian.com/chapter/1037526139/761266403/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXIX. 舱中对",
+            "link": "https://www.qidian.com/chapter/1037526139/761366855/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXX. 帝皇",
+            "link": "https://www.qidian.com/chapter/1037526139/761366973/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXI. 通天代",
+            "link": "https://www.qidian.com/chapter/1037526139/761467158/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXII. 贵族庄园",
+            "link": "https://www.qidian.com/chapter/1037526139/761467246/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXIII. 家宴",
+            "link": "https://www.qidian.com/chapter/1037526139/761545574/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXIV. 东岸专业团队",
+            "link": "https://www.qidian.com/chapter/1037526139/761545731/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXV. 买卖",
+            "link": "https://www.qidian.com/chapter/1037526139/761623768/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXVI. 天罚者与月轮剑士",
+            "link": "https://www.qidian.com/chapter/1037526139/761623874/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXVII. 赌局",
+            "link": "https://www.qidian.com/chapter/1037526139/761740638/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXVIII. 船员投票",
+            "link": "https://www.qidian.com/chapter/1037526139/761740696/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XXXIX. 法外之徒",
+            "link": "https://www.qidian.com/chapter/1037526139/761866444/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XL. 君临剑",
+            "link": "https://www.qidian.com/chapter/1037526139/761866554/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLI. 赚上船来",
+            "link": "https://www.qidian.com/chapter/1037526139/761980928/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLII. 特别稽查队",
+            "link": "https://www.qidian.com/chapter/1037526139/761981041/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLIII. 神之请愿",
+            "link": "https://www.qidian.com/chapter/1037526139/762098545/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLIV. 杀机重重",
+            "link": "https://www.qidian.com/chapter/1037526139/762098654/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLV. 龙潭虎穴",
+            "link": "https://www.qidian.com/chapter/1037526139/762233144/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLVI. 天国港百万问答",
+            "link": "https://www.qidian.com/chapter/1037526139/762233203/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLVII. 风息峡谷",
+            "link": "https://www.qidian.com/chapter/1037526139/762312322/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLVIII. 大活儿",
+            "link": "https://www.qidian.com/chapter/1037526139/762312533/",
+            "status": "downloaded"
+        },
+        {
+            "title": "XLIX. 此剑君临",
+            "link": "https://www.qidian.com/chapter/1037526139/762393128/",
+            "status": "downloaded"
+        },
+        {
+            "title": "L. 正义的围殴",
+            "link": "https://www.qidian.com/chapter/1037526139/762393181/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LI. 揭开帷幕",
+            "link": "https://www.qidian.com/chapter/1037526139/762511670/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LII. 骤雨",
+            "link": "https://www.qidian.com/chapter/1037526139/762511797/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LIII. 天地杀机",
+            "link": "https://www.qidian.com/chapter/1037526139/762608519/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LIV. 宪兵还有海盗",
+            "link": "https://www.qidian.com/chapter/1037526139/762608750/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LV. 杀意",
+            "link": "https://www.qidian.com/chapter/1037526139/762712093/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LVI. 鬼神",
+            "link": "https://www.qidian.com/chapter/1037526139/762712171/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LVII. 美少女",
+            "link": "https://www.qidian.com/chapter/1037526139/762822456/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LVIII. 黑帆海盗团最强者",
+            "link": "https://www.qidian.com/chapter/1037526139/762822511/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LIX. 中门对狙",
+            "link": "https://www.qidian.com/chapter/1037526139/762940039/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LX. 死灵术",
+            "link": "https://www.qidian.com/chapter/1037526139/762940135/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXI. 神官",
+            "link": "https://www.qidian.com/chapter/1037526139/763013621/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXII. 冷冽港的马库斯",
+            "link": "https://www.qidian.com/chapter/1037526139/763013786/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXIII. 猎巫机密处",
+            "link": "https://www.qidian.com/chapter/1037526139/763089449/",
+            "status": "failed"
+        },
+        {
+            "title": "LXIV. 力量领域",
+            "link": "https://www.qidian.com/chapter/1037526139/763092018/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXV. 六边形战士",
+            "link": "https://www.qidian.com/chapter/1037526139/763221236/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXVI. 所谓海盗",
+            "link": "https://www.qidian.com/chapter/1037526139/763225437/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXVII. 起航",
+            "link": "https://www.qidian.com/chapter/1037526139/763336390/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXVIII. 魅力时间",
+            "link": "https://www.qidian.com/chapter/1037526139/763337075/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXIX. 理解万岁",
+            "link": "https://www.qidian.com/chapter/1037526139/763449996/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXX. 水滴",
+            "link": "https://www.qidian.com/chapter/1037526139/763451711/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXXI. 猎杀时刻",
+            "link": "https://www.qidian.com/chapter/1037526139/763561394/",
+            "status": "downloaded"
+        },
+        {
+            "title": "LXXII. 来自星空",
+            "link": "https://www.qidian.com/chapter/1037526139/763561551/",
+            "status": "downloaded"
+        },
+        {
+            "title": "上架感言",
+            "link": "https://www.qidian.com/chapter/1037526139/763591453/",
+            "status": "downloaded"
+        },
+        {
+            "title": "推荐一个流浪UP主",
+            "link": "https://www.qidian.com/chapter/1037526139/769917138/",
+            "status": "downloaded"
+        },
+        {
+            "title": "关于新卷",
+            "link": "https://www.qidian.com/chapter/1037526139/830669805/",
+            "status": "downloaded"
+ 

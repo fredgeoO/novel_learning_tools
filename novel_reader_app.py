@@ -1,4 +1,27 @@
-# novel_reader_app_final.py
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+小说叙事分析浏览器
+
+这是一个基于 Gradio 的 Web 应用程序，用于浏览和分析小说章节内容及其对应的 AI 分析报告。
+
+主要功能：
+- 按分类浏览小说（支持月票榜分类）
+- 查看小说章节内容（支持智能章节排序，包括中文数字章节）
+- 查看章节的 AI 分析报告
+- 筛选功能：仅显示有分析报告的小说/章节
+- 报告管理：删除不需要的分析报告
+
+目录结构要求：
+- novels/ - 存放小说章节文本文件
+- reports/novels/ - 存放对应的小说分析报告
+- scraped_data/所有分类月票榜汇总.txt - 可选的小说分类榜单文件
+
+作者：FredgeoO
+日期：2025
+"""
+
 import os
 import glob
 import gradio as gr
@@ -8,6 +31,7 @@ import re
 NOVELS_BASE_DIR = "novels"
 REPORTS_BASE_DIR = "reports/novels"
 
+# --- 从 chapter_utils 导入通用功能 ---
 # --- 从 chapter_utils 导入通用功能 ---
 from chapter_utils import (
     get_chapter_list_with_cache as get_chapter_list,
@@ -19,7 +43,6 @@ from chapter_utils import (
     get_filtered_chapters_with_reports,
     delete_report_file
 )
-
 
 # --- 月票榜解析逻辑 ---
 def parse_ranking_file(filepath="scraped_data/所有分类月票榜汇总.txt"):
@@ -55,13 +78,10 @@ def parse_ranking_file(filepath="scraped_data/所有分类月票榜汇总.txt"):
         traceback.print_exc()
     return rankings
 
-
 RANKINGS_CACHE = parse_ranking_file()
-
 
 def get_categories():
     return sorted(RANKINGS_CACHE.keys()) if RANKINGS_CACHE else []
-
 
 # --- 新增功能函数 ---
 def get_novel_list(filter_by_category=None, only_with_reports=False):
@@ -97,15 +117,36 @@ def get_novel_list(filter_by_category=None, only_with_reports=False):
         traceback.print_exc()
         return []
 
-
 # --- 更新函数（支持checkbox）---
 def update_novels_on_category_change(selected_category, only_with_reports):
     novels = get_novel_list(filter_by_category=selected_category if selected_category != "全部" else None,
                             only_with_reports=only_with_reports)
     default_novel = novels[0] if novels else None
-    return gr.update(choices=novels, value=default_novel), gr.update(choices=[], value=None), gr.update(choices=[],
-                                                                                                        value=None)
 
+    if default_novel:
+        # 获取章节更新信息
+        chapters_update, reports_update = update_chapters_and_clear_reports(default_novel, only_with_reports)
+
+        # 安全地获取选中的章节
+        if isinstance(chapters_update, dict) and 'value' in chapters_update:
+            selected_chapter = chapters_update['value']
+            if selected_chapter:
+                # 更新报告选择器和内容
+                reports_update, chapter_content, report_content = update_reports_and_load_content(
+                    default_novel, selected_chapter
+                )
+                return (
+                    gr.update(choices=novels, value=default_novel),
+                    chapters_update,
+                    reports_update
+                )
+
+    # 如果没有小说或出错，返回空状态
+    return (
+        gr.update(choices=novels, value=default_novel),
+        gr.update(choices=[], value=None),
+        gr.update(choices=[], value=None)
+    )
 
 def update_chapters_and_clear_reports(selected_novel, only_with_reports):
     if not selected_novel:
@@ -120,7 +161,6 @@ def update_chapters_and_clear_reports(selected_novel, only_with_reports):
     chapter_choices = [(chap.replace('.txt', ''), chap) for chap in chapters]
     default_chapter = chapter_choices[0][1] if chapter_choices else None
     return gr.update(choices=chapter_choices, value=default_chapter), gr.update(choices=[], value=None)
-
 
 def update_reports_and_load_content(novel_name, chapter_filename):
     if not novel_name or not chapter_filename:
@@ -138,12 +178,10 @@ def update_reports_and_load_content(novel_name, chapter_filename):
     chapter_content, report_content = load_chapter_and_initial_report(novel_name, chapter_filename)
     return gr.update(choices=report_choices, value=default_report), chapter_content, report_content
 
-
 def fn_load_selected_report(novel_name, chapter_filename, report_filename):
     if not all([novel_name, chapter_filename, report_filename]):
         return "## AI 分析报告\n\n请选择一个报告文件。"
     return load_report_content(novel_name, chapter_filename, report_filename)
-
 
 # --- 新增：Gradio 删除报告调用函数 ---
 def fn_delete_selected_report(novel_name, chapter_filename, report_filename):
@@ -165,9 +203,6 @@ def fn_delete_selected_report(novel_name, chapter_filename, report_filename):
         new_report_content,  # analysis_output
         updated_report_selector  # report_selector
     )
-
-
-# --- 新增结束 ---
 
 # --- Gradio 界面和逻辑 ---
 css_for_app = """

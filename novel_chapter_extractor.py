@@ -1,3 +1,33 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+起点中文网小说章节爬虫
+
+这是一个基于 Selenium 的自动化脚本，用于从起点中文网 (qidian.com) 下载指定小说的免费章节，
+并将内容保存为本地 TXT 文件。
+
+主要功能：
+- 自动识别并下载小说的免费章节
+- 智能解析网页中的 JSON 数据以获取章节正文
+- 格式化章节内容并保存为 TXT 文件
+- 支持断点续传：通过元数据文件记录已下载章节，避免重复下载
+- 使用全局 Chrome 用户数据目录，减少浏览器指纹检测
+- 可配置的下载参数（如最大章节数、等待时间等）
+
+使用方法：
+1. 在 novel_urls.txt 文件中按指定格式填入小说书名和 URL。
+2. 运行脚本：python qidian_chapter_extractor.py
+3. 爬取的章节将保存在 novels/小说名/ 目录下。
+
+依赖：
+- selenium
+- ChromeDriver (需与 Chrome 浏览器版本匹配)
+
+作者： FredgeoO
+日期：2025
+"""
+
 import os
 import re
 import time

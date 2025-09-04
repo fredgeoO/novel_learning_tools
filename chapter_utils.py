@@ -5,6 +5,7 @@ import re
 import json
 import logging
 
+
 # --- 配置 ---
 # 日志配置 (如果主程序已有，可以考虑移除或简化)
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(levelname)s] %(message)s')
@@ -12,6 +13,8 @@ logger = logging.getLogger(__name__)
 
 NOVELS_BASE_DIR = "novels"  # 与主程序保持一致
 REPORTS_BASE_DIR = "reports/novels"  # 对应 reports/novels 结构
+PROMPT_ANALYZER_DIR = "inputs/prompts/analyzer"
+METADATA_FILE_PATH = os.path.join(PROMPT_ANALYZER_DIR, "metadata.json")
 
 # --- 新增：章节状态常量 (与主程序保持一致) ---
 CHAPTER_STATUS_PENDING = "pending"
@@ -382,7 +385,7 @@ def get_chapter_list_with_cache(novel_name):
 
 def get_report_list_with_cache(novel_name, chapter_filename):
     """
-    获取报告列表并检查是否有更新。
+    获取报告列表并检查是否有更新，并按照 metadata.json 排序。
     """
     if not novel_name or not chapter_filename:
         return []
@@ -402,7 +405,9 @@ def get_report_list_with_cache(novel_name, chapter_filename):
             logger.info(f"[刷新] 报告列表发生变化: {novel_name}/{chapter_name}")
             report_cache[(novel_name, chapter_name)] = current_files
 
-        return current_files
+        # 使用排序函数对报告进行排序
+        return sort_reports_by_metadata(current_files)
+
     except Exception as e:
         logger.error(f"获取报告列表时出错: {e}")
         return []
@@ -642,4 +647,57 @@ def delete_report_file(novel_name, chapter_filename, report_filename):
         logger.error(error_msg, exc_info=True)
         return error_msg, {}
 
-# --- 新增结束 ---
+
+# ========================
+# 新增：报告排序逻辑
+# ========================
+
+def ensure_report_metadata_exists():
+    """
+    确保 metadata.json 存在。如果不存在，则根据 analyzer 目录下的 .txt 文件生成默认排序。
+    """
+    os.makedirs(PROMPT_ANALYZER_DIR, exist_ok=True)
+
+    if not os.path.exists(METADATA_FILE_PATH):
+        txt_files = []
+        if os.path.exists(PROMPT_ANALYZER_DIR):
+            txt_files = [f.replace('.txt', '') for f in os.listdir(PROMPT_ANALYZER_DIR) if f.endswith('.txt')]
+        default_order = sorted(set(txt_files))  # 去重并排序
+        with open(METADATA_FILE_PATH, 'w', encoding='utf-8') as f:
+            json.dump({"report_order": default_order}, f, ensure_ascii=False, indent=2)
+        logger.info(f"[INFO] 已创建默认报告排序文件: {METADATA_FILE_PATH}")
+
+
+def get_report_order_from_metadata():
+    """
+    从 metadata.json 中读取报告排序列表。
+    """
+    ensure_report_metadata_exists()
+    try:
+        with open(METADATA_FILE_PATH, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        order = data.get("report_order", [])
+        return order
+    except Exception as e:
+        logger.error(f"[ERROR] 读取报告排序元数据失败: {e}")
+        return []
+
+
+def sort_reports_by_metadata(report_filenames):
+    """
+    根据 metadata.json 中定义的顺序对报告文件名列表进行排序。
+
+    Args:
+        report_filenames (list): 包含 .txt 扩展名的报告文件名列表，如 ['角色分析.txt', '情节发展.txt']
+
+    Returns:
+        list: 排序后的报告文件名列表
+    """
+    order = get_report_order_from_metadata()
+    order_map = {name: idx for idx, name in enumerate(order)}
+
+    def sort_key(filename):
+        base_name = os.path.splitext(filename)[0]
+        return (order_map.get(base_name, len(order)), base_name)
+
+    return sorted(report_filenames, key=sort_key)

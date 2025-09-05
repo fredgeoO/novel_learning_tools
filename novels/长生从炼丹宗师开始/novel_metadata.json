@@ -1,0 +1,507 @@
+{
+    "novel_id": "1036526469",
+    "bookname": "长生从炼丹宗师开始",
+    "save_dir": "novels\\长生从炼丹宗师开始",
+    "chapters": [
+        {
+            "title": "第一章 散修罗尘",
+            "link": "https://www.qidian.com/chapter/1036526469/745825165/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章 月入五块",
+            "link": "https://www.qidian.com/chapter/1036526469/745825223/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章 你就说要不要吧",
+            "link": "https://www.qidian.com/chapter/1036526469/745825366/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章 众妙丸入门",
+            "link": "https://www.qidian.com/chapter/1036526469/745935563/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章 关二爷在上，保佑我炼丹成功",
+            "link": "https://www.qidian.com/chapter/1036526469/745960288/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六章 失败还能涨熟练度的啊",
+            "link": "https://www.qidian.com/chapter/1036526469/746024146/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七章 逍遥游",
+            "link": "https://www.qidian.com/chapter/1036526469/746026288/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八章 你知道云中鹤吗",
+            "link": "https://www.qidian.com/chapter/1036526469/746026291/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九章 道友，有兴趣了解一下众妙丸吗",
+            "link": "https://www.qidian.com/chapter/1036526469/746026294/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十章 在下曾问，今天要打十个",
+            "link": "https://www.qidian.com/chapter/1036526469/746026297/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十一章 叔，我可是你看着长大的啊！",
+            "link": "https://www.qidian.com/chapter/1036526469/746026299/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十二章 我大河坊市自有国情在此",
+            "link": "https://www.qidian.com/chapter/1036526469/746026302/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十三章 完美级火球术",
+            "link": "https://www.qidian.com/chapter/1036526469/746026305/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十四章 记得还钱",
+            "link": "https://www.qidian.com/chapter/1036526469/746026308/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十五章 杀人夺宝，终于轮到我了吗？",
+            "link": "https://www.qidian.com/chapter/1036526469/746026311/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十六章 你该死，你真的该死啊",
+            "link": "https://www.qidian.com/chapter/1036526469/746026313/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十七章 横财",
+            "link": "https://www.qidian.com/chapter/1036526469/746026315/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十八章 破魂钉，安神香",
+            "link": "https://www.qidian.com/chapter/1036526469/746026428/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十九章 无情的移动炮台",
+            "link": "https://www.qidian.com/chapter/1036526469/746031668/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十章 染指大山",
+            "link": "https://www.qidian.com/chapter/1036526469/746041394/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十一章 暴富",
+            "link": "https://www.qidian.com/chapter/1036526469/746046095/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十二章 一群穷鬼玩什么命啊",
+            "link": "https://www.qidian.com/chapter/1036526469/746069809/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十三章 你小子干的那一票也不大啊",
+            "link": "https://www.qidian.com/chapter/1036526469/746073960/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十四章 新家真好！",
+            "link": "https://www.qidian.com/chapter/1036526469/746076174/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十五章 碧玉刀，鸳鸯钺",
+            "link": "https://www.qidian.com/chapter/1036526469/746077408/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十六章 奸商，都是奸商",
+            "link": "https://www.qidian.com/chapter/1036526469/746128238/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十七章 我王哥从不舔有毒的刀",
+            "link": "https://www.qidian.com/chapter/1036526469/746139490/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十八章 小小四合院，卧虎藏龙啊",
+            "link": "https://www.qidian.com/chapter/1036526469/746143923/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十九章 枷锁解开的希望",
+            "link": "https://www.qidian.com/chapter/1036526469/746145812/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十章 淡烟疏雨楼",
+            "link": "https://www.qidian.com/chapter/1036526469/746146814/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十一章 瓢虫月初格外热情",
+            "link": "https://www.qidian.com/chapter/1036526469/746148122/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十二章 这玩意儿能炼丹？",
+            "link": "https://www.qidian.com/chapter/1036526469/746152182/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十三章 紫云铜炉",
+            "link": "https://www.qidian.com/chapter/1036526469/746234618/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十四章 我不介意以身相许",
+            "link": "https://www.qidian.com/chapter/1036526469/746324835/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十五章 我不能跟你们走",
+            "link": "https://www.qidian.com/chapter/1036526469/746333503/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十六章 这里合该是我的家",
+            "link": "https://www.qidian.com/chapter/1036526469/746343407/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十七章 小罗道友，你是来采风的吗",
+            "link": "https://www.qidian.com/chapter/1036526469/746344498/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十八章 该死的垄断狗（求追读）",
+            "link": "https://www.qidian.com/chapter/1036526469/746345747/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十九章 我们散修就是要抱团取暖",
+            "link": "https://www.qidian.com/chapter/1036526469/746347708/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十章 丹室、仙豆",
+            "link": "https://www.qidian.com/chapter/1036526469/746453440/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十一章 红了，眼睛红了（求追读）",
+            "link": "https://www.qidian.com/chapter/1036526469/746470328/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十二章 心劫（加更，求追读！）",
+            "link": "https://www.qidian.com/chapter/1036526469/746480896/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十三章 宗师级火球术",
+            "link": "https://www.qidian.com/chapter/1036526469/746492228/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十四章 论道台，十八死斗",
+            "link": "https://www.qidian.com/chapter/1036526469/746616932/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十五章 泰山坊，金石阁",
+            "link": "https://www.qidian.com/chapter/1036526469/746622652/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十六章 打假赛是吧？",
+            "link": "https://www.qidian.com/chapter/1036526469/746624253/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十七章 凌空虚渡，大鹏燕返",
+            "link": "https://www.qidian.com/chapter/1036526469/746624912/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十八章 傀儡兽与灵识",
+            "link": "https://www.qidian.com/chapter/1036526469/746627137/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十九章 一剑西来，威压大河",
+            "link": "https://www.qidian.com/chapter/1036526469/746628601/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十章 剑阁会议",
+            "link": "https://www.qidian.com/chapter/1036526469/746628768/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十一章 劫修？宅修！",
+            "link": "https://www.qidian.com/chapter/1036526469/746755771/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十二章 一切尽在不言中",
+            "link": "https://www.qidian.com/chapter/1036526469/746768724/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十三章 天下无不散之筵席",
+            "link": "https://www.qidian.com/chapter/1036526469/746770103/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十四章 修仙的日子越来越有盼头了",
+            "link": "https://www.qidian.com/chapter/1036526469/746775668/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十五章 小罗，喝汤了（感谢盟主滕骨泡面的打赏）",
+            "link": "https://www.qidian.com/chapter/1036526469/746783035/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十六章 宗师级长春功（求追读）",
+            "link": "https://www.qidian.com/chapter/1036526469/746895764/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十七章 炼气五层（加更，求追读！）",
+            "link": "https://www.qidian.com/chapter/1036526469/746896732/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十八章 断刀十年老粉，不请自来",
+            "link": "https://www.qidian.com/chapter/1036526469/746898143/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十九章 落凤山论道台",
+            "link": "https://www.qidian.com/chapter/1036526469/747020773/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十章 死斗开局",
+            "link": "https://www.qidian.com/chapter/1036526469/747022084/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十一章 天香楼记得给我包月",
+            "link": "https://www.qidian.com/chapter/1036526469/747033775/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十二章 我会给你打出第九局",
+            "link": "https://www.qidian.com/chapter/1036526469/747042781/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十三章 剑丸",
+            "link": "https://www.qidian.com/chapter/1036526469/747049202/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十四章 第九战",
+            "link": "https://www.qidian.com/chapter/1036526469/747052318/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十五章 混帮派，不只是打打杀杀",
+            "link": "https://www.qidian.com/chapter/1036526469/747127934/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十六章 一内一外，兄弟扶持",
+            "link": "https://www.qidian.com/chapter/1036526469/747130221/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十七章 试法",
+            "link": "https://www.qidian.com/chapter/1036526469/747236668/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十八章 仙豆，牛肉，爆米花！",
+            "link": "https://www.qidian.com/chapter/1036526469/747251286/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十九章 大圆满火球术",
+            "link": "https://www.qidian.com/chapter/1036526469/747256269/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十章 买房？这辈子不可能买房的",
+            "link": "https://www.qidian.com/chapter/1036526469/747264624/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十一章 钟鼎宴，金丹临",
+            "link": "https://www.qidian.com/chapter/1036526469/747311001/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十二章 罗尘是吧",
+            "link": "https://www.qidian.com/chapter/1036526469/747312362/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十三章 有尊严的工具人？",
+            "link": "https://www.qidian.com/chapter/1036526469/747314239/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十四章 你要包养我啊",
+            "link": "https://www.qidian.com/chapter/1036526469/747317667/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十五章 我需要一个信得过的人",
+            "link": "https://www.qidian.com/chapter/1036526469/747401178/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十六章 皓月之议",
+            "link": "https://www.qidian.com/chapter/1036526469/747404339/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十七章 所谓漫天要价，坐地还钱",
+            "link": "https://www.qidian.com/chapter/1036526469/747466606/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十八章 丹堂之主——罗尘",
+            "link": "https://www.qidian.com/chapter/1036526469/747466647/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十九章 血煞丹",
+            "link": "https://www.qidian.com/chapter/1036526469/747473857/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十章 解析，补全丹方",
+            "link": "https://www.qidian.com/chapter/1036526469/747579767/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十一章 这里这里还有这里，那里那里还有那里！",
+            "link": "https://www.qidian.com/chapter/1036526469/747586596/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十二章 青元子丹道详解",
+            "link": "https://www.qidian.com/chapter/1036526469/747590051/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十三章 百草图鉴",
+            "link": "https://www.qidian.com/chapter/1036526469/747702297/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十四章 送机！",
+            "link": "https://www.qidian.com/chapter/1036526469/747708502/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十五章 高二哥，五块灵石的账我小罗记下了！",
+            "link": "https://www.qidian.com/chapter/1036526469/747715988/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十六章 敛息灵诀",
+            "link": "https://www.qidian.com/chapter/1036526469/747722985/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十七章 筑基修士之死",
+            "link": "https://www.qidian.com/chapter/1036526469/747839351/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十八章 今天，我的秀场！",
+            "link": "https://www.qidian.com/chapter/1036526469/747846239/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十九章 一个月炼气六层",
+            "link": "https://www.qidian.com/chapter/1036526469/747851888/",
+            "status": "downloaded"
+        },
+        {
+            "title": "双倍最后一天，求月票！！！",
+            "link": "https://www.qidian.com/chapter/1036526469/752488289/",
+            "status": "downloaded"
+        },
+        {
+            "title": "八十万筑基教头参上！（小总结）",
+            "link": "https://www.qidian.com/chapter/1036526469/754410861/",
+            "status": "downloaded"
+        },
+        {
+            "title": "废物的更新计划",
+            "link": "https://www.qidian.com/chapter/1036526469/769240373/",
+            "status": "downloaded"
+        },
+        {
+            "title": "金丹小结",
+            "link": "https://www.qidian.com/chapter/1036526469/770133396/",
+            "status": "downloaded"
+        },
+        {
+            "title": "贴一个完整属性面板，有兴趣的可以看看",
+            "link": "https://www.qidian.com/chapter/1036526469/799235373/",
+            "status": "downloaded"
+        },
+        {
+            "title": "新的一月了，求个保底月票！",
+            "link": "https://www.qidian.com/chapter/1036526469/802098635/",
+            "status": "downloaded"
+        },
+        {
+            "title": "十月求票，顺便聊两句",
+            "link": "https://www.qidian.com/chapter/1036526469/809413503/",
+            "status": "downloaded"
+        },
+        {
+            "title": "感谢【郭九行】大佬的白银盟打赏！",
+            "link": "https://www.qidian.com/chapter/1036526469/817479297/",
+            "status": "downloaded"
+        },
+        {
+            "title": "新年快乐，求双倍月票！",
+            "link": "https://www.qidian.com/chapter/1036526469/822899997/",
+            "status": "downloaded"
+        },
+        {
+            "title": "请假条，顺便聊两句",
+            "link": "https://www.qidian.com/chapter/1036526469/845633647/",
+            "status": "downloaded"
+        },
+        {
+            "title": "小修剧情，感谢应啦道友！",
+            "link": "https://www.qidian.com/chapter/1036526469/845727554/",
+            "status": "downloaded"
+        }
+    ]
+}

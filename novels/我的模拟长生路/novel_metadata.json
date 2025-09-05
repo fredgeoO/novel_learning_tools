@@ -1,0 +1,507 @@
+{
+    "novel_id": "1033422902",
+    "bookname": "我的模拟长生路",
+    "save_dir": "novels\\我的模拟长生路",
+    "chapters": [
+        {
+            "title": "第一章 仙从何处来",
+            "link": "https://www.qidian.com/chapter/1033422902/704530667/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章 立志求长生",
+            "link": "https://www.qidian.com/chapter/1033422902/704533874/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章 凡人欲捕仙",
+            "link": "https://www.qidian.com/chapter/1033422902/704660063/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章 仙人拼一剑",
+            "link": "https://www.qidian.com/chapter/1033422902/704660110/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章 平地起波澜",
+            "link": "https://www.qidian.com/chapter/1033422902/705216033/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六章 坐山观仙斗",
+            "link": "https://www.qidian.com/chapter/1033422902/705216302/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七章 虬龙吞剑鸣",
+            "link": "https://www.qidian.com/chapter/1033422902/705216536/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八章 仙凡永相隔",
+            "link": "https://www.qidian.com/chapter/1033422902/705216779/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九章 天无绝人路",
+            "link": "https://www.qidian.com/chapter/1033422902/705216991/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十章 仙法不同修",
+            "link": "https://www.qidian.com/chapter/1033422902/705217159/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十一章 修仙却牛马",
+            "link": "https://www.qidian.com/chapter/1033422902/706192291/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十二章 第二锚点现",
+            "link": "https://www.qidian.com/chapter/1033422902/706192572/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十三章 覆手变人间",
+            "link": "https://www.qidian.com/chapter/1033422902/706377490/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十四章 柳暗又花明",
+            "link": "https://www.qidian.com/chapter/1033422902/706409756/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十五章 筑基已白骨",
+            "link": "https://www.qidian.com/chapter/1033422902/706452637/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十六章 弄仙股掌间",
+            "link": "https://www.qidian.com/chapter/1033422902/706480334/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十七章 万事皆已备",
+            "link": "https://www.qidian.com/chapter/1033422902/706604651/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十八章 渊深凭鱼跃",
+            "link": "https://www.qidian.com/chapter/1033422902/706717083/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十九章 虚渊欲噬人",
+            "link": "https://www.qidian.com/chapter/1033422902/706877552/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十章 无意却功成",
+            "link": "https://www.qidian.com/chapter/1033422902/706877584/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十一章 身临修仙界",
+            "link": "https://www.qidian.com/chapter/1033422902/707013389/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十二章 同是偷渡人",
+            "link": "https://www.qidian.com/chapter/1033422902/707013468/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十三章 入籍琉璃岛",
+            "link": "https://www.qidian.com/chapter/1033422902/707182751/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十四章 炼气需祛瘴",
+            "link": "https://www.qidian.com/chapter/1033422902/707182795/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十五章 财帛动人心",
+            "link": "https://www.qidian.com/chapter/1033422902/707351935/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十六章 巧言说众人",
+            "link": "https://www.qidian.com/chapter/1033422902/707351997/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十七章 慧眼识英才",
+            "link": "https://www.qidian.com/chapter/1033422902/707453648/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十八章 天地有风灾",
+            "link": "https://www.qidian.com/chapter/1033422902/707453683/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十九章 事毕需出海",
+            "link": "https://www.qidian.com/chapter/1033422902/707557215/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十章 深海不藏宝",
+            "link": "https://www.qidian.com/chapter/1033422902/707558739/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十一章 满载归琉璃",
+            "link": "https://www.qidian.com/chapter/1033422902/707661431/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十二章 宝体可通灵",
+            "link": "https://www.qidian.com/chapter/1033422902/707661532/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十三章 姐妹俱天骄",
+            "link": "https://www.qidian.com/chapter/1033422902/707824881/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十四章 清心有神效",
+            "link": "https://www.qidian.com/chapter/1033422902/707824965/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十五章 得果皆前定",
+            "link": "https://www.qidian.com/chapter/1033422902/707980555/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十六章 妙手偶得之",
+            "link": "https://www.qidian.com/chapter/1033422902/707980659/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十七章 沧海生奇物",
+            "link": "https://www.qidian.com/chapter/1033422902/708121884/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十八章 终得入灵池",
+            "link": "https://www.qidian.com/chapter/1033422902/708121973/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十九章 修仙第一课",
+            "link": "https://www.qidian.com/chapter/1033422902/708227358/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十章 机缘得奇功",
+            "link": "https://www.qidian.com/chapter/1033422902/708227459/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十一章 坐山享其成",
+            "link": "https://www.qidian.com/chapter/1033422902/708327686/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十二章 天仙不两立",
+            "link": "https://www.qidian.com/chapter/1033422902/708327745/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十三章 凝天地之根",
+            "link": "https://www.qidian.com/chapter/1033422902/708461542/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十四章 终入炼气期",
+            "link": "https://www.qidian.com/chapter/1033422902/708461596/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十五章 传送万仙岛",
+            "link": "https://www.qidian.com/chapter/1033422902/708609848/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十六章 灵宝天玄镜",
+            "link": "https://www.qidian.com/chapter/1033422902/708609930/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十七章 天玄可启灵",
+            "link": "https://www.qidian.com/chapter/1033422902/708747728/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十八章 绝迹琉璃珠",
+            "link": "https://www.qidian.com/chapter/1033422902/708747834/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十九章 奇货定可居",
+            "link": "https://www.qidian.com/chapter/1033422902/708783450/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十章 泰安有灵果",
+            "link": "https://www.qidian.com/chapter/1033422902/708786310/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十一章 人面笑脸果",
+            "link": "https://www.qidian.com/chapter/1033422902/709050364/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十二章 镇守泰安岛",
+            "link": "https://www.qidian.com/chapter/1033422902/709050531/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十三章 修士有灾厄",
+            "link": "https://www.qidian.com/chapter/1033422902/709157584/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十四章 天地布杀机",
+            "link": "https://www.qidian.com/chapter/1033422902/709158808/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十五章 死地而后生",
+            "link": "https://www.qidian.com/chapter/1033422902/709267595/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十六章 悲悯佑凡人",
+            "link": "https://www.qidian.com/chapter/1033422902/709267650/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十七章 机缘忽已现",
+            "link": "https://www.qidian.com/chapter/1033422902/709411236/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十八章 悟天地气机",
+            "link": "https://www.qidian.com/chapter/1033422902/709411362/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十九章 沧海变桑田",
+            "link": "https://www.qidian.com/chapter/1033422902/709576575/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十章 复盘与谋划",
+            "link": "https://www.qidian.com/chapter/1033422902/709576614/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十一章 解离试神通",
+            "link": "https://www.qidian.com/chapter/1033422902/709738320/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十二章 莫名遭追杀",
+            "link": "https://www.qidian.com/chapter/1033422902/709918858/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十三章 再临琉璃岛",
+            "link": "https://www.qidian.com/chapter/1033422902/709929264/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十四章 重入万仙盟",
+            "link": "https://www.qidian.com/chapter/1033422902/710110787/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十五章 十万贡献度",
+            "link": "https://www.qidian.com/chapter/1033422902/710110814/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十六章 诡异降世间",
+            "link": "https://www.qidian.com/chapter/1033422902/710192687/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十七章 执意修幻功",
+            "link": "https://www.qidian.com/chapter/1033422902/710217018/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十八章 幻灵拟蓝炎",
+            "link": "https://www.qidian.com/chapter/1033422902/710308574/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十九章 原来竟是你",
+            "link": "https://www.qidian.com/chapter/1033422902/710467638/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十章 欲求元婴法",
+            "link": "https://www.qidian.com/chapter/1033422902/710467690/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十一章 离界众生相",
+            "link": "https://www.qidian.com/chapter/1033422902/710663808/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十二章 抚首授长生",
+            "link": "https://www.qidian.com/chapter/1033422902/710664184/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十三章 论韭菜行为",
+            "link": "https://www.qidian.com/chapter/1033422902/710843266/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十四章 一刻不得闲",
+            "link": "https://www.qidian.com/chapter/1033422902/710843313/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十五章 深海遇龙鲸",
+            "link": "https://www.qidian.com/chapter/1033422902/710995518/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十六章 无相诛异兽",
+            "link": "https://www.qidian.com/chapter/1033422902/710995590/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十七章 如影随形决",
+            "link": "https://www.qidian.com/chapter/1033422902/711163548/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十八章 云水天宫启",
+            "link": "https://www.qidian.com/chapter/1033422902/711163594/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十九章 传法阁首席",
+            "link": "https://www.qidian.com/chapter/1033422902/711268633/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十章 记得早点睡",
+            "link": "https://www.qidian.com/chapter/1033422902/711268705/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十一章 专心之试炼",
+            "link": "https://www.qidian.com/chapter/1033422902/711367156/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十二章 勇气之试炼",
+            "link": "https://www.qidian.com/chapter/1033422902/711367198/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十三章 恒之试炼终",
+            "link": "https://www.qidian.com/chapter/1033422902/711458500/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十四章 炼妖虫道人",
+            "link": "https://www.qidian.com/chapter/1033422902/711510143/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十五章 万物皆如虫",
+            "link": "https://www.qidian.com/chapter/1033422902/711651004/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十六章 云水图箓现",
+            "link": "https://www.qidian.com/chapter/1033422902/711651060/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十七章 宝物终得手",
+            "link": "https://www.qidian.com/chapter/1033422902/711780805/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十八章 诛杀司空宜",
+            "link": "https://www.qidian.com/chapter/1033422902/711780874/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十九章 偷天换日宗",
+            "link": "https://www.qidian.com/chapter/1033422902/711930984/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十章 诸事皆有因",
+            "link": "https://www.qidian.com/chapter/1033422902/711931036/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十一章 欲炼制分身",
+            "link": "https://www.qidian.com/chapter/1033422902/712071504/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十二章 李凡与林凡",
+            "link": "https://www.qidian.com/chapter/1033422902/712071629/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十三章 天医有仙经",
+            "link": "https://www.qidian.com/chapter/1033422902/712180979/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十四章 张浩波重生",
+            "link": "https://www.qidian.com/chapter/1033422902/712181029/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十五章 生死锁连环",
+            "link": "https://www.qidian.com/chapter/1033422902/712367846/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十六章 万藏阁机缘",
+            "link": "https://www.qidian.com/chapter/1033422902/712367906/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十七章 机关布杀局",
+            "link": "https://www.qidian.com/chapter/1033422902/712522195/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十八章 两世辨命数",
+            "link": "https://www.qidian.com/chapter/1033422902/712522391/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十九章 你强我更强",
+            "link": "https://www.qidian.com/chapter/1033422902/712670819/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第一百章 张浩波试剑",
+            "link": "https://www.qidian.com/chapter/1033422902/712670880/",
+            "status": "downloaded"
+        }
+    ]
+}

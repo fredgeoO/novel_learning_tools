@@ -27,7 +27,69 @@ chapter_cache = {}
 report_cache = {}
 novel_cache  = {}
 
-# --- 章节筛选和排序逻辑 ---
+SCRAPED_DATA_DIR = "scraped_data"
+
+
+def find_novel_synopsis(novel_name):
+    """
+    在 scraped_data 目录下的月票榜文件中查找指定小说的简介。
+    :param novel_name: 小说名称
+    :return: 格式化后的简介字符串，如果未找到则返回 None
+    """
+    if not novel_name or not os.path.exists(SCRAPED_DATA_DIR):
+        return None
+
+    # 遍历所有可能的月票榜文件
+    for filename in os.listdir(SCRAPED_DATA_DIR):
+        if filename.endswith("_月票榜_top100.txt"):
+            filepath = os.path.join(SCRAPED_DATA_DIR, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    content = f.read()
+            except Exception as e:
+                logger.warning(f"读取简介文件 {filepath} 时出错: {e}")
+                continue
+
+            # 使用正则表达式查找小说信息块
+            # 匹配 "  X. 《小说名》" 开头，到下一个 "  X." 或文件结尾的部分
+            pattern = rf"^\s*\d+\.\s*《{re.escape(novel_name)}》.*?(?=\n\s*\d+\.|\Z)"
+            match = re.search(pattern, content, re.DOTALL | re.MULTILINE)
+
+            if match:
+                novel_block = match.group(0).strip()
+                # 简单格式化：移除 "  X. " 前缀，将条目分行
+                lines = novel_block.splitlines()
+                if lines:
+                    # 移除第一行的序号前缀
+                    formatted_lines = [re.sub(r"^\s*\d+\.\s*", "**书名:** ", lines[0])]
+                    # 处理后续行，如作者、分类、简介等
+                    for line in lines[1:]:
+                        stripped_line = line.strip()
+                        if stripped_line.startswith("作者:"):
+                            formatted_lines.append(f"**{stripped_line}**")
+                        elif stripped_line.startswith("分类:"):
+                            formatted_lines.append(f"*{stripped_line}*")
+                        elif stripped_line.startswith("链接:"):
+                            # 可以选择是否显示链接
+                            # formatted_lines.append(f"[链接]({stripped_line.split(':', 1)[1].strip()})")
+                            pass  # 暂时不显示链接
+                        elif stripped_line.startswith("简介:"):
+                            formatted_lines.append(f"**简介:**\n{stripped_line.split(':', 1)[1].strip()}")
+                        elif stripped_line.startswith("最新:"):
+                            formatted_lines.append(f"**{stripped_line}**")
+                        elif stripped_line:  # 其他非空行也加上
+                            formatted_lines.append(stripped_line)
+
+                synopsis_md = "\n\n".join(formatted_lines)
+                return f"## 📖 《{novel_name}》故事简介\n\n{synopsis_md}"
+
+    return None
+
+
+
+
+
+
 
 # 扩展中文数字映射，包含更多可能用于章节标题的字
 CHINESE_NUMBER_MAP = {

@@ -488,7 +488,7 @@ def filter_think_tags(text: str) -> str:
 
 def load_report_content(novel_name, chapter_filename, report_filename):
     """
-    加载报告内容，过滤 think 标签，并过滤掉少于3个字符的行。
+    加载报告内容，过滤 think 标签，并过滤掉少于3个字符的非Markdown格式行。
     """
     if not all([novel_name, chapter_filename, report_filename]):
         return "## AI 分析报告\n\n请选择一个报告文件。"
@@ -505,9 +505,19 @@ def load_report_content(novel_name, chapter_filename, report_filename):
         # 1. 过滤掉 <think> 标签及其内容
         content_without_think = filter_think_tags(raw_content)
 
-        # 2. 按行分割，过滤掉少于3个字符的行（去除前后空格后判断）
+        # 2. 按行分割，过滤掉少于3个字符的非Markdown格式行
         lines = content_without_think.splitlines()
-        filtered_lines = [line for line in lines if len(line.strip()) >= 3]
+        filtered_lines = []
+        for line in lines:
+            stripped_line = line.strip()
+            # 如果字符数>=3，直接保留
+            if len(stripped_line) >= 3:
+                filtered_lines.append(line)
+            # 如果字符数<3，检查是否为Markdown格式语法
+            elif is_markdown_format_line(stripped_line):
+                filtered_lines.append(line)
+            # 否则过滤掉（字符数<3且非Markdown格式）
+
         final_content = '\n'.join(filtered_lines)
 
         return final_content
@@ -515,6 +525,40 @@ def load_report_content(novel_name, chapter_filename, report_filename):
         error_msg = f"## 读取错误\n\n读取报告文件时出错: `{e}`"
         logger.error(error_msg)
         return error_msg
+
+
+def is_markdown_format_line(line):
+    """
+    判断一行是否为Markdown格式语法
+    """
+    if not line:
+        return False
+
+    # 常见的Markdown格式语法
+    markdown_patterns = [
+        r'^#{1,6}\s',  # 标题 #
+        r'^\s*[\-\*\+]\s',  # 无序列表
+        r'^\s*\d+\.\s',  # 有序列表
+        r'^\s*>',  # 引用
+        r'^\s*```',  # 代码块
+        r'^\s*`[^`]*`',  # 行内代码
+        r'^\s*\*\*.*\*\*$',  # 粗体 **
+        r'^\s*__.*__$',  # 粗体 __
+        r'^\s*\*.*\*$',  # 斜体 *
+        r'^\s*_.*_$',  # 斜体 _
+        r'^\s*\[.*\]\(.*\)',  # 链接
+        r'^\s*!\[.*\]\(.*\)',  # 图片
+        r'^\s*\|',  # 表格 |
+        r'^\s*---+\s*$',  # 分割线
+        r'^\s*\*\*\*\s*$',  # 分割线 ***
+        r'^\s*___\s*$',  # 分割线 ___
+    ]
+
+    for pattern in markdown_patterns:
+        if re.match(pattern, line):
+            return True
+
+    return False
 
 
 def load_chapter_and_initial_report(novel_name, chapter_filename):

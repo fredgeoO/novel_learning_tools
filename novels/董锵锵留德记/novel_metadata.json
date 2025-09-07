@@ -1,0 +1,497 @@
+{
+    "novel_id": "1013641978",
+    "bookname": "董锵锵留德记",
+    "save_dir": "novels\\董锵锵留德记",
+    "chapters": [
+        {
+            "title": "声明",
+            "link": "https://www.qidian.com/chapter/1013641978/450899460/",
+            "status": "downloaded"
+        },
+        {
+            "title": "上架感言",
+            "link": "https://www.qidian.com/chapter/1013641978/452397486/",
+            "status": "downloaded"
+        },
+        {
+            "title": "新书推荐：《火星分水岭》",
+            "link": "https://www.qidian.com/chapter/1013641978/495887019/",
+            "status": "downloaded"
+        },
+        {
+            "title": "1. 引子",
+            "link": "https://www.qidian.com/chapter/1013641978/436325809/",
+            "status": "downloaded"
+        },
+        {
+            "title": "2. 法兰克福机场",
+            "link": "https://www.qidian.com/chapter/1013641978/436429312/",
+            "status": "downloaded"
+        },
+        {
+            "title": "3. 女贼",
+            "link": "https://www.qidian.com/chapter/1013641978/436516421/",
+            "status": "downloaded"
+        },
+        {
+            "title": "4. 误机",
+            "link": "https://www.qidian.com/chapter/1013641978/436652769/",
+            "status": "downloaded"
+        },
+        {
+            "title": "5. 落地汉诺威",
+            "link": "https://www.qidian.com/chapter/1013641978/436864653/",
+            "status": "downloaded"
+        },
+        {
+            "title": "6. 非恶意逃票",
+            "link": "https://www.qidian.com/chapter/1013641978/436946067/",
+            "status": "downloaded"
+        },
+        {
+            "title": "7. 误入红灯区",
+            "link": "https://www.qidian.com/chapter/1013641978/437045935/",
+            "status": "downloaded"
+        },
+        {
+            "title": "8. 冲突",
+            "link": "https://www.qidian.com/chapter/1013641978/437141746/",
+            "status": "downloaded"
+        },
+        {
+            "title": "9. 夜遇",
+            "link": "https://www.qidian.com/chapter/1013641978/437301419/",
+            "status": "downloaded"
+        },
+        {
+            "title": "10. 虎穴",
+            "link": "https://www.qidian.com/chapter/1013641978/437418871/",
+            "status": "downloaded"
+        },
+        {
+            "title": "11. 近战（上）",
+            "link": "https://www.qidian.com/chapter/1013641978/437523286/",
+            "status": "downloaded"
+        },
+        {
+            "title": "12. 近战（下）",
+            "link": "https://www.qidian.com/chapter/1013641978/437667507/",
+            "status": "downloaded"
+        },
+        {
+            "title": "13. 第一夜",
+            "link": "https://www.qidian.com/chapter/1013641978/437733087/",
+            "status": "downloaded"
+        },
+        {
+            "title": "14. 天涯沦落人",
+            "link": "https://www.qidian.com/chapter/1013641978/437827946/",
+            "status": "downloaded"
+        },
+        {
+            "title": "15. 飞来横财",
+            "link": "https://www.qidian.com/chapter/1013641978/437929339/",
+            "status": "downloaded"
+        },
+        {
+            "title": "16. 宫殿？大学？",
+            "link": "https://www.qidian.com/chapter/1013641978/438060033/",
+            "status": "downloaded"
+        },
+        {
+            "title": "17. 晨",
+            "link": "https://www.qidian.com/chapter/1013641978/438147718/",
+            "status": "downloaded"
+        },
+        {
+            "title": "18. 节外生枝",
+            "link": "https://www.qidian.com/chapter/1013641978/438276411/",
+            "status": "downloaded"
+        },
+        {
+            "title": "19. 四处找房",
+            "link": "https://www.qidian.com/chapter/1013641978/438431666/",
+            "status": "downloaded"
+        },
+        {
+            "title": "20. 跳蚤市场",
+            "link": "https://www.qidian.com/chapter/1013641978/438511537/",
+            "status": "downloaded"
+        },
+        {
+            "title": "21. 吉屋出租",
+            "link": "https://www.qidian.com/chapter/1013641978/438589753/",
+            "status": "downloaded"
+        },
+        {
+            "title": "22. 意外",
+            "link": "https://www.qidian.com/chapter/1013641978/438695627/",
+            "status": "downloaded"
+        },
+        {
+            "title": "23. 好马也吃回头草",
+            "link": "https://www.qidian.com/chapter/1013641978/438780050/",
+            "status": "downloaded"
+        },
+        {
+            "title": "24. 额外条件",
+            "link": "https://www.qidian.com/chapter/1013641978/439005359/",
+            "status": "downloaded"
+        },
+        {
+            "title": "25. 第一个家",
+            "link": "https://www.qidian.com/chapter/1013641978/439491891/",
+            "status": "downloaded"
+        },
+        {
+            "title": "26. 中餐馆（上）",
+            "link": "https://www.qidian.com/chapter/1013641978/440124055/",
+            "status": "downloaded"
+        },
+        {
+            "title": "27. 中餐馆（下）",
+            "link": "https://www.qidian.com/chapter/1013641978/440587051/",
+            "status": "downloaded"
+        },
+        {
+            "title": "28. 夜店",
+            "link": "https://www.qidian.com/chapter/1013641978/440972159/",
+            "status": "downloaded"
+        },
+        {
+            "title": "29. 飞来横“证”",
+            "link": "https://www.qidian.com/chapter/1013641978/441392078/",
+            "status": "downloaded"
+        },
+        {
+            "title": "30. 找工遇挫",
+            "link": "https://www.qidian.com/chapter/1013641978/442173404/",
+            "status": "downloaded"
+        },
+        {
+            "title": "31. 万事开头难",
+            "link": "https://www.qidian.com/chapter/1013641978/443342998/",
+            "status": "downloaded"
+        },
+        {
+            "title": "32. 仗义",
+            "link": "https://www.qidian.com/chapter/1013641978/444295166/",
+            "status": "downloaded"
+        },
+        {
+            "title": "33. 络腮胡",
+            "link": "https://www.qidian.com/chapter/1013641978/444821650/",
+            "status": "downloaded"
+        },
+        {
+            "title": "34. 打工的人",
+            "link": "https://www.qidian.com/chapter/1013641978/444884197/",
+            "status": "downloaded"
+        },
+        {
+            "title": "35. 计谋",
+            "link": "https://www.qidian.com/chapter/1013641978/445133669/",
+            "status": "downloaded"
+        },
+        {
+            "title": "36. 人不犯我",
+            "link": "https://www.qidian.com/chapter/1013641978/445519638/",
+            "status": "downloaded"
+        },
+        {
+            "title": "37. 2 VS 2",
+            "link": "https://www.qidian.com/chapter/1013641978/445755246/",
+            "status": "downloaded"
+        },
+        {
+            "title": "38. 风波再起",
+            "link": "https://www.qidian.com/chapter/1013641978/445785425/",
+            "status": "downloaded"
+        },
+        {
+            "title": "39. 目标人物",
+            "link": "https://www.qidian.com/chapter/1013641978/446070095/",
+            "status": "downloaded"
+        },
+        {
+            "title": "40. 驾校",
+            "link": "https://www.qidian.com/chapter/1013641978/446185230/",
+            "status": "downloaded"
+        },
+        {
+            "title": "41. 题海战术",
+            "link": "https://www.qidian.com/chapter/1013641978/446249863/",
+            "status": "downloaded"
+        },
+        {
+            "title": "42. 宫保鸡丁",
+            "link": "https://www.qidian.com/chapter/1013641978/446584727/",
+            "status": "downloaded"
+        },
+        {
+            "title": "43. 不速之客",
+            "link": "https://www.qidian.com/chapter/1013641978/446780861/",
+            "status": "downloaded"
+        },
+        {
+            "title": "44. 急救课",
+            "link": "https://www.qidian.com/chapter/1013641978/446915149/",
+            "status": "downloaded"
+        },
+        {
+            "title": "45. 人工呼吸",
+            "link": "https://www.qidian.com/chapter/1013641978/447002600/",
+            "status": "downloaded"
+        },
+        {
+            "title": "46. 疑神疑鬼",
+            "link": "https://www.qidian.com/chapter/1013641978/447085575/",
+            "status": "downloaded"
+        },
+        {
+            "title": "47. 螳螂捕蝉",
+            "link": "https://www.qidian.com/chapter/1013641978/447165537/",
+            "status": "downloaded"
+        },
+        {
+            "title": "48. 报案",
+            "link": "https://www.qidian.com/chapter/1013641978/447251516/",
+            "status": "downloaded"
+        },
+        {
+            "title": "49. 外管局",
+            "link": "https://www.qidian.com/chapter/1013641978/447369101/",
+            "status": "downloaded"
+        },
+        {
+            "title": "50. 三个月",
+            "link": "https://www.qidian.com/chapter/1013641978/447549825/",
+            "status": "downloaded"
+        },
+        {
+            "title": "51. 馅饼还是陷阱",
+            "link": "https://www.qidian.com/chapter/1013641978/447869634/",
+            "status": "downloaded"
+        },
+        {
+            "title": "52. 同盟",
+            "link": "https://www.qidian.com/chapter/1013641978/448142050/",
+            "status": "downloaded"
+        },
+        {
+            "title": "53. 抽佣金的人",
+            "link": "https://www.qidian.com/chapter/1013641978/448408575/",
+            "status": "downloaded"
+        },
+        {
+            "title": "54. 忍耐是成长的必经之路",
+            "link": "https://www.qidian.com/chapter/1013641978/448533697/",
+            "status": "downloaded"
+        },
+        {
+            "title": "55. 示好",
+            "link": "https://www.qidian.com/chapter/1013641978/448627534/",
+            "status": "downloaded"
+        },
+        {
+            "title": "56. 山路难走",
+            "link": "https://www.qidian.com/chapter/1013641978/448766077/",
+            "status": "downloaded"
+        },
+        {
+            "title": "57. 小插曲",
+            "link": "https://www.qidian.com/chapter/1013641978/448884965/",
+            "status": "downloaded"
+        },
+        {
+            "title": "58. 暴雨之前",
+            "link": "https://www.qidian.com/chapter/1013641978/449037501/",
+            "status": "downloaded"
+        },
+        {
+            "title": "59. 雨困野猪林",
+            "link": "https://www.qidian.com/chapter/1013641978/449188228/",
+            "status": "downloaded"
+        },
+        {
+            "title": "60. 被野猪亲吻过后脚跟的男人",
+            "link": "https://www.qidian.com/chapter/1013641978/449356099/",
+            "status": "downloaded"
+        },
+        {
+            "title": "61. 计醉野猪",
+            "link": "https://www.qidian.com/chapter/1013641978/449457389/",
+            "status": "downloaded"
+        },
+        {
+            "title": "62. 巧遇汉斯",
+            "link": "https://www.qidian.com/chapter/1013641978/449519463/",
+            "status": "downloaded"
+        },
+        {
+            "title": "63. 踏破铁鞋无觅处",
+            "link": "https://www.qidian.com/chapter/1013641978/449567355/",
+            "status": "downloaded"
+        },
+        {
+            "title": "64. 穆勒大叔的别墅",
+            "link": "https://www.qidian.com/chapter/1013641978/449725694/",
+            "status": "downloaded"
+        },
+        {
+            "title": "65. 奇怪的声音",
+            "link": "https://www.qidian.com/chapter/1013641978/449765186/",
+            "status": "downloaded"
+        },
+        {
+            "title": "66. 去而复返",
+            "link": "https://www.qidian.com/chapter/1013641978/449856696/",
+            "status": "downloaded"
+        },
+        {
+            "title": "67. 音乐室",
+            "link": "https://www.qidian.com/chapter/1013641978/449941705/",
+            "status": "downloaded"
+        },
+        {
+            "title": "68. 红酒和烤鸭不可兼得",
+            "link": "https://www.qidian.com/chapter/1013641978/450053922/",
+            "status": "downloaded"
+        },
+        {
+            "title": "69. 烤熟的鸭子",
+            "link": "https://www.qidian.com/chapter/1013641978/450100356/",
+            "status": "downloaded"
+        },
+        {
+            "title": "70. 声东击西",
+            "link": "https://www.qidian.com/chapter/1013641978/450202473/",
+            "status": "downloaded"
+        },
+        {
+            "title": "71. 穆勒的故事",
+            "link": "https://www.qidian.com/chapter/1013641978/450343862/",
+            "status": "downloaded"
+        },
+        {
+            "title": "72. 寻宝联盟",
+            "link": "https://www.qidian.com/chapter/1013641978/450458326/",
+            "status": "downloaded"
+        },
+        {
+            "title": "73. 付出就有收获，虽然有时回报不是钱",
+            "link": "https://www.qidian.com/chapter/1013641978/450572271/",
+            "status": "downloaded"
+        },
+        {
+            "title": "74. 密室该怎么逃",
+            "link": "https://www.qidian.com/chapter/1013641978/450699004/",
+            "status": "downloaded"
+        },
+        {
+            "title": "75. 一波三折",
+            "link": "https://www.qidian.com/chapter/1013641978/450836390/",
+            "status": "downloaded"
+        },
+        {
+            "title": "76. 焖炉烤鸭",
+            "link": "https://www.qidian.com/chapter/1013641978/450899368/",
+            "status": "downloaded"
+        },
+        {
+            "title": "77. 劫后余生",
+            "link": "https://www.qidian.com/chapter/1013641978/451058324/",
+            "status": "downloaded"
+        },
+        {
+            "title": "78. 囹圄",
+            "link": "https://www.qidian.com/chapter/1013641978/451194280/",
+            "status": "downloaded"
+        },
+        {
+            "title": "79. 早饭在哪里",
+            "link": "https://www.qidian.com/chapter/1013641978/451323907/",
+            "status": "downloaded"
+        },
+        {
+            "title": "80. 恶人先告状",
+            "link": "https://www.qidian.com/chapter/1013641978/451434043/",
+            "status": "downloaded"
+        },
+        {
+            "title": "81. 一面之词",
+            "link": "https://www.qidian.com/chapter/1013641978/451519943/",
+            "status": "downloaded"
+        },
+        {
+            "title": "82. 雨天的回忆",
+            "link": "https://www.qidian.com/chapter/1013641978/451642565/",
+            "status": "downloaded"
+        },
+        {
+            "title": "83. 迎新会",
+            "link": "https://www.qidian.com/chapter/1013641978/451695065/",
+            "status": "downloaded"
+        },
+        {
+            "title": "84. 竞争者们",
+            "link": "https://www.qidian.com/chapter/1013641978/451864774/",
+            "status": "downloaded"
+        },
+        {
+            "title": "85. 借火",
+            "link": "https://www.qidian.com/chapter/1013641978/451914341/",
+            "status": "downloaded"
+        },
+        {
+            "title": "86. 面试通知",
+            "link": "https://www.qidian.com/chapter/1013641978/452110272/",
+            "status": "downloaded"
+        },
+        {
+            "title": "87. 磨刀不误砍柴工",
+            "link": "https://www.qidian.com/chapter/1013641978/452321383/",
+            "status": "downloaded"
+        },
+        {
+            "title": "公告",
+            "link": "https://www.qidian.com/chapter/1013641978/515366785/",
+            "status": "downloaded"
+        },
+        {
+            "title": "卷一结束语",
+            "link": "https://www.qidian.com/chapter/1013641978/548873864/",
+            "status": "downloaded"
+        },
+        {
+            "title": "2020除夕说",
+            "link": "https://www.qidian.com/chapter/1013641978/626973468/",
+            "status": "downloaded"
+        },
+        {
+            "title": "公告",
+            "link": "https://www.qidian.com/chapter/1013641978/515366785/",
+            "status": "downloaded"
+        },
+        {
+            "title": "2021除夕说",
+            "link": "https://www.qidian.com/chapter/1013641978/691499631/",
+            "status": "downloaded"
+        },
+        {
+            "title": "写在2022年的边儿边儿上",
+            "link": "https://www.qidian.com/chapter/1013641978/740141470/",
+            "status": "downloaded"
+        },
+        {
+            "title": "写在2023年的边儿边儿上",
+            "link": "https://www.qidian.com/chapter/1013641978/777723004/",
+            "status": "downloaded"
+        },
+        {
+            "title": "写在2024年的边儿边儿上",
+            "link": "https://www.qidian.com/chapter/1013641978/822883514/",
+            "status": "downloaded"
+        }
+    ]
+}

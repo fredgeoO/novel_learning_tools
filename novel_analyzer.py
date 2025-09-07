@@ -346,8 +346,8 @@ async def main():
     # --- 大规模处理任务 ---
     await process_top_novels_and_chapters(
         model_type="qwen_web",  # 可改为 "ollama"
-        top_n=100,  # 处理前5本小说
-        chapters_per_novel=3  # 每本处理前3章
+        top_n=100,  # 处理前100本小说
+        chapters_per_novel=10  # 每本处理前3章
     )
 
     print("\n--- 所有分析任务执行完毕 ---")

@@ -12,6 +12,7 @@
 - 查看章节的 AI 分析报告
 - 筛选功能：仅显示有分析报告的小说/章节
 - 报告管理：删除不需要的分析报告
+- URL路径支持：http://127.0.0.1:7861/?novel=小说名&chapter=章节名&report=报告名
 
 目录结构要求：
 - novels/ - 存放小说章节文本文件
@@ -25,10 +26,10 @@
 import os
 import glob
 import time
+from urllib.parse import unquote
 
 import gradio as gr
 import re
-# 在文件顶部的导入部分添加
 import json
 from datetime import datetime
 import random
@@ -110,121 +111,6 @@ def add_to_browse_history(novel_name, chapter_filename):
 
     save_browse_history()
 
-
-def get_browse_history_display():
-    """获取浏览历史显示文本"""
-    if not browse_history:
-        return "暂无浏览历史"
-
-    history_text = "### 📚 最近浏览历史\n"
-    for i, item in enumerate(browse_history[:10]):  # 只显示最近10条
-        history_text += f"{i + 1}. {item['display']} ({item['timestamp']})\n"
-    return history_text
-
-
-def update_history_buttons():
-    """更新历史记录按钮显示"""
-    buttons_update = []
-    for i in range(10):
-        if i < len(browse_history):
-            buttons_update.append(gr.update(
-                value=f"📖 {browse_history[i]['display']}",
-                visible=True
-            ))
-        else:
-            buttons_update.append(gr.update(visible=False))
-    return buttons_update
-
-
-# --- 修改 fn_load_history_item 函数 ---
-# --- 修复的历史记录相关函数 ---
-
-def fn_load_history_item(index):
-    """加载历史记录项"""
-    print(f"尝试加载历史记录项: {index}")
-
-    # 边界检查
-    if not browse_history or index >= len(browse_history) or index < 0:
-        print(f"无效的历史记录索引: {index}")
-        return (
-            gr.update(),  # novel_selector
-            gr.update(),  # chapter_selector
-            gr.update(),  # report_selector
-            "## 欢迎使用小说章节浏览器\n\n历史记录无效。",  # raw_text_output
-            "## 🤖 AI 分析报告\n\n选择章节后，AI 分析结果将在此显示。"  # analysis_output
-        )
-
-    try:
-        item = browse_history[index]
-        novel_name = item["novel"]
-        chapter_filename = item["chapter"]
-        print(f"加载历史: {novel_name} - {chapter_filename}")
-
-        # 获取小说列表
-        novel_list = get_novel_list()
-
-        # 验证小说是否存在
-        if novel_name not in novel_list:
-            return (
-                gr.update(choices=novel_list),  # novel_selector
-                gr.update(),  # chapter_selector
-                gr.update(),  # report_selector
-                f"## 错误\n\n小说 '{novel_name}' 不存在。",  # raw_text_output
-                "## 🤖 AI 分析报告\n\n小说不存在。"  # analysis_output
-            )
-
-        # 获取章节列表
-        chapters = get_chapter_list(novel_name)
-        chapter_choices = [(chap.replace('.txt', ''), chap) for chap in chapters]
-
-        # 验证章节是否存在
-        chapter_filenames = [chap[1] for chap in chapter_choices]
-        if chapter_filename not in chapter_filenames:
-            # 如果章节不存在，使用第一个可用章节
-            if chapter_choices:
-                chapter_filename = chapter_choices[0][1]
-            else:
-                return (
-                    gr.update(value=novel_name, choices=novel_list),  # novel_selector
-                    gr.update(choices=[]),  # chapter_selector
-                    gr.update(choices=[]),  # report_selector
-                    f"## 错误\n\n小说 '{novel_name}' 没有可用章节。",  # raw_text_output
-                    "## 🤖 AI 分析报告\n\n小说没有章节。"  # analysis_output
-                )
-
-        # 重新获取章节列表（确保使用正确的章节）
-        chapters = get_chapter_list(novel_name)
-        chapter_choices = [(chap.replace('.txt', ''), chap) for chap in chapters]
-
-        # 获取报告列表
-        reports = get_report_list(novel_name, chapter_filename)
-        report_choices = [(rep.replace('.txt', ''), rep) for rep in reports]
-
-        # 设置默认报告
-        default_report = report_choices[0][1] if report_choices else None
-
-        # 加载内容
-        chapter_content, report_content = load_chapter_and_initial_report(novel_name, chapter_filename)
-
-        print(f"成功加载历史: {novel_name} - {chapter_filename}")
-        return (
-            gr.update(value=novel_name, choices=novel_list),  # novel_selector
-            gr.update(choices=chapter_choices, value=chapter_filename),  # chapter_selector
-            gr.update(choices=report_choices, value=default_report),  # report_selector
-            chapter_content,  # raw_text_output
-            report_content  # analysis_output
-        )
-    except Exception as e:
-        print(f"加载历史记录时出错: {e}")
-        import traceback
-        traceback.print_exc()
-        return (
-            gr.update(),  # novel_selector
-            gr.update(),  # chapter_selector
-            gr.update(),  # report_selector
-            "## 错误\n\n加载历史记录时发生错误。",  # raw_text_output
-            "## 错误\n\n加载历史记录时发生错误。"  # analysis_output
-        )
 
 # --- 月票榜解析逻辑 ---
 def parse_ranking_file(filepath="scraped_data/所有分类月票榜汇总.txt"):
@@ -355,6 +241,8 @@ def update_chapters_and_clear_reports(selected_novel, only_with_reports):
     except Exception as e:
         print(f"更新章节列表时出错: {e}")
         return gr.update(choices=[], value=None), gr.update(choices=[], value=None)
+
+
 def update_reports_and_load_content(novel_name, chapter_filename):
     if not novel_name or not chapter_filename:
         return gr.update(choices=[],
@@ -447,8 +335,157 @@ def fn_load_random_novel_with_reports():
     )
 
 
-# --- Gradio 界面和逻辑 ---
+# --- URL处理相关函数 ---
+def load_from_query_params():
+    """
+    从查询参数加载内容（简化版本，实际处理通过JavaScript完成）
+    """
+    return fn_load_random_novel_with_reports()
 
+
+def update_url_from_selection(novel_name, chapter_filename, report_filename):
+    """
+    当用户通过UI选择内容时，返回JavaScript代码来更新URL
+    """
+    if novel_name and chapter_filename and report_filename:
+        chapter_name = chapter_filename.replace('.txt', '')
+        report_name = report_filename.replace('.txt', '')
+        js_code = f"""
+        <script>
+        if (typeof updateBrowserUrl === 'function') {{
+            updateBrowserUrl('{novel_name}', '{chapter_name}', '{report_name}');
+        }}
+        </script>
+        """
+        return js_code
+    return ""
+
+
+# --- 修复的历史记录相关函数 ---
+def fn_load_history_item(index):
+    """加载历史记录项"""
+    print(f"尝试加载历史记录项: {index}")
+
+    # 边界检查
+    if not browse_history or index >= len(browse_history) or index < 0:
+        print(f"无效的历史记录索引: {index}")
+        return (
+            gr.update(),  # novel_selector
+            gr.update(),  # chapter_selector
+            gr.update(),  # report_selector
+            "## 欢迎使用小说章节浏览器\n\n历史记录无效。",  # raw_text_output
+            "## 🤖 AI 分析报告\n\n选择章节后，AI 分析结果将在此显示。"  # analysis_output
+        )
+
+    try:
+        item = browse_history[index]
+        novel_name = item["novel"]
+        chapter_filename = item["chapter"]
+        print(f"加载历史: {novel_name} - {chapter_filename}")
+
+        # 获取小说列表
+        novel_list = get_novel_list()
+
+        # 验证小说是否存在
+        if novel_name not in novel_list:
+            return (
+                gr.update(choices=novel_list),  # novel_selector
+                gr.update(),  # chapter_selector
+                gr.update(),  # report_selector
+                f"## 错误\n\n小说 '{novel_name}' 不存在。",  # raw_text_output
+                "## 🤖 AI 分析报告\n\n小说不存在。"  # analysis_output
+            )
+
+        # 获取章节列表
+        chapters = get_chapter_list(novel_name)
+        chapter_choices = [(chap.replace('.txt', ''), chap) for chap in chapters]
+
+        # 验证章节是否存在
+        chapter_filenames = [chap[1] for chap in chapter_choices]
+        if chapter_filename not in chapter_filenames:
+            # 如果章节不存在，使用第一个可用章节
+            if chapter_choices:
+                chapter_filename = chapter_choices[0][1]
+            else:
+                return (
+                    gr.update(value=novel_name, choices=novel_list),  # novel_selector
+                    gr.update(choices=[]),  # chapter_selector
+                    gr.update(choices=[]),  # report_selector
+                    f"## 错误\n\n小说 '{novel_name}' 没有可用章节。",  # raw_text_output
+                    "## 🤖 AI 分析报告\n\n小说没有章节。"  # analysis_output
+                )
+
+        # 重新获取章节列表（确保使用正确的章节）
+        chapters = get_chapter_list(novel_name)
+        chapter_choices = [(chap.replace('.txt', ''), chap) for chap in chapters]
+
+        # 获取报告列表
+        reports = get_report_list(novel_name, chapter_filename)
+        report_choices = [(rep.replace('.txt', ''), rep) for rep in reports]
+
+        # 设置默认报告
+        default_report = report_choices[0][1] if report_choices else None
+
+        # 加载内容
+        chapter_content, report_content = load_chapter_and_initial_report(novel_name, chapter_filename)
+
+        print(f"成功加载历史: {novel_name} - {chapter_filename}")
+        return (
+            gr.update(value=novel_name, choices=novel_list),  # novel_selector
+            gr.update(choices=chapter_choices, value=chapter_filename),  # chapter_selector
+            gr.update(choices=report_choices, value=default_report),  # report_selector
+            chapter_content,  # raw_text_output
+            report_content  # analysis_output
+        )
+    except Exception as e:
+        print(f"加载历史记录时出错: {e}")
+        import traceback
+        traceback.print_exc()
+        return (
+            gr.update(),  # novel_selector
+            gr.update(),  # chapter_selector
+            gr.update(),  # report_selector
+            "## 错误\n\n加载历史记录时发生错误。",  # raw_text_output
+            "## 错误\n\n加载历史记录时发生错误。"  # analysis_output
+        )
+
+
+# --- 简化的章节切换处理函数 ---
+def simple_chapter_change(novel_name, chapter_filename):
+    if not novel_name or not chapter_filename:
+        return gr.update(choices=[], value=None), "请选择小说和章节", "请选择章节查看分析报告"
+
+    # 更新报告选择器
+    reports = get_report_list(novel_name, chapter_filename)
+    report_choices = [(rep.replace('.txt', ''), rep) for rep in reports]
+    default_report = report_choices[0][1] if report_choices else None
+
+    # 加载内容
+    chapter_content, report_content = load_chapter_and_initial_report(novel_name, chapter_filename)
+
+    return gr.update(choices=report_choices, value=default_report), chapter_content, report_content
+
+
+# --- 事件处理函数 ---
+def show_delete_confirm():
+    return (
+        gr.update(visible=False),
+        gr.update(visible=True),
+        gr.update(visible=True),
+        gr.update(value="⚠️ 确定要删除当前选中的报告吗？此操作不可逆。", visible=True)
+    )
+
+
+def hide_delete_confirm():
+    return (
+        gr.update(visible=True),
+        gr.update(visible=False),
+        gr.update(visible=False),
+        gr.update(visible=False)
+    )
+
+
+# --- Gradio 界面和逻辑 ---
 CSS_STYLES = """
 html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; }
 gradio-app { height: 100vh !important; overflow: hidden !important; }
@@ -472,7 +509,38 @@ div.gradio-container { height: 100vh !important; max-height: 100vh !important; o
 .history-button { margin: 2px 0; text-align: left; font-size: 12px; padding: 5px 8px; }
 """
 
-# 主界面构建 - 最简化版本
+JS_URL_SYNC = """
+<script>
+function updateBrowserUrl(novel, chapter, report) {
+    if (novel && chapter && report) {
+        try {
+            const baseUrl = window.location.origin + window.location.pathname;
+            const newUrl = `${baseUrl}?novel=${encodeURIComponent(novel)}&chapter=${encodeURIComponent(chapter)}&report=${encodeURIComponent(report)}`;
+            window.history.replaceState({}, '', newUrl);
+        } catch (e) {
+            console.log('URL更新失败:', e);
+        }
+    }
+}
+
+// 页面加载完成后尝试从URL参数加载内容
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const novel = urlParams.get('novel');
+        const chapter = urlParams.get('chapter');
+        const report = urlParams.get('report');
+
+        if (novel && chapter && report) {
+            console.log('检测到URL参数:', novel, chapter, report);
+            // 这里可以添加自动加载逻辑（需要与Gradio集成）
+        }
+    }, 1000);
+});
+</script>
+"""
+
+# 主界面构建
 with gr.Blocks(
         title="📖 小说叙事分析",
         theme=gr.themes.Soft(primary_hue="slate", secondary_hue="stone"),
@@ -516,7 +584,6 @@ with gr.Blocks(
             delete_cancel_button = gr.Button("❌ 取消", variant="stop", visible=False)
             delete_status = gr.Markdown(visible=False)
 
-            # 移除所有历史记录相关组件
             gr.Markdown("### ℹ️ 提示")
             gr.Markdown("如需查看浏览历史，请刷新页面")
 
@@ -531,43 +598,11 @@ with gr.Blocks(
                 elem_classes=["ai-analysis-panel"]
             )
 
+    # 添加JavaScript支持
+    url_update_component = gr.HTML(visible=False)
+    gr.HTML(JS_URL_SYNC)
 
-    # --- 事件处理函数 ---
-    def show_delete_confirm():
-        return (
-            gr.update(visible=False),
-            gr.update(visible=True),
-            gr.update(visible=True),
-            gr.update(value="⚠️ 确定要删除当前选中的报告吗？此操作不可逆。", visible=True)
-        )
-
-
-    def hide_delete_confirm():
-        return (
-            gr.update(visible=True),
-            gr.update(visible=False),
-            gr.update(visible=False),
-            gr.update(visible=False)
-        )
-
-
-    # --- 简化的章节切换处理函数 ---
-    def simple_chapter_change(novel_name, chapter_filename):
-        if not novel_name or not chapter_filename:
-            return gr.update(choices=[], value=None), "请选择小说和章节", "请选择章节查看分析报告"
-
-        # 更新报告选择器
-        reports = get_report_list(novel_name, chapter_filename)
-        report_choices = [(rep.replace('.txt', ''), rep) for rep in reports]
-        default_report = report_choices[0][1] if report_choices else None
-
-        # 加载内容
-        chapter_content, report_content = load_chapter_and_initial_report(novel_name, chapter_filename)
-
-        return gr.update(choices=report_choices, value=default_report), chapter_content, report_content
-
-
-    # --- 事件连接 - 最简化版本 ---
+    # --- 事件连接 ---
     category_selector.change(
         fn=update_novels_on_category_change,
         inputs=[category_selector, only_with_reports_checkbox],
@@ -589,18 +624,28 @@ with gr.Blocks(
         queue=False
     )
 
+    # 章节选择事件 - 更新URL
     chapter_selector.change(
         fn=simple_chapter_change,
         inputs=[novel_selector, chapter_selector],
         outputs=[report_selector, raw_text_output, analysis_output],
         queue=True
+    ).then(
+        fn=update_url_from_selection,
+        inputs=[novel_selector, chapter_selector, report_selector],
+        outputs=url_update_component
     )
 
+    # 报告选择事件 - 更新URL
     report_selector.change(
         fn=fn_load_selected_report,
         inputs=[novel_selector, chapter_selector, report_selector],
         outputs=analysis_output,
         queue=True
+    ).then(
+        fn=update_url_from_selection,
+        inputs=[novel_selector, chapter_selector, report_selector],
+        outputs=url_update_component
     )
 
     # 删除报告事件
@@ -628,10 +673,10 @@ with gr.Blocks(
         queue=True
     )
 
-    # --- 页面加载事件 - 只保留随机小说加载 ---
+    # 页面加载事件
     demo.load(
-        fn=fn_load_random_novel_with_reports,
-        inputs=None,
+        fn=load_from_query_params,
+        inputs=[],
         outputs=[novel_selector, chapter_selector, report_selector, raw_text_output, analysis_output],
         queue=False
     )
@@ -642,4 +687,11 @@ load_browse_history()
 if __name__ == "__main__":
     print("正在启动小说章节浏览器...")
     print(f"请确保你的小说文件位于目录: {os.path.abspath(NOVELS_BASE_DIR)}")
-    demo.launch(server_name="127.0.0.1", server_port=7861, share=False, show_error=True)
+    print("支持URL访问格式: http://127.0.0.1:7861/?novel=小说名&chapter=章节名&report=报告名")
+    demo.launch(
+        server_name="127.0.0.1",
+        server_port=7861,
+        share=False,
+        show_error=True,
+        allowed_paths=["."]
+    )

@@ -505,6 +505,7 @@ def load_report_content(novel_name, chapter_filename, report_filename):
         # 1. 过滤掉 <think> 标签及其内容
         content_without_think = filter_think_tags(raw_content)
 
+        """
         # 2. 按行分割，过滤掉少于3个字符的非Markdown格式行
         lines = content_without_think.splitlines()
         filtered_lines = []
@@ -517,8 +518,10 @@ def load_report_content(novel_name, chapter_filename, report_filename):
             elif is_markdown_format_line(stripped_line):
                 filtered_lines.append(line)
             # 否则过滤掉（字符数<3且非Markdown格式）
-
-        final_content = '\n'.join(filtered_lines)
+            
+            final_content = '\n'.join(filtered_lines)
+        """
+        final_content = content_without_think
 
         return final_content
     except Exception as e:

@@ -1,0 +1,507 @@
+{
+    "novel_id": "1011351933",
+    "bookname": "我有一座山",
+    "save_dir": "novels\\我有一座山",
+    "chapters": [
+        {
+            "title": "第一章 离婚",
+            "link": "https://www.qidian.com/chapter/1011351933/398542895/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章 兄弟",
+            "link": "https://www.qidian.com/chapter/1011351933/398547091/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章 现实",
+            "link": "https://www.qidian.com/chapter/1011351933/398628652/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章 老宅",
+            "link": "https://www.qidian.com/chapter/1011351933/398661572/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章 怪异",
+            "link": "https://www.qidian.com/chapter/1011351933/398777134/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六章 怪梦",
+            "link": "https://www.qidian.com/chapter/1011351933/398780192/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七章 开荒",
+            "link": "https://www.qidian.com/chapter/1011351933/398982268/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八章 桔梗",
+            "link": "https://www.qidian.com/chapter/1011351933/399018815/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九章 老窑厂",
+            "link": "https://www.qidian.com/chapter/1011351933/399072441/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十章 迈出了一大步",
+            "link": "https://www.qidian.com/chapter/1011351933/399137155/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十一章 工程车进场",
+            "link": "https://www.qidian.com/chapter/1011351933/399175935/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十二章 有鱼",
+            "link": "https://www.qidian.com/chapter/1011351933/399250381/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十三章 上山 失望？",
+            "link": "https://www.qidian.com/chapter/1011351933/399261138/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十四章 老妖怪",
+            "link": "https://www.qidian.com/chapter/1011351933/399338958/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十五章 我这还有",
+            "link": "https://www.qidian.com/chapter/1011351933/399452382/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十六章 来得快 去得快",
+            "link": "https://www.qidian.com/chapter/1011351933/399466067/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十七章 规划农场",
+            "link": "https://www.qidian.com/chapter/1011351933/399589967/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十八章 日子一天天过",
+            "link": "https://www.qidian.com/chapter/1011351933/399742840/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十九章 烧烤 钓鱼",
+            "link": "https://www.qidian.com/chapter/1011351933/399816397/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十章 你干啥了",
+            "link": "https://www.qidian.com/chapter/1011351933/399837410/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十一章 疯狂的湖水",
+            "link": "https://www.qidian.com/chapter/1011351933/399888705/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十二章 专业不对口",
+            "link": "https://www.qidian.com/chapter/1011351933/400033272/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十三章 心大",
+            "link": "https://www.qidian.com/chapter/1011351933/400092538/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十四章 趴窝里",
+            "link": "https://www.qidian.com/chapter/1011351933/400102593/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十五章 你要发财了",
+            "link": "https://www.qidian.com/chapter/1011351933/400262116/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十六章 我还没吃饭呢",
+            "link": "https://www.qidian.com/chapter/1011351933/400382239/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十七章 谁人无过去",
+            "link": "https://www.qidian.com/chapter/1011351933/400431693/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十八章 美女技工",
+            "link": "https://www.qidian.com/chapter/1011351933/400457058/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十九章 瞅你那点出息",
+            "link": "https://www.qidian.com/chapter/1011351933/400615992/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十章 再去药都",
+            "link": "https://www.qidian.com/chapter/1011351933/400635320/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十一章 粗人",
+            "link": "https://www.qidian.com/chapter/1011351933/400717717/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十二章 盛世华宴",
+            "link": "https://www.qidian.com/chapter/1011351933/400788439/",
+            "status": "downloaded"
+        },
+        {
+            "title": "三十三章 琴姐",
+            "link": "https://www.qidian.com/chapter/1011351933/400806003/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十四章 成交",
+            "link": "https://www.qidian.com/chapter/1011351933/400893763/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十五章 广场舞",
+            "link": "https://www.qidian.com/chapter/1011351933/400976538/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十六章 别打我闺女主意",
+            "link": "https://www.qidian.com/chapter/1011351933/401201835/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十七章 不知当讲不当讲",
+            "link": "https://www.qidian.com/chapter/1011351933/401246484/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十八章 家庭农场",
+            "link": "https://www.qidian.com/chapter/1011351933/401518362/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十九章 扎心了闺女",
+            "link": "https://www.qidian.com/chapter/1011351933/401542929/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十章 老不正经",
+            "link": "https://www.qidian.com/chapter/1011351933/401809439/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十一章 老同学",
+            "link": "https://www.qidian.com/chapter/1011351933/401823877/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十二章 猛禽",
+            "link": "https://www.qidian.com/chapter/1011351933/401983809/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十三章 放鱼 送菜",
+            "link": "https://www.qidian.com/chapter/1011351933/402331714/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十四章 疯狂的果蔬",
+            "link": "https://www.qidian.com/chapter/1011351933/402435203/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十五章 小狐狸",
+            "link": "https://www.qidian.com/chapter/1011351933/402470590/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十六章 李先生",
+            "link": "https://www.qidian.com/chapter/1011351933/402526667/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十七章 偶遇",
+            "link": "https://www.qidian.com/chapter/1011351933/402617533/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十八章 去泰国了？",
+            "link": "https://www.qidian.com/chapter/1011351933/402637619/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十九章 不一样的刘掌柜",
+            "link": "https://www.qidian.com/chapter/1011351933/402644386/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十章 天价菜单",
+            "link": "https://www.qidian.com/chapter/1011351933/402789519/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十一章 国家机密",
+            "link": "https://www.qidian.com/chapter/1011351933/402802487/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十二章 咱们打牌吧",
+            "link": "https://www.qidian.com/chapter/1011351933/402883401/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十三章 活性因子",
+            "link": "https://www.qidian.com/chapter/1011351933/402957624/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十四章 能动手就别吵吵",
+            "link": "https://www.qidian.com/chapter/1011351933/402970427/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十五章 你俩干啥呢",
+            "link": "https://www.qidian.com/chapter/1011351933/402978960/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十六章 一加一不一定等于二",
+            "link": "https://www.qidian.com/chapter/1011351933/403052868/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十七章 谁先动的手",
+            "link": "https://www.qidian.com/chapter/1011351933/403303505/",
+            "status": "downloaded"
+        },
+        {
+            "title": "五十八章 你们看我咋样",
+            "link": "https://www.qidian.com/chapter/1011351933/403314649/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十章 智商碾压",
+            "link": "https://www.qidian.com/chapter/1011351933/403399454/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十一章 你们还年轻",
+            "link": "https://www.qidian.com/chapter/1011351933/403567308/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十二章 你牛",
+            "link": "https://www.qidian.com/chapter/1011351933/403583668/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十三章 香椿",
+            "link": "https://www.qidian.com/chapter/1011351933/403743696/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十四章 草莓呢",
+            "link": "https://www.qidian.com/chapter/1011351933/403839764/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十五章 葡萄跟黄鳝是绝配",
+            "link": "https://www.qidian.com/chapter/1011351933/403927450/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十六章 我吃肉不会少了你的骨头",
+            "link": "https://www.qidian.com/chapter/1011351933/404024420/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十七章 该赏",
+            "link": "https://www.qidian.com/chapter/1011351933/404181445/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十八章 女神堕凡",
+            "link": "https://www.qidian.com/chapter/1011351933/404205883/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十九章 头生犄角",
+            "link": "https://www.qidian.com/chapter/1011351933/404277709/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十一章 女暴龙",
+            "link": "https://www.qidian.com/chapter/1011351933/404395238/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十二章 造孽啊",
+            "link": "https://www.qidian.com/chapter/1011351933/404488671/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十三章 鸡汤",
+            "link": "https://www.qidian.com/chapter/1011351933/404608719/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十四章 躺枪",
+            "link": "https://www.qidian.com/chapter/1011351933/404735102/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十五章 耐克",
+            "link": "https://www.qidian.com/chapter/1011351933/404735162/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十六章 最近上火",
+            "link": "https://www.qidian.com/chapter/1011351933/404735191/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十七章 陆首长",
+            "link": "https://www.qidian.com/chapter/1011351933/404735228/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十八章 死道友不死贫道",
+            "link": "https://www.qidian.com/chapter/1011351933/404735329/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十九章 陆氏集团",
+            "link": "https://www.qidian.com/chapter/1011351933/404735372/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十章 是你个逗比啊",
+            "link": "https://www.qidian.com/chapter/1011351933/404735386/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十一章 爱好广泛",
+            "link": "https://www.qidian.com/chapter/1011351933/404735406/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十二章 我还有事",
+            "link": "https://www.qidian.com/chapter/1011351933/404735443/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十三章 赶紧把你媳妇拉回去",
+            "link": "https://www.qidian.com/chapter/1011351933/404735474/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十四章咸吃萝卜淡（蛋）操心",
+            "link": "https://www.qidian.com/chapter/1011351933/404735519/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十五章 特供",
+            "link": "https://www.qidian.com/chapter/1011351933/404735544/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十六章 你喜欢就好",
+            "link": "https://www.qidian.com/chapter/1011351933/404735588/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十七章 喝四杯",
+            "link": "https://www.qidian.com/chapter/1011351933/405762632/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十八章 很随意",
+            "link": "https://www.qidian.com/chapter/1011351933/405913562/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十九章 这好像是条鱼",
+            "link": "https://www.qidian.com/chapter/1011351933/405929860/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十章 青椒酿肉",
+            "link": "https://www.qidian.com/chapter/1011351933/406017529/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十一章 最有出息的一届",
+            "link": "https://www.qidian.com/chapter/1011351933/406109920/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十二章 贫穷限制了你的想象",
+            "link": "https://www.qidian.com/chapter/1011351933/406118623/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十三章 灯笼果",
+            "link": "https://www.qidian.com/chapter/1011351933/406264384/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十四章 远嫁",
+            "link": "https://www.qidian.com/chapter/1011351933/406293324/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十五章 必须要买",
+            "link": "https://www.qidian.com/chapter/1011351933/406297733/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十六章 之前 之后",
+            "link": "https://www.qidian.com/chapter/1011351933/406390216/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十七章 束脩",
+            "link": "https://www.qidian.com/chapter/1011351933/406477379/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十八章 形象颠覆",
+            "link": "https://www.qidian.com/chapter/1011351933/406560356/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十九章 相濡以沫",
+            "link": "https://www.qidian.com/chapter/1011351933/406643832/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第一百章 那时候的时光总是快乐的",
+            "link": "https://www.qidian.com/chapter/1011351933/406653950/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第一百零一章 站炉子",
+            "link": "https://www.qidian.com/chapter/1011351933/406703791/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第一百零二章 排骨宴",
+            "link": "https://www.qidian.com/chapter/1011351933/406828632/",
+            "status": "downloaded"
+        }
+    ]
+}

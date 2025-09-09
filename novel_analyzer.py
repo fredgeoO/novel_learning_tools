@@ -211,36 +211,45 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         print("无法读取月票榜文件，终止任务。")
         return
 
-    # 解析月票榜文件，提取"全部"分类下的小说名
+    # --- 修改后的解析逻辑开始 ---
     novel_names = []
-    in_all_category = False
-    current_rank = 0
+    lines = ranking_content.splitlines()
+    in_any_category = False # 标记是否在任何一个分类内
 
-    for line in ranking_content.splitlines():
+    for line in lines:
         line = line.strip()
-        if line.startswith("==== 全部 ===="):
-            in_all_category = True
-            current_rank = 0
-            continue
-        if in_all_category:
-            if line.startswith("====") and line != "==== 全部 ====":
-                # 遇到下一个分类，停止读取
-                break
-            # 匹配排名行，例如 " 1. 《苟在初圣魔门当人材》 - https://..."
+
+        # 遇到新的分类标题 (例如 "==== 军事 ====")
+        if line.startswith("====") and line.endswith("===="):
+            in_any_category = True
+            # current_rank_per_category = 0 # 如果需要限制每个分类的数量，可以启用
+            continue # 跳过分类标题行本身
+
+        # 如果已经进入某个分类，且该行是小说条目 (例如 " 1. 《小说名》 - https://...")
+        if in_any_category:
             match = re.match(r'^\s*\d+\.\s*《(.+?)》\s*-', line)
             if match:
-                current_rank += 1
+                # current_rank_per_category += 1 # 如果需要限制每个分类的数量，可以启用
                 novel_name = match.group(1).strip()
-                novel_names.append(novel_name)
-                if current_rank >= 100:  # 最多读取100个
-                    break
+                # 去重并添加
+                if novel_name and novel_name not in novel_names:
+                    novel_names.append(novel_name)
+                # 检查是否已达到目标数量
+                if len(novel_names) >= top_n:
+                    break # 收集够了就停止解析
 
-    if not novel_names:
+        # (可选) 如果需要在特定条件下退出分类解析（例如处理完一个分类或遇到特定标记）
+        # 可以在这里添加逻辑，但通常遍历整个文件直到收集够小说即可
+
+    # 截取前 top_n 本小说
+    selected_novels = novel_names[:top_n]
+    # --- 修改后的解析逻辑结束 ---
+
+    if not selected_novels:
         print("警告: 未从月票榜文件中解析出任何小说名称。")
         return
 
-    selected_novels = novel_names[:top_n]
-    print(f"选取的前 {top_n} 本小说: {selected_novels}")
+    print(f"选取的前 {len(selected_novels)} 本小说: {selected_novels}")
 
     # 2. 获取所有提示词文件名（不含 .txt）
     if not os.path.exists(PROMPTS_BASE_DIR):
@@ -282,7 +291,7 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
 
     print(f"共生成 {len(tasks_to_run)} 个分析任务。")
 
-    # 4. 异步执行所有任务
+    # 4. 异步执行所有任务 (这部分保持不变)
     semaphore = asyncio.Semaphore(5)  # 控制并发数防止浏览器过多或资源耗尽
 
     async def limited_analyze(task):
@@ -296,7 +305,6 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
     await asyncio.gather(*coroutines)
 
     print("\n--- 所有大规模分析任务执行完毕 ---")
-
 
 # --- 示例用法 / 批量处理入口 ---
 async def main():
@@ -348,6 +356,12 @@ async def main():
         model_type="qwen_web",  # 可改为 "ollama"
         top_n=100,  # 处理前100本小说
         chapters_per_novel=10  # 每本处理前3章
+    )
+
+    await process_top_novels_and_chapters(
+        model_type="qwen_web",  # 可改为 "ollama"
+        top_n=100,  # 处理前100本小说
+        chapters_per_novel=100  # 每本处理100章
     )
 
     print("\n--- 所有分析任务执行完毕 ---")

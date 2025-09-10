@@ -1,0 +1,457 @@
+{
+    "novel_id": "1044761912",
+    "bookname": "卡牌战棋：词条从无头骑士开始",
+    "save_dir": "novels\\卡牌战棋：词条从无头骑士开始",
+    "chapters": [
+        {
+            "title": "第一章 开场来段CG是吧",
+            "link": "https://www.qidian.com/chapter/1044761912/841174563/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章 不死系招你惹你了？",
+            "link": "https://www.qidian.com/chapter/1044761912/841179677/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章 魔像棋对战演示",
+            "link": "https://www.qidian.com/chapter/1044761912/841251727/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章 对抗竞技，重点是情报战！",
+            "link": "https://www.qidian.com/chapter/1044761912/841307378/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章 【木乃伊】学长",
+            "link": "https://www.qidian.com/chapter/1044761912/841413341/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六章 克劳斯的第一枚棋子",
+            "link": "https://www.qidian.com/chapter/1044761912/841413257/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七章 【被斩首的骑士】",
+            "link": "https://www.qidian.com/chapter/1044761912/841506705/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八章 失败……诶，没失败",
+            "link": "https://www.qidian.com/chapter/1044761912/841521492/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九章 腐败的无首骑士",
+            "link": "https://www.qidian.com/chapter/1044761912/841546345/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十章 【精灵】教授",
+            "link": "https://www.qidian.com/chapter/1044761912/841598325/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十一章 获得材料的方式",
+            "link": "https://www.qidian.com/chapter/1044761912/841782875/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十二章 先定个小目标",
+            "link": "https://www.qidian.com/chapter/1044761912/841782960/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十三章 骑士院（x）动物园（√）",
+            "link": "https://www.qidian.com/chapter/1044761912/841789855/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十四章 野性直觉",
+            "link": "https://www.qidian.com/chapter/1044761912/841865530/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十五章 骑士院的召唤课",
+            "link": "https://www.qidian.com/chapter/1044761912/841915297/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十六章 打手沙克",
+            "link": "https://www.qidian.com/chapter/1044761912/841920200/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十七章 奇怪的【鸦】棋子",
+            "link": "https://www.qidian.com/chapter/1044761912/842036945/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十八章 潘瑟·弗勒斯的观察日志",
+            "link": "https://www.qidian.com/chapter/1044761912/842037354/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十九章 霍霍沃兹的决斗场",
+            "link": "https://www.qidian.com/chapter/1044761912/842309955/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十章 第一次棋战",
+            "link": "https://www.qidian.com/chapter/1044761912/842323215/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十一章 【好奇的幼豹】",
+            "link": "https://www.qidian.com/chapter/1044761912/842417368/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十二章 【豹形树妖】",
+            "link": "https://www.qidian.com/chapter/1044761912/842429817/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十三章 莱博忒的基盘效果",
+            "link": "https://www.qidian.com/chapter/1044761912/842510149/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十四章 最后的棋子",
+            "link": "https://www.qidian.com/chapter/1044761912/842598860/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十五章 一切战术转换家",
+            "link": "https://www.qidian.com/chapter/1044761912/842515858/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十六章 懂哥mr.潘瑟",
+            "link": "https://www.qidian.com/chapter/1044761912/842588104/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十七章 这叫战术欺骗！（正声）",
+            "link": "https://www.qidian.com/chapter/1044761912/842747379/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十八章 餐厅与变形咒",
+            "link": "https://www.qidian.com/chapter/1044761912/842753207/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十九章 苔歌·弗勒斯",
+            "link": "https://www.qidian.com/chapter/1044761912/842761977/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十章 没有效果的凡骨棋",
+            "link": "https://www.qidian.com/chapter/1044761912/842891702/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十一章 小小的也很可爱",
+            "link": "https://www.qidian.com/chapter/1044761912/842904005/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十二章 【神奇生物在这里】结社",
+            "link": "https://www.qidian.com/chapter/1044761912/842968609/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十三章 自找麻烦的【蝙蝠】芭特",
+            "link": "https://www.qidian.com/chapter/1044761912/843010243/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十四章 学生仔的正确使用方法",
+            "link": "https://www.qidian.com/chapter/1044761912/843016280/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十五章 即将到来的魔像课",
+            "link": "https://www.qidian.com/chapter/1044761912/843064675/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十六章 【魔像】教授的不明规则",
+            "link": "https://www.qidian.com/chapter/1044761912/843154743/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十七章 对战【吸血鬼】布拉德",
+            "link": "https://www.qidian.com/chapter/1044761912/843159053/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十八章 【无谋的吸血鬼】",
+            "link": "https://www.qidian.com/chapter/1044761912/843200904/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十九章 布拉德的计策",
+            "link": "https://www.qidian.com/chapter/1044761912/843329602/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十章 什么叫不死系内战大哥啊",
+            "link": "https://www.qidian.com/chapter/1044761912/843336000/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十一章 潘瑟的推测",
+            "link": "https://www.qidian.com/chapter/1044761912/843419974/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十二章 意想不到的基盘效果",
+            "link": "https://www.qidian.com/chapter/1044761912/843424099/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十三章 动物园里的动物们",
+            "link": "https://www.qidian.com/chapter/1044761912/843642145/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十四章 【豹】字段，棋子制作！",
+            "link": "https://www.qidian.com/chapter/1044761912/843650456/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十五章 战车棋与人骑合一",
+            "link": "https://www.qidian.com/chapter/1044761912/843657401/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十六章 我活了这么久，什么没见过？",
+            "link": "https://www.qidian.com/chapter/1044761912/843729806/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十七章 我活了这么久，还真没见过",
+            "link": "https://www.qidian.com/chapter/1044761912/843731189/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十八章 文青病的【木乃伊】玛迷",
+            "link": "https://www.qidian.com/chapter/1044761912/843735568/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十九章 看什么看，你也是龙",
+            "link": "https://www.qidian.com/chapter/1044761912/843873039/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十章 克劳斯的小心机",
+            "link": "https://www.qidian.com/chapter/1044761912/843879348/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十一章 【马鹿】少女",
+            "link": "https://www.qidian.com/chapter/1044761912/843880390/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十二章 【大角马鹿】",
+            "link": "https://www.qidian.com/chapter/1044761912/843991462/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十三章 当对手脑回路清奇时",
+            "link": "https://www.qidian.com/chapter/1044761912/844014639/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十四章 丛林派的路子有点过于野了",
+            "link": "https://www.qidian.com/chapter/1044761912/844019628/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十五章 新棋子方向确定",
+            "link": "https://www.qidian.com/chapter/1044761912/844104432/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十六章 我将坚决捍卫巨魔的荣耀！（认真脸）",
+            "link": "https://www.qidian.com/chapter/1044761912/844125000/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十七章 克劳斯的轻松（？）日常",
+            "link": "https://www.qidian.com/chapter/1044761912/844159337/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十八章 【巨魔】特罗尔",
+            "link": "https://www.qidian.com/chapter/1044761912/844160727/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十九章 对战【巨魔】特罗尔，快速铺场？",
+            "link": "https://www.qidian.com/chapter/1044761912/844163551/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十章 他还得谢谢咱呢！",
+            "link": "https://www.qidian.com/chapter/1044761912/844303474/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十一章 克劳斯的【巨魔】棋",
+            "link": "https://www.qidian.com/chapter/1044761912/844354934/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十二章 【血鲨】沙克·伍德",
+            "link": "https://www.qidian.com/chapter/1044761912/844363367/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十三章 【魔咒】课上的乐子",
+            "link": "https://www.qidian.com/chapter/1044761912/844408951/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十四章 其他新生做得到吗.jpg",
+            "link": "https://www.qidian.com/chapter/1044761912/844418628/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十五章 能复活的新棋子",
+            "link": "https://www.qidian.com/chapter/1044761912/844447761/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十六章 【魔像】课对战的再次开启",
+            "link": "https://www.qidian.com/chapter/1044761912/844460907/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十七章 为什么选我？",
+            "link": "https://www.qidian.com/chapter/1044761912/844490719/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十八章 对战【盗贼】缇芙，隐形的窃贼",
+            "link": "https://www.qidian.com/chapter/1044761912/844535532/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十九章 缇芙的盗贼宝箱",
+            "link": "https://www.qidian.com/chapter/1044761912/844540249/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十章 二十分，但是乐子",
+            "link": "https://www.qidian.com/chapter/1044761912/844546997/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十一章 对战卡弗热斯·阿尔比",
+            "link": "https://www.qidian.com/chapter/1044761912/844620874/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十二章 叠，都可以叠",
+            "link": "https://www.qidian.com/chapter/1044761912/844637366/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十三章 奇怪的词条",
+            "link": "https://www.qidian.com/chapter/1044761912/844673552/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十四章 教授与助教的推测",
+            "link": "https://www.qidian.com/chapter/1044761912/844675849/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十五章 龙类材料的消息",
+            "link": "https://www.qidian.com/chapter/1044761912/844714435/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十六章 三份材料，两枚新棋子",
+            "link": "https://www.qidian.com/chapter/1044761912/844950080/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十七章 无头骑士的配件棋",
+            "link": "https://www.qidian.com/chapter/1044761912/845657025/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十八章 不死系二人组",
+            "link": "https://www.qidian.com/chapter/1044761912/845270314/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十九章 狩猎队选拔？",
+            "link": "https://www.qidian.com/chapter/1044761912/845656820/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十章 欠债多的，才是爷",
+            "link": "https://www.qidian.com/chapter/1044761912/845309309/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十一章 贵族们的小动作",
+            "link": "https://www.qidian.com/chapter/1044761912/845790608/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十二章 变形类的新棋子",
+            "link": "https://www.qidian.com/chapter/1044761912/845789316/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十三章 对战凯缪尔·比兰德",
+            "link": "https://www.qidian.com/chapter/1044761912/845951149/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十四章 克劳斯的铺场展开",
+            "link": "https://www.qidian.com/chapter/1044761912/846061755/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十五章 凯缪尔A了上去！",
+            "link": "https://www.qidian.com/chapter/1044761912/846062009/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十六章 凯缪尔即将获得胜利！",
+            "link": "https://www.qidian.com/chapter/1044761912/846158966/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十七章 凯缪尔两眼茫然",
+            "link": "https://www.qidian.com/chapter/1044761912/846158763/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十八章 凯缪尔没有输",
+            "link": "https://www.qidian.com/chapter/1044761912/846159248/",
+            "status": "downloaded"
+        },
+        {
+            "title": "上架感言",
+            "link": "https://www.qidian.com/chapter/1044761912/846840253/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【棋组目录】目前，直到142章，主角的棋子",
+            "link": "https://www.qidian.com/chapter/1044761912/849471809/",
+            "status": "downloaded"
+        }
+    ]
+}

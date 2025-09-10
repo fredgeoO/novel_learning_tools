@@ -1,0 +1,507 @@
+{
+    "novel_id": "1017281778",
+    "bookname": "绍宋",
+    "save_dir": "novels\\绍宋",
+    "chapters": [
+        {
+            "title": "第一章 明道宫",
+            "link": "https://www.qidian.com/chapter/1017281778/509150655/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章 赤心队",
+            "link": "https://www.qidian.com/chapter/1017281778/509183196/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章 朕的心腹都在哪里？",
+            "link": "https://www.qidian.com/chapter/1017281778/509235038/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章 英雄气",
+            "link": "https://www.qidian.com/chapter/1017281778/509244758/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章 会议",
+            "link": "https://www.qidian.com/chapter/1017281778/509393579/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六章 闲言",
+            "link": "https://www.qidian.com/chapter/1017281778/509450405/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七章 召见",
+            "link": "https://www.qidian.com/chapter/1017281778/509526751/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八章 绝杀",
+            "link": "https://www.qidian.com/chapter/1017281778/509620124/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九章 新局",
+            "link": "https://www.qidian.com/chapter/1017281778/509660995/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十章 天日昭昭",
+            "link": "https://www.qidian.com/chapter/1017281778/509750014/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十一章 天日昭昭（续）",
+            "link": "https://www.qidian.com/chapter/1017281778/509876604/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十二章 界沟",
+            "link": "https://www.qidian.com/chapter/1017281778/509996908/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十三章 界沟（续）",
+            "link": "https://www.qidian.com/chapter/1017281778/510044846/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十四章 金兀术来了！",
+            "link": "https://www.qidian.com/chapter/1017281778/510098067/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十五章 韩世忠反了！",
+            "link": "https://www.qidian.com/chapter/1017281778/510124911/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十六章 官家走投无路了！（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/510142799/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十七章 官家走投无路了！（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/510143488/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十八章 平叛（祝潇潇大佬生日快乐）",
+            "link": "https://www.qidian.com/chapter/1017281778/510363504/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十九章 扶腰（七岁大佬也生日快乐）",
+            "link": "https://www.qidian.com/chapter/1017281778/510363613/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十章 一问（恭喜小明新婚大吉）",
+            "link": "https://www.qidian.com/chapter/1017281778/510479960/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十一章 官家到底开窍了！（皮卡丘生快（敷衍……））",
+            "link": "https://www.qidian.com/chapter/1017281778/510558132/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十二章 官家到底在想什么？",
+            "link": "https://www.qidian.com/chapter/1017281778/510701212/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十三章 荣辱",
+            "link": "https://www.qidian.com/chapter/1017281778/510860656/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十四章 三万之约",
+            "link": "https://www.qidian.com/chapter/1017281778/510896547/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十五章 一将之论",
+            "link": "https://www.qidian.com/chapter/1017281778/510897621/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十六章 十万之报",
+            "link": "https://www.qidian.com/chapter/1017281778/510948918/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十七章 一走了之",
+            "link": "https://www.qidian.com/chapter/1017281778/511055414/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十八章 一梦方醒",
+            "link": "https://www.qidian.com/chapter/1017281778/511055482/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十九章 一梦方醒（续）",
+            "link": "https://www.qidian.com/chapter/1017281778/511060109/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十章 宁国",
+            "link": "https://www.qidian.com/chapter/1017281778/511158670/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十一章 骚动",
+            "link": "https://www.qidian.com/chapter/1017281778/511316678/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十二章 掼首（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/511334144/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十三章 掼首（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/511334788/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十四章 公私",
+            "link": "https://www.qidian.com/chapter/1017281778/511442615/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十五章 年节",
+            "link": "https://www.qidian.com/chapter/1017281778/511553367/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十六章 雪渡（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/511556545/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十七章 雪渡（中）",
+            "link": "https://www.qidian.com/chapter/1017281778/511745787/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十八章 雪渡（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/511748611/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十九章 买卖（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/511827061/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十章 买卖（中）",
+            "link": "https://www.qidian.com/chapter/1017281778/511850006/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十一章 买卖（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/511851736/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十二章 文书（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/511927773/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十三章 文书（中）",
+            "link": "https://www.qidian.com/chapter/1017281778/512042612/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十四章 文书（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/512141447/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十五章 文书（续）",
+            "link": "https://www.qidian.com/chapter/1017281778/512142996/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十六章 帐内（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/512271122/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十七章 帐内（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/512272088/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十八章 浮桥（4k二合一，不分章了）",
+            "link": "https://www.qidian.com/chapter/1017281778/512397087/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十九章 水战（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/512554746/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十章 水战（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/512556049/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十一章 生死（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/512629209/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十二章 生死（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/512650407/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十三章 扰攘（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/512736667/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十四章 扰攘（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/512736989/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十五章 作保（4k2合一）",
+            "link": "https://www.qidian.com/chapter/1017281778/512849135/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十六章 苦累",
+            "link": "https://www.qidian.com/chapter/1017281778/512965633/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十七章 发作",
+            "link": "https://www.qidian.com/chapter/1017281778/512978878/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十八章 元宵（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/513121861/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十九章 元宵（中）",
+            "link": "https://www.qidian.com/chapter/1017281778/513124806/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十章 元宵（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/513127389/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十一章 广济",
+            "link": "https://www.qidian.com/chapter/1017281778/513313634/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十二章 五日（4k2合一）",
+            "link": "https://www.qidian.com/chapter/1017281778/513331260/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十三章 廿八（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/513499471/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十四章 廿八（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/513502341/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十五章 水泊（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/513613854/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十六章 水泊（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/513629919/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十七章 水泊（续）",
+            "link": "https://www.qidian.com/chapter/1017281778/513649388/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十八章 议论（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/513803936/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十九章 议论（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/513804126/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十章 撤兵（4k2合1）",
+            "link": "https://www.qidian.com/chapter/1017281778/513929369/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十一章 危机（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/514006021/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十二章 危机（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/514006241/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十三章 劫寨",
+            "link": "https://www.qidian.com/chapter/1017281778/514060979/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十四章 观战（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/514131474/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十五章 观战（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/514132522/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十六章 临战（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/514208247/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十七章 临战（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/514211157/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十八章 决战（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/514293088/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十九章 决战（中）",
+            "link": "https://www.qidian.com/chapter/1017281778/514293410/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十章 决战（下）6k2合一",
+            "link": "https://www.qidian.com/chapter/1017281778/514377644/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十一章 胜了（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/514460919/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十二章 胜了（下）",
+            "link": "https://www.qidian.com/chapter/1017281778/514461315/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十三章 小酌",
+            "link": "https://www.qidian.com/chapter/1017281778/514556781/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十四章 流光（上）",
+            "link": "https://www.qidian.com/chapter/1017281778/514625920/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【番外抢先看】岳王庙特典",
+            "link": "https://m.qidian.com/chapter/1017281778/850494866/?from=serp&strategy=shaosonghd",
+            "status": "downloaded"
+        },
+        {
+            "title": "绍宋2漫画实体书售卖活动",
+            "link": "https://ataru.qidian.com/noah/955328000?_viewmode=0&ddl_an=10000347&f=ssmh2seo1",
+            "status": "failed"
+        },
+        {
+            "title": "上架感言兼本卷总结兼感谢信兼拜年信",
+            "link": "https://www.qidian.com/chapter/1017281778/514709871/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【番外抢先看】岳王庙特典",
+            "link": "https://m.qidian.com/chapter/1017281778/850494866/?from=serp&strategy=shaosonghd",
+            "status": "downloaded"
+        },
+        {
+            "title": "绍宋2漫画实体书售卖活动",
+            "link": "https://ataru.qidian.com/noah/955328000?_viewmode=0&ddl_an=10000347&f=ssmh2seo1",
+            "status": "failed"
+        },
+        {
+            "title": "第二卷总结 兼致歉信 兼本书开书四月小记录",
+            "link": "https://www.qidian.com/chapter/1017281778/531389101/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【番外抢先看】岳王庙特典",
+            "link": "https://m.qidian.com/chapter/1017281778/850494866/?from=serp&strategy=shaosonghd",
+            "status": "downloaded"
+        },
+        {
+            "title": "绍宋2漫画实体书售卖活动",
+            "link": "https://ataru.qidian.com/noah/955328000?_viewmode=0&ddl_an=10000347&f=ssmh2seo1",
+            "status": "failed"
+        },
+        {
+            "title": "第三卷总结兼百萌感谢",
+            "link": "https://www.qidian.com/chapter/1017281778/548823648/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【番外抢先看】岳王庙特典",
+            "link": "https://m.qidian.com/chapter/1017281778/850494866/?from=serp&strategy=shaosonghd",
+            "status": "downloaded"
+        },
+        {
+            "title": "绍宋2漫画实体书售卖活动",
+            "link": "https://ataru.qidian.com/noah/955328000?_viewmode=0&ddl_an=10000347&f=ssmh2seo1",
+            "status": "failed"
+        },
+        {
+            "title": "关于更新的破产声明",
+            "link": "https://www.qidian.com/chapter/1017281778/566805879/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四卷卷末总结",
+            "link": "https://www.qidian.com/chapter/1017281778/611340823/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【番外抢先看】岳王庙特典",
+            "link": "https://m.qidian.com/chapter/1017281778/850494866/?from=serp&strategy=shaosonghd",
+            "status": "downloaded"
+        },
+        {
+            "title": "绍宋2漫画实体书售卖活动",
+            "link": "https://ataru.qidian.com/noah/955328000?_viewmode=0&ddl_an=10000347&f=ssmh2seo1",
+            "status": "failed"
+        },
+        {
+            "title": "第五卷总结及完本与完本活动说明",
+            "link": "https://www.qidian.com/chapter/1017281778/649290386/",
+            "status": "downloaded"
+        }
+    ]
+}

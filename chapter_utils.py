@@ -488,45 +488,67 @@ def filter_think_tags(text: str) -> str:
 
 def load_report_content(novel_name, chapter_filename, report_filename):
     """
-    加载报告内容，过滤 think 标签，并过滤掉少于3个字符的非Markdown格式行。
+    加载报告内容，过滤 think 标签及无意义段落，并返回清洗后的内容。
     """
     if not all([novel_name, chapter_filename, report_filename]):
         return "## AI 分析报告\n\n请选择一个报告文件。"
+
     chapter_name = os.path.splitext(chapter_filename)[0]
     report_path = os.path.join(REPORTS_BASE_DIR, novel_name, chapter_name, report_filename)
+
     if not os.path.exists(report_path):
         error_msg = f"## 错误\n\n报告文件未找到: `{report_path}`"
         logger.error(error_msg)
         return error_msg
+
     try:
         with open(report_path, 'r', encoding='utf-8') as f:
             raw_content = f.read()
 
-        # 1. 过滤掉 <think> 标签及其内容
+        # Step 1: 过滤掉 <think> 标签及其内容
         content_without_think = filter_think_tags(raw_content)
 
-        """
-        # 2. 按行分割，过滤掉少于3个字符的非Markdown格式行
+        # Step 2: 按行处理，过滤无意义内容
         lines = content_without_think.splitlines()
-        filtered_lines = []
+        cleaned_lines = []
+
         for line in lines:
-            stripped_line = line.strip()
-            # 如果字符数>=3，直接保留
-            if len(stripped_line) >= 3:
-                filtered_lines.append(line)
-            # 如果字符数<3，检查是否为Markdown格式语法
-            elif is_markdown_format_line(stripped_line):
-                filtered_lines.append(line)
-            # 否则过滤掉（字符数<3且非Markdown格式）
-            
-            final_content = '\n'.join(filtered_lines)
-        """
-        final_content = content_without_think
+            stripped = line.strip()
+
+            # 跳过空行
+            if not stripped:
+                continue
+
+            # 跳过纯数字行（如 1, 2, 99）
+            if re.fullmatch(r'\d+', stripped):
+                continue
+
+            # 跳过特殊符号行（如 ___, ›, ⌄）
+            if re.fullmatch(r'[‗_\-‒–—―‗‹›⌄<> ]+', stripped):
+                continue
+
+            # 跳过无意义短句（如少于3个字符且不是Markdown语法）
+            if len(stripped) < 3 and not is_markdown_format_line(stripped):
+                continue
+            # 跳过该行包含 markdown
+            if stripped == "markdown":
+                continue
+
+            # 保留有效行
+            cleaned_lines.append(line)
+
+        # Step 3: 重新拼接内容
+        final_content = '\n'.join(cleaned_lines).strip()
+
+        # 如果内容为空，返回默认提示
+        if not final_content:
+            final_content = "## AI 分析报告\n\n该报告内容为空或已被过滤。"
 
         return final_content
+
     except Exception as e:
         error_msg = f"## 读取错误\n\n读取报告文件时出错: `{e}`"
-        logger.error(error_msg)
+        logger.error(error_msg, exc_info=True)
         return error_msg
 
 

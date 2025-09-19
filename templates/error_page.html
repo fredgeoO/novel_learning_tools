@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: #e0e0e0;
+        }
+        #error-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="error-container">
+        <div style='color:{{ color }}; padding:20px; text-align:center;'>{{ message|safe }}</div>
+    </div>
+</body>
+</html>

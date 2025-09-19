@@ -1,0 +1,560 @@
+{
+  "nodes": [
+    {
+      "id": "族长",
+      "type": "人物",
+      "properties": {
+        "name": "族长",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "彭刚死亡",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚死亡",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "记忆闪回",
+      "type": "事件",
+      "properties": {
+        "name": "记忆闪回",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "棺材",
+      "type": "物品",
+      "properties": {
+        "name": "棺材",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "拒绝画押",
+      "type": "事件",
+      "properties": {
+        "name": "拒绝画押",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "死亡",
+      "type": "事件",
+      "properties": {
+        "name": "死亡",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "身体恢复",
+      "type": "状态",
+      "properties": {
+        "name": "身体恢复",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "清道光二十八年二月（1848年）",
+      "type": "时间",
+      "properties": {
+        "name": "清道光二十八年二月（1848年）",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "诈尸啦！三哥？是你吗？你是人是鬼？",
+      "type": "对白",
+      "properties": {
+        "name": "诈尸啦！三哥？是你吗？你是人是鬼？",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "广西浔州府贵县",
+      "type": "地点",
+      "properties": {
+        "name": "广西浔州府贵县",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。这几年年景不好，灾疫匪祸横行，族里为操办好你爹和你三哥的后事没少忙前忙后，四处奔走。你六堂叔膝下无子，对你喜欢得紧，你既不愿过继，我们也不强求。好生听伯爷的话，在这里画个押，往后族里供你吃穿，供你继续读书。",
+      "type": "对白",
+      "properties": {
+        "name": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。这几年年景不好，灾疫匪祸横行，族里为操办好你爹和你三哥的后事没少忙前忙后，四处奔走。你六堂叔膝下无子，对你喜欢得紧，你既不愿过继，我们也不强求。好生听伯爷的话，在这里画个押，往后族里供你吃穿，供你继续读书。",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "无助绝望的啜泣",
+      "type": "状态",
+      "properties": {
+        "name": "无助绝望的啜泣",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "银锁",
+      "type": "物品",
+      "properties": {
+        "name": "银锁",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "庆丰彭族",
+      "type": "组织",
+      "properties": {
+        "name": "庆丰彭族",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "满月宴",
+      "type": "事件",
+      "properties": {
+        "name": "满月宴",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "你托人给阿舅捎口信了么？",
+      "type": "对白",
+      "properties": {
+        "name": "你托人给阿舅捎口信了么？",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "男丁多",
+      "type": "状态",
+      "properties": {
+        "name": "男丁多",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "拆门撬窗，牵牛抱猪",
+      "type": "行动",
+      "properties": {
+        "name": "拆门撬窗，牵牛抱猪",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "烧炭工",
+      "type": "行动",
+      "properties": {
+        "name": "烧炭工",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "十七岁",
+      "type": "状态",
+      "properties": {
+        "name": "十七岁",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "没拿到村口的九亩上等水田，本家那边不会善罢甘休，他们明天还会来的。",
+      "type": "对白",
+      "properties": {
+        "name": "没拿到村口的九亩上等水田，本家那边不会善罢甘休，他们明天还会来的。",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "人物",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "平在山",
+      "type": "地点",
+      "properties": {
+        "name": "平在山",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "捎口信",
+      "type": "行动",
+      "properties": {
+        "name": "捎口信",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "外祖家的三个舅舅",
+      "type": "人物",
+      "properties": {
+        "name": "外祖家的三个舅舅",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "外阿婆",
+      "type": "人物",
+      "properties": {
+        "name": "外阿婆",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "紧密牢靠",
+      "type": "状态",
+      "properties": {
+        "name": "紧密牢靠",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "生存问题",
+      "type": "状态",
+      "properties": {
+        "name": "生存问题",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "田产",
+      "type": "物品",
+      "properties": {
+        "name": "田产",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "舅舅",
+      "type": "人物",
+      "properties": {
+        "name": "舅舅",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "本家",
+      "type": "组织",
+      "properties": {
+        "name": "本家",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "阿爸咽气前，我就偷偷托咱们家的韦长工去平在山给阿舅他们捎个口信。可咱们村到阿舅他们那儿足足有两百六七十来里的路，很多路还是山路，舅舅们脚力再好也要后天才能到。",
+      "type": "对白",
+      "properties": {
+        "name": "阿爸咽气前，我就偷偷托咱们家的韦长工去平在山给阿舅他们捎个口信。可咱们村到阿舅他们那儿足足有两百六七十来里的路，很多路还是山路，舅舅们脚力再好也要后天才能到。",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "想吃他家绝户",
+      "type": "行动",
+      "properties": {
+        "name": "想吃他家绝户",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "被本家的人掐",
+      "type": "事件",
+      "properties": {
+        "name": "被本家的人掐",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "亲叔伯",
+      "type": "人物",
+      "properties": {
+        "name": "亲叔伯",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "咱们村",
+      "type": "地点",
+      "properties": {
+        "name": "咱们村",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "弟弟的早熟",
+      "type": "事件",
+      "properties": {
+        "name": "弟弟的早熟",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "委屈的状态",
+      "type": "状态",
+      "properties": {
+        "name": "委屈的状态",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "阿舅他们那儿",
+      "type": "地点",
+      "properties": {
+        "name": "阿舅他们那儿",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "兄弟",
+      "type": "概念",
+      "properties": {
+        "name": "兄弟",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "不是至亲便是至仇",
+      "type": "概念",
+      "properties": {
+        "name": "不是至亲便是至仇",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "阿爸咽气前，我就偷偷托咱们家的韦长工去平在山给阿舅他们捎个口信",
+      "type": "对白",
+      "properties": {
+        "name": "阿爸咽气前，我就偷偷托咱们家的韦长工去平在山给阿舅他们捎个口信",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "彭毅左腕处的淤青",
+      "type": "状态",
+      "properties": {
+        "name": "彭毅左腕处的淤青",
+        "sequence_number": 46
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "棺材",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。这几年年景不好，灾疫匪祸横行，族里为操办好你爹和你三哥的后事没少忙前忙后，四处奔走。你六堂叔膝下无子，对你喜欢得紧，你既不愿过继，我们也不强求。好生听伯爷的话，在这里画个押，往后族里供你吃穿，供你继续读书。",
+      "type": "说出",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "死亡",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "拒绝画押",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村",
+      "target_id": "广西浔州府贵县",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "清道光二十八年二月（1848年）",
+      "target_id": "彭刚死亡",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "记忆闪回",
+      "type": "产生",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "诈尸啦！三哥？是你吗？你是人是鬼？",
+      "type": "说出",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "身体恢复",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "无助绝望的啜泣",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "银锁",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "外阿婆",
+      "target_id": "满月宴",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅",
+      "target_id": "平在山",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅",
+      "target_id": "银锁",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "你托人给阿舅捎口信了么？",
+      "type": "说出",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "没拿到村口的九亩上等水田，本家那边不会善罢甘休，他们明天还会来的。",
+      "type": "说出",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "十七岁",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "拆门撬窗，牵牛抱猪",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "男丁多",
+      "type": "基于",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族",
+      "target_id": "田产",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族",
+      "target_id": "生存问题",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "阿爸咽气前，我就偷偷托咱们家的韦长工去平在山给阿舅他们捎个口信。可咱们村到阿舅他们那儿足足有两百六七十来里的路，很多路还是山路，舅舅们脚力再好也要后天才能到。",
+      "type": "说出",
+      "properties": {}
+    },
+    {
+      "source_id": "兄弟",
+      "target_id": "不是至亲便是至仇",
+      "type": "定义为",
+      "properties": {}
+    },
+    {
+      "source_id": "亲叔伯",
+      "target_id": "想吃他家绝户",
+      "type": "产生",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "阿爸咽气前，我就偷偷托咱们家的韦长工去平在山给阿舅他们捎个口信",
+      "type": "说出",
+      "properties": {}
+    },
+    {
+      "source_id": "咱们村",
+      "target_id": "阿舅他们那儿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "弟弟的早熟",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅左腕处的淤青",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家的人掐",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "委屈的状态",
+      "type": "处于",
+      "properties": {}
+    }
+  ]
+}

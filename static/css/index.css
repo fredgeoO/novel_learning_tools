@@ -1,0 +1,119 @@
+
+
+        .graph-view-page html,
+        .graph-view-page body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+
+
+        #graph-tab .header {
+            flex-shrink: 0;
+        }
+
+        #graph-tab .tab-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        /* 图谱容器 - 占满整个可用空间 */
+        #graph-tab .graph-container {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 100vh !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 100%;
+            height: 100%; /* 关键：占满父容器 */
+        }
+        #graph-tab .main-layout {
+            position: relative; /* 关键：使浮动面板相对它定位 */
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+}
+
+        #graph-tab .control-section {
+            flex-shrink: 0;
+            overflow-y: auto;
+        }
+
+        #graph-tab .graph-section {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        #graph-content {
+            width: 100%;
+            height: 100%;
+        }
+
+        #graph-tab .iframe {
+            width: 100%;
+            height: 100%;
+        }
+            /* 元数据信息样式 */
+        #metadata-info {
+            background-color: #0000002b
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        #graph-tab .detail-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #444;
+            background-color: #00000000;
+        }
+
+        #graph-tab .detail-label {
+            color: #aaa;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        #graph-tab .detail-value {
+            color: #fff;
+            text-align: right;
+            word-break: break-all;
+            margin-left: 10px;
+            flex-grow: 1;
+        }
+
+        /* 控制面板间距优化 */
+        #graph-tab .control-panel {
+            margin-bottom: 10px;
+        }
+         /* 浮动控制面板样式 */
+        #graph-tab .floating-control-section {
+            position: absolute;
+            top: 0px; /* 避开顶部标题和 Tab，可根据实际高度调整 */
+            left: 0px; /* 距离左边的距离 */
+            width: 250px;
+            max-height: calc(100% - 40px); /* 避免超出容器 */
+            background-color: rgba(35, 35, 35, 0.2);
+            backdrop-filter: blur(3px);
+            padding: 0px;
+            border-radius: 8px;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.4);
+            overflow-y: auto;
+            z-index: 10;
+        }
+
+        /* 主图谱容器铺满 */
+        #graph-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }

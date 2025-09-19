@@ -1,0 +1,198 @@
+{
+  "nodes": [
+    {
+      "id": "彭敏",
+      "type": "Person",
+      "properties": {
+        "name": "彭敏",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "Person",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "田契",
+      "type": "Characteristic",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "Person",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "弟弟",
+      "type": "Person",
+      "properties": {
+        "name": "弟弟",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "本家",
+      "type": "Place",
+      "properties": {
+        "name": "本家",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "数三数四",
+      "type": "Place",
+      "properties": {
+        "name": "数三数四",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "两个半大，一个女娃",
+      "type": "Person",
+      "properties": {
+        "name": "两个半大，一个女娃",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "藏起来了",
+      "type": "Document",
+      "properties": {
+        "name": "藏起来了",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "村口九亩水田",
+      "type": "Area",
+      "properties": {
+        "name": "村口九亩水田",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "外祖家",
+      "type": "Place",
+      "properties": {
+        "name": "外祖家",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "十七亩水田，十六亩旱坡地，一窝猪仔，五间门窗，半亩菜地",
+      "type": "Area",
+      "properties": {
+        "name": "十七亩水田，十六亩旱坡地，一窝猪仔，五间门窗，半亩菜地",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "富户",
+      "type": "Person",
+      "properties": {
+        "name": "富户",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "Place",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "田契",
+      "type": "Document",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 3
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚",
+      "type": "葬礼",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭刚",
+      "type": "供奉",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "田契",
+      "type": "交出",
+      "properties": {}
+    },
+    {
+      "source_id": "田契",
+      "target_id": "田契",
+      "type": "被交出",
+      "properties": {}
+    },
+    {
+      "source_id": "富户",
+      "target_id": "十七亩水田，十六亩旱坡地，一窝猪仔，五间门窗，半亩菜地",
+      "type": "OWNED_AREAS",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "两个半大，一个女娃",
+      "type": "CHILDREN",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "弟弟",
+      "type": "CHILDREN",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村",
+      "target_id": "数三数四",
+      "type": "HOMELAND",
+      "properties": {}
+    },
+    {
+      "source_id": "田契",
+      "target_id": "藏起来了",
+      "type": "STOLEN",
+      "properties": {}
+    },
+    {
+      "source_id": "外祖家",
+      "target_id": "本家",
+      "type": "HOMELAND",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "村口九亩水田",
+      "type": "WORKS_FOR",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "村口九亩水田",
+      "type": "WORKS_FOR",
+      "properties": {}
+    }
+  ]
+}

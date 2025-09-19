@@ -1,0 +1,1884 @@
+{
+  "nodes": [
+    {
+      "id": "彭刚",
+      "type": "名词",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "名词",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "彭敏",
+      "type": "名词",
+      "properties": {
+        "name": "彭敏",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "名词",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "广西浔州府贵县",
+      "type": "名词",
+      "properties": {
+        "name": "广西浔州府贵县",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "彭姓人家",
+      "type": "名词",
+      "properties": {
+        "name": "彭姓人家",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "族长",
+      "type": "名词",
+      "properties": {
+        "name": "族长",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "田契",
+      "type": "名词",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "杉木薄棺",
+      "type": "名词",
+      "properties": {
+        "name": "杉木薄棺",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "水田",
+      "type": "名词",
+      "properties": {
+        "name": "水田",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "旱坡地",
+      "type": "名词",
+      "properties": {
+        "name": "旱坡地",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "鱼塘",
+      "type": "名词",
+      "properties": {
+        "name": "鱼塘",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "水牛",
+      "type": "名词",
+      "properties": {
+        "name": "水牛",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "猪",
+      "type": "名词",
+      "properties": {
+        "name": "猪",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "猪仔",
+      "type": "名词",
+      "properties": {
+        "name": "猪仔",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "土坯房",
+      "type": "名词",
+      "properties": {
+        "name": "土坯房",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "菜地",
+      "type": "名词",
+      "properties": {
+        "name": "菜地",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "清道光二十八年二月（1848年）",
+      "type": "名词",
+      "properties": {
+        "name": "清道光二十八年二月（1848年）",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "春耕",
+      "type": "名词",
+      "properties": {
+        "name": "春耕",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "葬礼",
+      "type": "名词",
+      "properties": {
+        "name": "葬礼",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "桂柳客话",
+      "type": "名词",
+      "properties": {
+        "name": "桂柳客话",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "烛光",
+      "type": "名词",
+      "properties": {
+        "name": "烛光",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "冥钱",
+      "type": "名词",
+      "properties": {
+        "name": "冥钱",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "厨房",
+      "type": "名词",
+      "properties": {
+        "name": "厨房",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "竹凳",
+      "type": "名词",
+      "properties": {
+        "name": "竹凳",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "茶水",
+      "type": "名词",
+      "properties": {
+        "name": "茶水",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "院子",
+      "type": "名词",
+      "properties": {
+        "name": "院子",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "死",
+      "type": "动词",
+      "properties": {
+        "name": "死",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "呼吸",
+      "type": "动词",
+      "properties": {
+        "name": "呼吸",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "嘱托",
+      "type": "动词",
+      "properties": {
+        "name": "嘱托",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "照料",
+      "type": "动词",
+      "properties": {
+        "name": "照料",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "照管",
+      "type": "动词",
+      "properties": {
+        "name": "照管",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "操办",
+      "type": "动词",
+      "properties": {
+        "name": "操办",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "奔走",
+      "type": "动词",
+      "properties": {
+        "name": "奔走",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "过继",
+      "type": "动词",
+      "properties": {
+        "name": "过继",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "强求",
+      "type": "动词",
+      "properties": {
+        "name": "强求",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "画押",
+      "type": "动词",
+      "properties": {
+        "name": "画押",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "供",
+      "type": "动词",
+      "properties": {
+        "name": "供",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "读书",
+      "type": "动词",
+      "properties": {
+        "name": "读书",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "传入",
+      "type": "动词",
+      "properties": {
+        "name": "传入",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "闪过",
+      "type": "动词",
+      "properties": {
+        "name": "闪过",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "丰收",
+      "type": "动词",
+      "properties": {
+        "name": "丰收",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "离家",
+      "type": "动词",
+      "properties": {
+        "name": "离家",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "逃命",
+      "type": "动词",
+      "properties": {
+        "name": "逃命",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "难产而死",
+      "type": "动词",
+      "properties": {
+        "name": "难产而死",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "夺舍穿越",
+      "type": "动词",
+      "properties": {
+        "name": "夺舍穿越",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "意识到",
+      "type": "动词",
+      "properties": {
+        "name": "意识到",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "躺",
+      "type": "动词",
+      "properties": {
+        "name": "躺",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "离世",
+      "type": "动词",
+      "properties": {
+        "name": "离世",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "威逼利诱",
+      "type": "动词",
+      "properties": {
+        "name": "威逼利诱",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "就范",
+      "type": "动词",
+      "properties": {
+        "name": "就范",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "操持",
+      "type": "动词",
+      "properties": {
+        "name": "操持",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "侵占",
+      "type": "动词",
+      "properties": {
+        "name": "侵占",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "消失",
+      "type": "动词",
+      "properties": {
+        "name": "消失",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "啜泣",
+      "type": "动词",
+      "properties": {
+        "name": "啜泣",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "恢复",
+      "type": "动词",
+      "properties": {
+        "name": "恢复",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "掀棺而起",
+      "type": "动词",
+      "properties": {
+        "name": "掀棺而起",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "接触",
+      "type": "动词",
+      "properties": {
+        "name": "接触",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "摇曳",
+      "type": "动词",
+      "properties": {
+        "name": "摇曳",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "燃烧",
+      "type": "动词",
+      "properties": {
+        "name": "燃烧",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "睁不开眼",
+      "type": "动词",
+      "properties": {
+        "name": "睁不开眼",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "诈尸",
+      "type": "动词",
+      "properties": {
+        "name": "诈尸",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "护着",
+      "type": "动词",
+      "properties": {
+        "name": "护着",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "破涕为笑",
+      "type": "动词",
+      "properties": {
+        "name": "破涕为笑",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "闪烁",
+      "type": "动词",
+      "properties": {
+        "name": "闪烁",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "探",
+      "type": "动词",
+      "properties": {
+        "name": "探",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "喜道",
+      "type": "动词",
+      "properties": {
+        "name": "喜道",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "适应",
+      "type": "动词",
+      "properties": {
+        "name": "适应",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "说",
+      "type": "动词",
+      "properties": {
+        "name": "说",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "进食",
+      "type": "动词",
+      "properties": {
+        "name": "进食",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "饿",
+      "type": "动词",
+      "properties": {
+        "name": "饿",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "擦拭",
+      "type": "动词",
+      "properties": {
+        "name": "擦拭",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "起身",
+      "type": "动词",
+      "properties": {
+        "name": "起身",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "走去",
+      "type": "动词",
+      "properties": {
+        "name": "走去",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "搀扶",
+      "type": "动词",
+      "properties": {
+        "name": "搀扶",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "走出",
+      "type": "动词",
+      "properties": {
+        "name": "走出",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "寻来",
+      "type": "动词",
+      "properties": {
+        "name": "寻来",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "坐下",
+      "type": "动词",
+      "properties": {
+        "name": "坐下",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "接过",
+      "type": "动词",
+      "properties": {
+        "name": "接过",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "问道",
+      "type": "动词",
+      "properties": {
+        "name": "问道",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "藏起来",
+      "type": "动词",
+      "properties": {
+        "name": "藏起来",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "搜到",
+      "type": "动词",
+      "properties": {
+        "name": "搜到",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "赖",
+      "type": "动词",
+      "properties": {
+        "name": "赖",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "不走",
+      "type": "动词",
+      "properties": {
+        "name": "不走",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "软磨硬泡",
+      "type": "动词",
+      "properties": {
+        "name": "软磨硬泡",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "逼",
+      "type": "动词",
+      "properties": {
+        "name": "逼",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "阔气",
+      "type": "形容词",
+      "properties": {
+        "name": "阔气",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "粗劣",
+      "type": "形容词",
+      "properties": {
+        "name": "粗劣",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "浓烈",
+      "type": "形容词",
+      "properties": {
+        "name": "浓烈",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "熟悉亲切",
+      "type": "形容词",
+      "properties": {
+        "name": "熟悉亲切",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "怪",
+      "type": "形容词",
+      "properties": {
+        "name": "怪",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "沧桑",
+      "type": "形容词",
+      "properties": {
+        "name": "沧桑",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "咄咄逼人",
+      "type": "形容词",
+      "properties": {
+        "name": "咄咄逼人",
+        "sequence_number": 93
+      }
+    },
+    {
+      "id": "为老不尊",
+      "type": "形容词",
+      "properties": {
+        "name": "为老不尊",
+        "sequence_number": 94
+      }
+    },
+    {
+      "id": "短暂",
+      "type": "形容词",
+      "properties": {
+        "name": "短暂",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "真切",
+      "type": "形容词",
+      "properties": {
+        "name": "真切",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "虚弱",
+      "type": "形容词",
+      "properties": {
+        "name": "虚弱",
+        "sequence_number": 97
+      }
+    },
+    {
+      "id": "聪明",
+      "type": "形容词",
+      "properties": {
+        "name": "聪明",
+        "sequence_number": 98
+      }
+    },
+    {
+      "id": "小",
+      "type": "形容词",
+      "properties": {
+        "name": "小",
+        "sequence_number": 99
+      }
+    },
+    {
+      "id": "无助绝望",
+      "type": "形容词",
+      "properties": {
+        "name": "无助绝望",
+        "sequence_number": 100
+      }
+    },
+    {
+      "id": "暗淡",
+      "type": "形容词",
+      "properties": {
+        "name": "暗淡",
+        "sequence_number": 101
+      }
+    },
+    {
+      "id": "喧闹",
+      "type": "形容词",
+      "properties": {
+        "name": "喧闹",
+        "sequence_number": 102
+      }
+    },
+    {
+      "id": "稚嫩",
+      "type": "形容词",
+      "properties": {
+        "name": "稚嫩",
+        "sequence_number": 103
+      }
+    },
+    {
+      "id": "惊讶",
+      "type": "形容词",
+      "properties": {
+        "name": "惊讶",
+        "sequence_number": 104
+      }
+    },
+    {
+      "id": "恐惧",
+      "type": "形容词",
+      "properties": {
+        "name": "恐惧",
+        "sequence_number": 105
+      }
+    },
+    {
+      "id": "温情",
+      "type": "形容词",
+      "properties": {
+        "name": "温情",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "人小胆大",
+      "type": "形容词",
+      "properties": {
+        "name": "人小胆大",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "前胸贴后背",
+      "type": "形容词",
+      "properties": {
+        "name": "前胸贴后背",
+        "sequence_number": 108
+      }
+    },
+    {
+      "id": "数三数四",
+      "type": "形容词",
+      "properties": {
+        "name": "数三数四",
+        "sequence_number": 109
+      }
+    },
+    {
+      "id": "颇有家资",
+      "type": "形容词",
+      "properties": {
+        "name": "颇有家资",
+        "sequence_number": 110
+      }
+    },
+    {
+      "id": "人丁稀薄",
+      "type": "形容词",
+      "properties": {
+        "name": "人丁稀薄",
+        "sequence_number": 111
+      }
+    },
+    {
+      "id": "贪婪地",
+      "type": "副词",
+      "properties": {
+        "name": "贪婪地",
+        "sequence_number": 112
+      }
+    },
+    {
+      "id": "前后脚",
+      "type": "副词",
+      "properties": {
+        "name": "前后脚",
+        "sequence_number": 113
+      }
+    },
+    {
+      "id": "步步紧逼",
+      "type": "副词",
+      "properties": {
+        "name": "步步紧逼",
+        "sequence_number": 114
+      }
+    },
+    {
+      "id": "不难",
+      "type": "副词",
+      "properties": {
+        "name": "不难",
+        "sequence_number": 115
+      }
+    },
+    {
+      "id": "无非",
+      "type": "副词",
+      "properties": {
+        "name": "无非",
+        "sequence_number": 116
+      }
+    },
+    {
+      "id": "终于",
+      "type": "副词",
+      "properties": {
+        "name": "终于",
+        "sequence_number": 117
+      }
+    },
+    {
+      "id": "长时间",
+      "type": "副词",
+      "properties": {
+        "name": "长时间",
+        "sequence_number": 118
+      }
+    },
+    {
+      "id": "稍稍",
+      "type": "副词",
+      "properties": {
+        "name": "稍稍",
+        "sequence_number": 119
+      }
+    },
+    {
+      "id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。",
+      "type": "句子",
+      "properties": {
+        "name": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。",
+        "sequence_number": 120
+      }
+    },
+    {
+      "id": "这几年年景不好，灾疫匪祸横行，族里为操办好你爹和你三哥的后事没少忙前忙后，四处奔走。",
+      "type": "句子",
+      "properties": {
+        "name": "这几年年景不好，灾疫匪祸横行，族里为操办好你爹和你三哥的后事没少忙前忙后，四处奔走。",
+        "sequence_number": 121
+      }
+    },
+    {
+      "id": "你六堂叔膝下无子，对你喜欢得紧，你既不愿过继，我们也不强求。",
+      "type": "句子",
+      "properties": {
+        "name": "你六堂叔膝下无子，对你喜欢得紧，你既不愿过继，我们也不强求。",
+        "sequence_number": 122
+      }
+    },
+    {
+      "id": "好生听伯爷的话，在这里画个押，往后族里供你吃穿，供你继续读书。",
+      "type": "句子",
+      "properties": {
+        "name": "好生听伯爷的话，在这里画个押，往后族里供你吃穿，供你继续读书。",
+        "sequence_number": 123
+      }
+    },
+    {
+      "id": "诈尸啦！三哥？是你吗？你是人是鬼？",
+      "type": "句子",
+      "properties": {
+        "name": "诈尸啦！三哥？是你吗？你是人是鬼？",
+        "sequence_number": 124
+      }
+    },
+    {
+      "id": "就算三哥是鬼，那也是咱们家的鬼，会护着咱们自家人。",
+      "type": "句子",
+      "properties": {
+        "name": "就算三哥是鬼，那也是咱们家的鬼，会护着咱们自家人。",
+        "sequence_number": 125
+      }
+    },
+    {
+      "id": "三哥有气！气还是热的！真不是鬼！",
+      "type": "句子",
+      "properties": {
+        "name": "三哥有气！气还是热的！真不是鬼！",
+        "sequence_number": 126
+      }
+    },
+    {
+      "id": "有吃的么？",
+      "type": "句子",
+      "properties": {
+        "name": "有吃的么？",
+        "sequence_number": 127
+      }
+    },
+    {
+      "id": "族长让你交出家里的田契？",
+      "type": "句子",
+      "properties": {
+        "name": "族长让你交出家里的田契？",
+        "sequence_number": 128
+      }
+    },
+    {
+      "id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+      "type": "句子",
+      "properties": {
+        "name": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+        "sequence_number": 129
+      }
+    },
+    {
+      "id": "彭刚穿越到清朝富农家庭，在棺材中醒来后与弟弟妹妹共同面对族人侵占家产的危机",
+      "type": "中心思想",
+      "properties": {
+        "name": "彭刚穿越到清朝富农家庭，在棺材中醒来后与弟弟妹妹共同面对族人侵占家产的危机",
+        "sequence_number": 130
+      }
+    },
+    {
+      "id": "彭家颇有家资且人丁稀薄，被本家惦记",
+      "type": "起因",
+      "properties": {
+        "name": "彭家颇有家资且人丁稀薄，被本家惦记",
+        "sequence_number": 131
+      }
+    },
+    {
+      "id": "彭刚在棺材中醒来，身体恢复后掀棺而起与弟妹相见并询问田契",
+      "type": "过程",
+      "properties": {
+        "name": "彭刚在棺材中醒来，身体恢复后掀棺而起与弟妹相见并询问田契",
+        "sequence_number": 132
+      }
+    },
+    {
+      "id": "彭刚醒来，田契仍在彭毅手中，族人暂未得逞",
+      "type": "结果",
+      "properties": {
+        "name": "彭刚醒来，田契仍在彭毅手中，族人暂未得逞",
+        "sequence_number": 133
+      }
+    },
+    {
+      "id": "清朝富农家庭的家产争夺与生存",
+      "type": "主题",
+      "properties": {
+        "name": "清朝富农家庭的家产争夺与生存",
+        "sequence_number": 134
+      }
+    },
+    {
+      "id": "彭刚兄妹与族人之间的家产争夺",
+      "type": "冲突",
+      "properties": {
+        "name": "彭刚兄妹与族人之间的家产争夺",
+        "sequence_number": 135
+      }
+    },
+    {
+      "id": "本家",
+      "type": "名词",
+      "properties": {
+        "name": "本家",
+        "sequence_number": 136
+      }
+    },
+    {
+      "id": "旁支",
+      "type": "名词",
+      "properties": {
+        "name": "旁支",
+        "sequence_number": 137
+      }
+    },
+    {
+      "id": "九亩上等水田",
+      "type": "名词",
+      "properties": {
+        "name": "九亩上等水田",
+        "sequence_number": 138
+      }
+    },
+    {
+      "id": "族田",
+      "type": "名词",
+      "properties": {
+        "name": "族田",
+        "sequence_number": 139
+      }
+    },
+    {
+      "id": "王保长",
+      "type": "名词",
+      "properties": {
+        "name": "王保长",
+        "sequence_number": 140
+      }
+    },
+    {
+      "id": "五斗七星柜",
+      "type": "名词",
+      "properties": {
+        "name": "五斗七星柜",
+        "sequence_number": 141
+      }
+    },
+    {
+      "id": "官帽椅子",
+      "type": "名词",
+      "properties": {
+        "name": "官帽椅子",
+        "sequence_number": 142
+      }
+    },
+    {
+      "id": "蕉叶形银锁",
+      "type": "名词",
+      "properties": {
+        "name": "蕉叶形银锁",
+        "sequence_number": 143
+      }
+    },
+    {
+      "id": "舅舅",
+      "type": "名词",
+      "properties": {
+        "name": "舅舅",
+        "sequence_number": 144
+      }
+    },
+    {
+      "id": "平在山（鹏隘山）",
+      "type": "名词",
+      "properties": {
+        "name": "平在山（鹏隘山）",
+        "sequence_number": 145
+      }
+    },
+    {
+      "id": "烧炭工",
+      "type": "名词",
+      "properties": {
+        "name": "烧炭工",
+        "sequence_number": 146
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "名词",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 147
+      }
+    },
+    {
+      "id": "富户",
+      "type": "名词",
+      "properties": {
+        "name": "富户",
+        "sequence_number": 148
+      }
+    },
+    {
+      "id": "交出来",
+      "type": "动词",
+      "properties": {
+        "name": "交出来",
+        "sequence_number": 149
+      }
+    },
+    {
+      "id": "哄逼",
+      "type": "动词",
+      "properties": {
+        "name": "哄逼",
+        "sequence_number": 150
+      }
+    },
+    {
+      "id": "充作",
+      "type": "动词",
+      "properties": {
+        "name": "充作",
+        "sequence_number": 151
+      }
+    },
+    {
+      "id": "搬走",
+      "type": "动词",
+      "properties": {
+        "name": "搬走",
+        "sequence_number": 152
+      }
+    },
+    {
+      "id": "哭诉",
+      "type": "动词",
+      "properties": {
+        "name": "哭诉",
+        "sequence_number": 153
+      }
+    },
+    {
+      "id": "托人捎口信",
+      "type": "动词",
+      "properties": {
+        "name": "托人捎口信",
+        "sequence_number": 154
+      }
+    },
+    {
+      "id": "争保家产",
+      "type": "动词",
+      "properties": {
+        "name": "争保家产",
+        "sequence_number": 155
+      }
+    },
+    {
+      "id": "攒下",
+      "type": "动词",
+      "properties": {
+        "name": "攒下",
+        "sequence_number": 156
+      }
+    },
+    {
+      "id": "妒火中烧",
+      "type": "动词",
+      "properties": {
+        "name": "妒火中烧",
+        "sequence_number": 157
+      }
+    },
+    {
+      "id": "依仗",
+      "type": "动词",
+      "properties": {
+        "name": "依仗",
+        "sequence_number": 158
+      }
+    },
+    {
+      "id": "上等",
+      "type": "形容词",
+      "properties": {
+        "name": "上等",
+        "sequence_number": 159
+      }
+    },
+    {
+      "id": "生活并不宽裕",
+      "type": "形容词",
+      "properties": {
+        "name": "生活并不宽裕",
+        "sequence_number": 160
+      }
+    },
+    {
+      "id": "关系还是非常不错",
+      "type": "形容词",
+      "properties": {
+        "name": "关系还是非常不错",
+        "sequence_number": 161
+      }
+    },
+    {
+      "id": "吃相那么难看",
+      "type": "形容词",
+      "properties": {
+        "name": "吃相那么难看",
+        "sequence_number": 162
+      }
+    },
+    {
+      "id": "拳头硬",
+      "type": "形容词",
+      "properties": {
+        "name": "拳头硬",
+        "sequence_number": 163
+      }
+    },
+    {
+      "id": "日子过得越来越红火",
+      "type": "形容词",
+      "properties": {
+        "name": "日子过得越来越红火",
+        "sequence_number": 164
+      }
+    },
+    {
+      "id": "一百年难遇",
+      "type": "形容词",
+      "properties": {
+        "name": "一百年难遇",
+        "sequence_number": 165
+      }
+    },
+    {
+      "id": "紧密牢靠",
+      "type": "形容词",
+      "properties": {
+        "name": "紧密牢靠",
+        "sequence_number": 166
+      }
+    },
+    {
+      "id": "不住地",
+      "type": "副词",
+      "properties": {
+        "name": "不住地",
+        "sequence_number": 167
+      }
+    },
+    {
+      "id": "素来",
+      "type": "副词",
+      "properties": {
+        "name": "素来",
+        "sequence_number": 168
+      }
+    },
+    {
+      "id": "想当然地",
+      "type": "副词",
+      "properties": {
+        "name": "想当然地",
+        "sequence_number": 169
+      }
+    },
+    {
+      "id": "目前看来",
+      "type": "副词",
+      "properties": {
+        "name": "目前看来",
+        "sequence_number": 170
+      }
+    },
+    {
+      "id": "他家有十七亩水田，十六亩旱坡地，一个鱼塘，一头水牛，两口猪及一窝猪仔，五间门窗齐全的土坯房，院子还带半亩菜地，是庆丰村数三数四的富户。",
+      "type": "句子",
+      "properties": {
+        "name": "他家有十七亩水田，十六亩旱坡地，一个鱼塘，一头水牛，两口猪及一窝猪仔，五间门窗齐全的土坯房，院子还带半亩菜地，是庆丰村数三数四的富户。",
+        "sequence_number": 171
+      }
+    },
+    {
+      "id": "我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。",
+      "type": "句子",
+      "properties": {
+        "name": "我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。",
+        "sequence_number": 172
+      }
+    },
+    {
+      "id": "临走前还把咱们家的五斗七星柜连同四把官帽椅子都搬走了。",
+      "type": "句子",
+      "properties": {
+        "name": "临走前还把咱们家的五斗七星柜连同四把官帽椅子都搬走了。",
+        "sequence_number": 173
+      }
+    },
+    {
+      "id": "彭毅一面哭诉一面搓着手心里的蕉叶形银锁，委屈的泪水不住地簌簌往下淌。",
+      "type": "句子",
+      "properties": {
+        "name": "彭毅一面哭诉一面搓着手心里的蕉叶形银锁，委屈的泪水不住地簌簌往下淌。",
+        "sequence_number": 174
+      }
+    },
+    {
+      "id": "没拿到村口的九亩上等水田，本家那边不会善罢甘休，他们明天还会来的。",
+      "type": "句子",
+      "properties": {
+        "name": "没拿到村口的九亩上等水田，本家那边不会善罢甘休，他们明天还会来的。",
+        "sequence_number": 175
+      }
+    },
+    {
+      "id": "农村宗族争保家产，素来不是看谁占理，看的是男丁。谁家男人多，谁的拳头硬就占理。",
+      "type": "句子",
+      "properties": {
+        "name": "农村宗族争保家产，素来不是看谁占理，看的是男丁。谁家男人多，谁的拳头硬就占理。",
+        "sequence_number": 176
+      }
+    },
+    {
+      "id": "想要保住家产，目前看来彭刚兄妹所能依仗的力量只有外祖家的三个舅舅。",
+      "type": "句子",
+      "properties": {
+        "name": "想要保住家产，目前看来彭刚兄妹所能依仗的力量只有外祖家的三个舅舅。",
+        "sequence_number": 177
+      }
+    },
+    {
+      "id": "庆丰村彭族旁支与本家的家产争夺及依靠外祖家舅舅的帮助",
+      "type": "中心思想",
+      "properties": {
+        "name": "庆丰村彭族旁支与本家的家产争夺及依靠外祖家舅舅的帮助",
+        "sequence_number": 178
+      }
+    },
+    {
+      "id": "本家嫉妒旁支田产且旁支人丁稀薄",
+      "type": "起因",
+      "properties": {
+        "name": "本家嫉妒旁支田产且旁支人丁稀薄",
+        "sequence_number": 179
+      }
+    },
+    {
+      "id": "本家逼要田契、企图充公上等水田、搬走家具，彭毅托人向舅舅捎信求助",
+      "type": "过程",
+      "properties": {
+        "name": "本家逼要田契、企图充公上等水田、搬走家具，彭毅托人向舅舅捎信求助",
+        "sequence_number": 180
+      }
+    },
+    {
+      "id": "本家未得田契但搬走家具，舅舅后天可到",
+      "type": "结果",
+      "properties": {
+        "name": "本家未得田契但搬走家具，舅舅后天可到",
+        "sequence_number": 181
+      }
+    },
+    {
+      "id": "农村宗族家产争夺与舅甥关系的重要性",
+      "type": "主题",
+      "properties": {
+        "name": "农村宗族家产争夺与舅甥关系的重要性",
+        "sequence_number": 182
+      }
+    },
+    {
+      "id": "庆丰村彭族旁支与本家的家产冲突",
+      "type": "冲突",
+      "properties": {
+        "name": "庆丰村彭族旁支与本家的家产冲突",
+        "sequence_number": 183
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "阔气",
+      "target_id": "院子",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "粗劣",
+      "target_id": "杉木薄棺",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "熟悉亲切",
+      "target_id": "桂柳客话",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "怪",
+      "target_id": "桂柳客话",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "为老不尊",
+      "target_id": "族长",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "虚弱",
+      "target_id": "彭刚",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "聪明",
+      "target_id": "彭毅",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "稚嫩",
+      "target_id": "彭毅",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "稚嫩",
+      "target_id": "彭敏",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "人小胆大",
+      "target_id": "彭敏",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "数三数四",
+      "target_id": "彭姓人家",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "颇有家资",
+      "target_id": "彭姓人家",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "人丁稀薄",
+      "target_id": "彭姓人家",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "贪婪地",
+      "target_id": "呼吸",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "前后脚",
+      "target_id": "离世",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "步步紧逼",
+      "target_id": "威逼利诱",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "终于",
+      "target_id": "掀棺而起",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "长时间",
+      "target_id": "接触",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "稍稍",
+      "target_id": "擦拭",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。",
+      "target_id": "彭毅",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。",
+      "target_id": "田契",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。",
+      "target_id": "嘱托",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。",
+      "target_id": "照料",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。",
+      "target_id": "照管",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+      "target_id": "田契",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+      "target_id": "藏起来",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+      "target_id": "搜到",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+      "target_id": "赖",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+      "target_id": "软磨硬泡",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+      "target_id": "逼",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚穿越到清朝富农家庭，在棺材中醒来后与弟弟妹妹共同面对族人侵占家产的危机",
+      "target_id": "清朝富农家庭的家产争夺与生存",
+      "type": "体现",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家颇有家资且人丁稀薄，被本家惦记",
+      "target_id": "彭刚兄妹与族人之间的家产争夺",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚在棺材中醒来，身体恢复后掀棺而起与弟妹相见并询问田契",
+      "target_id": "彭刚穿越到清朝富农家庭，在棺材中醒来后与弟弟妹妹共同面对族人侵占家产的危机",
+      "type": "构成",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚醒来，田契仍在彭毅手中，族人暂未得逞",
+      "target_id": "彭刚在棺材中醒来，身体恢复后掀棺而起与弟妹相见并询问田契",
+      "type": "体现",
+      "properties": {}
+    },
+    {
+      "source_id": "他家有十七亩水田，十六亩旱坡地，一个鱼塘，一头水牛，两口猪及一窝猪仔，五间门窗齐全的土坯房，院子还带半亩菜地，是庆丰村数三数四的富户。",
+      "target_id": "水田",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "他家有十七亩水田，十六亩旱坡地，一个鱼塘，一头水牛，两口猪及一窝猪仔，五间门窗齐全的土坯房，院子还带半亩菜地，是庆丰村数三数四的富户。",
+      "target_id": "庆丰村",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "他家有十七亩水田，十六亩旱坡地，一个鱼塘，一头水牛，两口猪及一窝猪仔，五间门窗齐全的土坯房，院子还带半亩菜地，是庆丰村数三数四的富户。",
+      "target_id": "富户",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。",
+      "target_id": "交出来",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。",
+      "target_id": "哄逼",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。",
+      "target_id": "画押",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。",
+      "target_id": "九亩上等水田",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。",
+      "target_id": "族田",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。",
+      "target_id": "充作",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "临走前还把咱们家的五斗七星柜连同四把官帽椅子都搬走了。",
+      "target_id": "五斗七星柜",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "临走前还把咱们家的五斗七星柜连同四把官帽椅子都搬走了。",
+      "target_id": "官帽椅子",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "临走前还把咱们家的五斗七星柜连同四把官帽椅子都搬走了。",
+      "target_id": "搬走",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅一面哭诉一面搓着手心里的蕉叶形银锁，委屈的泪水不住地簌簌往下淌。",
+      "target_id": "彭毅",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅一面哭诉一面搓着手心里的蕉叶形银锁，委屈的泪水不住地簌簌往下淌。",
+      "target_id": "哭诉",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅一面哭诉一面搓着手心里的蕉叶形银锁，委屈的泪水不住地簌簌往下淌。",
+      "target_id": "蕉叶形银锁",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅一面哭诉一面搓着手心里的蕉叶形银锁，委屈的泪水不住地簌簌往下淌。",
+      "target_id": "不住地",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "没拿到村口的九亩上等水田，本家那边不会善罢甘休，他们明天还会来的。",
+      "target_id": "本家",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "农村宗族争保家产，素来不是看谁占理，看的是男丁。谁家男人多，谁的拳头硬就占理。",
+      "target_id": "争保家产",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "农村宗族争保家产，素来不是看谁占理，看的是男丁。谁家男人多，谁的拳头硬就占理。",
+      "target_id": "素来",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "农村宗族争保家产，素来不是看谁占理，看的是男丁。谁家男人多，谁的拳头硬就占理。",
+      "target_id": "拳头硬",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "想要保住家产，目前看来彭刚兄妹所能依仗的力量只有外祖家的三个舅舅。",
+      "target_id": "彭刚",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "想要保住家产，目前看来彭刚兄妹所能依仗的力量只有外祖家的三个舅舅。",
+      "target_id": "舅舅",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "想要保住家产，目前看来彭刚兄妹所能依仗的力量只有外祖家的三个舅舅。",
+      "target_id": "依仗",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "想要保住家产，目前看来彭刚兄妹所能依仗的力量只有外祖家的三个舅舅。",
+      "target_id": "目前看来",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "人丁稀薄",
+      "target_id": "旁支",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "上等",
+      "target_id": "九亩上等水田",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "关系还是非常不错",
+      "target_id": "舅舅",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "吃相那么难看",
+      "target_id": "本家",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "日子过得越来越红火",
+      "target_id": "旁支",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "紧密牢靠",
+      "target_id": "舅舅",
+      "type": "修饰",
+      "properties": {}
+    },
+    {
+      "source_id": "本家嫉妒旁支田产且旁支人丁稀薄",
+      "target_id": "庆丰村彭族旁支与本家的家产冲突",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "本家逼要田契、企图充公上等水田、搬走家具，彭毅托人向舅舅捎信求助",
+      "target_id": "庆丰村彭族旁支与本家的家产冲突",
+      "type": "构成",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村彭族旁支与本家的家产争夺及依靠外祖家舅舅的帮助",
+      "target_id": "农村宗族家产争夺与舅甥关系的重要性",
+      "type": "表达",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村彭族旁支与本家的家产冲突",
+      "target_id": "农村宗族家产争夺与舅甥关系的重要性",
+      "type": "体现",
+      "properties": {}
+    },
+    {
+      "source_id": "本家未得田契但搬走家具，舅舅后天可到",
+      "target_id": "本家逼要田契、企图充公上等水田、搬走家具，彭毅托人向舅舅捎信求助",
+      "type": "承接",
+      "properties": {}
+    }
+  ]
+}

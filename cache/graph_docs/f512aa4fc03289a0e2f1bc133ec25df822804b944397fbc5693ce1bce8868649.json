@@ -1,0 +1,1266 @@
+{
+  "nodes": [
+    {
+      "id": "初圣宗",
+      "type": "地点",
+      "properties": {
+        "name": "初圣宗",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "陈国",
+      "type": "地点",
+      "properties": {
+        "name": "陈国",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "魔门",
+      "type": "地点",
+      "properties": {
+        "name": "魔门",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "记名弟子渺无音信",
+      "type": "事件",
+      "properties": {
+        "name": "记名弟子渺无音信",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "系统",
+      "type": "系统",
+      "properties": {
+        "name": "系统",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "病入膏肓",
+      "type": "事件",
+      "properties": {
+        "name": "病入膏肓",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "三年一次的记名弟子输送事件",
+      "type": "事件",
+      "properties": {
+        "name": "三年一次的记名弟子输送事件",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "加点功能",
+      "type": "物件",
+      "properties": {
+        "name": "加点功能",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "吕阳",
+      "type": "人物",
+      "properties": {
+        "name": "吕阳",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "寿元：18",
+      "type": "时间",
+      "properties": {
+        "name": "寿元：18",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "死后可以回到初始时间点，重开一世",
+      "type": "事件",
+      "properties": {
+        "name": "死后可以回到初始时间点，重开一世",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "陈良",
+      "type": "人物",
+      "properties": {
+        "name": "陈良",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "加点",
+      "type": "事件",
+      "properties": {
+        "name": "加点",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "死亡",
+      "type": "事件",
+      "properties": {
+        "name": "死亡",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "点燃命火",
+      "type": "事件",
+      "properties": {
+        "name": "点燃命火",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "重开后可以从前世的宝物，修为，寿命之中任选其一，或者放弃前世的所有收获，觉醒一门天赋",
+      "type": "事件",
+      "properties": {
+        "name": "重开后可以从前世的宝物，修为，寿命之中任选其一，或者放弃前世的所有收获，觉醒一门天赋",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "命灯",
+      "type": "命灯",
+      "properties": {
+        "name": "命灯",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "百世书",
+      "type": "物件",
+      "properties": {
+        "name": "百世书",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "记名弟子",
+      "type": "事件",
+      "properties": {
+        "name": "记名弟子",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "黑衣道人",
+      "type": "人物",
+      "properties": {
+        "name": "黑衣道人",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "个人面板",
+      "type": "物件",
+      "properties": {
+        "name": "个人面板",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "重开一世",
+      "type": "事件",
+      "properties": {
+        "name": "重开一世",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "命火",
+      "type": "命灯",
+      "properties": {
+        "name": "命火",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "小道童",
+      "type": "人物",
+      "properties": {
+        "name": "小道童",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "炼丹殿",
+      "type": "地点",
+      "properties": {
+        "name": "炼丹殿",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "炼宝殿",
+      "type": "地点",
+      "properties": {
+        "name": "炼宝殿",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "玉素真",
+      "type": "人物",
+      "properties": {
+        "name": "玉素真",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "小道童死亡",
+      "type": "事件",
+      "properties": {
+        "name": "小道童死亡",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "御兽殿",
+      "type": "地点",
+      "properties": {
+        "name": "御兽殿",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "命牌",
+      "type": "物件",
+      "properties": {
+        "name": "命牌",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "合欢殿",
+      "type": "地点",
+      "properties": {
+        "name": "合欢殿",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "《阴阳大乐赋》",
+      "type": "功法",
+      "properties": {
+        "name": "《阴阳大乐赋》",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "圣宗",
+      "type": "系统",
+      "properties": {
+        "name": "圣宗",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "合欢殿考验",
+      "type": "事件",
+      "properties": {
+        "name": "合欢殿考验",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "成为正式弟子",
+      "type": "事件",
+      "properties": {
+        "name": "成为正式弟子",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "合欢殿师姐",
+      "type": "人物",
+      "properties": {
+        "name": "合欢殿师姐",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "修炼",
+      "type": "功法",
+      "properties": {
+        "name": "修炼",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "吕阳入殿",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳入殿",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "记名弟子",
+      "type": "人物",
+      "properties": {
+        "name": "记名弟子",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "功法：无",
+      "type": "物件",
+      "properties": {
+        "name": "功法：无",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "宝物：无",
+      "type": "物件",
+      "properties": {
+        "name": "宝物：无",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "神通：无",
+      "type": "物件",
+      "properties": {
+        "name": "神通：无",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "山峰",
+      "type": "地点",
+      "properties": {
+        "name": "山峰",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "寿元：18",
+      "type": "物件",
+      "properties": {
+        "name": "寿元：18",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "原身记忆",
+      "type": "事件",
+      "properties": {
+        "name": "原身记忆",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "修为：无",
+      "type": "物件",
+      "properties": {
+        "name": "修为：无",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "云海",
+      "type": "地点",
+      "properties": {
+        "name": "云海",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "身体虚弱",
+      "type": "事件",
+      "properties": {
+        "name": "身体虚弱",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "天赋：无",
+      "type": "物件",
+      "properties": {
+        "name": "天赋：无",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "姓名：吕阳",
+      "type": "物件",
+      "properties": {
+        "name": "姓名：吕阳",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "初圣宗记名弟子",
+      "type": "事件",
+      "properties": {
+        "name": "初圣宗记名弟子",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "名册",
+      "type": "物件",
+      "properties": {
+        "name": "名册",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "百世书",
+      "type": "功法",
+      "properties": {
+        "name": "百世书",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "命火",
+      "type": "事件",
+      "properties": {
+        "name": "命火",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "血",
+      "type": "物件",
+      "properties": {
+        "name": "血",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "加点",
+      "type": "功法",
+      "properties": {
+        "name": "加点",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "骨头魂魄",
+      "type": "物件",
+      "properties": {
+        "name": "骨头魂魄",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "圣宗阵法",
+      "type": "系统",
+      "properties": {
+        "name": "圣宗阵法",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "五脏六腑",
+      "type": "物件",
+      "properties": {
+        "name": "五脏六腑",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "血液皮肉",
+      "type": "物件",
+      "properties": {
+        "name": "血液皮肉",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "外门四殿",
+      "type": "事件",
+      "properties": {
+        "name": "外门四殿",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "炼丹",
+      "type": "功法",
+      "properties": {
+        "name": "炼丹",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "御兽",
+      "type": "功法",
+      "properties": {
+        "name": "御兽",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "合欢",
+      "type": "功法",
+      "properties": {
+        "name": "合欢",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "玉牌",
+      "type": "物件",
+      "properties": {
+        "name": "玉牌",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "炼宝",
+      "type": "功法",
+      "properties": {
+        "name": "炼宝",
+        "sequence_number": 47
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "吕阳",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗",
+      "target_id": "魔门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗",
+      "target_id": "三年一次的记名弟子输送事件",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "陈国",
+      "target_id": "三年一次的记名弟子输送事件",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "三年一次的记名弟子输送事件",
+      "target_id": "记名弟子渺无音信",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子渺无音信",
+      "target_id": "初圣宗",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "三年一次的记名弟子输送事件",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "系统",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "吕阳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "加点功能",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "加点功能",
+      "target_id": "系统",
+      "type": "不存在于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "病入膏肓",
+      "type": "患有",
+      "properties": {}
+    },
+    {
+      "source_id": "病入膏肓",
+      "target_id": "寿元：18",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "加点",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "加点",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "个人面板",
+      "target_id": "吕阳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "加点",
+      "target_id": "系统",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "吕阳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "死后可以回到初始时间点，重开一世",
+      "type": "描述",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "重开后可以从前世的宝物，修为，寿命之中任选其一，或者放弃前世的所有收获，觉醒一门天赋",
+      "type": "描述",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "重开一世",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "重开一世",
+      "target_id": "百世书",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "命灯",
+      "target_id": "黑衣道人",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "点燃命火",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "点燃命火",
+      "target_id": "命灯",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良",
+      "target_id": "点燃命火",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良",
+      "target_id": "死亡",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "死亡",
+      "target_id": "陈良",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗",
+      "target_id": "记名弟子",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "初圣宗",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "初圣宗",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "小道童死亡",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "小道童",
+      "target_id": "初圣宗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "小道童",
+      "target_id": "炼丹殿",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "小道童",
+      "target_id": "炼宝殿",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "小道童",
+      "target_id": "御兽殿",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "炼丹殿",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "炼宝殿",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "御兽殿",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "初圣宗",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "合欢殿",
+      "type": "分配到",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "《阴阳大乐赋》",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "《阴阳大乐赋》",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "命牌",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "命牌",
+      "target_id": "吕阳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "命牌",
+      "target_id": "命火",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "命火",
+      "target_id": "命牌",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "命牌",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "命牌",
+      "target_id": "玉素真",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "吕阳入殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳入殿",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "合欢殿考验",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿考验",
+      "target_id": "成为正式弟子",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "修炼",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "修炼",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "修炼",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "合欢殿师姐",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "系统",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "姓名：吕阳",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "寿元：18",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "修为：无",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "天赋：无",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "功法：无",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "神通：无",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "宝物：无",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗",
+      "target_id": "记名弟子",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "陈国",
+      "target_id": "记名弟子",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "系统",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "魔门",
+      "target_id": "初圣宗",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗",
+      "target_id": "云海",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗",
+      "target_id": "山峰",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "山峰",
+      "target_id": "云海",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "身体虚弱",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "病入膏肓",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "原身记忆",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "姓名：吕阳",
+      "type": "显示",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "寿元：18",
+      "type": "显示",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "修为：无",
+      "type": "显示",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "天赋：无",
+      "type": "显示",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "功法：无",
+      "type": "显示",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "神通：无",
+      "type": "显示",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "宝物：无",
+      "type": "显示",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "加点",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "系统",
+      "target_id": "百世书",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "吕阳",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "命灯",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "命灯",
+      "target_id": "血",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "命灯",
+      "target_id": "命火",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "初圣宗记名弟子",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良",
+      "target_id": "命灯",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "名册",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "名册",
+      "target_id": "黑衣道人",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "吕阳",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "合欢殿",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "《阴阳大乐赋》",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "《阴阳大乐赋》",
+      "target_id": "吕阳",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "血液皮肉",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "骨头魂魄",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "五脏六腑",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "血液皮肉",
+      "target_id": "炼丹殿",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "骨头魂魄",
+      "target_id": "炼宝殿",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "五脏六腑",
+      "target_id": "御兽殿",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "命牌",
+      "target_id": "玉素真",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "命牌",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "命牌",
+      "target_id": "吕阳",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "命牌",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "命牌",
+      "target_id": "圣宗阵法",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "圣宗阵法",
+      "target_id": "命牌",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "合欢殿",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "玉素真",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "修炼",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉牌",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "玉牌",
+      "target_id": "玉素真",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "外门四殿",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "外门四殿",
+      "target_id": "炼宝",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "外门四殿",
+      "target_id": "炼丹",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "外门四殿",
+      "target_id": "御兽",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "外门四殿",
+      "target_id": "合欢",
+      "type": "使用",
+      "properties": {}
+    }
+  ]
+}

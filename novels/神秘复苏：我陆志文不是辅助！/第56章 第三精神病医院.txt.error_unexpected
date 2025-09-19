@@ -1,0 +1,71 @@
+[错误类型: unexpected]
+[未知错误] Message: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=140.0.7339.81)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66ea0fc95+79861]
+	GetHandleVerifier [0x0x7ff66ea0fcf0+79952]
+	(No symbol) [0x0x7ff66e78cada]
+	(No symbol) [0x0x7ff66e77a07d]
+	(No symbol) [0x0x7ff66e779d6b]
+	(No symbol) [0x0x7ff66e7778dc]
+	(No symbol) [0x0x7ff66e77835b]
+	(No symbol) [0x0x7ff66e78725e]
+	(No symbol) [0x0x7ff66e79d5c1]
+	(No symbol) [0x0x7ff66e7a485a]
+	(No symbol) [0x0x7ff66e778b0e]
+	(No symbol) [0x0x7ff66e79d2f6]
+	(No symbol) [0x0x7ff66e834e62]
+	(No symbol) [0x0x7ff66e80c8b3]
+	(No symbol) [0x0x7ff66e7d5272]
+	(No symbol) [0x0x7ff66e7d6043]
+	GetHandleVerifier [0x0x7ff66eccb9cd+2946349]
+	GetHandleVerifier [0x0x7ff66ecc5c4a+2922410]
+	GetHandleVerifier [0x0x7ff66ece59d7+3052855]
+	GetHandleVerifier [0x0x7ff66ea2aa7e+189918]
+	GetHandleVerifier [0x0x7ff66ea32a1f+222591]
+	GetHandleVerifier [0x0x7ff66ea18ab4+116244]
+	GetHandleVerifier [0x0x7ff66ea18c69+116681]
+	GetHandleVerifier [0x0x7ff66e9ff048+11176]
+	BaseThreadInitThunk [0x0x7ff9337b257d+29]
+	RtlUserThreadStart [0x0x7ff9347eaf08+40]
+
+Traceback (most recent call last):
+  File "C:\Users\zgw31\PycharmProjects\AI\novel_chapter_extractor.py", line 570, in _process_chapter_content
+    page_html = self.driver.page_source
+  File "C:\Users\zgw31\PycharmProjects\AI\venv1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 597, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "C:\Users\zgw31\PycharmProjects\AI\venv1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zgw31\PycharmProjects\AI\venv1\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=140.0.7339.81)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66ea0fc95+79861]
+	GetHandleVerifier [0x0x7ff66ea0fcf0+79952]
+	(No symbol) [0x0x7ff66e78cada]
+	(No symbol) [0x0x7ff66e77a07d]
+	(No symbol) [0x0x7ff66e779d6b]
+	(No symbol) [0x0x7ff66e7778dc]
+	(No symbol) [0x0x7ff66e77835b]
+	(No symbol) [0x0x7ff66e78725e]
+	(No symbol) [0x0x7ff66e79d5c1]
+	(No symbol) [0x0x7ff66e7a485a]
+	(No symbol) [0x0x7ff66e778b0e]
+	(No symbol) [0x0x7ff66e79d2f6]
+	(No symbol) [0x0x7ff66e834e62]
+	(No symbol) [0x0x7ff66e80c8b3]
+	(No symbol) [0x0x7ff66e7d5272]
+	(No symbol) [0x0x7ff66e7d6043]
+	GetHandleVerifier [0x0x7ff66eccb9cd+2946349]
+	GetHandleVerifier [0x0x7ff66ecc5c4a+2922410]
+	GetHandleVerifier [0x0x7ff66ece59d7+3052855]
+	GetHandleVerifier [0x0x7ff66ea2aa7e+189918]
+	GetHandleVerifier [0x0x7ff66ea32a1f+222591]
+	GetHandleVerifier [0x0x7ff66ea18ab4+116244]
+	GetHandleVerifier [0x0x7ff66ea18c69+116681]
+	GetHandleVerifier [0x0x7ff66e9ff048+11176]
+	BaseThreadInitThunk [0x0x7ff9337b257d+29]
+	RtlUserThreadStart [0x0x7ff9347eaf08+40]
+
+

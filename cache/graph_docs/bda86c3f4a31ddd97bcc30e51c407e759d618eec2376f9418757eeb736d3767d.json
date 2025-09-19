@@ -1,0 +1,1428 @@
+{
+  "nodes": [
+    {
+      "id": "吕阳",
+      "type": "人物",
+      "properties": {
+        "name": "吕阳",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "魔门",
+      "type": "地点",
+      "properties": {
+        "name": "魔门",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "初圣宗",
+      "type": "地点",
+      "properties": {
+        "name": "初圣宗",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "陈国",
+      "type": "地点",
+      "properties": {
+        "name": "陈国",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "云海",
+      "type": "地点",
+      "properties": {
+        "name": "云海",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "山峰",
+      "type": "地点",
+      "properties": {
+        "name": "山峰",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "山顶平地",
+      "type": "地点",
+      "properties": {
+        "name": "山顶平地",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "吕阳穿越",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳穿越",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "吕阳发现处境不妙",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳发现处境不妙",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "吕阳接收原身记忆",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳接收原身记忆",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "陈国送记名弟子",
+      "type": "事件",
+      "properties": {
+        "name": "陈国送记名弟子",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "初圣宗保证陈国风调雨顺",
+      "type": "事件",
+      "properties": {
+        "name": "初圣宗保证陈国风调雨顺",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "吕阳身体虚弱",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳身体虚弱",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "吕阳发现原身有病",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳发现原身有病",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "吕阳看到系统界面",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳看到系统界面",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "吕阳尝试加点",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳尝试加点",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "吕阳发现无法加点",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳发现无法加点",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "吕阳寿元18",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳寿元18",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "吕阳修为无",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳修为无",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "吕阳天赋无",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳天赋无",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "吕阳功法无",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳功法无",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "吕阳神通无",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳神通无",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "吕阳宝物无",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳宝物无",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "吕阳处境不妙",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳处境不妙",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "吕阳身体虚弱",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳身体虚弱",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "吕阳病入膏肓",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳病入膏肓",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "黑衣道人",
+      "type": "人物",
+      "properties": {
+        "name": "黑衣道人",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "陈良",
+      "type": "人物",
+      "properties": {
+        "name": "陈良",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "爹",
+      "type": "人物",
+      "properties": {
+        "name": "爹",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "系统",
+      "type": "人物",
+      "properties": {
+        "name": "系统",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "众人",
+      "type": "人物",
+      "properties": {
+        "name": "众人",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "炼丹殿",
+      "type": "地点",
+      "properties": {
+        "name": "炼丹殿",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "炼宝殿",
+      "type": "地点",
+      "properties": {
+        "name": "炼宝殿",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "御兽殿",
+      "type": "地点",
+      "properties": {
+        "name": "御兽殿",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "书院",
+      "type": "地点",
+      "properties": {
+        "name": "书院",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "凡间",
+      "type": "地点",
+      "properties": {
+        "name": "凡间",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "命灯",
+      "type": "地点",
+      "properties": {
+        "name": "命灯",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "个人面板",
+      "type": "地点",
+      "properties": {
+        "name": "个人面板",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "觉醒系统",
+      "type": "事件",
+      "properties": {
+        "name": "觉醒系统",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "百世轮回",
+      "type": "事件",
+      "properties": {
+        "name": "百世轮回",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "初圣宗记名弟子",
+      "type": "事件",
+      "properties": {
+        "name": "初圣宗记名弟子",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "命灯点燃",
+      "type": "事件",
+      "properties": {
+        "name": "命灯点燃",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "陈良被点名",
+      "type": "事件",
+      "properties": {
+        "name": "陈良被点名",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "陈良死亡",
+      "type": "事件",
+      "properties": {
+        "name": "陈良死亡",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "吕阳兴奋",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳兴奋",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "吕阳绝望",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳绝望",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "百世书",
+      "type": "事件",
+      "properties": {
+        "name": "百世书",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "绝望",
+      "type": "状态",
+      "properties": {
+        "name": "绝望",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "兴奋",
+      "type": "状态",
+      "properties": {
+        "name": "兴奋",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "灵气十足",
+      "type": "状态",
+      "properties": {
+        "name": "灵气十足",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "没了声息",
+      "type": "状态",
+      "properties": {
+        "name": "没了声息",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "惊艳",
+      "type": "状态",
+      "properties": {
+        "name": "惊艳",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "没喜色",
+      "type": "状态",
+      "properties": {
+        "name": "没喜色",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "知道初圣宗凶名",
+      "type": "状态",
+      "properties": {
+        "name": "知道初圣宗凶名",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "小道童",
+      "type": "人物",
+      "properties": {
+        "name": "小道童",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "老杂役",
+      "type": "人物",
+      "properties": {
+        "name": "老杂役",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "玉素真",
+      "type": "人物",
+      "properties": {
+        "name": "玉素真",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "一众记名弟子",
+      "type": "人物",
+      "properties": {
+        "name": "一众记名弟子",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "合欢殿",
+      "type": "地点",
+      "properties": {
+        "name": "合欢殿",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "小道童死亡",
+      "type": "事件",
+      "properties": {
+        "name": "小道童死亡",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "黑衣道人吩咐",
+      "type": "事件",
+      "properties": {
+        "name": "黑衣道人吩咐",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "血液皮肉被送往炼丹殿",
+      "type": "事件",
+      "properties": {
+        "name": "血液皮肉被送往炼丹殿",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "骨头魂魄被送往炼宝殿",
+      "type": "事件",
+      "properties": {
+        "name": "骨头魂魄被送往炼宝殿",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "五脏六腑被送往御兽殿",
+      "type": "事件",
+      "properties": {
+        "name": "五脏六腑被送往御兽殿",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "吕阳被分配到合欢殿",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳被分配到合欢殿",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "吕阳前往合欢殿",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳前往合欢殿",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "老杂役领路吕阳",
+      "type": "事件",
+      "properties": {
+        "name": "老杂役领路吕阳",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "玉素真介绍合欢殿",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真介绍合欢殿",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "众人目瞪口呆",
+      "type": "状态",
+      "properties": {
+        "name": "众人目瞪口呆",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "吕阳神色恭敬",
+      "type": "状态",
+      "properties": {
+        "name": "吕阳神色恭敬",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "黑衣道人桀桀一笑",
+      "type": "状态",
+      "properties": {
+        "name": "黑衣道人桀桀一笑",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "黑衣道人失望摇头",
+      "type": "状态",
+      "properties": {
+        "name": "黑衣道人失望摇头",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "玉素真撩裙摆",
+      "type": "状态",
+      "properties": {
+        "name": "玉素真撩裙摆",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "美妇非但不羞涩，反而一边掩嘴轻笑，一边秀手轻撩，将侧腰的一边裙摆撩了起来。",
+      "type": "事件",
+      "properties": {
+        "name": "美妇非但不羞涩，反而一边掩嘴轻笑，一边秀手轻撩，将侧腰的一边裙摆撩了起来。",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "裙摆之下，赫然吊着一块玉牌。",
+      "type": "事件",
+      "properties": {
+        "name": "裙摆之下，赫然吊着一块玉牌。",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "此处便是合欢殿，小女子玉素真，也算是各位的师姐了。",
+      "type": "事件",
+      "properties": {
+        "name": "此处便是合欢殿，小女子玉素真，也算是各位的师姐了。",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "这位师弟如此俊俏，肯定是我合欢殿的弟子了。",
+      "type": "事件",
+      "properties": {
+        "name": "这位师弟如此俊俏，肯定是我合欢殿的弟子了。",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "我看你长得不错，随我来吧，我为你介绍一下合欢殿的情况。",
+      "type": "事件",
+      "properties": {
+        "name": "我看你长得不错，随我来吧，我为你介绍一下合欢殿的情况。",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "多谢玉师姐。",
+      "type": "事件",
+      "properties": {
+        "name": "多谢玉师姐。",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "那么客气作甚？",
+      "type": "事件",
+      "properties": {
+        "name": "那么客气作甚？",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "我圣宗弟子，有内外之分，外门四殿，炼宝，炼丹，御兽，合欢，就是你们这些记名弟子的去处。",
+      "type": "事件",
+      "properties": {
+        "name": "我圣宗弟子，有内外之分，外门四殿，炼宝，炼丹，御兽，合欢，就是你们这些记名弟子的去处。",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "只有通过了外门四殿的考验，才能进入内门，得授真传，成为正式弟子。",
+      "type": "事件",
+      "properties": {
+        "name": "只有通过了外门四殿的考验，才能进入内门，得授真传，成为正式弟子。",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "你运气不错，入了我合欢殿，不用像其他三殿那样吃苦受罪，毕竟我合欢殿的考验可要轻松多了.....",
+      "type": "事件",
+      "properties": {
+        "name": "你运气不错，入了我合欢殿，不用像其他三殿那样吃苦受罪，毕竟我合欢殿的考验可要轻松多了.....",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "你想知道是什么吗？",
+      "type": "事件",
+      "properties": {
+        "name": "你想知道是什么吗？",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "还请师姐指点。",
+      "type": "事件",
+      "properties": {
+        "name": "还请师姐指点。",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "那就是.....修炼。",
+      "type": "事件",
+      "properties": {
+        "name": "那就是.....修炼。",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "吕阳顿时倒抽了一口凉气。",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳顿时倒抽了一口凉气。",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "玉素真轻笑一声，随后便水蛇腰轻扭，裙摆交错，一步一步走到了吕阳面前，白花花晃得吕阳头晕。",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真轻笑一声，随后便水蛇腰轻扭，裙摆交错，一步一步走到了吕阳面前，白花花晃得吕阳头晕。",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "说到这里，玉素真突然凑到了吕阳的身边。",
+      "type": "事件",
+      "properties": {
+        "name": "说到这里，玉素真突然凑到了吕阳的身边。",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "回头看去，一张精致俏脸近在眼前。",
+      "type": "事件",
+      "properties": {
+        "name": "回头看去，一张精致俏脸近在眼前。",
+        "sequence_number": 89
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "吕阳",
+      "target_id": "山顶平地",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗",
+      "target_id": "山峰",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "山峰",
+      "target_id": "云海",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陈国",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "魔门",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳穿越",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳发现处境不妙",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳接收原身记忆",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳看到系统界面",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳尝试加点",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳发现无法加点",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳寿元18",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳修为无",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳天赋无",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳功法无",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳神通无",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳宝物无",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳处境不妙",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳身体虚弱",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳病入膏肓",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "陈国送记名弟子",
+      "target_id": "初圣宗保证陈国风调雨顺",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "陈国送记名弟子",
+      "target_id": "初圣宗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗保证陈国风调雨顺",
+      "target_id": "陈国",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳发现处境不妙",
+      "target_id": "吕阳处境不妙",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳身体虚弱",
+      "target_id": "吕阳身体虚弱",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳发现原身有病",
+      "target_id": "吕阳病入膏肓",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "觉醒系统",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "绝望",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "兴奋",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "系统",
+      "type": "认识",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "个人面板",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "陈良死亡",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "初圣宗记名弟子",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "陈良死亡",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "陈良",
+      "type": "认识",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良",
+      "target_id": "吕阳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良",
+      "target_id": "初圣宗记名弟子",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良",
+      "target_id": "灵气十足",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良",
+      "target_id": "没了声息",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "炼丹殿",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "炼宝殿",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "御兽殿",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "书院",
+      "target_id": "凡间",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "觉醒系统",
+      "target_id": "吕阳",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "百世轮回",
+      "target_id": "吕阳",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗记名弟子",
+      "target_id": "陈良",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "命灯点燃",
+      "target_id": "初圣宗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良被点名",
+      "target_id": "初圣宗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "陈良死亡",
+      "target_id": "初圣宗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "惊艳",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "众人",
+      "target_id": "没喜色",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "众人",
+      "target_id": "知道初圣宗凶名",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "百世书",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "爹",
+      "target_id": "吕阳",
+      "type": "认识",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "小道童死亡",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "黑衣道人吩咐",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人吩咐",
+      "target_id": "血液皮肉被送往炼丹殿",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "血液皮肉被送往炼丹殿",
+      "target_id": "炼丹殿",
+      "type": "前往",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人吩咐",
+      "target_id": "骨头魂魄被送往炼宝殿",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "骨头魂魄被送往炼宝殿",
+      "target_id": "炼宝殿",
+      "type": "前往",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人吩咐",
+      "target_id": "五脏六腑被送往御兽殿",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "五脏六腑被送往御兽殿",
+      "target_id": "御兽殿",
+      "type": "前往",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人吩咐",
+      "target_id": "吕阳被分配到合欢殿",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳前往合欢殿",
+      "type": "前往",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳前往合欢殿",
+      "target_id": "合欢殿",
+      "type": "前往",
+      "properties": {}
+    },
+    {
+      "source_id": "老杂役",
+      "target_id": "老杂役领路吕阳",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "老杂役领路吕阳",
+      "target_id": "吕阳",
+      "type": "前往",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真介绍合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真介绍合欢殿",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳",
+      "type": "认识",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "一众记名弟子",
+      "type": "认识",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "众人目瞪口呆",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "吕阳神色恭敬",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "黑衣道人桀桀一笑",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "黑衣道人失望摇头",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真撩裙摆",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳神色恭敬",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "黑衣道人桀桀一笑",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "黑衣道人失望摇头",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真撩裙摆",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "一众记名弟子",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "美妇非但不羞涩，反而一边掩嘴轻笑，一边秀手轻撩，将侧腰的一边裙摆撩了起来。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "裙摆之下，赫然吊着一块玉牌。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "此处便是合欢殿，小女子玉素真，也算是各位的师姐了。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "我看你长得不错，随我来吧，我为你介绍一下合欢殿的情况。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "多谢玉师姐。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "那么客气作甚？",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "我圣宗弟子，有内外之分，外门四殿，炼宝，炼丹，御兽，合欢，就是你们这些记名弟子的去处。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "只有通过了外门四殿的考验，才能进入内门，得授真传，成为正式弟子。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "你运气不错，入了我合欢殿，不用像其他三殿那样吃苦受罪，毕竟我合欢殿的考验可要轻松多了.....",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "你想知道是什么吗？",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "还请师姐指点。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "那就是.....修炼。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳顿时倒抽了一口凉气。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真轻笑一声，随后便水蛇腰轻扭，裙摆交错，一步一步走到了吕阳面前，白花花晃得吕阳头晕。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "说到这里，玉素真突然凑到了吕阳的身边。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "回头看去，一张精致俏脸近在眼前。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真轻笑一声，随后便水蛇腰轻扭，裙摆交错，一步一步走到了吕阳面前，白花花晃得吕阳头晕。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "这位师弟如此俊俏，肯定是我合欢殿的弟子了。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "我看你长得不错，随我来吧，我为你介绍一下合欢殿的情况。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "多谢玉师姐。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "那么客气作甚？",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "我圣宗弟子，有内外之分，外门四殿，炼宝，炼丹，御兽，合欢，就是你们这些记名弟子的去处。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "只有通过了外门四殿的考验，才能进入内门，得授真传，成为正式弟子。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "你运气不错，入了我合欢殿，不用像其他三殿那样吃苦受罪，毕竟我合欢殿的考验可要轻松多了.....",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "你想知道是什么吗？",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "还请师姐指点。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "那就是.....修炼。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳顿时倒抽了一口凉气。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "说到这里，玉素真突然凑到了吕阳的身边。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "回头看去，一张精致俏脸近在眼前。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "美妇非但不羞涩，反而一边掩嘴轻笑，一边秀手轻撩，将侧腰的一边裙摆撩了起来。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "裙摆之下，赫然吊着一块玉牌。",
+      "target_id": "合欢殿",
+      "type": "发生在",
+      "properties": {}
+    }
+  ]
+}

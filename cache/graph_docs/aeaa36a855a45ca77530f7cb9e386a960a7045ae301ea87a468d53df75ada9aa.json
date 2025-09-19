@@ -1,0 +1,646 @@
+{
+  "nodes": [
+    {
+      "id": "清道光二十八年二月（1848年）",
+      "type": "Time",
+      "properties": {
+        "name": "清道光二十八年二月（1848年）",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "广西浔州府贵县（今贵港）县城东北五十里处的庆丰村",
+      "type": "Location",
+      "properties": {
+        "name": "广西浔州府贵县（今贵港）县城东北五十里处的庆丰村",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "Person",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "Person",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "彭敏",
+      "type": "Person",
+      "properties": {
+        "name": "彭敏",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "父亲",
+      "type": "Person",
+      "properties": {
+        "name": "父亲",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "母亲",
+      "type": "Person",
+      "properties": {
+        "name": "母亲",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "六堂叔",
+      "type": "Person",
+      "properties": {
+        "name": "六堂叔",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "族长",
+      "type": "Person",
+      "properties": {
+        "name": "族长",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "族人",
+      "type": "Person",
+      "properties": {
+        "name": "族人",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "田契",
+      "type": "Object",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "杉木薄棺",
+      "type": "Object",
+      "properties": {
+        "name": "杉木薄棺",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "十七亩水田",
+      "type": "Object",
+      "properties": {
+        "name": "十七亩水田",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "十六亩旱坡地",
+      "type": "Object",
+      "properties": {
+        "name": "十六亩旱坡地",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "一个鱼塘",
+      "type": "Object",
+      "properties": {
+        "name": "一个鱼塘",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "一头水牛",
+      "type": "Object",
+      "properties": {
+        "name": "一头水牛",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "两口猪",
+      "type": "Object",
+      "properties": {
+        "name": "两口猪",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "一窝猪仔",
+      "type": "Object",
+      "properties": {
+        "name": "一窝猪仔",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "五间土坯房",
+      "type": "Object",
+      "properties": {
+        "name": "五间土坯房",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "半亩菜地",
+      "type": "Object",
+      "properties": {
+        "name": "半亩菜地",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "王保长",
+      "type": "Person",
+      "properties": {
+        "name": "王保长",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "外阿婆",
+      "type": "Person",
+      "properties": {
+        "name": "外阿婆",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "Person",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "Location",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "庆丰彭族本家",
+      "type": "Familybranch",
+      "properties": {
+        "name": "庆丰彭族本家",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "旁支",
+      "type": "Familybranch",
+      "properties": {
+        "name": "旁支",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "外祖家",
+      "type": "Family",
+      "properties": {
+        "name": "外祖家",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "舅舅们",
+      "type": "Person",
+      "properties": {
+        "name": "舅舅们",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "十七亩水田",
+      "type": "Property",
+      "properties": {
+        "name": "十七亩水田",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "十六亩旱坡地",
+      "type": "Property",
+      "properties": {
+        "name": "十六亩旱坡地",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "一个鱼塘",
+      "type": "Property",
+      "properties": {
+        "name": "一个鱼塘",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "一头水牛",
+      "type": "Property",
+      "properties": {
+        "name": "一头水牛",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "两口猪",
+      "type": "Property",
+      "properties": {
+        "name": "两口猪",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "一窝猪仔",
+      "type": "Property",
+      "properties": {
+        "name": "一窝猪仔",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "五间门窗齐全的土坯房",
+      "type": "Property",
+      "properties": {
+        "name": "五间门窗齐全的土坯房",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "半亩菜地",
+      "type": "Property",
+      "properties": {
+        "name": "半亩菜地",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "九亩上等水田",
+      "type": "Property",
+      "properties": {
+        "name": "九亩上等水田",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "蕉叶形银锁",
+      "type": "Object",
+      "properties": {
+        "name": "蕉叶形银锁",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "银锁",
+      "type": "Object",
+      "properties": {
+        "name": "银锁",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "五斗七星柜",
+      "type": "Object",
+      "properties": {
+        "name": "五斗七星柜",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "四把官帽椅子",
+      "type": "Object",
+      "properties": {
+        "name": "四把官帽椅子",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "男丁",
+      "type": "Concept",
+      "properties": {
+        "name": "男丁",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "拳头硬",
+      "type": "Concept",
+      "properties": {
+        "name": "拳头硬",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "高门大户",
+      "type": "Concept",
+      "properties": {
+        "name": "高门大户",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "书香门第",
+      "type": "Concept",
+      "properties": {
+        "name": "书香门第",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "豪门大族",
+      "type": "Concept",
+      "properties": {
+        "name": "豪门大族",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "良机",
+      "type": "Concept",
+      "properties": {
+        "name": "良机",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "两百六七十里路",
+      "type": "Distance",
+      "properties": {
+        "name": "两百六七十里路",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "山路",
+      "type": "Terrain",
+      "properties": {
+        "name": "山路",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "手上的伤",
+      "type": "Injury",
+      "properties": {
+        "name": "手上的伤",
+        "sequence_number": 43
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "父亲",
+      "target_id": "彭刚",
+      "type": "FATHER_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "母亲",
+      "target_id": "彭刚",
+      "type": "MOTHER_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅",
+      "type": "SIBLING_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭敏",
+      "type": "SIBLING_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "六堂叔",
+      "target_id": "彭刚",
+      "type": "UNCLE_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "六堂叔",
+      "target_id": "彭毅",
+      "type": "LIKES",
+      "properties": {}
+    },
+    {
+      "source_id": "六堂叔",
+      "target_id": "彭毅",
+      "type": "WANTS_ADOPTION",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "族人",
+      "type": "LEADS",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "彭毅",
+      "type": "THREATENS",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "田契",
+      "type": "HIDES",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "田契",
+      "type": "OWNS",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "杉木薄棺",
+      "type": "IN",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭刚",
+      "type": "HELPS",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "彭刚",
+      "type": "CONSOLES",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "广西浔州府贵县（今贵港）县城东北五十里处的庆丰村",
+      "type": "LIVES_IN",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "清道光二十八年二月（1848年）",
+      "type": "EXPERIENCED_IN",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "族人",
+      "type": "CONFLICT_WITH",
+      "properties": {}
+    },
+    {
+      "source_id": "父亲",
+      "target_id": "彭刚",
+      "type": "DECEASED",
+      "properties": {}
+    },
+    {
+      "source_id": "母亲",
+      "target_id": "彭刚",
+      "type": "DECEASED",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅",
+      "type": "BROTHER",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "彭刚",
+      "type": "EMPLOYED_BY",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "蕉叶形银锁",
+      "type": "POSSESSES",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "银锁",
+      "type": "POSSESSES",
+      "properties": {}
+    },
+    {
+      "source_id": "外阿婆",
+      "target_id": "彭刚",
+      "type": "GAVE",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅们",
+      "target_id": "外祖家",
+      "type": "PART_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "舅舅们",
+      "type": "NEPHEW_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "舅舅们",
+      "type": "NEPHEW_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "旁支",
+      "type": "CONFLICT_WITH",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "彭刚",
+      "type": "ATTEMPTS_TO_SEIZE",
+      "properties": {}
+    },
+    {
+      "source_id": "王保长",
+      "target_id": "彭刚",
+      "type": "MEDITATED_FOR",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "五斗七星柜",
+      "type": "TOOK",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "四把官帽椅子",
+      "type": "TOOK",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "田契",
+      "type": "POSSESSES",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "九亩上等水田",
+      "type": "OWNS",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "手上的伤",
+      "type": "HAS_INJURY",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "彭毅",
+      "type": "INFLICTED_INJURY_ON",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "外祖家",
+      "type": "HAS_RELATIONSHIP_WITH",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰村",
+      "type": "RESIDES_IN",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "男丁",
+      "type": "IS_MEMBER_OF",
+      "properties": {}
+    },
+    {
+      "source_id": "旁支",
+      "target_id": "庆丰彭族本家",
+      "type": "IS_BRANCH_OF",
+      "properties": {}
+    }
+  ]
+}

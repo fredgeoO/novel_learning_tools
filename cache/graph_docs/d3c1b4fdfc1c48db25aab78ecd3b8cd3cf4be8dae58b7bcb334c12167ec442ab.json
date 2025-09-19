@@ -1,0 +1,1196 @@
+{
+  "nodes": [
+    {
+      "id": "吕阳",
+      "type": "弟子",
+      "properties": {
+        "name": "吕阳",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "刘信",
+      "type": "弟子",
+      "properties": {
+        "name": "刘信",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "玉素真",
+      "type": "人物",
+      "properties": {
+        "name": "玉素真",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "静室",
+      "type": "地点",
+      "properties": {
+        "name": "静室",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "合欢殿",
+      "type": "地点",
+      "properties": {
+        "name": "合欢殿",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "补天峰",
+      "type": "地点",
+      "properties": {
+        "name": "补天峰",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "圣火崖",
+      "type": "地点",
+      "properties": {
+        "name": "圣火崖",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "炼宝殿",
+      "type": "地点",
+      "properties": {
+        "name": "炼宝殿",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "炼丹殿",
+      "type": "地点",
+      "properties": {
+        "name": "炼丹殿",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "御兽殿",
+      "type": "地点",
+      "properties": {
+        "name": "御兽殿",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "改录名册",
+      "type": "地点",
+      "properties": {
+        "name": "改录名册",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "内门区域",
+      "type": "地点",
+      "properties": {
+        "name": "内门区域",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "外门区域",
+      "type": "地点",
+      "properties": {
+        "name": "外门区域",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "外门四殿",
+      "type": "地点",
+      "properties": {
+        "name": "外门四殿",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "内门四峰",
+      "type": "地点",
+      "properties": {
+        "name": "内门四峰",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "黑色道袍",
+      "type": "物品",
+      "properties": {
+        "name": "黑色道袍",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "命灯",
+      "type": "物品",
+      "properties": {
+        "name": "命灯",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "弟子令牌",
+      "type": "物品",
+      "properties": {
+        "name": "弟子令牌",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "灵石",
+      "type": "物品",
+      "properties": {
+        "name": "灵石",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "功法",
+      "type": "功法",
+      "properties": {
+        "name": "功法",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "法器",
+      "type": "物品",
+      "properties": {
+        "name": "法器",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "修炼洞府",
+      "type": "物品",
+      "properties": {
+        "name": "修炼洞府",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "丹药",
+      "type": "物品",
+      "properties": {
+        "name": "丹药",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "伴生灵兽",
+      "type": "物品",
+      "properties": {
+        "name": "伴生灵兽",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "道侣",
+      "type": "人物",
+      "properties": {
+        "name": "道侣",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "贡献点",
+      "type": "物品",
+      "properties": {
+        "name": "贡献点",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "法宝",
+      "type": "物品",
+      "properties": {
+        "name": "法宝",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "吕阳走出静室",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳走出静室",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "黑衣道人等候",
+      "type": "事件",
+      "properties": {
+        "name": "黑衣道人等候",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "吕阳行礼",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳行礼",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "吕阳改录名册",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳改录名册",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "吕阳输入真气到令牌",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳输入真气到令牌",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "吕阳看贡献点兑换列表",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳看贡献点兑换列表",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "圣宗",
+      "type": "宗门",
+      "properties": {
+        "name": "圣宗",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "吕阳",
+      "type": "人物",
+      "properties": {
+        "name": "吕阳",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "刘信",
+      "type": "人物",
+      "properties": {
+        "name": "刘信",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "陈皓",
+      "type": "人物",
+      "properties": {
+        "name": "陈皓",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "陈皓",
+      "type": "弟子",
+      "properties": {
+        "name": "陈皓",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "炼宝殿道人",
+      "type": "人物",
+      "properties": {
+        "name": "炼宝殿道人",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "炼宝殿道人",
+      "type": "弟子",
+      "properties": {
+        "name": "炼宝殿道人",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "记名弟子",
+      "type": "弟子",
+      "properties": {
+        "name": "记名弟子",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "正式弟子",
+      "type": "弟子",
+      "properties": {
+        "name": "正式弟子",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "炼宝殿内院",
+      "type": "地点",
+      "properties": {
+        "name": "炼宝殿内院",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "修炼静室",
+      "type": "地点",
+      "properties": {
+        "name": "修炼静室",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "修炼房前的房间",
+      "type": "地点",
+      "properties": {
+        "name": "修炼房前的房间",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "《洞真百宝书》",
+      "type": "物品",
+      "properties": {
+        "name": "《洞真百宝书》",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "骨玉剑",
+      "type": "物品",
+      "properties": {
+        "name": "骨玉剑",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "骷髅",
+      "type": "物品",
+      "properties": {
+        "name": "骷髅",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "晋升正式弟子",
+      "type": "事件",
+      "properties": {
+        "name": "晋升正式弟子",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "挑选法宝丹药等",
+      "type": "事件",
+      "properties": {
+        "name": "挑选法宝丹药等",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "打开贡献点兑换列表",
+      "type": "事件",
+      "properties": {
+        "name": "打开贡献点兑换列表",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "炼宝殿道人炸开获得骨玉剑",
+      "type": "事件",
+      "properties": {
+        "name": "炼宝殿道人炸开获得骨玉剑",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "刘师兄？许久不见了啊",
+      "type": "事件",
+      "properties": {
+        "name": "刘师兄？许久不见了啊",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "又带新弟子过来了？",
+      "type": "事件",
+      "properties": {
+        "name": "又带新弟子过来了？",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "是啊",
+      "type": "事件",
+      "properties": {
+        "name": "是啊",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "拿出来给吕师弟过目法器",
+      "type": "事件",
+      "properties": {
+        "name": "拿出来给吕师弟过目法器",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "得嘞",
+      "type": "事件",
+      "properties": {
+        "name": "得嘞",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "上好的法器在这里",
+      "type": "事件",
+      "properties": {
+        "name": "上好的法器在这里",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "这间房里的师弟是记名弟子",
+      "type": "事件",
+      "properties": {
+        "name": "这间房里的师弟是记名弟子",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "成了.....我要成了.....",
+      "type": "事件",
+      "properties": {
+        "name": "成了.....我要成了.....",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "哈哈！道爷我成啦！",
+      "type": "事件",
+      "properties": {
+        "name": "哈哈！道爷我成啦！",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "血肉飞散",
+      "type": "事件",
+      "properties": {
+        "name": "血肉飞散",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "吕阳反应无语",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳反应无语",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "吕阳了解圣宗作风",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳了解圣宗作风",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "吕阳总结弱肉强食",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳总结弱肉强食",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "吕阳总结物尽其用",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳总结物尽其用",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "吕阳发现这里是弟子的修炼静室",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳发现这里是弟子的修炼静室",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "吕阳认为取法器应该去仓库",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳认为取法器应该去仓库",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "刘信说固定岗位的任务在内门最赚",
+      "type": "事件",
+      "properties": {
+        "name": "刘信说固定岗位的任务在内门最赚",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "固定岗位的任务对应贡献点很多",
+      "type": "事件",
+      "properties": {
+        "name": "固定岗位的任务对应贡献点很多",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "固定岗位的任务导致供养一位正式弟子",
+      "type": "事件",
+      "properties": {
+        "name": "固定岗位的任务导致供养一位正式弟子",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "补气丸",
+      "type": "物品",
+      "properties": {
+        "name": "补气丸",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "人面鸮",
+      "type": "物品",
+      "properties": {
+        "name": "人面鸮",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "玉简",
+      "type": "物品",
+      "properties": {
+        "name": "玉简",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "《先天道书》",
+      "type": "功法",
+      "properties": {
+        "name": "《先天道书》",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "初圣宗",
+      "type": "宗门",
+      "properties": {
+        "name": "初圣宗",
+        "sequence_number": 72
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "刘信",
+      "target_id": "吕阳",
+      "type": "分配",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "吕阳",
+      "type": "指导",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "外门四殿",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "外门四殿",
+      "target_id": "圣宗",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "内门四峰",
+      "target_id": "圣宗",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "补天峰",
+      "target_id": "内门四峰",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "圣火崖",
+      "target_id": "圣宗",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳走出静室",
+      "target_id": "静室",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人等候",
+      "target_id": "静室",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳行礼",
+      "target_id": "刘信",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳改录名册",
+      "target_id": "改录名册",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳输入真气到令牌",
+      "target_id": "弟子令牌",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "弟子令牌",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "命灯",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "命灯",
+      "target_id": "外门区域",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "命灯",
+      "target_id": "内门区域",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "贡献点",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "灵石",
+      "type": "兑换",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "功法",
+      "type": "兑换",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "法器",
+      "type": "兑换",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "修炼洞府",
+      "type": "兑换",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "丹药",
+      "type": "兑换",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "伴生灵兽",
+      "type": "兑换",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "道侣",
+      "type": "兑换",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳看贡献点兑换列表",
+      "target_id": "贡献点",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "法宝",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "补天峰",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "外门四殿",
+      "target_id": "内门四峰",
+      "type": "对应",
+      "properties": {}
+    },
+    {
+      "source_id": "黑衣道人",
+      "target_id": "刘信",
+      "type": "对应",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "打开贡献点兑换列表",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "贡献点",
+      "target_id": "100贡献点",
+      "type": "对应",
+      "properties": {}
+    },
+    {
+      "source_id": "圣宗",
+      "target_id": "任务报酬",
+      "type": "对应",
+      "properties": {}
+    },
+    {
+      "source_id": "晋升正式弟子",
+      "target_id": "免费四件套",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "免费四件套",
+      "target_id": "400贡献点",
+      "type": "对应",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼宝殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "炼宝殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "正式弟子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "吕阳",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "刘信",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "又带新弟子过来了？",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "是啊",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "拿出来给吕师弟过目法器",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "得嘞",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "炼宝殿内院",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "弟子的修炼静室",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "上好的法器在这里",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "三人",
+      "target_id": "一间修炼房前",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "这间房里的师弟是记名弟子",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼宝殿道人",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "炼宝殿道人",
+      "target_id": "成了.....我要成了.....",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "炼宝殿道人",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "炼宝殿道人",
+      "target_id": "哈哈！道爷我成啦！",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "炼宝殿道人",
+      "target_id": "血肉飞散",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "血肉飞散",
+      "target_id": "骷髅",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "炼宝殿道人",
+      "target_id": "骨玉剑",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "骨玉剑",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "吕阳",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "骨玉剑",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "法器‘骨玉剑’在《洞真百宝书》里上乘",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "骨玉剑",
+      "target_id": "《洞真百宝书》",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳了解圣宗作风",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳总结弱肉强食",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳总结物尽其用",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳发现这里是弟子的修炼静室",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳认为取法器应该去仓库",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "刘信说固定岗位的任务在内门最赚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "固定岗位的任务",
+      "target_id": "贡献点很多",
+      "type": "对应",
+      "properties": {}
+    },
+    {
+      "source_id": "固定岗位的任务",
+      "target_id": "供养一位正式弟子",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "刘师兄？许久不见了啊",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "记名弟子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "正式弟子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "记名弟子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "正式弟子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "记名弟子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "炼宝殿道人",
+      "target_id": "记名弟子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "炼宝殿道人",
+      "target_id": "正式弟子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "弟子令牌",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "晋升正式弟子",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "炼宝殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "炼丹殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "御兽殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "法宝",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "丹药",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "伴生灵兽",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "道侣",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "贡献点",
+      "type": "对应",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "初圣宗",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "刘信",
+      "target_id": "吕阳",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "补气丸",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "人面鸮",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "玉简",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "《先天道书》",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼丹殿",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "御兽殿",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈皓",
+      "target_id": "吕阳",
+      "type": "对应",
+      "properties": {}
+    }
+  ]
+}

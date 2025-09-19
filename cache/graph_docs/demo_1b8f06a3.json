@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "label": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "2",
+      "label": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 2
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "1",
+      "target_id": "2",
+      "type": "兄弟",
+      "properties": {}
+    }
+  ]
+}

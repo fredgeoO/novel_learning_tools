@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>📖 小说叙事图谱生成器</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dark-theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+</head>
+<body>
+    <div class="container py-4">
+    <div class="row">
+        <!-- 左侧：主要输入设置 -->
+        <div class="col-md-5">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">🎯 输入设置</h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-3">
+                        <label class="form-label">小说名称</label>
+                        <div class="input-group">
+                            <select class="form-select searchable-select" id="novel_name">
+                                {% for novel in novels %}
+                                <option value="{{ novel }}" {% if novel == selected_novel %}selected{% endif %}>{{ novel }}</option>
+                                {% endfor %}
+                            </select>
+                            <button class="btn btn-outline-secondary" type="button" id="refresh_btn">🔄 刷新</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">章节文件</label>
+                        <select class="form-select searchable-select" id="chapter_file">
+                            {% for chapter in chapters %}
+                            <option value="{{ chapter }}" {% if chapter == selected_chapter %}selected{% endif %}>{{ chapter }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">模型类型</label>
+                        <select class="form-select searchable-select" id="model_type">
+                            <option value="local" selected>本地模型</option>
+                            <option value="remote">远程模型</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3" id="local_model_div">
+                        <label class="form-label">选择本地模型</label>
+                        <select class="form-select searchable-select" id="local_model">
+                            {% for model in ollama_models %}
+                            <option value="{{ model }}" {% if model == default_model %}selected{% endif %}>{{ model }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="mb-3 d-none" id="remote_model_div">
+                        <label class="form-label">选择远程模型</label>
+                        <select class="form-select searchable-select" id="remote_model">
+                            {% for model in remote_models %}
+                            <option value="{{ model }}" {% if model == default_remote_model %}selected{% endif %}>{{ model }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">图谱模式</label>
+                        <select class="form-select searchable-select" id="schema_name">
+                            {% for key, desc in schema_choices.items() %}
+                            <option value="{{ key }}">{{ desc }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="mt-auto">
+                        <button class="btn btn-primary btn-generate" id="generate_btn">🚀 开始分析</button>
+                        <button class="btn btn-secondary ms-2" id="view_graph_btn" disabled>📊 查看图谱</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧：高级设置 -->
+        <div class="col-md-7">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h5 class="mb-0">⚙️ 高级设置</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">分块大小</label>
+                        <input type="range" class="form-range" id="chunk_size" min="256" max="4096" step="128" value="1024">
+                        <div class="d-flex justify-content-between">
+                            <span>256</span>
+                            <span id="chunk_size_value">1024</span>
+                            <span>4096</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">分块重叠</label>
+                        <input type="range" class="form-range" id="chunk_overlap" min="64" max="512" step="32" value="192">
+                        <div class="d-flex justify-content-between">
+                            <span>64</span>
+                            <span id="chunk_overlap_value">192</span>
+                            <span>512</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">上下文长度</label>
+                        <input type="range" class="form-range" id="num_ctx" min="1024" max="32000" step="256" value="16384">
+                        <div class="d-flex justify-content-between">
+                            <span>1024</span>
+                            <span id="num_ctx_value">16384</span>
+                            <span>32000</span>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="use_cache" checked>
+                        <label class="form-check-label" for="use_cache">
+                            使用缓存
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 输出显示 -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">📊 处理状态</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">处理进度</label>
+                        <div class="result-box p-3 bg-light" id="status_output">等待开始分析...</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">处理结果</label>
+                        <div class="result-box p-3 bg-light" id="result_output">分析完成后将显示结果</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">统计信息</label>
+                        <div class="result-box p-3 bg-light" id="stats_output">详细统计信息将在此显示</div>
+                    </div>
+
+                    <input type="hidden" id="graph_cache_key">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 使用说明 -->
+    <div class="mt-4">
+        <h5>💡 使用说明</h5>
+        <ul>
+            <li>选择小说和章节 - 从下拉菜单中选择 <code>novels</code> 文件夹下的小说及其章节</li>
+            <li>选择模型 - 本地模型速度快，远程模型可能更准确</li>
+            <li>选择图谱模式 - 不同模式提取不同粒度的叙事元素</li>
+            <li>调整参数 - 可以修改分块大小、重叠和上下文长度来优化效果</li>
+            <li>开始分析 - 点击按钮开始处理文本</li>
+            <li>查看结果 - 分析完成后，点击"查看图谱"按钮跳转到图谱查看页面</li>
+        </ul>
+    </div>
+</div>
+
+
+    <script>
+        // 更新滑块显示值
+        document.getElementById('chunk_size').addEventListener('input', function() {
+            document.getElementById('chunk_size_value').textContent = this.value;
+        });
+        document.getElementById('chunk_overlap').addEventListener('input', function() {
+            document.getElementById('chunk_overlap_value').textContent = this.value;
+        });
+        document.getElementById('num_ctx').addEventListener('input', function() {
+            document.getElementById('num_ctx_value').textContent = this.value;
+        });
+
+        // 模型类型切换
+        document.getElementById('model_type').addEventListener('change', function() {
+            const isLocal = this.value === 'local';
+            document.getElementById('local_model_div').classList.toggle('d-none', !isLocal);
+            document.getElementById('remote_model_div').classList.toggle('d-none', isLocal);
+
+            // 动态调整上下文长度范围
+            const numCtxSlider = document.getElementById('num_ctx');
+            if (isLocal) {
+                numCtxSlider.max = 16384;
+                if (numCtxSlider.value > 16384) numCtxSlider.value = 16384;
+            } else {
+                numCtxSlider.max = 32000;
+                if (numCtxSlider.value < 16384) numCtxSlider.value = 32000;
+            }
+            document.getElementById('num_ctx_value').textContent = numCtxSlider.value;
+        });
+
+        // 刷新小说列表
+        document.getElementById('refresh_btn').addEventListener('click', async function() {
+            const novelSelect = document.getElementById('novel_name');
+            const chapterSelect = document.getElementById('chapter_file');
+
+            try {
+                const response = await fetch('/api/novel-chapter-structure');
+                if (response.ok) {
+                    const data = await response.json();
+                    // 这里可以更智能地更新小说列表，但为简化，我们重新加载页面
+                    location.reload();
+                }
+            } catch (error) {
+                console.error('刷新失败:', error);
+                alert('刷新失败，请手动刷新页面');
+            }
+        });
+
+        // 小说变化时更新章节
+        document.getElementById('novel_name').addEventListener('change', async function() {
+            const novelName = this.value;
+            const chapterSelect = document.getElementById('chapter_file');
+
+            if (!novelName) {
+                chapterSelect.innerHTML = '<option value="">请选择章节</option>';
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/chapters?novel=${encodeURIComponent(novelName)}`);
+                if (response.ok) {
+                    const chapters = await response.json();
+                    chapterSelect.innerHTML = '';
+                    chapters.forEach(chapter => {
+                        const option = document.createElement('option');
+                        option.value = chapter;
+                        option.textContent = chapter;
+                        chapterSelect.appendChild(option);
+                    });
+                }
+            } catch (error) {
+                console.error('获取章节失败:', error);
+            }
+        });
+
+        // 生成图谱
+        document.getElementById('generate_btn').addEventListener('click', async function() {
+            const btn = this;
+            const originalText = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '⏳ 处理中...';
+
+            const data = {
+                novel_name: document.getElementById('novel_name').value,
+                chapter_file: document.getElementById('chapter_file').value,
+                model_type: document.getElementById('model_type').value,
+                model_name: document.getElementById('model_type').value === 'local' ?
+                           document.getElementById('local_model').value :
+                           document.getElementById('remote_model').value,
+                chunk_size: parseInt(document.getElementById('chunk_size').value),
+                chunk_overlap: parseInt(document.getElementById('chunk_overlap').value),
+                num_ctx: parseInt(document.getElementById('num_ctx').value),
+                schema_name: document.getElementById('schema_name').value,
+                use_cache: document.getElementById('use_cache').checked
+            };
+
+            try {
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.error) {
+                    document.getElementById('status_output').innerHTML = '❌ ' + result.error;
+                    document.getElementById('result_output').innerHTML = '';
+                    document.getElementById('stats_output').innerHTML = '';
+                    document.getElementById('graph_cache_key').value = '';
+                    document.getElementById('view_graph_btn').disabled = true;
+                } else {
+                    document.getElementById('status_output').innerHTML = result.status_text;
+                    document.getElementById('result_output').innerHTML = result.result_text;
+                    document.getElementById('stats_output').innerHTML = result.stats_text;
+                    document.getElementById('graph_cache_key').value = result.cache_key;
+                    document.getElementById('view_graph_btn').disabled = false;
+                }
+            } catch (error) {
+                document.getElementById('status_output').innerHTML = '❌ 网络错误: ' + error.message;
+                document.getElementById('view_graph_btn').disabled = true;
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            }
+        });
+
+        // 查看图谱
+        document.getElementById('view_graph_btn').addEventListener('click', function() {
+            const cacheKey = document.getElementById('graph_cache_key').value;
+            if (cacheKey) {
+                window.open(`/viewer?cache_key=${encodeURIComponent(cacheKey)}`, '_blank');
+            }
+        });
+        // ========== 初始化可搜索下拉框 ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为所有带 searchable-select 类的 select 初始化 Choices
+            const selects = document.querySelectorAll('.searchable-select');
+            selects.forEach(select => {
+                new Choices(select, {
+                    searchEnabled: true,
+                    searchPlaceholderValue: '🔍 输入搜索...',
+                    itemSelectText: '',
+                    shouldSort: false, // 保持原始顺序
+                    position: 'bottom', // 下拉方向
+                    classNames: {
+                        containerOuter: 'choices choices--dark', // 自定义类名，用于暗色适配
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1550 @@
+{
+  "nodes": [
+    {
+      "id": "红薯粥撒地",
+      "type": "事件",
+      "properties": {
+        "name": "红薯粥撒地",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "晚清时期",
+      "type": "时间",
+      "properties": {
+        "name": "晚清时期",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "嘉道年间",
+      "type": "时间",
+      "properties": {
+        "name": "嘉道年间",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "人地矛盾加剧",
+      "type": "事件",
+      "properties": {
+        "name": "人地矛盾加剧",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "气得顿足",
+      "type": "事件",
+      "properties": {
+        "name": "气得顿足",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "争水",
+      "type": "事件",
+      "properties": {
+        "name": "争水",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "民众依赖维生",
+      "type": "事件",
+      "properties": {
+        "name": "民众依赖维生",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "彭家兄弟",
+      "type": "人物",
+      "properties": {
+        "name": "彭家兄弟",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "嘴角掠过笑意",
+      "type": "事件",
+      "properties": {
+        "name": "嘴角掠过笑意",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "观战",
+      "type": "事件",
+      "properties": {
+        "name": "观战",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "清廷",
+      "type": "人物",
+      "properties": {
+        "name": "清廷",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "惊得碗掉落",
+      "type": "事件",
+      "properties": {
+        "name": "惊得碗掉落",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "粮价更高",
+      "type": "事件",
+      "properties": {
+        "name": "粮价更高",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "兄友弟恭",
+      "type": "事件",
+      "properties": {
+        "name": "兄友弟恭",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "人均耕地不足2亩",
+      "type": "事件",
+      "properties": {
+        "name": "人均耕地不足2亩",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "荒季灾年",
+      "type": "时间",
+      "properties": {
+        "name": "荒季灾年",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "村民议论",
+      "type": "事件",
+      "properties": {
+        "name": "村民议论",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "议论",
+      "type": "事件",
+      "properties": {
+        "name": "议论",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "163公分上下",
+      "type": "事件",
+      "properties": {
+        "name": "163公分上下",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "评头论足",
+      "type": "事件",
+      "properties": {
+        "name": "评头论足",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "人均耕地4.25亩",
+      "type": "事件",
+      "properties": {
+        "name": "人均耕地4.25亩",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "彭信家",
+      "type": "人物",
+      "properties": {
+        "name": "彭信家",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "红薯",
+      "type": "人物",
+      "properties": {
+        "name": "红薯",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "173公分",
+      "type": "事件",
+      "properties": {
+        "name": "173公分",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "人口激增",
+      "type": "事件",
+      "properties": {
+        "name": "人口激增",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "家风不错",
+      "type": "事件",
+      "properties": {
+        "name": "家风不错",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "传谕各省广种番薯",
+      "type": "事件",
+      "properties": {
+        "name": "传谕各省广种番薯",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "番薯",
+      "type": "人物",
+      "properties": {
+        "name": "番薯",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "村民",
+      "type": "人物",
+      "properties": {
+        "name": "村民",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "彭家",
+      "type": "人物",
+      "properties": {
+        "name": "彭家",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "打起来啦",
+      "type": "事件",
+      "properties": {
+        "name": "打起来啦",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "鹤立鸡群",
+      "type": "事件",
+      "properties": {
+        "name": "鹤立鸡群",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "乾隆中期",
+      "type": "时间",
+      "properties": {
+        "name": "乾隆中期",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "刘家",
+      "type": "人物",
+      "properties": {
+        "name": "刘家",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "国民身高降至历史低位",
+      "type": "事件",
+      "properties": {
+        "name": "国民身高降至历史低位",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "后山",
+      "type": "地点",
+      "properties": {
+        "name": "后山",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "庆丰村男性村民",
+      "type": "人物",
+      "properties": {
+        "name": "庆丰村男性村民",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "米价每石八九百文",
+      "type": "事件",
+      "properties": {
+        "name": "米价每石八九百文",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "彭信",
+      "type": "人物",
+      "properties": {
+        "name": "彭信",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "下黑手",
+      "type": "事件",
+      "properties": {
+        "name": "下黑手",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "道光末年",
+      "type": "时间",
+      "properties": {
+        "name": "道光末年",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "康熙年间",
+      "type": "时间",
+      "properties": {
+        "name": "康熙年间",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "当塾师",
+      "type": "事件",
+      "properties": {
+        "name": "当塾师",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "米价每石三千文",
+      "type": "事件",
+      "properties": {
+        "name": "米价每石三千文",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "瘟神",
+      "type": "人物",
+      "properties": {
+        "name": "瘟神",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "彭先仲家",
+      "type": "人物",
+      "properties": {
+        "name": "彭先仲家",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "前堂",
+      "type": "地点",
+      "properties": {
+        "name": "前堂",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "被绑",
+      "type": "事件",
+      "properties": {
+        "name": "被绑",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "彭家兄弟受伤",
+      "type": "事件",
+      "properties": {
+        "name": "彭家兄弟受伤",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "瘟疫",
+      "type": "事件",
+      "properties": {
+        "name": "瘟疫",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "抓贼",
+      "type": "事件",
+      "properties": {
+        "name": "抓贼",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "彭先仲怀疑",
+      "type": "事件",
+      "properties": {
+        "name": "彭先仲怀疑",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "彭先仲",
+      "type": "人物",
+      "properties": {
+        "name": "彭先仲",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "互殴",
+      "type": "事件",
+      "properties": {
+        "name": "互殴",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "大房",
+      "type": "人物",
+      "properties": {
+        "name": "大房",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "后堂",
+      "type": "地点",
+      "properties": {
+        "name": "后堂",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "四房",
+      "type": "人物",
+      "properties": {
+        "name": "四房",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "彭先仲愤怒",
+      "type": "事件",
+      "properties": {
+        "name": "彭先仲愤怒",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "大房和四房被绑",
+      "type": "事件",
+      "properties": {
+        "name": "大房和四房被绑",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "彭刚威胁",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚威胁",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "彭家媳妇",
+      "type": "人物",
+      "properties": {
+        "name": "彭家媳妇",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "受伤",
+      "type": "事件",
+      "properties": {
+        "name": "受伤",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "刘先生门下",
+      "type": "地点",
+      "properties": {
+        "name": "刘先生门下",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "松绑",
+      "type": "事件",
+      "properties": {
+        "name": "松绑",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "要求六房每房赔一吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "要求六房每房赔一吊钱",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "要求赔偿诊金",
+      "type": "事件",
+      "properties": {
+        "name": "要求赔偿诊金",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "怒斥彭刚",
+      "type": "事件",
+      "properties": {
+        "name": "怒斥彭刚",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "阿弟受伤事件",
+      "type": "事件",
+      "properties": {
+        "name": "阿弟受伤事件",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "要求赔偿九吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "要求赔偿九吊钱",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "人赃并获",
+      "type": "事件",
+      "properties": {
+        "name": "人赃并获",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "大房被松绑",
+      "type": "事件",
+      "properties": {
+        "name": "大房被松绑",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "昨晚",
+      "type": "时间",
+      "properties": {
+        "name": "昨晚",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "持刀威胁",
+      "type": "事件",
+      "properties": {
+        "name": "持刀威胁",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "要求放人",
+      "type": "事件",
+      "properties": {
+        "name": "要求放人",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "长房毒死狗事件",
+      "type": "事件",
+      "properties": {
+        "name": "长房毒死狗事件",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "县尊大人倾向其说辞",
+      "type": "事件",
+      "properties": {
+        "name": "县尊大人倾向其说辞",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "私了谈判",
+      "type": "事件",
+      "properties": {
+        "name": "私了谈判",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "要求赔偿阿妹惊吓损失",
+      "type": "事件",
+      "properties": {
+        "name": "要求赔偿阿妹惊吓损失",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "长房被威胁",
+      "type": "事件",
+      "properties": {
+        "name": "长房被威胁",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "拒绝私了",
+      "type": "事件",
+      "properties": {
+        "name": "拒绝私了",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "坚持赔偿要求",
+      "type": "事件",
+      "properties": {
+        "name": "坚持赔偿要求",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "六房",
+      "type": "地点",
+      "properties": {
+        "name": "六房",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "阿妹受惊事件",
+      "type": "事件",
+      "properties": {
+        "name": "阿妹受惊事件",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "家中",
+      "type": "地点",
+      "properties": {
+        "name": "家中",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "要求赔偿三吊钱狗死损失",
+      "type": "事件",
+      "properties": {
+        "name": "要求赔偿三吊钱狗死损失",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "县衙对簿公堂",
+      "type": "事件",
+      "properties": {
+        "name": "县衙对簿公堂",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "态度软化",
+      "type": "事件",
+      "properties": {
+        "name": "态度软化",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "六房每房赔一吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "六房每房赔一吊钱",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "被彭刚驳斥",
+      "type": "事件",
+      "properties": {
+        "name": "被彭刚驳斥",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "九吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "九吊钱",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "一吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "一吊钱",
+        "sequence_number": 93
+      }
+    },
+    {
+      "id": "乡下请个远近闻名的游医上门治疗诊金顶破天也就一吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "乡下请个远近闻名的游医上门治疗诊金顶破天也就一吊钱",
+        "sequence_number": 94
+      }
+    },
+    {
+      "id": "现在怎么开口就是九吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "现在怎么开口就是九吊钱",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "彭刚家",
+      "type": "地点",
+      "properties": {
+        "name": "彭刚家",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "彭先仲被吓尿床",
+      "type": "事件",
+      "properties": {
+        "name": "彭先仲被吓尿床",
+        "sequence_number": 97
+      }
+    },
+    {
+      "id": "彭刚家的狗养得好，倒是值三吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚家的狗养得好，倒是值三吊钱",
+        "sequence_number": 98
+      }
+    },
+    {
+      "id": "两个少年",
+      "type": "人物",
+      "properties": {
+        "name": "两个少年",
+        "sequence_number": 99
+      }
+    },
+    {
+      "id": "彭先生",
+      "type": "人物",
+      "properties": {
+        "name": "彭先生",
+        "sequence_number": 100
+      }
+    },
+    {
+      "id": "彭先仲憋了一肚子邪火",
+      "type": "事件",
+      "properties": {
+        "name": "彭先仲憋了一肚子邪火",
+        "sequence_number": 101
+      }
+    },
+    {
+      "id": "彭刚家院门",
+      "type": "地点",
+      "properties": {
+        "name": "彭刚家院门",
+        "sequence_number": 102
+      }
+    },
+    {
+      "id": "牛尾短刀",
+      "type": "事件",
+      "properties": {
+        "name": "牛尾短刀",
+        "sequence_number": 103
+      }
+    },
+    {
+      "id": "他总觉得彭刚跟变了一个人似的",
+      "type": "事件",
+      "properties": {
+        "name": "他总觉得彭刚跟变了一个人似的",
+        "sequence_number": 104
+      }
+    },
+    {
+      "id": "六房",
+      "type": "人物",
+      "properties": {
+        "name": "六房",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "看热闹的村民也陆续散了",
+      "type": "事件",
+      "properties": {
+        "name": "看热闹的村民也陆续散了",
+        "sequence_number": 105
+      }
+    },
+    {
+      "id": "三吊钱",
+      "type": "事件",
+      "properties": {
+        "name": "三吊钱",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "彭先仲被赏耳刮子",
+      "type": "事件",
+      "properties": {
+        "name": "彭先仲被赏耳刮子",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "想给彭先生磕个头",
+      "type": "事件",
+      "properties": {
+        "name": "想给彭先生磕个头",
+        "sequence_number": 108
+      }
+    },
+    {
+      "id": "彭先仲灰溜溜地退出来",
+      "type": "事件",
+      "properties": {
+        "name": "彭先仲灰溜溜地退出来",
+        "sequence_number": 109
+      }
+    },
+    {
+      "id": "彭刚手中",
+      "type": "地点",
+      "properties": {
+        "name": "彭刚手中",
+        "sequence_number": 110
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 111
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭家兄弟",
+      "target_id": "兄友弟恭",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家兄弟",
+      "target_id": "打起来啦",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "刘家",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家",
+      "target_id": "争水",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "刘家",
+      "target_id": "争水",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲家",
+      "target_id": "后山",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "后山",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信家",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "瘟神",
+      "target_id": "彭信家",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信家",
+      "target_id": "彭刚",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "观战",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "村民",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "村民",
+      "target_id": "评头论足",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "议论",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "村民议论",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "当塾师",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "家风不错",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲家",
+      "target_id": "彭刚",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲家",
+      "target_id": "下黑手",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲家",
+      "target_id": "村民议论",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "晚清时期",
+      "target_id": "人口激增",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "晚清时期",
+      "target_id": "人地矛盾加剧",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "乾隆中期",
+      "target_id": "人均耕地4.25亩",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "道光末年",
+      "target_id": "人均耕地不足2亩",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "康熙年间",
+      "target_id": "米价每石八九百文",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "嘉道年间",
+      "target_id": "米价每石三千文",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "荒季灾年",
+      "target_id": "粮价更高",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "清廷",
+      "target_id": "传谕各省广种番薯",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "番薯",
+      "target_id": "民众依赖维生",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "红薯",
+      "target_id": "国民身高降至历史低位",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "173公分",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村男性村民",
+      "target_id": "163公分上下",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "鹤立鸡群",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "村民",
+      "target_id": "惊得碗掉落",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "村民",
+      "target_id": "红薯粥撒地",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "嘴角掠过笑意",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲家",
+      "target_id": "气得顿足",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "互殴",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭家兄弟受伤",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "后堂",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "抓贼",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "大房和四房被绑",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "互殴",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "彭家兄弟受伤",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "前堂",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "抓贼",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家兄弟",
+      "target_id": "互殴",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家兄弟",
+      "target_id": "受伤",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家媳妇",
+      "target_id": "前堂",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "大房",
+      "target_id": "后堂",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "大房",
+      "target_id": "被绑",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "四房",
+      "target_id": "后堂",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "四房",
+      "target_id": "被绑",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "瘟疫",
+      "target_id": "彭刚",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "互殴",
+      "target_id": "前堂",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "抓贼",
+      "target_id": "前堂",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "被绑",
+      "target_id": "后堂",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭先仲愤怒",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭先仲怀疑",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "彭刚威胁",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "松绑",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "持刀威胁",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "长房被威胁",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "大房被松绑",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "昨晚",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "人赃并获",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "私了谈判",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "要求赔偿九吊钱",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "要求六房每房赔一吊钱",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "要求赔偿三吊钱狗死损失",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "要求赔偿阿妹惊吓损失",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "刘先生门下",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "县衙对簿公堂",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "县尊大人倾向其说辞",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "怒斥彭刚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "被彭刚驳斥",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "要求放人",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "态度软化",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "六房",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "六房每房赔一吊钱",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "长房毒死狗事件",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "阿弟受伤事件",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "阿妹受惊事件",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "拒绝私了",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "坚持赔偿要求",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "家中",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "要求赔偿诊金",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚家",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "他总觉得彭刚跟变了一个人似的",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "九吊钱",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭先仲被吓尿床",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "乡下请个远近闻名的游医上门治疗诊金顶破天也就一吊钱",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "六房",
+      "target_id": "彭先仲被赏耳刮子",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "六房",
+      "target_id": "彭先仲憋了一肚子邪火",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "村民",
+      "target_id": "看热闹的村民也陆续散了",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭先仲灰溜溜地退出来",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "两个少年",
+      "target_id": "彭刚家院门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "两个少年",
+      "target_id": "想给彭先生磕个头",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先生",
+      "target_id": "彭刚家",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先生",
+      "target_id": "想给彭先生磕个头",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "九吊钱",
+      "target_id": "现在怎么开口就是九吊钱",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "三吊钱",
+      "target_id": "彭刚家的狗养得好，倒是值三吊钱",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "一吊钱",
+      "target_id": "乡下请个远近闻名的游医上门治疗诊金顶破天也就一吊钱",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭刚家",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "牛尾短刀",
+      "target_id": "彭刚手中",
+      "type": "位于",
+      "properties": {}
+    }
+  ]
+}

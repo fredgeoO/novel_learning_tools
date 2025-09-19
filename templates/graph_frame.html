@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>PyVis Frame</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box !important;
+        }
+
+        body, html {
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            background-color: #1e1e1e !important;
+            overflow: hidden !important;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+        }
+
+        #mynetwork {
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #1e1e1e !important;
+        }
+
+        .vis-network {
+            background-color: #1e1e1e !important;
+        }
+
+        .vis-tooltip {
+            background-color: #2d2d30 !important;
+            color: #ffffff !important;
+            border: 1px solid #3c3c3c !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+            font-family: inherit !important;
+        }
+
+        .vis-label {
+            color: #ffffff !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+        }
+
+        .vis-edge-label {
+            color: #cccccc !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+        }
+
+        .vis-button, .vis-edit-mode {
+            display: none !important;
+        }
+
+        .container, .row, .col, .btn, .form-control {
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- 不要放任何 h1 或其他无关元素 -->
+    <div id="mynetwork"></div>
+
+    <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+    <script type="text/javascript">
+        const graphData = {{ graph_data | safe }};
+        const physicsEnabled = {{ 'true' if physics else 'false' }};
+
+        const container = document.getElementById('mynetwork');
+        const data = {
+            nodes: new vis.DataSet(graphData.nodes),
+            edges: new vis.DataSet(graphData.edges)
+        };
+
+        const options = {
+            physics: {
+                enabled: physicsEnabled,
+                stabilization: {
+                    iterations: 100
+                }
+            },
+            interaction: {
+                dragNodes: true,
+                dragView: true,
+                zoomView: true,
+                hover: true,
+                tooltipDelay: 200
+            },
+            nodes: {
+                shape: 'dot',
+                size: 16,
+                font: {
+                    size: 14,
+                    color: '#ffffff',
+                    face: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif'
+                },
+                scaling: {
+                    label: {
+                        enabled: true,
+                        min: 12,
+                        max: 20
+                    }
+                }
+            },
+            edges: {
+                arrows: {
+                    to: { enabled: true, scaleFactor: 0.5 }
+                },
+                smooth: { enabled: true },
+                color: {
+                    color: '#666666',
+                    highlight: '#999999',
+                    hover: '#aaaaaa'
+                },
+                font: {
+                    color: '#cccccc',
+                    size: 12,
+                    face: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif'
+                }
+            },
+            layout: {
+                improvedLayout: false
+            }
+        };
+
+        const network = new vis.Network(container, data, options);
+    </script>
+</body>
+</html>

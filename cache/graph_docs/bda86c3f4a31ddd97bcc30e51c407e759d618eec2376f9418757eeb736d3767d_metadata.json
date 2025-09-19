@@ -1,0 +1,14 @@
+{
+  "novel_name": "苟在初圣魔门当人材",
+  "chapter_name": "第一章 百世书",
+  "model_name": "doubao-seed-1-6-flash-250828",
+  "use_local": false,
+  "num_ctx": 32000,
+  "chunk_size": 1024,
+  "chunk_overlap": 160,
+  "content_size": 3238,
+  "schema_name": "情节",
+  "cache_version": "1.1",
+  "created_at": "2025-09-16T00:44:48.561590",
+  "saved_at": "2025-09-16T00:44:48.564592"
+}

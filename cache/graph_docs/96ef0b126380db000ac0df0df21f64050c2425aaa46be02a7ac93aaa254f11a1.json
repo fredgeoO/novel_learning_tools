@@ -1,0 +1,7614 @@
+{
+  "nodes": [
+    {
+      "id": "香港",
+      "type": "地点",
+      "properties": {
+        "name": "香港",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "英国伦敦",
+      "type": "地点",
+      "properties": {
+        "name": "英国伦敦",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "冼庆云",
+      "type": "人物",
+      "properties": {
+        "name": "冼庆云",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "施娣",
+      "type": "人物",
+      "properties": {
+        "name": "施娣",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "何东家族",
+      "type": "家族",
+      "properties": {
+        "name": "何东家族",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "郭茂超",
+      "type": "人物",
+      "properties": {
+        "name": "郭茂超",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "澳门",
+      "type": "地点",
+      "properties": {
+        "name": "澳门",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "土生葡人黎婉华",
+      "type": "人物",
+      "properties": {
+        "name": "土生葡人黎婉华",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "英属香港",
+      "type": "地点",
+      "properties": {
+        "name": "英属香港",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "香港信德集团",
+      "type": "企业",
+      "properties": {
+        "name": "香港信德集团",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "罗絮才",
+      "type": "人物",
+      "properties": {
+        "name": "罗絮才",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "何世光",
+      "type": "人物",
+      "properties": {
+        "name": "何世光",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "何仕文",
+      "type": "人物",
+      "properties": {
+        "name": "何仕文",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "何福",
+      "type": "人物",
+      "properties": {
+        "name": "何福",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "港澳",
+      "type": "地点",
+      "properties": {
+        "name": "港澳",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "东方代理",
+      "type": "企业",
+      "properties": {
+        "name": "东方代理",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "郭兴贤",
+      "type": "人物",
+      "properties": {
+        "name": "郭兴贤",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "何鸿燊",
+      "type": "人物",
+      "properties": {
+        "name": "何鸿燊",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "1921年11月25日",
+      "type": "时间",
+      "properties": {
+        "name": "1921年11月25日",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "澳门娱乐赌博公司",
+      "type": "企业",
+      "properties": {
+        "name": "澳门娱乐赌博公司",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "1859年",
+      "type": "时间",
+      "properties": {
+        "name": "1859年",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "广东宝安县",
+      "type": "地点",
+      "properties": {
+        "name": "广东宝安县",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "澳门博彩业独占鳌头",
+      "type": "事件",
+      "properties": {
+        "name": "澳门博彩业独占鳌头",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "豪门世家",
+      "type": "家族",
+      "properties": {
+        "name": "豪门世家",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "荷兰姓氏",
+      "type": "事件",
+      "properties": {
+        "name": "荷兰姓氏",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "何鸿燊的曾祖父",
+      "type": "人物",
+      "properties": {
+        "name": "何鸿燊的曾祖父",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "九爷",
+      "type": "事件",
+      "properties": {
+        "name": "九爷",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "中国",
+      "type": "事件",
+      "properties": {
+        "name": "中国",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "波斯人",
+      "type": "事件",
+      "properties": {
+        "name": "波斯人",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "英国",
+      "type": "事件",
+      "properties": {
+        "name": "英国",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "波斯",
+      "type": "事件",
+      "properties": {
+        "name": "波斯",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "何东",
+      "type": "人物",
+      "properties": {
+        "name": "何东",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "第九",
+      "type": "事件",
+      "properties": {
+        "name": "第九",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "犹太",
+      "type": "事件",
+      "properties": {
+        "name": "犹太",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "母系承传",
+      "type": "事件",
+      "properties": {
+        "name": "母系承传",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "沙逊洋行",
+      "type": "企业",
+      "properties": {
+        "name": "沙逊洋行",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "Stephen Prentice Hall",
+      "type": "人物",
+      "properties": {
+        "name": "Stephen Prentice Hall",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "何鸿燊的曾祖母",
+      "type": "人物",
+      "properties": {
+        "name": "何鸿燊的曾祖母",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "中英混血",
+      "type": "事件",
+      "properties": {
+        "name": "中英混血",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "中国广东宝安人",
+      "type": "地点",
+      "properties": {
+        "name": "中国广东宝安人",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "何鸿燊的外曾祖父",
+      "type": "人物",
+      "properties": {
+        "name": "何鸿燊的外曾祖父",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "Bosman",
+      "type": "人物",
+      "properties": {
+        "name": "Bosman",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "何鸿燊的家族成员",
+      "type": "家族",
+      "properties": {
+        "name": "何鸿燊的家族成员",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "第二次世界大战",
+      "type": "事件",
+      "properties": {
+        "name": "第二次世界大战",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "到澳门打工",
+      "type": "事件",
+      "properties": {
+        "name": "到澳门打工",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "开办炼油厂",
+      "type": "事件",
+      "properties": {
+        "name": "开办炼油厂",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "澳门生意",
+      "type": "事件",
+      "properties": {
+        "name": "澳门生意",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "1937年",
+      "type": "时间",
+      "properties": {
+        "name": "1937年",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "皇仁书院",
+      "type": "地点",
+      "properties": {
+        "name": "皇仁书院",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "长泽上校",
+      "type": "人物",
+      "properties": {
+        "name": "长泽上校",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "利玛窦宿舍宿生",
+      "type": "事件",
+      "properties": {
+        "name": "利玛窦宿舍宿生",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "1941年12月8日",
+      "type": "时间",
+      "properties": {
+        "name": "1941年12月8日",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "联昌粮油公司",
+      "type": "企业",
+      "properties": {
+        "name": "联昌粮油公司",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "日本商人齐藤",
+      "type": "人物",
+      "properties": {
+        "name": "日本商人齐藤",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "我一定回来",
+      "type": "事件",
+      "properties": {
+        "name": "我一定回来",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "担任押船工作",
+      "type": "事件",
+      "properties": {
+        "name": "担任押船工作",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "公司股东",
+      "type": "事件",
+      "properties": {
+        "name": "公司股东",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "炼油厂",
+      "type": "企业",
+      "properties": {
+        "name": "炼油厂",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "从广东进口粮食与燃料",
+      "type": "事件",
+      "properties": {
+        "name": "从广东进口粮食与燃料",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "澳门火水（煤油）公司",
+      "type": "企业",
+      "properties": {
+        "name": "澳门火水（煤油）公司",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "东南亚最大的煤油供应商",
+      "type": "事件",
+      "properties": {
+        "name": "东南亚最大的煤油供应商",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "爬山及唱日文歌",
+      "type": "事件",
+      "properties": {
+        "name": "爬山及唱日文歌",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "抗战期间",
+      "type": "事件",
+      "properties": {
+        "name": "抗战期间",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "押船工作",
+      "type": "事件",
+      "properties": {
+        "name": "押船工作",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "奖学金",
+      "type": "物件",
+      "properties": {
+        "name": "奖学金",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "100万元花红",
+      "type": "物件",
+      "properties": {
+        "name": "100万元花红",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "佳绩",
+      "type": "事件",
+      "properties": {
+        "name": "佳绩",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "香港大学理学院",
+      "type": "地点",
+      "properties": {
+        "name": "香港大学理学院",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "日语",
+      "type": "物件",
+      "properties": {
+        "name": "日语",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "日本老板的秘书",
+      "type": "事件",
+      "properties": {
+        "name": "日本老板的秘书",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "1932年至1939年",
+      "type": "时间",
+      "properties": {
+        "name": "1932年至1939年",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "黎婉华",
+      "type": "人物",
+      "properties": {
+        "name": "黎婉华",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "黑势力妒忌",
+      "type": "事件",
+      "properties": {
+        "name": "黑势力妒忌",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "澳门电灯公司",
+      "type": "企业",
+      "properties": {
+        "name": "澳门电灯公司",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "香港中学毕业会考",
+      "type": "事件",
+      "properties": {
+        "name": "香港中学毕业会考",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "政府全费奖学金",
+      "type": "物件",
+      "properties": {
+        "name": "政府全费奖学金",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "何福之孙",
+      "type": "人物",
+      "properties": {
+        "name": "何福之孙",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "澳门旅游娱乐有限公司",
+      "type": "企业",
+      "properties": {
+        "name": "澳门旅游娱乐有限公司",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "其家族",
+      "type": "家族",
+      "properties": {
+        "name": "其家族",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "信德集团有限公司",
+      "type": "企业",
+      "properties": {
+        "name": "信德集团有限公司",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "坐拥1,000万元身家",
+      "type": "事件",
+      "properties": {
+        "name": "坐拥1,000万元身家",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "其家族手执澳门赌业牛耳",
+      "type": "事件",
+      "properties": {
+        "name": "其家族手执澳门赌业牛耳",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "1945年8月",
+      "type": "时间",
+      "properties": {
+        "name": "1945年8月",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "航运、地产、酒店及娱乐等不同行业",
+      "type": "事件",
+      "properties": {
+        "name": "航运、地产、酒店及娱乐等不同行业",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "1970年6月11日",
+      "type": "时间",
+      "properties": {
+        "name": "1970年6月11日",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "进军地产业",
+      "type": "事件",
+      "properties": {
+        "name": "进军地产业",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "创办澳门旅游娱乐有限公司",
+      "type": "企业",
+      "properties": {
+        "name": "创办澳门旅游娱乐有限公司",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "利安建筑公司",
+      "type": "企业",
+      "properties": {
+        "name": "利安建筑公司",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "在越南、北韩、菲律宾、葡萄牙投资",
+      "type": "事件",
+      "properties": {
+        "name": "在越南、北韩、菲律宾、葡萄牙投资",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "建成葡京大酒店",
+      "type": "事件",
+      "properties": {
+        "name": "建成葡京大酒店",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "港澳航线",
+      "type": "地点",
+      "properties": {
+        "name": "港澳航线",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "1973年",
+      "type": "时间",
+      "properties": {
+        "name": "1973年",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "葡京娱乐场建成",
+      "type": "事件",
+      "properties": {
+        "name": "葡京娱乐场建成",
+        "sequence_number": 93
+      }
+    },
+    {
+      "id": "竞得澳门博彩专利权",
+      "type": "事件",
+      "properties": {
+        "name": "竞得澳门博彩专利权",
+        "sequence_number": 94
+      }
+    },
+    {
+      "id": "白手兴家成为港澳巨富",
+      "type": "事件",
+      "properties": {
+        "name": "白手兴家成为港澳巨富",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "独揽全澳门的赌场经营权",
+      "type": "事件",
+      "properties": {
+        "name": "独揽全澳门的赌场经营权",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "水翼船",
+      "type": "物件",
+      "properties": {
+        "name": "水翼船",
+        "sequence_number": 97
+      }
+    },
+    {
+      "id": "组建新集团",
+      "type": "事件",
+      "properties": {
+        "name": "组建新集团",
+        "sequence_number": 98
+      }
+    },
+    {
+      "id": "澳门博彩专利权",
+      "type": "事件",
+      "properties": {
+        "name": "澳门博彩专利权",
+        "sequence_number": 99
+      }
+    },
+    {
+      "id": "引进水翼船行走港澳航线",
+      "type": "事件",
+      "properties": {
+        "name": "引进水翼船行走港澳航线",
+        "sequence_number": 100
+      }
+    },
+    {
+      "id": "1961年",
+      "type": "时间",
+      "properties": {
+        "name": "1961年",
+        "sequence_number": 101
+      }
+    },
+    {
+      "id": "垄断式经营澳门赌场多年",
+      "type": "事件",
+      "properties": {
+        "name": "垄断式经营澳门赌场多年",
+        "sequence_number": 102
+      }
+    },
+    {
+      "id": "新集团",
+      "type": "企业",
+      "properties": {
+        "name": "新集团",
+        "sequence_number": 103
+      }
+    },
+    {
+      "id": "成立利安建筑公司",
+      "type": "事件",
+      "properties": {
+        "name": "成立利安建筑公司",
+        "sequence_number": 104
+      }
+    },
+    {
+      "id": "日本投降",
+      "type": "事件",
+      "properties": {
+        "name": "日本投降",
+        "sequence_number": 105
+      }
+    },
+    {
+      "id": "创办信德集团有限公司",
+      "type": "事件",
+      "properties": {
+        "name": "创办信德集团有限公司",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "信德集团有限公司在香港证券交易所上市",
+      "type": "事件",
+      "properties": {
+        "name": "信德集团有限公司在香港证券交易所上市",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "2007年2月11日",
+      "type": "时间",
+      "properties": {
+        "name": "2007年2月11日",
+        "sequence_number": 108
+      }
+    },
+    {
+      "id": "新葡京娱乐场",
+      "type": "事件",
+      "properties": {
+        "name": "新葡京娱乐场",
+        "sequence_number": 109
+      }
+    },
+    {
+      "id": "香港重光",
+      "type": "事件",
+      "properties": {
+        "name": "香港重光",
+        "sequence_number": 110
+      }
+    },
+    {
+      "id": "新葡京娱乐场建成",
+      "type": "事件",
+      "properties": {
+        "name": "新葡京娱乐场建成",
+        "sequence_number": 111
+      }
+    },
+    {
+      "id": "澳门赌业",
+      "type": "事件",
+      "properties": {
+        "name": "澳门赌业",
+        "sequence_number": 112
+      }
+    },
+    {
+      "id": "葡京娱乐场",
+      "type": "事件",
+      "properties": {
+        "name": "葡京娱乐场",
+        "sequence_number": 113
+      }
+    },
+    {
+      "id": "2008年身家高达700亿元",
+      "type": "事件",
+      "properties": {
+        "name": "2008年身家高达700亿元",
+        "sequence_number": 114
+      }
+    },
+    {
+      "id": "何鸿燊与叶汉、叶德利、霍英东结成联盟",
+      "type": "事件",
+      "properties": {
+        "name": "何鸿燊与叶汉、叶德利、霍英东结成联盟",
+        "sequence_number": 115
+      }
+    },
+    {
+      "id": "1973年在香港证券交易所上市",
+      "type": "事件",
+      "properties": {
+        "name": "1973年在香港证券交易所上市",
+        "sequence_number": 116
+      }
+    },
+    {
+      "id": "曾宪梓",
+      "type": "人物",
+      "properties": {
+        "name": "曾宪梓",
+        "sequence_number": 117
+      }
+    },
+    {
+      "id": "博彩",
+      "type": "事件",
+      "properties": {
+        "name": "博彩",
+        "sequence_number": 118
+      }
+    },
+    {
+      "id": "中国内地经济建设",
+      "type": "事件",
+      "properties": {
+        "name": "中国内地经济建设",
+        "sequence_number": 119
+      }
+    },
+    {
+      "id": "文化慈善事业",
+      "type": "事件",
+      "properties": {
+        "name": "文化慈善事业",
+        "sequence_number": 120
+      }
+    },
+    {
+      "id": "胡应湘",
+      "type": "人物",
+      "properties": {
+        "name": "胡应湘",
+        "sequence_number": 121
+      }
+    },
+    {
+      "id": "赌业王国",
+      "type": "事件",
+      "properties": {
+        "name": "赌业王国",
+        "sequence_number": 122
+      }
+    },
+    {
+      "id": "中国内地",
+      "type": "地点",
+      "properties": {
+        "name": "中国内地",
+        "sequence_number": 123
+      }
+    },
+    {
+      "id": "空运",
+      "type": "事件",
+      "properties": {
+        "name": "空运",
+        "sequence_number": 124
+      }
+    },
+    {
+      "id": "2009年2月",
+      "type": "时间",
+      "properties": {
+        "name": "2009年2月",
+        "sequence_number": 125
+      }
+    },
+    {
+      "id": "扶贫赈灾",
+      "type": "事件",
+      "properties": {
+        "name": "扶贫赈灾",
+        "sequence_number": 126
+      }
+    },
+    {
+      "id": "澳门回力球场90%股份",
+      "type": "物件",
+      "properties": {
+        "name": "澳门回力球场90%股份",
+        "sequence_number": 127
+      }
+    },
+    {
+      "id": "几内亚比索西非银行41.25%股份",
+      "type": "物件",
+      "properties": {
+        "name": "几内亚比索西非银行41.25%股份",
+        "sequence_number": 128
+      }
+    },
+    {
+      "id": "GeoCapital应占维德角储金局27.4%股权",
+      "type": "物件",
+      "properties": {
+        "name": "GeoCapital应占维德角储金局27.4%股权",
+        "sequence_number": 129
+      }
+    },
+    {
+      "id": "香港地产建设商会会长",
+      "type": "事件",
+      "properties": {
+        "name": "香港地产建设商会会长",
+        "sequence_number": 130
+      }
+    },
+    {
+      "id": "中英谈判",
+      "type": "事件",
+      "properties": {
+        "name": "中英谈判",
+        "sequence_number": 131
+      }
+    },
+    {
+      "id": "全国人民代表大会澳门特别行政区筹备委员会副主任委员",
+      "type": "事件",
+      "properties": {
+        "name": "全国人民代表大会澳门特别行政区筹备委员会副主任委员",
+        "sequence_number": 132
+      }
+    },
+    {
+      "id": "2009年",
+      "type": "时间",
+      "properties": {
+        "name": "2009年",
+        "sequence_number": 133
+      }
+    },
+    {
+      "id": "永远名誉会长",
+      "type": "事件",
+      "properties": {
+        "name": "永远名誉会长",
+        "sequence_number": 134
+      }
+    },
+    {
+      "id": "三妻四妾",
+      "type": "事件",
+      "properties": {
+        "name": "三妻四妾",
+        "sequence_number": 135
+      }
+    },
+    {
+      "id": "物业",
+      "type": "物件",
+      "properties": {
+        "name": "物业",
+        "sequence_number": 136
+      }
+    },
+    {
+      "id": "香港特别行政区基本法咨询委员会委员",
+      "type": "事件",
+      "properties": {
+        "name": "香港特别行政区基本法咨询委员会委员",
+        "sequence_number": 137
+      }
+    },
+    {
+      "id": "1982年邓小平宣布收回港澳",
+      "type": "事件",
+      "properties": {
+        "name": "1982年邓小平宣布收回港澳",
+        "sequence_number": 138
+      }
+    },
+    {
+      "id": "莫三比克Moza Bank的24.5%权益",
+      "type": "物件",
+      "properties": {
+        "name": "莫三比克Moza Bank的24.5%权益",
+        "sequence_number": 139
+      }
+    },
+    {
+      "id": "2020年5月26日",
+      "type": "时间",
+      "properties": {
+        "name": "2020年5月26日",
+        "sequence_number": 140
+      }
+    },
+    {
+      "id": "旅游",
+      "type": "事件",
+      "properties": {
+        "name": "旅游",
+        "sequence_number": 141
+      }
+    },
+    {
+      "id": "包玉刚",
+      "type": "人物",
+      "properties": {
+        "name": "包玉刚",
+        "sequence_number": 142
+      }
+    },
+    {
+      "id": "17个儿女",
+      "type": "人物",
+      "properties": {
+        "name": "17个儿女",
+        "sequence_number": 143
+      }
+    },
+    {
+      "id": "HK1车牌",
+      "type": "物件",
+      "properties": {
+        "name": "HK1车牌",
+        "sequence_number": 144
+      }
+    },
+    {
+      "id": "霍英东",
+      "type": "人物",
+      "properties": {
+        "name": "霍英东",
+        "sequence_number": 145
+      }
+    },
+    {
+      "id": "全球富豪榜第151名",
+      "type": "事件",
+      "properties": {
+        "name": "全球富豪榜第151名",
+        "sequence_number": 146
+      }
+    },
+    {
+      "id": "地产",
+      "type": "事件",
+      "properties": {
+        "name": "地产",
+        "sequence_number": 147
+      }
+    },
+    {
+      "id": "澳门回归",
+      "type": "事件",
+      "properties": {
+        "name": "澳门回归",
+        "sequence_number": 148
+      }
+    },
+    {
+      "id": "航运",
+      "type": "事件",
+      "properties": {
+        "name": "航运",
+        "sequence_number": 149
+      }
+    },
+    {
+      "id": "最大股东",
+      "type": "企业",
+      "properties": {
+        "name": "最大股东",
+        "sequence_number": 150
+      }
+    },
+    {
+      "id": "邵逸夫",
+      "type": "人物",
+      "properties": {
+        "name": "邵逸夫",
+        "sequence_number": 151
+      }
+    },
+    {
+      "id": "净资产总值86亿美元",
+      "type": "物件",
+      "properties": {
+        "name": "净资产总值86亿美元",
+        "sequence_number": 152
+      }
+    },
+    {
+      "id": "亚洲",
+      "type": "地点",
+      "properties": {
+        "name": "亚洲",
+        "sequence_number": 153
+      }
+    },
+    {
+      "id": "中国内地经济发展",
+      "type": "事件",
+      "properties": {
+        "name": "中国内地经济发展",
+        "sequence_number": 154
+      }
+    },
+    {
+      "id": "香港回归",
+      "type": "事件",
+      "properties": {
+        "name": "香港回归",
+        "sequence_number": 155
+      }
+    },
+    {
+      "id": "中葡谈判",
+      "type": "事件",
+      "properties": {
+        "name": "中葡谈判",
+        "sequence_number": 156
+      }
+    },
+    {
+      "id": "中国内地改革开放",
+      "type": "事件",
+      "properties": {
+        "name": "中国内地改革开放",
+        "sequence_number": 157
+      }
+    },
+    {
+      "id": "财务",
+      "type": "事件",
+      "properties": {
+        "name": "财务",
+        "sequence_number": 158
+      }
+    },
+    {
+      "id": "澳广视股东会荣誉主席",
+      "type": "事件",
+      "properties": {
+        "name": "澳广视股东会荣誉主席",
+        "sequence_number": 159
+      }
+    },
+    {
+      "id": "澳门逸园狗场60%股权",
+      "type": "物件",
+      "properties": {
+        "name": "澳门逸园狗场60%股权",
+        "sequence_number": 160
+      }
+    },
+    {
+      "id": "港澳回归",
+      "type": "事件",
+      "properties": {
+        "name": "港澳回归",
+        "sequence_number": 161
+      }
+    },
+    {
+      "id": "策略投资公司（Geocapital）",
+      "type": "企业",
+      "properties": {
+        "name": "策略投资公司（Geocapital）",
+        "sequence_number": 162
+      }
+    },
+    {
+      "id": "家族成员控股公司持有股份",
+      "type": "事件",
+      "properties": {
+        "name": "家族成员控股公司持有股份",
+        "sequence_number": 163
+      }
+    },
+    {
+      "id": "Mark Side",
+      "type": "人物",
+      "properties": {
+        "name": "Mark Side",
+        "sequence_number": 164
+      }
+    },
+    {
+      "id": "陈婉珍",
+      "type": "人物",
+      "properties": {
+        "name": "陈婉珍",
+        "sequence_number": 165
+      }
+    },
+    {
+      "id": "蓝琼缨",
+      "type": "人物",
+      "properties": {
+        "name": "蓝琼缨",
+        "sequence_number": 166
+      }
+    },
+    {
+      "id": "何俊仁",
+      "type": "人物",
+      "properties": {
+        "name": "何俊仁",
+        "sequence_number": 167
+      }
+    },
+    {
+      "id": "澳娱",
+      "type": "企业",
+      "properties": {
+        "name": "澳娱",
+        "sequence_number": 168
+      }
+    },
+    {
+      "id": "莫超权被袭击事件",
+      "type": "事件",
+      "properties": {
+        "name": "莫超权被袭击事件",
+        "sequence_number": 169
+      }
+    },
+    {
+      "id": "2001年",
+      "type": "时间",
+      "properties": {
+        "name": "2001年",
+        "sequence_number": 170
+      }
+    },
+    {
+      "id": "恐吓信事件",
+      "type": "事件",
+      "properties": {
+        "name": "恐吓信事件",
+        "sequence_number": 171
+      }
+    },
+    {
+      "id": "2002至2003年间",
+      "type": "时间",
+      "properties": {
+        "name": "2002至2003年间",
+        "sequence_number": 172
+      }
+    },
+    {
+      "id": "律师",
+      "type": "职务",
+      "properties": {
+        "name": "律师",
+        "sequence_number": 173
+      }
+    },
+    {
+      "id": "股息纷争",
+      "type": "事件",
+      "properties": {
+        "name": "股息纷争",
+        "sequence_number": 174
+      }
+    },
+    {
+      "id": "何婉琪",
+      "type": "人物",
+      "properties": {
+        "name": "何婉琪",
+        "sequence_number": 175
+      }
+    },
+    {
+      "id": "争产事件",
+      "type": "事件",
+      "properties": {
+        "name": "争产事件",
+        "sequence_number": 176
+      }
+    },
+    {
+      "id": "澳门博彩控股股份转移",
+      "type": "事件",
+      "properties": {
+        "name": "澳门博彩控股股份转移",
+        "sequence_number": 177
+      }
+    },
+    {
+      "id": "澳门旅游娱乐公司上市计划受阻",
+      "type": "事件",
+      "properties": {
+        "name": "澳门旅游娱乐公司上市计划受阻",
+        "sequence_number": 178
+      }
+    },
+    {
+      "id": "2011年1月24日",
+      "type": "时间",
+      "properties": {
+        "name": "2011年1月24日",
+        "sequence_number": 179
+      }
+    },
+    {
+      "id": "香港民主党副主席",
+      "type": "职务",
+      "properties": {
+        "name": "香港民主党副主席",
+        "sequence_number": 180
+      }
+    },
+    {
+      "id": "2006年8月20日",
+      "type": "时间",
+      "properties": {
+        "name": "2006年8月20日",
+        "sequence_number": 181
+      }
+    },
+    {
+      "id": "何婉琪被踢出董事局",
+      "type": "事件",
+      "properties": {
+        "name": "何婉琪被踢出董事局",
+        "sequence_number": 182
+      }
+    },
+    {
+      "id": "何俊仁遇袭事件",
+      "type": "事件",
+      "properties": {
+        "name": "何俊仁遇袭事件",
+        "sequence_number": 183
+      }
+    },
+    {
+      "id": "莫超权",
+      "type": "人物",
+      "properties": {
+        "name": "莫超权",
+        "sequence_number": 184
+      }
+    },
+    {
+      "id": "第九届全国政协常委",
+      "type": "事件",
+      "properties": {
+        "name": "第九届全国政协常委",
+        "sequence_number": 185
+      }
+    },
+    {
+      "id": "第十届全国政协常委",
+      "type": "事件",
+      "properties": {
+        "name": "第十届全国政协常委",
+        "sequence_number": 186
+      }
+    },
+    {
+      "id": "Lanceford公司董事",
+      "type": "事件",
+      "properties": {
+        "name": "Lanceford公司董事",
+        "sequence_number": 187
+      }
+    },
+    {
+      "id": "Lanceford公司",
+      "type": "企业",
+      "properties": {
+        "name": "Lanceford公司",
+        "sequence_number": 188
+      }
+    },
+    {
+      "id": "何超凤",
+      "type": "人物",
+      "properties": {
+        "name": "何超凤",
+        "sequence_number": 189
+      }
+    },
+    {
+      "id": "支持政府方案广告",
+      "type": "事件",
+      "properties": {
+        "name": "支持政府方案广告",
+        "sequence_number": 190
+      }
+    },
+    {
+      "id": "与地产商讨论迁居澳门",
+      "type": "事件",
+      "properties": {
+        "name": "与地产商讨论迁居澳门",
+        "sequence_number": 191
+      }
+    },
+    {
+      "id": "批评八万五政策献计者",
+      "type": "事件",
+      "properties": {
+        "name": "批评八万五政策献计者",
+        "sequence_number": 192
+      }
+    },
+    {
+      "id": "对曾荫权继任预测",
+      "type": "事件",
+      "properties": {
+        "name": "对曾荫权继任预测",
+        "sequence_number": 193
+      }
+    },
+    {
+      "id": "拒绝泛民主派入境事件",
+      "type": "事件",
+      "properties": {
+        "name": "拒绝泛民主派入境事件",
+        "sequence_number": 194
+      }
+    },
+    {
+      "id": "禤永明",
+      "type": "人物",
+      "properties": {
+        "name": "禤永明",
+        "sequence_number": 195
+      }
+    },
+    {
+      "id": "何超琼",
+      "type": "人物",
+      "properties": {
+        "name": "何超琼",
+        "sequence_number": 196
+      }
+    },
+    {
+      "id": "2005年初",
+      "type": "时间",
+      "properties": {
+        "name": "2005年初",
+        "sequence_number": 197
+      }
+    },
+    {
+      "id": "2011年1月27日",
+      "type": "时间",
+      "properties": {
+        "name": "2011年1月27日",
+        "sequence_number": 198
+      }
+    },
+    {
+      "id": "名下马匹",
+      "type": "物件",
+      "properties": {
+        "name": "名下马匹",
+        "sequence_number": 199
+      }
+    },
+    {
+      "id": "禁制令",
+      "type": "事件",
+      "properties": {
+        "name": "禁制令",
+        "sequence_number": 200
+      }
+    },
+    {
+      "id": "控告子女、亲属及相关公司",
+      "type": "事件",
+      "properties": {
+        "name": "控告子女、亲属及相关公司",
+        "sequence_number": 201
+      }
+    },
+    {
+      "id": "向何鸿燊解释政策来源",
+      "type": "事件",
+      "properties": {
+        "name": "向何鸿燊解释政策来源",
+        "sequence_number": 202
+      }
+    },
+    {
+      "id": "全国政协常委",
+      "type": "事件",
+      "properties": {
+        "name": "全国政协常委",
+        "sequence_number": 203
+      }
+    },
+    {
+      "id": "对董建华执政期间言论",
+      "type": "事件",
+      "properties": {
+        "name": "对董建华执政期间言论",
+        "sequence_number": 204
+      }
+    },
+    {
+      "id": "梁振英",
+      "type": "人物",
+      "properties": {
+        "name": "梁振英",
+        "sequence_number": 205
+      }
+    },
+    {
+      "id": "澳门第3届行政长官选举空白票言论",
+      "type": "事件",
+      "properties": {
+        "name": "澳门第3届行政长官选举空白票言论",
+        "sequence_number": 206
+      }
+    },
+    {
+      "id": "澳娱32%股权",
+      "type": "物件",
+      "properties": {
+        "name": "澳娱32%股权",
+        "sequence_number": 207
+      }
+    },
+    {
+      "id": "批评梁振英智囊身份",
+      "type": "事件",
+      "properties": {
+        "name": "批评梁振英智囊身份",
+        "sequence_number": 208
+      }
+    },
+    {
+      "id": "打赌游行人数不多于五万人",
+      "type": "事件",
+      "properties": {
+        "name": "打赌游行人数不多于五万人",
+        "sequence_number": 209
+      }
+    },
+    {
+      "id": "八万五政策献计者",
+      "type": "事件",
+      "properties": {
+        "name": "八万五政策献计者",
+        "sequence_number": 210
+      }
+    },
+    {
+      "id": "对梁振英的误解",
+      "type": "事件",
+      "properties": {
+        "name": "对梁振英的误解",
+        "sequence_number": 211
+      }
+    },
+    {
+      "id": "第十一届全国政协常委",
+      "type": "事件",
+      "properties": {
+        "name": "第十一届全国政协常委",
+        "sequence_number": 212
+      }
+    },
+    {
+      "id": "批评房屋政策导致穷人与有钱人混居",
+      "type": "事件",
+      "properties": {
+        "name": "批评房屋政策导致穷人与有钱人混居",
+        "sequence_number": 213
+      }
+    },
+    {
+      "id": "将香港租给联合国100年设想",
+      "type": "事件",
+      "properties": {
+        "name": "将香港租给联合国100年设想",
+        "sequence_number": 214
+      }
+    },
+    {
+      "id": "澳门短途精英杯",
+      "type": "事件",
+      "properties": {
+        "name": "澳门短途精英杯",
+        "sequence_number": 215
+      }
+    },
+    {
+      "id": "周邦华",
+      "type": "人物",
+      "properties": {
+        "name": "周邦华",
+        "sequence_number": 216
+      }
+    },
+    {
+      "id": "港澳杯",
+      "type": "事件",
+      "properties": {
+        "name": "港澳杯",
+        "sequence_number": 217
+      }
+    },
+    {
+      "id": "醉仙",
+      "type": "物件",
+      "properties": {
+        "name": "醉仙",
+        "sequence_number": 218
+      }
+    },
+    {
+      "id": "昏迷",
+      "type": "事件",
+      "properties": {
+        "name": "昏迷",
+        "sequence_number": 219
+      }
+    },
+    {
+      "id": "死讯",
+      "type": "事件",
+      "properties": {
+        "name": "死讯",
+        "sequence_number": 220
+      }
+    },
+    {
+      "id": "何志坚",
+      "type": "人物",
+      "properties": {
+        "name": "何志坚",
+        "sequence_number": 221
+      }
+    },
+    {
+      "id": "颅内受创",
+      "type": "事件",
+      "properties": {
+        "name": "颅内受创",
+        "sequence_number": 222
+      }
+    },
+    {
+      "id": "东华之友团体",
+      "type": "家族",
+      "properties": {
+        "name": "东华之友团体",
+        "sequence_number": 223
+      }
+    },
+    {
+      "id": "何鸿燊长孙女",
+      "type": "人物",
+      "properties": {
+        "name": "何鸿燊长孙女",
+        "sequence_number": 224
+      }
+    },
+    {
+      "id": "2010年爱彼表女皇杯",
+      "type": "事件",
+      "properties": {
+        "name": "2010年爱彼表女皇杯",
+        "sequence_number": 225
+      }
+    },
+    {
+      "id": "领先",
+      "type": "物件",
+      "properties": {
+        "name": "领先",
+        "sequence_number": 226
+      }
+    },
+    {
+      "id": "爆发",
+      "type": "物件",
+      "properties": {
+        "name": "爆发",
+        "sequence_number": 227
+      }
+    },
+    {
+      "id": "危险大军",
+      "type": "物件",
+      "properties": {
+        "name": "危险大军",
+        "sequence_number": 228
+      }
+    },
+    {
+      "id": "深居简出",
+      "type": "事件",
+      "properties": {
+        "name": "深居简出",
+        "sequence_number": 229
+      }
+    },
+    {
+      "id": "国泰航空香港杯预赛",
+      "type": "事件",
+      "properties": {
+        "name": "国泰航空香港杯预赛",
+        "sequence_number": 230
+      }
+    },
+    {
+      "id": "2006年香港打吡大赛",
+      "type": "事件",
+      "properties": {
+        "name": "2006年香港打吡大赛",
+        "sequence_number": 231
+      }
+    },
+    {
+      "id": "醉醒",
+      "type": "物件",
+      "properties": {
+        "name": "醉醒",
+        "sequence_number": 232
+      }
+    },
+    {
+      "id": "澳门回归中国十周年活动",
+      "type": "事件",
+      "properties": {
+        "name": "澳门回归中国十周年活动",
+        "sequence_number": 233
+      }
+    },
+    {
+      "id": "2,000平方呎",
+      "type": "物件",
+      "properties": {
+        "name": "2,000平方呎",
+        "sequence_number": 234
+      }
+    },
+    {
+      "id": "2013年11月",
+      "type": "时间",
+      "properties": {
+        "name": "2013年11月",
+        "sequence_number": 235
+      }
+    },
+    {
+      "id": "三次脑部手术",
+      "type": "事件",
+      "properties": {
+        "name": "三次脑部手术",
+        "sequence_number": 236
+      }
+    },
+    {
+      "id": "爆料",
+      "type": "物件",
+      "properties": {
+        "name": "爆料",
+        "sequence_number": 237
+      }
+    },
+    {
+      "id": "2008年香港金杯",
+      "type": "事件",
+      "properties": {
+        "name": "2008年香港金杯",
+        "sequence_number": 238
+      }
+    },
+    {
+      "id": "医院",
+      "type": "地点",
+      "properties": {
+        "name": "医院",
+        "sequence_number": 239
+      }
+    },
+    {
+      "id": "沙田锦标",
+      "type": "事件",
+      "properties": {
+        "name": "沙田锦标",
+        "sequence_number": 240
+      }
+    },
+    {
+      "id": "型到爆",
+      "type": "物件",
+      "properties": {
+        "name": "型到爆",
+        "sequence_number": 241
+      }
+    },
+    {
+      "id": "李天泽医生",
+      "type": "人物",
+      "properties": {
+        "name": "李天泽医生",
+        "sequence_number": 242
+      }
+    },
+    {
+      "id": "2014年10月",
+      "type": "时间",
+      "properties": {
+        "name": "2014年10月",
+        "sequence_number": 243
+      }
+    },
+    {
+      "id": "2010年3月6日",
+      "type": "时间",
+      "properties": {
+        "name": "2010年3月6日",
+        "sequence_number": 244
+      }
+    },
+    {
+      "id": "型蓝团体经理人",
+      "type": "事件",
+      "properties": {
+        "name": "型蓝团体经理人",
+        "sequence_number": 245
+      }
+    },
+    {
+      "id": "2009年12月20日",
+      "type": "时间",
+      "properties": {
+        "name": "2009年12月20日",
+        "sequence_number": 246
+      }
+    },
+    {
+      "id": "养和医院",
+      "type": "地点",
+      "properties": {
+        "name": "养和医院",
+        "sequence_number": 247
+      }
+    },
+    {
+      "id": "型蓝团体",
+      "type": "家族",
+      "properties": {
+        "name": "型蓝团体",
+        "sequence_number": 248
+      }
+    },
+    {
+      "id": "好利钱",
+      "type": "物件",
+      "properties": {
+        "name": "好利钱",
+        "sequence_number": 249
+      }
+    },
+    {
+      "id": "香港冠军暨遮打杯",
+      "type": "事件",
+      "properties": {
+        "name": "香港冠军暨遮打杯",
+        "sequence_number": 250
+      }
+    },
+    {
+      "id": "醉神",
+      "type": "物件",
+      "properties": {
+        "name": "醉神",
+        "sequence_number": 251
+      }
+    },
+    {
+      "id": "何超雄",
+      "type": "人物",
+      "properties": {
+        "name": "何超雄",
+        "sequence_number": 252
+      }
+    },
+    {
+      "id": "快快有",
+      "type": "物件",
+      "properties": {
+        "name": "快快有",
+        "sequence_number": 253
+      }
+    },
+    {
+      "id": "山河团体",
+      "type": "家族",
+      "properties": {
+        "name": "山河团体",
+        "sequence_number": 254
+      }
+    },
+    {
+      "id": "你好马",
+      "type": "物件",
+      "properties": {
+        "name": "你好马",
+        "sequence_number": 255
+      }
+    },
+    {
+      "id": "爆胜",
+      "type": "物件",
+      "properties": {
+        "name": "爆胜",
+        "sequence_number": 256
+      }
+    },
+    {
+      "id": "快快上",
+      "type": "物件",
+      "properties": {
+        "name": "快快上",
+        "sequence_number": 257
+      }
+    },
+    {
+      "id": "快快赢",
+      "type": "物件",
+      "properties": {
+        "name": "快快赢",
+        "sequence_number": 258
+      }
+    },
+    {
+      "id": "2007年爱彼表女皇杯",
+      "type": "事件",
+      "properties": {
+        "name": "2007年爱彼表女皇杯",
+        "sequence_number": 259
+      }
+    },
+    {
+      "id": "爆热",
+      "type": "物件",
+      "properties": {
+        "name": "爆热",
+        "sequence_number": 260
+      }
+    },
+    {
+      "id": "脑部血管爆裂",
+      "type": "事件",
+      "properties": {
+        "name": "脑部血管爆裂",
+        "sequence_number": 261
+      }
+    },
+    {
+      "id": "爆冷",
+      "type": "物件",
+      "properties": {
+        "name": "爆冷",
+        "sequence_number": 262
+      }
+    },
+    {
+      "id": "普仁",
+      "type": "物件",
+      "properties": {
+        "name": "普仁",
+        "sequence_number": 263
+      }
+    },
+    {
+      "id": "健康状况大不如前",
+      "type": "事件",
+      "properties": {
+        "name": "健康状况大不如前",
+        "sequence_number": 264
+      }
+    },
+    {
+      "id": "何超蕸",
+      "type": "人物",
+      "properties": {
+        "name": "何超蕸",
+        "sequence_number": 265
+      }
+    },
+    {
+      "id": "新葡京杯",
+      "type": "事件",
+      "properties": {
+        "name": "新葡京杯",
+        "sequence_number": 266
+      }
+    },
+    {
+      "id": "爆灯",
+      "type": "物件",
+      "properties": {
+        "name": "爆灯",
+        "sequence_number": 267
+      }
+    },
+    {
+      "id": "汤王",
+      "type": "物件",
+      "properties": {
+        "name": "汤王",
+        "sequence_number": 268
+      }
+    },
+    {
+      "id": "三太陈婉珍铜紫荆星章授勋仪式",
+      "type": "事件",
+      "properties": {
+        "name": "三太陈婉珍铜紫荆星章授勋仪式",
+        "sequence_number": 269
+      }
+    },
+    {
+      "id": "住院超过7个月",
+      "type": "事件",
+      "properties": {
+        "name": "住院超过7个月",
+        "sequence_number": 270
+      }
+    },
+    {
+      "id": "澳门赛马会时任主席",
+      "type": "事件",
+      "properties": {
+        "name": "澳门赛马会时任主席",
+        "sequence_number": 271
+      }
+    },
+    {
+      "id": "快快发",
+      "type": "物件",
+      "properties": {
+        "name": "快快发",
+        "sequence_number": 272
+      }
+    },
+    {
+      "id": "秀群套房",
+      "type": "物件",
+      "properties": {
+        "name": "秀群套房",
+        "sequence_number": 273
+      }
+    },
+    {
+      "id": "许晋亨",
+      "type": "人物",
+      "properties": {
+        "name": "许晋亨",
+        "sequence_number": 274
+      }
+    },
+    {
+      "id": "亚洲电视杯",
+      "type": "事件",
+      "properties": {
+        "name": "亚洲电视杯",
+        "sequence_number": 275
+      }
+    },
+    {
+      "id": "改以轮椅代步",
+      "type": "事件",
+      "properties": {
+        "name": "改以轮椅代步",
+        "sequence_number": 276
+      }
+    },
+    {
+      "id": "胡锦涛",
+      "type": "人物",
+      "properties": {
+        "name": "胡锦涛",
+        "sequence_number": 277
+      }
+    },
+    {
+      "id": "爆谷",
+      "type": "物件",
+      "properties": {
+        "name": "爆谷",
+        "sequence_number": 278
+      }
+    },
+    {
+      "id": "澳港杯",
+      "type": "事件",
+      "properties": {
+        "name": "澳港杯",
+        "sequence_number": 279
+      }
+    },
+    {
+      "id": "2009年7月29日跌伤头部",
+      "type": "事件",
+      "properties": {
+        "name": "2009年7月29日跌伤头部",
+        "sequence_number": 280
+      }
+    },
+    {
+      "id": "主动脉",
+      "type": "地点",
+      "properties": {
+        "name": "主动脉",
+        "sequence_number": 281
+      }
+    },
+    {
+      "id": "2009年香港金杯",
+      "type": "事件",
+      "properties": {
+        "name": "2009年香港金杯",
+        "sequence_number": 282
+      }
+    },
+    {
+      "id": "何猷亨",
+      "type": "人物",
+      "properties": {
+        "name": "何猷亨",
+        "sequence_number": 283
+      }
+    },
+    {
+      "id": "爆竹",
+      "type": "物件",
+      "properties": {
+        "name": "爆竹",
+        "sequence_number": 284
+      }
+    },
+    {
+      "id": "爆笑",
+      "type": "物件",
+      "properties": {
+        "name": "爆笑",
+        "sequence_number": 285
+      }
+    },
+    {
+      "id": "何家华",
+      "type": "人物",
+      "properties": {
+        "name": "何家华",
+        "sequence_number": 286
+      }
+    },
+    {
+      "id": "37楼",
+      "type": "地点",
+      "properties": {
+        "name": "37楼",
+        "sequence_number": 287
+      }
+    },
+    {
+      "id": "葬礼",
+      "type": "事件",
+      "properties": {
+        "name": "葬礼",
+        "sequence_number": 288
+      }
+    },
+    {
+      "id": "7月8日",
+      "type": "时间",
+      "properties": {
+        "name": "7月8日",
+        "sequence_number": 289
+      }
+    },
+    {
+      "id": "林郑月娥",
+      "type": "人物",
+      "properties": {
+        "name": "林郑月娥",
+        "sequence_number": 290
+      }
+    },
+    {
+      "id": "贺一诚",
+      "type": "人物",
+      "properties": {
+        "name": "贺一诚",
+        "sequence_number": 291
+      }
+    },
+    {
+      "id": "何家",
+      "type": "家族",
+      "properties": {
+        "name": "何家",
+        "sequence_number": 292
+      }
+    },
+    {
+      "id": "难以言喻的悲伤",
+      "type": "事件",
+      "properties": {
+        "name": "难以言喻的悲伤",
+        "sequence_number": 293
+      }
+    },
+    {
+      "id": "2020年初",
+      "type": "时间",
+      "properties": {
+        "name": "2020年初",
+        "sequence_number": 294
+      }
+    },
+    {
+      "id": "弥留之际多名家人陪伴在侧",
+      "type": "事件",
+      "properties": {
+        "name": "弥留之际多名家人陪伴在侧",
+        "sequence_number": 295
+      }
+    },
+    {
+      "id": "守灵",
+      "type": "事件",
+      "properties": {
+        "name": "守灵",
+        "sequence_number": 296
+      }
+    },
+    {
+      "id": "大殓",
+      "type": "事件",
+      "properties": {
+        "name": "大殓",
+        "sequence_number": 297
+      }
+    },
+    {
+      "id": "摩星岭1号昭远坟场",
+      "type": "地点",
+      "properties": {
+        "name": "摩星岭1号昭远坟场",
+        "sequence_number": 298
+      }
+    },
+    {
+      "id": "办理丧事",
+      "type": "事件",
+      "properties": {
+        "name": "办理丧事",
+        "sequence_number": 299
+      }
+    },
+    {
+      "id": "公祭",
+      "type": "事件",
+      "properties": {
+        "name": "公祭",
+        "sequence_number": 300
+      }
+    },
+    {
+      "id": "香港殡仪馆",
+      "type": "地点",
+      "properties": {
+        "name": "香港殡仪馆",
+        "sequence_number": 301
+      }
+    },
+    {
+      "id": "丧事",
+      "type": "事件",
+      "properties": {
+        "name": "丧事",
+        "sequence_number": 302
+      }
+    },
+    {
+      "id": "四房各人",
+      "type": "家族",
+      "properties": {
+        "name": "四房各人",
+        "sequence_number": 303
+      }
+    },
+    {
+      "id": "棺木暂厝",
+      "type": "事件",
+      "properties": {
+        "name": "棺木暂厝",
+        "sequence_number": 304
+      }
+    },
+    {
+      "id": "2019年2月8日",
+      "type": "时间",
+      "properties": {
+        "name": "2019年2月8日",
+        "sequence_number": 305
+      }
+    },
+    {
+      "id": "2021年5月30日",
+      "type": "时间",
+      "properties": {
+        "name": "2021年5月30日",
+        "sequence_number": 306
+      }
+    },
+    {
+      "id": "广东省政协",
+      "type": "企业",
+      "properties": {
+        "name": "广东省政协",
+        "sequence_number": 307
+      }
+    },
+    {
+      "id": "中共广东省委统战部",
+      "type": "企业",
+      "properties": {
+        "name": "中共广东省委统战部",
+        "sequence_number": 308
+      }
+    },
+    {
+      "id": "7月9日",
+      "type": "时间",
+      "properties": {
+        "name": "7月9日",
+        "sequence_number": 309
+      }
+    },
+    {
+      "id": "东华义庄",
+      "type": "地点",
+      "properties": {
+        "name": "东华义庄",
+        "sequence_number": 310
+      }
+    },
+    {
+      "id": "养和医院深切治疗部",
+      "type": "地点",
+      "properties": {
+        "name": "养和医院深切治疗部",
+        "sequence_number": 311
+      }
+    },
+    {
+      "id": "家族各人也知道这一天终会来临",
+      "type": "事件",
+      "properties": {
+        "name": "家族各人也知道这一天终会来临",
+        "sequence_number": 312
+      }
+    },
+    {
+      "id": "2020年5月26日13时05分",
+      "type": "时间",
+      "properties": {
+        "name": "2020年5月26日13时05分",
+        "sequence_number": 313
+      }
+    },
+    {
+      "id": "7月10日",
+      "type": "时间",
+      "properties": {
+        "name": "7月10日",
+        "sequence_number": 314
+      }
+    },
+    {
+      "id": "丧礼",
+      "type": "事件",
+      "properties": {
+        "name": "丧礼",
+        "sequence_number": 315
+      }
+    },
+    {
+      "id": "风水师蔡伯励后人",
+      "type": "人物",
+      "properties": {
+        "name": "风水师蔡伯励后人",
+        "sequence_number": 316
+      }
+    },
+    {
+      "id": "紧急送入深切治疗部急救",
+      "type": "事件",
+      "properties": {
+        "name": "紧急送入深切治疗部急救",
+        "sequence_number": 317
+      }
+    },
+    {
+      "id": "棺木",
+      "type": "物件",
+      "properties": {
+        "name": "棺木",
+        "sequence_number": 318
+      }
+    },
+    {
+      "id": "98岁",
+      "type": "时间",
+      "properties": {
+        "name": "98岁",
+        "sequence_number": 319
+      }
+    },
+    {
+      "id": "娱乐",
+      "type": "物件",
+      "properties": {
+        "name": "娱乐",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "酒店",
+      "type": "物件",
+      "properties": {
+        "name": "酒店",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "何瑞婷",
+      "type": "人物",
+      "properties": {
+        "name": "何瑞婷",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "何柏娟",
+      "type": "人物",
+      "properties": {
+        "name": "何柏娟",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "何甘棠",
+      "type": "人物",
+      "properties": {
+        "name": "何甘棠",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "地产",
+      "type": "物件",
+      "properties": {
+        "name": "地产",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "航运",
+      "type": "物件",
+      "properties": {
+        "name": "航运",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "沙逊洋行买办",
+      "type": "事件",
+      "properties": {
+        "name": "沙逊洋行买办",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "母系",
+      "type": "事件",
+      "properties": {
+        "name": "母系",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "波斯血统",
+      "type": "事件",
+      "properties": {
+        "name": "波斯血统",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "中国血统",
+      "type": "事件",
+      "properties": {
+        "name": "中国血统",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "英国血统",
+      "type": "事件",
+      "properties": {
+        "name": "英国血统",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "犹太血统",
+      "type": "事件",
+      "properties": {
+        "name": "犹太血统",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "1943年创办澳门火水（煤油）公司",
+      "type": "事件",
+      "properties": {
+        "name": "1943年创办澳门火水（煤油）公司",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "利玛窦宿舍宿生身份",
+      "type": "事件",
+      "properties": {
+        "name": "利玛窦宿舍宿生身份",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "第一个100万元",
+      "type": "物件",
+      "properties": {
+        "name": "第一个100万元",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "贸易行",
+      "type": "企业",
+      "properties": {
+        "name": "贸易行",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "与黎婉华订婚关系",
+      "type": "事件",
+      "properties": {
+        "name": "与黎婉华订婚关系",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "1941年12月8日日军入侵香港",
+      "type": "事件",
+      "properties": {
+        "name": "1941年12月8日日军入侵香港",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "1943年获派发100万元花红",
+      "type": "事件",
+      "properties": {
+        "name": "1943年获派发100万元花红",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "心底誓言‘我一定回来’",
+      "type": "事件",
+      "properties": {
+        "name": "心底誓言‘我一定回来’",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "与黎婉华结婚关系",
+      "type": "事件",
+      "properties": {
+        "name": "与黎婉华结婚关系",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "1947年合伙开办炼油厂",
+      "type": "事件",
+      "properties": {
+        "name": "1947年合伙开办炼油厂",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "1947年与人合伙开办炼油厂",
+      "type": "事件",
+      "properties": {
+        "name": "1947年与人合伙开办炼油厂",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "抗战期间在澳门打工",
+      "type": "事件",
+      "properties": {
+        "name": "抗战期间在澳门打工",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "1953年结束澳门生意返港",
+      "type": "事件",
+      "properties": {
+        "name": "1953年结束澳门生意返港",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "日本特别支部军官长职位",
+      "type": "事件",
+      "properties": {
+        "name": "日本特别支部军官长职位",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "100万元红利",
+      "type": "物件",
+      "properties": {
+        "name": "100万元红利",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "1937年获颁政府全费奖学金",
+      "type": "事件",
+      "properties": {
+        "name": "1937年获颁政府全费奖学金",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "10元",
+      "type": "物件",
+      "properties": {
+        "name": "10元",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "日本特别支部军官长泽上校工作",
+      "type": "事件",
+      "properties": {
+        "name": "日本特别支部军官长泽上校工作",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "1942年在联昌粮油公司工作",
+      "type": "事件",
+      "properties": {
+        "name": "1942年在联昌粮油公司工作",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "日语能力",
+      "type": "物件",
+      "properties": {
+        "name": "日语能力",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "何福之孙身份",
+      "type": "人物",
+      "properties": {
+        "name": "何福之孙身份",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "1939年入读香港大学理学院",
+      "type": "事件",
+      "properties": {
+        "name": "1939年入读香港大学理学院",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "1941年第二次世界大战爆发时未毕业",
+      "type": "事件",
+      "properties": {
+        "name": "1941年第二次世界大战爆发时未毕业",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "赌业王国",
+      "type": "企业",
+      "properties": {
+        "name": "赌业王国",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "1946年与黎婉华正式登记结婚",
+      "type": "事件",
+      "properties": {
+        "name": "1946年与黎婉华正式登记结婚",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "香港大学",
+      "type": "地点",
+      "properties": {
+        "name": "香港大学",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "中葡日联营之联昌公司",
+      "type": "企业",
+      "properties": {
+        "name": "中葡日联营之联昌公司",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "日本老板的秘书职位",
+      "type": "事件",
+      "properties": {
+        "name": "日本老板的秘书职位",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "显赫的何东家族出身",
+      "type": "家族",
+      "properties": {
+        "name": "显赫的何东家族出身",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "1932年至1939年就读皇仁书院",
+      "type": "事件",
+      "properties": {
+        "name": "1932年至1939年就读皇仁书院",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "澳门电灯公司主要供应商地位",
+      "type": "事件",
+      "properties": {
+        "name": "澳门电灯公司主要供应商地位",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "在联昌公司押船经历",
+      "type": "事件",
+      "properties": {
+        "name": "在联昌公司押船经历",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "澳门赌业牛耳",
+      "type": "事件",
+      "properties": {
+        "name": "澳门赌业牛耳",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "越南",
+      "type": "地点",
+      "properties": {
+        "name": "越南",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "菲律宾",
+      "type": "地点",
+      "properties": {
+        "name": "菲律宾",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "酒店",
+      "type": "事件",
+      "properties": {
+        "name": "酒店",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "澳门娱乐赌博公司",
+      "type": "事件",
+      "properties": {
+        "name": "澳门娱乐赌博公司",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "地产业",
+      "type": "事件",
+      "properties": {
+        "name": "地产业",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "葡京大酒店",
+      "type": "地点",
+      "properties": {
+        "name": "葡京大酒店",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "叶德利",
+      "type": "人物",
+      "properties": {
+        "name": "叶德利",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "1,000万元身家",
+      "type": "物件",
+      "properties": {
+        "name": "1,000万元身家",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "新葡京娱乐场",
+      "type": "地点",
+      "properties": {
+        "name": "新葡京娱乐场",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "葡京娱乐场",
+      "type": "地点",
+      "properties": {
+        "name": "葡京娱乐场",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "信德集团",
+      "type": "企业",
+      "properties": {
+        "name": "信德集团",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "港澳巨富",
+      "type": "人物",
+      "properties": {
+        "name": "港澳巨富",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "建筑及地产生意",
+      "type": "事件",
+      "properties": {
+        "name": "建筑及地产生意",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "香港证券交易所",
+      "type": "地点",
+      "properties": {
+        "name": "香港证券交易所",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "叶汉",
+      "type": "人物",
+      "properties": {
+        "name": "叶汉",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "北韩",
+      "type": "地点",
+      "properties": {
+        "name": "北韩",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "700亿元身家",
+      "type": "物件",
+      "properties": {
+        "name": "700亿元身家",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "全澳门的赌场经营权",
+      "type": "事件",
+      "properties": {
+        "name": "全澳门的赌场经营权",
+        "sequence_number": 99
+      }
+    },
+    {
+      "id": "澳门赌场",
+      "type": "事件",
+      "properties": {
+        "name": "澳门赌场",
+        "sequence_number": 101
+      }
+    },
+    {
+      "id": "葡萄牙",
+      "type": "地点",
+      "properties": {
+        "name": "葡萄牙",
+        "sequence_number": 102
+      }
+    },
+    {
+      "id": "娱乐",
+      "type": "事件",
+      "properties": {
+        "name": "娱乐",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "身家因金融海啸暴跌近9成（2009年）",
+      "type": "事件",
+      "properties": {
+        "name": "身家因金融海啸暴跌近9成（2009年）",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "2011年出任永远名誉会长",
+      "type": "事件",
+      "properties": {
+        "name": "2011年出任永远名誉会长",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "澳门的首富",
+      "type": "事件",
+      "properties": {
+        "name": "澳门的首富",
+        "sequence_number": 111
+      }
+    },
+    {
+      "id": "爱情及家庭生活津津乐道",
+      "type": "事件",
+      "properties": {
+        "name": "爱情及家庭生活津津乐道",
+        "sequence_number": 115
+      }
+    },
+    {
+      "id": "香港一号",
+      "type": "物件",
+      "properties": {
+        "name": "香港一号",
+        "sequence_number": 116
+      }
+    },
+    {
+      "id": "维德角储金局27.4%股权",
+      "type": "物件",
+      "properties": {
+        "name": "维德角储金局27.4%股权",
+        "sequence_number": 117
+      }
+    },
+    {
+      "id": "中华人民共和国党和国家领导人的亲自慰问",
+      "type": "事件",
+      "properties": {
+        "name": "中华人民共和国党和国家领导人的亲自慰问",
+        "sequence_number": 119
+      }
+    },
+    {
+      "id": "香港第19位富豪（2008年）",
+      "type": "事件",
+      "properties": {
+        "name": "香港第19位富豪（2008年）",
+        "sequence_number": 121
+      }
+    },
+    {
+      "id": "永远名誉会长（香港地产建设商会）",
+      "type": "事件",
+      "properties": {
+        "name": "永远名誉会长（香港地产建设商会）",
+        "sequence_number": 122
+      }
+    },
+    {
+      "id": "亚洲地区资产总值前列",
+      "type": "事件",
+      "properties": {
+        "name": "亚洲地区资产总值前列",
+        "sequence_number": 123
+      }
+    },
+    {
+      "id": "17个儿女",
+      "type": "事件",
+      "properties": {
+        "name": "17个儿女",
+        "sequence_number": 125
+      }
+    },
+    {
+      "id": "1971年香港实施一夫一妻制",
+      "type": "事件",
+      "properties": {
+        "name": "1971年香港实施一夫一妻制",
+        "sequence_number": 126
+      }
+    },
+    {
+      "id": "1984年起香港地产建设商会会长",
+      "type": "事件",
+      "properties": {
+        "name": "1984年起香港地产建设商会会长",
+        "sequence_number": 129
+      }
+    },
+    {
+      "id": "白手兴家",
+      "type": "事件",
+      "properties": {
+        "name": "白手兴家",
+        "sequence_number": 131
+      }
+    },
+    {
+      "id": "澳门娱乐公司",
+      "type": "企业",
+      "properties": {
+        "name": "澳门娱乐公司",
+        "sequence_number": 132
+      }
+    },
+    {
+      "id": "全球富豪榜第151名（2005年）",
+      "type": "事件",
+      "properties": {
+        "name": "全球富豪榜第151名（2005年）",
+        "sequence_number": 133
+      }
+    },
+    {
+      "id": "香港地产建设商会",
+      "type": "企业",
+      "properties": {
+        "name": "香港地产建设商会",
+        "sequence_number": 134
+      }
+    },
+    {
+      "id": "净资产总值86亿美元（2005年）",
+      "type": "事件",
+      "properties": {
+        "name": "净资产总值86亿美元（2005年）",
+        "sequence_number": 143
+      }
+    },
+    {
+      "id": "澳门博彩控股",
+      "type": "企业",
+      "properties": {
+        "name": "澳门博彩控股",
+        "sequence_number": 145
+      }
+    },
+    {
+      "id": "香港民主党副主席",
+      "type": "事件",
+      "properties": {
+        "name": "香港民主党副主席",
+        "sequence_number": 147
+      }
+    },
+    {
+      "id": "澳门旅游娱乐有限公司股息",
+      "type": "事件",
+      "properties": {
+        "name": "澳门旅游娱乐有限公司股息",
+        "sequence_number": 148
+      }
+    },
+    {
+      "id": "袭击事件",
+      "type": "事件",
+      "properties": {
+        "name": "袭击事件",
+        "sequence_number": 150
+      }
+    },
+    {
+      "id": "信德集团有限公司董事会主席",
+      "type": "事件",
+      "properties": {
+        "name": "信德集团有限公司董事会主席",
+        "sequence_number": 152
+      }
+    },
+    {
+      "id": "澳门博彩控股应占权益",
+      "type": "事件",
+      "properties": {
+        "name": "澳门博彩控股应占权益",
+        "sequence_number": 154
+      }
+    },
+    {
+      "id": "澳门博彩控股股份",
+      "type": "事件",
+      "properties": {
+        "name": "澳门博彩控股股份",
+        "sequence_number": 156
+      }
+    },
+    {
+      "id": "律师",
+      "type": "事件",
+      "properties": {
+        "name": "律师",
+        "sequence_number": 157
+      }
+    },
+    {
+      "id": "房屋政策令穷人与有钱人住在一起",
+      "type": "事件",
+      "properties": {
+        "name": "房屋政策令穷人与有钱人住在一起",
+        "sequence_number": 158
+      }
+    },
+    {
+      "id": "搅屎棍",
+      "type": "物件",
+      "properties": {
+        "name": "搅屎棍",
+        "sequence_number": 162
+      }
+    },
+    {
+      "id": "曾荫权会顺利继任",
+      "type": "事件",
+      "properties": {
+        "name": "曾荫权会顺利继任",
+        "sequence_number": 163
+      }
+    },
+    {
+      "id": "投空白票的选委错得好紧要",
+      "type": "事件",
+      "properties": {
+        "name": "投空白票的选委错得好紧要",
+        "sequence_number": 164
+      }
+    },
+    {
+      "id": "八万五政策献计者另有其人",
+      "type": "事件",
+      "properties": {
+        "name": "八万五政策献计者另有其人",
+        "sequence_number": 165
+      }
+    },
+    {
+      "id": "若梁振英做特首，我就返澳门",
+      "type": "事件",
+      "properties": {
+        "name": "若梁振英做特首，我就返澳门",
+        "sequence_number": 166
+      }
+    },
+    {
+      "id": "澳娱32%的股权",
+      "type": "物件",
+      "properties": {
+        "name": "澳娱32%的股权",
+        "sequence_number": 167
+      }
+    },
+    {
+      "id": "涉及的公司",
+      "type": "企业",
+      "properties": {
+        "name": "涉及的公司",
+        "sequence_number": 168
+      }
+    },
+    {
+      "id": "董建华智囊及梁振英",
+      "type": "人物",
+      "properties": {
+        "name": "董建华智囊及梁振英",
+        "sequence_number": 169
+      }
+    },
+    {
+      "id": "梁振英是红须军师",
+      "type": "事件",
+      "properties": {
+        "name": "梁振英是红须军师",
+        "sequence_number": 171
+      }
+    },
+    {
+      "id": "香港部份泛民主派议员、学者及记者入境",
+      "type": "事件",
+      "properties": {
+        "name": "香港部份泛民主派议员、学者及记者入境",
+        "sequence_number": 174
+      }
+    },
+    {
+      "id": "若梁振英做特首，我第一个放弃香港",
+      "type": "事件",
+      "properties": {
+        "name": "若梁振英做特首，我第一个放弃香港",
+        "sequence_number": 175
+      }
+    },
+    {
+      "id": "对香港主权移交后特首的言论",
+      "type": "事件",
+      "properties": {
+        "name": "对香港主权移交后特首的言论",
+        "sequence_number": 176
+      }
+    },
+    {
+      "id": "曾与地产商倾过，若他做特首，我们便走啦",
+      "type": "事件",
+      "properties": {
+        "name": "曾与地产商倾过，若他做特首，我们便走啦",
+        "sequence_number": 177
+      }
+    },
+    {
+      "id": "支持政府方案",
+      "type": "事件",
+      "properties": {
+        "name": "支持政府方案",
+        "sequence_number": 178
+      }
+    },
+    {
+      "id": "八万五政策",
+      "type": "事件",
+      "properties": {
+        "name": "八万五政策",
+        "sequence_number": 179
+      }
+    },
+    {
+      "id": "澳门特别行政区政府",
+      "type": "地点",
+      "properties": {
+        "name": "澳门特别行政区政府",
+        "sequence_number": 180
+      }
+    },
+    {
+      "id": "游行人数将不多于五万人",
+      "type": "事件",
+      "properties": {
+        "name": "游行人数将不多于五万人",
+        "sequence_number": 181
+      }
+    },
+    {
+      "id": "澳娱股权",
+      "type": "物件",
+      "properties": {
+        "name": "澳娱股权",
+        "sequence_number": 182
+      }
+    },
+    {
+      "id": "三太陈婉珍",
+      "type": "人物",
+      "properties": {
+        "name": "三太陈婉珍",
+        "sequence_number": 183
+      }
+    },
+    {
+      "id": "政治立场",
+      "type": "事件",
+      "properties": {
+        "name": "政治立场",
+        "sequence_number": 185
+      }
+    },
+    {
+      "id": "我似乎冤枉好人",
+      "type": "事件",
+      "properties": {
+        "name": "我似乎冤枉好人",
+        "sequence_number": 186
+      }
+    },
+    {
+      "id": "二房5名子女",
+      "type": "人物",
+      "properties": {
+        "name": "二房5名子女",
+        "sequence_number": 187
+      }
+    },
+    {
+      "id": "将香港租给联合国100年的设想",
+      "type": "事件",
+      "properties": {
+        "name": "将香港租给联合国100年的设想",
+        "sequence_number": 188
+      }
+    },
+    {
+      "id": "二太蓝琼缨",
+      "type": "人物",
+      "properties": {
+        "name": "二太蓝琼缨",
+        "sequence_number": 189
+      }
+    },
+    {
+      "id": "澳门第3届行政长官选举中的空白票",
+      "type": "事件",
+      "properties": {
+        "name": "澳门第3届行政长官选举中的空白票",
+        "sequence_number": 190
+      }
+    },
+    {
+      "id": "建制派",
+      "type": "家族",
+      "properties": {
+        "name": "建制派",
+        "sequence_number": 191
+      }
+    },
+    {
+      "id": "2009年9月28日",
+      "type": "时间",
+      "properties": {
+        "name": "2009年9月28日",
+        "sequence_number": 192
+      }
+    },
+    {
+      "id": "香港港安医院深切治疗部",
+      "type": "地点",
+      "properties": {
+        "name": "香港港安医院深切治疗部",
+        "sequence_number": 195
+      }
+    },
+    {
+      "id": "2009年7月30日昏迷",
+      "type": "事件",
+      "properties": {
+        "name": "2009年7月30日昏迷",
+        "sequence_number": 197
+      }
+    },
+    {
+      "id": "2009年7月30日",
+      "type": "时间",
+      "properties": {
+        "name": "2009年7月30日",
+        "sequence_number": 198
+      }
+    },
+    {
+      "id": "澳门赛马会",
+      "type": "企业",
+      "properties": {
+        "name": "澳门赛马会",
+        "sequence_number": 199
+      }
+    },
+    {
+      "id": "2009年12月20日出席澳门回归十周年活动",
+      "type": "事件",
+      "properties": {
+        "name": "2009年12月20日出席澳门回归十周年活动",
+        "sequence_number": 201
+      }
+    },
+    {
+      "id": "2014年10月出席三太陈婉珍铜紫荆星章授勋仪式",
+      "type": "事件",
+      "properties": {
+        "name": "2014年10月出席三太陈婉珍铜紫荆星章授勋仪式",
+        "sequence_number": 205
+      }
+    },
+    {
+      "id": "梁安琪",
+      "type": "人物",
+      "properties": {
+        "name": "梁安琪",
+        "sequence_number": 208
+      }
+    },
+    {
+      "id": "2009至2011年间港澳杯",
+      "type": "事件",
+      "properties": {
+        "name": "2009至2011年间港澳杯",
+        "sequence_number": 209
+      }
+    },
+    {
+      "id": "东亚运体育馆",
+      "type": "地点",
+      "properties": {
+        "name": "东亚运体育馆",
+        "sequence_number": 210
+      }
+    },
+    {
+      "id": "2009年7月30日住院抢救",
+      "type": "事件",
+      "properties": {
+        "name": "2009年7月30日住院抢救",
+        "sequence_number": 212
+      }
+    },
+    {
+      "id": "山河团体经理人",
+      "type": "物件",
+      "properties": {
+        "name": "山河团体经理人",
+        "sequence_number": 217
+      }
+    },
+    {
+      "id": "2007年香港冠军暨遮打杯",
+      "type": "事件",
+      "properties": {
+        "name": "2007年香港冠军暨遮打杯",
+        "sequence_number": 219
+      }
+    },
+    {
+      "id": "东华之友团体经理人",
+      "type": "物件",
+      "properties": {
+        "name": "东华之友团体经理人",
+        "sequence_number": 223
+      }
+    },
+    {
+      "id": "香港赛马会会员资格",
+      "type": "物件",
+      "properties": {
+        "name": "香港赛马会会员资格",
+        "sequence_number": 224
+      }
+    },
+    {
+      "id": "2009至2011年间亚洲电视杯",
+      "type": "事件",
+      "properties": {
+        "name": "2009至2011年间亚洲电视杯",
+        "sequence_number": 230
+      }
+    },
+    {
+      "id": "2008年国泰航空香港杯预赛",
+      "type": "事件",
+      "properties": {
+        "name": "2008年国泰航空香港杯预赛",
+        "sequence_number": 231
+      }
+    },
+    {
+      "id": "养和医院秀群套房",
+      "type": "地点",
+      "properties": {
+        "name": "养和医院秀群套房",
+        "sequence_number": 232
+      }
+    },
+    {
+      "id": "2009至2011年间澳门短途精英杯",
+      "type": "事件",
+      "properties": {
+        "name": "2009至2011年间澳门短途精英杯",
+        "sequence_number": 233
+      }
+    },
+    {
+      "id": "2009年7月30日颅内受创",
+      "type": "事件",
+      "properties": {
+        "name": "2009年7月30日颅内受创",
+        "sequence_number": 235
+      }
+    },
+    {
+      "id": "2009年7月29日头部跌伤",
+      "type": "事件",
+      "properties": {
+        "name": "2009年7月29日头部跌伤",
+        "sequence_number": 241
+      }
+    },
+    {
+      "id": "中文大学脑外科专家",
+      "type": "人物",
+      "properties": {
+        "name": "中文大学脑外科专家",
+        "sequence_number": 242
+      }
+    },
+    {
+      "id": "型蓝团体经理人",
+      "type": "物件",
+      "properties": {
+        "name": "型蓝团体经理人",
+        "sequence_number": 245
+      }
+    },
+    {
+      "id": "2008年沙田锦标",
+      "type": "事件",
+      "properties": {
+        "name": "2008年沙田锦标",
+        "sequence_number": 247
+      }
+    },
+    {
+      "id": "2009至2011年间新葡京杯",
+      "type": "事件",
+      "properties": {
+        "name": "2009至2011年间新葡京杯",
+        "sequence_number": 249
+      }
+    },
+    {
+      "id": "2009年9月28日转院至养和医院",
+      "type": "事件",
+      "properties": {
+        "name": "2009年9月28日转院至养和医院",
+        "sequence_number": 251
+      }
+    },
+    {
+      "id": "2009年香港冠军暨遮打杯",
+      "type": "事件",
+      "properties": {
+        "name": "2009年香港冠军暨遮打杯",
+        "sequence_number": 254
+      }
+    },
+    {
+      "id": "2009至2011年间澳港杯",
+      "type": "事件",
+      "properties": {
+        "name": "2009至2011年间澳港杯",
+        "sequence_number": 256
+      }
+    },
+    {
+      "id": "2013年11月传出死讯",
+      "type": "事件",
+      "properties": {
+        "name": "2013年11月传出死讯",
+        "sequence_number": 258
+      }
+    },
+    {
+      "id": "2009年7月29日",
+      "type": "时间",
+      "properties": {
+        "name": "2009年7月29日",
+        "sequence_number": 260
+      }
+    },
+    {
+      "id": "2010年3月6日出院返家",
+      "type": "事件",
+      "properties": {
+        "name": "2010年3月6日出院返家",
+        "sequence_number": 262
+      }
+    },
+    {
+      "id": "二房长女何超琼",
+      "type": "人物",
+      "properties": {
+        "name": "二房长女何超琼",
+        "sequence_number": 271
+      }
+    },
+    {
+      "id": "器官衰竭",
+      "type": "事件",
+      "properties": {
+        "name": "器官衰竭",
+        "sequence_number": 273
+      }
+    },
+    {
+      "id": "四房子女",
+      "type": "人物",
+      "properties": {
+        "name": "四房子女",
+        "sequence_number": 274
+      }
+    },
+    {
+      "id": "何鸿燊家族",
+      "type": "家族",
+      "properties": {
+        "name": "何鸿燊家族",
+        "sequence_number": 275
+      }
+    },
+    {
+      "id": "2020年",
+      "type": "时间",
+      "properties": {
+        "name": "2020年",
+        "sequence_number": 280
+      }
+    },
+    {
+      "id": "深切治疗部",
+      "type": "地点",
+      "properties": {
+        "name": "深切治疗部",
+        "sequence_number": 282
+      }
+    },
+    {
+      "id": "三位姨太太",
+      "type": "人物",
+      "properties": {
+        "name": "三位姨太太",
+        "sequence_number": 287
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1921年11月25日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门娱乐赌博公司",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门博彩业独占鳌头",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港信德集团",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "英属香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何东家族",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "港澳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何东家族",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "土生葡人黎婉华",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "土生葡人黎婉华",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "英国伦敦",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "1859年",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "东方代理",
+      "type": "创办",
+      "properties": {}
+    },
+    {
+      "source_id": "东方代理",
+      "target_id": "英国伦敦",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "广东宝安县",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "何仕文",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "郭兴贤",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "郭兴贤",
+      "target_id": "施娣",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "郭茂超",
+      "target_id": "施娣",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "罗絮才",
+      "target_id": "何福",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "中国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "犹太",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "罗絮才",
+      "target_id": "中英混血",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "中英混血",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "沙逊洋行",
+      "target_id": "何世光",
+      "type": "雇佣",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第九",
+      "type": "排行",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "九爷",
+      "type": "昵称",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "中英混血",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "豪门世家",
+      "type": "来自",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "犹太",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "英国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "波斯",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "何鸿燊的曾祖母",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "何鸿燊的曾祖父",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "Stephen Prentice Hall",
+      "target_id": "何鸿燊的外曾祖父",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "Bosman",
+      "target_id": "荷兰姓氏",
+      "type": "可能为",
+      "properties": {}
+    },
+    {
+      "source_id": "Bosman",
+      "target_id": "波斯人",
+      "type": "错误翻译",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "何鸿燊的家族成员",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "母系承传",
+      "type": "采用祖籍",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "中国广东宝安人",
+      "type": "祖籍",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1932年至1939年",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "皇仁书院",
+      "type": "就读",
+      "properties": {}
+    },
+    {
+      "source_id": "皇仁书院",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第二次世界大战",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1941年12月8日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "联昌粮油公司",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "联昌粮油公司",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "押船工作",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日语",
+      "type": "学习",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日本老板的秘书",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "从广东进口粮食与燃料",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "公司股东",
+      "type": "成为",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "黎婉华",
+      "type": "订婚",
+      "properties": {}
+    },
+    {
+      "source_id": "黎婉华",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何东家族",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何福之孙",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "长泽上校",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "长泽上校",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "爬山及唱日文歌",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "100万元花红",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门火水（煤油）公司",
+      "type": "创办",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门火水（煤油）公司",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门火水（煤油）公司",
+      "target_id": "澳门电灯公司",
+      "type": "供应",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门火水（煤油）公司",
+      "target_id": "东南亚最大的煤油供应商",
+      "type": "成为",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "开办炼油厂",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "炼油厂",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "炼油厂",
+      "target_id": "澳门电灯公司",
+      "type": "供应",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "黑势力妒忌",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门生意",
+      "type": "结束",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "我一定回来",
+      "type": "许下誓言",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "政府全费奖学金",
+      "type": "考取",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港大学理学院",
+      "type": "就读",
+      "properties": {}
+    },
+    {
+      "source_id": "香港大学理学院",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "利玛窦宿舍宿生",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "佳绩",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "奖学金",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港中学毕业会考",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "香港中学毕业会考",
+      "target_id": "1937年",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "抗战期间",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日本商人齐藤",
+      "type": "应召",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "到澳门打工",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "担任押船工作",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "1945年8月",
+      "target_id": "日本投降",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "日本投降",
+      "target_id": "香港重光",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "成立利安建筑公司",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "利安建筑公司",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "进军地产业",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "坐拥1,000万元身家",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "白手兴家成为港澳巨富",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "1961年",
+      "target_id": "何鸿燊与叶汉、叶德利、霍英东结成联盟",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "组建新集团",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "新集团",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "新集团",
+      "target_id": "竞得澳门博彩专利权",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门博彩专利权",
+      "target_id": "创办澳门旅游娱乐有限公司",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门旅游娱乐有限公司",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门旅游娱乐有限公司",
+      "target_id": "建成葡京大酒店",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "创办信德集团有限公司",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团有限公司",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团有限公司",
+      "target_id": "1973年在香港证券交易所上市",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "1973年",
+      "target_id": "信德集团有限公司在香港证券交易所上市",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团有限公司",
+      "target_id": "独揽全澳门的赌场经营权",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "引进水翼船行走港澳航线",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "水翼船",
+      "target_id": "港澳航线",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "垄断式经营澳门赌场多年",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "1970年6月11日",
+      "target_id": "葡京娱乐场建成",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "葡京娱乐场",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "2007年2月11日",
+      "target_id": "新葡京娱乐场建成",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "新葡京娱乐场",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "在越南、北韩、菲律宾、葡萄牙投资",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "其家族手执澳门赌业牛耳",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "其家族",
+      "target_id": "澳门赌业",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团有限公司",
+      "target_id": "航运、地产、酒店及娱乐等不同行业",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2008年身家高达700亿元",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "港澳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港回归",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门回归",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中英谈判",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中葡谈判",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港特别行政区基本法咨询委员会委员",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "全国人民代表大会澳门特别行政区筹备委员会副主任委员",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国内地经济建设",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "文化慈善事业",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "港澳回归",
+      "type": "发表支持",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1982年邓小平宣布收回港澳",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门逸园狗场60%股权",
+      "type": "收购",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门回力球场90%股份",
+      "type": "收购",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国内地",
+      "type": "投资",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国内地",
+      "type": "捐款",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国内地改革开放",
+      "type": "协助",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国内地经济发展",
+      "type": "协助",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "扶贫赈灾",
+      "type": "协助",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "霍英东",
+      "type": "并称",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "曾宪梓",
+      "type": "并称",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "胡应湘",
+      "type": "并称",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "邵逸夫",
+      "type": "并称",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "包玉刚",
+      "type": "并称",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "物业",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "博彩",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "旅游",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "航运",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "地产",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "财务",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "空运",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港地产建设商会会长",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "永远名誉会长",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "HK1车牌",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "三妻四妾",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "赌业王国",
+      "type": "创立",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "17个儿女",
+      "type": "生育",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "策略投资公司（Geocapital）",
+      "type": "发起",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "最大股东",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "GeoCapital应占维德角储金局27.4%股权",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "莫三比克Moza Bank的24.5%权益",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "几内亚比索西非银行41.25%股份",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年",
+      "type": "住院",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2020年5月26日",
+      "type": "离世",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳广视股东会荣誉主席",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "亚洲",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "全球富豪榜第151名",
+      "type": "排名",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "净资产总值86亿美元",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年2月",
+      "type": "身家暴跌",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门旅游娱乐有限公司",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "股息纷争",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何婉琪",
+      "target_id": "股息纷争",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "股息纷争",
+      "target_id": "2001年",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何婉琪被踢出董事局",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何俊仁遇袭事件",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何俊仁",
+      "target_id": "何俊仁遇袭事件",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何俊仁遇袭事件",
+      "target_id": "2006年8月20日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何俊仁遇袭事件",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何俊仁遇袭事件",
+      "type": "否认",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门旅游娱乐公司上市计划受阻",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "争产事件",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "争产事件",
+      "target_id": "2011年1月24日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门博彩控股股份转移",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "家族成员控股公司持有股份",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "蓝琼缨",
+      "target_id": "争产事件",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陈婉珍",
+      "target_id": "争产事件",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "澳娱",
+      "target_id": "股息纷争",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "澳娱",
+      "target_id": "争产事件",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何俊仁",
+      "target_id": "香港民主党副主席",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何俊仁",
+      "target_id": "律师",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何俊仁",
+      "target_id": "莫超权被袭击事件",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "莫超权",
+      "target_id": "莫超权被袭击事件",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "Mark Side",
+      "target_id": "恐吓信事件",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "恐吓信事件",
+      "target_id": "2002至2003年间",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2011年1月27日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "控告子女、亲属及相关公司",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳娱32%股权",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "禁制令",
+      "type": "提出",
+      "properties": {}
+    },
+    {
+      "source_id": "蓝琼缨",
+      "target_id": "Lanceford公司董事",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何超凤",
+      "target_id": "Lanceford公司董事",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "Lanceford公司董事",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "禤永明",
+      "target_id": "Lanceford公司董事",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "Lanceford公司",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "全国政协常委",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第九届全国政协常委",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第十届全国政协常委",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第十一届全国政协常委",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2005年初",
+      "type": "发生于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "对董建华执政期间言论",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "对曾荫权继任预测",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "支持政府方案广告",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "打赌游行人数不多于五万人",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "将香港租给联合国100年设想",
+      "type": "提出",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "拒绝泛民主派入境事件",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门第3届行政长官选举空白票言论",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "批评梁振英智囊身份",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "批评八万五政策献计者",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与地产商讨论迁居澳门",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "批评房屋政策导致穷人与有钱人混居",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "梁振英",
+      "target_id": "八万五政策献计者",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "梁振英",
+      "target_id": "向何鸿燊解释政策来源",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "对梁振英的误解",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "名下马匹",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "爆冷",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "爆冷",
+      "target_id": "2006年香港打吡大赛",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆冷",
+      "target_id": "2007年爱彼表女皇杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆冷",
+      "target_id": "香港冠军暨遮打杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆冷",
+      "target_id": "2008年香港金杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆冷",
+      "target_id": "沙田锦标",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆冷",
+      "target_id": "国泰航空香港杯预赛",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆冷",
+      "target_id": "2009年香港金杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆冷",
+      "target_id": "2010年爱彼表女皇杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "爆料",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "爆灯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "爆发",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "爆料",
+      "target_id": "港澳杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆灯",
+      "target_id": "澳港杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆发",
+      "target_id": "澳门短途精英杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆发",
+      "target_id": "新葡京杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "爆发",
+      "target_id": "亚洲电视杯",
+      "type": "胜出",
+      "properties": {}
+    },
+    {
+      "source_id": "何超雄",
+      "target_id": "危险大军",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超雄",
+      "target_id": "快快赢",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超雄",
+      "target_id": "快快上",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超雄",
+      "target_id": "快快有",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超雄",
+      "target_id": "快快发",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "危险大军",
+      "target_id": "山河团体",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "山河团体",
+      "target_id": "何超雄",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "山河团体",
+      "target_id": "周邦华",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "快快赢",
+      "target_id": "何超雄",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "快快上",
+      "target_id": "何超雄",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "快快有",
+      "target_id": "何超雄",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "快快发",
+      "target_id": "何超雄",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "汤王",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "醉仙",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "醉醒",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "醉神",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "汤王",
+      "target_id": "许晋亨",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "醉仙",
+      "target_id": "许晋亨",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "醉醒",
+      "target_id": "许晋亨",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "醉神",
+      "target_id": "许晋亨",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "领先",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超凤",
+      "target_id": "领先",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "领先",
+      "target_id": "何志坚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "领先",
+      "target_id": "何超凤",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "何超凤",
+      "target_id": "你好马",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超凤",
+      "target_id": "好利钱",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "好利钱",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "好利钱",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "好利钱",
+      "target_id": "何超凤",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "好利钱",
+      "target_id": "何超琼",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "好利钱",
+      "target_id": "何超蕸",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "好利钱",
+      "target_id": "李天泽医生",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "普仁",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "型到爆",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "普仁",
+      "target_id": "东华之友团体",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "型到爆",
+      "target_id": "东华之友团体",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "东华之友团体",
+      "target_id": "何超蕸",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "东华之友团体",
+      "target_id": "型蓝团体",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "型蓝团体经理人",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何猷亨",
+      "target_id": "爆谷",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何猷亨",
+      "target_id": "爆热",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何猷亨",
+      "target_id": "爆笑",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何猷亨",
+      "target_id": "爆竹",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "爆谷",
+      "target_id": "何猷亨",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "爆热",
+      "target_id": "何猷亨",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "爆笑",
+      "target_id": "何猷亨",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "爆竹",
+      "target_id": "何猷亨",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "何家华",
+      "target_id": "爆胜",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何家华",
+      "target_id": "何鸿燊长孙女",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门赛马会时任主席",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年7月29日跌伤头部",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "2009年7月29日跌伤头部",
+      "target_id": "颅内受创",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "颅内受创",
+      "target_id": "昏迷",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "昏迷",
+      "target_id": "住院超过7个月",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "住院超过7个月",
+      "target_id": "健康状况大不如前",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "三次脑部手术",
+      "type": "接受",
+      "properties": {}
+    },
+    {
+      "source_id": "三次脑部手术",
+      "target_id": "脑部血管爆裂",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "脑部血管爆裂",
+      "target_id": "主动脉",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "养和医院",
+      "type": "转院",
+      "properties": {}
+    },
+    {
+      "source_id": "养和医院",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "养和医院",
+      "target_id": "秀群套房",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "秀群套房",
+      "target_id": "37楼",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "秀群套房",
+      "target_id": "2,000平方呎",
+      "type": "面积",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门回归中国十周年活动",
+      "type": "出席",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门回归中国十周年活动",
+      "target_id": "2009年12月20日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "胡锦涛",
+      "type": "被接见",
+      "properties": {}
+    },
+    {
+      "source_id": "胡锦涛",
+      "target_id": "何鸿燊",
+      "type": "接见",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港",
+      "type": "返回",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2010年3月6日",
+      "type": "出院",
+      "properties": {}
+    },
+    {
+      "source_id": "2010年3月6日",
+      "target_id": "改以轮椅代步",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "改以轮椅代步",
+      "target_id": "深居简出",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "医院",
+      "type": "多次进入",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "死讯",
+      "type": "传出",
+      "properties": {}
+    },
+    {
+      "source_id": "死讯",
+      "target_id": "2013年11月",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "三太陈婉珍铜紫荆星章授勋仪式",
+      "type": "出席",
+      "properties": {}
+    },
+    {
+      "source_id": "三太陈婉珍铜紫荆星章授勋仪式",
+      "target_id": "2014年10月",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2019年2月8日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "养和医院",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "紧急送入深切治疗部急救",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2020年初",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "广东省政协",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "中共广东省委统战部",
+      "target_id": "何鸿燊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2020年5月26日13时05分",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "养和医院深切治疗部",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2020年5月26日13时05分",
+      "type": "逝世",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "98岁",
+      "type": "享耆寿",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "弥留之际多名家人陪伴在侧",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "林郑月娥",
+      "target_id": "何鸿燊",
+      "type": "表示哀悼",
+      "properties": {}
+    },
+    {
+      "source_id": "贺一诚",
+      "target_id": "何鸿燊",
+      "type": "表示哀悼",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "何家",
+      "type": "代表",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "家族各人也知道这一天终会来临",
+      "type": "形容",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "难以言喻的悲伤",
+      "type": "形容",
+      "properties": {}
+    },
+    {
+      "source_id": "何家",
+      "target_id": "办理丧事",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "四房各人",
+      "target_id": "丧事",
+      "type": "联合办理",
+      "properties": {}
+    },
+    {
+      "source_id": "丧礼",
+      "target_id": "7月8日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "丧礼",
+      "target_id": "7月9日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "丧礼",
+      "target_id": "7月10日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "丧礼",
+      "target_id": "香港殡仪馆",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "守灵",
+      "target_id": "7月8日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "公祭",
+      "target_id": "7月9日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "大殓",
+      "target_id": "7月10日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "棺木",
+      "target_id": "东华义庄",
+      "type": "暂厝",
+      "properties": {}
+    },
+    {
+      "source_id": "东华义庄",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "棺木",
+      "target_id": "东华义庄",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "葬礼",
+      "target_id": "2021年5月30日",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "葬礼",
+      "target_id": "摩星岭1号昭远坟场",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "摩星岭1号昭远坟场",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "风水师蔡伯励后人",
+      "target_id": "棺木暂厝",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门娱乐赌博公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港信德集团",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何东家族",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "何鸿燊",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "土生葡人黎婉华",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "土生葡人黎婉华",
+      "target_id": "何鸿燊",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "东方代理",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "东方代理",
+      "target_id": "何仕文",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "施娣",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "何瑞婷",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "何柏娟",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "郭茂超",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "何鸿燊",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "何甘棠",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何甘棠",
+      "target_id": "何福",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "何鸿燊",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "何鸿燊",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "酒店",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "娱乐",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "中国血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "犹太血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "罗絮才",
+      "target_id": "中英混血",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "中英混血",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "沙逊洋行买办",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "中英混血",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "犹太血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "英国血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "波斯血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "犹太血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "Stephen Prentice Hall",
+      "target_id": "英国血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "中国血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "犹太血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "英国血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "波斯血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "母系",
+      "type": "承传",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "中国广东宝安人",
+      "type": "自认",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门火水（煤油）公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "炼油厂",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "100万元红利",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "联昌粮油公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "联昌粮油公司",
+      "target_id": "何鸿燊",
+      "type": "控股",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门电灯公司主要供应商地位",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港大学",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "政府全费奖学金",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "利玛窦宿舍宿生身份",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中葡日联营之联昌公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日本老板的秘书职位",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日语能力",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "贸易行",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "10元",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第一个100万元",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "赌业王国",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "显赫的何东家族出身",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何福之孙身份",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日本特别支部军官长泽上校工作",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "长泽上校",
+      "target_id": "日本特别支部军官长职位",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与黎婉华订婚关系",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与黎婉华结婚关系",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "抗战期间在澳门打工",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "在联昌公司押船经历",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1943年获派发100万元花红",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1947年合伙开办炼油厂",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1953年结束澳门生意返港",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "心底誓言‘我一定回来’",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1932年至1939年就读皇仁书院",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1937年获颁政府全费奖学金",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1939年入读香港大学理学院",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1941年第二次世界大战爆发时未毕业",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1941年12月8日日军入侵香港",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1942年在联昌粮油公司工作",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1946年与黎婉华正式登记结婚",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1943年创办澳门火水（煤油）公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1947年与人合伙开办炼油厂",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "1945年8月",
+      "target_id": "日本投降",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "利安建筑公司",
+      "type": "成立",
+      "properties": {}
+    },
+    {
+      "source_id": "利安建筑公司",
+      "target_id": "建筑及地产生意",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "地产业",
+      "type": "进军",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1,000万元身家",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "港澳巨富",
+      "type": "白手兴家",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "新集团",
+      "type": "结成联盟",
+      "properties": {}
+    },
+    {
+      "source_id": "叶汉",
+      "target_id": "新集团",
+      "type": "结成联盟",
+      "properties": {}
+    },
+    {
+      "source_id": "叶德利",
+      "target_id": "新集团",
+      "type": "结成联盟",
+      "properties": {}
+    },
+    {
+      "source_id": "霍英东",
+      "target_id": "新集团",
+      "type": "结成联盟",
+      "properties": {}
+    },
+    {
+      "source_id": "新集团",
+      "target_id": "澳门博彩专利权",
+      "type": "竞得",
+      "properties": {}
+    },
+    {
+      "source_id": "新集团",
+      "target_id": "澳门旅游娱乐有限公司",
+      "type": "创办",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门旅游娱乐有限公司",
+      "target_id": "葡京大酒店",
+      "type": "建成",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "信德集团有限公司",
+      "type": "创办",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团有限公司",
+      "target_id": "香港证券交易所",
+      "type": "上市",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团有限公司",
+      "target_id": "澳门娱乐赌博公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "全澳门的赌场经营权",
+      "type": "独揽",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门赌场",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "葡京娱乐场",
+      "target_id": "1970年6月11日",
+      "type": "建成",
+      "properties": {}
+    },
+    {
+      "source_id": "新葡京娱乐场",
+      "target_id": "2007年2月11日",
+      "type": "建成",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "水翼船",
+      "type": "引进",
+      "properties": {}
+    },
+    {
+      "source_id": "水翼船",
+      "target_id": "港澳航线",
+      "type": "行走",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "越南",
+      "type": "投资",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "北韩",
+      "type": "投资",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "菲律宾",
+      "type": "投资",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "葡萄牙",
+      "type": "投资",
+      "properties": {}
+    },
+    {
+      "source_id": "其家族",
+      "target_id": "澳门赌业牛耳",
+      "type": "手执",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团",
+      "target_id": "航运",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团",
+      "target_id": "地产",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团",
+      "target_id": "酒店",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "信德集团",
+      "target_id": "娱乐",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "700亿元身家",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门娱乐公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门逸园狗场60%股权",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门回力球场90%股份",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港一号",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港地产建设商会",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第九届全国政协常委",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第十届全国政协常委",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第十一届全国政协常委",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港回归",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门回归",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "策略投资公司（Geocapital）",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "策略投资公司（Geocapital）",
+      "type": "控股",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "维德角储金局27.4%股权",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "莫三比克Moza Bank的24.5%权益",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "几内亚比索西非银行41.25%股份",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中华人民共和国党和国家领导人的亲自慰问",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门的首富",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "亚洲地区资产总值前列",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "全球富豪榜第151名（2005年）",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "净资产总值86亿美元（2005年）",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港第19位富豪（2008年）",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "身家因金融海啸暴跌近9成（2009年）",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "永远名誉会长（香港地产建设商会）",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "三妻四妾",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "17个儿女",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "白手兴家",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "爱情及家庭生活津津乐道",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1984年起香港地产建设商会会长",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2011年出任永远名誉会长",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1971年香港实施一夫一妻制",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门旅游娱乐有限公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "信德集团有限公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门博彩控股",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何婉琪",
+      "target_id": "澳门旅游娱乐有限公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何婉琪",
+      "target_id": "澳门旅游娱乐有限公司",
+      "type": "控股",
+      "properties": {}
+    },
+    {
+      "source_id": "何俊仁",
+      "target_id": "澳门旅游娱乐有限公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何俊仁",
+      "target_id": "袭击事件",
+      "type": "遭遇",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "信德集团有限公司董事会主席",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "信德集团有限公司董事会主席",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳广视股东会荣誉主席",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门博彩控股应占权益",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "蓝琼缨",
+      "target_id": "澳门博彩控股",
+      "type": "控股",
+      "properties": {}
+    },
+    {
+      "source_id": "陈婉珍",
+      "target_id": "澳门博彩控股",
+      "type": "控股",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门博彩控股股份",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门旅游娱乐有限公司股息",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "信德集团有限公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳娱32%的股权",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "二太蓝琼缨",
+      "type": "控告",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "三太陈婉珍",
+      "type": "控告",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "二房5名子女",
+      "type": "控告",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "涉及的公司",
+      "type": "控告",
+      "properties": {}
+    },
+    {
+      "source_id": "Lanceford公司",
+      "target_id": "澳娱股权",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "蓝琼缨",
+      "target_id": "Lanceford公司董事",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何超凤",
+      "target_id": "Lanceford公司董事",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "Lanceford公司董事",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "禤永明",
+      "target_id": "Lanceford公司董事",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "政治立场",
+      "type": "发表",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "建制派",
+      "type": "支持",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "对香港主权移交后特首的言论",
+      "type": "发表言论",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "曾荫权会顺利继任",
+      "type": "预测",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "支持政府方案",
+      "type": "刊登广告",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "游行人数将不多于五万人",
+      "type": "打赌",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "将香港租给联合国100年的设想",
+      "type": "提出",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门特别行政区政府",
+      "target_id": "香港部份泛民主派议员、学者及记者入境",
+      "type": "拒绝",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "搅屎棍",
+      "type": "形容",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门第3届行政长官选举中的空白票",
+      "type": "批评",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "投空白票的选委错得好紧要",
+      "type": "认为",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "董建华智囊及梁振英",
+      "type": "批评",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "梁振英是红须军师",
+      "type": "斥责",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "八万五政策",
+      "type": "批评",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "若梁振英做特首，我第一个放弃香港",
+      "type": "表示",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "若梁振英做特首，我就返澳门",
+      "type": "表示",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "曾与地产商倾过，若他做特首，我们便走啦",
+      "type": "表示",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "房屋政策令穷人与有钱人住在一起",
+      "type": "批评",
+      "properties": {}
+    },
+    {
+      "source_id": "梁振英",
+      "target_id": "八万五政策献计者另有其人",
+      "type": "解释",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "我似乎冤枉好人",
+      "type": "表示",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "名下马匹",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "爆胜",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门赛马会",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何超雄",
+      "target_id": "香港赛马会会员资格",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "香港赛马会会员资格",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超凤",
+      "target_id": "香港赛马会会员资格",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "香港赛马会会员资格",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何猷亨",
+      "target_id": "香港赛马会会员资格",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2006年香港打吡大赛",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2007年爱彼表女皇杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2007年香港冠军暨遮打杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2008年香港金杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2008年沙田锦标",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2008年国泰航空香港杯预赛",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年香港金杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年香港冠军暨遮打杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2010年爱彼表女皇杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009至2011年间港澳杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009至2011年间澳港杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009至2011年间澳门短途精英杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009至2011年间新葡京杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009至2011年间亚洲电视杯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年7月29日头部跌伤",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年7月30日颅内受创",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年7月30日昏迷",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年7月30日住院抢救",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年9月28日转院至养和医院",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年12月20日出席澳门回归十周年活动",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2010年3月6日出院返家",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2013年11月传出死讯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2014年10月出席三太陈婉珍铜紫荆星章授勋仪式",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年7月29日",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年7月30日",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年9月28日",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2009年12月20日",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2010年3月6日",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2013年11月",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2014年10月",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港港安医院深切治疗部",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "养和医院秀群套房",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "东亚运体育馆",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中文大学脑外科专家",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "胡锦涛",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "梁安琪",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "周邦华",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "许晋亨",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何志坚",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "李天泽医生",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超雄",
+      "target_id": "山河团体",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "东华之友团体",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "型蓝团体",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超凤",
+      "target_id": "型蓝团体",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "东华之友团体",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超凤",
+      "target_id": "东华之友团体",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超雄",
+      "target_id": "山河团体经理人",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "东华之友团体经理人",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何超蕸",
+      "target_id": "型蓝团体经理人",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "养和医院",
+      "type": "居住于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "养和医院深切治疗部",
+      "type": "逝世于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "98岁",
+      "type": "享年",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "摩星岭1号昭远坟场",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "东华义庄",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "二房长女何超琼",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "四房子女",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "三位姨太太",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "养和医院",
+      "type": "被慰问于",
+      "properties": {}
+    },
+    {
+      "source_id": "广东省政协",
+      "target_id": "何鸿燊",
+      "type": "慰问",
+      "properties": {}
+    },
+    {
+      "source_id": "中共广东省委统战部",
+      "target_id": "何鸿燊",
+      "type": "慰问",
+      "properties": {}
+    },
+    {
+      "source_id": "林郑月娥",
+      "target_id": "何鸿燊",
+      "type": "哀悼",
+      "properties": {}
+    },
+    {
+      "source_id": "贺一诚",
+      "target_id": "何鸿燊",
+      "type": "哀悼",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "何鸿燊家族",
+      "type": "代表",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "丧礼",
+      "type": "主持",
+      "properties": {}
+    },
+    {
+      "source_id": "丧礼",
+      "target_id": "香港殡仪馆",
+      "type": "举行于",
+      "properties": {}
+    },
+    {
+      "source_id": "丧礼",
+      "target_id": "7月8日",
+      "type": "举行于",
+      "properties": {}
+    },
+    {
+      "source_id": "丧礼",
+      "target_id": "7月9日",
+      "type": "举行于",
+      "properties": {}
+    },
+    {
+      "source_id": "丧礼",
+      "target_id": "7月10日",
+      "type": "举行于",
+      "properties": {}
+    },
+    {
+      "source_id": "棺木",
+      "target_id": "东华义庄",
+      "type": "暂厝于",
+      "properties": {}
+    },
+    {
+      "source_id": "棺木",
+      "target_id": "摩星岭1号昭远坟场",
+      "type": "安葬于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2020年5月26日13时05分",
+      "type": "逝世于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "2020年初",
+      "type": "病重于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "深切治疗部",
+      "type": "送入",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "养和医院",
+      "type": "休养于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "器官衰竭",
+      "type": "因",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "广东省政协",
+      "type": "被",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中共广东省委统战部",
+      "type": "被",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "林郑月娥",
+      "type": "被",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "贺一诚",
+      "type": "被",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "四房子女",
+      "type": "代表",
+      "properties": {}
+    },
+    {
+      "source_id": "何超琼",
+      "target_id": "三位姨太太",
+      "type": "代表",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊家族",
+      "target_id": "丧礼",
+      "type": "联合办理",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊家族",
+      "target_id": "摩星岭1号昭远坟场",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊家族",
+      "target_id": "东华义庄",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊家族",
+      "target_id": "何超琼",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊家族",
+      "target_id": "四房子女",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊家族",
+      "target_id": "三位姨太太",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "风水师蔡伯励后人",
+      "target_id": "棺木暂厝",
+      "type": "提供意见于",
+      "properties": {}
+    },
+    {
+      "source_id": "2020年",
+      "target_id": "棺木暂厝",
+      "type": "无吉日",
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,1332 @@
+{
+  "nodes": [
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "彭敏",
+      "type": "人物",
+      "properties": {
+        "name": "彭敏",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "周凤章",
+      "type": "人物",
+      "properties": {
+        "name": "周凤章",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "本家",
+      "type": "人物",
+      "properties": {
+        "name": "本家",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "广西",
+      "type": "地点",
+      "properties": {
+        "name": "广西",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "桂林",
+      "type": "地点",
+      "properties": {
+        "name": "桂林",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "香山大学",
+      "type": "地点",
+      "properties": {
+        "name": "香山大学",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "道光二十八年",
+      "type": "时间",
+      "properties": {
+        "name": "道光二十八年",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "不到三年的时间",
+      "type": "时间",
+      "properties": {
+        "name": "不到三年的时间",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "白米粥",
+      "type": "物品",
+      "properties": {
+        "name": "白米粥",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "咸菜",
+      "type": "物品",
+      "properties": {
+        "name": "咸菜",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "咸蛋",
+      "type": "物品",
+      "properties": {
+        "name": "咸蛋",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "八仙供桌",
+      "type": "物品",
+      "properties": {
+        "name": "八仙供桌",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "公猪",
+      "type": "物品",
+      "properties": {
+        "name": "公猪",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "鸡鸭",
+      "type": "物品",
+      "properties": {
+        "name": "鸡鸭",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "冥盆",
+      "type": "物品",
+      "properties": {
+        "name": "冥盆",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "冥钱",
+      "type": "物品",
+      "properties": {
+        "name": "冥钱",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "糠",
+      "type": "物品",
+      "properties": {
+        "name": "糠",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "家业",
+      "type": "物品",
+      "properties": {
+        "name": "家业",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "葬礼",
+      "type": "事件",
+      "properties": {
+        "name": "葬礼",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "县试",
+      "type": "事件",
+      "properties": {
+        "name": "县试",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "太平天国起义",
+      "type": "事件",
+      "properties": {
+        "name": "太平天国起义",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "彭家耕读传家",
+      "type": "事件",
+      "properties": {
+        "name": "彭家耕读传家",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "反清",
+      "type": "事件",
+      "properties": {
+        "name": "反清",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "彭信",
+      "type": "人物",
+      "properties": {
+        "name": "彭信",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "冯云山",
+      "type": "人物",
+      "properties": {
+        "name": "冯云山",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "洪秀全",
+      "type": "人物",
+      "properties": {
+        "name": "洪秀全",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "石达文",
+      "type": "人物",
+      "properties": {
+        "name": "石达文",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "石达开",
+      "type": "人物",
+      "properties": {
+        "name": "石达开",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "刘炳文",
+      "type": "人物",
+      "properties": {
+        "name": "刘炳文",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "贵县",
+      "type": "地点",
+      "properties": {
+        "name": "贵县",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "浔州府",
+      "type": "地点",
+      "properties": {
+        "name": "浔州府",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "那帮村",
+      "type": "地点",
+      "properties": {
+        "name": "那帮村",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "奇石墟",
+      "type": "地点",
+      "properties": {
+        "name": "奇石墟",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "三里五村",
+      "type": "地点",
+      "properties": {
+        "name": "三里五村",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "三年后",
+      "type": "时间",
+      "properties": {
+        "name": "三年后",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "去年四月份",
+      "type": "时间",
+      "properties": {
+        "name": "去年四月份",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "道光八年",
+      "type": "时间",
+      "properties": {
+        "name": "道光八年",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "通过县试",
+      "type": "事件",
+      "properties": {
+        "name": "通过县试",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "考取童生",
+      "type": "事件",
+      "properties": {
+        "name": "考取童生",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "入拜上帝教",
+      "type": "事件",
+      "properties": {
+        "name": "入拜上帝教",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "传教布道",
+      "type": "事件",
+      "properties": {
+        "name": "传教布道",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "就读于贵县本地名儒刘炳文门下",
+      "type": "事件",
+      "properties": {
+        "name": "就读于贵县本地名儒刘炳文门下",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "登门道喜祝贺",
+      "type": "事件",
+      "properties": {
+        "name": "登门道喜祝贺",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "劝说石家兄弟不要信歪教",
+      "type": "事件",
+      "properties": {
+        "name": "劝说石家兄弟不要信歪教",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "太平军与清军交战",
+      "type": "事件",
+      "properties": {
+        "name": "太平军与清军交战",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "祖上六代为他积攒下来的这份家业",
+      "type": "物品",
+      "properties": {
+        "name": "祖上六代为他积攒下来的这份家业",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "父亲的书信",
+      "type": "物品",
+      "properties": {
+        "name": "父亲的书信",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "原主的记忆",
+      "type": "物品",
+      "properties": {
+        "name": "原主的记忆",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "《原道救世歌》",
+      "type": "物品",
+      "properties": {
+        "name": "《原道救世歌》",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "《原道醒世训》",
+      "type": "物品",
+      "properties": {
+        "name": "《原道醒世训》",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "《原道觉世训》",
+      "type": "物品",
+      "properties": {
+        "name": "《原道觉世训》",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "和冯云山往来的书信",
+      "type": "物品",
+      "properties": {
+        "name": "和冯云山往来的书信",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "文昌帝君和魁星帝君的画像",
+      "type": "物品",
+      "properties": {
+        "name": "文昌帝君和魁星帝君的画像",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "原主",
+      "type": "人物",
+      "properties": {
+        "name": "原主",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "石家兄弟",
+      "type": "人物",
+      "properties": {
+        "name": "石家兄弟",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "彭勇",
+      "type": "人物",
+      "properties": {
+        "name": "彭勇",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "彭先仲",
+      "type": "人物",
+      "properties": {
+        "name": "彭先仲",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "原主家中",
+      "type": "地点",
+      "properties": {
+        "name": "原主家中",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "后院的菜地",
+      "type": "地点",
+      "properties": {
+        "name": "后院的菜地",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "猪圈",
+      "type": "地点",
+      "properties": {
+        "name": "猪圈",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "牛棚",
+      "type": "地点",
+      "properties": {
+        "name": "牛棚",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "彼时",
+      "type": "时间",
+      "properties": {
+        "name": "彼时",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "四年前",
+      "type": "时间",
+      "properties": {
+        "name": "四年前",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "年前",
+      "type": "时间",
+      "properties": {
+        "name": "年前",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "原主劝说石家兄弟不要信歪教",
+      "type": "事件",
+      "properties": {
+        "name": "原主劝说石家兄弟不要信歪教",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "石家兄弟受洗入拜上帝教",
+      "type": "事件",
+      "properties": {
+        "name": "石家兄弟受洗入拜上帝教",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "原主羞辱奚落石家兄弟",
+      "type": "事件",
+      "properties": {
+        "name": "原主羞辱奚落石家兄弟",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "石家兄弟与原主断绝关系",
+      "type": "事件",
+      "properties": {
+        "name": "石家兄弟与原主断绝关系",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "彭勇争夺水源失手打死周家长房",
+      "type": "事件",
+      "properties": {
+        "name": "彭勇争夺水源失手打死周家长房",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "彭家与周家结仇怨",
+      "type": "事件",
+      "properties": {
+        "name": "彭家与周家结仇怨",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "六头小猪崽子被抱走",
+      "type": "事件",
+      "properties": {
+        "name": "六头小猪崽子被抱走",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "彭毅与黑影争夺牛",
+      "type": "事件",
+      "properties": {
+        "name": "彭毅与黑影争夺牛",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "文昌帝君画像",
+      "type": "物品",
+      "properties": {
+        "name": "文昌帝君画像",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "魁星帝君画像",
+      "type": "物品",
+      "properties": {
+        "name": "魁星帝君画像",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "老母猪",
+      "type": "物品",
+      "properties": {
+        "name": "老母猪",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "小猪崽子",
+      "type": "物品",
+      "properties": {
+        "name": "小猪崽子",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "牛",
+      "type": "物品",
+      "properties": {
+        "name": "牛",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "族长彭先仲家的长房",
+      "type": "人物",
+      "properties": {
+        "name": "族长彭先仲家的长房",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "阿爸",
+      "type": "人物",
+      "properties": {
+        "name": "阿爸",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "院门处",
+      "type": "地点",
+      "properties": {
+        "name": "院门处",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "扁担",
+      "type": "物品",
+      "properties": {
+        "name": "扁担",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "分老母猪",
+      "type": "事件",
+      "properties": {
+        "name": "分老母猪",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "彭刚安抚彭敏",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚安抚彭敏",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "彭毅呵斥黑影",
+      "type": "事件",
+      "properties": {
+        "name": "彭毅呵斥黑影",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "彭毅与黑影抢牛",
+      "type": "事件",
+      "properties": {
+        "name": "彭毅与黑影抢牛",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "彭刚用扁担砸黑影",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚用扁担砸黑影",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "黑影被砸倒",
+      "type": "事件",
+      "properties": {
+        "name": "黑影被砸倒",
+        "sequence_number": 90
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭敏",
+      "target_id": "白米粥",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "八仙供桌",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "咸菜",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "咸蛋",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "公猪",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "鸡鸭",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "冥盆",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "冥钱",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "周凤章",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "县试",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家耕读传家",
+      "target_id": "彭刚",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "太平天国起义",
+      "target_id": "广西",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "太平天国起义",
+      "target_id": "不到三年的时间",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "广西",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "太平天国起义",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "家业",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "香山大学",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "彭刚",
+      "type": "敌对",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭刚",
+      "type": "合作",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "彭刚",
+      "type": "合作",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "糠",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "葬礼",
+      "target_id": "彭刚",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "反清",
+      "target_id": "彭刚",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "桂林",
+      "target_id": "广西",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "道光二十八年",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "祖上六代为他积攒下来的这份家业",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "父亲的书信",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "原主的记忆",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "《原道救世歌》",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "《原道醒世训》",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "《原道觉世训》",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "和冯云山往来的书信",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "文昌帝君和魁星帝君的画像",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "通过县试",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "考取童生",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "就读于贵县本地名儒刘炳文门下",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石达文",
+      "target_id": "就读于贵县本地名儒刘炳文门下",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "就读于贵县本地名儒刘炳文门下",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "刘炳文",
+      "target_id": "就读于贵县本地名儒刘炳文门下",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石达文",
+      "target_id": "登门道喜祝贺",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "登门道喜祝贺",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "劝说石家兄弟不要信歪教",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "传教布道",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "洪秀全",
+      "target_id": "《原道救世歌》",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "洪秀全",
+      "target_id": "《原道醒世训》",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "洪秀全",
+      "target_id": "《原道觉世训》",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "石达文",
+      "target_id": "那帮村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "那帮村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "石达文",
+      "target_id": "奇石墟",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "奇石墟",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "太平军与清军交战",
+      "target_id": "贵县",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "太平军与清军交战",
+      "target_id": "三年后",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "刘炳文",
+      "target_id": "道光八年",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "和冯云山往来的书信",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "三里五村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "浔州府",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "入拜上帝教",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "和冯云山往来的书信",
+      "target_id": "去年四月份",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "原主劝说石家兄弟不要信歪教",
+      "target_id": "彼时",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "原主",
+      "target_id": "原主劝说石家兄弟不要信歪教",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石家兄弟",
+      "target_id": "原主劝说石家兄弟不要信歪教",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石家兄弟",
+      "target_id": "石家兄弟受洗入拜上帝教",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "原主",
+      "target_id": "原主羞辱奚落石家兄弟",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石家兄弟",
+      "target_id": "原主羞辱奚落石家兄弟",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石家兄弟",
+      "target_id": "石家兄弟与原主断绝关系",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "原主",
+      "target_id": "石家兄弟与原主断绝关系",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "原主羞辱奚落石家兄弟",
+      "target_id": "石家兄弟与原主断绝关系",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "原主家中",
+      "target_id": "文昌帝君画像",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "原主家中",
+      "target_id": "魁星帝君画像",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭勇争夺水源失手打死周家长房",
+      "target_id": "四年前",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭勇",
+      "target_id": "彭勇争夺水源失手打死周家长房",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭勇争夺水源失手打死周家长房",
+      "target_id": "彭家与周家结仇怨",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "后院的菜地",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "猪圈",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "六头小猪崽子被抱走",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "小猪崽子",
+      "target_id": "六头小猪崽子被抱走",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "猪圈",
+      "target_id": "老母猪",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "六头小猪崽子被抱走",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅与黑影争夺牛",
+      "target_id": "牛棚",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅与黑影争夺牛",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "牛",
+      "target_id": "彭毅与黑影争夺牛",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "分老母猪",
+      "target_id": "老母猪",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "分老母猪",
+      "target_id": "彭刚安抚彭敏",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚安抚彭敏",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "彭刚安抚彭敏",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅呵斥黑影",
+      "target_id": "牛棚",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅呵斥黑影",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "族长彭先仲家的长房",
+      "target_id": "彭毅呵斥黑影",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅与黑影抢牛",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "族长彭先仲家的长房",
+      "target_id": "彭毅与黑影抢牛",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅与黑影抢牛",
+      "target_id": "牛",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "阿爸",
+      "target_id": "牛",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚用扁担砸黑影",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "族长彭先仲家的长房",
+      "target_id": "彭刚用扁担砸黑影",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "扁担",
+      "type": "使用",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚用扁担砸黑影",
+      "target_id": "扁担",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚用扁担砸黑影",
+      "target_id": "黑影被砸倒",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "族长彭先仲家的长房",
+      "target_id": "黑影被砸倒",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "族长彭先仲家的长房",
+      "target_id": "院门处",
+      "type": "位于",
+      "properties": {}
+    }
+  ]
+}

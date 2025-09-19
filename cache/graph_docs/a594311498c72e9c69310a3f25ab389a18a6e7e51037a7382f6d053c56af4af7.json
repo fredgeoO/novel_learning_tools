@@ -1,0 +1,1336 @@
+{
+  "nodes": [
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "彭敏",
+      "type": "人物",
+      "properties": {
+        "name": "彭敏",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "父亲",
+      "type": "人物",
+      "properties": {
+        "name": "父亲",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "三哥",
+      "type": "人物",
+      "properties": {
+        "name": "三哥",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "六堂叔",
+      "type": "人物",
+      "properties": {
+        "name": "六堂叔",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "族长",
+      "type": "人物",
+      "properties": {
+        "name": "族长",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "伯爷",
+      "type": "人物",
+      "properties": {
+        "name": "伯爷",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "母亲",
+      "type": "人物",
+      "properties": {
+        "name": "母亲",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "广西浔州府贵县（今贵港）县城东北五十里处",
+      "type": "地点",
+      "properties": {
+        "name": "广西浔州府贵县（今贵港）县城东北五十里处",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "水稻田",
+      "type": "地点",
+      "properties": {
+        "name": "水稻田",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "清道光二十八年二月（1848年）",
+      "type": "时间",
+      "properties": {
+        "name": "清道光二十八年二月（1848年）",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "杉木薄棺",
+      "type": "物品",
+      "properties": {
+        "name": "杉木薄棺",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "田契",
+      "type": "物品",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "冥钱",
+      "type": "物品",
+      "properties": {
+        "name": "冥钱",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "棺材板",
+      "type": "物品",
+      "properties": {
+        "name": "棺材板",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "押",
+      "type": "物品",
+      "properties": {
+        "name": "押",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "白幡",
+      "type": "物品",
+      "properties": {
+        "name": "白幡",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "素灯",
+      "type": "物品",
+      "properties": {
+        "name": "素灯",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "木板",
+      "type": "物品",
+      "properties": {
+        "name": "木板",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "烛光",
+      "type": "物品",
+      "properties": {
+        "name": "烛光",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "彭刚父亲弟弟死亡",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚父亲弟弟死亡",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "彭刚和父亲葬礼",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚和父亲葬礼",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "彭刚夺舍穿越",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚夺舍穿越",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "彭刚棺材苏醒",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚棺材苏醒",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "彭毅发现彭刚苏醒",
+      "type": "事件",
+      "properties": {
+        "name": "彭毅发现彭刚苏醒",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "彭刚和父亲弟弟在水稻田里丰收",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚和父亲弟弟在水稻田里丰收",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "哥哥离家逃命",
+      "type": "事件",
+      "properties": {
+        "name": "哥哥离家逃命",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "母亲难产而死",
+      "type": "事件",
+      "properties": {
+        "name": "母亲难产而死",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "本家争夺彭刚家产",
+      "type": "事件",
+      "properties": {
+        "name": "本家争夺彭刚家产",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "伯爷委托照料彭刚兄妹",
+      "type": "事件",
+      "properties": {
+        "name": "伯爷委托照料彭刚兄妹",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "冥盆",
+      "type": "物品",
+      "properties": {
+        "name": "冥盆",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "王保长",
+      "type": "人物",
+      "properties": {
+        "name": "王保长",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "几个舅舅",
+      "type": "人物",
+      "properties": {
+        "name": "几个舅舅",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "外阿婆",
+      "type": "人物",
+      "properties": {
+        "name": "外阿婆",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "本家",
+      "type": "人物",
+      "properties": {
+        "name": "本家",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "厨房",
+      "type": "地点",
+      "properties": {
+        "name": "厨房",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "鱼塘",
+      "type": "地点",
+      "properties": {
+        "name": "鱼塘",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "水田",
+      "type": "地点",
+      "properties": {
+        "name": "水田",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "旱坡地",
+      "type": "地点",
+      "properties": {
+        "name": "旱坡地",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "土坯房",
+      "type": "地点",
+      "properties": {
+        "name": "土坯房",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "菜地",
+      "type": "地点",
+      "properties": {
+        "name": "菜地",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "村口",
+      "type": "地点",
+      "properties": {
+        "name": "村口",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "鹏隘山",
+      "type": "地点",
+      "properties": {
+        "name": "鹏隘山",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "棺材",
+      "type": "物品",
+      "properties": {
+        "name": "棺材",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "手帕",
+      "type": "物品",
+      "properties": {
+        "name": "手帕",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "竹凳",
+      "type": "物品",
+      "properties": {
+        "name": "竹凳",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "茶水",
+      "type": "物品",
+      "properties": {
+        "name": "茶水",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "银锁",
+      "type": "物品",
+      "properties": {
+        "name": "银锁",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "蕉叶形银锁",
+      "type": "物品",
+      "properties": {
+        "name": "蕉叶形银锁",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "五斗七星柜",
+      "type": "物品",
+      "properties": {
+        "name": "五斗七星柜",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "官帽椅子",
+      "type": "物品",
+      "properties": {
+        "name": "官帽椅子",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "水牛",
+      "type": "物品",
+      "properties": {
+        "name": "水牛",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "猪",
+      "type": "物品",
+      "properties": {
+        "name": "猪",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "猪仔",
+      "type": "物品",
+      "properties": {
+        "name": "猪仔",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "病危",
+      "type": "事件",
+      "properties": {
+        "name": "病危",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "适应环境",
+      "type": "事件",
+      "properties": {
+        "name": "适应环境",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "探鼻息",
+      "type": "事件",
+      "properties": {
+        "name": "探鼻息",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "找吃的",
+      "type": "事件",
+      "properties": {
+        "name": "找吃的",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "藏田契",
+      "type": "事件",
+      "properties": {
+        "name": "藏田契",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "哄逼画押",
+      "type": "事件",
+      "properties": {
+        "name": "哄逼画押",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "充作族田",
+      "type": "事件",
+      "properties": {
+        "name": "充作族田",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "做中人",
+      "type": "事件",
+      "properties": {
+        "name": "做中人",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "搬走家具",
+      "type": "事件",
+      "properties": {
+        "name": "搬走家具",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "托人捎口信",
+      "type": "事件",
+      "properties": {
+        "name": "托人捎口信",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "宗族争家产",
+      "type": "事件",
+      "properties": {
+        "name": "宗族争家产",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "一天半",
+      "type": "时间",
+      "properties": {
+        "name": "一天半",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "明天",
+      "type": "时间",
+      "properties": {
+        "name": "明天",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "十七岁",
+      "type": "时间",
+      "properties": {
+        "name": "十七岁",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "庆丰彭族本家",
+      "type": "人物",
+      "properties": {
+        "name": "庆丰彭族本家",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "人物",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "阿舅",
+      "type": "人物",
+      "properties": {
+        "name": "阿舅",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "本家的人",
+      "type": "人物",
+      "properties": {
+        "name": "本家的人",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "旁支的人",
+      "type": "人物",
+      "properties": {
+        "name": "旁支的人",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "平在山",
+      "type": "地点",
+      "properties": {
+        "name": "平在山",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "咱们村",
+      "type": "地点",
+      "properties": {
+        "name": "咱们村",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "田产",
+      "type": "物品",
+      "properties": {
+        "name": "田产",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "田宅",
+      "type": "物品",
+      "properties": {
+        "name": "田宅",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "财帛",
+      "type": "物品",
+      "properties": {
+        "name": "财帛",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "麻衣衣袖",
+      "type": "物品",
+      "properties": {
+        "name": "麻衣衣袖",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "伤",
+      "type": "物品",
+      "properties": {
+        "name": "伤",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "彭刚死而复生",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚死而复生",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "彭毅托韦长工捎口信",
+      "type": "事件",
+      "properties": {
+        "name": "彭毅托韦长工捎口信",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "本家吞旁支",
+      "type": "事件",
+      "properties": {
+        "name": "本家吞旁支",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "彭毅手上的伤",
+      "type": "事件",
+      "properties": {
+        "name": "彭毅手上的伤",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "六代人",
+      "type": "时间",
+      "properties": {
+        "name": "六代人",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "一百年难遇的良机",
+      "type": "时间",
+      "properties": {
+        "name": "一百年难遇的良机",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "这个时代",
+      "type": "时间",
+      "properties": {
+        "name": "这个时代",
+        "sequence_number": 89
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭敏",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "父亲",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "三哥",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "六堂叔",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "彭刚",
+      "type": "争夺",
+      "properties": {}
+    },
+    {
+      "source_id": "伯爷",
+      "target_id": "彭刚",
+      "type": "委托",
+      "properties": {}
+    },
+    {
+      "source_id": "父亲",
+      "target_id": "母亲",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "父亲",
+      "target_id": "三哥",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "父亲",
+      "target_id": "六堂叔",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村",
+      "target_id": "彭刚",
+      "type": "居住于",
+      "properties": {}
+    },
+    {
+      "source_id": "水稻田",
+      "target_id": "彭刚和父亲弟弟在水稻田里丰收",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村",
+      "target_id": "彭刚父亲弟弟死亡",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村",
+      "target_id": "彭刚和父亲葬礼",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "清道光二十八年二月（1848年）",
+      "target_id": "庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "田契",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "杉木薄棺",
+      "type": "藏匿于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚棺材苏醒",
+      "target_id": "棺材板",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚父亲弟弟死亡",
+      "target_id": "彭刚和父亲葬礼",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚和父亲葬礼",
+      "target_id": "本家争夺彭刚家产",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚夺舍穿越",
+      "target_id": "彭刚棺材苏醒",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚棺材苏醒",
+      "target_id": "彭毅发现彭刚苏醒",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "伯爷",
+      "target_id": "伯爷委托照料彭刚兄妹",
+      "type": "委托",
+      "properties": {}
+    },
+    {
+      "source_id": "六堂叔",
+      "target_id": "彭刚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "伯爷委托照料彭刚兄妹",
+      "target_id": "押",
+      "type": "委托",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚和父亲葬礼",
+      "target_id": "白幡",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚和父亲葬礼",
+      "target_id": "素灯",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "杉木薄棺",
+      "target_id": "木板",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚棺材苏醒",
+      "target_id": "烛光",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚棺材苏醒",
+      "target_id": "冥钱",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "冥盆",
+      "target_id": "冥钱",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "彭刚",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭刚",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "外阿婆",
+      "target_id": "彭刚",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "几个舅舅",
+      "target_id": "彭毅",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "几个舅舅",
+      "target_id": "彭刚",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "蕉叶形银锁",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "银锁",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "手帕",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "竹凳",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "茶水",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "田契",
+      "type": "藏匿于",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "五斗七星柜",
+      "type": "搬走",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "官帽椅子",
+      "type": "搬走",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "十七亩水田",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "十六亩旱坡地",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "鱼塘",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "水牛",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "猪",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "猪仔",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "五间土坯房",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "半亩菜地",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "九亩上等水田",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "探鼻息",
+      "target_id": "病危",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "找吃的",
+      "target_id": "适应环境",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "棺材",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "适应环境",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "病危",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "宗族争家产",
+      "target_id": "庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "藏田契",
+      "target_id": "哄逼画押",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "哄逼画押",
+      "target_id": "充作族田",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "做中人",
+      "target_id": "本家作罢",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "本家威胁",
+      "target_id": "托人捎口信",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "探鼻息",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "找吃的",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "藏田契",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "哄逼画押",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "充作族田",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "搬走家具",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "托人捎口信",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "要求交田契",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "王保长",
+      "target_id": "做中人",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "托人捎口信",
+      "type": "委托",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "田契",
+      "type": "争夺",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "九亩上等水田",
+      "type": "争夺",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰村",
+      "type": "居住于",
+      "properties": {}
+    },
+    {
+      "source_id": "几个舅舅",
+      "target_id": "鹏隘山",
+      "type": "居住于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "十七岁",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "厨房",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "一天半",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "明天",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "韦长工",
+      "type": "委托",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "阿舅",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "本家的人",
+      "target_id": "伤",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "伤",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "旁支的人",
+      "type": "争夺",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "田产",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "田宅",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "旁支的人",
+      "target_id": "田产",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "旁支的人",
+      "target_id": "田宅",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "平在山",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "阿舅",
+      "target_id": "平在山",
+      "type": "居住于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰彭族本家",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚死而复生",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅托韦长工捎口信",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "本家吞旁支",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅手上的伤",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "旁支的人",
+      "target_id": "财帛",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "麻衣衣袖",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "旁支的人",
+      "target_id": "六代人",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "本家吞旁支",
+      "target_id": "一百年难遇的良机",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "这个时代",
+      "type": "发生在",
+      "properties": {}
+    }
+  ]
+}

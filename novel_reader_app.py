@@ -41,7 +41,7 @@ BROWSE_HISTORY_FILE = "browse_history.json"
 MAX_HISTORY_ITEMS = 20  # 最多保存20条浏览记录
 
 # --- 从 chapter_utils 导入通用功能 ---
-from chapter_utils import (
+from utils_chapter import (
     get_chapter_list_with_cache as get_chapter_list,
     get_report_list_with_cache as get_report_list,
     load_chapter_and_initial_report,

@@ -1,0 +1,2446 @@
+{
+  "nodes": [
+    {
+      "id": "哥哥离家逃命时的不舍",
+      "type": "记忆",
+      "properties": {
+        "name": "哥哥离家逃命时的不舍",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "父亲弟弟在水稻田里丰收时的喜悦",
+      "type": "记忆",
+      "properties": {
+        "name": "父亲弟弟在水稻田里丰收时的喜悦",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "本家",
+      "type": "群体",
+      "properties": {
+        "name": "本家",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "纸灰味",
+      "type": "气味",
+      "properties": {
+        "name": "纸灰味",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "族里",
+      "type": "群体",
+      "properties": {
+        "name": "族里",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "后堂",
+      "type": "地点",
+      "properties": {
+        "name": "后堂",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "冥盆内燃烧着的冥钱",
+      "type": "感官体验",
+      "properties": {
+        "name": "冥盆内燃烧着的冥钱",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "清朝少年",
+      "type": "身份",
+      "properties": {
+        "name": "清朝少年",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "彭姓人家的男丁",
+      "type": "身份",
+      "properties": {
+        "name": "彭姓人家的男丁",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "光线变得越来越暗淡",
+      "type": "感官体验",
+      "properties": {
+        "name": "光线变得越来越暗淡",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "弟弟彭毅的声音",
+      "type": "声音",
+      "properties": {
+        "name": "弟弟彭毅的声音",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "广西浔州府贵县（今贵港）",
+      "type": "地点",
+      "properties": {
+        "name": "广西浔州府贵县（今贵港）",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "夺舍穿越者",
+      "type": "身份",
+      "properties": {
+        "name": "夺舍穿越者",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "弟弟妹妹无助绝望的啜泣声",
+      "type": "声音",
+      "properties": {
+        "name": "弟弟妹妹无助绝望的啜泣声",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "不能画押",
+      "type": "行为",
+      "properties": {
+        "name": "不能画押",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "杉木薄棺",
+      "type": "物品",
+      "properties": {
+        "name": "杉木薄棺",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "继续读书",
+      "type": "承诺",
+      "properties": {
+        "name": "继续读书",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "绝户",
+      "type": "家族状态",
+      "properties": {
+        "name": "绝户",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "十四岁",
+      "type": "年龄",
+      "properties": {
+        "name": "十四岁",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "操持自己和父亲的葬礼",
+      "type": "责任",
+      "properties": {
+        "name": "操持自己和父亲的葬礼",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "本家想吃他这个旁支的绝户",
+      "type": "意图",
+      "properties": {
+        "name": "本家想吃他这个旁支的绝户",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "田契",
+      "type": "物品",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "彭刚的弟弟",
+      "type": "亲属关系",
+      "properties": {
+        "name": "彭刚的弟弟",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "哥哥",
+      "type": "亲属",
+      "properties": {
+        "name": "哥哥",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "棺材",
+      "type": "物品",
+      "properties": {
+        "name": "棺材",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "身体力气",
+      "type": "状态",
+      "properties": {
+        "name": "身体力气",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "一群如狼似虎的族人侵占家产",
+      "type": "处境",
+      "properties": {
+        "name": "一群如狼似虎的族人侵占家产",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "自己正躺在一口棺材里",
+      "type": "状态",
+      "properties": {
+        "name": "自己正躺在一口棺材里",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "老登",
+      "type": "称呼",
+      "properties": {
+        "name": "老登",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "桂柳客话",
+      "type": "语言",
+      "properties": {
+        "name": "桂柳客话",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "三哥",
+      "type": "亲属",
+      "properties": {
+        "name": "三哥",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "院子",
+      "type": "地点",
+      "properties": {
+        "name": "院子",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "石灰味",
+      "type": "气味",
+      "properties": {
+        "name": "石灰味",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "母亲",
+      "type": "亲属",
+      "properties": {
+        "name": "母亲",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "起身出棺的力气",
+      "type": "能力",
+      "properties": {
+        "name": "起身出棺的力气",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "父亲弟弟",
+      "type": "亲属",
+      "properties": {
+        "name": "父亲弟弟",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "彭毅的哥哥",
+      "type": "亲属关系",
+      "properties": {
+        "name": "彭毅的哥哥",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "春耕还没过",
+      "type": "时间状态",
+      "properties": {
+        "name": "春耕还没过",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "诈尸啦！三哥？是你吗？你是人是鬼？",
+      "type": "对白",
+      "properties": {
+        "name": "诈尸啦！三哥？是你吗？你是人是鬼？",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "威逼利诱",
+      "type": "行为",
+      "properties": {
+        "name": "威逼利诱",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "灾疫匪祸横行",
+      "type": "社会环境",
+      "properties": {
+        "name": "灾疫匪祸横行",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "旁支",
+      "type": "家族分支",
+      "properties": {
+        "name": "旁支",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "挣扎起身掀开棺材板",
+      "type": "动作",
+      "properties": {
+        "name": "挣扎起身掀开棺材板",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "族里供吃穿",
+      "type": "承诺",
+      "properties": {
+        "name": "族里供吃穿",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "六堂叔",
+      "type": "亲属",
+      "properties": {
+        "name": "六堂叔",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "母亲难产而死时的悲痛",
+      "type": "记忆",
+      "properties": {
+        "name": "母亲难产而死时的悲痛",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "清道光二十八年二月",
+      "type": "时间",
+      "properties": {
+        "name": "清道光二十八年二月",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "族长",
+      "type": "人物",
+      "properties": {
+        "name": "族长",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "穿堂风中摇曳的烛光",
+      "type": "感官体验",
+      "properties": {
+        "name": "穿堂风中摇曳的烛光",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "半亩菜地",
+      "type": "财产",
+      "properties": {
+        "name": "半亩菜地",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "穿堂风",
+      "type": "自然现象",
+      "properties": {
+        "name": "穿堂风",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "族人逼迫画押",
+      "type": "事件",
+      "properties": {
+        "name": "族人逼迫画押",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "就算三哥是鬼，那也是咱们家的鬼，会护着咱们自家人。",
+      "type": "对白",
+      "properties": {
+        "name": "就算三哥是鬼，那也是咱们家的鬼，会护着咱们自家人。",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "探鼻息",
+      "type": "动作",
+      "properties": {
+        "name": "探鼻息",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "被放入薄棺",
+      "type": "事件",
+      "properties": {
+        "name": "被放入薄棺",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "起身往厨房走去",
+      "type": "动作",
+      "properties": {
+        "name": "起身往厨房走去",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "十七亩水田",
+      "type": "财产",
+      "properties": {
+        "name": "十七亩水田",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "蕉叶形银锁",
+      "type": "物品",
+      "properties": {
+        "name": "蕉叶形银锁",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "银锁",
+      "type": "物品",
+      "properties": {
+        "name": "银锁",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "三哥",
+      "type": "亲属关系",
+      "properties": {
+        "name": "三哥",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "身体恢复",
+      "type": "状态",
+      "properties": {
+        "name": "身体恢复",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "无亲叔伯",
+      "type": "家庭状况",
+      "properties": {
+        "name": "无亲叔伯",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "一个鱼塘",
+      "type": "财产",
+      "properties": {
+        "name": "一个鱼塘",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "饿得前胸贴后背",
+      "type": "状态",
+      "properties": {
+        "name": "饿得前胸贴后背",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "族长让你交出家里的田契？",
+      "type": "对白",
+      "properties": {
+        "name": "族长让你交出家里的田契？",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "人丁稀薄的旁支",
+      "type": "家庭状况",
+      "properties": {
+        "name": "人丁稀薄的旁支",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "搀扶彭刚走出棺材",
+      "type": "动作",
+      "properties": {
+        "name": "搀扶彭刚走出棺材",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "两口猪及一窝猪仔",
+      "type": "财产",
+      "properties": {
+        "name": "两口猪及一窝猪仔",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "舅舅生活并不宽裕",
+      "type": "回忆",
+      "properties": {
+        "name": "舅舅生活并不宽裕",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "三哥有气！气还是热的！真不是鬼！",
+      "type": "对白",
+      "properties": {
+        "name": "三哥有气！气还是热的！真不是鬼！",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "十六亩旱坡地",
+      "type": "财产",
+      "properties": {
+        "name": "十六亩旱坡地",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "一头水牛",
+      "type": "财产",
+      "properties": {
+        "name": "一头水牛",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "外阿婆在满月宴时赠送",
+      "type": "来源",
+      "properties": {
+        "name": "外阿婆在满月宴时赠送",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "有吃的么？",
+      "type": "对白",
+      "properties": {
+        "name": "有吃的么？",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "冥盆内燃烧的冥钱",
+      "type": "物体",
+      "properties": {
+        "name": "冥盆内燃烧的冥钱",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "舅舅送的银锁分量足",
+      "type": "回忆",
+      "properties": {
+        "name": "舅舅送的银锁分量足",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "庆丰村数三数四的富户",
+      "type": "身份",
+      "properties": {
+        "name": "庆丰村数三数四的富户",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "舅舅送的抓周礼物",
+      "type": "来源",
+      "properties": {
+        "name": "舅舅送的抓周礼物",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "王保长说公道话",
+      "type": "事件",
+      "properties": {
+        "name": "王保长说公道话",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "五斗七星柜和四把官帽椅子被搬走",
+      "type": "事件",
+      "properties": {
+        "name": "五斗七星柜和四把官帽椅子被搬走",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "田契被藏起来",
+      "type": "事件",
+      "properties": {
+        "name": "田契被藏起来",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "有！有！有！",
+      "type": "对白",
+      "properties": {
+        "name": "有！有！有！",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "彭敏",
+      "type": "人物",
+      "properties": {
+        "name": "彭敏",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "舅舅以烧炭种山、做帮工为业",
+      "type": "职业",
+      "properties": {
+        "name": "舅舅以烧炭种山、做帮工为业",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "被本家惦记上",
+      "type": "原因",
+      "properties": {
+        "name": "被本家惦记上",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "几个舅舅是平在山（鹏隘山）的烧炭工",
+      "type": "回忆",
+      "properties": {
+        "name": "几个舅舅是平在山（鹏隘山）的烧炭工",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "烛光",
+      "type": "物体",
+      "properties": {
+        "name": "烛光",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "五间门窗齐全的土坯房",
+      "type": "财产",
+      "properties": {
+        "name": "五间门窗齐全的土坯房",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "搓着手心里的蕉叶形银锁",
+      "type": "动作",
+      "properties": {
+        "name": "搓着手心里的蕉叶形银锁",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "九亩上等水田被要求充作族田",
+      "type": "事件",
+      "properties": {
+        "name": "九亩上等水田被要求充作族田",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "竹凳",
+      "type": "物品",
+      "properties": {
+        "name": "竹凳",
+        "sequence_number": 93
+      }
+    },
+    {
+      "id": "委屈的泪水不住地簌簌往下淌",
+      "type": "状态",
+      "properties": {
+        "name": "委屈的泪水不住地簌簌往下淌",
+        "sequence_number": 94
+      }
+    },
+    {
+      "id": "男丁数量",
+      "type": "依据",
+      "properties": {
+        "name": "男丁数量",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "高门大户",
+      "type": "家族类型",
+      "properties": {
+        "name": "高门大户",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "讲道理",
+      "type": "特征",
+      "properties": {
+        "name": "讲道理",
+        "sequence_number": 97
+      }
+    },
+    {
+      "id": "掌握优质田产",
+      "type": "特征",
+      "properties": {
+        "name": "掌握优质田产",
+        "sequence_number": 98
+      }
+    },
+    {
+      "id": "书香门第",
+      "type": "家族类型",
+      "properties": {
+        "name": "书香门第",
+        "sequence_number": 99
+      }
+    },
+    {
+      "id": "舅甥关系",
+      "type": "社会关系",
+      "properties": {
+        "name": "舅甥关系",
+        "sequence_number": 100
+      }
+    },
+    {
+      "id": "长工",
+      "type": "职业",
+      "properties": {
+        "name": "长工",
+        "sequence_number": 101
+      }
+    },
+    {
+      "id": "庆丰彭族本家",
+      "type": "家族",
+      "properties": {
+        "name": "庆丰彭族本家",
+        "sequence_number": 102
+      }
+    },
+    {
+      "id": "争夺家产",
+      "type": "行为",
+      "properties": {
+        "name": "争夺家产",
+        "sequence_number": 103
+      }
+    },
+    {
+      "id": "一个女娃",
+      "type": "家庭成员",
+      "properties": {
+        "name": "一个女娃",
+        "sequence_number": 104
+      }
+    },
+    {
+      "id": "兄弟之间",
+      "type": "人际关系",
+      "properties": {
+        "name": "兄弟之间",
+        "sequence_number": 105
+      }
+    },
+    {
+      "id": "至亲或至仇",
+      "type": "关系性质",
+      "properties": {
+        "name": "至亲或至仇",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "托韦长工捎口信",
+      "type": "行为",
+      "properties": {
+        "name": "托韦长工捎口信",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "无亲叔伯未必是坏事",
+      "type": "思考",
+      "properties": {
+        "name": "无亲叔伯未必是坏事",
+        "sequence_number": 108
+      }
+    },
+    {
+      "id": "斯文宗族",
+      "type": "宗族类型",
+      "properties": {
+        "name": "斯文宗族",
+        "sequence_number": 109
+      }
+    },
+    {
+      "id": "生存问题",
+      "type": "关注点",
+      "properties": {
+        "name": "生存问题",
+        "sequence_number": 110
+      }
+    },
+    {
+      "id": "一脉单传",
+      "type": "家庭结构",
+      "properties": {
+        "name": "一脉单传",
+        "sequence_number": 111
+      }
+    },
+    {
+      "id": "烧炭工",
+      "type": "职业",
+      "properties": {
+        "name": "烧炭工",
+        "sequence_number": 112
+      }
+    },
+    {
+      "id": "不为小资产破坏团结",
+      "type": "行为",
+      "properties": {
+        "name": "不为小资产破坏团结",
+        "sequence_number": 113
+      }
+    },
+    {
+      "id": "吃相难看",
+      "type": "行为特征",
+      "properties": {
+        "name": "吃相难看",
+        "sequence_number": 114
+      }
+    },
+    {
+      "id": "生活不宽裕",
+      "type": "特征",
+      "properties": {
+        "name": "生活不宽裕",
+        "sequence_number": 115
+      }
+    },
+    {
+      "id": "外阿婆",
+      "type": "人物",
+      "properties": {
+        "name": "外阿婆",
+        "sequence_number": 116
+      }
+    },
+    {
+      "id": "百年难遇",
+      "type": "机会",
+      "properties": {
+        "name": "百年难遇",
+        "sequence_number": 117
+      }
+    },
+    {
+      "id": "人均两亩地以下",
+      "type": "特征",
+      "properties": {
+        "name": "人均两亩地以下",
+        "sequence_number": 118
+      }
+    },
+    {
+      "id": "更为紧密牢靠",
+      "type": "特征",
+      "properties": {
+        "name": "更为紧密牢靠",
+        "sequence_number": 119
+      }
+    },
+    {
+      "id": "两个半大男孩",
+      "type": "家庭成员",
+      "properties": {
+        "name": "两个半大男孩",
+        "sequence_number": 120
+      }
+    },
+    {
+      "id": "无亲叔伯",
+      "type": "家庭结构",
+      "properties": {
+        "name": "无亲叔伯",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "帮外甥争家产",
+      "type": "功能",
+      "properties": {
+        "name": "帮外甥争家产",
+        "sequence_number": 121
+      }
+    },
+    {
+      "id": "本家",
+      "type": "家族",
+      "properties": {
+        "name": "本家",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "舅舅",
+      "type": "亲属",
+      "properties": {
+        "name": "舅舅",
+        "sequence_number": 122
+      }
+    },
+    {
+      "id": "想吃绝户",
+      "type": "行为",
+      "properties": {
+        "name": "想吃绝户",
+        "sequence_number": 123
+      }
+    },
+    {
+      "id": "烧炭种山",
+      "type": "活动",
+      "properties": {
+        "name": "烧炭种山",
+        "sequence_number": 124
+      }
+    },
+    {
+      "id": "十七岁",
+      "type": "年龄",
+      "properties": {
+        "name": "十七岁",
+        "sequence_number": 125
+      }
+    },
+    {
+      "id": "拆门撬窗",
+      "type": "行为",
+      "properties": {
+        "name": "拆门撬窗",
+        "sequence_number": 126
+      }
+    },
+    {
+      "id": "外祖家三个舅舅",
+      "type": "支持力量",
+      "properties": {
+        "name": "外祖家三个舅舅",
+        "sequence_number": 127
+      }
+    },
+    {
+      "id": "拳头硬",
+      "type": "依据",
+      "properties": {
+        "name": "拳头硬",
+        "sequence_number": 128
+      }
+    },
+    {
+      "id": "田产多",
+      "type": "特征",
+      "properties": {
+        "name": "田产多",
+        "sequence_number": 129
+      }
+    },
+    {
+      "id": "吞下旁支家产",
+      "type": "目标",
+      "properties": {
+        "name": "吞下旁支家产",
+        "sequence_number": 130
+      }
+    },
+    {
+      "id": "舅舅",
+      "type": "人物",
+      "properties": {
+        "name": "舅舅",
+        "sequence_number": 122
+      }
+    },
+    {
+      "id": "认为理应更好",
+      "type": "动机",
+      "properties": {
+        "name": "认为理应更好",
+        "sequence_number": 131
+      }
+    },
+    {
+      "id": "资产雄厚",
+      "type": "特征",
+      "properties": {
+        "name": "资产雄厚",
+        "sequence_number": 132
+      }
+    },
+    {
+      "id": "给人做帮工",
+      "type": "活动",
+      "properties": {
+        "name": "给人做帮工",
+        "sequence_number": 133
+      }
+    },
+    {
+      "id": "搬家具",
+      "type": "行为",
+      "properties": {
+        "name": "搬家具",
+        "sequence_number": 134
+      }
+    },
+    {
+      "id": "农村宗族",
+      "type": "社会结构",
+      "properties": {
+        "name": "农村宗族",
+        "sequence_number": 135
+      }
+    },
+    {
+      "id": "外祖家",
+      "type": "家族",
+      "properties": {
+        "name": "外祖家",
+        "sequence_number": 136
+      }
+    },
+    {
+      "id": "日子红火",
+      "type": "特征",
+      "properties": {
+        "name": "日子红火",
+        "sequence_number": 137
+      }
+    },
+    {
+      "id": "兄妹",
+      "type": "家庭成员",
+      "properties": {
+        "name": "兄妹",
+        "sequence_number": 138
+      }
+    },
+    {
+      "id": "保住家产",
+      "type": "动机",
+      "properties": {
+        "name": "保住家产",
+        "sequence_number": 139
+      }
+    },
+    {
+      "id": "牵牛抱猪",
+      "type": "行为",
+      "properties": {
+        "name": "牵牛抱猪",
+        "sequence_number": 140
+      }
+    },
+    {
+      "id": "妒火中烧",
+      "type": "情感",
+      "properties": {
+        "name": "妒火中烧",
+        "sequence_number": 141
+      }
+    },
+    {
+      "id": "人丁稀薄",
+      "type": "特征",
+      "properties": {
+        "name": "人丁稀薄",
+        "sequence_number": 142
+      }
+    },
+    {
+      "id": "吃干抹净",
+      "type": "行为目标",
+      "properties": {
+        "name": "吃干抹净",
+        "sequence_number": 143
+      }
+    },
+    {
+      "id": "叔叔伯伯",
+      "type": "亲属",
+      "properties": {
+        "name": "叔叔伯伯",
+        "sequence_number": 144
+      }
+    },
+    {
+      "id": "捎口信",
+      "type": "任务",
+      "properties": {
+        "name": "捎口信",
+        "sequence_number": 145
+      }
+    },
+    {
+      "id": "外祖家成员",
+      "type": "家族角色",
+      "properties": {
+        "name": "外祖家成员",
+        "sequence_number": 146
+      }
+    },
+    {
+      "id": "可能争家产",
+      "type": "功能",
+      "properties": {
+        "name": "可能争家产",
+        "sequence_number": 147
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "人物",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 148
+      }
+    },
+    {
+      "id": "亲叔伯",
+      "type": "亲属",
+      "properties": {
+        "name": "亲叔伯",
+        "sequence_number": 149
+      }
+    },
+    {
+      "id": "旁支",
+      "type": "家族",
+      "properties": {
+        "name": "旁支",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "斗不过成年人",
+      "type": "能力评估",
+      "properties": {
+        "name": "斗不过成年人",
+        "sequence_number": 150
+      }
+    },
+    {
+      "id": "至仇",
+      "type": "关系状态",
+      "properties": {
+        "name": "至仇",
+        "sequence_number": 151
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "人",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "本家的人",
+      "type": "人",
+      "properties": {
+        "name": "本家的人",
+        "sequence_number": 152
+      }
+    },
+    {
+      "id": "后天",
+      "type": "时间",
+      "properties": {
+        "name": "后天",
+        "sequence_number": 153
+      }
+    },
+    {
+      "id": "后世",
+      "type": "时间",
+      "properties": {
+        "name": "后世",
+        "sequence_number": 154
+      }
+    },
+    {
+      "id": "村子",
+      "type": "地点",
+      "properties": {
+        "name": "村子",
+        "sequence_number": 155
+      }
+    },
+    {
+      "id": "彭毅左腕",
+      "type": "身体部位",
+      "properties": {
+        "name": "彭毅左腕",
+        "sequence_number": 156
+      }
+    },
+    {
+      "id": "两百六七十里",
+      "type": "距离",
+      "properties": {
+        "name": "两百六七十里",
+        "sequence_number": 157
+      }
+    },
+    {
+      "id": "阿舅所在地",
+      "type": "地点",
+      "properties": {
+        "name": "阿舅所在地",
+        "sequence_number": 158
+      }
+    },
+    {
+      "id": "左腕淤青",
+      "type": "身体特征",
+      "properties": {
+        "name": "左腕淤青",
+        "sequence_number": 159
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "人",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 148
+      }
+    },
+    {
+      "id": "舅舅们",
+      "type": "人",
+      "properties": {
+        "name": "舅舅们",
+        "sequence_number": 160
+      }
+    },
+    {
+      "id": "他家绝户",
+      "type": "事件",
+      "properties": {
+        "name": "他家绝户",
+        "sequence_number": 161
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "山路",
+      "type": "地形",
+      "properties": {
+        "name": "山路",
+        "sequence_number": 162
+      }
+    },
+    {
+      "id": "委屈",
+      "type": "情绪状态",
+      "properties": {
+        "name": "委屈",
+        "sequence_number": 163
+      }
+    },
+    {
+      "id": "路程",
+      "type": "距离",
+      "properties": {
+        "name": "路程",
+        "sequence_number": 164
+      }
+    },
+    {
+      "id": "兄弟关系",
+      "type": "社会关系",
+      "properties": {
+        "name": "兄弟关系",
+        "sequence_number": 165
+      }
+    },
+    {
+      "id": "本家的人掐",
+      "type": "人",
+      "properties": {
+        "name": "本家的人掐",
+        "sequence_number": 166
+      }
+    },
+    {
+      "id": "阿舅",
+      "type": "人",
+      "properties": {
+        "name": "阿舅",
+        "sequence_number": 167
+      }
+    },
+    {
+      "id": "能到达",
+      "type": "能力",
+      "properties": {
+        "name": "能到达",
+        "sequence_number": 168
+      }
+    },
+    {
+      "id": "没有亲叔伯未必是坏事",
+      "type": "观点",
+      "properties": {
+        "name": "没有亲叔伯未必是坏事",
+        "sequence_number": 169
+      }
+    },
+    {
+      "id": "你",
+      "type": "人",
+      "properties": {
+        "name": "你",
+        "sequence_number": 170
+      }
+    },
+    {
+      "id": "阿舅",
+      "type": "亲属",
+      "properties": {
+        "name": "阿舅",
+        "sequence_number": 167
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "棺材",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "父亲弟弟在水稻田里丰收时的喜悦",
+      "type": "拥有记忆",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "哥哥离家逃命时的不舍",
+      "type": "拥有记忆",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "母亲难产而死时的悲痛",
+      "type": "拥有记忆",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "自己正躺在一口棺材里",
+      "type": "意识到",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "本家想吃他这个旁支的绝户",
+      "type": "判断",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "不能画押",
+      "type": "决定",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "挣扎起身掀开棺材板",
+      "type": "尝试",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "起身出棺的力气",
+      "type": "缺乏",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "身体力气",
+      "type": "恢复",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "穿堂风中摇曳的烛光",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "冥盆内燃烧着的冥钱",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "光线变得越来越暗淡",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "弟弟妹妹无助绝望的啜泣声",
+      "type": "听到",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "弟弟彭毅的声音",
+      "type": "听到",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "十四岁",
+      "type": "年龄为",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "操持自己和父亲的葬礼",
+      "type": "承担",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "一群如狼似虎的族人侵占家产",
+      "type": "面对",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "彭刚",
+      "type": "对",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "彭毅",
+      "type": "威逼",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "彭毅",
+      "type": "利诱",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "清朝少年",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "夺舍穿越者",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭姓人家的男丁",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅的哥哥",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭刚的弟弟",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "父亲弟弟",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "母亲",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "哥哥",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "三哥",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "六堂叔",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "族里",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "本家",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "旁支",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "绝户",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "田契",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "族里供吃穿",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "继续读书",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "灾疫匪祸横行",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "春耕还没过",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "清道光二十八年二月",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "广西浔州府贵县（今贵港）",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰村",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "院子",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "后堂",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "杉木薄棺",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "纸灰味",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "石灰味",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "桂柳客话",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "老登",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "威逼利诱",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "诈尸啦！三哥？是你吗？你是人是鬼？",
+      "type": "与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "被放入薄棺",
+      "type": "经历事件",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "身体恢复",
+      "type": "从棺材中醒来",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "烛光",
+      "type": "感知环境",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "冥盆内燃烧的冥钱",
+      "type": "感知环境",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "穿堂风",
+      "type": "感知环境",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "三哥",
+      "type": "称呼彭刚",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "诈尸啦！三哥？是你吗？你是人是鬼？",
+      "type": "表达恐惧",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "三哥",
+      "type": "称呼彭刚",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "就算三哥是鬼，那也是咱们家的鬼，会护着咱们自家人。",
+      "type": "表达情感",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "三哥有气！气还是热的！真不是鬼！",
+      "type": "回应",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "探鼻息",
+      "type": "确认彭刚状态",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "有吃的么？",
+      "type": "提出需求",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "饿得前胸贴后背",
+      "type": "身体状态",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "有！有！有！",
+      "type": "回应",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "起身往厨房走去",
+      "type": "行动",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "搀扶彭刚走出棺材",
+      "type": "协助",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "竹凳",
+      "type": "提供物品",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "族长让你交出家里的田契？",
+      "type": "询问",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "十七亩水田",
+      "type": "拥有财产",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "十六亩旱坡地",
+      "type": "拥有财产",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "一个鱼塘",
+      "type": "拥有财产",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "一头水牛",
+      "type": "拥有财产",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "两口猪及一窝猪仔",
+      "type": "拥有财产",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "五间门窗齐全的土坯房",
+      "type": "拥有财产",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "半亩菜地",
+      "type": "拥有财产",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰村数三数四的富户",
+      "type": "身份特征",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "人丁稀薄的旁支",
+      "type": "家庭状况",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "无亲叔伯",
+      "type": "家庭状况",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家惦记上",
+      "type": "陈述原因",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "田契被藏起来",
+      "type": "陈述事件",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "族人逼迫画押",
+      "type": "陈述事件",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "九亩上等水田被要求充作族田",
+      "type": "陈述事件",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "王保长说公道话",
+      "type": "陈述事件",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "五斗七星柜和四把官帽椅子被搬走",
+      "type": "陈述事件",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "搓着手心里的蕉叶形银锁",
+      "type": "表达情绪",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "委屈的泪水不住地簌簌往下淌",
+      "type": "表达情绪",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "蕉叶形银锁",
+      "type": "拥有物品",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "舅舅送的抓周礼物",
+      "type": "来源",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "银锁",
+      "type": "拥有物品",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "外阿婆在满月宴时赠送",
+      "type": "来源",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "几个舅舅是平在山（鹏隘山）的烧炭工",
+      "type": "回忆",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "舅舅以烧炭种山、做帮工为业",
+      "type": "回忆",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "舅舅送的银锁分量足",
+      "type": "回忆",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "舅舅生活并不宽裕",
+      "type": "回忆",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "蕉叶形银锁",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "蕉叶形银锁",
+      "target_id": "舅舅",
+      "type": "由...赠送",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅",
+      "target_id": "烧炭工",
+      "type": "职业",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅",
+      "target_id": "烧炭种山",
+      "type": "从事",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅",
+      "target_id": "给人做帮工",
+      "type": "从事",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅",
+      "target_id": "外祖家",
+      "type": "关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "银锁",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "银锁",
+      "target_id": "外阿婆",
+      "type": "由...赠送",
+      "properties": {}
+    },
+    {
+      "source_id": "外阿婆",
+      "target_id": "外祖家成员",
+      "type": "职业",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "十七岁",
+      "type": "年龄",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "争夺家产",
+      "type": "行为",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "吃相难看",
+      "type": "动机",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "搬家具",
+      "type": "行为",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "拆门撬窗",
+      "type": "行为",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "牵牛抱猪",
+      "type": "行为",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "吃干抹净",
+      "type": "目标",
+      "properties": {}
+    },
+    {
+      "source_id": "农村宗族",
+      "target_id": "男丁数量",
+      "type": "争保家产依据",
+      "properties": {}
+    },
+    {
+      "source_id": "农村宗族",
+      "target_id": "拳头硬",
+      "type": "争保家产依据",
+      "properties": {}
+    },
+    {
+      "source_id": "斯文宗族",
+      "target_id": "讲道理",
+      "type": "特征",
+      "properties": {}
+    },
+    {
+      "source_id": "斯文宗族",
+      "target_id": "高门大户",
+      "type": "所属",
+      "properties": {}
+    },
+    {
+      "source_id": "斯文宗族",
+      "target_id": "书香门第",
+      "type": "所属",
+      "properties": {}
+    },
+    {
+      "source_id": "高门大户",
+      "target_id": "资产雄厚",
+      "type": "特征",
+      "properties": {}
+    },
+    {
+      "source_id": "高门大户",
+      "target_id": "掌握优质田产",
+      "type": "特征",
+      "properties": {}
+    },
+    {
+      "source_id": "高门大户",
+      "target_id": "不为小资产破坏团结",
+      "type": "行为",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "人均两亩地以下",
+      "type": "特征",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "生活不宽裕",
+      "type": "特征",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰彭族本家",
+      "target_id": "生存问题",
+      "type": "关注点",
+      "properties": {}
+    },
+    {
+      "source_id": "旁支",
+      "target_id": "人丁稀薄",
+      "type": "对比",
+      "properties": {}
+    },
+    {
+      "source_id": "旁支",
+      "target_id": "田产多",
+      "type": "对比",
+      "properties": {}
+    },
+    {
+      "source_id": "旁支",
+      "target_id": "日子红火",
+      "type": "对比",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "妒火中烧",
+      "type": "情感",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "认为理应更好",
+      "type": "动机",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "百年难遇",
+      "type": "机会",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "吞下旁支家产",
+      "type": "目标",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "一脉单传",
+      "type": "家庭关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "无亲叔伯",
+      "type": "家庭关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "兄妹",
+      "type": "家庭关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "两个半大男孩",
+      "type": "家庭关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "一个女娃",
+      "type": "家庭关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "斗不过成年人",
+      "type": "能力",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "外祖家三个舅舅",
+      "type": "依赖",
+      "properties": {}
+    },
+    {
+      "source_id": "舅甥关系",
+      "target_id": "更为紧密牢靠",
+      "type": "特征",
+      "properties": {}
+    },
+    {
+      "source_id": "舅甥关系",
+      "target_id": "帮外甥争家产",
+      "type": "功能",
+      "properties": {}
+    },
+    {
+      "source_id": "叔叔伯伯",
+      "target_id": "可能争家产",
+      "type": "功能",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅",
+      "target_id": "帮外甥争家产",
+      "type": "功能",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "托韦长工捎口信",
+      "type": "行为",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "长工",
+      "type": "职业",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "捎口信",
+      "type": "任务",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "彭刚",
+      "type": "服务对象",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "保住家产",
+      "type": "动机",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "无亲叔伯未必是坏事",
+      "type": "思考",
+      "properties": {}
+    },
+    {
+      "source_id": "兄弟之间",
+      "target_id": "至亲或至仇",
+      "type": "关系性质",
+      "properties": {}
+    },
+    {
+      "source_id": "亲叔伯",
+      "target_id": "想吃绝户",
+      "type": "可能行为",
+      "properties": {}
+    },
+    {
+      "source_id": "舅甥关系",
+      "target_id": "后世",
+      "type": "比...更为紧密",
+      "properties": {}
+    },
+    {
+      "source_id": "叔叔伯伯",
+      "target_id": "你",
+      "type": "与...争家产",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅",
+      "target_id": "你",
+      "type": "与...争家产",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "没有亲叔伯未必是坏事",
+      "type": "认为",
+      "properties": {}
+    },
+    {
+      "source_id": "兄弟关系",
+      "target_id": "至仇",
+      "type": "要么是至亲",
+      "properties": {}
+    },
+    {
+      "source_id": "亲叔伯",
+      "target_id": "他家绝户",
+      "type": "可能想吃",
+      "properties": {}
+    },
+    {
+      "source_id": "本家",
+      "target_id": "他家绝户",
+      "type": "可能想吃",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "韦长工",
+      "type": "托",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "阿舅",
+      "type": "传递口信",
+      "properties": {}
+    },
+    {
+      "source_id": "阿舅",
+      "target_id": "彭毅",
+      "type": "与...有联系",
+      "properties": {}
+    },
+    {
+      "source_id": "村子",
+      "target_id": "阿舅所在地",
+      "type": "到",
+      "properties": {}
+    },
+    {
+      "source_id": "路程",
+      "target_id": "两百六七十里",
+      "type": "为",
+      "properties": {}
+    },
+    {
+      "source_id": "山路",
+      "target_id": "路程",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅们",
+      "target_id": "能到达",
+      "type": "脚力好",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅们",
+      "target_id": "后天",
+      "type": "到达时间",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "左腕淤青",
+      "type": "有伤",
+      "properties": {}
+    },
+    {
+      "source_id": "左腕淤青",
+      "target_id": "本家的人掐",
+      "type": "由",
+      "properties": {}
+    },
+    {
+      "source_id": "本家的人",
+      "target_id": "彭毅左腕",
+      "type": "掐",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "委屈",
+      "type": "噙着泪水",
+      "properties": {}
+    }
+  ]
+}

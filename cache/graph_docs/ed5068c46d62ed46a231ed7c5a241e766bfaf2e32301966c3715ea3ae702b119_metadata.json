@@ -1,0 +1,14 @@
+{
+  "novel_name": "1848大清烧炭工",
+  "chapter_name": "第1章：富农开局",
+  "model_name": "doubao-seed-1-6-flash-250828",
+  "use_local": false,
+  "num_ctx": 32000,
+  "chunk_size": 2048,
+  "chunk_overlap": 256,
+  "content_size": 2853,
+  "schema_name": "情节",
+  "cache_version": "1.1",
+  "created_at": "2025-09-16T00:24:54.566193",
+  "saved_at": "2025-09-16T00:24:54.568193"
+}

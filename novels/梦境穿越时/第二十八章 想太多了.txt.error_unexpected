@@ -1,0 +1,61 @@
+[错误类型: unexpected]
+[未知错误] Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.81); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6864ffc95+79861]
+	GetHandleVerifier [0x0x7ff6864ffcf0+79952]
+	(No symbol) [0x0x7ff68627cada]
+	(No symbol) [0x0x7ff686268995]
+	(No symbol) [0x0x7ff68628dbda]
+	(No symbol) [0x0x7ff686304346]
+	(No symbol) [0x0x7ff6863248c2]
+	(No symbol) [0x0x7ff6862fc8b3]
+	(No symbol) [0x0x7ff6862c5272]
+	(No symbol) [0x0x7ff6862c6043]
+	GetHandleVerifier [0x0x7ff6867bb9cd+2946349]
+	GetHandleVerifier [0x0x7ff6867b5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6867d59d7+3052855]
+	GetHandleVerifier [0x0x7ff68651aa7e+189918]
+	GetHandleVerifier [0x0x7ff686522a1f+222591]
+	GetHandleVerifier [0x0x7ff686508ab4+116244]
+	GetHandleVerifier [0x0x7ff686508c69+116681]
+	GetHandleVerifier [0x0x7ff6864ef048+11176]
+	BaseThreadInitThunk [0x0x7ffadb45257d+29]
+	RtlUserThreadStart [0x0x7ffadc10af08+40]
+
+Traceback (most recent call last):
+  File "C:\Users\zgw31\PycharmProjects\AI\novel_chapter_extractor.py", line 570, in _process_chapter_content
+    page_html = self.driver.page_source
+  File "C:\Users\zgw31\PycharmProjects\AI\venv1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 597, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "C:\Users\zgw31\PycharmProjects\AI\venv1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zgw31\PycharmProjects\AI\venv1\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.81); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6864ffc95+79861]
+	GetHandleVerifier [0x0x7ff6864ffcf0+79952]
+	(No symbol) [0x0x7ff68627cada]
+	(No symbol) [0x0x7ff686268995]
+	(No symbol) [0x0x7ff68628dbda]
+	(No symbol) [0x0x7ff686304346]
+	(No symbol) [0x0x7ff6863248c2]
+	(No symbol) [0x0x7ff6862fc8b3]
+	(No symbol) [0x0x7ff6862c5272]
+	(No symbol) [0x0x7ff6862c6043]
+	GetHandleVerifier [0x0x7ff6867bb9cd+2946349]
+	GetHandleVerifier [0x0x7ff6867b5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6867d59d7+3052855]
+	GetHandleVerifier [0x0x7ff68651aa7e+189918]
+	GetHandleVerifier [0x0x7ff686522a1f+222591]
+	GetHandleVerifier [0x0x7ff686508ab4+116244]
+	GetHandleVerifier [0x0x7ff686508c69+116681]
+	GetHandleVerifier [0x0x7ff6864ef048+11176]
+	BaseThreadInitThunk [0x0x7ffadb45257d+29]
+	RtlUserThreadStart [0x0x7ffadc10af08+40]
+
+

@@ -1,0 +1,416 @@
+/* static/css/dark-theme.css */
+
+/* ====================
+   基础变量定义
+   ==================== */
+:root {
+    /* 深色主题颜色变量 */
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2a2a2a;
+    --bg-quaternary: #333333;
+
+    --bs-body-bg: #1e1e1e;
+    --bs-body-color: #e0e0e0;
+
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --text-tertiary: #cccccc;
+
+    --border-primary: #444444;
+    --border-secondary: #555555;
+
+    --accent-primary: #0d6efd;
+    --accent-success: #198754;
+    --accent-warning: #ffc107;
+    --accent-danger: #dc3545;
+    --accent-info: #0dcaf0;
+
+    --tree-folder-bg: #1e1e1e;
+    --tree-item-hover: #2d2d2d;
+    --tree-item-selected: #0d6efd;
+
+    --panel-bg: #1e1e1e;
+    --panel-border: #333333;
+}
+
+/* ====================
+   全局基础样式
+   ==================== */
+html, body {
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    height: 100%;
+}
+
+/* ====================
+   容器和布局样式
+   ==================== */
+.container {
+    margin: 0 auto;
+    background-color: var(--bg-secondary);
+    padding: 0px;
+    min-height: 100vh;
+}
+
+.main-layout {
+    display: flex;
+    gap: 20px;
+    margin-top: 0px;
+}
+
+/* ====================
+   标题样式
+   ==================== */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    margin-top: 0;
+}
+
+h1 {
+
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+
+}
+
+/* ====================
+   表单控件样式
+   ==================== */
+select, input, button, textarea {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+select:focus, input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+/* ====================
+   按钮样式
+   ==================== */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-primary);
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+}
+
+.btn-success {
+    background-color: var(--accent-success);
+    color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+    background-color: #157347;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background-color: var(--bg-quaternary);
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    background-color: var(--bg-tertiary);
+    color: var(--text-tertiary);
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+}
+
+/* ====================
+   卡片和面板样式
+   ==================== */
+.card, .panel {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--border-primary);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.card-header, .panel-header {
+    border-bottom: 1px solid var(--border-primary);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ====================
+   树状视图样式
+   ==================== */
+.tree-view {
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    height: 600px;
+    overflow-y: auto;
+    background-color: var(--panel-bg);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.tree-node {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tree-item {
+    padding: 6px 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px;
+    margin: 2px 0;
+    transition: background-color 0.2s ease;
+}
+
+.tree-item:hover {
+    background-color: var(--tree-item-hover);
+}
+
+.tree-item.selected {
+    background-color: var(--tree-item-selected);
+    color: white;
+}
+
+.tree-folder {
+    font-weight: bold;
+    background-color: var(--tree-folder-bg);
+    border: 1px solid var(--border-primary);
+}
+
+.tree-children {
+    margin-left: 20px;
+    display: none;
+}
+
+.tree-children.expanded {
+    display: block;
+}
+
+.tree-toggle {
+    margin-right: 8px;
+    display: inline-block;
+    width: 12px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+/* ====================
+   详情面板样式
+   ==================== */
+.details-panel {
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    padding: 15px;
+    background-color: var(--panel-bg);
+    margin-top: 20px;
+}
+
+.detail-item {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: var(--bg-tertiary);
+    border-radius: 3px;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: var(--text-secondary);
+    display: inline-block;
+    width: 80px;
+}
+
+.detail-value {
+    color: var(--text-primary);
+}
+
+/* ====================
+   加载动画
+   ==================== */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--bg-tertiary);
+    border-top: 3px solid var(--accent-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* ====================
+   滚动条样式
+   ==================== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-quaternary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* ====================
+   响应式设计
+   ==================== */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .tree-view {
+        height: 400px;
+    }
+}
+
+/* ====================
+   工具提示
+   ==================== */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    border: 1px solid var(--border-primary);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ====================
+   状态指示器
+   ==================== */
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-success {
+    background-color: var(--accent-success);
+}
+
+.status-warning {
+    background-color: var(--accent-warning);
+}
+
+.status-error {
+    background-color: var(--accent-danger);
+}
+
+/* ====================
+   表单元素
+   ==================== */
+input, select, textarea {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+/* ====================
+   链接样式
+   ==================== */
+a {
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+/* ====================
+   分隔线
+   ==================== */
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-primary);
+    margin: 15px 0;
+}

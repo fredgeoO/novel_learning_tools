@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "田契",
+      "type": "物品",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "广西",
+      "type": "地点",
+      "properties": {
+        "name": "广西",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "彭家兄弟争执厮打",
+      "type": "事件",
+      "properties": {
+        "name": "彭家兄弟争执厮打",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "村民围观彭家兄弟打斗",
+      "type": "事件",
+      "properties": {
+        "name": "村民围观彭家兄弟打斗",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "春耕时节",
+      "type": "时间",
+      "properties": {
+        "name": "春耕时节",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "村民",
+      "type": "组织",
+      "properties": {
+        "name": "村民",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "围观彭家兄弟打斗",
+      "type": "事件",
+      "properties": {
+        "name": "围观彭家兄弟打斗",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "彭先仲",
+      "type": "人物",
+      "properties": {
+        "name": "彭先仲",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "各房女眷",
+      "type": "组织",
+      "properties": {
+        "name": "各房女眷",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "彭刚的院子",
+      "type": "地点",
+      "properties": {
+        "name": "彭刚的院子",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "各房女眷加入战斗",
+      "type": "事件",
+      "properties": {
+        "name": "各房女眷加入战斗",
+        "sequence_number": 13
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "田契",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "彭刚",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚的院子",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚的院子",
+      "target_id": "彭家兄弟争执厮打",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家兄弟争执厮打",
+      "target_id": "各房女眷加入战斗",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚的院子",
+      "target_id": "村民围观彭家兄弟打斗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "广西",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "春耕时节",
+      "target_id": "彭家兄弟争执厮打",
+      "type": "时间顺序",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家兄弟争执厮打",
+      "target_id": "彭先仲",
+      "type": "行为对象",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家兄弟争执厮打",
+      "target_id": "彭刚",
+      "type": "行为对象",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家兄弟争执厮打",
+      "target_id": "各房女眷",
+      "type": "行为对象",
+      "properties": {}
+    },
+    {
+      "source_id": "村民",
+      "target_id": "围观彭家兄弟打斗",
+      "type": "参与",
+      "properties": {}
+    }
+  ]
+}

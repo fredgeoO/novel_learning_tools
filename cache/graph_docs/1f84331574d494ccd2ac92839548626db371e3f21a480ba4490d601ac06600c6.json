@@ -1,0 +1,274 @@
+{
+  "nodes": [
+    {
+      "id": "木牌",
+      "type": "物件",
+      "properties": {
+        "name": "木牌",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "村尾",
+      "type": "地点",
+      "properties": {
+        "name": "村尾",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "陆谦",
+      "type": "人物",
+      "properties": {
+        "name": "陆谦",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "供桌",
+      "type": "地点",
+      "properties": {
+        "name": "供桌",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "墟集",
+      "type": "地点",
+      "properties": {
+        "name": "墟集",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "三年前或四年前的冬天",
+      "type": "时间",
+      "properties": {
+        "name": "三年前或四年前的冬天",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "彭信",
+      "type": "人物",
+      "properties": {
+        "name": "彭信",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "粮仓",
+      "type": "地点",
+      "properties": {
+        "name": "粮仓",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "主屋",
+      "type": "地点",
+      "properties": {
+        "name": "主屋",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "陆勤",
+      "type": "人物",
+      "properties": {
+        "name": "陆勤",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "春萝卜",
+      "type": "物件",
+      "properties": {
+        "name": "春萝卜",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "奇石墟",
+      "type": "地点",
+      "properties": {
+        "name": "奇石墟",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "私塾",
+      "type": "地点",
+      "properties": {
+        "name": "私塾",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "菠菜",
+      "type": "物件",
+      "properties": {
+        "name": "菠菜",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "陆俭",
+      "type": "人物",
+      "properties": {
+        "name": "陆俭",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "库房",
+      "type": "地点",
+      "properties": {
+        "name": "库房",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "上帝",
+      "type": "人物",
+      "properties": {
+        "name": "上帝",
+        "sequence_number": 20
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "陆勤",
+      "target_id": "村尾",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆谦",
+      "target_id": "村尾",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆俭",
+      "target_id": "三年前或四年前的冬天",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "木牌",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "陆勤",
+      "target_id": "私塾",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆谦",
+      "target_id": "私塾",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "私塾",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "菠菜",
+      "target_id": "供桌",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "春萝卜",
+      "target_id": "供桌",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "粮仓",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "主屋",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "菠菜",
+      "target_id": "奇石墟",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "粮仓",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆勤",
+      "target_id": "墟集",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆谦",
+      "target_id": "墟集",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "库房",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "上帝",
+      "type": "涉及",
+      "properties": {}
+    }
+  ]
+}

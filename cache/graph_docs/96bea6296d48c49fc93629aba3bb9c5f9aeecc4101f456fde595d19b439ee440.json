@@ -1,0 +1,982 @@
+{
+  "nodes": [
+    {
+      "id": "彭毅和彭敏逐渐闪烁出一丝焕彩",
+      "type": "结果",
+      "properties": {
+        "name": "彭毅和彭敏逐渐闪烁出一丝焕彩",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "彭敏人小胆大",
+      "type": "结果",
+      "properties": {
+        "name": "彭敏人小胆大",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "彭毅和彭敏破涕为笑",
+      "type": "结果",
+      "properties": {
+        "name": "彭毅和彭敏破涕为笑",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "问田契",
+      "type": "动作",
+      "properties": {
+        "name": "问田契",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "探了探彭刚的鼻息",
+      "type": "动作",
+      "properties": {
+        "name": "探了探彭刚的鼻息",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "彭敏",
+      "type": "人物",
+      "properties": {
+        "name": "彭敏",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "清朝",
+      "type": "地点",
+      "properties": {
+        "name": "清朝",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "田契被藏",
+      "type": "结果",
+      "properties": {
+        "name": "田契被藏",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "接过茶水",
+      "type": "动作",
+      "properties": {
+        "name": "接过茶水",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "彭敏喜道",
+      "type": "结果",
+      "properties": {
+        "name": "彭敏喜道",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "三哥有气",
+      "type": "结果",
+      "properties": {
+        "name": "三哥有气",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "意识到自己现在正躺在一口棺材里",
+      "type": "结果",
+      "properties": {
+        "name": "意识到自己现在正躺在一口棺材里",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "挣扎起身",
+      "type": "动作",
+      "properties": {
+        "name": "挣扎起身",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "没有就范",
+      "type": "结果",
+      "properties": {
+        "name": "没有就范",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "搀扶彭刚",
+      "type": "动作",
+      "properties": {
+        "name": "搀扶彭刚",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "杉木薄棺",
+      "type": "地点",
+      "properties": {
+        "name": "杉木薄棺",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "不能画押",
+      "type": "结果",
+      "properties": {
+        "name": "不能画押",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "呼吸",
+      "type": "动作",
+      "properties": {
+        "name": "呼吸",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "族长逼交田契",
+      "type": "冲突",
+      "properties": {
+        "name": "族长逼交田契",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "往厨房走去",
+      "type": "动作",
+      "properties": {
+        "name": "往厨房走去",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "身体恢复",
+      "type": "结果",
+      "properties": {
+        "name": "身体恢复",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "问族长",
+      "type": "动作",
+      "properties": {
+        "name": "问族长",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "掀棺而起",
+      "type": "动作",
+      "properties": {
+        "name": "掀棺而起",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "彭毅和彭敏无助绝望的啜泣",
+      "type": "结果",
+      "properties": {
+        "name": "彭毅和彭敏无助绝望的啜泣",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "彭毅没有就范",
+      "type": "结果",
+      "properties": {
+        "name": "彭毅没有就范",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "问有吃的么",
+      "type": "动作",
+      "properties": {
+        "name": "问有吃的么",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "寻来竹凳",
+      "type": "动作",
+      "properties": {
+        "name": "寻来竹凳",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "认为舅甥关系紧密",
+      "type": "结果",
+      "properties": {
+        "name": "认为舅甥关系紧密",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "认为舅甥关系比后世更紧密",
+      "type": "结果",
+      "properties": {
+        "name": "认为舅甥关系比后世更紧密",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "流泪",
+      "type": "动作",
+      "properties": {
+        "name": "流泪",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "被本家惦记",
+      "type": "冲突",
+      "properties": {
+        "name": "被本家惦记",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "左腕淤青",
+      "type": "结果",
+      "properties": {
+        "name": "左腕淤青",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "认为本家嫉妒旁支",
+      "type": "结果",
+      "properties": {
+        "name": "认为本家嫉妒旁支",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "感到担忧",
+      "type": "结果",
+      "properties": {
+        "name": "感到担忧",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "点头",
+      "type": "动作",
+      "properties": {
+        "name": "点头",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "托人捎口信",
+      "type": "动作",
+      "properties": {
+        "name": "托人捎口信",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "问",
+      "type": "动作",
+      "properties": {
+        "name": "问",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "被掐",
+      "type": "动作",
+      "properties": {
+        "name": "被掐",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "拉起衣袖",
+      "type": "动作",
+      "properties": {
+        "name": "拉起衣袖",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "拒绝交出九亩水田",
+      "type": "动作",
+      "properties": {
+        "name": "拒绝交出九亩水田",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "认为舅舅会帮忙",
+      "type": "结果",
+      "properties": {
+        "name": "认为舅舅会帮忙",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "被本家搬走五斗七星柜",
+      "type": "冲突",
+      "properties": {
+        "name": "被本家搬走五斗七星柜",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "认为没有亲叔伯未必是坏事",
+      "type": "结果",
+      "properties": {
+        "name": "认为没有亲叔伯未必是坏事",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "认为本家和旁支关系紧张",
+      "type": "结果",
+      "properties": {
+        "name": "认为本家和旁支关系紧张",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "思考",
+      "type": "动作",
+      "properties": {
+        "name": "思考",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "被本家搬走四把官帽椅子",
+      "type": "冲突",
+      "properties": {
+        "name": "被本家搬走四把官帽椅子",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "展示手臂",
+      "type": "动作",
+      "properties": {
+        "name": "展示手臂",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "被本家搬走家具",
+      "type": "冲突",
+      "properties": {
+        "name": "被本家搬走家具",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "感到欣慰",
+      "type": "结果",
+      "properties": {
+        "name": "感到欣慰",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "认为彭毅需要依靠外祖家",
+      "type": "结果",
+      "properties": {
+        "name": "认为彭毅需要依靠外祖家",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "哭诉",
+      "type": "动作",
+      "properties": {
+        "name": "哭诉",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "藏田契",
+      "type": "动作",
+      "properties": {
+        "name": "藏田契",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "感到心酸",
+      "type": "结果",
+      "properties": {
+        "name": "感到心酸",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "被哄逼画押",
+      "type": "冲突",
+      "properties": {
+        "name": "被哄逼画押",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "认为彭毅早熟",
+      "type": "结果",
+      "properties": {
+        "name": "认为彭毅早熟",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "被本家威胁",
+      "type": "冲突",
+      "properties": {
+        "name": "被本家威胁",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "搓手",
+      "type": "动作",
+      "properties": {
+        "name": "搓手",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "认为叔叔伯伯会争家产",
+      "type": "结果",
+      "properties": {
+        "name": "认为叔叔伯伯会争家产",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "认为兄弟之间是至亲或至仇",
+      "type": "结果",
+      "properties": {
+        "name": "认为兄弟之间是至亲或至仇",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "被本家逼迫",
+      "type": "冲突",
+      "properties": {
+        "name": "被本家逼迫",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "托韦长工捎口信",
+      "type": "动作",
+      "properties": {
+        "name": "托韦长工捎口信",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "认为本家想吞并旁支",
+      "type": "结果",
+      "properties": {
+        "name": "认为本家想吞并旁支",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "认为彭毅委屈",
+      "type": "结果",
+      "properties": {
+        "name": "认为彭毅委屈",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "被本家掐",
+      "type": "冲突",
+      "properties": {
+        "name": "被本家掐",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "认为亲叔伯可能抢家产",
+      "type": "结果",
+      "properties": {
+        "name": "认为亲叔伯可能抢家产",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "认为舅舅会帮忙争家产",
+      "type": "结果",
+      "properties": {
+        "name": "认为舅舅会帮忙争家产",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "不说话",
+      "type": "动作",
+      "properties": {
+        "name": "不说话",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "拒绝交出田契",
+      "type": "动作",
+      "properties": {
+        "name": "拒绝交出田契",
+        "sequence_number": 71
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "呼吸",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "杉木薄棺",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "意识到自己现在正躺在一口棺材里",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "清朝",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "不能画押",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "挣扎起身",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "身体恢复",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "掀棺而起",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "三哥有气",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "问田契",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "搀扶彭刚",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "探了探彭刚的鼻息",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "问有吃的么",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "往厨房走去",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "寻来竹凳",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "接过茶水",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "问族长",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "田契被藏",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "族长逼交田契",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅没有就范",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "没有就范",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭敏人小胆大",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅和彭敏破涕为笑",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭敏喜道",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅和彭敏无助绝望的啜泣",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅和彭敏逐渐闪烁出一丝焕彩",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "哭诉",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "搓手",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "流泪",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "问",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "托人捎口信",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被掐",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "左腕淤青",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "感到欣慰",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "感到心酸",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "点头",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "不说话",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "拉起衣袖",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "展示手臂",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家逼迫",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "藏田契",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "拒绝交出田契",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被哄逼画押",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "拒绝交出九亩水田",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家搬走家具",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家惦记",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家威胁",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家搬走五斗七星柜",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家搬走四把官帽椅子",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "托韦长工捎口信",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "被本家掐",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "感到担忧",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "思考",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为舅甥关系紧密",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为舅舅会帮忙",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为亲叔伯可能抢家产",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为没有亲叔伯未必是坏事",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为兄弟之间是至亲或至仇",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为本家和旁支关系紧张",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为本家嫉妒旁支",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为本家想吞并旁支",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为彭毅早熟",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为彭毅委屈",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为彭毅需要依靠外祖家",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为舅甥关系比后世更紧密",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为叔叔伯伯会争家产",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "认为舅舅会帮忙争家产",
+      "type": "执行",
+      "properties": {}
+    }
+  ]
+}

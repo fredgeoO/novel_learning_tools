@@ -1,0 +1,318 @@
+{
+  "nodes": [
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "烧炭佬",
+      "type": "社会关系",
+      "properties": {
+        "name": "烧炭佬",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "松狮犬",
+      "type": "动物",
+      "properties": {
+        "name": "松狮犬",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "平在山",
+      "type": "地点",
+      "properties": {
+        "name": "平在山",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "鱼塘",
+      "type": "地点",
+      "properties": {
+        "name": "鱼塘",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "彭刚家",
+      "type": "地点",
+      "properties": {
+        "name": "彭刚家",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "彭毅家",
+      "type": "地点",
+      "properties": {
+        "name": "彭毅家",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "人物",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "九亩上等水田",
+      "type": "地点",
+      "properties": {
+        "name": "九亩上等水田",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "田契",
+      "type": "物品",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "广西",
+      "type": "地点",
+      "properties": {
+        "name": "广西",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "彭刚院前",
+      "type": "地点",
+      "properties": {
+        "name": "彭刚院前",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "家风",
+      "type": "事件",
+      "properties": {
+        "name": "家风",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "争执厮打",
+      "type": "事件",
+      "properties": {
+        "name": "争执厮打",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "鸡飞狗跳",
+      "type": "事件",
+      "properties": {
+        "name": "鸡飞狗跳",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "春耕时节",
+      "type": "时间",
+      "properties": {
+        "name": "春耕时节",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "各房女眷",
+      "type": "人物",
+      "properties": {
+        "name": "各房女眷",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "彭家兄弟打架",
+      "type": "事件",
+      "properties": {
+        "name": "彭家兄弟打架",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "彭先仲",
+      "type": "人物",
+      "properties": {
+        "name": "彭先仲",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "亲兄弟打架",
+      "type": "事件",
+      "properties": {
+        "name": "亲兄弟打架",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "彭刚的小院子",
+      "type": "地点",
+      "properties": {
+        "name": "彭刚的小院子",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "民风剽悍",
+      "type": "事件",
+      "properties": {
+        "name": "民风剽悍",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "家里",
+      "type": "地点",
+      "properties": {
+        "name": "家里",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "村民",
+      "type": "人物",
+      "properties": {
+        "name": "村民",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "战斗",
+      "type": "事件",
+      "properties": {
+        "name": "战斗",
+        "sequence_number": 27
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅",
+      "type": "亲属关系",
+      "properties": {}
+    },
+    {
+      "source_id": "鱼塘",
+      "target_id": "彭刚家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "九亩上等水田",
+      "target_id": "彭刚家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "松狮犬",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "彭毅家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "烧炭佬",
+      "target_id": "平在山",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "田契",
+      "target_id": "彭刚家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭先仲",
+      "target_id": "家风",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "争执厮打",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "各房女眷",
+      "target_id": "战斗",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "鸡飞狗跳",
+      "target_id": "彭刚的小院子",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "春耕时节",
+      "target_id": "争执厮打",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "广西",
+      "target_id": "民风剽悍",
+      "type": "社会关系",
+      "properties": {}
+    },
+    {
+      "source_id": "亲兄弟打架",
+      "target_id": "家里",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家兄弟打架",
+      "target_id": "庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "村民",
+      "target_id": "彭刚院前",
+      "type": "位于",
+      "properties": {}
+    }
+  ]
+}

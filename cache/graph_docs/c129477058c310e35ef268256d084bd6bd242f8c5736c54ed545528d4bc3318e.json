@@ -1,0 +1,162 @@
+{
+  "nodes": [
+    {
+      "id": "对白",
+      "type": "对白",
+      "properties": {
+        "name": "对白",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "拒绝让渡家产",
+      "type": "行动",
+      "properties": {
+        "name": "拒绝让渡家产",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "彭家遭遇变故",
+      "type": "事件",
+      "properties": {
+        "name": "彭家遭遇变故",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "广西浔州府贵县（今贵港）县城东北五十里处的庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "广西浔州府贵县（今贵港）县城东北五十里处的庆丰村",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "彭家",
+      "type": "组织",
+      "properties": {
+        "name": "彭家",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "清道光二十八年二月（1848年）",
+      "type": "时间",
+      "properties": {
+        "name": "清道光二十八年二月（1848年）",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "棺材",
+      "type": "物品",
+      "properties": {
+        "name": "棺材",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "悲痛",
+      "type": "情绪",
+      "properties": {
+        "name": "悲痛",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "恐惧",
+      "type": "情绪",
+      "properties": {
+        "name": "恐惧",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "夺舍穿越",
+      "type": "结果",
+      "properties": {
+        "name": "夺舍穿越",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 12
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "清道光二十八年二月（1848年）",
+      "target_id": "彭家遭遇变故",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "广西浔州府贵县（今贵港）县城东北五十里处的庆丰村",
+      "target_id": "彭家",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "棺材",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "对白",
+      "type": "说出",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "悲痛",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "恐惧",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家",
+      "target_id": "夺舍穿越",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "拒绝让渡家产",
+      "type": "执行",
+      "properties": {}
+    }
+  ]
+}

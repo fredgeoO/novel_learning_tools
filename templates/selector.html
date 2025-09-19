@@ -1,0 +1,466 @@
+<!-- templates/selector.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>📚 选择图谱</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark-theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/selector.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="main-layout">
+            <!-- 左侧树状结构 -->
+            <div class="tree-section">
+                <h5>📖 小说章节结构</h5>
+                <div class="tree-view" id="tree-container">
+                    <div style="text-align: center; padding: 50px;">
+                        <div class="spinner"></div>
+                        <p style="margin-top: 10px; color: #cccccc;">正在加载图谱数据...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧卡片展示 -->
+            <div class="cards-section">
+                <div class="cards-header">
+                    <h3>📋 可用图谱</h3>
+                    <div class="cards-controls">
+                        <button id="refresh-btn" class="btn btn-secondary btn-sm">🔄 刷新</button>
+                    </div>
+                </div>
+
+                <div class="cards-container" id="cards-container">
+                    <div style="text-align: center; padding: 50px; color: #cccccc;">
+                        请从左侧选择小说或章节查看可用图谱
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==================== 应用状态管理 ====================
+        const AppState = {
+            novelChapterStructure: {},
+            allGraphs: {},
+            selectedCacheKey: null,
+            selectedTreeNode: null
+        };
+
+        // ==================== DOM 元素缓存 ====================
+        const DOMElements = {
+            treeContainer: null,
+            cardsContainer: null,
+            refreshBtn: null,
+            cardsTitle: null,
+
+            init() {
+                this.treeContainer = document.getElementById('tree-container');
+                this.cardsContainer = document.getElementById('cards-container');
+                this.refreshBtn = document.getElementById('refresh-btn');
+                this.cardsTitle = document.querySelector('.cards-section h3');
+            }
+        };
+
+        // ==================== API 服务 ====================
+        const ApiService = {
+            async fetchNovelChapterStructure() {
+                const response = await fetch('/api/novel-chapter-structure');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            },
+
+            async fetchAllGraphs() {
+                const response = await fetch('/api/graphs');
+                return await response.json();
+            },
+
+            async fetchFilteredGraphs(novel, chapter) {
+                const response = await fetch(`/api/filtered-graphs?novel=${encodeURIComponent(novel)}&chapter=${encodeURIComponent(chapter)}`);
+                return await response.json();
+            },
+
+            async deleteGraph(cacheKey) {
+                const response = await fetch(`/api/graph/${encodeURIComponent(cacheKey)}`, {
+                    method: 'DELETE'
+                });
+                return await response.json();
+            }
+        };
+
+        // ==================== UI 渲染 ====================
+        const UI = {
+            showLoading(container, message = '正在加载...') {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 50px; width: 100%;">
+                        <div class="spinner"></div>
+                        <p style="margin-top: 10px; color: #cccccc;">${message}</p>
+                    </div>
+                `;
+            },
+
+            showError(container, message) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 50px; color: #dc3545;">
+                        <p>❌ ${message}</p>
+                    </div>
+                `;
+            },
+
+            showEmptyState(container, message = '请从左侧选择小说或章节查看可用图谱') {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 50px; color: #cccccc;">
+                        ${message}
+                    </div>
+                `;
+            },
+
+            renderTree(structure) {
+                const container = DOMElements.treeContainer;
+                if (!container) return;
+
+                const novels = Object.keys(structure).sort();
+                let html = '<ul class="tree-node">';
+
+                novels.forEach(novel => {
+                    const chapters = structure[novel] || [];
+                    html += `
+                        <li class="tree-item tree-folder" data-type="novel" data-name="${novel}">
+                            <div class="tree-item-content" style="display: flex; align-items: center;">
+                                <span class="tree-toggle">▶</span>
+                                <span class="tree-label" style="margin-left: 5px;">${novel}</span>
+                            </div>
+                            <ul class="tree-children">
+                                ${chapters.map(chapter => `
+                                    <li class="tree-item" data-type="chapter" data-novel="${novel}" data-name="${chapter}">
+                                        <div class="tree-item-content" style="display: flex; align-items: center; padding-left: 20px;">
+                                            <span class="tree-toggle" style="opacity: 0;">●</span>
+                                            <span class="tree-label" style="margin-left: 5px;">${chapter}</span>
+                                        </div>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </li>
+                    `;
+                });
+
+                html += '</ul>';
+                container.innerHTML = html;
+            },
+
+            renderGraphCards(graphs, title) {
+                const container = DOMElements.cardsContainer;
+                if (!container) return;
+
+                // 更新标题
+                if (DOMElements.cardsTitle && title) {
+                    DOMElements.cardsTitle.textContent = `📋 ${title} (${Object.keys(graphs).length} 个)`;
+                }
+
+                if (Object.keys(graphs).length === 0) {
+                    this.showEmptyState(container, '暂无可用图谱');
+                    return;
+                }
+
+                // 按创建时间排序
+                const sortedKeys = Object.keys(graphs).sort((a, b) => {
+                    const timeA = graphs[a].metadata?.created_at || '';
+                    const timeB = graphs[b].metadata?.created_at || '';
+                    return timeB.localeCompare(timeA);
+                });
+
+                const cardsHtml = sortedKeys.map(cacheKey => {
+                    const graph = graphs[cacheKey];
+                    const filters = graph.filters || {};
+                    const metadata = graph.metadata || {};
+
+                    return `
+                        <div class="graph-card" data-cache-key="${cacheKey}">
+                            <div class="card-header">
+                                <h4>${filters.chapter_name || '未知'}</h4>
+                                <span class="card-type">${filters.schema_name || '未知模式'}</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">模型:</span>
+                                        <span class="meta-value">${filters.model_name || '未知模型'}</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">块大小:</span>
+                                        <span class="meta-value">${filters.chunk_size || '未知'}</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">重叠:</span>
+                                        <span class="meta-value">${filters.chunk_overlap || '未知'}</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">上下文:</span>
+                                        <span class="meta-value">${filters.num_ctx || '未知'}</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">创建时间:</span>
+                                        <span class="meta-value">${metadata.created_at ? new Date(metadata.created_at).toLocaleString() : '未知'}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary btn-sm card-action-btn select-btn" data-action="select" data-cache-key="${cacheKey}">🎯 选择</button>
+                                <button class="btn btn-success btn-sm card-action-btn view-btn" data-action="view" data-cache-key="${cacheKey}">👁️ 查看</button>
+                                <button class="btn btn-danger btn-sm card-action-btn delete-btn" data-action="delete" data-cache-key="${cacheKey}">🗑️ 删除</button>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                container.innerHTML = `<div class="cards-grid">${cardsHtml}</div>`;
+            }
+        };
+
+        // ==================== 事件处理器 ====================
+        const EventHandlers = {
+            // 树节点展开/折叠
+            handleTreeToggle(e) {
+                const toggle = e.target.closest('.tree-toggle');
+                if (!toggle || toggle.style.opacity === '0') return;
+
+                const parentLi = toggle.closest('li');
+                const childrenUl = parentLi.querySelector('.tree-children');
+
+                if (childrenUl) {
+                    const isExpanded = childrenUl.classList.contains('expanded');
+                    childrenUl.classList.toggle('expanded', !isExpanded);
+                    toggle.textContent = isExpanded ? '▶' : '▼';
+                }
+            },
+
+            // 树节点选择
+            handleTreeSelect(e) {
+                const label = e.target.closest('.tree-label');
+                if (!label) return;
+
+                const treeItem = label.closest('.tree-item');
+                if (!treeItem) return;
+
+                // 清除之前选中状态
+                document.querySelectorAll('.tree-item.selected').forEach(item => {
+                    item.classList.remove('selected');
+                });
+
+                // 设置当前选中
+                treeItem.classList.add('selected');
+                AppState.selectedTreeNode = treeItem;
+
+                // 处理选择逻辑
+                const type = treeItem.getAttribute('data-type');
+                const novel = treeItem.getAttribute('data-novel');
+                const name = treeItem.getAttribute('data-name');
+
+                if (type === 'novel') {
+                    this.loadNovelGraphs(name);
+                } else if (type === 'chapter') {
+                    this.loadChapterGraphs(novel, name);
+                }
+            },
+
+            // 加载小说图谱
+            async loadNovelGraphs(novel) {
+                UI.showLoading(DOMElements.cardsContainer, `正在加载 ${novel} 的图谱...`);
+
+                try {
+                    const novelGraphs = {};
+                    for (const cacheKey in AppState.allGraphs) {
+                        const graph = AppState.allGraphs[cacheKey];
+                        const filters = graph.filters || {};
+                        if (filters.novel_name === novel) {
+                            novelGraphs[cacheKey] = graph;
+                        }
+                    }
+                    UI.renderGraphCards(novelGraphs, `${novel} 的所有图谱`);
+                } catch (error) {
+                    UI.showError(DOMElements.cardsContainer, `加载失败: ${error.message}`);
+                }
+            },
+
+            // 加载章节图谱
+            async loadChapterGraphs(novel, chapter) {
+                UI.showLoading(DOMElements.cardsContainer, '正在加载图谱...');
+
+                try {
+                    const data = await ApiService.fetchFilteredGraphs(novel, chapter);
+                    UI.renderGraphCards(data, `${novel} - ${chapter} 的图谱`);
+                } catch (error) {
+                    UI.showError(DOMElements.cardsContainer, `加载失败: ${error.message}`);
+                }
+            },
+
+            // 卡片操作处理
+            handleCardAction(e) {
+                const button = e.target.closest('[data-action]');
+                if (!button) return;
+
+                const action = button.getAttribute('data-action');
+                const cacheKey = button.getAttribute('data-cache-key');
+
+                switch (action) {
+                    case 'select':
+                        this.selectGraph(cacheKey);
+                        break;
+                    case 'view':
+                        this.viewGraphDetails(cacheKey);
+                        break;
+                    case 'delete':
+                        this.deleteGraph(cacheKey, button);
+                        break;
+                }
+            },
+
+            // 选择图谱
+            selectGraph(cacheKey) {
+                window.location.href = `/?cache_key=${encodeURIComponent(cacheKey)}`;
+            },
+
+            // 查看图谱详情
+            viewGraphDetails(cacheKey) {
+                window.open(`/text?cache_key=${encodeURIComponent(cacheKey)}`, '_blank');
+            },
+
+            // 删除图谱
+            async deleteGraph(cacheKey, button) {
+                if (!confirm("确定要删除这个图谱吗？此操作不可恢复！")) return;
+
+                try {
+                    const result = await ApiService.deleteGraph(cacheKey);
+                    if (result.success) {
+                        const card = button.closest('.graph-card');
+                        if (card) {
+                            card.remove();
+                            // 更新标题计数
+                            const titleElement = DOMElements.cardsTitle;
+                            if (titleElement) {
+                                const text = titleElement.textContent;
+                                const match = text.match(/\((\d+) 个\)/);
+                                if (match) {
+                                    const count = parseInt(match[1]) - 1;
+                                    titleElement.textContent = text.replace(/\(\d+ 个\)/, `(${count} 个)`);
+                                }
+                            }
+                        }
+                    } else {
+                        alert(`删除失败：${result.error || "未知错误"}`);
+                    }
+                } catch (error) {
+                    console.error("删除请求出错:", error);
+                    alert("删除过程中发生错误");
+                }
+            },
+
+            // 刷新按钮
+            handleRefresh() {
+                this.loadNovelChapterStructure();
+                this.loadAllGraphs();
+
+                // 重置UI状态
+                UI.showEmptyState(DOMElements.cardsContainer);
+                if (DOMElements.cardsTitle) {
+                    DOMElements.cardsTitle.textContent = '📋 可用图谱';
+                }
+
+                // 清除选中状态
+                document.querySelectorAll('.tree-item.selected').forEach(item => {
+                    item.classList.remove('selected');
+                });
+
+                AppState.selectedCacheKey = null;
+                AppState.selectedTreeNode = null;
+            },
+
+            // 加载小说章节结构
+            async loadNovelChapterStructure() {
+                try {
+                    const data = await ApiService.fetchNovelChapterStructure();
+                    AppState.novelChapterStructure = data;
+                    UI.renderTree(data);
+                } catch (error) {
+                    UI.showError(DOMElements.treeContainer, `加载失败: ${error.message}`);
+                }
+            },
+
+            // 加载所有图谱
+            async loadAllGraphs() {
+                try {
+                    AppState.allGraphs = await ApiService.fetchAllGraphs();
+                } catch (error) {
+                    console.error('加载所有图谱数据失败:', error);
+                }
+            }
+        };
+
+        // ==================== 事件绑定 ====================
+        const EventBindings = {
+            bindTreeEvents() {
+                const container = DOMElements.treeContainer;
+                if (!container) return;
+
+                container.addEventListener('click', (e) => {
+                    if (e.target.closest('.tree-toggle')) {
+                        EventHandlers.handleTreeToggle(e);
+                    } else if (e.target.closest('.tree-label')) {
+                        EventHandlers.handleTreeSelect(e);
+                    }
+                });
+            },
+
+            bindCardEvents() {
+                DOMElements.cardsContainer.addEventListener('click', (e) => {
+                    if (e.target.closest('[data-action]')) {
+                        EventHandlers.handleCardAction(e);
+                    }
+                });
+            },
+
+            bindRefreshEvent() {
+                if (DOMElements.refreshBtn) {
+                    DOMElements.refreshBtn.addEventListener('click', () => {
+                        EventHandlers.handleRefresh();
+                    });
+                }
+            },
+
+            init() {
+                this.bindTreeEvents();
+                this.bindCardEvents();
+                this.bindRefreshEvent();
+            }
+        };
+
+        // ==================== 应用初始化 ====================
+        const App = {
+            async init() {
+                console.log('=== 初始化应用 ===');
+
+                // 初始化DOM元素缓存
+                DOMElements.init();
+
+                // 初始化事件绑定
+                EventBindings.init();
+
+                // 加载初始数据
+                await Promise.allSettled([
+                    EventHandlers.loadNovelChapterStructure(),
+                    EventHandlers.loadAllGraphs()
+                ]);
+            }
+        };
+
+        // ==================== 启动应用 ====================
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", () => App.init());
+        } else {
+            App.init();
+        }
+    </script>
+</body>
+</html>

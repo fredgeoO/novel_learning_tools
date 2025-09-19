@@ -1,0 +1,934 @@
+{
+  "nodes": [
+    {
+      "id": "吕阳",
+      "type": "人物",
+      "properties": {
+        "name": "吕阳",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "玉素真",
+      "type": "人物",
+      "properties": {
+        "name": "玉素真",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "记名弟子",
+      "type": "人物",
+      "properties": {
+        "name": "记名弟子",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "黑衣道人",
+      "type": "人物",
+      "properties": {
+        "name": "黑衣道人",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "阴阳大乐赋",
+      "type": "功法",
+      "properties": {
+        "name": "阴阳大乐赋",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "百世书",
+      "type": "宝物",
+      "properties": {
+        "name": "百世书",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "初圣宗",
+      "type": "地点",
+      "properties": {
+        "name": "初圣宗",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "合欢殿",
+      "type": "地点",
+      "properties": {
+        "name": "合欢殿",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "修炼，还是不修炼，这是一个令人纠结的问题。",
+      "type": "事件",
+      "properties": {
+        "name": "修炼，还是不修炼，这是一个令人纠结的问题。",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "吕阳不纠结了",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳不纠结了",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "玉素真直接上手吕阳",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真直接上手吕阳",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "吕阳身体元气亏空，病入膏肓",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳身体元气亏空，病入膏肓",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "玉素真骂吕阳‘真是废物’",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真骂吕阳‘真是废物’",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "吕阳脸色一白",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳脸色一白",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "吕阳元气流入玉素真体内，身体干枯",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳元气流入玉素真体内，身体干枯",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "吕阳脑海闪过‘阴阳大乐赋’",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳脑海闪过‘阴阳大乐赋’",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "吕阳明悟合欢殿的考验",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳明悟合欢殿的考验",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "周围记名弟子走过来谄媚",
+      "type": "事件",
+      "properties": {
+        "name": "周围记名弟子走过来谄媚",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "记名弟子说‘恭喜玉师姐！’",
+      "type": "事件",
+      "properties": {
+        "name": "记名弟子说‘恭喜玉师姐！’",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "记名弟子说‘掠夺了这最后一人的元气，师姐应该能炼气了。’",
+      "type": "事件",
+      "properties": {
+        "name": "记名弟子说‘掠夺了这最后一人的元气，师姐应该能炼气了。’",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "记名弟子说‘一朝炼气，再非凡人！’",
+      "type": "事件",
+      "properties": {
+        "name": "记名弟子说‘一朝炼气，再非凡人！’",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "记名弟子说‘还请师姐以后多多照顾，我等愿意为师姐鞍前马后.....’",
+      "type": "事件",
+      "properties": {
+        "name": "记名弟子说‘还请师姐以后多多照顾，我等愿意为师姐鞍前马后.....’",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "吕阳笑了",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳笑了",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "吕阳说‘呵呵......’",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳说‘呵呵......’",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "吕阳说‘我是为师姐而笑的。’",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳说‘我是为师姐而笑的。’",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "吕阳说‘我本来还担心师姐的身体，不过现在看来是我杞人忧天了。’",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳说‘我本来还担心师姐的身体，不过现在看来是我杞人忧天了。’",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "吕阳说‘师弟我入门前身患恶疾，刚刚师姐上手太急，我还没来得及说。不过既然师姐即将炼气，想来区区小病，对师姐来说肯定没问题吧。’",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳说‘师弟我入门前身患恶疾，刚刚师姐上手太急，我还没来得及说。不过既然师姐即将炼气，想来区区小病，对师姐来说肯定没问题吧。’",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "玉素真一愣",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真一愣",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "玉素真‘........’",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真‘........’",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "气急败坏的玉素真把你打死了",
+      "type": "事件",
+      "properties": {
+        "name": "气急败坏的玉素真把你打死了",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "重开一世",
+      "type": "事件",
+      "properties": {
+        "name": "重开一世",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "吕阳回到初圣宗广场",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳回到初圣宗广场",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "吕阳发现自己又回到初圣宗广场",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳发现自己又回到初圣宗广场",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "吕阳感慨百世书是奇宝",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳感慨百世书是奇宝",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "吕阳低头看向百世书的选项",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳低头看向百世书的选项",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "炼气",
+      "type": "修为阶段",
+      "properties": {
+        "name": "炼气",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "吕阳睁开双眼，看着台上的黑衣道人",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳睁开双眼，看着台上的黑衣道人",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "广场",
+      "type": "地点",
+      "properties": {
+        "name": "广场",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "左道奇才",
+      "type": "天赋",
+      "properties": {
+        "name": "左道奇才",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "炼气境",
+      "type": "修为阶段",
+      "properties": {
+        "name": "炼气境",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "炼气一层",
+      "type": "修为阶段",
+      "properties": {
+        "name": "炼气一层",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "被叫到名字的人走到我面前",
+      "type": "事件",
+      "properties": {
+        "name": "被叫到名字的人走到我面前",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "吕阳睁开双眼",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳睁开双眼",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "吕阳感慨窃喜百世书是奇宝",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳感慨窃喜百世书是奇宝",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "吕阳低头看百世书选项",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳低头看百世书选项",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "吕阳跳过前三个选项选第四个",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳跳过前三个选项选第四个",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "结算前世经历",
+      "type": "事件",
+      "properties": {
+        "name": "结算前世经历",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "玉素真突破炼气境",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真突破炼气境",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "玉素真病重而亡",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真病重而亡",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "吕阳觉醒白色天赋左道奇才",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳觉醒白色天赋左道奇才",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "吕阳身体恢复",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳身体恢复",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "吕阳感悟《阴阳大乐赋》",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳感悟《阴阳大乐赋》",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "吕阳被分到合欢殿",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳被分到合欢殿",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "吕阳遇到玉素真",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳遇到玉素真",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "吕阳突破炼气",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳突破炼气",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "玉素真距离炼气只差一步",
+      "type": "事件",
+      "properties": {
+        "name": "玉素真距离炼气只差一步",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "吕阳成为炼气一层修士",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳成为炼气一层修士",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "刚刚的经历",
+      "type": "事件",
+      "properties": {
+        "name": "刚刚的经历",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "吕阳突破",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳突破",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "晋升正式弟子",
+      "type": "事件",
+      "properties": {
+        "name": "晋升正式弟子",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "上一世玉素真成功炼气",
+      "type": "事件",
+      "properties": {
+        "name": "上一世玉素真成功炼气",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "这一世玉素真反噬",
+      "type": "事件",
+      "properties": {
+        "name": "这一世玉素真反噬",
+        "sequence_number": 62
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "吕阳",
+      "target_id": "修炼，还是不修炼，这是一个令人纠结的问题。",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳不纠结了",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真直接上手吕阳",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳身体元气亏空，病入膏肓",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真骂吕阳‘真是废物’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳脸色一白",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳元气流入玉素真体内，身体干枯",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳脑海闪过‘阴阳大乐赋’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳明悟合欢殿的考验",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "周围记名弟子走过来谄媚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "记名弟子说‘恭喜玉师姐！’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "记名弟子说‘掠夺了这最后一人的元气，师姐应该能炼气了。’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "记名弟子说‘一朝炼气，再非凡人！’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "记名弟子说‘还请师姐以后多多照顾，我等愿意为师姐鞍前马后.....’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳笑了",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳说‘呵呵......’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳说‘我是为师姐而笑的。’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳说‘我本来还担心师姐的身体，不过现在看来是我杞人忧天了。’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳说‘师弟我入门前身患恶疾，刚刚师姐上手太急，我还没来得及说。不过既然师姐即将炼气，想来区区小病，对师姐来说肯定没问题吧。’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真一愣",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真‘........’",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "气急败坏的玉素真把你打死了",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "重开一世",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳回到初圣宗广场",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳发现自己又回到初圣宗广场",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳感慨百世书是奇宝",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳低头看向百世书的选项",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳",
+      "type": "掠夺",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "阴阳大乐赋",
+      "type": "关联",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "百世书",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "合欢殿",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "炼气",
+      "type": "达到",
+      "properties": {}
+    },
+    {
+      "source_id": "记名弟子",
+      "target_id": "玉素真",
+      "type": "关联",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳睁开双眼，看着台上的黑衣道人",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "黑衣道人",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "被叫到名字的人走到我面前",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳睁开双眼",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳看着黑衣道人",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳感慨窃喜百世书是奇宝",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳低头看百世书选项",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳跳过前三个选项选第四个",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "结算前世经历",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真突破炼气境",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真病重而亡",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳觉醒白色天赋左道奇才",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳身体恢复",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳感悟《阴阳大乐赋》",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳被分到合欢殿",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳遇到玉素真",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳遇到玉素真",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳突破炼气",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼气一层",
+      "type": "达到",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "玉素真距离炼气只差一步",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "炼气境",
+      "type": "达到",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳成为炼气一层修士",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "广场",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "阴阳大乐赋",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "左道奇才",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "刚刚的经历",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "吕阳突破",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "晋升正式弟子",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "玉素真",
+      "type": "关联",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "玉素真",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "合欢殿",
+      "type": "关联",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "炼气",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "上一世玉素真成功炼气",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "这一世玉素真反噬",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳",
+      "type": "关联",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼气",
+      "type": "达到",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳突破",
+      "target_id": "晋升正式弟子",
+      "type": "导致",
+      "properties": {}
+    }
+  ]
+}

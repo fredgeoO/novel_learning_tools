@@ -1,0 +1,507 @@
+{
+    "novel_id": "1031940621",
+    "bookname": "灵境行者",
+    "save_dir": "novels\\灵境行者",
+    "chapters": [
+        {
+            "title": "第一章 礼物",
+            "link": "https://www.qidian.com/chapter/1031940621/705235484/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章 失踪",
+            "link": "https://www.qidian.com/chapter/1031940621/705291131/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章 角色卡",
+            "link": "https://www.qidian.com/chapter/1031940621/705354488/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章 诡异降临",
+            "link": "https://www.qidian.com/chapter/1031940621/705653797/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章 古庙",
+            "link": "https://www.qidian.com/chapter/1031940621/705682729/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六章 山神庙的故事",
+            "link": "https://www.qidian.com/chapter/1031940621/705882070/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七章 回归",
+            "link": "https://www.qidian.com/chapter/1031940621/705893573/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八章 联络（加更）",
+            "link": "https://www.qidian.com/chapter/1031940621/706121263/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九章 灵境",
+            "link": "https://www.qidian.com/chapter/1031940621/706175480/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十章 s级试炼灵境",
+            "link": "https://www.qidian.com/chapter/1031940621/706227598/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十一章 BUG级灵境",
+            "link": "https://www.qidian.com/chapter/1031940621/706375837/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十二章 佘灵隧道详细资料",
+            "link": "https://www.qidian.com/chapter/1031940621/706411932/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十三章 再入山神庙",
+            "link": "https://www.qidian.com/chapter/1031940621/706465397/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十四章 探索东院",
+            "link": "https://www.qidian.com/chapter/1031940621/706568521/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十五章 红舞鞋",
+            "link": "https://www.qidian.com/chapter/1031940621/706611936/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十六章 未曾探索之地",
+            "link": "https://www.qidian.com/chapter/1031940621/706631843/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十七章 诡异之源",
+            "link": "https://www.qidian.com/chapter/1031940621/706741618/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十八章 通关s级试炼任务",
+            "link": "https://www.qidian.com/chapter/1031940621/706747416/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十九章 通话",
+            "link": "https://www.qidian.com/chapter/1031940621/706896502/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十章 以德服人",
+            "link": "https://www.qidian.com/chapter/1031940621/706996721/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十一章 不同",
+            "link": "https://www.qidian.com/chapter/1031940621/707063034/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十二章 夜游神会议",
+            "link": "https://www.qidian.com/chapter/1031940621/707079949/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十三章 凶杀案",
+            "link": "https://www.qidian.com/chapter/1031940621/707209099/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十四章 凶手",
+            "link": "https://www.qidian.com/chapter/1031940621/707315377/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十五章 锁定凶手身份",
+            "link": "https://www.qidian.com/chapter/1031940621/707362873/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十六章 潜逃",
+            "link": "https://www.qidian.com/chapter/1031940621/707434071/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十七章 人生百态",
+            "link": "https://www.qidian.com/chapter/1031940621/707447021/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十八章 表姐",
+            "link": "https://www.qidian.com/chapter/1031940621/707538303/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十九章 初战",
+            "link": "https://www.qidian.com/chapter/1031940621/707572292/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十章 斩杀",
+            "link": "https://www.qidian.com/chapter/1031940621/707644456/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十一章 掩盖",
+            "link": "https://www.qidian.com/chapter/1031940621/707676448/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十二章 大事件",
+            "link": "https://www.qidian.com/chapter/1031940621/707799184/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十三章 堕落圣杯",
+            "link": "https://www.qidian.com/chapter/1031940621/707860775/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十四章 意料之外的“客人”",
+            "link": "https://www.qidian.com/chapter/1031940621/707950445/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十五章 婴灵",
+            "link": "https://www.qidian.com/chapter/1031940621/707977453/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十六章 面谈",
+            "link": "https://www.qidian.com/chapter/1031940621/708091810/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十七章 魔君传人",
+            "link": "https://www.qidian.com/chapter/1031940621/708136188/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十八章 调查",
+            "link": "https://www.qidian.com/chapter/1031940621/708210787/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十九章 他",
+            "link": "https://www.qidian.com/chapter/1031940621/708243814/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十章 巫蛊师",
+            "link": "https://www.qidian.com/chapter/1031940621/708308038/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十一章 祸水东引",
+            "link": "https://www.qidian.com/chapter/1031940621/708329397/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十二章 三道山娘娘",
+            "link": "https://www.qidian.com/chapter/1031940621/708339011/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十三章 变故和旧疾",
+            "link": "https://www.qidian.com/chapter/1031940621/708478506/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十四章 范围扩大",
+            "link": "https://www.qidian.com/chapter/1031940621/708478793/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十五章 兵哥的线索",
+            "link": "https://www.qidian.com/chapter/1031940621/708623471/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十六章 第二次灵境开启",
+            "link": "https://www.qidian.com/chapter/1031940621/708623492/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十七章 金水游乐园",
+            "link": "https://www.qidian.com/chapter/1031940621/708763298/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十八章 S级难度",
+            "link": "https://www.qidian.com/chapter/1031940621/708855811/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十九章 绝境？",
+            "link": "https://www.qidian.com/chapter/1031940621/708912751/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十章 队长的权力（第二更）",
+            "link": "https://www.qidian.com/chapter/1031940621/708912917/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十一章 地下停车场",
+            "link": "https://www.qidian.com/chapter/1031940621/709065674/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十二章 所有人都要死",
+            "link": "https://www.qidian.com/chapter/1031940621/709140257/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十三章 破局之法",
+            "link": "https://www.qidian.com/chapter/1031940621/709179020/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十四章 终于死了",
+            "link": "https://www.qidian.com/chapter/1031940621/709250885/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十五章（感谢“_white_”的白银盟）",
+            "link": "https://www.qidian.com/chapter/1031940621/709294002/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十六章 婚帖",
+            "link": "https://www.qidian.com/chapter/1031940621/709407672/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十七章 聘礼",
+            "link": "https://www.qidian.com/chapter/1031940621/709436892/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十八章 新娘",
+            "link": "https://www.qidian.com/chapter/1031940621/709554388/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十九章 侦探推理馆（完）",
+            "link": "https://www.qidian.com/chapter/1031940621/709623082/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十章 回归",
+            "link": "https://www.qidian.com/chapter/1031940621/709759885/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十一章 汇报",
+            "link": "https://www.qidian.com/chapter/1031940621/709885264/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十二章 来自过去的谈话",
+            "link": "https://www.qidian.com/chapter/1031940621/709929313/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十三章 错综复杂的内幕",
+            "link": "https://www.qidian.com/chapter/1031940621/710091305/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十四章 谢家千金",
+            "link": "https://www.qidian.com/chapter/1031940621/710128893/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十五章 灵境世家",
+            "link": "https://www.qidian.com/chapter/1031940621/710192372/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十六章 前往目的地",
+            "link": "https://www.qidian.com/chapter/1031940621/710223672/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十七章 救赎",
+            "link": "https://www.qidian.com/chapter/1031940621/710345159/",
+            "status": "downloaded"
+        },
+        {
+            "title": "请半天假",
+            "link": "https://www.qidian.com/chapter/1031940621/710371343/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十八章 无痕大师的资料",
+            "link": "https://www.qidian.com/chapter/1031940621/710426362/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十九章 冲突",
+            "link": "https://www.qidian.com/chapter/1031940621/710458092/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十章 夏侯父子",
+            "link": "https://www.qidian.com/chapter/1031940621/710483453/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十一章 没有下一次",
+            "link": "https://www.qidian.com/chapter/1031940621/710623786/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十二章 谋划",
+            "link": "https://www.qidian.com/chapter/1031940621/710684654/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十三章 围捕",
+            "link": "https://www.qidian.com/chapter/1031940621/710825639/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十四章 调虎离山",
+            "link": "https://www.qidian.com/chapter/1031940621/710859674/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十五章 杀敌",
+            "link": "https://www.qidian.com/chapter/1031940621/710974808/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十六章 杀招",
+            "link": "https://www.qidian.com/chapter/1031940621/711012874/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十七章 终结",
+            "link": "https://www.qidian.com/chapter/1031940621/711146336/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十八章 收获",
+            "link": "https://www.qidian.com/chapter/1031940621/711177993/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十九章 身份曝光？",
+            "link": "https://www.qidian.com/chapter/1031940621/711190623/",
+            "status": "downloaded"
+        },
+        {
+            "title": "上架感言",
+            "link": "https://www.qidian.com/chapter/1031940621/711261121/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【灵境行者动漫原著小说剧情抢先看】",
+            "link": "https://m.qidian.com/chapter/1031940621/705235484/?from=serp&strategy=ljxz01",
+            "status": "downloaded"
+        },
+        {
+            "title": "卷中感言，及黄金盟感谢——宅菜大佬牛逼！",
+            "link": "https://www.qidian.com/chapter/1031940621/713171483/",
+            "status": "downloaded"
+        },
+        {
+            "title": "黄金盟感谢单章——感谢宅菜大佬的打赏。",
+            "link": "https://www.qidian.com/chapter/1031940621/714878695/",
+            "status": "downloaded"
+        },
+        {
+            "title": "六月争榜",
+            "link": "https://www.qidian.com/chapter/1031940621/716075258/",
+            "status": "downloaded"
+        },
+        {
+            "title": "耳根新书推荐",
+            "link": "https://www.qidian.com/chapter/1031940621/717109636/",
+            "status": "downloaded"
+        },
+        {
+            "title": "亿盟感谢单章",
+            "link": "https://www.qidian.com/chapter/1031940621/717205559/",
+            "status": "downloaded"
+        },
+        {
+            "title": "章推！《国民法医》",
+            "link": "https://www.qidian.com/chapter/1031940621/719385113/",
+            "status": "downloaded"
+        },
+        {
+            "title": "bug修改",
+            "link": "https://www.qidian.com/chapter/1031940621/720678609/",
+            "status": "downloaded"
+        },
+        {
+            "title": "说一下颈椎问题",
+            "link": "https://www.qidian.com/chapter/1031940621/723142093/",
+            "status": "downloaded"
+        },
+        {
+            "title": "请个假，明天补",
+            "link": "https://www.qidian.com/chapter/1031940621/723488280/",
+            "status": "downloaded"
+        },
+        {
+            "title": "卷尾总结+成绩汇报",
+            "link": "https://www.qidian.com/chapter/1031940621/726532674/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【灵境行者动漫原著小说剧情抢先看】",
+            "link": "https://m.qidian.com/chapter/1031940621/705235484/?from=serp&strategy=ljxz01",
+            "status": "downloaded"
+        },
+        {
+            "title": "请假做大纲",
+            "link": "https://www.qidian.com/chapter/1031940621/727247317/",
+            "status": "downloaded"
+        },
+        {
+            "title": "开单章倾诉一下",
+            "link": "https://www.qidian.com/chapter/1031940621/739805580/",
+            "status": "downloaded"
+        },
+        {
+            "title": "新年写给书友的一封信",
+            "link": "https://www.qidian.com/chapter/1031940621/741918982/",
+            "status": "downloaded"
+        },
+        {
+            "title": "延迟一下更新",
+            "link": "https://www.qidian.com/chapter/1031940621/746501009/",
+            "status": "downloaded"
+        },
+        {
+            "title": "卷尾总结+请假",
+            "link": "https://www.qidian.com/chapter/1031940621/750113722/",
+            "status": "downloaded"
+        },
+        {
+            "title": "【灵境行者动漫原著小说剧情抢先看】",
+            "link": "https://m.qidian.com/chapter/1031940621/705235484/?from=serp&strategy=ljxz01",
+            "status": "downloaded"
+        },
+        {
+            "title": "推书：《星河之上》",
+            "link": "https://www.qidian.com/chapter/1031940621/751401237/",
+            "status": "downloaded"
+        }
+    ]
+}

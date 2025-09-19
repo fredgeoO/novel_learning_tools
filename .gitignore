@@ -2,3 +2,4 @@
 /venv/
 /db/
 *.error_navigation
+/cache/*.*

@@ -1,0 +1,507 @@
+{
+    "novel_id": "1016560323",
+    "bookname": "魔临",
+    "save_dir": "novels\\魔临",
+    "chapters": [
+        {
+            "title": "第一章 欢迎",
+            "link": "https://www.qidian.com/chapter/1016560323/498444104/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章 结束与开始",
+            "link": "https://www.qidian.com/chapter/1016560323/498455190/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章 主上，您醒了？",
+            "link": "https://www.qidian.com/chapter/1016560323/498473534/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章 七魔王！",
+            "link": "https://www.qidian.com/chapter/1016560323/498474256/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章 草台班子",
+            "link": "https://www.qidian.com/chapter/1016560323/498474749/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六章 血族",
+            "link": "https://www.qidian.com/chapter/1016560323/498475435/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七章 我瞎啊",
+            "link": "https://www.qidian.com/chapter/1016560323/498731591/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八章 客栈的名字",
+            "link": "https://www.qidian.com/chapter/1016560323/498734936/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九章 魔人跳",
+            "link": "https://www.qidian.com/chapter/1016560323/499338200/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十章 血族觉醒",
+            "link": "https://www.qidian.com/chapter/1016560323/499394164/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十一章 渴望",
+            "link": "https://www.qidian.com/chapter/1016560323/500078309/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十二章 你渴望，力量么？",
+            "link": "https://www.qidian.com/chapter/1016560323/500099901/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十三章 舔狗，舔到最后",
+            "link": "https://www.qidian.com/chapter/1016560323/500274666/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十四章 出事了",
+            "link": "https://www.qidian.com/chapter/1016560323/500362964/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十五章 征丁",
+            "link": "https://www.qidian.com/chapter/1016560323/500393670/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十六章 诡异",
+            "link": "https://www.qidian.com/chapter/1016560323/500496655/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十七章 味道",
+            "link": "https://www.qidian.com/chapter/1016560323/500526184/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十八章 逆风飞翔",
+            "link": "https://www.qidian.com/chapter/1016560323/500570697/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第十九章 争功",
+            "link": "https://www.qidian.com/chapter/1016560323/500679741/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十章 升官！",
+            "link": "https://www.qidian.com/chapter/1016560323/500681374/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十一章 突如其来的妖",
+            "link": "https://www.qidian.com/chapter/1016560323/500763166/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十二章 属于吸血鬼的雨天",
+            "link": "https://www.qidian.com/chapter/1016560323/500764962/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十三章 好剑！",
+            "link": "https://www.qidian.com/chapter/1016560323/501012887/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十四章 原罪",
+            "link": "https://www.qidian.com/chapter/1016560323/501018519/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十五章 四娘",
+            "link": "https://www.qidian.com/chapter/1016560323/501226717/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十六章 来亲戚了",
+            "link": "https://www.qidian.com/chapter/1016560323/501239948/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十七章 缘，妙不可言",
+            "link": "https://www.qidian.com/chapter/1016560323/501484935/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十八章 回城！",
+            "link": "https://www.qidian.com/chapter/1016560323/501562074/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二十九章 何处觅",
+            "link": "https://www.qidian.com/chapter/1016560323/501587471/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十章 职业经理人",
+            "link": "https://www.qidian.com/chapter/1016560323/501640185/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十一章 最怕，空气忽然安静",
+            "link": "https://www.qidian.com/chapter/1016560323/501693873/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十二章 砍了！",
+            "link": "https://www.qidian.com/chapter/1016560323/501734011/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十三章 升级方式！",
+            "link": "https://www.qidian.com/chapter/1016560323/501803755/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十四章 抓起来",
+            "link": "https://www.qidian.com/chapter/1016560323/501840305/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十五章 是个狼人",
+            "link": "https://www.qidian.com/chapter/1016560323/501928998/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十六章 北封刘氏！",
+            "link": "https://www.qidian.com/chapter/1016560323/501993628/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十七章 老王的请求",
+            "link": "https://www.qidian.com/chapter/1016560323/502047242/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十八章 短命",
+            "link": "https://www.qidian.com/chapter/1016560323/502134664/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三十九章 谈判专家：瞎子",
+            "link": "https://www.qidian.com/chapter/1016560323/502141714/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十章 大体老师：阿铭",
+            "link": "https://www.qidian.com/chapter/1016560323/502209559/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十一章 天才",
+            "link": "https://www.qidian.com/chapter/1016560323/502218425/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十二章 集体进阶！",
+            "link": "https://www.qidian.com/chapter/1016560323/502312881/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十三章 魔王版的快速补习班",
+            "link": "https://www.qidian.com/chapter/1016560323/502338308/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十四章 主上，天赋异禀！",
+            "link": "https://www.qidian.com/chapter/1016560323/502431760/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十五章 亲儿砸",
+            "link": "https://www.qidian.com/chapter/1016560323/502463867/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十六章 当爹",
+            "link": "https://www.qidian.com/chapter/1016560323/502504644/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十七章 拆线",
+            "link": "https://www.qidian.com/chapter/1016560323/502551244/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十八章 一节更比六节强",
+            "link": "https://www.qidian.com/chapter/1016560323/502551999/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四十九章 杀贼！",
+            "link": "https://www.qidian.com/chapter/1016560323/502573922/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十章 魔丸出！",
+            "link": "https://www.qidian.com/chapter/1016560323/502814454/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十一章 后妈难当",
+            "link": "https://www.qidian.com/chapter/1016560323/502996169/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十二章 深海",
+            "link": "https://www.qidian.com/chapter/1016560323/503198106/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十三章 难以置信的……进阶！",
+            "link": "https://www.qidian.com/chapter/1016560323/503201111/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十四章 西方的钢琴与东方的二胡",
+            "link": "https://www.qidian.com/chapter/1016560323/503388258/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十五章 安能辨我是雄雌？",
+            "link": "https://www.qidian.com/chapter/1016560323/503401847/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十六章 薛三与狗",
+            "link": "https://www.qidian.com/chapter/1016560323/503760502/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十七章 收狗丁豪",
+            "link": "https://www.qidian.com/chapter/1016560323/503774091/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十八章 全场最亮的崽",
+            "link": "https://www.qidian.com/chapter/1016560323/503931163/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五十九章 真脏",
+            "link": "https://www.qidian.com/chapter/1016560323/503941622/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十章 灭门",
+            "link": "https://www.qidian.com/chapter/1016560323/504022016/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十一章 肉食者鄙",
+            "link": "https://www.qidian.com/chapter/1016560323/504031666/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十二章 是个高手",
+            "link": "https://www.qidian.com/chapter/1016560323/504126061/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十三章 真正的……强者",
+            "link": "https://www.qidian.com/chapter/1016560323/504155877/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十四章 奠",
+            "link": "https://www.qidian.com/chapter/1016560323/504246309/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十五章 讨个说法！",
+            "link": "https://www.qidian.com/chapter/1016560323/504316713/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十六章 某本荒漠一野蛮！",
+            "link": "https://www.qidian.com/chapter/1016560323/504420581/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十七章 进击的郑校尉（大章）",
+            "link": "https://www.qidian.com/chapter/1016560323/504451626/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十八章 死了啊",
+            "link": "https://www.qidian.com/chapter/1016560323/504557705/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第六十九章 请喝茶",
+            "link": "https://www.qidian.com/chapter/1016560323/504648334/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十章 奸佞",
+            "link": "https://www.qidian.com/chapter/1016560323/504861570/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十一章 暗门相遇",
+            "link": "https://www.qidian.com/chapter/1016560323/504884875/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十二章 尸变！（上）",
+            "link": "https://www.qidian.com/chapter/1016560323/504946083/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十三章 尸变！（下）",
+            "link": "https://www.qidian.com/chapter/1016560323/505020503/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十四章 大乱炖",
+            "link": "https://www.qidian.com/chapter/1016560323/505077425/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十五章 召唤，成功！",
+            "link": "https://www.qidian.com/chapter/1016560323/505119254/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十六章 真不亏！",
+            "link": "https://www.qidian.com/chapter/1016560323/505415120/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十七章 孤，全力资助你！",
+            "link": "https://www.qidian.com/chapter/1016560323/505487145/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十八章 天上掉下个林妹妹",
+            "link": "https://www.qidian.com/chapter/1016560323/505651165/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第七十九章 大孝子",
+            "link": "https://www.qidian.com/chapter/1016560323/505713662/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十章 罪己诏",
+            "link": "https://www.qidian.com/chapter/1016560323/505879040/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十一章 我家有兵三十万",
+            "link": "https://www.qidian.com/chapter/1016560323/505919442/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十二章 兵马招募归来",
+            "link": "https://www.qidian.com/chapter/1016560323/506042979/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十三章 魔窟晚宴",
+            "link": "https://www.qidian.com/chapter/1016560323/506111223/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十四章 南望王师又一年",
+            "link": "https://www.qidian.com/chapter/1016560323/506182526/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十五章 灵堂",
+            "link": "https://www.qidian.com/chapter/1016560323/506232950/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十六章 郑氏家风",
+            "link": "https://www.qidian.com/chapter/1016560323/506297597/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十七章 靖南侯",
+            "link": "https://www.qidian.com/chapter/1016560323/506318805/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十八章 不咬人的狗",
+            "link": "https://www.qidian.com/chapter/1016560323/506356679/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第八十九章 仗义死节，就在今日",
+            "link": "https://www.qidian.com/chapter/1016560323/506440983/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十章 大乾，我来了",
+            "link": "https://www.qidian.com/chapter/1016560323/506485814/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十一章 第一枪！",
+            "link": "https://www.qidian.com/chapter/1016560323/506574850/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十二章 狼烟！",
+            "link": "https://www.qidian.com/chapter/1016560323/506612162/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十三章 乌拉！",
+            "link": "https://www.qidian.com/chapter/1016560323/506680714/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十四章 破城！",
+            "link": "https://www.qidian.com/chapter/1016560323/506735147/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十五章 收队！",
+            "link": "https://www.qidian.com/chapter/1016560323/506807622/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十六章 虎父无犬子",
+            "link": "https://www.qidian.com/chapter/1016560323/506852319/",
+            "status": "downloaded"
+        },
+        {
+            "title": "今晚更新会晚一些",
+            "link": "https://www.qidian.com/chapter/1016560323/507058161/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十七章 相映红",
+            "link": "https://www.qidian.com/chapter/1016560323/507088494/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十八章 谬赞",
+            "link": "https://www.qidian.com/chapter/1016560323/507120873/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第九十九章 异变！",
+            "link": "https://www.qidian.com/chapter/1016560323/507129762/",
+            "status": "downloaded"
+        }
+    ]
+}

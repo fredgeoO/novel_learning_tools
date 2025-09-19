@@ -1,0 +1,3284 @@
+{
+  "nodes": [
+    {
+      "id": "陆俭",
+      "type": "人物",
+      "properties": {
+        "name": "陆俭",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "陆勤",
+      "type": "人物",
+      "properties": {
+        "name": "陆勤",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "菜的价值",
+      "type": "事件",
+      "properties": {
+        "name": "菜的价值",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "无田可耕者",
+      "type": "事件",
+      "properties": {
+        "name": "无田可耕者",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "墓碑",
+      "type": "物件",
+      "properties": {
+        "name": "墓碑",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "书房",
+      "type": "物件",
+      "properties": {
+        "name": "书房",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "供桌",
+      "type": "物件",
+      "properties": {
+        "name": "供桌",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "春萝卜",
+      "type": "物件",
+      "properties": {
+        "name": "春萝卜",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "两斗米",
+      "type": "物件",
+      "properties": {
+        "name": "两斗米",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "打短工",
+      "type": "事件",
+      "properties": {
+        "name": "打短工",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "名字被雨水洗刷干净",
+      "type": "事件",
+      "properties": {
+        "name": "名字被雨水洗刷干净",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "三分大小的菜地",
+      "type": "物件",
+      "properties": {
+        "name": "三分大小的菜地",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "彭信",
+      "type": "人物",
+      "properties": {
+        "name": "彭信",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "给彭刚磕头",
+      "type": "事件",
+      "properties": {
+        "name": "给彭刚磕头",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "六升米",
+      "type": "物件",
+      "properties": {
+        "name": "六升米",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "陆家兄弟",
+      "type": "人物",
+      "properties": {
+        "name": "陆家兄弟",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "粮仓",
+      "type": "物件",
+      "properties": {
+        "name": "粮仓",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "送菠菜和春萝卜",
+      "type": "事件",
+      "properties": {
+        "name": "送菠菜和春萝卜",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "为陆俭写墓碑",
+      "type": "事件",
+      "properties": {
+        "name": "为陆俭写墓碑",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "后堂",
+      "type": "地点",
+      "properties": {
+        "name": "后堂",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "奇石墟",
+      "type": "地点",
+      "properties": {
+        "name": "奇石墟",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "在私塾外旁听",
+      "type": "事件",
+      "properties": {
+        "name": "在私塾外旁听",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "饿死",
+      "type": "事件",
+      "properties": {
+        "name": "饿死",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "打杂乞讨",
+      "type": "事件",
+      "properties": {
+        "name": "打杂乞讨",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "二楼",
+      "type": "地点",
+      "properties": {
+        "name": "二楼",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "陆谦",
+      "type": "人物",
+      "properties": {
+        "name": "陆谦",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "给陆勤、陆谦起名字",
+      "type": "事件",
+      "properties": {
+        "name": "给陆勤、陆谦起名字",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "粮仓",
+      "type": "地点",
+      "properties": {
+        "name": "粮仓",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "取米",
+      "type": "事件",
+      "properties": {
+        "name": "取米",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "麻袋",
+      "type": "物件",
+      "properties": {
+        "name": "麻袋",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "菠菜",
+      "type": "物件",
+      "properties": {
+        "name": "菠菜",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "三年前或四年前的冬天",
+      "type": "时间",
+      "properties": {
+        "name": "三年前或四年前的冬天",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "命根",
+      "type": "物件",
+      "properties": {
+        "name": "命根",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "不欠满清朝廷的赋税",
+      "type": "事件",
+      "properties": {
+        "name": "不欠满清朝廷的赋税",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "十七亩水田",
+      "type": "物件",
+      "properties": {
+        "name": "十七亩水田",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "地上",
+      "type": "地点",
+      "properties": {
+        "name": "地上",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "木板",
+      "type": "物件",
+      "properties": {
+        "name": "木板",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "院门",
+      "type": "物件",
+      "properties": {
+        "name": "院门",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "母猪",
+      "type": "物件",
+      "properties": {
+        "name": "母猪",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "集中田产",
+      "type": "物件",
+      "properties": {
+        "name": "集中田产",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "中等水田",
+      "type": "物件",
+      "properties": {
+        "name": "中等水田",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "钥匙",
+      "type": "物件",
+      "properties": {
+        "name": "钥匙",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "两尾鱼",
+      "type": "物件",
+      "properties": {
+        "name": "两尾鱼",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "大牲口",
+      "type": "物件",
+      "properties": {
+        "name": "大牲口",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "家底",
+      "type": "物件",
+      "properties": {
+        "name": "家底",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "看病驱魔",
+      "type": "事件",
+      "properties": {
+        "name": "看病驱魔",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "余银",
+      "type": "物件",
+      "properties": {
+        "name": "余银",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "糊粥",
+      "type": "物件",
+      "properties": {
+        "name": "糊粥",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "库房",
+      "type": "地点",
+      "properties": {
+        "name": "库房",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "最远一处旱坡地",
+      "type": "物件",
+      "properties": {
+        "name": "最远一处旱坡地",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "水牛",
+      "type": "物件",
+      "properties": {
+        "name": "水牛",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "定钱",
+      "type": "物件",
+      "properties": {
+        "name": "定钱",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "四两",
+      "type": "物件",
+      "properties": {
+        "name": "四两",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "六七十两",
+      "type": "物件",
+      "properties": {
+        "name": "六七十两",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "书房",
+      "type": "地点",
+      "properties": {
+        "name": "书房",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "二百三十两",
+      "type": "物件",
+      "properties": {
+        "name": "二百三十两",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "两吊半铜钱",
+      "type": "物件",
+      "properties": {
+        "name": "两吊半铜钱",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "农村",
+      "type": "地点",
+      "properties": {
+        "name": "农村",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "蒲塘",
+      "type": "地点",
+      "properties": {
+        "name": "蒲塘",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "樟木盒子",
+      "type": "物件",
+      "properties": {
+        "name": "樟木盒子",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "三两二钱碎银子",
+      "type": "物件",
+      "properties": {
+        "name": "三两二钱碎银子",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "大清地主老财",
+      "type": "人物",
+      "properties": {
+        "name": "大清地主老财",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "田契",
+      "type": "物件",
+      "properties": {
+        "name": "田契",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "家产",
+      "type": "物件",
+      "properties": {
+        "name": "家产",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "牛棚的干草堆里",
+      "type": "地点",
+      "properties": {
+        "name": "牛棚的干草堆里",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "十六亩旱坡地",
+      "type": "物件",
+      "properties": {
+        "name": "十六亩旱坡地",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "陆家两兄弟",
+      "type": "人物",
+      "properties": {
+        "name": "陆家两兄弟",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "没有积欠",
+      "type": "事件",
+      "properties": {
+        "name": "没有积欠",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "零散",
+      "type": "物件",
+      "properties": {
+        "name": "零散",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "邻村",
+      "type": "地点",
+      "properties": {
+        "name": "邻村",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "贵县上等水田",
+      "type": "地点",
+      "properties": {
+        "name": "贵县上等水田",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "最近一处旱坡地",
+      "type": "物件",
+      "properties": {
+        "name": "最近一处旱坡地",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "最大一处旱坡地",
+      "type": "物件",
+      "properties": {
+        "name": "最大一处旱坡地",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "九亩上等水田",
+      "type": "物件",
+      "properties": {
+        "name": "九亩上等水田",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "没有借印子钱",
+      "type": "事件",
+      "properties": {
+        "name": "没有借印子钱",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "两个房间",
+      "type": "物件",
+      "properties": {
+        "name": "两个房间",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "主屋",
+      "type": "地点",
+      "properties": {
+        "name": "主屋",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "牛棚",
+      "type": "地点",
+      "properties": {
+        "name": "牛棚",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "八亩水田",
+      "type": "物件",
+      "properties": {
+        "name": "八亩水田",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "操办葬礼",
+      "type": "事件",
+      "properties": {
+        "name": "操办葬礼",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "东一块，西一块",
+      "type": "物件",
+      "properties": {
+        "name": "东一块，西一块",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "十二两",
+      "type": "物件",
+      "properties": {
+        "name": "十二两",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "每亩七八两",
+      "type": "物件",
+      "properties": {
+        "name": "每亩七八两",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "普通水田",
+      "type": "物件",
+      "properties": {
+        "name": "普通水田",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "旱坡地",
+      "type": "物件",
+      "properties": {
+        "name": "旱坡地",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "能卖上一百五十两都算积德",
+      "type": "事件",
+      "properties": {
+        "name": "能卖上一百五十两都算积德",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "不足六亩",
+      "type": "物件",
+      "properties": {
+        "name": "不足六亩",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "三十六两",
+      "type": "物件",
+      "properties": {
+        "name": "三十六两",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "没借高利贷",
+      "type": "事件",
+      "properties": {
+        "name": "没借高利贷",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "两层",
+      "type": "物件",
+      "properties": {
+        "name": "两层",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "只能卖上一百五十两",
+      "type": "物件",
+      "properties": {
+        "name": "只能卖上一百五十两",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "田产",
+      "type": "物件",
+      "properties": {
+        "name": "田产",
+        "sequence_number": 93
+      }
+    },
+    {
+      "id": "宅院",
+      "type": "物件",
+      "properties": {
+        "name": "宅院",
+        "sequence_number": 94
+      }
+    },
+    {
+      "id": "锁",
+      "type": "物件",
+      "properties": {
+        "name": "锁",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "典卖",
+      "type": "事件",
+      "properties": {
+        "name": "典卖",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "春借一石，秋还三石",
+      "type": "物件",
+      "properties": {
+        "name": "春借一石，秋还三石",
+        "sequence_number": 97
+      }
+    },
+    {
+      "id": "纳妾娶九房",
+      "type": "事件",
+      "properties": {
+        "name": "纳妾娶九房",
+        "sequence_number": 98
+      }
+    },
+    {
+      "id": "彭家父子",
+      "type": "人物",
+      "properties": {
+        "name": "彭家父子",
+        "sequence_number": 99
+      }
+    },
+    {
+      "id": "与访客会面",
+      "type": "事件",
+      "properties": {
+        "name": "与访客会面",
+        "sequence_number": 100
+      }
+    },
+    {
+      "id": "春借一石，秋还五石",
+      "type": "物件",
+      "properties": {
+        "name": "春借一石，秋还五石",
+        "sequence_number": 101
+      }
+    },
+    {
+      "id": "一亩六分水田",
+      "type": "物件",
+      "properties": {
+        "name": "一亩六分水田",
+        "sequence_number": 102
+      }
+    },
+    {
+      "id": "五石米",
+      "type": "物件",
+      "properties": {
+        "name": "五石米",
+        "sequence_number": 103
+      }
+    },
+    {
+      "id": "放贷",
+      "type": "事件",
+      "properties": {
+        "name": "放贷",
+        "sequence_number": 104
+      }
+    },
+    {
+      "id": "染疫病亡",
+      "type": "事件",
+      "properties": {
+        "name": "染疫病亡",
+        "sequence_number": 105
+      }
+    },
+    {
+      "id": "牛尾刀",
+      "type": "物件",
+      "properties": {
+        "name": "牛尾刀",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "挽联",
+      "type": "物件",
+      "properties": {
+        "name": "挽联",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "平在山",
+      "type": "地点",
+      "properties": {
+        "name": "平在山",
+        "sequence_number": 108
+      }
+    },
+    {
+      "id": "日暮时分",
+      "type": "时间",
+      "properties": {
+        "name": "日暮时分",
+        "sequence_number": 109
+      }
+    },
+    {
+      "id": "三石米",
+      "type": "物件",
+      "properties": {
+        "name": "三石米",
+        "sequence_number": 110
+      }
+    },
+    {
+      "id": "冥钱",
+      "type": "物件",
+      "properties": {
+        "name": "冥钱",
+        "sequence_number": 111
+      }
+    },
+    {
+      "id": "贵县",
+      "type": "地点",
+      "properties": {
+        "name": "贵县",
+        "sequence_number": 112
+      }
+    },
+    {
+      "id": "麻绳",
+      "type": "物件",
+      "properties": {
+        "name": "麻绳",
+        "sequence_number": 113
+      }
+    },
+    {
+      "id": "石达开",
+      "type": "人物",
+      "properties": {
+        "name": "石达开",
+        "sequence_number": 114
+      }
+    },
+    {
+      "id": "终身为奴",
+      "type": "事件",
+      "properties": {
+        "name": "终身为奴",
+        "sequence_number": 115
+      }
+    },
+    {
+      "id": "吊唁",
+      "type": "事件",
+      "properties": {
+        "name": "吊唁",
+        "sequence_number": 116
+      }
+    },
+    {
+      "id": "彭家",
+      "type": "人物",
+      "properties": {
+        "name": "彭家",
+        "sequence_number": 117
+      }
+    },
+    {
+      "id": "满清朝廷",
+      "type": "事件",
+      "properties": {
+        "name": "满清朝廷",
+        "sequence_number": 118
+      }
+    },
+    {
+      "id": "当牛做马",
+      "type": "事件",
+      "properties": {
+        "name": "当牛做马",
+        "sequence_number": 119
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "人物",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 120
+      }
+    },
+    {
+      "id": "访客",
+      "type": "人物",
+      "properties": {
+        "name": "访客",
+        "sequence_number": 121
+      }
+    },
+    {
+      "id": "卖儿卖女",
+      "type": "事件",
+      "properties": {
+        "name": "卖儿卖女",
+        "sequence_number": 122
+      }
+    },
+    {
+      "id": "石祥祯",
+      "type": "人物",
+      "properties": {
+        "name": "石祥祯",
+        "sequence_number": 123
+      }
+    },
+    {
+      "id": "冯云山",
+      "type": "人物",
+      "properties": {
+        "name": "冯云山",
+        "sequence_number": 124
+      }
+    },
+    {
+      "id": "叩响院门",
+      "type": "事件",
+      "properties": {
+        "name": "叩响院门",
+        "sequence_number": 125
+      }
+    },
+    {
+      "id": "丘古三",
+      "type": "人物",
+      "properties": {
+        "name": "丘古三",
+        "sequence_number": 126
+      }
+    },
+    {
+      "id": "丘老爷",
+      "type": "人物",
+      "properties": {
+        "name": "丘老爷",
+        "sequence_number": 127
+      }
+    },
+    {
+      "id": "花圈",
+      "type": "物件",
+      "properties": {
+        "name": "花圈",
+        "sequence_number": 128
+      }
+    },
+    {
+      "id": "刀耕钱",
+      "type": "事件",
+      "properties": {
+        "name": "刀耕钱",
+        "sequence_number": 129
+      }
+    },
+    {
+      "id": "他们面前",
+      "type": "地点",
+      "properties": {
+        "name": "他们面前",
+        "sequence_number": 130
+      }
+    },
+    {
+      "id": "野心更为炽热",
+      "type": "事件",
+      "properties": {
+        "name": "野心更为炽热",
+        "sequence_number": 131
+      }
+    },
+    {
+      "id": "天国高层",
+      "type": "人物",
+      "properties": {
+        "name": "天国高层",
+        "sequence_number": 132
+      }
+    },
+    {
+      "id": "洪秀全",
+      "type": "人物",
+      "properties": {
+        "name": "洪秀全",
+        "sequence_number": 133
+      }
+    },
+    {
+      "id": "上帝",
+      "type": "人物",
+      "properties": {
+        "name": "上帝",
+        "sequence_number": 134
+      }
+    },
+    {
+      "id": "对拜上帝教的虔诚之心",
+      "type": "事件",
+      "properties": {
+        "name": "对拜上帝教的虔诚之心",
+        "sequence_number": 135
+      }
+    },
+    {
+      "id": "激动地抓着彭刚的手臂",
+      "type": "事件",
+      "properties": {
+        "name": "激动地抓着彭刚的手臂",
+        "sequence_number": 136
+      }
+    },
+    {
+      "id": "高层拜上帝会成员",
+      "type": "人物",
+      "properties": {
+        "name": "高层拜上帝会成员",
+        "sequence_number": 137
+      }
+    },
+    {
+      "id": "拜上帝会",
+      "type": "事件",
+      "properties": {
+        "name": "拜上帝会",
+        "sequence_number": 138
+      }
+    },
+    {
+      "id": "底层信众",
+      "type": "人物",
+      "properties": {
+        "name": "底层信众",
+        "sequence_number": 139
+      }
+    },
+    {
+      "id": "看到彭刚",
+      "type": "事件",
+      "properties": {
+        "name": "看到彭刚",
+        "sequence_number": 140
+      }
+    },
+    {
+      "id": "相信自己臆想的世界真实存在",
+      "type": "事件",
+      "properties": {
+        "name": "相信自己臆想的世界真实存在",
+        "sequence_number": 141
+      }
+    },
+    {
+      "id": "石达开激动地抓着彭刚的手臂",
+      "type": "事件",
+      "properties": {
+        "name": "石达开激动地抓着彭刚的手臂",
+        "sequence_number": 142
+      }
+    },
+    {
+      "id": "鬼门关走了一遭",
+      "type": "事件",
+      "properties": {
+        "name": "鬼门关走了一遭",
+        "sequence_number": 143
+      }
+    },
+    {
+      "id": "彭刚被带回人间",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚被带回人间",
+        "sequence_number": 144
+      }
+    },
+    {
+      "id": "私塾旁听",
+      "type": "事件",
+      "properties": {
+        "name": "私塾旁听",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "名字",
+      "type": "物件",
+      "properties": {
+        "name": "名字",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "主屋",
+      "type": "物件",
+      "properties": {
+        "name": "主屋",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "陆家",
+      "type": "地点",
+      "properties": {
+        "name": "陆家",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "三年前",
+      "type": "时间",
+      "properties": {
+        "name": "三年前",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "四年前的冬天",
+      "type": "时间",
+      "properties": {
+        "name": "四年前的冬天",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "不借高利贷",
+      "type": "事件",
+      "properties": {
+        "name": "不借高利贷",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "定钱",
+      "type": "事件",
+      "properties": {
+        "name": "定钱",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "库房",
+      "type": "物件",
+      "properties": {
+        "name": "库房",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "牛棚的干草堆",
+      "type": "地点",
+      "properties": {
+        "name": "牛棚的干草堆",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "不到二里地",
+      "type": "地点",
+      "properties": {
+        "name": "不到二里地",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "读书",
+      "type": "事件",
+      "properties": {
+        "name": "读书",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "八亩中等水田",
+      "type": "物件",
+      "properties": {
+        "name": "八亩中等水田",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "清点家产",
+      "type": "事件",
+      "properties": {
+        "name": "清点家产",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "无欠债",
+      "type": "事件",
+      "properties": {
+        "name": "无欠债",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "一处",
+      "type": "地点",
+      "properties": {
+        "name": "一处",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "最远一处旱坡地",
+      "type": "地点",
+      "properties": {
+        "name": "最远一处旱坡地",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "四两左右一亩",
+      "type": "物件",
+      "properties": {
+        "name": "四两左右一亩",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "三十来里外的蒲塘",
+      "type": "地点",
+      "properties": {
+        "name": "三十来里外的蒲塘",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "看病驱魔和操办葬礼",
+      "type": "事件",
+      "properties": {
+        "name": "看病驱魔和操办葬礼",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "命根",
+      "type": "事件",
+      "properties": {
+        "name": "命根",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "不欠满清朝廷赋税",
+      "type": "事件",
+      "properties": {
+        "name": "不欠满清朝廷赋税",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "东一块西一块",
+      "type": "地点",
+      "properties": {
+        "name": "东一块西一块",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "一百五十两",
+      "type": "物件",
+      "properties": {
+        "name": "一百五十两",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "三十六两银子",
+      "type": "物件",
+      "properties": {
+        "name": "三十六两银子",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "左边一半",
+      "type": "地点",
+      "properties": {
+        "name": "左边一半",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "最大一处旱坡地",
+      "type": "地点",
+      "properties": {
+        "name": "最大一处旱坡地",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "最近一处旱坡地",
+      "type": "地点",
+      "properties": {
+        "name": "最近一处旱坡地",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "存米",
+      "type": "事件",
+      "properties": {
+        "name": "存米",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "同窗之谊",
+      "type": "事件",
+      "properties": {
+        "name": "同窗之谊",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "紧了紧腰间麻绳",
+      "type": "事件",
+      "properties": {
+        "name": "紧了紧腰间麻绳",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "烧炭工舅舅",
+      "type": "人物",
+      "properties": {
+        "name": "烧炭工舅舅",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "无依无靠",
+      "type": "事件",
+      "properties": {
+        "name": "无依无靠",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "带回人间",
+      "type": "事件",
+      "properties": {
+        "name": "带回人间",
+        "sequence_number": 99
+      }
+    },
+    {
+      "id": "叩响",
+      "type": "事件",
+      "properties": {
+        "name": "叩响",
+        "sequence_number": 100
+      }
+    },
+    {
+      "id": "春借三石米，秋还五石米",
+      "type": "事件",
+      "properties": {
+        "name": "春借三石米，秋还五石米",
+        "sequence_number": 103
+      }
+    },
+    {
+      "id": "鬼门关",
+      "type": "事件",
+      "properties": {
+        "name": "鬼门关",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "身体虚弱",
+      "type": "事件",
+      "properties": {
+        "name": "身体虚弱",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "明天",
+      "type": "时间",
+      "properties": {
+        "name": "明天",
+        "sequence_number": 109
+      }
+    },
+    {
+      "id": "天堂",
+      "type": "物件",
+      "properties": {
+        "name": "天堂",
+        "sequence_number": 112
+      }
+    },
+    {
+      "id": "天父天兄",
+      "type": "物件",
+      "properties": {
+        "name": "天父天兄",
+        "sequence_number": 113
+      }
+    },
+    {
+      "id": "拜上帝教",
+      "type": "事件",
+      "properties": {
+        "name": "拜上帝教",
+        "sequence_number": 115
+      }
+    },
+    {
+      "id": "臆想的世界",
+      "type": "物件",
+      "properties": {
+        "name": "臆想的世界",
+        "sequence_number": 116
+      }
+    },
+    {
+      "id": "野心",
+      "type": "物件",
+      "properties": {
+        "name": "野心",
+        "sequence_number": 118
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆勤",
+      "target_id": "给彭刚磕头",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆谦",
+      "target_id": "给彭刚磕头",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆俭",
+      "target_id": "三年前或四年前的冬天",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "陆俭",
+      "target_id": "饿死",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "为陆俭写墓碑",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "墓碑",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "墓碑",
+      "target_id": "名字被雨水洗刷干净",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "在私塾外旁听",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "给陆勤、陆谦起名字",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆勤",
+      "target_id": "在私塾外旁听",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆谦",
+      "target_id": "在私塾外旁听",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "送菠菜和春萝卜",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "菠菜",
+      "target_id": "供桌",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "春萝卜",
+      "target_id": "供桌",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "供桌",
+      "target_id": "后堂",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "打短工",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "打杂乞讨",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "无田可耕者",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "三分大小的菜地",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "两斗米",
+      "target_id": "麻袋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "两斗米",
+      "target_id": "粮仓",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "粮仓",
+      "target_id": "二楼",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "书房",
+      "target_id": "二楼",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "取米",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "奇石墟",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "六升米",
+      "target_id": "菜的价值",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "主屋",
+      "target_id": "农村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "主屋",
+      "target_id": "两层",
+      "type": "有",
+      "properties": {}
+    },
+    {
+      "source_id": "主屋",
+      "target_id": "二楼",
+      "type": "有",
+      "properties": {}
+    },
+    {
+      "source_id": "二楼",
+      "target_id": "木板",
+      "type": "有",
+      "properties": {}
+    },
+    {
+      "source_id": "木板",
+      "target_id": "二楼",
+      "type": "铺在",
+      "properties": {}
+    },
+    {
+      "source_id": "二楼",
+      "target_id": "两个房间",
+      "type": "隔出",
+      "properties": {}
+    },
+    {
+      "source_id": "两个房间",
+      "target_id": "粮仓",
+      "type": "用作",
+      "properties": {}
+    },
+    {
+      "source_id": "两个房间",
+      "target_id": "书房",
+      "type": "用作",
+      "properties": {}
+    },
+    {
+      "source_id": "粮仓",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "书房",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "库房",
+      "type": "上楼去",
+      "properties": {}
+    },
+    {
+      "source_id": "库房",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家两兄弟",
+      "target_id": "彭毅",
+      "type": "看见",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家两兄弟",
+      "target_id": "两斗米",
+      "type": "不能收",
+      "properties": {}
+    },
+    {
+      "source_id": "两斗米",
+      "target_id": "彭刚",
+      "type": "由",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "陆家两兄弟",
+      "type": "塞给",
+      "properties": {}
+    },
+    {
+      "source_id": "陆勤",
+      "target_id": "两斗米",
+      "type": "推辞",
+      "properties": {}
+    },
+    {
+      "source_id": "两斗米",
+      "target_id": "六升米",
+      "type": "值",
+      "properties": {}
+    },
+    {
+      "source_id": "六升米",
+      "target_id": "六升米",
+      "type": "值",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "陆家两兄弟",
+      "type": "给",
+      "properties": {}
+    },
+    {
+      "source_id": "两斗米",
+      "target_id": "定钱",
+      "type": "作为",
+      "properties": {}
+    },
+    {
+      "source_id": "两尾鱼",
+      "target_id": "定钱",
+      "type": "作为",
+      "properties": {}
+    },
+    {
+      "source_id": "定钱",
+      "target_id": "彭刚",
+      "type": "由",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "彭刚",
+      "type": "谢过",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "糊粥",
+      "type": "拾起",
+      "properties": {}
+    },
+    {
+      "source_id": "糊粥",
+      "target_id": "地上",
+      "type": "洒在",
+      "properties": {}
+    },
+    {
+      "source_id": "地上",
+      "target_id": "糊粥",
+      "type": "有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅",
+      "type": "询问",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "田契",
+      "type": "藏",
+      "properties": {}
+    },
+    {
+      "source_id": "田契",
+      "target_id": "牛棚的干草堆里",
+      "type": "藏于",
+      "properties": {}
+    },
+    {
+      "source_id": "牛棚的干草堆里",
+      "target_id": "牛棚",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "牛棚",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "樟木盒子",
+      "type": "取来",
+      "properties": {}
+    },
+    {
+      "source_id": "樟木盒子",
+      "target_id": "锁",
+      "type": "有",
+      "properties": {}
+    },
+    {
+      "source_id": "樟木盒子",
+      "target_id": "彭毅",
+      "type": "由",
+      "properties": {}
+    },
+    {
+      "source_id": "钥匙",
+      "target_id": "彭刚",
+      "type": "交给",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "主屋",
+      "type": "离开",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "院门",
+      "type": "关上",
+      "properties": {}
+    },
+    {
+      "source_id": "院门",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭毅",
+      "type": "带",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "书房",
+      "type": "上楼",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "家产",
+      "type": "清点",
+      "properties": {}
+    },
+    {
+      "source_id": "家产",
+      "target_id": "十七亩水田",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "十七亩水田",
+      "target_id": "九亩上等水田",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "九亩上等水田",
+      "target_id": "集中田产",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "九亩上等水田",
+      "target_id": "命根",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "命根",
+      "target_id": "九亩上等水田",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "九亩上等水田",
+      "target_id": "主屋",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "八亩水田",
+      "target_id": "中等水田",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "中等水田",
+      "target_id": "邻村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "十六亩旱坡地",
+      "target_id": "零散",
+      "type": "分布",
+      "properties": {}
+    },
+    {
+      "source_id": "零散",
+      "target_id": "东一块，西一块",
+      "type": "分布",
+      "properties": {}
+    },
+    {
+      "source_id": "最大一处旱坡地",
+      "target_id": "不足六亩",
+      "type": "面积",
+      "properties": {}
+    },
+    {
+      "source_id": "最近一处旱坡地",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "最远一处旱坡地",
+      "target_id": "蒲塘",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "贵县上等水田",
+      "target_id": "十二两",
+      "type": "时价",
+      "properties": {}
+    },
+    {
+      "source_id": "普通水田",
+      "target_id": "每亩七八两",
+      "type": "时价",
+      "properties": {}
+    },
+    {
+      "source_id": "旱坡地",
+      "target_id": "四两",
+      "type": "时价",
+      "properties": {}
+    },
+    {
+      "source_id": "田产",
+      "target_id": "二百三十两",
+      "type": "市场价值",
+      "properties": {}
+    },
+    {
+      "source_id": "典卖",
+      "target_id": "只能卖上一百五十两",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "大清地主老财",
+      "target_id": "能卖上一百五十两都算积德",
+      "type": "揍性",
+      "properties": {}
+    },
+    {
+      "source_id": "宅院",
+      "target_id": "六七十两",
+      "type": "市场价",
+      "properties": {}
+    },
+    {
+      "source_id": "宅院",
+      "target_id": "六七十两",
+      "type": "不能卖上",
+      "properties": {}
+    },
+    {
+      "source_id": "水牛",
+      "target_id": "大牲口",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "母猪",
+      "target_id": "大牲口",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "看病驱魔",
+      "target_id": "三十六两",
+      "type": "花费",
+      "properties": {}
+    },
+    {
+      "source_id": "操办葬礼",
+      "target_id": "三十六两",
+      "type": "花费",
+      "properties": {}
+    },
+    {
+      "source_id": "三十六两",
+      "target_id": "看病驱魔",
+      "type": "花费于",
+      "properties": {}
+    },
+    {
+      "source_id": "三十六两",
+      "target_id": "操办葬礼",
+      "type": "花费于",
+      "properties": {}
+    },
+    {
+      "source_id": "余银",
+      "target_id": "三两二钱碎银子",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "余银",
+      "target_id": "两吊半铜钱",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "三两二钱碎银子",
+      "target_id": "余银",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "两吊半铜钱",
+      "target_id": "余银",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "家底",
+      "target_id": "没有积欠",
+      "type": "殷实",
+      "properties": {}
+    },
+    {
+      "source_id": "没有积欠",
+      "target_id": "没有借印子钱",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "没有积欠",
+      "target_id": "不欠满清朝廷的赋税",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "没有积欠",
+      "target_id": "没借高利贷",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "吊唁",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "吊唁",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "吊唁",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石祥祯",
+      "target_id": "吊唁",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "染疫病亡",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家父子",
+      "target_id": "染疫病亡",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "奇石墟",
+      "target_id": "贵县",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "贵县",
+      "target_id": "满清朝廷",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "丘古三",
+      "target_id": "刀耕钱",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "刀耕钱",
+      "target_id": "春借一石，秋还三石",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "刀耕钱",
+      "target_id": "春借一石，秋还五石",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "刀耕钱",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "三石米",
+      "target_id": "韦长工",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "五石米",
+      "target_id": "韦长工",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "一亩六分水田",
+      "target_id": "韦长工",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "一亩六分水田",
+      "target_id": "彭家",
+      "type": "抵押",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家",
+      "target_id": "放贷",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "放贷",
+      "target_id": "刀耕钱",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "日暮时分",
+      "target_id": "叩响院门",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "叩响院门",
+      "target_id": "日暮时分",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "牛尾刀",
+      "target_id": "彭刚",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "麻绳",
+      "target_id": "彭刚",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "花圈",
+      "target_id": "冯云山",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "冥钱",
+      "target_id": "冯云山",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "挽联",
+      "target_id": "冯云山",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "挽联",
+      "target_id": "石达开",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "与访客会面",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "访客",
+      "target_id": "庆丰村",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村",
+      "target_id": "平在山",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "平在山",
+      "target_id": "奇石墟",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "丘老爷",
+      "target_id": "纳妾娶九房",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "纳妾娶九房",
+      "target_id": "卖儿卖女",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "卖儿卖女",
+      "target_id": "当牛做马",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "当牛做马",
+      "target_id": "终身为奴",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "他们面前",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "看到彭刚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "看到彭刚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石祥祯",
+      "target_id": "看到彭刚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "激动地抓着彭刚的手臂",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "石达开激动地抓着彭刚的手臂",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "鬼门关走了一遭",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "上帝",
+      "target_id": "彭刚被带回人间",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "拜上帝会",
+      "target_id": "底层信众",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "高层拜上帝会成员",
+      "target_id": "对拜上帝教的虔诚之心",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "洪秀全",
+      "target_id": "相信自己臆想的世界真实存在",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "天国高层",
+      "target_id": "野心更为炽热",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "陆勤",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "陆谦",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "陆勤",
+      "target_id": "陆家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆谦",
+      "target_id": "陆家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆俭",
+      "target_id": "陆家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆俭",
+      "target_id": "饿死",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "饿死",
+      "target_id": "三年前",
+      "type": "发生于",
+      "properties": {}
+    },
+    {
+      "source_id": "饿死",
+      "target_id": "四年前的冬天",
+      "type": "发生于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "陆俭",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "墓碑",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "墓碑",
+      "target_id": "陆俭",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "名字",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "名字",
+      "target_id": "陆勤",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "名字",
+      "target_id": "陆谦",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "名字",
+      "target_id": "陆俭",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "私塾旁听",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "私塾旁听",
+      "target_id": "陆勤",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "私塾旁听",
+      "target_id": "陆谦",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "私塾旁听",
+      "target_id": "陆俭",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "陆勤",
+      "target_id": "菠菜",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "陆谦",
+      "target_id": "春萝卜",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "菠菜",
+      "target_id": "陆勤",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "春萝卜",
+      "target_id": "陆谦",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "菠菜",
+      "target_id": "供桌",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "春萝卜",
+      "target_id": "供桌",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "供桌",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "无田可耕者",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "无田可耕者",
+      "target_id": "庆丰村",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "庆丰村",
+      "target_id": "陆家兄弟",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "两斗米",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "两斗米",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "两斗米",
+      "target_id": "陆家兄弟",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "粮仓",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "粮仓",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "二楼",
+      "target_id": "主屋",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "主屋",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "主屋",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "主屋",
+      "target_id": "二楼",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "二楼",
+      "target_id": "左边一半",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "左边一半",
+      "target_id": "木板",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "二楼",
+      "target_id": "粮仓",
+      "type": "隔出",
+      "properties": {}
+    },
+    {
+      "source_id": "二楼",
+      "target_id": "书房",
+      "type": "隔出",
+      "properties": {}
+    },
+    {
+      "source_id": "粮仓",
+      "target_id": "存米",
+      "type": "用于",
+      "properties": {}
+    },
+    {
+      "source_id": "书房",
+      "target_id": "读书",
+      "type": "用于",
+      "properties": {}
+    },
+    {
+      "source_id": "库房",
+      "target_id": "取米",
+      "type": "用于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "两斗米",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "两斗米",
+      "target_id": "定钱",
+      "type": "用于",
+      "properties": {}
+    },
+    {
+      "source_id": "两尾鱼",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "两尾鱼",
+      "target_id": "定钱",
+      "type": "用于",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "两斗米",
+      "type": "接收",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "两尾鱼",
+      "type": "接收",
+      "properties": {}
+    },
+    {
+      "source_id": "陆家兄弟",
+      "target_id": "两斗米",
+      "type": "拒绝",
+      "properties": {}
+    },
+    {
+      "source_id": "田契",
+      "target_id": "牛棚的干草堆",
+      "type": "藏于",
+      "properties": {}
+    },
+    {
+      "source_id": "牛棚的干草堆",
+      "target_id": "彭家",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "樟木盒子",
+      "target_id": "彭毅",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "樟木盒子",
+      "target_id": "锁",
+      "type": "带有",
+      "properties": {}
+    },
+    {
+      "source_id": "锁",
+      "target_id": "樟木盒子",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "钥匙",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "钥匙",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "书房",
+      "type": "带",
+      "properties": {}
+    },
+    {
+      "source_id": "书房",
+      "target_id": "清点家产",
+      "type": "用于",
+      "properties": {}
+    },
+    {
+      "source_id": "十七亩水田",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "九亩上等水田",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "九亩上等水田",
+      "target_id": "一处",
+      "type": "集中",
+      "properties": {}
+    },
+    {
+      "source_id": "一处",
+      "target_id": "命根",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "八亩中等水田",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "八亩中等水田",
+      "target_id": "邻村",
+      "type": "分布",
+      "properties": {}
+    },
+    {
+      "source_id": "十六亩旱坡地",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "十六亩旱坡地",
+      "target_id": "东一块西一块",
+      "type": "分布",
+      "properties": {}
+    },
+    {
+      "source_id": "最近一处旱坡地",
+      "target_id": "不到二里地",
+      "type": "距家",
+      "properties": {}
+    },
+    {
+      "source_id": "最远一处旱坡地",
+      "target_id": "三十来里外的蒲塘",
+      "type": "距家",
+      "properties": {}
+    },
+    {
+      "source_id": "旱坡地",
+      "target_id": "四两左右一亩",
+      "type": "时价",
+      "properties": {}
+    },
+    {
+      "source_id": "典卖",
+      "target_id": "一百五十两",
+      "type": "能卖",
+      "properties": {}
+    },
+    {
+      "source_id": "宅院",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "水牛",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "母猪",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "三十六两银子",
+      "target_id": "看病驱魔和操办葬礼",
+      "type": "用于",
+      "properties": {}
+    },
+    {
+      "source_id": "三两二钱碎银子",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "两吊半铜钱",
+      "target_id": "彭刚",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "家底",
+      "target_id": "无欠债",
+      "type": "殷实",
+      "properties": {}
+    },
+    {
+      "source_id": "无欠债",
+      "target_id": "不欠满清朝廷赋税",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "无欠债",
+      "target_id": "不借高利贷",
+      "type": "包括",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "牛尾刀",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "麻绳",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭家父子",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭家父子",
+      "target_id": "染疫病亡",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭信",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭信",
+      "target_id": "三石米",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "三石米",
+      "target_id": "韦长工",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "田契",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "田契",
+      "target_id": "韦长工",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "刀耕钱",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "刀耕钱",
+      "target_id": "春借三石米，秋还五石米",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "春借三石米，秋还五石米",
+      "target_id": "刀耕钱",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "丘古三",
+      "target_id": "田契",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "丘古三",
+      "target_id": "刀耕钱",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "丘古三",
+      "target_id": "纳妾娶九房",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "丘古三",
+      "target_id": "卖儿卖女",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "丘古三",
+      "target_id": "当牛做马",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "吊唁",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "奇石墟",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "彭信",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "同窗之谊",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "庆丰村",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "挽联",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "石祥祯",
+      "target_id": "挽联",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "日暮时分",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "院门",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "院门",
+      "target_id": "叩响",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "烧炭工舅舅",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "烧炭工舅舅",
+      "target_id": "平在山",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "烧炭工舅舅",
+      "target_id": "明天",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "身体虚弱",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "无依无靠",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "紧了紧腰间麻绳",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "花圈",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "冥钱",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "挽联",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "挽联",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "石祥祯",
+      "target_id": "挽联",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "上帝",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "上帝",
+      "target_id": "带回人间",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "鬼门关",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "冯云山",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "石达开",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "石祥祯",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "石达开",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "石祥祯",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "石祥祯",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "拜上帝会",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "冯云山",
+      "target_id": "拜上帝会",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "石达开",
+      "target_id": "拜上帝会",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "石祥祯",
+      "target_id": "拜上帝会",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "拜上帝会",
+      "target_id": "天父天兄",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "拜上帝会",
+      "target_id": "天堂",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "洪秀全",
+      "target_id": "拜上帝会",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "洪秀全",
+      "target_id": "臆想的世界",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "天国高层",
+      "target_id": "野心",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "拜上帝教",
+      "target_id": "天父天兄",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "拜上帝教",
+      "target_id": "天堂",
+      "type": "涉及",
+      "properties": {}
+    }
+  ]
+}

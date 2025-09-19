@@ -1,0 +1,14 @@
+{
+  "novel_name": "1848大清烧炭工",
+  "chapter_name": "第4章：兄友弟恭",
+  "model_name": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+  "use_local": true,
+  "num_ctx": 16384,
+  "chunk_size": 1024,
+  "chunk_overlap": 192,
+  "content_size": 3037,
+  "schema_name": "极简",
+  "cache_version": "1.1",
+  "created_at": "2025-09-16T23:24:51.514590",
+  "saved_at": "2025-09-16T23:24:51.517591"
+}

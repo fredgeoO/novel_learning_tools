@@ -1,0 +1,3374 @@
+{
+  "nodes": [
+    {
+      "id": "广东宝安县",
+      "type": "地点",
+      "properties": {
+        "name": "广东宝安县",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "土生葡人",
+      "type": "家族",
+      "properties": {
+        "name": "土生葡人",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "元配黎婉华",
+      "type": "人物",
+      "properties": {
+        "name": "元配黎婉华",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "航运",
+      "type": "行业",
+      "properties": {
+        "name": "航运",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "葡籍律师家族",
+      "type": "家族",
+      "properties": {
+        "name": "葡籍律师家族",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "澳门",
+      "type": "地点",
+      "properties": {
+        "name": "澳门",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "被媒体称为「赌王」",
+      "type": "事件",
+      "properties": {
+        "name": "被媒体称为「赌王」",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "酒店",
+      "type": "行业",
+      "properties": {
+        "name": "酒店",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "家族声誉",
+      "type": "物件",
+      "properties": {
+        "name": "家族声誉",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "黎婉华",
+      "type": "人物",
+      "properties": {
+        "name": "黎婉华",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "中英混血",
+      "type": "物件",
+      "properties": {
+        "name": "中英混血",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "何瑞婷",
+      "type": "人物",
+      "properties": {
+        "name": "何瑞婷",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "何鸿燊",
+      "type": "人物",
+      "properties": {
+        "name": "何鸿燊",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "1921年11月25日出生",
+      "type": "时间",
+      "properties": {
+        "name": "1921年11月25日出生",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "英国伦敦",
+      "type": "地点",
+      "properties": {
+        "name": "英国伦敦",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "政治网络",
+      "type": "物件",
+      "properties": {
+        "name": "政治网络",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "1888年入籍英国",
+      "type": "时间",
+      "properties": {
+        "name": "1888年入籍英国",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "香港",
+      "type": "地点",
+      "properties": {
+        "name": "香港",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "澳门博彩业",
+      "type": "行业",
+      "properties": {
+        "name": "澳门博彩业",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "何世光",
+      "type": "人物",
+      "properties": {
+        "name": "何世光",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "郭茂超",
+      "type": "人物",
+      "properties": {
+        "name": "郭茂超",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "娱乐",
+      "type": "行业",
+      "properties": {
+        "name": "娱乐",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "地产",
+      "type": "行业",
+      "properties": {
+        "name": "地产",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "施娣",
+      "type": "人物",
+      "properties": {
+        "name": "施娣",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "1892年在英国伦敦去世",
+      "type": "时间",
+      "properties": {
+        "name": "1892年在英国伦敦去世",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "何东家族",
+      "type": "家族",
+      "properties": {
+        "name": "何东家族",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "广东宝安",
+      "type": "地点",
+      "properties": {
+        "name": "广东宝安",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "澳门博彩专利权开放之前经营澳门娱乐赌博公司",
+      "type": "事件",
+      "properties": {
+        "name": "澳门博彩专利权开放之前经营澳门娱乐赌博公司",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "英属香港",
+      "type": "地点",
+      "properties": {
+        "name": "英属香港",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "商业资源",
+      "type": "物件",
+      "properties": {
+        "name": "商业资源",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "何甘棠的生父郭兴贤",
+      "type": "人物",
+      "properties": {
+        "name": "何甘棠的生父郭兴贤",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "郭兴贤",
+      "type": "人物",
+      "properties": {
+        "name": "郭兴贤",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "1873年在英国伦敦创办东方代理",
+      "type": "事件",
+      "properties": {
+        "name": "1873年在英国伦敦创办东方代理",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "何仕文",
+      "type": "人物",
+      "properties": {
+        "name": "何仕文",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "港澳",
+      "type": "地点",
+      "properties": {
+        "name": "港澳",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "香港信德集团",
+      "type": "物件",
+      "properties": {
+        "name": "香港信德集团",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "何柏娟",
+      "type": "人物",
+      "properties": {
+        "name": "何柏娟",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "中国和犹太血统",
+      "type": "物件",
+      "properties": {
+        "name": "中国和犹太血统",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "何福",
+      "type": "人物",
+      "properties": {
+        "name": "何福",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "罗絮才",
+      "type": "人物",
+      "properties": {
+        "name": "罗絮才",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "荷兰鹿特丹",
+      "type": "地点",
+      "properties": {
+        "name": "荷兰鹿特丹",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "1859年抵达香港",
+      "type": "时间",
+      "properties": {
+        "name": "1859年抵达香港",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "豪门世家",
+      "type": "物件",
+      "properties": {
+        "name": "豪门世家",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "沙逊洋行买办",
+      "type": "行业",
+      "properties": {
+        "name": "沙逊洋行买办",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "冼庆云",
+      "type": "人物",
+      "properties": {
+        "name": "冼庆云",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "在港澳乃至国际上享有很高的声誉和地位",
+      "type": "事件",
+      "properties": {
+        "name": "在港澳乃至国际上享有很高的声誉和地位",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "沙逊洋行买办",
+      "type": "事件",
+      "properties": {
+        "name": "沙逊洋行买办",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "波斯血统传闻",
+      "type": "事件",
+      "properties": {
+        "name": "波斯血统传闻",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "母系承传",
+      "type": "事件",
+      "properties": {
+        "name": "母系承传",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "Stephen Prentice Hall",
+      "type": "人物",
+      "properties": {
+        "name": "Stephen Prentice Hall",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "帕西人背景",
+      "type": "事件",
+      "properties": {
+        "name": "帕西人背景",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "第九",
+      "type": "时间",
+      "properties": {
+        "name": "第九",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "中国",
+      "type": "种族",
+      "properties": {
+        "name": "中国",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "九爷",
+      "type": "事件",
+      "properties": {
+        "name": "九爷",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "犹太",
+      "type": "种族",
+      "properties": {
+        "name": "犹太",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "英国",
+      "type": "种族",
+      "properties": {
+        "name": "英国",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "波斯",
+      "type": "种族",
+      "properties": {
+        "name": "波斯",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "Bosman姓氏误译",
+      "type": "事件",
+      "properties": {
+        "name": "Bosman姓氏误译",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "中国广东宝安",
+      "type": "地点",
+      "properties": {
+        "name": "中国广东宝安",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "澳门电灯公司",
+      "type": "地点",
+      "properties": {
+        "name": "澳门电灯公司",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "1934年",
+      "type": "时间",
+      "properties": {
+        "name": "1934年",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "创办澳门火水公司",
+      "type": "事件",
+      "properties": {
+        "name": "创办澳门火水公司",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "公司遭投掷手榴弹",
+      "type": "事件",
+      "properties": {
+        "name": "公司遭投掷手榴弹",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "日本老板的秘书",
+      "type": "事件",
+      "properties": {
+        "name": "日本老板的秘书",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "战乱",
+      "type": "事件",
+      "properties": {
+        "name": "战乱",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "家道中落",
+      "type": "事件",
+      "properties": {
+        "name": "家道中落",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "与黎婉华结婚",
+      "type": "事件",
+      "properties": {
+        "name": "与黎婉华结婚",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "1941年12月8日日军入侵香港",
+      "type": "事件",
+      "properties": {
+        "name": "1941年12月8日日军入侵香港",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "日语",
+      "type": "物件",
+      "properties": {
+        "name": "日语",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "澳门火水公司",
+      "type": "行业",
+      "properties": {
+        "name": "澳门火水公司",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "黑势力妒忌",
+      "type": "事件",
+      "properties": {
+        "name": "黑势力妒忌",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "我一定回来",
+      "type": "事件",
+      "properties": {
+        "name": "我一定回来",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "开办炼油厂",
+      "type": "事件",
+      "properties": {
+        "name": "开办炼油厂",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "抗战期间",
+      "type": "时间",
+      "properties": {
+        "name": "抗战期间",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "利玛窦宿舍",
+      "type": "地点",
+      "properties": {
+        "name": "利玛窦宿舍",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "联昌粮油公司",
+      "type": "行业",
+      "properties": {
+        "name": "联昌粮油公司",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "香港中学毕业会考",
+      "type": "事件",
+      "properties": {
+        "name": "香港中学毕业会考",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "公司股东",
+      "type": "事件",
+      "properties": {
+        "name": "公司股东",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "教授英语",
+      "type": "事件",
+      "properties": {
+        "name": "教授英语",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "1932年至1939年",
+      "type": "时间",
+      "properties": {
+        "name": "1932年至1939年",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "长泽上校工作",
+      "type": "事件",
+      "properties": {
+        "name": "长泽上校工作",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "澳门生意",
+      "type": "事件",
+      "properties": {
+        "name": "澳门生意",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "爬山及唱日文歌",
+      "type": "事件",
+      "properties": {
+        "name": "爬山及唱日文歌",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "1943年获派发100万元花红",
+      "type": "事件",
+      "properties": {
+        "name": "1943年获派发100万元花红",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "第二次世界大战爆发",
+      "type": "事件",
+      "properties": {
+        "name": "第二次世界大战爆发",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "1953年",
+      "type": "时间",
+      "properties": {
+        "name": "1953年",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "香港大学理学院",
+      "type": "地点",
+      "properties": {
+        "name": "香港大学理学院",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "炼油厂",
+      "type": "物件",
+      "properties": {
+        "name": "炼油厂",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "香港大学",
+      "type": "地点",
+      "properties": {
+        "name": "香港大学",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "1941年",
+      "type": "时间",
+      "properties": {
+        "name": "1941年",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "东南亚最大的煤油供应商",
+      "type": "事件",
+      "properties": {
+        "name": "东南亚最大的煤油供应商",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "与黎婉华订婚",
+      "type": "事件",
+      "properties": {
+        "name": "与黎婉华订婚",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "联昌公司",
+      "type": "行业",
+      "properties": {
+        "name": "联昌公司",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "贸易行从广东进口粮食与燃料",
+      "type": "事件",
+      "properties": {
+        "name": "贸易行从广东进口粮食与燃料",
+        "sequence_number": 93
+      }
+    },
+    {
+      "id": "押船工作",
+      "type": "事件",
+      "properties": {
+        "name": "押船工作",
+        "sequence_number": 94
+      }
+    },
+    {
+      "id": "皇仁书院",
+      "type": "地点",
+      "properties": {
+        "name": "皇仁书院",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "政府全费奖学金",
+      "type": "物件",
+      "properties": {
+        "name": "政府全费奖学金",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "大紫荆勋贤",
+      "type": "事件",
+      "properties": {
+        "name": "大紫荆勋贤",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "CStJ",
+      "type": "事件",
+      "properties": {
+        "name": "CStJ",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "澳门显赫的葡籍律师家族",
+      "type": "家族",
+      "properties": {
+        "name": "澳门显赫的葡籍律师家族",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "英国国籍",
+      "type": "事件",
+      "properties": {
+        "name": "英国国籍",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "港澳声誉和地位",
+      "type": "事件",
+      "properties": {
+        "name": "港澳声誉和地位",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "SPMT",
+      "type": "事件",
+      "properties": {
+        "name": "SPMT",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "全国政协常委",
+      "type": "事件",
+      "properties": {
+        "name": "全国政协常委",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "香港何东家族",
+      "type": "家族",
+      "properties": {
+        "name": "香港何东家族",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "GLM",
+      "type": "事件",
+      "properties": {
+        "name": "GLM",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "中英混血",
+      "type": "人物",
+      "properties": {
+        "name": "中英混血",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "政治网络",
+      "type": "事件",
+      "properties": {
+        "name": "政治网络",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "Charles Henry Maurice Bosman",
+      "type": "人物",
+      "properties": {
+        "name": "Charles Henry Maurice Bosman",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "当地望族",
+      "type": "家族",
+      "properties": {
+        "name": "当地望族",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "初始社会资本",
+      "type": "事件",
+      "properties": {
+        "name": "初始社会资本",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "SPMP",
+      "type": "事件",
+      "properties": {
+        "name": "SPMP",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "商业资源",
+      "type": "事件",
+      "properties": {
+        "name": "商业资源",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "GBS",
+      "type": "事件",
+      "properties": {
+        "name": "GBS",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "东方代理",
+      "type": "物件",
+      "properties": {
+        "name": "东方代理",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "澳门娱乐赌博公司",
+      "type": "事件",
+      "properties": {
+        "name": "澳门娱乐赌博公司",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "OBE",
+      "type": "事件",
+      "properties": {
+        "name": "OBE",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "赌王",
+      "type": "事件",
+      "properties": {
+        "name": "赌王",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "犹太裔荷兰人Charles Henry Maurice Bosman",
+      "type": "人物",
+      "properties": {
+        "name": "犹太裔荷兰人Charles Henry Maurice Bosman",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "土生葡人",
+      "type": "事件",
+      "properties": {
+        "name": "土生葡人",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "豪门世家",
+      "type": "家族",
+      "properties": {
+        "name": "豪门世家",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "母系祖籍",
+      "type": "事件",
+      "properties": {
+        "name": "母系祖籍",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "犹太血统",
+      "type": "事件",
+      "properties": {
+        "name": "犹太血统",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "中英混血",
+      "type": "事件",
+      "properties": {
+        "name": "中英混血",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "何东",
+      "type": "人物",
+      "properties": {
+        "name": "何东",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "中国和犹太血统",
+      "type": "事件",
+      "properties": {
+        "name": "中国和犹太血统",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "中国血统",
+      "type": "事件",
+      "properties": {
+        "name": "中国血统",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "中国",
+      "type": "地点",
+      "properties": {
+        "name": "中国",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "中国广东宝安人",
+      "type": "地点",
+      "properties": {
+        "name": "中国广东宝安人",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "犹太",
+      "type": "事件",
+      "properties": {
+        "name": "犹太",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "英国血统",
+      "type": "事件",
+      "properties": {
+        "name": "英国血统",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "英国",
+      "type": "地点",
+      "properties": {
+        "name": "英国",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "波斯血统",
+      "type": "事件",
+      "properties": {
+        "name": "波斯血统",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "创业路",
+      "type": "事件",
+      "properties": {
+        "name": "创业路",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "10元",
+      "type": "物件",
+      "properties": {
+        "name": "10元",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "时常一起爬山及唱日文歌",
+      "type": "事件",
+      "properties": {
+        "name": "时常一起爬山及唱日文歌",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "1934年他成为东南亚最大的煤油供应商",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他成为东南亚最大的煤油供应商",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "1934年为躲债远走越南",
+      "type": "事件",
+      "properties": {
+        "name": "1934年为躲债远走越南",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "1934年父亲远走避难",
+      "type": "事件",
+      "properties": {
+        "name": "1934年父亲远走避难",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "1934年他利用红利创办澳门火水（煤油）公司",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他利用红利创办澳门火水（煤油）公司",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "1942年在联昌粮油公司工作",
+      "type": "时间",
+      "properties": {
+        "name": "1942年在联昌粮油公司工作",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "1947年与人合伙开办炼油厂",
+      "type": "事件",
+      "properties": {
+        "name": "1947年与人合伙开办炼油厂",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "誓言「我一定回来」",
+      "type": "事件",
+      "properties": {
+        "name": "誓言「我一定回来」",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "1934年他形容亲戚态度转变",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他形容亲戚态度转变",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "秘书职位",
+      "type": "物件",
+      "properties": {
+        "name": "秘书职位",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "东南亚最大的煤油供应商",
+      "type": "行业",
+      "properties": {
+        "name": "东南亚最大的煤油供应商",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "1953年结束澳门生意返港",
+      "type": "时间",
+      "properties": {
+        "name": "1953年结束澳门生意返港",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "1934年他未能修毕课程",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他未能修毕课程",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "1934年读初中时父亲破产",
+      "type": "事件",
+      "properties": {
+        "name": "1934年读初中时父亲破产",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "1943年获派发100万元花红",
+      "type": "时间",
+      "properties": {
+        "name": "1943年获派发100万元花红",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "成澳门电灯公司主要供应商",
+      "type": "事件",
+      "properties": {
+        "name": "成澳门电灯公司主要供应商",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "1934年他咬紧牙关发愤读书",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他咬紧牙关发愤读书",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "1934年一夜间倾家荡产",
+      "type": "事件",
+      "properties": {
+        "name": "1934年一夜间倾家荡产",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "1934年他与黎婉华结婚",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他与黎婉华结婚",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "1934年他无奈于1953年结束澳门生意返港",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他无奈于1953年结束澳门生意返港",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "日本特别支部军官长泽上校",
+      "type": "人物",
+      "properties": {
+        "name": "日本特别支部军官长泽上校",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "1934年他力争上游",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他力争上游",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "1934年他成为日本老板的秘书",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他成为日本老板的秘书",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "日语能力",
+      "type": "物件",
+      "properties": {
+        "name": "日语能力",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "1934年他加入中葡日联营之联昌公司",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他加入中葡日联营之联昌公司",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "在联昌粮油公司工作",
+      "type": "事件",
+      "properties": {
+        "name": "在联昌粮油公司工作",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "1941年12月8日日军入侵香港",
+      "type": "时间",
+      "properties": {
+        "name": "1941年12月8日日军入侵香港",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "澳门火水（煤油）公司",
+      "type": "物件",
+      "properties": {
+        "name": "澳门火水（煤油）公司",
+        "sequence_number": 93
+      }
+    },
+    {
+      "id": "与长泽上校交情",
+      "type": "事件",
+      "properties": {
+        "name": "与长泽上校交情",
+        "sequence_number": 94
+      }
+    },
+    {
+      "id": "佳绩",
+      "type": "事件",
+      "properties": {
+        "name": "佳绩",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "创办澳门火水（煤油）公司",
+      "type": "事件",
+      "properties": {
+        "name": "创办澳门火水（煤油）公司",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "1934年家道中落",
+      "type": "事件",
+      "properties": {
+        "name": "1934年家道中落",
+        "sequence_number": 97
+      }
+    },
+    {
+      "id": "1934年他为澳门电灯公司供应煤油",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他为澳门电灯公司供应煤油",
+        "sequence_number": 98
+      }
+    },
+    {
+      "id": "1934年他终生难忘的经历",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他终生难忘的经历",
+        "sequence_number": 100
+      }
+    },
+    {
+      "id": "1934年他成澳门电灯公司主要供应商",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他成澳门电灯公司主要供应商",
+        "sequence_number": 101
+      }
+    },
+    {
+      "id": "1941年第二次世界大战爆发",
+      "type": "时间",
+      "properties": {
+        "name": "1941年第二次世界大战爆发",
+        "sequence_number": 103
+      }
+    },
+    {
+      "id": "100万元红利",
+      "type": "物件",
+      "properties": {
+        "name": "100万元红利",
+        "sequence_number": 104
+      }
+    },
+    {
+      "id": "1934年受尽人情冷暖",
+      "type": "事件",
+      "properties": {
+        "name": "1934年受尽人情冷暖",
+        "sequence_number": 105
+      }
+    },
+    {
+      "id": "赌业王国",
+      "type": "行业",
+      "properties": {
+        "name": "赌业王国",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "1934年他协助贸易行从广东进口粮食与燃料",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他协助贸易行从广东进口粮食与燃料",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "在日军占三分之一股份的联昌粮油公司工作",
+      "type": "事件",
+      "properties": {
+        "name": "在日军占三分之一股份的联昌粮油公司工作",
+        "sequence_number": 109
+      }
+    },
+    {
+      "id": "1934年他半年后自己也成公司的股东",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他半年后自己也成公司的股东",
+        "sequence_number": 110
+      }
+    },
+    {
+      "id": "成为东南亚最大的煤油供应商",
+      "type": "事件",
+      "properties": {
+        "name": "成为东南亚最大的煤油供应商",
+        "sequence_number": 111
+      }
+    },
+    {
+      "id": "自己也成公司的股东",
+      "type": "事件",
+      "properties": {
+        "name": "自己也成公司的股东",
+        "sequence_number": 112
+      }
+    },
+    {
+      "id": "1934年他学习日语",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他学习日语",
+        "sequence_number": 113
+      }
+    },
+    {
+      "id": "1934年公司遭投掷手榴弹",
+      "type": "事件",
+      "properties": {
+        "name": "1934年公司遭投掷手榴弹",
+        "sequence_number": 114
+      }
+    },
+    {
+      "id": "1934年他大学未毕业第二次世界大战爆发",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他大学未毕业第二次世界大战爆发",
+        "sequence_number": 115
+      }
+    },
+    {
+      "id": "成为日本老板的秘书",
+      "type": "事件",
+      "properties": {
+        "name": "成为日本老板的秘书",
+        "sequence_number": 116
+      }
+    },
+    {
+      "id": "多次与死神擦身而过",
+      "type": "事件",
+      "properties": {
+        "name": "多次与死神擦身而过",
+        "sequence_number": 117
+      }
+    },
+    {
+      "id": "无奈于1953年结束澳门生意返港",
+      "type": "事件",
+      "properties": {
+        "name": "无奈于1953年结束澳门生意返港",
+        "sequence_number": 118
+      }
+    },
+    {
+      "id": "在抗战期间应日本商人齐藤之邀到澳门打工",
+      "type": "事件",
+      "properties": {
+        "name": "在抗战期间应日本商人齐藤之邀到澳门打工",
+        "sequence_number": 119
+      }
+    },
+    {
+      "id": "1934年他时常一起爬山及唱日文歌",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他时常一起爬山及唱日文歌",
+        "sequence_number": 120
+      }
+    },
+    {
+      "id": "1934年他教授英语",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他教授英语",
+        "sequence_number": 121
+      }
+    },
+    {
+      "id": "1934年他在心底许下誓言「我一定回来」",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他在心底许下誓言「我一定回来」",
+        "sequence_number": 122
+      }
+    },
+    {
+      "id": "1934年他成为理学院最优秀的学生",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他成为理学院最优秀的学生",
+        "sequence_number": 123
+      }
+    },
+    {
+      "id": "1934年他因出身显赫家族获举荐为日本特别支部军官长泽上校工作",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他因出身显赫家族获举荐为日本特别支部军官长泽上校工作",
+        "sequence_number": 124
+      }
+    },
+    {
+      "id": "1932年至1939年就读皇仁书院",
+      "type": "时间",
+      "properties": {
+        "name": "1932年至1939年就读皇仁书院",
+        "sequence_number": 125
+      }
+    },
+    {
+      "id": "1934年他往澳门避难及发展",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他往澳门避难及发展",
+        "sequence_number": 126
+      }
+    },
+    {
+      "id": "1934年他多次与死神擦身而过",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他多次与死神擦身而过",
+        "sequence_number": 127
+      }
+    },
+    {
+      "id": "1934年他应日本商人齐藤之邀到澳门打工",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他应日本商人齐藤之邀到澳门打工",
+        "sequence_number": 128
+      }
+    },
+    {
+      "id": "与长泽上校交情甚笃",
+      "type": "事件",
+      "properties": {
+        "name": "与长泽上校交情甚笃",
+        "sequence_number": 130
+      }
+    },
+    {
+      "id": "1946年正式登记结婚",
+      "type": "时间",
+      "properties": {
+        "name": "1946年正式登记结婚",
+        "sequence_number": 131
+      }
+    },
+    {
+      "id": "1934年亲戚当他是咸水草",
+      "type": "事件",
+      "properties": {
+        "name": "1934年亲戚当他是咸水草",
+        "sequence_number": 132
+      }
+    },
+    {
+      "id": "香港中学毕业会考佳绩",
+      "type": "事件",
+      "properties": {
+        "name": "香港中学毕业会考佳绩",
+        "sequence_number": 133
+      }
+    },
+    {
+      "id": "1939年入读香港大学理学院",
+      "type": "时间",
+      "properties": {
+        "name": "1939年入读香港大学理学院",
+        "sequence_number": 134
+      }
+    },
+    {
+      "id": "协助贸易行从广东进口粮食与燃料",
+      "type": "事件",
+      "properties": {
+        "name": "协助贸易行从广东进口粮食与燃料",
+        "sequence_number": 135
+      }
+    },
+    {
+      "id": "应日本商人齐藤之邀到澳门打工",
+      "type": "事件",
+      "properties": {
+        "name": "应日本商人齐藤之邀到澳门打工",
+        "sequence_number": 136
+      }
+    },
+    {
+      "id": "在心底许下誓言「我一定回来」",
+      "type": "事件",
+      "properties": {
+        "name": "在心底许下誓言「我一定回来」",
+        "sequence_number": 137
+      }
+    },
+    {
+      "id": "因多次为联昌以身犯险",
+      "type": "事件",
+      "properties": {
+        "name": "因多次为联昌以身犯险",
+        "sequence_number": 139
+      }
+    },
+    {
+      "id": "1934年他与长泽上校交情甚笃",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他与长泽上校交情甚笃",
+        "sequence_number": 140
+      }
+    },
+    {
+      "id": "1934年家境富裕顿变无分文",
+      "type": "事件",
+      "properties": {
+        "name": "1934年家境富裕顿变无分文",
+        "sequence_number": 141
+      }
+    },
+    {
+      "id": "1934年他在教育司署举办的首届香港中学毕业会考考获佳绩",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他在教育司署举办的首届香港中学毕业会考考获佳绩",
+        "sequence_number": 142
+      }
+    },
+    {
+      "id": "1934年他担任押船工作",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他担任押船工作",
+        "sequence_number": 143
+      }
+    },
+    {
+      "id": "1934年他与人合伙开办炼油厂",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他与人合伙开办炼油厂",
+        "sequence_number": 144
+      }
+    },
+    {
+      "id": "1934年他因多次为联昌以身犯险获100万元花红",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他因多次为联昌以身犯险获100万元花红",
+        "sequence_number": 145
+      }
+    },
+    {
+      "id": "1934年他与黎婉华订婚",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他与黎婉华订婚",
+        "sequence_number": 146
+      }
+    },
+    {
+      "id": "奖学金",
+      "type": "事件",
+      "properties": {
+        "name": "奖学金",
+        "sequence_number": 147
+      }
+    },
+    {
+      "id": "为澳门电灯公司供应煤油",
+      "type": "事件",
+      "properties": {
+        "name": "为澳门电灯公司供应煤油",
+        "sequence_number": 148
+      }
+    },
+    {
+      "id": "联昌公司",
+      "type": "物件",
+      "properties": {
+        "name": "联昌公司",
+        "sequence_number": 149
+      }
+    },
+    {
+      "id": "1947年与人合伙开办炼油厂",
+      "type": "时间",
+      "properties": {
+        "name": "1947年与人合伙开办炼油厂",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "战乱中落难澳门",
+      "type": "事件",
+      "properties": {
+        "name": "战乱中落难澳门",
+        "sequence_number": 150
+      }
+    },
+    {
+      "id": "1937年香港中学毕业会考",
+      "type": "时间",
+      "properties": {
+        "name": "1937年香港中学毕业会考",
+        "sequence_number": 151
+      }
+    },
+    {
+      "id": "1934年他考获奖学金进入香港大学",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他考获奖学金进入香港大学",
+        "sequence_number": 152
+      }
+    },
+    {
+      "id": "1934年他获颁政府全费奖学金",
+      "type": "事件",
+      "properties": {
+        "name": "1934年他获颁政府全费奖学金",
+        "sequence_number": 153
+      }
+    },
+    {
+      "id": "学习日语",
+      "type": "事件",
+      "properties": {
+        "name": "学习日语",
+        "sequence_number": 154
+      }
+    },
+    {
+      "id": "1934年父亲股票投资失利",
+      "type": "时间",
+      "properties": {
+        "name": "1934年父亲股票投资失利",
+        "sequence_number": 155
+      }
+    },
+    {
+      "id": "联昌粮油公司",
+      "type": "物件",
+      "properties": {
+        "name": "联昌粮油公司",
+        "sequence_number": 156
+      }
+    },
+    {
+      "id": "100万元花红",
+      "type": "物件",
+      "properties": {
+        "name": "100万元花红",
+        "sequence_number": 157
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门博彩专利权开放之前经营澳门娱乐赌博公司",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门博彩业",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "被媒体称为「赌王」",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港信德集团",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "航运",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "地产",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "酒店",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "娱乐",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "英属香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1921年11月25日出生",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "广东宝安",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何东家族",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "港澳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "在港澳乃至国际上享有很高的声誉和地位",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "政治网络",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "商业资源",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何东家族",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "家族声誉",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何甘棠的生父郭兴贤",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "施娣",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "广东宝安县",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "郭兴贤",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "何瑞婷",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "何柏娟",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "郭茂超",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "荷兰鹿特丹",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "1859年抵达香港",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "1873年在英国伦敦创办东方代理",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "英国伦敦",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "1888年入籍英国",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "1892年在英国伦敦去世",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "中国和犹太血统",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "罗絮才",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "罗絮才",
+      "target_id": "中英混血",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "沙逊洋行买办",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "豪门世家",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "黎婉华",
+      "target_id": "澳门",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "黎婉华",
+      "target_id": "土生葡人",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "黎婉华",
+      "target_id": "葡籍律师家族",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "元配黎婉华",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "中国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "犹太",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "罗絮才",
+      "target_id": "中国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "罗絮才",
+      "target_id": "英国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "中国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "英国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "中国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "英国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "犹太",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "英国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "波斯",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "犹太",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "Stephen Prentice Hall",
+      "target_id": "英国",
+      "type": "具有血统",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "沙逊洋行买办",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "沙逊洋行买办",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第九",
+      "type": "排行",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "九爷",
+      "type": "昵称",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "母系承传",
+      "type": "采用祖籍方案",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "中国广东宝安",
+      "type": "祖籍",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "中国广东宝安",
+      "type": "未有祖籍",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "波斯血统传闻",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "波斯血统传闻",
+      "target_id": "Bosman姓氏误译",
+      "type": "源于",
+      "properties": {}
+    },
+    {
+      "source_id": "波斯血统传闻",
+      "target_id": "帕西人背景",
+      "type": "可能源于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "皇仁书院",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "皇仁书院",
+      "target_id": "1932年至1939年",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "家道中落",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "战乱",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1941年",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "第二次世界大战爆发",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港大学",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港中学毕业会考",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "政府全费奖学金",
+      "type": "获得",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港大学理学院",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "利玛窦宿舍",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1941年12月8日日军入侵香港",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "抗战期间",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "联昌公司",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "押船工作",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日语",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "联昌粮油公司",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日本老板的秘书",
+      "type": "担任",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "贸易行从广东进口粮食与燃料",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "公司股东",
+      "type": "成为",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与黎婉华订婚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与黎婉华结婚",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何福",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "长泽上校工作",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "教授英语",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "爬山及唱日文歌",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1943年获派发100万元花红",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "创办澳门火水公司",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门火水公司",
+      "target_id": "澳门电灯公司",
+      "type": "供应",
+      "properties": {}
+    },
+    {
+      "source_id": "澳门火水公司",
+      "target_id": "东南亚最大的煤油供应商",
+      "type": "成为",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "开办炼油厂",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "炼油厂",
+      "target_id": "澳门电灯公司",
+      "type": "供应",
+      "properties": {}
+    },
+    {
+      "source_id": "炼油厂",
+      "target_id": "黑势力妒忌",
+      "type": "招致",
+      "properties": {}
+    },
+    {
+      "source_id": "炼油厂",
+      "target_id": "公司遭投掷手榴弹",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门生意",
+      "type": "结束",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "我一定回来",
+      "type": "许下誓言",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1953年",
+      "type": "发生",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港何东家族",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门娱乐赌博公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港信德集团",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "广东宝安",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "英属香港",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中英混血",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "犹太裔荷兰人Charles Henry Maurice Bosman",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "施娣",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何甘棠的生父郭兴贤",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "罗絮才",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "冼庆云",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门博彩专利权开放之前经营澳门娱乐赌博公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "赌王",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "全国政协常委",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "大紫荆勋贤",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "GBS",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "GLM",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "OBE",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "CStJ",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "SPMP",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "SPMT",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "航运",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "地产",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "酒店",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "娱乐",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何东家族",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "何鸿燊",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "港澳声誉和地位",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "初始社会资本",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "政治网络",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "商业资源",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "黎婉华",
+      "target_id": "澳门显赫的葡籍律师家族",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "黎婉华",
+      "target_id": "土生葡人",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "Charles Henry Maurice Bosman",
+      "target_id": "荷兰鹿特丹",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "Charles Henry Maurice Bosman",
+      "target_id": "东方代理",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "Charles Henry Maurice Bosman",
+      "target_id": "英国国籍",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "广东宝安县",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "何瑞婷",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "何柏娟",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "郭兴贤",
+      "target_id": "郭茂超",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "罗絮才",
+      "target_id": "中英混血",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "豪门世家",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "当地望族",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何福",
+      "target_id": "中国和犹太血统",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "中英混血",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何世光",
+      "target_id": "沙逊洋行买办",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "冼庆云",
+      "target_id": "中英混血",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "中国血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "犹太血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "英国血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "波斯血统",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "施娣",
+      "target_id": "中国",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何仕文",
+      "target_id": "犹太",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "Stephen Prentice Hall",
+      "target_id": "英国",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "中国广东宝安人",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何东",
+      "target_id": "母系祖籍",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何东家族",
+      "target_id": "母系祖籍",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何东家族",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "何福",
+      "type": "出身",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门火水（煤油）公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "澳门火水（煤油）公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "炼油厂",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "联昌粮油公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "联昌粮油公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "100万元红利",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "联昌公司",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "10元",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "政府全费奖学金",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "佳绩",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "奖学金",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港大学理学院",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "利玛窦宿舍",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "香港中学毕业会考佳绩",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日本特别支部军官长泽上校",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "日语能力",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "秘书职位",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与长泽上校交情",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "100万元花红",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "东南亚最大的煤油供应商",
+      "type": "经营",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "赌业王国",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "创业路",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "誓言「我一定回来」",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "战乱中落难澳门",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "多次与死神擦身而过",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "应日本商人齐藤之邀到澳门打工",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "在联昌粮油公司工作",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "成为日本老板的秘书",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "协助贸易行从广东进口粮食与燃料",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "自己也成公司的股东",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与黎婉华订婚",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与黎婉华结婚",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "在抗战期间应日本商人齐藤之邀到澳门打工",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "在日军占三分之一股份的联昌粮油公司工作",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "学习日语",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "与长泽上校交情甚笃",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "时常一起爬山及唱日文歌",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "因多次为联昌以身犯险",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1943年获派发100万元花红",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "创办澳门火水（煤油）公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "为澳门电灯公司供应煤油",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "成为东南亚最大的煤油供应商",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1947年与人合伙开办炼油厂",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "成澳门电灯公司主要供应商",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "公司遭投掷手榴弹",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "无奈于1953年结束澳门生意返港",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "在心底许下誓言「我一定回来」",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1941年12月8日日军入侵香港",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1941年第二次世界大战爆发",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1932年至1939年就读皇仁书院",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1937年香港中学毕业会考",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1939年入读香港大学理学院",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1942年在联昌粮油公司工作",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1946年正式登记结婚",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1953年结束澳门生意返港",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年父亲股票投资失利",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年一夜间倾家荡产",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年为躲债远走越南",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年家道中落",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年受尽人情冷暖",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年读初中时父亲破产",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年父亲远走避难",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年家境富裕顿变无分文",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年亲戚当他是咸水草",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他形容亲戚态度转变",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他终生难忘的经历",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他咬紧牙关发愤读书",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他力争上游",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他考获奖学金进入香港大学",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他在教育司署举办的首届香港中学毕业会考考获佳绩",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他获颁政府全费奖学金",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他成为理学院最优秀的学生",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他大学未毕业第二次世界大战爆发",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他未能修毕课程",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他应日本商人齐藤之邀到澳门打工",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他往澳门避难及发展",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他加入中葡日联营之联昌公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他担任押船工作",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他多次与死神擦身而过",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他学习日语",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他成为日本老板的秘书",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他协助贸易行从广东进口粮食与燃料",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他半年后自己也成公司的股东",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他与黎婉华订婚",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他与黎婉华结婚",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他因出身显赫家族获举荐为日本特别支部军官长泽上校工作",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他教授英语",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他与长泽上校交情甚笃",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他时常一起爬山及唱日文歌",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他因多次为联昌以身犯险获100万元花红",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他利用红利创办澳门火水（煤油）公司",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他为澳门电灯公司供应煤油",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他成为东南亚最大的煤油供应商",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他与人合伙开办炼油厂",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他成澳门电灯公司主要供应商",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年公司遭投掷手榴弹",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他无奈于1953年结束澳门生意返港",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "何鸿燊",
+      "target_id": "1934年他在心底许下誓言「我一定回来」",
+      "type": "拥有",
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,1336 @@
+{
+  "nodes": [
+    {
+      "id": "彭刚",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "彭毅",
+      "type": "人物",
+      "properties": {
+        "name": "彭毅",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "六堂叔",
+      "type": "人物",
+      "properties": {
+        "name": "六堂叔",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "伯爷",
+      "type": "人物",
+      "properties": {
+        "name": "伯爷",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "妹妹",
+      "type": "人物",
+      "properties": {
+        "name": "妹妹",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "广西浔州府贵县庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "广西浔州府贵县庆丰村",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "彭姓人家院子门前",
+      "type": "地点",
+      "properties": {
+        "name": "彭姓人家院子门前",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "彭姓人家后堂",
+      "type": "地点",
+      "properties": {
+        "name": "彭姓人家后堂",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "彭姓人家连续死了两名男丁",
+      "type": "事件",
+      "properties": {
+        "name": "彭姓人家连续死了两名男丁",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "彭刚夺舍穿越",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚夺舍穿越",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "族里威逼利诱彭毅画押",
+      "type": "事件",
+      "properties": {
+        "name": "族里威逼利诱彭毅画押",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "彭刚掀棺而起",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚掀棺而起",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "族里想吃旁支绝户",
+      "type": "目标",
+      "properties": {
+        "name": "族里想吃旁支绝户",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "彭刚不愿画押",
+      "type": "目标",
+      "properties": {
+        "name": "彭刚不愿画押",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "彭毅不就范",
+      "type": "目标",
+      "properties": {
+        "name": "彭毅不就范",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "族人与彭毅争夺家产",
+      "type": "冲突",
+      "properties": {
+        "name": "族人与彭毅争夺家产",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "素灯高挂，白幡飘摇",
+      "type": "动作",
+      "properties": {
+        "name": "素灯高挂，白幡飘摇",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "彭刚贪婪地呼吸",
+      "type": "动作",
+      "properties": {
+        "name": "彭刚贪婪地呼吸",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "彭刚想要挣扎起身掀开棺材板",
+      "type": "动作",
+      "properties": {
+        "name": "彭刚想要挣扎起身掀开棺材板",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "彭毅操持葬礼",
+      "type": "动作",
+      "properties": {
+        "name": "彭毅操持葬礼",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。这几年年景不好，灾疫匪祸横行，族里为操办好你爹和你三哥的后事没少忙前忙后，四处奔走。你六堂叔膝下无子，对你喜欢得紧，你既不愿过继，我们也不强求。好生听伯爷的话，在这里画个押，往后族里供你吃穿，供你继续读书。",
+      "type": "对白",
+      "properties": {
+        "name": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。这几年年景不好，灾疫匪祸横行，族里为操办好你爹和你三哥的后事没少忙前忙后，四处奔走。你六堂叔膝下无子，对你喜欢得紧，你既不愿过继，我们也不强求。好生听伯爷的话，在这里画个押，往后族里供你吃穿，供你继续读书。",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "诈尸啦！三哥？是你吗？你是人是鬼？",
+      "type": "对白",
+      "properties": {
+        "name": "诈尸啦！三哥？是你吗？你是人是鬼？",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "彭刚身体虚弱无法动弹",
+      "type": "结果",
+      "properties": {
+        "name": "彭刚身体虚弱无法动弹",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "彭刚有力气掀棺而起",
+      "type": "结果",
+      "properties": {
+        "name": "彭刚有力气掀棺而起",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "彭敏",
+      "type": "人物",
+      "properties": {
+        "name": "彭敏",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "族长",
+      "type": "人物",
+      "properties": {
+        "name": "族长",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "王保长",
+      "type": "人物",
+      "properties": {
+        "name": "王保长",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "几个舅舅",
+      "type": "人物",
+      "properties": {
+        "name": "几个舅舅",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "外阿婆",
+      "type": "人物",
+      "properties": {
+        "name": "外阿婆",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "掀棺而起",
+      "type": "动作",
+      "properties": {
+        "name": "掀棺而起",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "睁不开眼",
+      "type": "动作",
+      "properties": {
+        "name": "睁不开眼",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "破涕为笑",
+      "type": "动作",
+      "properties": {
+        "name": "破涕为笑",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "探了探鼻息",
+      "type": "动作",
+      "properties": {
+        "name": "探了探鼻息",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "擦拭涕泪",
+      "type": "动作",
+      "properties": {
+        "name": "擦拭涕泪",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "起身往厨房走去",
+      "type": "动作",
+      "properties": {
+        "name": "起身往厨房走去",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "搀扶走出棺材",
+      "type": "动作",
+      "properties": {
+        "name": "搀扶走出棺材",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "寻来竹凳",
+      "type": "动作",
+      "properties": {
+        "name": "寻来竹凳",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "接过茶水",
+      "type": "动作",
+      "properties": {
+        "name": "接过茶水",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "哭诉",
+      "type": "动作",
+      "properties": {
+        "name": "哭诉",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "搓着手心里的银锁",
+      "type": "动作",
+      "properties": {
+        "name": "搓着手心里的银锁",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "藏起来田契",
+      "type": "动作",
+      "properties": {
+        "name": "藏起来田契",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "搬走五斗七星柜和四把官帽椅子",
+      "type": "动作",
+      "properties": {
+        "name": "搬走五斗七星柜和四把官帽椅子",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "就算三哥是鬼，那也是咱们家的鬼，会护着咱们自家人。",
+      "type": "对白",
+      "properties": {
+        "name": "就算三哥是鬼，那也是咱们家的鬼，会护着咱们自家人。",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "三哥有气！气还是热的！真不是鬼！",
+      "type": "对白",
+      "properties": {
+        "name": "三哥有气！气还是热的！真不是鬼！",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "有吃的么？",
+      "type": "对白",
+      "properties": {
+        "name": "有吃的么？",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "有！有！有！",
+      "type": "对白",
+      "properties": {
+        "name": "有！有！有！",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "族长让你交出家里的田契？",
+      "type": "对白",
+      "properties": {
+        "name": "族长让你交出家里的田契？",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。说是只要把这九亩水田交给族里充作族田，族里往后供我和六妹吃穿。连来做中人的王保长都看不下去了，说了几句公道话，他们这才作罢。临走前还把咱们家的五斗七星柜连同四把官帽椅子都搬走了。",
+      "type": "对白",
+      "properties": {
+        "name": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。说是只要把这九亩水田交给族里充作族田，族里往后供我和六妹吃穿。连来做中人的王保长都看不下去了，说了几句公道话，他们这才作罢。临走前还把咱们家的五斗七星柜连同四把官帽椅子都搬走了。",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "你托人给阿舅捎口信了么？",
+      "type": "对白",
+      "properties": {
+        "name": "你托人给阿舅捎口信了么？",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "彭刚从棺材中醒来",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚从棺材中醒来",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "彭毅被族长逼迫交出田契",
+      "type": "事件",
+      "properties": {
+        "name": "彭毅被族长逼迫交出田契",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "庆丰村",
+      "type": "地点",
+      "properties": {
+        "name": "庆丰村",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "平在山（鹏隘山）",
+      "type": "地点",
+      "properties": {
+        "name": "平在山（鹏隘山）",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "厨房",
+      "type": "地点",
+      "properties": {
+        "name": "厨房",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "村口",
+      "type": "地点",
+      "properties": {
+        "name": "村口",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "交出家里的田契",
+      "type": "目标",
+      "properties": {
+        "name": "交出家里的田契",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "把村口的九亩上等水田充作族田",
+      "type": "目标",
+      "properties": {
+        "name": "把村口的九亩上等水田充作族田",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "彭毅与族长因田契产生冲突",
+      "type": "冲突",
+      "properties": {
+        "name": "彭毅与族长因田契产生冲突",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "族长未搜到田契并搬走家具",
+      "type": "结果",
+      "properties": {
+        "name": "族长未搜到田契并搬走家具",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "舅舅们",
+      "type": "人物",
+      "properties": {
+        "name": "舅舅们",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "外甥",
+      "type": "人物",
+      "properties": {
+        "name": "外甥",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "老爹",
+      "type": "人物",
+      "properties": {
+        "name": "老爹",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "本家那边",
+      "type": "人物",
+      "properties": {
+        "name": "本家那边",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "旁支",
+      "type": "人物",
+      "properties": {
+        "name": "旁支",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "韦长工",
+      "type": "人物",
+      "properties": {
+        "name": "韦长工",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "彭刚兄妹",
+      "type": "人物",
+      "properties": {
+        "name": "彭刚兄妹",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "外祖家",
+      "type": "人物",
+      "properties": {
+        "name": "外祖家",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "他们家",
+      "type": "地点",
+      "properties": {
+        "name": "他们家",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "咱们村",
+      "type": "地点",
+      "properties": {
+        "name": "咱们村",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "烧炭种山，给人做帮工",
+      "type": "事件",
+      "properties": {
+        "name": "烧炭种山，给人做帮工",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "送给外甥银锁",
+      "type": "事件",
+      "properties": {
+        "name": "送给外甥银锁",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "本家明天还会来",
+      "type": "事件",
+      "properties": {
+        "name": "本家明天还会来",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "本家搬家具",
+      "type": "事件",
+      "properties": {
+        "name": "本家搬家具",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "本家拆门撬窗牵牛抱猪",
+      "type": "事件",
+      "properties": {
+        "name": "本家拆门撬窗牵牛抱猪",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "农村宗族争保家产",
+      "type": "事件",
+      "properties": {
+        "name": "农村宗族争保家产",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "旁支六代攒田产",
+      "type": "事件",
+      "properties": {
+        "name": "旁支六代攒田产",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "本家妒火中烧",
+      "type": "事件",
+      "properties": {
+        "name": "本家妒火中烧",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "本家想吞下旁支",
+      "type": "事件",
+      "properties": {
+        "name": "本家想吞下旁支",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "彭刚支脉一脉单传人丁稀薄",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚支脉一脉单传人丁稀薄",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "彭刚兄妹想保住家产",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚兄妹想保住家产",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "依仗外祖家三个舅舅",
+      "type": "事件",
+      "properties": {
+        "name": "依仗外祖家三个舅舅",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "托韦长工捎口信给舅舅",
+      "type": "事件",
+      "properties": {
+        "name": "托韦长工捎口信给舅舅",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "舅舅们后天到",
+      "type": "事件",
+      "properties": {
+        "name": "舅舅们后天到",
+        "sequence_number": 83
+      }
+    },
+    {
+      "id": "彭刚觉得没有亲叔伯未必是坏事",
+      "type": "事件",
+      "properties": {
+        "name": "彭刚觉得没有亲叔伯未必是坏事",
+        "sequence_number": 84
+      }
+    },
+    {
+      "id": "拿到村口九亩上等水田",
+      "type": "目标",
+      "properties": {
+        "name": "拿到村口九亩上等水田",
+        "sequence_number": 85
+      }
+    },
+    {
+      "id": "将他们家吃干抹净",
+      "type": "目标",
+      "properties": {
+        "name": "将他们家吃干抹净",
+        "sequence_number": 86
+      }
+    },
+    {
+      "id": "保住家产",
+      "type": "目标",
+      "properties": {
+        "name": "保住家产",
+        "sequence_number": 87
+      }
+    },
+    {
+      "id": "本家与旁支争夺家产",
+      "type": "冲突",
+      "properties": {
+        "name": "本家与旁支争夺家产",
+        "sequence_number": 88
+      }
+    },
+    {
+      "id": "没拿到村口的九亩上等水田，本家那边不会善罢甘休，他们明天还会来的。",
+      "type": "对白",
+      "properties": {
+        "name": "没拿到村口的九亩上等水田，本家那边不会善罢甘休，他们明天还会来的。",
+        "sequence_number": 89
+      }
+    },
+    {
+      "id": "阿爸咽气前，我就偷偷托咱们家的韦长工去平在山给阿舅他们捎个口信。可咱们村到阿舅他们那儿足足有两百六七十来里的路，很多路还是山路，舅舅们脚力再好也要后天才能到。",
+      "type": "对白",
+      "properties": {
+        "name": "阿爸咽气前，我就偷偷托咱们家的韦长工去平在山给阿舅他们捎个口信。可咱们村到阿舅他们那儿足足有两百六七十来里的路，很多路还是山路，舅舅们脚力再好也要后天才能到。",
+        "sequence_number": 90
+      }
+    },
+    {
+      "id": "你的手上的伤是本家的人掐的？",
+      "type": "对白",
+      "properties": {
+        "name": "你的手上的伤是本家的人掐的？",
+        "sequence_number": 91
+      }
+    },
+    {
+      "id": "烧炭",
+      "type": "动作",
+      "properties": {
+        "name": "烧炭",
+        "sequence_number": 92
+      }
+    },
+    {
+      "id": "种山",
+      "type": "动作",
+      "properties": {
+        "name": "种山",
+        "sequence_number": 93
+      }
+    },
+    {
+      "id": "做帮工",
+      "type": "动作",
+      "properties": {
+        "name": "做帮工",
+        "sequence_number": 94
+      }
+    },
+    {
+      "id": "送银锁",
+      "type": "动作",
+      "properties": {
+        "name": "送银锁",
+        "sequence_number": 95
+      }
+    },
+    {
+      "id": "捎口信",
+      "type": "动作",
+      "properties": {
+        "name": "捎口信",
+        "sequence_number": 96
+      }
+    },
+    {
+      "id": "搬家具",
+      "type": "动作",
+      "properties": {
+        "name": "搬家具",
+        "sequence_number": 97
+      }
+    },
+    {
+      "id": "拆门撬窗",
+      "type": "动作",
+      "properties": {
+        "name": "拆门撬窗",
+        "sequence_number": 98
+      }
+    },
+    {
+      "id": "牵牛抱猪",
+      "type": "动作",
+      "properties": {
+        "name": "牵牛抱猪",
+        "sequence_number": 99
+      }
+    },
+    {
+      "id": "生活并不宽裕",
+      "type": "结果",
+      "properties": {
+        "name": "生活并不宽裕",
+        "sequence_number": 100
+      }
+    },
+    {
+      "id": "银锁分量足",
+      "type": "结果",
+      "properties": {
+        "name": "银锁分量足",
+        "sequence_number": 101
+      }
+    },
+    {
+      "id": "他们家和外祖家关系不错",
+      "type": "结果",
+      "properties": {
+        "name": "他们家和外祖家关系不错",
+        "sequence_number": 102
+      }
+    },
+    {
+      "id": "彭刚十七岁",
+      "type": "结果",
+      "properties": {
+        "name": "彭刚十七岁",
+        "sequence_number": 103
+      }
+    },
+    {
+      "id": "弟弟早熟让彭刚欣慰又心酸",
+      "type": "结果",
+      "properties": {
+        "name": "弟弟早熟让彭刚欣慰又心酸",
+        "sequence_number": 104
+      }
+    },
+    {
+      "id": "可咱们村到阿舅他们那儿足足有两百六七十来里的路，很多路还是山路，舅舅们脚力再好也要后天才能到。",
+      "type": "对白",
+      "properties": {
+        "name": "可咱们村到阿舅他们那儿足足有两百六七十来里的路，很多路还是山路，舅舅们脚力再好也要后天才能到。",
+        "sequence_number": 105
+      }
+    },
+    {
+      "id": "弟弟的早熟",
+      "type": "事件",
+      "properties": {
+        "name": "弟弟的早熟",
+        "sequence_number": 106
+      }
+    },
+    {
+      "id": "彭刚感到既欣慰又心酸",
+      "type": "结果",
+      "properties": {
+        "name": "彭刚感到既欣慰又心酸",
+        "sequence_number": 107
+      }
+    },
+    {
+      "id": "彭刚瞥见彭毅左腕处的淤青",
+      "type": "动作",
+      "properties": {
+        "name": "彭刚瞥见彭毅左腕处的淤青",
+        "sequence_number": 108
+      }
+    },
+    {
+      "id": "彭刚拉起麻衣衣袖",
+      "type": "动作",
+      "properties": {
+        "name": "彭刚拉起麻衣衣袖",
+        "sequence_number": 109
+      }
+    },
+    {
+      "id": "一条青一块紫一块、满是爪痕的小手臂赫然呈现在彭刚眼前",
+      "type": "结果",
+      "properties": {
+        "name": "一条青一块紫一块、满是爪痕的小手臂赫然呈现在彭刚眼前",
+        "sequence_number": 110
+      }
+    },
+    {
+      "id": "彭毅噙着泪水",
+      "type": "动作",
+      "properties": {
+        "name": "彭毅噙着泪水",
+        "sequence_number": 111
+      }
+    },
+    {
+      "id": "彭毅委屈地点点头",
+      "type": "动作",
+      "properties": {
+        "name": "彭毅委屈地点点头",
+        "sequence_number": 112
+      }
+    },
+    {
+      "id": "彭毅没有说话",
+      "type": "动作",
+      "properties": {
+        "name": "彭毅没有说话",
+        "sequence_number": 113
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚贪婪地呼吸",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚想要挣扎起身掀开棺材板",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅操持葬礼",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "伯爷",
+      "target_id": "阿毅，你爹临终前嘱托我照料你们兄妹二人，照管田契。这几年年景不好，灾疫匪祸横行，族里为操办好你爹和你三哥的后事没少忙前忙后，四处奔走。你六堂叔膝下无子，对你喜欢得紧，你既不愿过继，我们也不强求。好生听伯爷的话，在这里画个押，往后族里供你吃穿，供你继续读书。",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "诈尸啦！三哥？是你吗？你是人是鬼？",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭姓人家连续死了两名男丁",
+      "target_id": "广西浔州府贵县庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "族里威逼利诱彭毅画押",
+      "target_id": "彭姓人家后堂",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚夺舍穿越",
+      "target_id": "广西浔州府贵县庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚掀棺而起",
+      "target_id": "彭姓人家后堂",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "素灯高挂，白幡飘摇",
+      "target_id": "彭姓人家院子门前",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭姓人家连续死了两名男丁",
+      "target_id": "族里威逼利诱彭毅画押",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "族里想吃旁支绝户",
+      "target_id": "族里威逼利诱彭毅画押",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚夺舍穿越",
+      "target_id": "彭刚身体虚弱无法动弹",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚有力气掀棺而起",
+      "target_id": "彭刚掀棺而起",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "族里威逼利诱彭毅画押",
+      "target_id": "彭毅不就范",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "掀棺而起",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "睁不开眼",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "破涕为笑",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "破涕为笑",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "探了探鼻息",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "擦拭涕泪",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "起身往厨房走去",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "搀扶走出棺材",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "寻来竹凳",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "接过茶水",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "哭诉",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "搓着手心里的银锁",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "藏起来田契",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "族长",
+      "target_id": "搬走五斗七星柜和四把官帽椅子",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "就算三哥是鬼，那也是咱们家的鬼，会护着咱们自家人。",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "三哥有气！气还是热的！真不是鬼！",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "有吃的么？",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭敏",
+      "target_id": "有！有！有！",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "族长让你交出家里的田契？",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "田契被我藏起来了，他们没搜到田契，就赖咱们家里不走，软磨硬泡逼我把田契交出来。我不肯交，他们就哄逼我画押，非要把咱们家在村口的九亩上等水田充作族田。说是只要把这九亩水田交给族里充作族田，族里往后供我和六妹吃穿。连来做中人的王保长都看不下去了，说了几句公道话，他们这才作罢。临走前还把咱们家的五斗七星柜连同四把官帽椅子都搬走了。",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "你托人给阿舅捎口信了么？",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚从棺材中醒来",
+      "target_id": "庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅被族长逼迫交出田契",
+      "target_id": "庆丰村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅与族长因田契产生冲突",
+      "target_id": "族长未搜到田契并搬走家具",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅被族长逼迫交出田契",
+      "target_id": "彭毅与族长因田契产生冲突",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅们",
+      "target_id": "烧炭",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅们",
+      "target_id": "种山",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅们",
+      "target_id": "做帮工",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "舅舅们",
+      "target_id": "送银锁",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "本家那边",
+      "target_id": "搬家具",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "本家那边",
+      "target_id": "拆门撬窗",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "本家那边",
+      "target_id": "牵牛抱猪",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "托韦长工捎口信给舅舅",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "韦长工",
+      "target_id": "捎口信",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "烧炭种山，给人做帮工",
+      "target_id": "平在山（鹏隘山）",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "本家搬家具",
+      "target_id": "他们家",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "本家拆门撬窗牵牛抱猪",
+      "target_id": "他们家",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "托韦长工捎口信给舅舅",
+      "target_id": "咱们村",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "烧炭种山，给人做帮工",
+      "target_id": "生活并不宽裕",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "送给外甥银锁",
+      "target_id": "银锁分量足",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "送给外甥银锁",
+      "target_id": "他们家和外祖家关系不错",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "本家与旁支争夺家产",
+      "target_id": "本家搬家具",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "本家与旁支争夺家产",
+      "target_id": "本家明天还会来",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚支脉一脉单传人丁稀薄",
+      "target_id": "彭刚兄妹想保住家产",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚兄妹想保住家产",
+      "target_id": "依仗外祖家三个舅舅",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "依仗外祖家三个舅舅",
+      "target_id": "托韦长工捎口信给舅舅",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "托韦长工捎口信给舅舅",
+      "target_id": "舅舅们后天到",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "可咱们村到阿舅他们那儿足足有两百六七十来里的路，很多路还是山路，舅舅们脚力再好也要后天才能到。",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "你的手上的伤是本家的人掐的？",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚瞥见彭毅左腕处的淤青",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚",
+      "target_id": "彭刚拉起麻衣衣袖",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "弟弟的早熟",
+      "target_id": "彭刚感到既欣慰又心酸",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭刚拉起麻衣衣袖",
+      "target_id": "一条青一块紫一块、满是爪痕的小手臂赫然呈现在彭刚眼前",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅噙着泪水",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅委屈地点点头",
+      "type": "执行",
+      "properties": {}
+    },
+    {
+      "source_id": "彭毅",
+      "target_id": "彭毅没有说话",
+      "type": "执行",
+      "properties": {}
+    }
+  ]
+}

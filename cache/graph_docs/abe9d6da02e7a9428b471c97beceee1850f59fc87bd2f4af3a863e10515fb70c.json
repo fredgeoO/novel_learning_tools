@@ -1,0 +1,730 @@
+{
+  "nodes": [
+    {
+      "id": "修炼",
+      "type": "事件",
+      "properties": {
+        "name": "修炼",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "初圣宗",
+      "type": "地点",
+      "properties": {
+        "name": "初圣宗",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "气急败坏",
+      "type": "事件",
+      "properties": {
+        "name": "气急败坏",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "阴阳大乐赋",
+      "type": "事件",
+      "properties": {
+        "name": "阴阳大乐赋",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "元气亏空",
+      "type": "物件",
+      "properties": {
+        "name": "元气亏空",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "广场",
+      "type": "地点",
+      "properties": {
+        "name": "广场",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "打死吕阳",
+      "type": "事件",
+      "properties": {
+        "name": "打死吕阳",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "玉素真",
+      "type": "人物",
+      "properties": {
+        "name": "玉素真",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "选择收获",
+      "type": "事件",
+      "properties": {
+        "name": "选择收获",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "百世书残留页数",
+      "type": "物件",
+      "properties": {
+        "name": "百世书残留页数",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "元气流失",
+      "type": "物件",
+      "properties": {
+        "name": "元气流失",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "百世书",
+      "type": "物件",
+      "properties": {
+        "name": "百世书",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "点名分配",
+      "type": "事件",
+      "properties": {
+        "name": "点名分配",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "合欢殿",
+      "type": "地点",
+      "properties": {
+        "name": "合欢殿",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "吕阳",
+      "type": "人物",
+      "properties": {
+        "name": "吕阳",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "99",
+      "type": "时间",
+      "properties": {
+        "name": "99",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "重开一世",
+      "type": "事件",
+      "properties": {
+        "name": "重开一世",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "病重而亡",
+      "type": "事件",
+      "properties": {
+        "name": "病重而亡",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "觉醒天赋",
+      "type": "事件",
+      "properties": {
+        "name": "觉醒天赋",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "左道奇才",
+      "type": "事件",
+      "properties": {
+        "name": "左道奇才",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "领悟力极高",
+      "type": "事件",
+      "properties": {
+        "name": "领悟力极高",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "炼气突破",
+      "type": "事件",
+      "properties": {
+        "name": "炼气突破",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "掠夺元气",
+      "type": "事件",
+      "properties": {
+        "name": "掠夺元气",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "阴阳大乐赋",
+      "type": "物件",
+      "properties": {
+        "name": "阴阳大乐赋",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "修炼阴阳大乐赋",
+      "type": "事件",
+      "properties": {
+        "name": "修炼阴阳大乐赋",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "反噬玉素真",
+      "type": "事件",
+      "properties": {
+        "name": "反噬玉素真",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "晋升正式弟子",
+      "type": "事件",
+      "properties": {
+        "name": "晋升正式弟子",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "突破",
+      "type": "事件",
+      "properties": {
+        "name": "突破",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "炼气",
+      "type": "事件",
+      "properties": {
+        "name": "炼气",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "选择一项：寿命",
+      "type": "事件",
+      "properties": {
+        "name": "选择一项：寿命",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "选择一项：宝物",
+      "type": "事件",
+      "properties": {
+        "name": "选择一项：宝物",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "吕阳的元气",
+      "type": "事件",
+      "properties": {
+        "name": "吕阳的元气",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "百世书残留页数：99",
+      "type": "事件",
+      "properties": {
+        "name": "百世书残留页数：99",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "选择一项：放弃所有收获，根据前世经历随机觉醒一门天赋",
+      "type": "事件",
+      "properties": {
+        "name": "选择一项：放弃所有收获，根据前世经历随机觉醒一门天赋",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "选择一项：修为",
+      "type": "事件",
+      "properties": {
+        "name": "选择一项：修为",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "元气",
+      "type": "事件",
+      "properties": {
+        "name": "元气",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "炁",
+      "type": "事件",
+      "properties": {
+        "name": "炁",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "精气神",
+      "type": "事件",
+      "properties": {
+        "name": "精气神",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "炼气境",
+      "type": "事件",
+      "properties": {
+        "name": "炼气境",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "炼气一层",
+      "type": "事件",
+      "properties": {
+        "name": "炼气一层",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "正式弟子",
+      "type": "事件",
+      "properties": {
+        "name": "正式弟子",
+        "sequence_number": 20
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "吕阳",
+      "target_id": "修炼",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "阴阳大乐赋",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "阴阳大乐赋",
+      "target_id": "合欢殿",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "阴阳大乐赋",
+      "target_id": "元气流失",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "元气亏空",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "广场",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "重开一世",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "选择收获",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "百世书残留页数",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书残留页数",
+      "target_id": "99",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "气急败坏",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "打死吕阳",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "点名分配",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "初圣宗",
+      "target_id": "广场",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "初圣宗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "阴阳大乐赋",
+      "target_id": "初圣宗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "点名分配",
+      "target_id": "广场",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "广场",
+      "target_id": "初圣宗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "掠夺元气",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "病重而亡",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "百世书",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "觉醒天赋",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "左道奇才",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "左道奇才",
+      "target_id": "领悟力极高",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "修炼阴阳大乐赋",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼气突破",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "炼气突破",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "反噬玉素真",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼气",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "炼气",
+      "target_id": "吕阳",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "突破",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "突破",
+      "target_id": "吕阳",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "玉素真",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "合欢殿",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "合欢殿",
+      "target_id": "玉素真",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "炼气",
+      "target_id": "玉素真",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "炼气",
+      "target_id": "吕阳",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "晋升正式弟子",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "晋升正式弟子",
+      "target_id": "吕阳",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "阴阳大乐赋",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳",
+      "type": "掠夺",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "炼气",
+      "type": "突破",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "百世书残留页数：99",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "重开一世",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "选择一项：宝物",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "选择一项：修为",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "选择一项：寿命",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "选择一项：放弃所有收获，根据前世经历随机觉醒一门天赋",
+      "type": "提供",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "吕阳的元气",
+      "type": "掠夺",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼气境",
+      "type": "突破",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "左道奇才",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "炼气境",
+      "type": "突破",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "百世书",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "百世书",
+      "target_id": "吕阳",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "合欢殿",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "元气",
+      "type": "掠夺",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼气一层",
+      "type": "突破",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "精气神",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炁",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼气",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "炼气",
+      "type": "突破",
+      "properties": {}
+    },
+    {
+      "source_id": "玉素真",
+      "target_id": "炼气",
+      "type": "修炼",
+      "properties": {}
+    },
+    {
+      "source_id": "吕阳",
+      "target_id": "正式弟子",
+      "type": "晋升",
+      "properties": {}
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>知识图谱查看器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark-theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📖 知识图谱查看器</h1>
+
+            <!-- Tab 导航 -->
+            <ul class="nav-tabs" id="mainTabs">
+                <li class="nav-item active">
+                    <a class="nav-link " href="#" data-tab="graph">👁️ 图谱视图</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-tab="selector">📚 选择图谱</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-tab="text">📝 文字版</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#" data-tab="generator">🚀 生成图谱</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab 内容 -->
+        <div class="tab-content mt-3">
+           <!-- 图谱视图 Tab -->
+            <div class="tab-pane active" id="graph-tab">
+                <div class="main-layout">
+                    <!-- 图谱容器（包含 iframe 和浮动面板） -->
+                    <div class="graph-container">
+                        <iframe
+                            id="pyvis-iframe"
+                            src="/api/graph-frame?cache_key={{ cache_key }}"
+                            style="width: 100%; height: 100%; border: none; background-color: #1e1e1e;"
+                            frameborder="0">
+                        </iframe>
+
+                        <!-- 浮动控制面板 -->
+                        <div class="floating-control-section">
+                            <!-- 元数据 -->
+                            <div class="control-panel">
+                                <h5>📋 图谱信息</h5>
+                                <div id="metadata-info">加载中...</div>
+                            </div>
+
+                            <!-- 刷新按钮 -->
+                            <div class="control-panel">
+                                <button id="refresh-btn" class="btn btn-primary w-100">🔄 刷新图谱</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 选择器 Tab -->
+            <div class="tab-pane" id="selector-tab">
+                <div id="selector-content">
+                    <div class="text-center" style="padding: 50px;">
+                        <div class="spinner" role="status"></div>
+                        <p class="mt-2">正在加载选择器...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 文字版 Tab -->
+            <div class="tab-pane" id="text-tab">
+                <div id="text-content">
+                    <div class="text-center" style="padding: 50px;">
+                        <div class="spinner" role="status"></div>
+                        <p class="mt-2">正在加载文字版...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 生成器 Tab -->
+            <div class="tab-pane" id="generator-tab">
+                <div id="generator-content" style="height: 100%; overflow-y: auto;">
+                    <div class="text-center" style="padding: 50px;">
+                        <div class="spinner" role="status"></div>
+                        <p class="mt-2">正在加载生成器...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      // 全局变量
+const cacheKey = '{{ cache_key }}';
+
+// Tab 状态管理
+const tabState = {
+    selectorLoaded: false,
+    textLoaded: false,
+    generatorLoaded: false
+};
+
+// Tab 切换功能
+document.getElementById('mainTabs').addEventListener('click', function(e) {
+    e.preventDefault();
+
+            if (e.target.classList.contains('nav-link')) {
+                const tabName = e.target.getAttribute('data-tab');
+
+                // 更新活动状态
+                document.querySelectorAll('#mainTabs .nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                e.target.classList.add('active');
+
+                // 切换内容面板
+                document.querySelectorAll('.tab-pane').forEach(panel => {
+                    panel.classList.remove('active');
+                });
+                document.getElementById(`${tabName}-tab`).classList.add('active');
+
+                // 根据需要加载内容（但不重复加载）
+                switch(tabName) {
+                    case 'selector':
+                        if (!tabState.selectorLoaded) {
+                            loadSelectorContent();
+                            tabState.selectorLoaded = true;
+                        }
+                        break;
+                    case 'text':
+                        if (!tabState.textLoaded) {
+                            loadTextContent();
+                            tabState.textLoaded = true;
+                        }
+                        break;
+                    case 'generator':
+                        if (!tabState.generatorLoaded) {
+                            loadGeneratorContent();
+                            tabState.generatorLoaded = true;
+                        }
+                        break;
+                    case 'graph':
+                        // 图谱视图已经在页面中，无需重载
+                        break;
+                }
+            }
+        });
+
+        // 加载选择器内容
+        async function loadSelectorContent() {
+            const selectorContent = document.getElementById('selector-content');
+
+            // 如果已经加载过内容（不是初始的加载中状态），直接返回
+            if (selectorContent.querySelector('.main-layout')) {
+                return;
+            }
+
+            // 显示加载状态
+            selectorContent.innerHTML = `
+                <div class="text-center" style="padding: 50px;">
+                    <div class="spinner" role="status"></div>
+                    <p class="mt-2">正在加载选择器...</p>
+                </div>
+            `;
+
+            try {
+                const response = await fetch('/selector');
+                const html = await response.text();
+                selectorContent.innerHTML = html;
+
+                // 执行加载后的初始化脚本
+                const scripts = selectorContent.querySelectorAll('script');
+                scripts.forEach(script => {
+                    if (script.src) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src;
+                        document.head.appendChild(newScript);
+                    } else {
+                        // 使用立即执行函数避免作用域问题
+                        (function() {
+                            eval(script.innerHTML);
+                        })();
+                    }
+                });
+            } catch (error) {
+                selectorContent.innerHTML =
+                    `<div class="alert alert-danger">加载失败: ${error.message}</div>`;
+            }
+        }
+
+        async function loadGraphContent() {
+            const iframe = document.getElementById('pyvis-iframe');
+            iframe.src = `/api/graph-frame?cache_key=${encodeURIComponent(cacheKey)}`;
+        }
+
+        // 加载生成器内容
+        async function loadGeneratorContent() {
+            const generatorContent = document.getElementById('generator-content');
+
+            // 如果已经加载过内容，直接返回
+            if (generatorContent.querySelector('.main-layout') ||
+                generatorContent.querySelector('.generator-container')) {
+                return;
+            }
+
+            // 显示加载状态
+            generatorContent.innerHTML = `
+                <div class="text-center" style="padding: 50px;">
+                    <div class="spinner" role="status"></div>
+                    <p class="mt-2">正在加载生成器...</p>
+                </div>
+            `;
+
+            try {
+                const response = await fetch('/generator');
+                const html = await response.text();
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                generatorContent.innerHTML = html;
+
+                // 手动执行所有 script 标签（generator.html 里有 JS）
+                const scripts = generatorContent.querySelectorAll('script');
+                scripts.forEach(oldScript => {
+                    const newScript = document.createElement('script');
+                    if (oldScript.src) {
+                        newScript.src = oldScript.src;
+                    } else {
+                        newScript.textContent = oldScript.textContent;
+                    }
+                    oldScript.parentNode.replaceChild(newScript, oldScript);
+                });
+
+            } catch (error) {
+                generatorContent.innerHTML = `
+                    <div class="alert alert-danger m-3">
+                        ❌ 加载生成器失败: ${error.message}<br>
+                        请确保服务正常运行，或尝试刷新页面。
+                    </div>`;
+            }
+        }
+
+        // 加载元数据
+        async function loadMetadata() {
+            const infoDiv = document.getElementById('metadata-info');
+            try {
+                const response = await fetch(`/api/graph/${encodeURIComponent(cacheKey)}/metadata`);
+                const metadata = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(metadata.error || '加载元数据失败');
+                }
+
+                // 格式化时间
+                const formatTime = (timeStr) => {
+                    if (!timeStr) return '未知';
+                    try {
+                        return new Date(timeStr).toLocaleString('zh-CN');
+                    } catch {
+                        return timeStr;
+                    }
+                };
+
+                // 构建显示内容
+                const items = [
+                    { label: '小说', value: metadata.novel_name || '未知' },
+                    { label: '章节', value: metadata.chapter_name || '未知' },
+                    { label: '模型', value: metadata.model_name || '未知' },
+                    { label: '本地模型', value: metadata.use_local !== undefined ? (metadata.use_local ? '是' : '否') : '未知' },
+                    { label: '上下文长度', value: metadata.num_ctx || '未知' },
+                    { label: '块大小', value: metadata.chunk_size || '未知' },
+                    { label: '重叠大小', value: metadata.chunk_overlap || '未知' },
+                    { label: '内容大小', value: metadata.content_size || '未知' },
+                    { label: '模式', value: metadata.schema_name || '未知' },
+                    { label: '创建时间', value: formatTime(metadata.created_at) }
+                ];
+
+                // 生成HTML
+                const htmlContent = items.map(item => `
+                    <div class="detail-item">
+                        <span class="detail-label">${item.label}:</span>
+                        <span class="detail-value">${item.value}</span>
+                    </div>
+                `).join('');
+
+                infoDiv.innerHTML = htmlContent;
+
+            } catch (error) {
+                infoDiv.innerHTML = `<div class="alert alert-warning">无法加载元数据: ${error.message}</div>`;
+            }
+        }
+
+        // 事件监听
+        document.getElementById('refresh-btn').addEventListener('click', () => {
+            loadGraphContent();
+            loadMetadata();
+        });
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            loadGraphContent();
+            loadMetadata();
+        });
+    </script>
+</body>
+</html>

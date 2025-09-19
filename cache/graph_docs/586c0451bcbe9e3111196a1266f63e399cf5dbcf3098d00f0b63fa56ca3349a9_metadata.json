@@ -1,0 +1,15 @@
+{
+  "novel_name": "111.测试文档",
+  "chapter_name": "04.何鸿燊 (1)",
+  "model_name": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+  "use_local": true,
+  "num_ctx": 16384,
+  "chunk_size": 1024,
+  "chunk_overlap": 192,
+  "content_size": 2148,
+  "schema_name": "自动生成",
+  "cache_version": "1.1",
+  "created_at": "2025-09-19T01:07:48.512022",
+  "schema_display": "自动生成",
+  "saved_at": "2025-09-19T01:07:48.517022"
+}

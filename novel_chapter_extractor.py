@@ -48,7 +48,7 @@ from selenium.common.exceptions import TimeoutException, WebDriverException
 import logging
 
 # --- 新增：导入工具模块 ---
-import chapter_utils
+import utils_chapter
 # --- 新增结束 ---
 
 # --- 配置 ---
@@ -830,7 +830,7 @@ def main():
 
         # 5. 执行预检查 (使用工具模块中的函数)
         # 注意：chapter_utils.should_process_novel_by_name 返回布尔值
-        need_processing = chapter_utils.should_process_novel_by_name(
+        need_processing = utils_chapter.should_process_novel_by_name(
             bookname=bookname,
             save_base_dir=SAVE_BASE_DIR
         )

@@ -1,0 +1,50 @@
+  *, *::before, *::after {
+            box-sizing: border-box !important;
+        }
+
+        body, html {
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            background-color: #1e1e1e !important;
+            overflow: hidden !important;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+        }
+
+        #mynetwork {
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #1e1e1e !important;
+        }
+
+        .vis-network {
+            background-color: #1e1e1e !important;
+        }
+
+        .vis-tooltip {
+            background-color: #2d2d30 !important;
+            color: #ffffff !important;
+            border: 1px solid #3c3c3c !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+            font-family: inherit !important;
+        }
+
+        .vis-label {
+            color: #ffffff !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+        }
+
+        .vis-edge-label {
+            color: #cccccc !important;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+        }
+
+        .vis-button, .vis-edit-mode {
+            display: none !important;
+        }
+
+        .container, .row, .col, .btn, .form-control {
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
+        }

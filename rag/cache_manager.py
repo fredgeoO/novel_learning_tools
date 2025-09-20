@@ -7,9 +7,21 @@ from typing import Any, Dict, Optional, List
 from datetime import datetime
 from rag.config_models import ExtractionConfig
 
-CACHE_DIR = "./cache/graph_docs"
+from rag.config import CACHE_DIR
 
-os.makedirs(CACHE_DIR, exist_ok=True)
+# --- 修改 1: 从 inputs/rag/config.py 导入 CACHE_DIR ---
+
+from rag.config import CACHE_DIR
+
+# --- 修改 2: 定义子目录 ---
+CACHE_SUBFOLDER = "graph_docs"
+
+# --- 修改 3: 构造实际的图谱缓存目录 ---
+GRAPH_CACHE_DIR = os.path.join(CACHE_DIR, CACHE_SUBFOLDER) # <--- 确保这行存在
+
+# --- 修改 4: 确保目录存在 ---
+os.makedirs(GRAPH_CACHE_DIR, exist_ok=True) # <--- 确保这行存在
+
 
 
 def get_cache_key(params: Dict[str, Any]) -> str:
@@ -25,10 +37,11 @@ def get_cache_key_from_config(config: ExtractionConfig) -> str:
 
 def save_cache(key: str, data: Any, metadata: Optional[Dict[str, Any]] = None) -> None:
     """保存缓存，可选择性地保存元数据"""
-    # 保存主要数据为JSON格式
-    data_path = os.path.join(CACHE_DIR, f"{key}.json")
+    # --- 修改 2: 构造正确的路径 ---
+    # 保存主要数据为JSON格式 (在 graph_docs 子目录下)
+    data_path = os.path.join(GRAPH_CACHE_DIR, f"{key}.json") # 使用 GRAPH_CACHE_DIR
+    # --- 修改结束 ---
     try:
-        # 如果数据有to_dict方法，先转换为字典
         if hasattr(data, 'to_dict'):
             json_data = data.to_dict()
         else:
@@ -39,11 +52,11 @@ def save_cache(key: str, data: Any, metadata: Optional[Dict[str, Any]] = None) -
     except Exception as e:
         print(f"警告：缓存数据保存失败 {key}: {e}")
 
-    # 如果提供了元数据，也保存元数据
     if metadata:
-        metadata_path = os.path.join(CACHE_DIR, f"{key}_metadata.json")
+        # --- 修改 3: 构造正确的元数据路径 ---
+        metadata_path = os.path.join(GRAPH_CACHE_DIR, f"{key}_metadata.json") # 使用 GRAPH_CACHE_DIR
+        # --- 修改结束 ---
         try:
-            # 添加保存时间
             metadata['saved_at'] = datetime.now().isoformat()
             with open(metadata_path, "w", encoding='utf-8') as f:
                 json.dump(metadata, f, ensure_ascii=False, indent=2)
@@ -53,29 +66,52 @@ def save_cache(key: str, data: Any, metadata: Optional[Dict[str, Any]] = None) -
 
 def load_cache(key: str) -> Optional[Any]:
     """加载缓存"""
-    path = os.path.join(CACHE_DIR, f"{key}.json")
-    if os.path.exists(path):
+    # --- 构造缓存数据文件的完整路径 ---
+    # 文件结构: CACHE_DIR/graph_docs/{key}.json
+    cache_data_filename = f"{key}.json"
+    # 使用 os.path.join 拼接完整路径
+    cache_data_path = os.path.join(GRAPH_CACHE_DIR, cache_data_filename)
+
+    # --- 添加调试信息：打印完整路径 ---
+
+    # 或者使用 print (更直接)
+    print(f"[DEBUG] load_cache is looking for file at: '{cache_data_path}'")
+    print(f"[DEBUG] Does the file exist? {os.path.exists(cache_data_path)}")
+    # --- 调试信息结束 ---
+
+
+    # --- 检查文件是否存在并尝试加载 ---
+    if os.path.exists(cache_data_path):
         try:
-            with open(path, "r", encoding='utf-8') as f:
+            with open(cache_data_path, "r", encoding='utf-8') as f:
                 return json.load(f)
         except Exception as e:
-            print(f"警告：缓存文件损坏或无法加载 {key}: {e}")
-            # 删除损坏的缓存文件
+            print(f"警告：缓存文件损坏或无法加载 {key}: {e}") # 保留原有警告
+            # 删除损坏的缓存文件 (原有逻辑)
             try:
-                os.remove(path)
-                # 同时删除可能存在的元数据文件
-                metadata_path = os.path.join(CACHE_DIR, f"{key}_metadata.json")
+                os.remove(cache_data_path)
+                # 同时尝试删除可能存在的元数据文件
+                metadata_filename = f"{key}_metadata.json"
+                metadata_path = os.path.join(GRAPH_CACHE_DIR, metadata_filename)
                 if os.path.exists(metadata_path):
                     os.remove(metadata_path)
-            except:
-                pass
+            except Exception as remove_error:
+                print(f"警告：删除损坏的缓存文件或元数据文件时出错: {remove_error}")
             return None
-    return None
+    else:
+        # --- 添加调试信息：文件不存在 ---
+        print(f"[DEBUG] load_cache: File does not exist at path: '{cache_data_path}'")
+        # --- 调试信息结束 ---
+        pass # 继续执行到 return None
+
+    return None # 文件不存在或加载失败
 
 
 def load_cache_metadata(key: str) -> Optional[Dict[str, Any]]:
     """加载缓存的元数据"""
-    metadata_path = os.path.join(CACHE_DIR, f"{key}_metadata.json")
+    # --- 修改 5: 构造正确的元数据路径 ---
+    metadata_path = os.path.join(GRAPH_CACHE_DIR, f"{key}_metadata.json") # 使用 GRAPH_CACHE_DIR
+    # --- 修改结束 ---
     if os.path.exists(metadata_path):
         try:
             with open(metadata_path, "r", encoding='utf-8') as f:
@@ -181,28 +217,32 @@ def generate_cache_metadata(
 def list_cache_entries() -> Dict[str, Dict]:
     """列出所有缓存条目及其元数据"""
     cache_entries = {}
-
-    # 遍历缓存目录
-    for filename in os.listdir(CACHE_DIR):
-        if filename.endswith('.json') and not filename.endswith('_metadata.json'):
-            key = filename[:-5]  # 移除 .json 后缀
-            cache_entries[key] = {
-                'data_file': filename,
-                'metadata': get_metadata_from_cache_key(key)
-            }
-
+    # --- 修改 6: 遍历正确的目录 ---
+    # if os.path.exists(CACHE_DIR): # 旧的，检查的是上级目录
+    if os.path.exists(GRAPH_CACHE_DIR): # 新的，检查 graph_docs 子目录
+         # for filename in os.listdir(CACHE_DIR): # 旧的
+         for filename in os.listdir(GRAPH_CACHE_DIR): # 新的
+             if filename.endswith('.json') and not filename.endswith('_metadata.json'):
+                 key = filename[:-5]  # 移除 .json 后缀
+                 cache_entries[key] = {
+                     'data_file': filename,
+                     'metadata': get_metadata_from_cache_key(key)
+                 }
+    # --- 修改结束 ---
     return cache_entries
 
 
 def clear_cache(key: Optional[str] = None) -> None:
     """清除缓存"""
     if key:
-        # 清除特定缓存
+        # --- 修改 7: 构造正确的路径 ---
         files_to_remove = [
-            os.path.join(CACHE_DIR, f"{key}.json"),
-            os.path.join(CACHE_DIR, f"{key}_metadata.json")
+            # os.path.join(CACHE_DIR, f"{key}.json"), # 旧的
+            # os.path.join(CACHE_DIR, f"{key}_metadata.json")
+            os.path.join(GRAPH_CACHE_DIR, f"{key}.json"), # 新的
+            os.path.join(GRAPH_CACHE_DIR, f"{key}_metadata.json") # 新的
         ]
-
+        # --- 修改结束 ---
         for file_path in files_to_remove:
             if os.path.exists(file_path):
                 try:
@@ -210,13 +250,16 @@ def clear_cache(key: Optional[str] = None) -> None:
                 except Exception as e:
                     print(f"警告：无法删除文件 {file_path}: {e}")
     else:
-        # 清除所有缓存
-        for filename in os.listdir(CACHE_DIR):
-            if filename.endswith('.json'):
-                try:
-                    os.remove(os.path.join(CACHE_DIR, filename))
-                except Exception as e:
-                    print(f"警告：无法删除文件 {filename}: {e}")
+        # --- 修改 8: 清除正确的目录 ---
+        # for filename in os.listdir(CACHE_DIR): # 旧的
+        if os.path.exists(GRAPH_CACHE_DIR): # 检查目录是否存在
+            for filename in os.listdir(GRAPH_CACHE_DIR): # 新的
+                if filename.endswith('.json'):
+                    try:
+                        # os.remove(os.path.join(CACHE_DIR, filename)) # 旧的
+                        os.remove(os.path.join(GRAPH_CACHE_DIR, filename)) # 新的
+                    except Exception as e:
+                        print(f"警告：无法删除文件 {filename}: {e}")
 
 
 def get_cache_stats() -> Dict[str, Any]:

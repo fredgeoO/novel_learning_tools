@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>交互式图谱编辑器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/graph_editor.css') }}">
+
+    <script src="{{ url_for('static', filename='js/floating_panel.js') }}"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            overflow: hidden;
+        }
+        #mynetwork {
+            width: 100vw;
+            height: 100vh;
+            background-color: #1e1e1e;
+        }
+    </style>
+</head>
+<body>
+    <div id="mynetwork"></div>
+
+    <!-- 浮动控制面板 -->
+    <div id="floating-control-section" class="floating-panel">
+        <div class="panel-header">
+            <h5>📋 控制面板</h5>
+            <button id="hide-panel-btn" class="toggle-btn">−</button>
+        </div>
+        <div class="panel-content">
+            <!-- 元数据 -->
+            <div class="control-panel">
+                <h5>📋 图谱信息</h5>
+            </div>
+
+            <!-- 控制按钮 -->
+            <div class="control-panel">
+                <label>
+                    <input type="checkbox" id="physicsToggle"> 启用物理效果
+                </label>
+                <button id="save-graph-btn" class="control-btn">💾 保存图谱</button>
+                <button id="clear-graph-btn" class="control-btn">🗑️ 清空图谱</button>
+                <button id="export-graph-btn" class="control-btn">📤 导出图谱</button>
+                <button id="refresh-graph-btn" class="control-btn">🔄 刷新图谱</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 展开按钮 -->
+    <div id="expand-panel-btn" class="expand-btn" style="display: none;">☰</div>
+
+
+    <!-- Debug 信息 -->
+    <div id="debug-info" style="position: absolute; top: 10px; right: 10px; z-index: 1000; background: rgba(45, 45, 45, 0.9); padding: 8px; border-radius: 4px; color: white; font-size: 12px; min-width: 200px;"></div>
+
+    <!-- 节点右键菜单 -->
+    <div id="nodeContextMenu" class="context-menu">
+        <ul>
+
+            <li class="separator"></li>
+            <li onclick="GraphEditor.showCreateNodeInput()">➕ 新节点</li>
+            <li onclick="GraphEditor.connectToExistingNodeMode()">🔗 连接节点</li>
+            <li class="separator"></li>
+            <li onclick="GraphEditor.showEditNodeLabelInput()">✏️ 重命名</li>
+            <li onclick="GraphEditor.deleteSelectedNode()">❌ 删除</li>
+        </ul>
+    </div>
+
+    <!-- 边右键菜单 -->
+    <div id="edgeContextMenu" class="context-menu">
+        <ul>
+            <li onclick="GraphEditor.deleteSelectedEdge()">❌ 删除</li>
+            <li onclick="GraphEditor.showEditEdgeLabelInput()">✏️ 重命名</li>
+            <li onclick="GraphEditor.reverseEdgeDirection()">🔄 反转</li>
+        </ul>
+    </div>
+
+    <!-- 创建节点输入菜单 -->
+    <div id="createNodeInput" class="input-menu">
+        <div>创建新节点</div>
+        <input type="text" id="newNodeLabel" placeholder="输入节点名称" value="新节点">
+        <div class="button-group">
+            <button onclick="GraphEditor.cancelInput()">取消</button>
+            <button onclick="GraphEditor.confirmCreateNode()">确定</button>
+        </div>
+    </div>
+
+    <!-- 编辑节点标签输入菜单 -->
+    <div id="editNodeLabelInput" class="input-menu">
+        <div>编辑节点标签</div>
+        <input type="text" id="editNodeLabelText" placeholder="输入节点名称">
+        <div class="button-group">
+            <button onclick="GraphEditor.cancelInput()">取消</button>
+            <button onclick="GraphEditor.confirmEditNodeLabel()">确定</button>
+        </div>
+    </div>
+
+    <!-- 编辑边标签输入菜单 -->
+    <div id="editEdgeLabelInput" class="input-menu">
+        <div>编辑边标签</div>
+        <input type="text" id="editEdgeLabelText" placeholder="输入边标签">
+        <div class="button-group">
+            <button onclick="GraphEditor.cancelInput()">取消</button>
+            <button onclick="GraphEditor.confirmEditEdgeLabel()">确定</button>
+        </div>
+    </div>
+
+    <!-- 连接模式提示 -->
+    <div id="connectionHint" class="connection-hint">
+        <div>请点击目标节点以创建连接</div>
+        <div style="font-size: 14px; margin-top: 8px; opacity: 0.8;">按 ESC 键取消</div>
+    </div>
+
+    <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+    <script src="{{ url_for('static', filename='js/graph_editor.js') }}"></script>
+    <script>
+    // 页面加载完成后初始化 GraphEditor
+    document.addEventListener('DOMContentLoaded', function() {
+        // 从 URL 获取 cache_key
+        const urlParams = new URLSearchParams(window.location.search);
+        const cacheKey = urlParams.get('cache_key') || '{{ cache_key }}';
+
+        // 加载图谱数据
+        loadGraphData(cacheKey);
+    });
+
+    // 加载图谱数据
+    async function loadGraphData(cacheKey) {
+        try {
+            const response = await fetch(`/api/graph-data?cache_key=${encodeURIComponent(cacheKey)}`);
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.error || '加载图谱数据失败');
+            }
+
+            // 初始化 GraphEditor
+            GraphEditor.initWithGraphData(result.data, result.physics);
+
+        } catch (error) {
+            console.error('加载图谱失败:', error);
+            const container = document.getElementById('mynetwork');
+            container.innerHTML = `<div style="text-align: center; padding: 50px; color: #ff6b6b;">
+                ❌ 加载图谱失败: ${error.message}
+            </div>`;
+        }
+    }
+</script>
+</body>
+</html>

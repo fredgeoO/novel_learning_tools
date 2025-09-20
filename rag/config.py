@@ -5,6 +5,14 @@ RAG 应用共享配置
 
 import os
 
+
+CACHE_DIR ="C:\\Users\\zgw31\\PycharmProjects\\AI\\cache"
+
+# 确保缓存目录存在
+
+# 确保缓存目录存在
+os.makedirs(CACHE_DIR, exist_ok=True)
+
 # 默认模型配置
 DEFAULT_MODEL = "qwen3:30b"
 DEFAULT_BASE_URL = "http://localhost:11434"
@@ -28,6 +36,3 @@ REMOTE_MODEL_CHOICES = [
     # 可以添加更多远程模型
 ]
 
-# 缓存配置
-CACHE_DIR = "./cache/graph_docs"
-os.makedirs(CACHE_DIR, exist_ok=True)

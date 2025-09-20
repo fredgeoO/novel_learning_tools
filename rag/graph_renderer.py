@@ -296,6 +296,113 @@ class GraphVisualizer:
         """生成空数据HTML"""
         return "<div style='text-align: center; padding: 50px; color: #aaaaaa; font-family: Arial, sans-serif; background-color: #1e1e1e; border-radius: 8px;'>📊 暂无图谱数据可显示</div>"
 
+    def generate_graph_data(self, graph_doc: Union[Dict, Any], max_nodes: int = 1000,
+                            max_edges: int = 1000, hidden_node_types: Set[str] = None) -> Dict:
+        """新增：只生成图数据结构，用于前端渲染"""
+        if hidden_node_types is None:
+            hidden_node_types = set()
+
+        try:
+            # 数据加载和检查
+            if isinstance(graph_doc, dict):
+                nodes = graph_doc.get('nodes', [])
+                relationships = graph_doc.get('relationships', [])
+            else:
+                nodes = getattr(graph_doc, 'nodes', [])
+                relationships = getattr(graph_doc, 'relationships', [])
+
+            if not nodes:
+                return {'nodes': [], 'edges': []}
+
+            # 数据预处理
+            self._ensure_sequence_numbers(nodes)
+            nodes = self._sort_nodes_by_sequence(nodes)
+
+            # 转换节点数据
+            processed_nodes = []
+            visible_nodes = set()
+
+            for i, node_data in enumerate(nodes[:max_nodes]):
+                if isinstance(node_data, dict):
+                    node_id = str(node_data.get('id', ''))
+                    node_type = node_data.get('type', '未知')
+                    properties = node_data.get('properties', {})
+                else:
+                    node_id = str(getattr(node_data, 'id', ''))
+                    node_type = getattr(node_data, 'type', '未知')
+                    properties = getattr(node_data, 'properties', {})
+
+                if not node_id or node_type in hidden_node_types:
+                    continue
+
+                display_name = self._get_node_display_name(node_id, node_type, properties)
+                sequence_number = properties.get('sequence_number', i + 1)
+                label = f"{sequence_number}:{display_name}"
+
+                title = f"{node_type} ({node_id})"
+                if properties:
+                    title += "\n属性:" + "\n".join([
+                        f"{k}: {v}" for k, v in list(properties.items())[:5]
+                    ])
+
+                node_color = NODE_COLOR_MAP.get(node_type) or generate_color_from_string(node_type)
+
+                processed_nodes.append({
+                    'id': node_id,
+                    'label': label,
+                    'title': title,
+                    'color': node_color,
+                    'size': 25
+                })
+                visible_nodes.add(node_id)
+
+            # 转换边数据
+            processed_edges = []
+            existing_node_ids = {str(getattr(n, 'id', str(n.get('id', '')))) for n in nodes}
+
+            for rel_data in relationships[:max_edges]:
+                if isinstance(rel_data, dict):
+                    source_id = str(rel_data.get('source_id', ''))
+                    target_id = str(rel_data.get('target_id', ''))
+                    rel_type = rel_data.get('type', '未知关系')
+                    properties = rel_data.get('properties', {})
+                else:
+                    source_id = str(getattr(rel_data, 'source_id', ''))
+                    target_id = str(getattr(rel_data, 'target_id', ''))
+                    rel_type = getattr(rel_data, 'type', '未知关系')
+                    properties = getattr(rel_data, 'properties', {})
+
+                if (source_id and target_id and
+                        source_id in existing_node_ids and target_id in existing_node_ids and
+                        source_id in visible_nodes and target_id in visible_nodes):
+
+                    title = rel_type
+                    if properties:
+                        title += "\n属性:" + "\n".join([
+                            f"{k}: {v}" for k, v in list(properties.items())[:5]
+                        ])
+
+                    edge_color = EDGE_COLOR_MAP.get(rel_type) or generate_color_from_string(rel_type)
+
+                    processed_edges.append({
+                        'from': source_id,
+                        'to': target_id,
+                        'title': title,
+                        'arrows': 'to',
+                        'color': edge_color,
+                        'width': 2
+                    })
+
+            return {
+                'nodes': processed_nodes,
+                'edges': processed_edges
+            }
+
+        except Exception as e:
+            logger.error(f"生成图数据失败: {e}", exc_info=True)
+            return {'nodes': [], 'edges': []}
+
+
 
 def format_graph_text(nodes: List[Any], relationships: List[Any], hidden_node_types: Set[str]) -> str:
     """格式化图谱为文字版"""

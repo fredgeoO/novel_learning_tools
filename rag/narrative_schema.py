@@ -16,7 +16,7 @@ from pathlib import Path
 from rag.config import REMOTE_API_KEY, REMOTE_BASE_URL, REMOTE_MODEL_NAME, DEFAULT_MODEL
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
-
+import math
 # --- 导入定义的常量 ---
 from rag.schema_definitions import (
     BASIC_ELEMENTS, BASIC_RELATIONSHIPS, BASIC_SCHEMA,
@@ -251,3 +251,57 @@ def generate_auto_schema(
         logger.error(f"[Schema Gen] 生成 Schema 时出错: {e}", exc_info=True)  # 添加 exc_info 获取完整堆栈
         # 出错时返回默认 schema
         return MINIMAL_SCHEMA
+
+def split_schema(schema: Dict, threshold: int = 5) -> List[Dict]:
+    """
+    将一个复杂的 Schema 拆分为多个子 Schema。
+    策略：保持所有节点类型不变，将关系类型按组拆分。
+
+    Args:
+        schema (Dict): 原始 Schema 字典，包含 'elements' 和 'relationships'
+        threshold (int): 每个子 Schema 最多包含的关系数，默认为 5
+
+    Returns:
+        List[Dict]: 拆分后的子 Schema 列表
+    """
+    elements = schema.get("elements", [])
+    relationships = schema.get("relationships", [])
+    schema_name = schema.get("name", "未知Schema")
+    schema_description = schema.get("description", "")
+
+    if not relationships:
+        logger.warning(f"Schema '{schema_name}' 没有定义关系类型，无需拆分。")
+        return [schema]
+
+    rels_per_sub = threshold
+    num_sub_schemas = math.ceil(len(relationships) / rels_per_sub)
+
+    if num_sub_schemas <= 1:
+        logger.debug(
+            f"Schema '{schema_name}' 关系数 ({len(relationships)}) 未超过阈值 ({rels_per_sub})，无需拆分。"
+        )
+        return [schema]
+
+    logger.info(
+        f"Schema '{schema_name}' 关系数 ({len(relationships)}) 超过阈值 ({rels_per_sub})，将拆分为 {num_sub_schemas} 个子 Schema。"
+    )
+
+    sub_schemas = []
+    for i in range(num_sub_schemas):
+        start_rel_idx = i * rels_per_sub
+        end_rel_idx = min((i + 1) * rels_per_sub, len(relationships))
+        sub_relationships = relationships[start_rel_idx:end_rel_idx]
+
+        sub_schema = {
+            "name": f"{schema_name}_关系组_{i + 1}",
+            "description": f"{schema_description} - 关系组 {i + 1}/{num_sub_schemas}: {', '.join(sub_relationships)}",
+            "elements": elements,
+            "relationships": sub_relationships
+        }
+        sub_schemas.append(sub_schema)
+
+        logger.debug(
+            f"子 Schema {i + 1}: {len(elements)} 个节点类型, {len(sub_relationships)} 个关系类型"
+        )
+
+    return sub_schemas

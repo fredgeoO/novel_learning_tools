@@ -6,6 +6,8 @@
 from dataclasses import dataclass, field
 from typing import List, Optional, Dict, Any
 from rag.narrative_schema import ALL_NARRATIVE_SCHEMAS, DEFAULT_SCHEMA
+from rag.config import *
+from rag.schema_definitions import MINIMAL_SCHEMA
 
 
 @dataclass
@@ -17,10 +19,10 @@ class ExtractionConfig:
     text: str = ""
 
     # 模型配置
-    model_name: str = "qwen3:8b"
-    base_url: str = "http://localhost:11434"
-    temperature: float = 0.0
-    num_ctx: int = 4096
+    model_name: str = DEFAULT_MODEL
+    base_url: str = DEFAULT_BASE_URL
+    temperature: float = DEFAULT_TEMPERATURE
+    num_ctx: int = DEFAULT_NUM_CTX
     use_local: bool = True
 
     # 远程API配置
@@ -29,16 +31,23 @@ class ExtractionConfig:
     remote_model_name: Optional[str] = None
 
     # 文本处理配置
-    chunk_size: int = 1200
-    chunk_overlap: int = 150
+    chunk_size: int = DEFAULT_CHUNK_SIZE
+    chunk_overlap: int = DEFAULT_CHUNK_OVERLAP
     merge_results: bool = True
 
     # 模式配置
-    schema_name: str = "基础"
+    schema_name: str = MINIMAL_SCHEMA["name"]
 
     # 运行配置
     use_cache: bool = True
     verbose: bool = True
+
+    optimize_graph: bool = True
+    max_connections: int = 20
+    aggregate_node_type: str = "类聚"
+    aggregate_strategy: str = "语义"  # 可选：semantic/structural
+
+
 
     def get_schema(self) -> Dict[str, Any]:
         """获取当前schema配置"""

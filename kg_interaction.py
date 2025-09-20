@@ -32,7 +32,9 @@ from rag.cache_manager import load_cache, get_metadata_from_cache_key
 
 
 # --- 初始化 Flask ---
-app = Flask(__name__, template_folder='templates', static_folder='static')
+app = Flask(__name__, template_folder='templates',
+            static_folder='static',
+            static_url_path='/static')  # 明确指定静态URL路径)
 
 STATIC_DIR = "./static"
 CSS_DIR = "./static/css"
@@ -162,7 +164,7 @@ def get_graph():
 def get_available_graphs():
     """获取所有可用图谱"""
     try:
-        available_graphs = load_available_graphs_metadata(CACHE_DIR)
+        available_graphs = load_available_graphs_metadata()
         return jsonify(available_graphs)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -219,7 +221,7 @@ def delete_graph(cache_key):
 def get_novel_chapter_structure():
     """获取小说-章节结构"""
     try:
-        available_graphs = load_available_graphs_metadata(CACHE_DIR)
+        available_graphs = load_available_graphs_metadata()
         app.logger.info(f"加载到 {len(available_graphs)} 个图谱")
 
         novel_chapter_map = {}
@@ -282,7 +284,7 @@ def get_filtered_graphs():
     app.logger.info(f"筛选请求: novel={selected_novel}, chapter={selected_chapter}")
 
     try:
-        available_graphs = load_available_graphs_metadata(CACHE_DIR)
+        available_graphs = load_available_graphs_metadata()
         app.logger.info(f"加载到 {len(available_graphs)} 个图谱用于筛选")
 
         if not available_graphs:
@@ -311,7 +313,7 @@ def get_filtered_graphs():
 def debug_graphs():
     """调试用：查看所有图谱数据结构"""
     try:
-        available_graphs = load_available_graphs_metadata(CACHE_DIR)
+        available_graphs = load_available_graphs_metadata()
         # 只返回前3个用于调试
         debug_data = dict(list(available_graphs.items())[:3])
         return jsonify(debug_data)
@@ -425,6 +427,42 @@ def get_chapters():
     chapters = get_novel_chapters(novel_name)
     return jsonify(chapters)
 
+@app.route("/api/graph-data")
+def get_graph_data():
+    """新增：获取纯图数据（用于前端交互式渲染）"""
+    cache_key = request.args.get("cache_key", demo_cache_key)
+    max_nodes = int(request.args.get("max_nodes", 1000))
+    max_edges = int(request.args.get("max_edges", 1000))
+    hidden_types = request.args.get("hidden_types", "")
+    hidden_node_types = set(hidden_types.split(",")) if hidden_types else set()
 
+    try:
+        graph_doc = load_cache(cache_key)
+        if graph_doc is None:
+            return jsonify({"error": "图谱数据未找到"}), 404
+
+        visualizer = GraphVisualizer()
+        graph_data = visualizer.generate_graph_data(
+            graph_doc,
+            max_nodes=max_nodes,
+            max_edges=max_edges,
+            hidden_node_types=hidden_node_types
+        )
+
+        return jsonify({
+            'success': True,
+            'data': graph_data,
+            'physics': request.args.get("physics", "true").lower() == "true"
+        })
+
+    except Exception as e:
+        app.logger.error(f"获取图数据失败: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/editor")
+def editor():
+    """交互式图谱编辑器页面"""
+    cache_key = request.args.get("cache_key", demo_cache_key)
+    return render_template("graph_editor.html", cache_key=cache_key)
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0',debug=True, port=5000)

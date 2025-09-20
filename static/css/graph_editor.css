@@ -1,0 +1,190 @@
+/* 元数据信息容器样式 */
+#metadata-info {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* 元数据项样式 */
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 标签样式 */
+.detail-label {
+    color: #aaa;
+    font-weight: 600;
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+/* 值样式 */
+.detail-value {
+    color: #fff;
+    text-align: right;
+    word-break: break-word;
+    margin-left: 12px;
+    flex-grow: 1;
+}
+
+/* 控制面板样式 */
+.control-panel {
+    background-color: rgba(50, 50, 50, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(2px);
+}
+
+.control-panel h5 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* 浮动控制面板样式 */
+.floating-panel {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* 改为 left */
+    right: auto; /* 移除 right */
+    width: 280px;
+    max-height: calc(100vh - 40px);
+    background: linear-gradient(145deg, rgba(40, 40, 40, 0.95), rgba(30, 30, 30, 0.95));
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 面板头部 */
+.panel-header {
+    background: linear-gradient(90deg, #2c2c2c, #3a3a3a);
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.panel-header h5 {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* 面板内容 */
+.panel-content {
+    padding: 15px;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+}
+
+/* 切换按钮 */
+.toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 展开按钮 */
+.expand-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(145deg, #2c2c2c, #3a3a3a);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+}
+
+.expand-btn:hover {
+    background: linear-gradient(145deg, #3a3a3a, #4a4a4a);
+}
+
+/* 控制按钮样式 */
+.control-btn {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background: linear-gradient(145deg, #4a4a4a, #3a3a3a);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+    background: linear-gradient(145deg, #5a5a5a, #4a4a4a);
+    transform: translateY(-1px);
+}
+
+.control-btn:last-child {
+    margin-bottom: 0;
+}
+
+/* 复选框样式 */
+.control-panel label {
+    display: flex;
+    align-items: center;
+    color: #ddd;
+    font-size: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.control-panel input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* 警告样式 */
+.alert {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.alert-warning {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+}

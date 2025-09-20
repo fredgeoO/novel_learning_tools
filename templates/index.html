@@ -40,24 +40,12 @@
                     <div class="graph-container">
                         <iframe
                             id="pyvis-iframe"
-                            src="/api/graph-frame?cache_key={{ cache_key }}"
+                            src="/editor?cache_key={{ cache_key }}"
                             style="width: 100%; height: 100%; border: none; background-color: #1e1e1e;"
                             frameborder="0">
                         </iframe>
 
-                        <!-- 浮动控制面板 -->
-                        <div class="floating-control-section">
-                            <!-- 元数据 -->
-                            <div class="control-panel">
-                                <h5>📋 图谱信息</h5>
-                                <div id="metadata-info">加载中...</div>
-                            </div>
 
-                            <!-- 刷新按钮 -->
-                            <div class="control-panel">
-                                <button id="refresh-btn" class="btn btn-primary w-100">🔄 刷新图谱</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -195,7 +183,21 @@ document.getElementById('mainTabs').addEventListener('click', function(e) {
 
         async function loadGraphContent() {
             const iframe = document.getElementById('pyvis-iframe');
-            iframe.src = `/api/graph-frame?cache_key=${encodeURIComponent(cacheKey)}`;
+            if (iframe) {
+                iframe.src = `/editor?cache_key=${encodeURIComponent(cacheKey)}`;
+
+                // 通知 iframe 更新 cacheKey
+                iframe.onload = function() {
+                    try {
+                        iframe.contentWindow.postMessage({
+                            type: 'updateCacheKey',
+                            cacheKey: cacheKey
+                        }, '*');
+                    } catch (e) {
+                        console.log('无法向 iframe 发送消息:', e);
+                    }
+                };
+            }
         }
 
         // 加载生成器内容
@@ -247,66 +249,17 @@ document.getElementById('mainTabs').addEventListener('click', function(e) {
             }
         }
 
-        // 加载元数据
-        async function loadMetadata() {
-            const infoDiv = document.getElementById('metadata-info');
-            try {
-                const response = await fetch(`/api/graph/${encodeURIComponent(cacheKey)}/metadata`);
-                const metadata = await response.json();
-
-                if (!response.ok) {
-                    throw new Error(metadata.error || '加载元数据失败');
-                }
-
-                // 格式化时间
-                const formatTime = (timeStr) => {
-                    if (!timeStr) return '未知';
-                    try {
-                        return new Date(timeStr).toLocaleString('zh-CN');
-                    } catch {
-                        return timeStr;
-                    }
-                };
-
-                // 构建显示内容
-                const items = [
-                    { label: '小说', value: metadata.novel_name || '未知' },
-                    { label: '章节', value: metadata.chapter_name || '未知' },
-                    { label: '模型', value: metadata.model_name || '未知' },
-                    { label: '本地模型', value: metadata.use_local !== undefined ? (metadata.use_local ? '是' : '否') : '未知' },
-                    { label: '上下文长度', value: metadata.num_ctx || '未知' },
-                    { label: '块大小', value: metadata.chunk_size || '未知' },
-                    { label: '重叠大小', value: metadata.chunk_overlap || '未知' },
-                    { label: '内容大小', value: metadata.content_size || '未知' },
-                    { label: '模式', value: metadata.schema_name || '未知' },
-                    { label: '创建时间', value: formatTime(metadata.created_at) }
-                ];
-
-                // 生成HTML
-                const htmlContent = items.map(item => `
-                    <div class="detail-item">
-                        <span class="detail-label">${item.label}:</span>
-                        <span class="detail-value">${item.value}</span>
-                    </div>
-                `).join('');
-
-                infoDiv.innerHTML = htmlContent;
-
-            } catch (error) {
-                infoDiv.innerHTML = `<div class="alert alert-warning">无法加载元数据: ${error.message}</div>`;
-            }
-        }
 
         // 事件监听
         document.getElementById('refresh-btn').addEventListener('click', () => {
             loadGraphContent();
-            loadMetadata();
+
         });
 
         // 初始化
         document.addEventListener('DOMContentLoaded', () => {
             loadGraphContent();
-            loadMetadata();
+
         });
     </script>
 </body>

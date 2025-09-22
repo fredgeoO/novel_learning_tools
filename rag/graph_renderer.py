@@ -356,8 +356,8 @@ class GraphVisualizer:
                 })
                 visible_nodes.add(node_id)
 
-            # 转换边数据
-            processed_edges = []
+            # 转换边数据 - 关键修复：使用 edges 而不是 relationships
+            processed_edges = []  # 这里改为 edges
             existing_node_ids = {str(getattr(n, 'id', str(n.get('id', '')))) for n in nodes}
 
             for rel_data in relationships[:max_edges]:
@@ -384,23 +384,26 @@ class GraphVisualizer:
 
                     edge_color = EDGE_COLOR_MAP.get(rel_type) or generate_color_from_string(rel_type)
 
+                    # 关键修复：使用 label 而不是 title 作为边的显示文本
                     processed_edges.append({
                         'from': source_id,
                         'to': target_id,
-                        'title': title,
+                        'label': rel_type,  # 使用 label 字段
+                        'title': title,  # 保留 title 作为悬停信息
                         'arrows': 'to',
                         'color': edge_color,
                         'width': 2
                     })
 
+            # 返回正确的数据结构：nodes 和 edges
             return {
                 'nodes': processed_nodes,
-                'edges': processed_edges
+                'edges': processed_edges  # 这里是 edges，不是 relationships
             }
 
         except Exception as e:
             logger.error(f"生成图数据失败: {e}", exc_info=True)
-            return {'nodes': [], 'edges': []}
+            return {'nodes': [], 'edges': []}  # 确保返回 edges
 
 
 

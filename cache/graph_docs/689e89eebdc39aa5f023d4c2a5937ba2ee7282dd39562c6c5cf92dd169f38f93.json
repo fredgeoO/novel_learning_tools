@@ -1,0 +1,3478 @@
+{
+  "nodes": [
+    {
+      "id": "北京",
+      "type": "未知类型",
+      "properties": {
+        "label": "北京",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "回族",
+      "type": "未知类型",
+      "properties": {
+        "label": "回族",
+        "color": "#309afa",
+        "size": 25
+      }
+    },
+    {
+      "id": "人民代表大会制度",
+      "type": "未知类型",
+      "properties": {
+        "label": "人民代表大会制度",
+        "color": "#0ae77d",
+        "size": 25
+      }
+    },
+    {
+      "id": "制造业",
+      "type": "未知类型",
+      "properties": {
+        "label": "制造业",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "5个自治区",
+      "type": "未知类型",
+      "properties": {
+        "label": "5个自治区",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "金砖国家成员",
+      "type": "未知类型",
+      "properties": {
+        "label": "金砖国家成员",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "世界第二大经济体",
+      "type": "未知类型",
+      "properties": {
+        "label": "世界第二大经济体",
+        "color": "#10d968",
+        "size": 25
+      }
+    },
+    {
+      "id": "官方语言",
+      "type": "未知类型",
+      "properties": {
+        "label": "官方语言",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "指南针",
+      "type": "未知类型",
+      "properties": {
+        "label": "指南针",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "文化与历史",
+      "type": "未知类型",
+      "properties": {
+        "label": "文化与历史",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "故宫",
+      "type": "未知类型",
+      "properties": {
+        "label": "故宫",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "造纸术",
+      "type": "未知类型",
+      "properties": {
+        "label": "造纸术",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "五千年文明史",
+      "type": "未知类型",
+      "properties": {
+        "label": "五千年文明史",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "喜马拉雅山",
+      "type": "未知类型",
+      "properties": {
+        "label": "喜马拉雅山",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "民族",
+      "type": "未知类型",
+      "properties": {
+        "label": "民族",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "西藏",
+      "type": "未知类型",
+      "properties": {
+        "label": "西藏",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "黄河",
+      "type": "未知类型",
+      "properties": {
+        "label": "黄河",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "联合国安理会常任理事国",
+      "type": "未知类型",
+      "properties": {
+        "label": "联合国安理会常任理事国",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "热带雨林",
+      "type": "未知类型",
+      "properties": {
+        "label": "热带雨林",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "李强",
+      "type": "未知类型",
+      "properties": {
+        "label": "李强",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "印刷术",
+      "type": "未知类型",
+      "properties": {
+        "label": "印刷术",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "中华人民共和国",
+      "type": "未知类型",
+      "properties": {
+        "label": "中华人民共和国",
+        "color": "#30fb7a",
+        "size": 25
+      }
+    },
+    {
+      "id": "全球最长",
+      "type": "未知类型",
+      "properties": {
+        "label": "全球最长",
+        "color": "#10d968",
+        "size": 25
+      }
+    },
+    {
+      "id": "科技",
+      "type": "未知类型",
+      "properties": {
+        "label": "科技",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "习近平",
+      "type": "未知类型",
+      "properties": {
+        "label": "习近平",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "平原",
+      "type": "未知类型",
+      "properties": {
+        "label": "平原",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "东亚",
+      "type": "未知类型",
+      "properties": {
+        "label": "东亚",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "长江",
+      "type": "未知类型",
+      "properties": {
+        "label": "长江",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "2023年GDP约17.96万亿美元",
+      "type": "未知类型",
+      "properties": {
+        "label": "2023年GDP约17.96万亿美元",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "国务院总理",
+      "type": "未知类型",
+      "properties": {
+        "label": "国务院总理",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "约14亿",
+      "type": "未知类型",
+      "properties": {
+        "label": "约14亿",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "国家主席",
+      "type": "未知类型",
+      "properties": {
+        "label": "国家主席",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "一带一路倡议",
+      "type": "未知类型",
+      "properties": {
+        "label": "一带一路倡议",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "4个直辖市",
+      "type": "未知类型",
+      "properties": {
+        "label": "4个直辖市",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "贸易",
+      "type": "未知类型",
+      "properties": {
+        "label": "贸易",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "澳门",
+      "type": "未知类型",
+      "properties": {
+        "label": "澳门",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "2个特别行政区",
+      "type": "未知类型",
+      "properties": {
+        "label": "2个特别行政区",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "新能源产业",
+      "type": "未知类型",
+      "properties": {
+        "label": "新能源产业",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "上海",
+      "type": "未知类型",
+      "properties": {
+        "label": "上海",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "中国共产党",
+      "type": "未知类型",
+      "properties": {
+        "label": "中国共产党",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "天津",
+      "type": "未知类型",
+      "properties": {
+        "label": "天津",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "壮族",
+      "type": "未知类型",
+      "properties": {
+        "label": "壮族",
+        "color": "#309afa",
+        "size": 25
+      }
+    },
+    {
+      "id": "5G技术",
+      "type": "未知类型",
+      "properties": {
+        "label": "5G技术",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "中医",
+      "type": "未知类型",
+      "properties": {
+        "label": "中医",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "全球治理",
+      "type": "未知类型",
+      "properties": {
+        "label": "全球治理",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "人口",
+      "type": "未知类型",
+      "properties": {
+        "label": "人口",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "国际合作",
+      "type": "未知类型",
+      "properties": {
+        "label": "国际合作",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "敦煌莫高窟",
+      "type": "未知类型",
+      "properties": {
+        "label": "敦煌莫高窟",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "京剧",
+      "type": "未知类型",
+      "properties": {
+        "label": "京剧",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "电动车",
+      "type": "未知类型",
+      "properties": {
+        "label": "电动车",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "长城",
+      "type": "未知类型",
+      "properties": {
+        "label": "长城",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "中华人民共和国的首都",
+      "type": "未知类型",
+      "properties": {
+        "label": "中华人民共和国的首都",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "56个民族",
+      "type": "未知类型",
+      "properties": {
+        "label": "56个民族",
+        "color": "#309afa",
+        "size": 25
+      }
+    },
+    {
+      "id": "中国",
+      "type": "未知类型",
+      "properties": {
+        "label": "中国",
+        "color": "#30fb7a",
+        "size": 25
+      }
+    },
+    {
+      "id": "华北平原",
+      "type": "未知类型",
+      "properties": {
+        "label": "华北平原",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "火药",
+      "type": "未知类型",
+      "properties": {
+        "label": "火药",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "国画",
+      "type": "未知类型",
+      "properties": {
+        "label": "国画",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "国际角色",
+      "type": "未知类型",
+      "properties": {
+        "label": "国际角色",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "重庆",
+      "type": "未知类型",
+      "properties": {
+        "label": "重庆",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "人类命运共同体理念",
+      "type": "未知类型",
+      "properties": {
+        "label": "人类命运共同体理念",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "高原",
+      "type": "未知类型",
+      "properties": {
+        "label": "高原",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "全国各族人民",
+      "type": "未知类型",
+      "properties": {
+        "label": "全国各族人民",
+        "color": "#309afa",
+        "size": 25
+      }
+    },
+    {
+      "id": "书法",
+      "type": "未知类型",
+      "properties": {
+        "label": "书法",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "端午节",
+      "type": "未知类型",
+      "properties": {
+        "label": "端午节",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "世界人口最多的国家之一",
+      "type": "未知类型",
+      "properties": {
+        "label": "世界人口最多的国家之一",
+        "color": "#10d968",
+        "size": 25
+      }
+    },
+    {
+      "id": "寒带针叶林",
+      "type": "未知类型",
+      "properties": {
+        "label": "寒带针叶林",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "G20成员",
+      "type": "未知类型",
+      "properties": {
+        "label": "G20成员",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "行政区划",
+      "type": "未知类型",
+      "properties": {
+        "label": "行政区划",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "四季分明",
+      "type": "未知类型",
+      "properties": {
+        "label": "四季分明",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "四大发明",
+      "type": "未知类型",
+      "properties": {
+        "label": "四大发明",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "世界文化遗产",
+      "type": "未知类型",
+      "properties": {
+        "label": "世界文化遗产",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "汉族",
+      "type": "未知类型",
+      "properties": {
+        "label": "汉族",
+        "color": "#309afa",
+        "size": 25
+      }
+    },
+    {
+      "id": "23个省",
+      "type": "未知类型",
+      "properties": {
+        "label": "23个省",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "河流",
+      "type": "未知类型",
+      "properties": {
+        "label": "河流",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "光伏",
+      "type": "未知类型",
+      "properties": {
+        "label": "光伏",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "山脉",
+      "type": "未知类型",
+      "properties": {
+        "label": "山脉",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "上合组织成员",
+      "type": "未知类型",
+      "properties": {
+        "label": "上合组织成员",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "中秋节",
+      "type": "未知类型",
+      "properties": {
+        "label": "中秋节",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "苏州园林",
+      "type": "未知类型",
+      "properties": {
+        "label": "苏州园林",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "地理特征",
+      "type": "未知类型",
+      "properties": {
+        "label": "地理特征",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "新疆",
+      "type": "未知类型",
+      "properties": {
+        "label": "新疆",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "春节",
+      "type": "未知类型",
+      "properties": {
+        "label": "春节",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "北京语音",
+      "type": "未知类型",
+      "properties": {
+        "label": "北京语音",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "重要经济成就",
+      "type": "未知类型",
+      "properties": {
+        "label": "重要经济成就",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "秦始皇陵兵马俑",
+      "type": "未知类型",
+      "properties": {
+        "label": "秦始皇陵兵马俑",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "香港",
+      "type": "未知类型",
+      "properties": {
+        "label": "香港",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "汉语普通话",
+      "type": "未知类型",
+      "properties": {
+        "label": "汉语普通话",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "青藏高原",
+      "type": "未知类型",
+      "properties": {
+        "label": "青藏高原",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "高铁网络",
+      "type": "未知类型",
+      "properties": {
+        "label": "高铁网络",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "经济地位",
+      "type": "未知类型",
+      "properties": {
+        "label": "经济地位",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "满族",
+      "type": "未知类型",
+      "properties": {
+        "label": "满族",
+        "color": "#309afa",
+        "size": 25
+      }
+    },
+    {
+      "id": "政治体制",
+      "type": "未知类型",
+      "properties": {
+        "label": "政治体制",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "金砖国家",
+      "type": "未知类型",
+      "properties": {
+        "label": "金砖国家",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "四大发明_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "四大发明",
+        "color": "#10d968",
+        "size": 25
+      }
+    },
+    {
+      "id": "GDP",
+      "type": "未知类型",
+      "properties": {
+        "label": "GDP",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "社会主义国家",
+      "type": "未知类型",
+      "properties": {
+        "label": "社会主义国家",
+        "color": "#0ae77d",
+        "size": 25
+      }
+    },
+    {
+      "id": "世界文化遗产_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "世界文化遗产",
+        "color": "#10d968",
+        "size": 25
+      }
+    },
+    {
+      "id": "人类命运共同体",
+      "type": "未知类型",
+      "properties": {
+        "label": "人类命运共同体",
+        "color": "#10d968",
+        "size": 25
+      }
+    },
+    {
+      "id": "联合国",
+      "type": "未知类型",
+      "properties": {
+        "label": "联合国",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "2023年",
+      "type": "未知类型",
+      "properties": {
+        "label": "2023年",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "五千年文明史_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "五千年文明史",
+        "color": "#10d968",
+        "size": 25
+      }
+    },
+    {
+      "id": "14亿",
+      "type": "未知类型",
+      "properties": {
+        "label": "14亿",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "G20",
+      "type": "未知类型",
+      "properties": {
+        "label": "G20",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "中国_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "中国",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "安理会常任理事国",
+      "type": "未知类型",
+      "properties": {
+        "label": "安理会常任理事国",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "首都",
+      "type": "未知类型",
+      "properties": {
+        "label": "首都",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "上合组织",
+      "type": "未知类型",
+      "properties": {
+        "label": "上合组织",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "地理与自然",
+      "type": "未知类型",
+      "properties": {
+        "label": "地理与自然",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "民族与文化",
+      "type": "未知类型",
+      "properties": {
+        "label": "民族与文化",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "政治与制度",
+      "type": "未知类型",
+      "properties": {
+        "label": "政治与制度",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "经济与科技",
+      "type": "未知类型",
+      "properties": {
+        "label": "经济与科技",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "成就与国际角色",
+      "type": "未知类型",
+      "properties": {
+        "label": "成就与国际角色",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "语言与教育",
+      "type": "未知类型",
+      "properties": {
+        "label": "语言与教育",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "事件与社会",
+      "type": "未知类型",
+      "properties": {
+        "label": "事件与社会",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "民族与文化_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "民族与文化",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "政治与制度_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "政治与制度",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "经济与科技_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "经济与科技",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "成就与国际角色_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "成就与国际角色",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "事件与社会_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "事件与社会",
+        "color": "#00CED1",
+        "size": 25
+      }
+    },
+    {
+      "id": "地理与自然_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "地理与自然",
+        "color": "#00CED1",
+        "size": 25
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "中华人民共和国",
+      "target_id": "东亚",
+      "type": "位于",
+      "properties": {
+        "id": "edge_中华人民共和国_东亚",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
+    },
+    {
+      "source_id": "中华人民共和国",
+      "target_id": "北京",
+      "type": "首都",
+      "properties": {
+        "id": "edge_中华人民共和国_北京",
+        "label": "首都",
+        "title": "首都",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1cc8b2"
+      }
+    },
+    {
+      "source_id": "北京",
+      "target_id": "中华人民共和国的首都",
+      "type": "是",
+      "properties": {
+        "id": "edge_北京_中华人民共和国的首都",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "人口",
+      "target_id": "约14亿",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_人口_约14亿",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "人口",
+      "target_id": "世界人口最多的国家之一",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_人口_世界人口最多的国家之一",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "民族",
+      "target_id": "56个民族",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_民族_56个民族",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "民族",
+      "target_id": "汉族",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_民族_汉族",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "民族",
+      "target_id": "壮族",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_民族_壮族",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "民族",
+      "target_id": "回族",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_民族_回族",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "民族",
+      "target_id": "满族",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_民族_满族",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "官方语言",
+      "target_id": "汉语普通话",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_官方语言_汉语普通话",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "官方语言",
+      "target_id": "北京语音",
+      "type": "标准音",
+      "properties": {
+        "id": "edge_官方语言_北京语音",
+        "label": "标准音",
+        "title": "标准音",
+        "width": 2,
+        "arrows": "to",
+        "color": "#fe085f"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "23个省",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_23个省",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "5个自治区",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_5个自治区",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "西藏",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_西藏",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "新疆",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_新疆",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "4个直辖市",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_4个直辖市",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "北京",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_北京",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "上海",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_上海",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "天津",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_天津",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "重庆",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_重庆",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "2个特别行政区",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_2个特别行政区",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "香港",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_香港",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "行政区划",
+      "target_id": "澳门",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_行政区划_澳门",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "政治体制",
+      "target_id": "人民代表大会制度",
+      "type": "实行",
+      "properties": {
+        "id": "edge_政治体制_人民代表大会制度",
+        "label": "实行",
+        "title": "实行",
+        "width": 2,
+        "arrows": "to",
+        "color": "#18f9ad"
+      }
+    },
+    {
+      "source_id": "政治体制",
+      "target_id": "中国共产党",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_政治体制_中国共产党",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "政治体制",
+      "target_id": "全国各族人民",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_政治体制_全国各族人民",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "国家主席",
+      "target_id": "习近平",
+      "type": "是",
+      "properties": {
+        "id": "edge_国家主席_习近平",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "国务院总理",
+      "target_id": "李强",
+      "type": "是",
+      "properties": {
+        "id": "edge_国务院总理_李强",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "经济地位",
+      "target_id": "世界第二大经济体",
+      "type": "是",
+      "properties": {
+        "id": "edge_经济地位_世界第二大经济体",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "经济地位",
+      "target_id": "2023年GDP约17.96万亿美元",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_经济地位_2023年GDP约17.96万亿美元",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "经济地位",
+      "target_id": "制造业",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_经济地位_制造业",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "经济地位",
+      "target_id": "贸易",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_经济地位_贸易",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "经济地位",
+      "target_id": "科技",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_经济地位_科技",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "高铁网络",
+      "type": "包括",
+      "properties": {
+        "id": "edge_重要经济成就_高铁网络",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "全球最长",
+      "type": "包括",
+      "properties": {
+        "id": "edge_重要经济成就_全球最长",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "5G技术",
+      "type": "包括",
+      "properties": {
+        "id": "edge_重要经济成就_5G技术",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "新能源产业",
+      "type": "包括",
+      "properties": {
+        "id": "edge_重要经济成就_新能源产业",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "光伏",
+      "type": "包括",
+      "properties": {
+        "id": "edge_重要经济成就_光伏",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "电动车",
+      "type": "包括",
+      "properties": {
+        "id": "edge_重要经济成就_电动车",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "一带一路倡议",
+      "type": "包括",
+      "properties": {
+        "id": "edge_重要经济成就_一带一路倡议",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "国际合作",
+      "type": "推动",
+      "properties": {
+        "id": "edge_重要经济成就_国际合作",
+        "label": "推动",
+        "title": "推动",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1df400"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "五千年文明史",
+      "type": "有",
+      "properties": {
+        "id": "edge_文化与历史_五千年文明史",
+        "label": "有",
+        "title": "有",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f515"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "四大发明",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_四大发明",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "造纸术",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_造纸术",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "印刷术",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_印刷术",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "火药",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_火药",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "指南针",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_指南针",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "春节",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_春节",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "中秋节",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_中秋节",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "端午节",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_端午节",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "京剧",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_京剧",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "书法",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_书法",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "国画",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_国画",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "中医",
+      "type": "包括",
+      "properties": {
+        "id": "edge_文化与历史_中医",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "长城",
+      "type": "包括",
+      "properties": {
+        "id": "edge_世界文化遗产_长城",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "故宫",
+      "type": "包括",
+      "properties": {
+        "id": "edge_世界文化遗产_故宫",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "秦始皇陵兵马俑",
+      "type": "包括",
+      "properties": {
+        "id": "edge_世界文化遗产_秦始皇陵兵马俑",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "敦煌莫高窟",
+      "type": "包括",
+      "properties": {
+        "id": "edge_世界文化遗产_敦煌莫高窟",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "苏州园林",
+      "type": "包括",
+      "properties": {
+        "id": "edge_世界文化遗产_苏州园林",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "高原",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_高原",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "青藏高原",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_青藏高原",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "平原",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_平原",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "华北平原",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_华北平原",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "山脉",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_山脉",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "喜马拉雅山",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_喜马拉雅山",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "河流",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_河流",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "长江",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_长江",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "黄河",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_黄河",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "热带雨林",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_热带雨林",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "寒带针叶林",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_寒带针叶林",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "地理特征",
+      "target_id": "四季分明",
+      "type": "包括",
+      "properties": {
+        "id": "edge_地理特征_四季分明",
+        "label": "包括",
+        "title": "包括",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0ecdf8"
+      }
+    },
+    {
+      "source_id": "国际角色",
+      "target_id": "联合国安理会常任理事国",
+      "type": "是",
+      "properties": {
+        "id": "edge_国际角色_联合国安理会常任理事国",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "国际角色",
+      "target_id": "G20成员",
+      "type": "是",
+      "properties": {
+        "id": "edge_国际角色_G20成员",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "国际角色",
+      "target_id": "金砖国家成员",
+      "type": "是",
+      "properties": {
+        "id": "edge_国际角色_金砖国家成员",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "国际角色",
+      "target_id": "上合组织成员",
+      "type": "是",
+      "properties": {
+        "id": "edge_国际角色_上合组织成员",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "国际角色",
+      "target_id": "全球治理",
+      "type": "推动",
+      "properties": {
+        "id": "edge_国际角色_全球治理",
+        "label": "推动",
+        "title": "推动",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1df400"
+      }
+    },
+    {
+      "source_id": "国际角色",
+      "target_id": "人类命运共同体理念",
+      "type": "倡导",
+      "properties": {
+        "id": "edge_国际角色_人类命运共同体理念",
+        "label": "倡导",
+        "title": "倡导",
+        "width": 2,
+        "arrows": "to",
+        "color": "#373bfe"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "中华人民共和国",
+      "type": "属于",
+      "properties": {
+        "id": "edge_文化与历史_中华人民共和国",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "文化与历史",
+      "target_id": "行政区划",
+      "type": "包含",
+      "properties": {
+        "id": "edge_文化与历史_行政区划",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "中华人民共和国",
+      "type": "发生于",
+      "properties": {
+        "id": "edge_重要经济成就_中华人民共和国",
+        "label": "发生于",
+        "title": "发生于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#653df5"
+      }
+    },
+    {
+      "source_id": "重要经济成就",
+      "target_id": "行政区划",
+      "type": "属于",
+      "properties": {
+        "id": "edge_重要经济成就_行政区划",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "国际角色",
+      "target_id": "中华人民共和国",
+      "type": "举办国",
+      "properties": {
+        "id": "edge_国际角色_中华人民共和国",
+        "label": "举办国",
+        "title": "举办国",
+        "width": 2,
+        "arrows": "to",
+        "color": "#5130fa"
+      }
+    },
+    {
+      "source_id": "国际角色",
+      "target_id": "行政区划",
+      "type": "所属类别",
+      "properties": {
+        "id": "edge_国际角色_行政区划",
+        "label": "所属类别",
+        "title": "所属类别",
+        "width": 2,
+        "arrows": "to",
+        "color": "#23d7f6"
+      }
+    },
+    {
+      "source_id": "民族",
+      "target_id": "中华人民共和国",
+      "type": "属于",
+      "properties": {
+        "id": "edge_民族_中华人民共和国",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "民族",
+      "target_id": "行政区划",
+      "type": "包含",
+      "properties": {
+        "id": "edge_民族_行政区划",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "中华人民共和国",
+      "type": "所属国家",
+      "properties": {
+        "id": "edge_世界文化遗产_中华人民共和国",
+        "label": "所属国家",
+        "title": "所属国家",
+        "width": 2,
+        "arrows": "to",
+        "color": "#383efc"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "北京",
+      "type": "所在地",
+      "properties": {
+        "id": "edge_世界文化遗产_北京",
+        "label": "所在地",
+        "title": "所在地",
+        "width": 2,
+        "arrows": "to",
+        "color": "#93e84a"
+      }
+    },
+    {
+      "source_id": "经济地位",
+      "target_id": "中华人民共和国",
+      "type": "属于",
+      "properties": {
+        "id": "edge_经济地位_中华人民共和国",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "经济地位",
+      "target_id": "行政区划",
+      "type": "包含",
+      "properties": {
+        "id": "edge_经济地位_行政区划",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "政治体制",
+      "target_id": "中华人民共和国",
+      "type": "属于",
+      "properties": {
+        "id": "edge_政治体制_中华人民共和国",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "政治体制",
+      "target_id": "中华人民共和国的首都",
+      "type": "包含",
+      "properties": {
+        "id": "edge_政治体制_中华人民共和国的首都",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "官方语言",
+      "target_id": "中华人民共和国",
+      "type": "官方语言制定国",
+      "properties": {
+        "id": "edge_官方语言_中华人民共和国",
+        "label": "官方语言制定国",
+        "title": "官方语言制定国",
+        "width": 2,
+        "arrows": "to",
+        "color": "#4c6be9"
+      }
+    },
+    {
+      "source_id": "官方语言",
+      "target_id": "中华人民共和国的首都",
+      "type": "官方语言发布地",
+      "properties": {
+        "id": "edge_官方语言_中华人民共和国的首都",
+        "label": "官方语言发布地",
+        "title": "官方语言发布地",
+        "width": 2,
+        "arrows": "to",
+        "color": "#6638fc"
+      }
+    },
+    {
+      "source_id": "人口",
+      "target_id": "中华人民共和国",
+      "type": "属于",
+      "properties": {
+        "id": "edge_人口_中华人民共和国",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "人口",
+      "target_id": "行政区划",
+      "type": "包含",
+      "properties": {
+        "id": "edge_人口_行政区划",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "国家主席",
+      "target_id": "中华人民共和国",
+      "type": "国家元首任职",
+      "properties": {
+        "id": "edge_国家主席_中华人民共和国",
+        "label": "国家元首任职",
+        "title": "国家元首任职",
+        "width": 2,
+        "arrows": "to",
+        "color": "#f4d468"
+      }
+    },
+    {
+      "source_id": "国家主席",
+      "target_id": "中华人民共和国的首都",
+      "type": "国家主席驻地",
+      "properties": {
+        "id": "edge_国家主席_中华人民共和国的首都",
+        "label": "国家主席驻地",
+        "title": "国家主席驻地",
+        "width": 2,
+        "arrows": "to",
+        "color": "#24f15f"
+      }
+    },
+    {
+      "source_id": "国务院总理",
+      "target_id": "中华人民共和国",
+      "type": "行政首脑任职于",
+      "properties": {
+        "id": "edge_国务院总理_中华人民共和国",
+        "label": "行政首脑任职于",
+        "title": "行政首脑任职于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#fef653"
+      }
+    },
+    {
+      "source_id": "国务院总理",
+      "target_id": "北京",
+      "type": "办公地点位于",
+      "properties": {
+        "id": "edge_国务院总理_北京",
+        "label": "办公地点位于",
+        "title": "办公地点位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#43dd3d"
+      }
+    },
+    {
+      "source_id": "北京",
+      "target_id": "首都",
+      "type": "代表",
+      "properties": {
+        "id": "edge_北京_首都",
+        "label": "代表",
+        "title": "代表",
+        "width": 2,
+        "arrows": "to",
+        "color": "#303afb"
+      }
+    },
+    {
+      "source_id": "14亿",
+      "target_id": "人口",
+      "type": "属于",
+      "properties": {
+        "id": "edge_14亿_人口",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "2023年",
+      "target_id": "GDP",
+      "type": "属于",
+      "properties": {
+        "id": "edge_2023年_GDP",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "全球最长",
+      "target_id": "高铁网络",
+      "type": "属于",
+      "properties": {
+        "id": "edge_全球最长_高铁网络",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "光伏",
+      "target_id": "新能源产业",
+      "type": "属于",
+      "properties": {
+        "id": "edge_光伏_新能源产业",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "电动车",
+      "target_id": "新能源产业",
+      "type": "属于",
+      "properties": {
+        "id": "edge_电动车_新能源产业",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "一带一路倡议",
+      "target_id": "国际合作",
+      "type": "推动",
+      "properties": {
+        "id": "edge_一带一路倡议_国际合作",
+        "label": "推动",
+        "title": "推动",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1df400"
+      }
+    },
+    {
+      "source_id": "造纸术",
+      "target_id": "四大发明",
+      "type": "属于",
+      "properties": {
+        "id": "edge_造纸术_四大发明",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "印刷术",
+      "target_id": "四大发明",
+      "type": "属于",
+      "properties": {
+        "id": "edge_印刷术_四大发明",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "火药",
+      "target_id": "四大发明",
+      "type": "属于",
+      "properties": {
+        "id": "edge_火药_四大发明",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "指南针",
+      "target_id": "四大发明",
+      "type": "属于",
+      "properties": {
+        "id": "edge_指南针_四大发明",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "长城",
+      "target_id": "世界文化遗产",
+      "type": "属于",
+      "properties": {
+        "id": "edge_长城_世界文化遗产",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "故宫",
+      "target_id": "世界文化遗产",
+      "type": "属于",
+      "properties": {
+        "id": "edge_故宫_世界文化遗产",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "秦始皇陵兵马俑",
+      "target_id": "世界文化遗产",
+      "type": "属于",
+      "properties": {
+        "id": "edge_秦始皇陵兵马俑_世界文化遗产",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "敦煌莫高窟",
+      "target_id": "世界文化遗产",
+      "type": "属于",
+      "properties": {
+        "id": "edge_敦煌莫高窟_世界文化遗产",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "苏州园林",
+      "target_id": "世界文化遗产",
+      "type": "属于",
+      "properties": {
+        "id": "edge_苏州园林_世界文化遗产",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "联合国",
+      "target_id": "安理会常任理事国",
+      "type": "属于",
+      "properties": {
+        "id": "edge_联合国_安理会常任理事国",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "四大发明",
+      "type": "包含",
+      "properties": {
+        "id": "edge_世界文化遗产_四大发明",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "世界文化遗产",
+      "target_id": "世界第二大经济体",
+      "type": "属于",
+      "properties": {
+        "id": "edge_世界文化遗产_世界第二大经济体",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "一带一路倡议",
+      "target_id": "全球治理",
+      "type": "战略倡议",
+      "properties": {
+        "id": "edge_一带一路倡议_全球治理",
+        "label": "战略倡议",
+        "title": "战略倡议",
+        "width": 2,
+        "arrows": "to",
+        "color": "#6f40ec"
+      }
+    },
+    {
+      "source_id": "一带一路倡议",
+      "target_id": "世界第二大经济体",
+      "type": "经济背景",
+      "properties": {
+        "id": "edge_一带一路倡议_世界第二大经济体",
+        "label": "经济背景",
+        "title": "经济背景",
+        "width": 2,
+        "arrows": "to",
+        "color": "#663bf0"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "北京",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_北京",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "喜马拉雅山",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_喜马拉雅山",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "黄河",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_黄河",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "长江",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_长江",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "华北平原",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_华北平原",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "青藏高原",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_青藏高原",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "热带雨林",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_热带雨林",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "寒带针叶林",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_寒带针叶林",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "四季分明",
+      "type": "包含",
+      "properties": {
+        "id": "edge_地理与自然_四季分明",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "中国",
+      "target_id": "民族与文化",
+      "type": "体现",
+      "properties": {
+        "id": "edge_中国_民族与文化",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "回族",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_回族",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "壮族",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_壮族",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "满族",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_满族",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "汉族",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_汉族",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "56个民族",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_56个民族",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "文化与历史",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_文化与历史",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "五千年文明史",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_五千年文明史",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "京剧",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_京剧",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "中医",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_中医",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "国画",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_国画",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "书法",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_书法",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "端午节",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_端午节",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "中秋节",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_中秋节",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "春节",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_春节",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "人民代表大会制度",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_人民代表大会制度",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "中国共产党",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_中国共产党",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "社会主义国家",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_社会主义国家",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "政治体制",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_政治体制",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "国家主席",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_国家主席",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "国务院总理",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_国务院总理",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "安理会常任理事国",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_安理会常任理事国",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "上合组织",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_上合组织",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "金砖国家",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_金砖国家",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "G20",
+      "type": "体现",
+      "properties": {
+        "id": "edge_政治与制度_G20",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "制造业",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_制造业",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "世界第二大经济体",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_世界第二大经济体",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "GDP",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_GDP",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "贸易",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_贸易",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "新能源产业",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_新能源产业",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "5G技术",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_5G技术",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "高铁网络",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_高铁网络",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "重要经济成就",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_重要经济成就",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "经济地位",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_经济地位",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "经济与科技",
+      "target_id": "一带一路倡议",
+      "type": "体现",
+      "properties": {
+        "id": "edge_经济与科技_一带一路倡议",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "成就与国际角色",
+      "target_id": "世界文化遗产",
+      "type": "体现",
+      "properties": {
+        "id": "edge_成就与国际角色_世界文化遗产",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "成就与国际角色",
+      "target_id": "四大发明",
+      "type": "体现",
+      "properties": {
+        "id": "edge_成就与国际角色_四大发明",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "成就与国际角色",
+      "target_id": "人类命运共同体",
+      "type": "体现",
+      "properties": {
+        "id": "edge_成就与国际角色_人类命运共同体",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "成就与国际角色",
+      "target_id": "全球治理",
+      "type": "体现",
+      "properties": {
+        "id": "edge_成就与国际角色_全球治理",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "成就与国际角色",
+      "target_id": "国际角色",
+      "type": "体现",
+      "properties": {
+        "id": "edge_成就与国际角色_国际角色",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "语言与教育",
+      "target_id": "官方语言",
+      "type": "包含",
+      "properties": {
+        "id": "edge_语言与教育_官方语言",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "语言与教育",
+      "target_id": "汉语普通话",
+      "type": "包含",
+      "properties": {
+        "id": "edge_语言与教育_汉语普通话",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "语言与教育",
+      "target_id": "人口",
+      "type": "包含",
+      "properties": {
+        "id": "edge_语言与教育_人口",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "事件与社会",
+      "target_id": "科技",
+      "type": "属于",
+      "properties": {
+        "id": "edge_事件与社会_科技",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "事件与社会",
+      "target_id": "事件",
+      "type": "属于",
+      "properties": {
+        "id": "edge_事件与社会_事件",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "事件与社会",
+      "target_id": "成就",
+      "type": "属于",
+      "properties": {
+        "id": "edge_事件与社会_成就",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "事件与社会",
+      "target_id": "时间",
+      "type": "属于",
+      "properties": {
+        "id": "edge_事件与社会_时间",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    },
+    {
+      "source_id": "中国",
+      "target_id": "民族与文化",
+      "type": "体现",
+      "properties": {
+        "id": "edge_中国_民族与文化_1",
+        "label": "体现",
+        "title": "体现",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2126fa"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "民族",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_民族",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "李强",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_李强",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "习近平",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_习近平",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "民族与文化",
+      "target_id": "语言与教育",
+      "type": "体现为",
+      "properties": {
+        "id": "edge_民族与文化_语言与教育",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
+    },
+    {
+      "source_id": "政治与制度",
+      "target_id": "中华人民共和国",
+      "type": "包含",
+      "properties": {
+        "id": "edge_政治与制度_中华人民共和国",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
+    },
+    {
+      "source_id": "地理与自然",
+      "target_id": "东亚",
+      "type": "属于",
+      "properties": {
+        "id": "edge_地理与自然_东亚",
+        "label": "属于",
+        "title": "属于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF7F50"
+      }
+    }
+  ]
+}

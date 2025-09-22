@@ -3,11 +3,10 @@
 配置模型定义
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import List, Optional, Dict, Any
-from rag.narrative_schema import ALL_NARRATIVE_SCHEMAS, DEFAULT_SCHEMA
-from rag.config import *
-from rag.schema_definitions import MINIMAL_SCHEMA
+from rag.schema_definitions import ALL_NARRATIVE_SCHEMAS, DEFAULT_SCHEMA,MINIMAL_SCHEMA
+from config import *
 
 
 @dataclass

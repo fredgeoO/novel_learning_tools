@@ -4,14 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>知识图谱查看器</title>
+        <!-- Bootstrap CSS -->
+
+    <!-- Choices.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+
+    <!-- 你的自定义 CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/dark-theme.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+    <!-- Choices.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>📖 知识图谱查看器</h1>
 
             <!-- Tab 导航 -->
             <ul class="nav-tabs" id="mainTabs">
@@ -41,7 +49,7 @@
                         <iframe
                             id="pyvis-iframe"
                             src="/editor?cache_key={{ cache_key }}"
-                            style="width: 100%; height: 100%; border: none; background-color: #1e1e1e;"
+                            style="border: none; background-color: #1e1e1e;"
                             frameborder="0">
                         </iframe>
 
@@ -73,10 +81,13 @@
             <!-- 生成器 Tab -->
             <div class="tab-pane" id="generator-tab">
                 <div id="generator-content" style="height: 100%; overflow-y: auto;">
-                    <div class="text-center" style="padding: 50px;">
-                        <div class="spinner" role="status"></div>
-                        <p class="mt-2">正在加载生成器...</p>
-                    </div>
+                    <!-- 直接使用 iframe 加载生成器页面 -->
+                    <iframe
+                        id="generator-iframe"
+                        src="/generator-iframe"
+                        style="width: 100%; height: calc(100vh - 150px); border: none; background-color: #121212;"
+                        frameborder="0">
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -200,53 +211,24 @@ document.getElementById('mainTabs').addEventListener('click', function(e) {
             }
         }
 
-        // 加载生成器内容
-        async function loadGeneratorContent() {
+             async function loadGeneratorContent() {
             const generatorContent = document.getElementById('generator-content');
 
-            // 如果已经加载过内容，直接返回
-            if (generatorContent.querySelector('.main-layout') ||
-                generatorContent.querySelector('.generator-container')) {
+            // 如果 iframe 已经存在，直接显示
+            const iframe = generatorContent.querySelector('#generator-iframe');
+            if (iframe) {
                 return;
             }
 
-            // 显示加载状态
+            // 创建 iframe
             generatorContent.innerHTML = `
-                <div class="text-center" style="padding: 50px;">
-                    <div class="spinner" role="status"></div>
-                    <p class="mt-2">正在加载生成器...</p>
-                </div>
+                <iframe
+                    id="generator-iframe"
+                    src="/generator-iframe"
+                    style="width: 100%; height: calc(100vh - 150px); border: none; background-color: #121212;"
+                    frameborder="0">
+                </iframe>
             `;
-
-            try {
-                const response = await fetch('/generator');
-                const html = await response.text();
-
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-
-                generatorContent.innerHTML = html;
-
-                // 手动执行所有 script 标签（generator.html 里有 JS）
-                const scripts = generatorContent.querySelectorAll('script');
-                scripts.forEach(oldScript => {
-                    const newScript = document.createElement('script');
-                    if (oldScript.src) {
-                        newScript.src = oldScript.src;
-                    } else {
-                        newScript.textContent = oldScript.textContent;
-                    }
-                    oldScript.parentNode.replaceChild(newScript, oldScript);
-                });
-
-            } catch (error) {
-                generatorContent.innerHTML = `
-                    <div class="alert alert-danger m-3">
-                        ❌ 加载生成器失败: ${error.message}<br>
-                        请确保服务正常运行，或尝试刷新页面。
-                    </div>`;
-            }
         }
 
 

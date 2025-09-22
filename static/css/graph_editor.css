@@ -188,3 +188,124 @@
     color: #ffc107;
     border: 1px solid rgba(255, 193, 7, 0.3);
 }
+.context-menu {
+    position: absolute;
+    z-index: 10000;
+    background: #2c2c2c;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 6px 0;
+    min-width: 160px;
+    display: none;
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-size: 13px;
+}
+
+.context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.context-menu li {
+    padding: 8px 15px;
+    background-color: #333333;
+}
+
+.context-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.context-menu .separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 6px;
+}
+
+/* 输入菜单样式 */
+.input-menu {
+    position: absolute;
+    z-index: 10001;
+    background: linear-gradient(145deg, #2c2c2c, #1e1e1e);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    min-width: 200px;
+    display: none;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-size: 13px;
+}
+
+.input-menu > div:first-child {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.input-menu input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    background: rgba(50, 50, 50, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.input-menu input[type="text"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background: rgba(60, 60, 60, 0.7);
+}
+
+.input-menu .button-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.input-menu button {
+    flex: 1;
+    padding: 6px 12px;
+    background: linear-gradient(145deg, #4a4a4a, #3a3a3a);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.input-menu button:hover {
+    background: linear-gradient(145deg, #5a5a5a, #4a4a4a);
+    transform: translateY(-1px);
+}
+
+/* 连接模式提示样式 */
+.connection-hint {
+    position: absolute;
+    z-index: 10002;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(40, 40, 40, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: none;
+}

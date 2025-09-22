@@ -3,330 +3,740 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>📖 小说叙事图谱生成器</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/dark-theme.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <style>
+        :root {
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --card-border: #333;
+            --primary: #64b5f6; /* 淡蓝色 */
+            --primary-dark: #42a5f5; /* 深一点的蓝色 */
+            --secondary: #03dac6;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --danger: #f44336;
+            --info: #2196f3;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 15px;
+        }
+
+        .generator-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-header {
+            background-color: rgba(42, 42, 42, 0.7);
+            border-bottom: 1px solid var(--card-border);
+            border-radius: 12px 12px 0 0 !important;
+            padding: 15px 20px;
+        }
+
+        .card-header h5 {
+            margin: 0;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .form-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .form-control, .form-select {
+            background-color: #2d2d2d;
+            border: 1px solid #444;
+            color: var(--text-primary);
+            border-radius: 8px;
+            padding: 10px 15px;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: #333;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(187, 134, 252, 0.25);
+            color: var(--text-primary);
+        }
+
+        .form-control::placeholder {
+            color: #777;
+        }
+
+        .btn {
+            border-radius: 8px;
+            font-weight: 500;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #333;
+            border: 1px solid #444;
+        }
+
+        .btn-secondary:hover {
+            background-color: #444;
+            border-color: #555;
+        }
+
+        .btn-generate {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            font-weight: 600;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+        }
+
+        .btn-generate:hover {
+            background: linear-gradient(135deg, var(--primary-dark), #00b8a9);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(187, 134, 252, 0.4);
+        }
+
+        .btn-generate:disabled {
+            background: #555;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .form-range {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #333;
+        }
+
+        .form-range::-webkit-slider-thumb {
+            background-color: var(--primary);
+            border: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .form-range::-moz-range-thumb {
+            background-color: var(--primary);
+            border: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .form-check-input:checked {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .form-check-input:focus {
+            box-shadow: 0 0 0 0.25rem rgba(187, 134, 252, 0.25);
+        }
+
+        .result-box {
+            background-color: #252525;
+            border: 1px solid #333;
+            border-radius: 8px;
+            min-height: 100px;
+            color: var(--text-secondary);
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            overflow: auto;
+            padding: 15px;
+        }
+
+        .result-box.bg-light {
+            background-color: #252525 !important;
+            border-color: #333 !important;
+        }
+
+        .input-group .btn {
+            border: 1px solid #444;
+            background-color: #333;
+            color: var(--text-primary);
+        }
+
+        .input-group .btn:hover {
+            background-color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+        }
+
+        code {
+            background-color: #333;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--secondary);
+        }
+
+        .slider-value {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+        }
+
+        .stat-value {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: linear-gradient(90deg, #1a1a1a, #252525);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 修复滑块范围值的颜色 */
+        .d-flex.justify-content-between span {
+            color: var(--text-primary); /* 改为白色/浅色 */
+            font-size: 0.9rem;
+        }
+        /* 修改滑块范围值和开关标签的颜色为白色 */
+        .d-flex.justify-content-between span,
+        .form-check.form-switch .form-check-label {
+            color: var(--text-primary); /* 改为白色/浅色 */
+        }
+        /* 确保开关标签在深色模式下是浅色 */
+        .form-check.form-switch .form-check-label {
+            color: var(--text-primary);
+        }
+        @media (max-width: 768px) {
+            .generator-container {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+
+        }
+    </style>
 </head>
 <body>
-    <div class="container py-4">
-    <div class="row">
-        <!-- 左侧：主要输入设置 -->
-        <div class="col-md-5">
-            <div class="card h-100">
-                <div class="card-header">
-                    <h5 class="mb-0">🎯 输入设置</h5>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <div class="mb-3">
-                        <label class="form-label">小说名称</label>
-                        <div class="input-group">
-                            <select class="form-select searchable-select" id="novel_name">
-                                {% for novel in novels %}
-                                <option value="{{ novel }}" {% if novel == selected_novel %}selected{% endif %}>{{ novel }}</option>
-                                {% endfor %}
-                            </select>
-                            <button class="btn btn-outline-secondary" type="button" id="refresh_btn">🔄 刷新</button>
+    <div class="generator-container">
+
+        <div class="container-fluid py-3">
+            <div class="row">
+                <!-- 左侧：主要输入设置 -->
+                <div class="col-md-5">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="fas fa-cog"></i> 输入设置</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <label class="form-label">小说名称</label>
+                                <div class="input-group">
+                                    <select class="form-select" id="novel_name">
+                                        {% for novel in novels %}
+                                        <option value="{{ novel }}" {% if novel == selected_novel %}selected{% endif %}>{{ novel }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <button class="btn btn-outline-secondary" type="button" id="refresh_btn">
+                                        <i class="fas fa-sync-alt"></i> 刷新
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">章节文件</label>
+                                <select class="form-select" id="chapter_file">
+                                    {% for chapter in chapters %}
+                                    <option value="{{ chapter }}" {% if chapter == selected_chapter %}selected{% endif %}>{{ chapter }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">模型类型</label>
+                                <select class="form-select" id="model_type">
+                                    <option value="local" selected>本地模型</option>
+                                    <option value="remote">远程模型</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3" id="local_model_div">
+                                <label class="form-label">选择本地模型</label>
+                                <!-- 添加加载指示器 -->
+                                <div id="model_loading_indicator" class="text-muted mb-2">正在加载模型列表...</div>
+
+                                <select class="form-select" id="local_model">
+                                    <!-- 选项将由 JavaScript 动态填充 -->
+                                </select>
+
+                                <!-- 添加错误信息显示区域 -->
+                                <div id="model_error_message" class="text-danger mt-2 d-none"></div>
+                            </div>
+
+                            <div class="mb-3 d-none" id="remote_model_div">
+                                <label class="form-label">选择远程模型</label>
+                                <select class="form-select" id="remote_model">
+                                    {% for model in remote_models %}
+                                    <option value="{{ model }}" {% if model == default_remote_model %}selected{% endif %}>{{ model }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">图谱模式</label>
+                                <select class="form-select" id="schema_name">
+                                    {% for key, desc in schema_choices.items() %}
+                                    <option value="{{ key }}">{{ desc }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <div class="mt-auto">
+                                <button class="btn btn-primary btn-generate w-100" id="generate_btn">
+                                    <i class="fas fa-rocket"></i> 开始分析
+                                </button>
+                                <button class="btn btn-secondary w-100 mt-2" id="view_graph_btn" disabled>
+                                    <i class="fas fa-chart-network"></i> 查看图谱
+                                </button>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">章节文件</label>
-                        <select class="form-select searchable-select" id="chapter_file">
-                            {% for chapter in chapters %}
-                            <option value="{{ chapter }}" {% if chapter == selected_chapter %}selected{% endif %}>{{ chapter }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
+                <!-- 右侧：高级设置 -->
+                <div class="col-md-7">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="fas fa-sliders-h"></i> 高级设置</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <label class="form-label">分块大小: <span id="chunk_size_value" class="slider-value">1024</span></label>
+                                <input type="range" class="form-range" id="chunk_size" min="256" max="4096" step="128" value="1024">
+                                <div class="d-flex justify-content-between">
+                                    <span>256</span>
+                                    <span>4096</span>
+                                </div>
+                            </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">模型类型</label>
-                        <select class="form-select searchable-select" id="model_type">
-                            <option value="local" selected>本地模型</option>
-                            <option value="remote">远程模型</option>
-                        </select>
-                    </div>
+                            <div class="mb-4">
+                                <label class="form-label">分块重叠: <span id="chunk_overlap_value" class="slider-value">192</span></label>
+                                <input type="range" class="form-range" id="chunk_overlap" min="64" max="512" step="32" value="192">
+                                <div class="d-flex justify-content-between">
+                                    <span>64</span>
+                                    <span>512</span>
+                                </div>
+                            </div>
 
-                    <div class="mb-3" id="local_model_div">
-                        <label class="form-label">选择本地模型</label>
-                        <select class="form-select searchable-select" id="local_model">
-                            {% for model in ollama_models %}
-                            <option value="{{ model }}" {% if model == default_model %}selected{% endif %}>{{ model }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
+                            <div class="mb-4">
+                                <label class="form-label">上下文长度: <span id="num_ctx_value" class="slider-value">16384</span></label>
+                                <input type="range" class="form-range" id="num_ctx" min="1024" max="32000" step="256" value="16384">
+                                <div class="d-flex justify-content-between">
+                                    <span>1024</span>
+                                    <span>32000</span>
+                                </div>
+                            </div>
 
-                    <div class="mb-3 d-none" id="remote_model_div">
-                        <label class="form-label">选择远程模型</label>
-                        <select class="form-select searchable-select" id="remote_model">
-                            {% for model in remote_models %}
-                            <option value="{{ model }}" {% if model == default_remote_model %}selected{% endif %}>{{ model }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">图谱模式</label>
-                        <select class="form-select searchable-select" id="schema_name">
-                            {% for key, desc in schema_choices.items() %}
-                            <option value="{{ key }}">{{ desc }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-
-                    <div class="mt-auto">
-                        <button class="btn btn-primary btn-generate" id="generate_btn">🚀 开始分析</button>
-                        <button class="btn btn-secondary ms-2" id="view_graph_btn" disabled>📊 查看图谱</button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="use_cache" checked>
+                                <label class="form-check-label" for="use_cache">
+                                    启用缓存优化
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- 右侧：高级设置 -->
-        <div class="col-md-7">
-            <div class="card h-100">
-                <div class="card-header">
-                    <h5 class="mb-0">⚙️ 高级设置</h5>
+            <!-- 输出显示 -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="fas fa-chart-line"></i> 处理状态</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <label class="form-label">处理进度</label>
+                                <div class="result-box p-3" id="status_output">等待开始分析...</div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">处理结果</label>
+                                <div class="result-box p-3" id="result_output">分析完成后将显示结果</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">统计信息</label>
+                                <div class="result-box p-3" id="stats_output">
+                                    <div class="stat-item">
+                                        <span class="stat-label">处理章节:</span>
+                                        <span class="stat-value">未选择</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">提取实体:</span>
+                                        <span class="stat-value">0</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">识别关系:</span>
+                                        <span class="stat-value">0</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">处理时间:</span>
+                                        <span class="stat-value">0s</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="hidden" id="graph_cache_key">
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <div class="mb-3">
-                        <label class="form-label">分块大小</label>
-                        <input type="range" class="form-range" id="chunk_size" min="256" max="4096" step="128" value="1024">
-                        <div class="d-flex justify-content-between">
-                            <span>256</span>
-                            <span id="chunk_size_value">1024</span>
-                            <span>4096</span>
-                        </div>
-                    </div>
+            </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">分块重叠</label>
-                        <input type="range" class="form-range" id="chunk_overlap" min="64" max="512" step="32" value="192">
-                        <div class="d-flex justify-content-between">
-                            <span>64</span>
-                            <span id="chunk_overlap_value">192</span>
-                            <span>512</span>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">上下文长度</label>
-                        <input type="range" class="form-range" id="num_ctx" min="1024" max="32000" step="256" value="16384">
-                        <div class="d-flex justify-content-between">
-                            <span>1024</span>
-                            <span id="num_ctx_value">16384</span>
-                            <span>32000</span>
-                        </div>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="use_cache" checked>
-                        <label class="form-check-label" for="use_cache">
-                            使用缓存
-                        </label>
-                    </div>
-                </div>
+            <!-- 使用说明 -->
+            <div class="mt-4">
+                <h5 class="section-title"><i class="fas fa-info-circle"></i> 使用说明</h5>
+                <ul>
+                    <li>选择小说和章节 - 从下拉菜单中选择 <code>novels</code> 文件夹下的小说及其章节</li>
+                    <li>选择模型 - 本地模型速度快，远程模型可能更准确</li>
+                    <li>选择图谱模式 - 不同模式提取不同粒度的叙事元素</li>
+                    <li>调整参数 - 可以修改分块大小、重叠和上下文长度来优化效果</li>
+                    <li>开始分析 - 点击按钮开始处理文本</li>
+                    <li>查看结果 - 分析完成后，点击"查看图谱"按钮跳转到图谱查看页面</li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <!-- 输出显示 -->
-    <div class="row mt-4">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="mb-0">📊 处理状态</h5>
-                </div>
-                <div class="card-body">
-                    <div class="mb-3">
-                        <label class="form-label">处理进度</label>
-                        <div class="result-box p-3 bg-light" id="status_output">等待开始分析...</div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">处理结果</label>
-                        <div class="result-box p-3 bg-light" id="result_output">分析完成后将显示结果</div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">统计信息</label>
-                        <div class="result-box p-3 bg-light" id="stats_output">详细统计信息将在此显示</div>
-                    </div>
-
-                    <input type="hidden" id="graph_cache_key">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 使用说明 -->
-    <div class="mt-4">
-        <h5>💡 使用说明</h5>
-        <ul>
-            <li>选择小说和章节 - 从下拉菜单中选择 <code>novels</code> 文件夹下的小说及其章节</li>
-            <li>选择模型 - 本地模型速度快，远程模型可能更准确</li>
-            <li>选择图谱模式 - 不同模式提取不同粒度的叙事元素</li>
-            <li>调整参数 - 可以修改分块大小、重叠和上下文长度来优化效果</li>
-            <li>开始分析 - 点击按钮开始处理文本</li>
-            <li>查看结果 - 分析完成后，点击"查看图谱"按钮跳转到图谱查看页面</li>
-        </ul>
-    </div>
-</div>
-
-
+    <script src="{{ url_for('static', filename='js/choices.min.js') }}" defer></script>
     <script>
-        // 更新滑块显示值
-        document.getElementById('chunk_size').addEventListener('input', function() {
-            document.getElementById('chunk_size_value').textContent = this.value;
-        });
-        document.getElementById('chunk_overlap').addEventListener('input', function() {
-            document.getElementById('chunk_overlap_value').textContent = this.value;
-        });
-        document.getElementById('num_ctx').addEventListener('input', function() {
-            document.getElementById('num_ctx_value').textContent = this.value;
-        });
+        // --- 1. 定义所有初始化函数 ---
 
-        // 模型类型切换
-        document.getElementById('model_type').addEventListener('change', function() {
-            const isLocal = this.value === 'local';
-            document.getElementById('local_model_div').classList.toggle('d-none', !isLocal);
-            document.getElementById('remote_model_div').classList.toggle('d-none', isLocal);
+        // 更新滑块显示值 (修复：只定义一次)
+        function setupSliderListeners() {
+            document.getElementById('chunk_size').addEventListener('input', function() {
+                document.getElementById('chunk_size_value').textContent = this.value;
+            });
+            document.getElementById('chunk_overlap').addEventListener('input', function() {
+                document.getElementById('chunk_overlap_value').textContent = this.value;
+            });
+            document.getElementById('num_ctx').addEventListener('input', function() {
+                document.getElementById('num_ctx_value').textContent = this.value;
+            });
+        }
 
-            // 动态调整上下文长度范围
-            const numCtxSlider = document.getElementById('num_ctx');
-            if (isLocal) {
-                numCtxSlider.max = 16384;
-                if (numCtxSlider.value > 16384) numCtxSlider.value = 16384;
-            } else {
-                numCtxSlider.max = 32000;
-                if (numCtxSlider.value < 16384) numCtxSlider.value = 32000;
-            }
-            document.getElementById('num_ctx_value').textContent = numCtxSlider.value;
-        });
+        // 模型类型切换 (修复：定义为独立函数)
+        function setupModelTypeListener() {
+            document.getElementById('model_type').addEventListener('change', function() {
+                const isLocal = this.value === 'local';
+                document.getElementById('local_model_div').classList.toggle('d-none', !isLocal);
+                document.getElementById('remote_model_div').classList.toggle('d-none', isLocal);
+
+                // 动态调整上下文长度范围
+                const numCtxSlider = document.getElementById('num_ctx');
+                if (isLocal) {
+                    numCtxSlider.max = 16384;
+                    if (numCtxSlider.value > 16384) numCtxSlider.value = 16384;
+                } else {
+                    numCtxSlider.max = 32000;
+                    if (numCtxSlider.value < 16384) numCtxSlider.value = 32000;
+                }
+                document.getElementById('num_ctx_value').textContent = numCtxSlider.value;
+            });
+        }
 
         // 刷新小说列表
-        document.getElementById('refresh_btn').addEventListener('click', async function() {
-            const novelSelect = document.getElementById('novel_name');
-            const chapterSelect = document.getElementById('chapter_file');
+        function setupRefreshListener() {
+            document.getElementById('refresh_btn').addEventListener('click', async function() {
+                const btn = this;
+                const icon = btn.querySelector('i');
+                icon.classList.add('fa-spin');
 
-            try {
-                const response = await fetch('/api/novel-chapter-structure');
-                if (response.ok) {
-                    const data = await response.json();
-                    // 这里可以更智能地更新小说列表，但为简化，我们重新加载页面
-                    location.reload();
+                try {
+                    const response = await fetch('/api/novel-chapter-structure');
+                    if (response.ok) {
+                        location.reload();
+                    }
+                } catch (error) {
+                    console.error('刷新失败:', error);
+                    alert('刷新失败，请手动刷新页面');
+                } finally {
+                    setTimeout(() => {
+                        icon.classList.remove('fa-spin');
+                    }, 500);
                 }
-            } catch (error) {
-                console.error('刷新失败:', error);
-                alert('刷新失败，请手动刷新页面');
-            }
-        });
+            });
+        }
 
         // 小说变化时更新章节
-        document.getElementById('novel_name').addEventListener('change', async function() {
-            const novelName = this.value;
-            const chapterSelect = document.getElementById('chapter_file');
+        function setupNovelChangeListener() {
+            document.getElementById('novel_name').addEventListener('change', async function() {
+                const novelName = this.value;
+                const chapterSelect = document.getElementById('chapter_file');
 
-            if (!novelName) {
-                chapterSelect.innerHTML = '<option value="">请选择章节</option>';
+                if (!novelName) {
+                    chapterSelect.innerHTML = '<option value="">请选择章节</option>';
+                    return;
+                }
+
+                try {
+                    const response = await fetch(`/api/chapters?novel=${encodeURIComponent(novelName)}`);
+                    if (response.ok) {
+                        const chapters = await response.json();
+                        chapterSelect.innerHTML = '<option value="">请选择章节</option>';
+                        chapters.forEach(chapter => {
+                            const option = document.createElement('option');
+                            option.value = chapter;
+                            option.textContent = chapter;
+                            chapterSelect.appendChild(option);
+                        });
+                    }
+                } catch (error) {
+                    console.error('获取章节失败:', error);
+                }
+            });
+        }
+
+        // 生成图谱
+        function setupGenerateListener() {
+            document.getElementById('generate_btn').addEventListener('click', async function() {
+                const btn = this;
+                const originalText = btn.innerHTML;
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 处理中...';
+
+                const data = {
+                    novel_name: document.getElementById('novel_name').value,
+                    chapter_file: document.getElementById('chapter_file').value,
+                    model_type: document.getElementById('model_type').value,
+                    model_name: document.getElementById('model_type').value === 'local' ?
+                               document.getElementById('local_model').value :
+                               document.getElementById('remote_model').value,
+                    chunk_size: parseInt(document.getElementById('chunk_size').value),
+                    chunk_overlap: parseInt(document.getElementById('chunk_overlap').value),
+                    num_ctx: parseInt(document.getElementById('num_ctx').value),
+                    schema_name: document.getElementById('schema_name').value,
+                    use_cache: document.getElementById('use_cache').checked
+                };
+
+                try {
+                    const response = await fetch('/api/generate', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.error) {
+                        document.getElementById('status_output').innerHTML = '❌ ' + result.error;
+                        document.getElementById('result_output').innerHTML = '';
+                        document.getElementById('stats_output').innerHTML = '';
+                        document.getElementById('graph_cache_key').value = '';
+                        document.getElementById('view_graph_btn').disabled = true;
+                    } else {
+                        document.getElementById('status_output').innerHTML = result.status_text;
+                        document.getElementById('result_output').innerHTML = result.result_text;
+                        document.getElementById('stats_output').innerHTML = result.stats_text;
+                        document.getElementById('graph_cache_key').value = result.cache_key;
+                        document.getElementById('view_graph_btn').disabled = false;
+                    }
+                } catch (error) {
+                    document.getElementById('status_output').innerHTML = '❌ 网络错误: ' + error.message;
+                    document.getElementById('view_graph_btn').disabled = true;
+                } finally {
+                    btn.disabled = false;
+                    btn.innerHTML = originalText;
+                }
+            });
+        }
+
+        // 查看图谱
+        function setupViewGraphListener() {
+            document.getElementById('view_graph_btn').addEventListener('click', function() {
+                const cacheKey = document.getElementById('graph_cache_key').value;
+                if (cacheKey) {
+                    window.open(`/viewer?cache_key=${encodeURIComponent(cacheKey)}`, '_blank');
+                }
+            });
+        }
+
+        // ========== 获取 Ollama 模型列表 ========== //
+        async function fetchOllamaModelsAndPopulate() {
+            console.log("▶️ 开始加载本地模型列表...");
+
+            const selectElement = document.getElementById('local_model');
+            const loadingIndicator = document.getElementById('model_loading_indicator');
+            const errorMessage = document.getElementById('model_error_message');
+
+            // 如果元素不存在，直接失败
+            if (!selectElement || !loadingIndicator || !errorMessage) {
+                console.error('❌ DOM 元素缺失，无法初始化模型列表');
                 return;
             }
 
-            try {
-                const response = await fetch(`/api/chapters?novel=${encodeURIComponent(novelName)}`);
-                if (response.ok) {
-                    const chapters = await response.json();
-                    chapterSelect.innerHTML = '';
-                    chapters.forEach(chapter => {
-                        const option = document.createElement('option');
-                        option.value = chapter;
-                        option.textContent = chapter;
-                        chapterSelect.appendChild(option);
-                    });
-                }
-            } catch (error) {
-                console.error('获取章节失败:', error);
-            }
-        });
-
-        // 生成图谱
-        document.getElementById('generate_btn').addEventListener('click', async function() {
-            const btn = this;
-            const originalText = btn.innerHTML;
-            btn.disabled = true;
-            btn.innerHTML = '⏳ 处理中...';
-
-            const data = {
-                novel_name: document.getElementById('novel_name').value,
-                chapter_file: document.getElementById('chapter_file').value,
-                model_type: document.getElementById('model_type').value,
-                model_name: document.getElementById('model_type').value === 'local' ?
-                           document.getElementById('local_model').value :
-                           document.getElementById('remote_model').value,
-                chunk_size: parseInt(document.getElementById('chunk_size').value),
-                chunk_overlap: parseInt(document.getElementById('chunk_overlap').value),
-                num_ctx: parseInt(document.getElementById('num_ctx').value),
-                schema_name: document.getElementById('schema_name').value,
-                use_cache: document.getElementById('use_cache').checked
-            };
+            // 显示加载中
+            loadingIndicator.classList.remove('d-none');
+            errorMessage.classList.add('d-none');
+            selectElement.classList.add('d-none');
 
             try {
-                const response = await fetch('/api/generate', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
-                });
+                const response = await fetch('/api/ollama_models', { timeout: 5000 });
 
-                const result = await response.json();
-
-                if (result.error) {
-                    document.getElementById('status_output').innerHTML = '❌ ' + result.error;
-                    document.getElementById('result_output').innerHTML = '';
-                    document.getElementById('stats_output').innerHTML = '';
-                    document.getElementById('graph_cache_key').value = '';
-                    document.getElementById('view_graph_btn').disabled = true;
-                } else {
-                    document.getElementById('status_output').innerHTML = result.status_text;
-                    document.getElementById('result_output').innerHTML = result.result_text;
-                    document.getElementById('stats_output').innerHTML = result.stats_text;
-                    document.getElementById('graph_cache_key').value = result.cache_key;
-                    document.getElementById('view_graph_btn').disabled = false;
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }
-            } catch (error) {
-                document.getElementById('status_output').innerHTML = '❌ 网络错误: ' + error.message;
-                document.getElementById('view_graph_btn').disabled = true;
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            }
-        });
 
-        // 查看图谱
-        document.getElementById('view_graph_btn').addEventListener('click', function() {
-            const cacheKey = document.getElementById('graph_cache_key').value;
-            if (cacheKey) {
-                window.open(`/viewer?cache_key=${encodeURIComponent(cacheKey)}`, '_blank');
-            }
-        });
-        // ========== 初始化可搜索下拉框 ==========
-        document.addEventListener('DOMContentLoaded', function() {
-            // 为所有带 searchable-select 类的 select 初始化 Choices
-            const selects = document.querySelectorAll('.searchable-select');
-            selects.forEach(select => {
-                new Choices(select, {
-                    searchEnabled: true,
-                    searchPlaceholderValue: '🔍 输入搜索...',
-                    itemSelectText: '',
-                    shouldSort: false, // 保持原始顺序
-                    position: 'bottom', // 下拉方向
-                    classNames: {
-                        containerOuter: 'choices choices--dark', // 自定义类名，用于暗色适配
-                    }
+                const data = await response.json();
+
+                if (!data.success || !Array.isArray(data.models) || data.models.length === 0) {
+                    throw new Error(data.error || "返回模型列表为空");
+                }
+
+                // ✅ 清空并填充模型
+                selectElement.innerHTML = '';
+                data.models.forEach((model, index) => {
+                    const option = document.createElement('option');
+                    option.value = model;
+                    option.textContent = model;
+                    if (index === 0) option.selected = true; // 默认选第一个
+                    selectElement.appendChild(option);
                 });
+
+                console.log(`✅ 成功加载 ${data.models.length} 个模型`);
+
+                // ✅ 隐藏加载器，显示下拉框
+                loadingIndicator.classList.add('d-none');
+                selectElement.classList.remove('d-none');
+
+            } catch (error) {
+                console.error('⚠️ 加载本地模型失败:', error.message);
+
+                // 显示错误信息
+                errorMessage.textContent = `⚠️ 加载失败: ${error.message}。请确保 Ollama 正在运行。`;
+                errorMessage.classList.remove('d-none');
+
+                // 提供手动输入作为备用
+                selectElement.innerHTML = '<option value="">⚠️ 自动加载失败，请手动输入模型名</option>';
+                selectElement.classList.remove('d-none');
+                loadingIndicator.classList.add('d-none');
+            }
+        }
+
+        // ========== 核心初始化函数 ==========
+        async function initializeApp() {
+            console.log("开始初始化应用...");
+            try {
+                // 设置各种事件监听器
+                setupSliderListeners();
+                setupModelTypeListener();
+                setupRefreshListener();
+                setupNovelChangeListener();
+                setupGenerateListener();
+                setupViewGraphListener();
+
+                // 获取并填充 Ollama 模型
+                await fetchOllamaModelsAndPopulate();
+
+                console.log("应用初始化完成。");
+            } catch (error) {
+                console.error("应用初始化过程中发生错误:", error);
+            }
+            document.getElementById('local_model_div').classList.remove('d-none');
+            document.getElementById('remote_model_div').classList.add('d-none');
+        }
+
+        // ========== 使用 readyState 检查确保初始化 ==========
+        console.log("检查 document.readyState:", document.readyState);
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", function() {
+                console.log("DOMContentLoaded 事件触发，调用 initializeApp。");
+                setTimeout(initializeApp, 500);
             });
-        });
+        } else {
+            setTimeout(initializeApp, 500);
+        }
     </script>
 </body>
 </html>

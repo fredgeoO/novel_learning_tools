@@ -7,11 +7,9 @@ from typing import Any, Dict, Optional, List
 from datetime import datetime
 from rag.config_models import ExtractionConfig
 
-from rag.config import CACHE_DIR
-
 # --- 修改 1: 从 inputs/rag/config.py 导入 CACHE_DIR ---
 
-from rag.config import CACHE_DIR
+from config import CACHE_DIR
 
 # --- 修改 2: 定义子目录 ---
 CACHE_SUBFOLDER = "graph_docs"
@@ -74,12 +72,6 @@ def load_cache(key: str) -> Optional[Any]:
 
     # --- 添加调试信息：打印完整路径 ---
 
-    # 或者使用 print (更直接)
-    print(f"[DEBUG] load_cache is looking for file at: '{cache_data_path}'")
-    print(f"[DEBUG] Does the file exist? {os.path.exists(cache_data_path)}")
-    # --- 调试信息结束 ---
-
-
     # --- 检查文件是否存在并尝试加载 ---
     if os.path.exists(cache_data_path):
         try:
@@ -127,17 +119,7 @@ def get_metadata_from_cache_key(key: str) -> Dict[str, str]:
     # 首先尝试加载保存的元数据
     metadata = load_cache_metadata(key)
     if metadata:
-        return {
-            "novel_name": metadata.get("novel_name", "未知小说"),
-            "chapter_name": metadata.get("chapter_name", "未知章节"),
-            "model_name": metadata.get("model_name", "未知模型"),
-            "use_local": "是" if metadata.get("use_local", True) else "否",
-            "num_ctx": str(metadata.get("num_ctx", "未知")),
-            "chunk_size": str(metadata.get("chunk_size", "未知")),
-            "chunk_overlap": str(metadata.get("chunk_overlap", "未知")),
-            "content_size": str(metadata.get("content_size", "未知")),
-            "schema_name": metadata.get("schema_name", "未知模式")  # 添加schema名称
-        }
+        return metadata
 
     # 如果没有保存的元数据，返回默认值
     return {

@@ -151,22 +151,85 @@ const FloatingPanel = (function() {
             }
         };
 
-        // 构建显示内容
-        const items = [
-            { label: '小说', value: metadata.novel_name || '未知' },
-            { label: '章节', value: metadata.chapter_name || '未知' },
-            { label: '模型', value: metadata.model_name || '未知' },
-            { label: '本地模型', value: metadata.use_local !== undefined ? (metadata.use_local ? '是' : '否') : '未知' },
-            { label: '上下文长度', value: metadata.num_ctx || '未知' },
-            { label: '块大小', value: metadata.chunk_size || '未知' },
-            { label: '重叠大小', value: metadata.chunk_overlap || '未知' },
-            { label: '内容大小', value: metadata.content_size || '未知' },
-            { label: '模式', value: metadata.schema_name || '未知' },
-            { label: '创建时间', value: formatTime(metadata.created_at) }
-        ];
+        // 预定义的字段映射
+        const fieldMapping = {
+            'novel_name': '小说',
+            'chapter_name': '章节',
+            'model_name': '模型',
+            'use_local': '本地模型',
+            'num_ctx': '上下文长度',
+            'chunk_size': '块大小',
+            'chunk_overlap': '重叠大小',
+            'content_size': '内容大小',
+            'schema_name': '模式',
+            'created_at': '创建时间',
+        };
+
+        // 忽略显示的字段名（label）
+        const ignoreLabels = new Set(['cache_version', 'schema_display','saved_at']);
+
+        // 预定义的特殊处理字段
+        const specialFields = {
+            'use_local': (value) => value !== undefined ? (value ? '是' : '否') : '未知',
+            'created_at': (value) => formatTime(value),
+            'model_name': (value) => value == 'qwen3:30b-a3b-instruct-2507-q4_K_M' ? 'qwen3:30b-q4_K_M' : value
+        };
+
+        // 先处理预定义的字段
+        const predefinedItems = [];
+        const processedFields = new Set();
+
+        // 按照预定义顺序处理字段
+        Object.keys(fieldMapping).forEach(key => {
+            if (metadata.hasOwnProperty(key)) {
+                let value = metadata[key];
+
+                // 特殊处理某些字段
+                if (specialFields[key]) {
+                    value = specialFields[key](value);
+                } else {
+                    value = value || '未知';
+                }
+
+                predefinedItems.push({
+                    label: fieldMapping[key],
+                    value: value
+                });
+                processedFields.add(key);
+            }
+        });
+
+        // 处理未预定义的字段
+        const additionalItems = [];
+        Object.keys(metadata).forEach(key => {
+            if (!processedFields.has(key) && key !== 'error') { // 排除已处理的字段和error字段
+                let value = metadata[key];
+
+                // 对时间字段进行特殊处理（如果未在预定义中）
+                if (key.includes('time') || key.includes('date') || key.includes('created') || key.includes('updated')) {
+                    value = formatTime(value);
+                } else {
+                    value = value !== null && value !== undefined ? value : '未知';
+                }
+
+                const label = key; // 使用原始字段名作为标签
+
+                // 如果 label 在忽略列表中，则跳过
+                if (ignoreLabels.has(label)) {
+                    return;
+                }
+
+                additionalItems.push({
+                    label: label,
+                    value: value
+                });
+            }
+        });
+        // 合并所有项目
+        const allItems = [...predefinedItems, ...additionalItems];
 
         // 生成完整的 HTML 内容（包括标题）
-        const htmlContent = titleHTML + items.map(item => `
+        const htmlContent = titleHTML + allItems.map(item => `
             <div class="detail-item">
                 <span class="detail-label">${item.label}:</span>
                 <span class="detail-value">${item.value}</span>
@@ -177,11 +240,9 @@ const FloatingPanel = (function() {
         metadataPanel.innerHTML = htmlContent;
 
     } catch (error) {
-        console.error('加载元数据失败:', error);
-        // 显示错误信息（包括标题）
         const titleElement = metadataPanel.querySelector('h5');
         const titleHTML = titleElement ? titleElement.outerHTML : '<h5>📋 图谱信息</h5>';
-        metadataPanel.innerHTML = titleHTML + `<div style="color: #ff6b6b; font-size: 12px; padding: 12px;">无法加载元数据: ${error.message}</div>`;
+        metadataPanel.innerHTML = titleHTML + `<div style="color: #ff6b6b; padding: 12px;">加载失败: ${error.message}</div>`;
     }
 }
 

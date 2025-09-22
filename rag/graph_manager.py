@@ -6,11 +6,11 @@ import glob
 import uuid
 import logging
 from datetime import datetime
-from typing import Dict, Set
+from typing import Dict
 
-# --- 修改 1: 从 inputs/rag/config.py 导入 CACHE_DIR ---
+# --- 修改 1: 从 config.py 导入 CACHE_DIR ---
 
-from rag.config import CACHE_DIR as DEFAULT_CACHE_DIR
+from config import CACHE_DIR as DEFAULT_CACHE_DIR
 
 # --- 修改 2: 定义子目录 ---
 GRAPH_CACHE_SUBFOLDER = "graph_docs"
@@ -23,14 +23,12 @@ os.makedirs(GRAPH_CACHE_DIR, exist_ok=True)
 logger = logging.getLogger(__name__)
 
 
-def load_available_graphs_metadata() -> Dict[str, Dict]: # 默认值改为 GRAPH_CACHE_DIR
+def load_available_graphs_metadata() -> Dict[str, Dict]:
     """加载所有可用图谱的元数据"""
     available_graphs = {}
 
     path = os.path.join(GRAPH_CACHE_DIR, "*_metadata.json")
-    metadata_files = glob.glob(path) # 保持不变，因为它使用了传入的 cache_dir 参数
-
-
+    metadata_files = glob.glob(path)
     metadata_files.sort(key=os.path.getmtime, reverse=True)
 
     for meta_file_path in metadata_files:
@@ -40,18 +38,17 @@ def load_available_graphs_metadata() -> Dict[str, Dict]: # 默认值改为 GRAPH
 
             cache_key = os.path.basename(meta_file_path).replace("_metadata.json", "")
 
-            # ⭐️ 重新组织数据结构，匹配前端期望的格式
-            # ⭐️ 重新组织数据结构，匹配前端期望的格式
+            # 获取所有metadata字段，排除特定的字段
+            excluded_fields = {"created_at"}  # 这些字段会放到metadata中
+            filters_data = {}
+
+            # 将所有metadata信息都放入filters中
+            for key, value in metadata.items():
+                if key not in excluded_fields:
+                    filters_data[key] = value
+
             available_graphs[cache_key] = {
-                "filters": {
-                    "novel_name": metadata.get("novel_name", ""),
-                    "chapter_name": metadata.get("chapter_name", ""),
-                    "model_name": metadata.get("model_name", ""),
-                    "schema_name": metadata.get("schema_name", ""),
-                    "chunk_size": metadata.get("chunk_size", ""),
-                    "chunk_overlap": metadata.get("chunk_overlap", ""),
-                    "num_ctx": metadata.get("num_ctx", "")
-                },
+                "filters": filters_data,
                 "metadata": {
                     "created_at": metadata.get("created_at", "")
                 }

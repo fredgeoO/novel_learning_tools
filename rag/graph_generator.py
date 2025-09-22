@@ -8,21 +8,19 @@ import os
 import logging
 import time
 import requests
-from typing import List, Tuple, Dict, Any, Optional
-from datetime import datetime
+from typing import List, Dict, Any
 
 # 本地导入
 from rag.narrative_graph_extractor import NarrativeGraphExtractor
-from utils_chapter import load_chapter_content, get_chapter_list
+from utils.util_chapter import load_chapter_content, get_chapter_list
 from rag.cache_manager import (
     get_cache_key_from_config,
     load_cache,
     save_cache,
     generate_cache_metadata
 )
-from rag.narrative_schema import ALL_NARRATIVE_SCHEMAS, DEFAULT_SCHEMA
+from rag.schema_definitions import ALL_NARRATIVE_SCHEMAS, DEFAULT_SCHEMA
 from rag.config_models import ExtractionConfig
-from rag.config import CACHE_DIR
 
 # 配置
 logger = logging.getLogger(__name__)
@@ -42,7 +40,7 @@ def get_ollama_models() -> List[str]:
 
 
 # 全局默认配置（从 config.py 导入）
-from rag.config import (
+from config import (
     DEFAULT_MODEL,
     DEFAULT_BASE_URL,
     DEFAULT_TEMPERATURE,
@@ -175,7 +173,6 @@ def extract_graph(
             cached_result = load_cache(graph_cache_key)
             if cached_result is not None:
                 # 标记为缓存结果
-                cached_result._is_from_cache = True
                 result, chunks = cached_result, []  # 简化处理
                 duration = 0.0
                 status = 0  # 成功

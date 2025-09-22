@@ -1,30 +1,20 @@
 # inputs/rag/narrative_graph_extractor.py
-import hashlib
-import json
 import logging
 import os
-import statistics  # 导入 statistics 模块用于计算均值和标准差
 import time
 import math
 from typing import List, Tuple, Any, Optional, Dict
-from dataclasses import dataclass
-import copy
 
-from langchain_core.messages import AIMessage
-from langchain_core.output_parsers import JsonOutputParser
-from langchain_core.prompts import PromptTemplate
 # --- 导入所需模块 ---
 from langchain_openai import ChatOpenAI
 from langchain_ollama import OllamaLLM
 from langchain_experimental.graph_transformers import LLMGraphTransformer
 from langchain_core.documents import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from litellm import max_tokens
-from pydantic import BaseModel, Field
 
 # --- 导入共享配置 ---
 # 从共享配置文件导入默认值
-from rag.config import (
+from config import (
     DEFAULT_MODEL as CONFIG_DEFAULT_MODEL,
     DEFAULT_BASE_URL as CONFIG_DEFAULT_BASE_URL,
     DEFAULT_TEMPERATURE as CONFIG_DEFAULT_TEMPERATURE,
@@ -35,9 +25,9 @@ from rag.config import (
 
 from rag.config_models import ExtractionConfig
 from rag.narrative_schema import MINIMAL_SCHEMA, generate_auto_schema
-from rag.cache_manager import get_cache_key, save_cache, load_cache, generate_extractor_cache_params, \
-    generate_cache_metadata, get_cache_key_from_config
+from rag.cache_manager import save_cache, load_cache, generate_cache_metadata, get_cache_key_from_config
 from rag.narrative_schema import split_schema
+from rag.graph_optimizer import GraphOptimizer
 
 # --- 配置日志 ---
 logger = logging.getLogger(__name__)
@@ -53,148 +43,10 @@ DEFAULT_NUM_CTX = CONFIG_DEFAULT_NUM_CTX
 DEFAULT_CHUNK_SIZE = CONFIG_DEFAULT_CHUNK_SIZE
 DEFAULT_CHUNK_OVERLAP = CONFIG_DEFAULT_CHUNK_OVERLAP
 
-
-
-
-# --- End Schema 拆分配置 ---
-
-# ==============================
-# 可序列化的 Graph Document 类
-# ==============================
-
-@dataclass
-class SerializableNode:
-    id: str
-    type: str
-    properties: Dict[str, Any]
-
-    @classmethod
-    def from_langchain_node(cls, node):
-        """从 LangChain 节点创建可序列化节点"""
-        return cls(
-            id=getattr(node, 'id', ''),
-            type=getattr(node, 'type', ''),
-            properties=getattr(node, 'properties', {})
-        )
-
-    def to_dict(self):
-        return {
-            'id': self.id,
-            'type': self.type,
-            'properties': self.properties
-        }
-
-    @classmethod
-    def from_dict(cls, data):
-        return cls(
-            id=data['id'],
-            type=data['type'],
-            properties=data['properties']
-        )
-
-
-@dataclass
-class SerializableRelationship:
-    source_id: str
-    target_id: str
-    type: str
-    properties: Dict[str, Any]
-
-    @classmethod
-    def from_langchain_relationship(cls, rel):
-        """从 LangChain 关系创建可序列化关系"""
-        source = getattr(rel, 'source', None)
-        target = getattr(rel, 'target', None)
-        return cls(
-            source_id=getattr(source, 'id', '') if source else '',
-            target_id=getattr(target, 'id', '') if target else '',
-            type=getattr(rel, 'type', ''),
-            properties=getattr(rel, 'properties', {})
-        )
-
-    def to_dict(self):
-        return {
-            'source_id': self.source_id,
-            'target_id': self.target_id,
-            'type': self.type,
-            'properties': self.properties
-        }
-
-    @classmethod
-    def from_dict(cls, data):
-        return cls(
-            source_id=data['source_id'],
-            target_id=data['target_id'],
-            type=data['type'],
-            properties=data['properties']
-        )
-
-
-# 假设这是你的 Pydantic 模型定义部分
-
-class GroupingResult(BaseModel):
-    """单个语义分组结果，用于优化高连接度节点。"""
-    # 聚合节点的名称，将用作新节点的 ID 和 name 属性
-    group_name: str = Field(
-        description="能概括该组节点共同主题的语义化名称（例如'童年经历'、'职场关系'）。这将用作新聚合节点的 ID 和 name 属性。"
-    )
-    # 属于该组的成员节点ID
-    node_ids: List[str] = Field(
-        description="属于该分组的成员节点的ID列表。"
-    )
-    # 主节点到聚合节点的关系类型
-    aggregate_relationship_type: str = Field(
-        description="描述原始主节点与这个新聚合概念之间关系的中文词语（如'涉及'、'拥有'、'经历'）。"
-    )
-    # 聚合节点到成员节点的关系类型
-    member_relationship_type: str = Field(
-        description="描述新聚合概念与其成员节点之间关系的中文词语（如'包含'、'成员是'、'体现为'）。"
-    )
-    # 注意：移除了 aggregate_node_id 和 description 字段
-
-# AggregateGroupingResponse 保持不变，因为它只是包含 GroupingResult 的列表
-class AggregateGroupingResponse(BaseModel):
-    """完整的分组响应结构"""
-    groups: List[GroupingResult] = Field(description="所有分组结果")
-
-@dataclass
-class SerializableGraphDocument:
-    nodes: List[SerializableNode]
-    relationships: List[SerializableRelationship]
-
-    @classmethod
-    def from_langchain_graph_document(cls, graph_doc):
-        """从 LangChain GraphDocument 创建可序列化版本"""
-        nodes = [SerializableNode.from_langchain_node(n) for n in getattr(graph_doc, 'nodes', [])]
-        relationships = [SerializableRelationship.from_langchain_relationship(r) for r in
-                         getattr(graph_doc, 'relationships', [])]
-        return cls(nodes=nodes, relationships=relationships)
-
-    def to_dict(self):
-        return {
-            'nodes': [node.to_dict() for node in self.nodes],
-            'relationships': [rel.to_dict() for rel in self.relationships]
-        }
-
-    @classmethod
-    def from_dict(cls, data):
-        nodes = [SerializableNode.from_dict(node_data) for node_data in data['nodes']]
-        relationships = [SerializableRelationship.from_dict(rel_data) for rel_data in data['relationships']]
-        return cls(nodes=nodes, relationships=relationships)
-
-    @staticmethod
-    def display_graph_document(graph_doc, title: str = "Graph Document"):
-        """打印 GraphDocument 的内容"""
-        print(f"\n=== {title} ===")
-        print(f"节点数量: {len(graph_doc.nodes)}")
-        print(f"关系数量: {len(graph_doc.relationships)}")
-        print("--- 节点 (Nodes) ---")
-        for i, node in enumerate(graph_doc.nodes):
-            print(f"  {i + 1}. ID: '{node.id}', Type: '{node.type}', Properties: {node.properties}")
-        print("--- 关系 (Relationships) ---")
-        for i, rel in enumerate(graph_doc.relationships):
-            print(f"  {i + 1}. '{rel.source_id}' --({rel.type})--> '{rel.target_id}' | Properties: {rel.properties}")
-        print("-" * 20)
+from rag.graph_types import (
+    SerializableNode,
+    SerializableGraphDocument,
+)
 
 
 # ==============================
@@ -523,135 +375,21 @@ class NarrativeGraphExtractor:
             relationships=unique_relationships
         )
 
-    def _group_related_nodes(
-        self,
-        main_node: SerializableNode,
-        related_nodes: List[SerializableNode],
-    ) -> AggregateGroupingResponse:
+    def _calculate_dynamic_threshold(self, node_connections: Dict[str, int],
+                                     hub_threshold_percentile: float) -> float:
         """
-        使用LLM对高连接度节点的相关节点进行语义分组，以减少直接连接数。
-        """
-        # 1. 创建LLM实例（假设 _create_llm 已根据重构调整）
-        llm = self._create_llm(num_ctx=DEFAULT_NUM_CTX) # 或 self.default_num_ctx
-
-        # 2. 格式化输入数据
-        related_nodes_info = "\n".join([
-            f"节点{idx + 1}: ID={n.id}, 类型={n.type}, 属性={json.dumps(n.properties, ensure_ascii=False)}"
-            for idx, n in enumerate(related_nodes)
-        ])
-        main_node_props = json.dumps(main_node.properties, ensure_ascii=False)
-
-        # 3. 构建结构化提示词 (使用之前更新的提示词)
-        prompt_template = PromptTemplate(
-            template="""
-            你是一个图谱优化专家。图谱中存在一个节点（称为主节点），它与过多的其他节点（相关节点）直接相连，导致图结构复杂。
-            你的任务是优化这个结构。
-            
-            主节点信息：
-            - ID: {main_node_id}
-            - 类型: {main_node_type}
-            - 属性: {main_node_properties}
-            
-            相关节点列表 (这些节点都直接连接到主节点)：
-            {related_nodes_info}
-            
-            优化任务：
-            1.  分析所有“相关节点”的语义、类型和属性。
-            2.  将这些“相关节点”分成若干个语义上内聚的组。分组的目标是减少主节点的直接连接数。
-            3.  每个分组应围绕一个清晰的主题或概念。
-            4.  为每个组生成以下信息：
-                - **group_name**: 一个能概括该组核心语义的中文词语（例如“背景”、“事件”、“组织”）。**这个名称将直接用作新聚合节点的 ID 和其 `name` 属性的值。**
-                - **node_ids**: 属于该组的相关节点的ID列表。
-                - **aggregate_relationship_type**: 描述“主节点”与这个新“聚合概念”之间关系的最合适的中文词语（如“涉及”、“拥有”、“经历”）。
-                - **member_relationship_type**: 描述新“聚合概念”与其“成员节点”之间关系的最合适的中文词语（如“包含”、“导致”、“体现”）。
-            
-            **输出要求**：
-            - **严格遵守指令，只输出最终的JSON格式结果，不要添加任何解释、前言或后语。**
-            - **确保生成的JSON格式完全正确且有效。**
-            - **仔细核对，确保所有要求的信息都已包含在输出中。**
-            - **严格遵循以下JSON结构定义：**
-            {format_instructions}
-            """,
-            input_variables=[
-                "main_node_id",
-                "main_node_type",
-                "main_node_properties",
-                "related_nodes_info"
-            ],
-            partial_variables={
-                "format_instructions": JsonOutputParser(
-                    pydantic_object=AggregateGroupingResponse).get_format_instructions()
-            }
-        )
-
-        # 4. 调用LLM
-        chain = prompt_template | llm
-        response = chain.invoke({
-            "main_node_id": main_node.id,
-            "main_node_type": main_node.type,
-            "main_node_properties": main_node_props,
-            "related_nodes_info": related_nodes_info
-        })
-
-        # 5. 清理Ollama响应（如果适用，修正语法）
-        # 注意：根据之前的代码片段，这部分可能需要根据实际情况调整
-        if isinstance(response, AIMessage):
-             response = response.content # 如果返回的是 AIMessage 对象，提取 content
-        if isinstance(response, str):
-            think_index = response.find("</think>")
-            if think_index != -1:
-                # 保留  </think> 之后的内容（假设这是最终答案）
-                response = response[think_index + len("</think>"):]
-            response = response.strip()
-
-        # 6. 解析结果
-        try:
-            parser = JsonOutputParser(pydantic_object=AggregateGroupingResponse)
-            result = parser.invoke(response)
-            # 确保返回的是 AggregateGroupingResponse 对象
-            if isinstance(result, dict):
-                result = AggregateGroupingResponse(**result)
-            return result
-        except Exception as e:
-            # --- 关键修改：移除备用策略，直接报错 ---
-            error_msg = f"为节点 '{main_node.id}' 调用 LLM 进行分组时失败，且无备用策略。原始错误: {e}"
-            logger.error(error_msg)
-            raise RuntimeError(error_msg) from e # 重新抛出异常，携带原始错误信息
-            # --- 修改结束 ---
-
-
-
-    # ... (方法开始部分保持不变) ...
-
-    def optimize_single_graph_document(
-            self,
-            graph_doc: SerializableGraphDocument,
-            hub_threshold_percentile: float = 0.9,  # 新增参数：高连接度节点的百分位阈值 (0.0 - 1.0)
-    ) -> SerializableGraphDocument:
-        """
-        优化单个图文档：对高连接度节点创建中间聚合节点。
-        使用基于百分位数的动态阈值。
+        根据节点连接度计算动态阈值。
 
         Args:
-            graph_doc (SerializableGraphDocument): 输入的图文档。
-            hub_threshold_percentile (float): 用于确定高连接度节点的百分位数阈值。
-                                             例如，0.9 表示连接度排名前 10% 的节点将被视为高连接度节点。
-                                             默认为 0.9 (90%)。
+            node_connections (Dict[str, int]): 一个字典，键是节点ID，值是该节点的连接数（度数）。
+            hub_threshold_percentile (float): 用于确定高连接度节点的百分位数阈值 (0.0 - 1.0)。
+
+        Returns:
+            float: 计算出的动态阈值。
         """
-        logger.info("开始优化单个图文档...")
-        # 深拷贝图谱（避免修改原始数据）
-        optimized_graph = copy.deepcopy(graph_doc)
-
-        # 1. 计算每个节点的连接数 (度数)
-        node_connections = {}
-        for rel in optimized_graph.relationships:
-            node_connections[rel.source_id] = node_connections.get(rel.source_id, 0) + 1
-            node_connections[rel.target_id] = node_connections.get(rel.target_id, 0) + 1
-
-        # --- 计算动态阈值 (仅使用百分位数方法) ---
         if not node_connections:
-            logger.info("图中无连接，无需优化。")
-            return optimized_graph
+            logger.debug("节点连接度字典为空，动态阈值设为0。")
+            return 0.0
 
         # 获取所有节点的度数列表
         all_degrees = list(node_connections.values())
@@ -659,140 +397,37 @@ class NarrativeGraphExtractor:
         # 确保百分位数在有效范围内 [0, 1]
         percentile_q = max(0.0, min(1.0, hub_threshold_percentile))
 
+        dynamic_threshold = 0.0
         # 计算动态阈值
         if len(all_degrees) > 1:
-            # statistics.quantiles 返回 n-1 个分位点，n=100时返回99个点
-            # percentile_q * 100 是我们要找的百分位数
-            # 例如 percentile_q=0.9, 我们想找第90百分位数，对应索引大约是 0.9 * (len-1)
-            # statistics.quantiles(n=100) 的索引是 0-98 对应 1-99 百分位数
-            # 更稳健的方法是使用 numpy.percentile 或 interpolation
-            # 这里我们用一个简单直接的方法：
             # 对列表排序，然后找对应位置的值
             sorted_degrees = sorted(all_degrees)
             # 计算索引 (0-based)
             index = percentile_q * (len(sorted_degrees) - 1)
-            # 如果 index 是整数，直接取；如果是小数，可以插值，这里简单取下界
+            # 简单的线性插值近似
             if index.is_integer():
-                dynamic_threshold = sorted_degrees[int(index)]
+                dynamic_threshold = float(sorted_degrees[int(index)])
             else:
-                # 简单的线性插值近似
                 lower_index = int(index)
                 upper_index = lower_index + 1
                 if upper_index < len(sorted_degrees):
                     dynamic_threshold = sorted_degrees[lower_index] + (index - lower_index) * (
-                                sorted_degrees[upper_index] - sorted_degrees[lower_index])
+                            sorted_degrees[upper_index] - sorted_degrees[lower_index])
                 else:
-                    dynamic_threshold = sorted_degrees[lower_index]  # 边界情况
-
-            # 或者，使用 statistics.quantiles (更符合统计学定义，但可能不完全等同于 percentile_q * 100)
-            # quantiles_100 = statistics.quantiles(sorted_degrees, n=100)
-            # dynamic_threshold = quantiles_100[min(int(percentile_q * 100), 99) - 1] if percentile_q > 0 else sorted_degrees[0]
-
+                    dynamic_threshold = float(sorted_degrees[lower_index])  # 边界情况
         else:
-            # 只有一个或没有度数，阈值设为最大度数或0
-            dynamic_threshold = max(all_degrees) if all_degrees else 0
+            # 只有一个度数，阈值设为该度数
+            dynamic_threshold = float(max(all_degrees)) if all_degrees else 0.0
 
         # 确保阈值至少为1，避免将所有节点都标记为高连接度 (除非所有节点度数都<1，这不太可能)
         # 但考虑到是阈值，我们通常希望它是一个实际的连接数
-        dynamic_threshold = max(1, dynamic_threshold)
+        dynamic_threshold = max(1.0, dynamic_threshold)
+        logger.debug(
+            f"使用百分位数法计算动态阈值: Percentile={percentile_q * 100:.1f}%, Threshold (approx)={dynamic_threshold:.2f}"
+        )
+        return dynamic_threshold
 
-        logger.info(
-            f"使用百分位数法计算动态阈值: Percentile={percentile_q * 100:.1f}%, Threshold (approx)={dynamic_threshold:.2f}")
-        # --- 动态阈值计算结束 ---
 
-        logger.debug(f"计算出的节点连接度: {node_connections}")
-
-        # 2. 识别高连接度节点 (使用动态阈值)
-        high_degree_nodes = []
-        for node in optimized_graph.nodes:
-            connection_count = node_connections.get(node.id, 0)
-            # 注意：这里使用 >= 可能会包括刚好等于阈值的节点，根据需求可以调整为 >
-            if connection_count >= dynamic_threshold:
-                high_degree_nodes.append((node, connection_count))  # 同时保存节点和度数，方便日志
-
-        # 按度数降序排列，优先处理度数最高的节点（可选）
-        high_degree_nodes.sort(key=lambda x: x[1], reverse=True)
-
-        logger.info(f"识别出 {len(high_degree_nodes)} 个高连接度节点 (阈值 >= {dynamic_threshold:.2f})")
-
-        # 3. 处理每个高连接度节点
-        # total_groups_created = 0 # 如果需要统计总数可以保留
-        for node, degree in high_degree_nodes:  # 解包获取节点和度数
-            logger.info(f"正在优化高连接度节点: '{node.id}' (连接数: {degree})")
-            # ... (后续处理逻辑保持不变) ...
-            # 找出所有与该节点相关的连接
-            related_relations = [
-                rel for rel in optimized_graph.relationships
-                if rel.source_id == node.id or rel.target_id == node.id
-            ]
-            # 获取相关节点的 ID
-            related_node_ids = set()
-            for rel in related_relations:
-                if rel.source_id == node.id:
-                    related_node_ids.add(rel.target_id)
-                elif rel.target_id == node.id:
-                    related_node_ids.add(rel.source_id)
-            # 根据 ID 获取完整的相关节点对象
-            related_nodes = [
-                n for n in optimized_graph.nodes if n.id in related_node_ids
-            ]
-            logger.debug(f"  节点 '{node.id}' 有 {len(related_nodes)} 个相关节点。")
-            # 如果相关节点数为0，跳过
-            if not related_nodes:
-                logger.warning(f"  节点 '{node.id}' 被标记为高连接度，但未找到相关节点。跳过。")
-                continue
-            # 4. 调用分组函数
-            grouping_result = self._group_related_nodes(main_node=node, related_nodes=related_nodes)
-            # 5. 创建中间聚合节点和关系
-            groups_created_for_this_node = 0
-            for group in grouping_result.groups:
-                # --- 使用 group_name 作为聚合节点的 ID 和 name 属性 ---
-                aggregate_node_id = group.group_name
-                aggregate_node = SerializableNode(
-                    id=aggregate_node_id,
-                    type="聚合概念",
-                    properties={
-                        "name": group.group_name,
-                        "origin_node": node.id
-                    }
-                )
-                optimized_graph.nodes.append(aggregate_node)
-                logger.debug(f" 创建聚合节点: ID='{aggregate_node_id}', Name='{group.group_name}'")
-                # --- 创建关系 ---
-                new_rel_to_aggregate = SerializableRelationship(
-                    source_id=node.id,
-                    target_id=aggregate_node_id,
-                    type=group.aggregate_relationship_type,
-                    properties={}
-                )
-                optimized_graph.relationships.append(new_rel_to_aggregate)
-                logger.debug(f" 创建关系: '{node.id}' --({group.aggregate_relationship_type})--> '{aggregate_node_id}'")
-                for member_node_id in group.node_ids:
-                    new_rel_to_member = SerializableRelationship(
-                        source_id=aggregate_node_id,
-                        target_id=member_node_id,
-                        type=group.member_relationship_type,
-                        properties={}
-                    )
-                    optimized_graph.relationships.append(new_rel_to_member)
-                    logger.debug(
-                        f" 创建关系: '{aggregate_node_id}' --({group.member_relationship_type})--> '{member_node_id}'")
-                groups_created_for_this_node += 1
-                # total_groups_created += 1 # 累加总创建的组数
-            logger.info(f" 为节点 '{node.id}' 创建了 {groups_created_for_this_node} 个聚合组。")
-            # 6. 删除原主节点与相关节点之间的直接关系
-            initial_rel_count = len(optimized_graph.relationships)
-            optimized_graph.relationships = [
-                rel for rel in optimized_graph.relationships
-                if not (rel.source_id == node.id and rel.target_id in related_node_ids) and
-                   not (rel.target_id == node.id and rel.source_id in related_node_ids)
-            ]
-            removed_rel_count = initial_rel_count - len(optimized_graph.relationships)
-            logger.info(f"  为节点 '{node.id}' 删除了 {removed_rel_count} 条旧的直接关系。")
-
-        logger.info(
-            f"图文档优化完成。总共为 {len(high_degree_nodes)} 个高连接度节点进行了优化。")
-        return optimized_graph
 
     # ==============================
     # 公共接口方法
@@ -892,7 +527,6 @@ class NarrativeGraphExtractor:
 
         return auto_schema
 
-    import time
     from typing import Optional, Tuple, Any, List
     # ... 其他导入 ...
 
@@ -1105,6 +739,55 @@ class NarrativeGraphExtractor:
         else:  # 使用预定义的 Schema
             return self._handle_predefined_schema_extraction(config)
 
+    def _handle_sub_schema_result(self, sub_result: Any, config: ExtractionConfig, sub_schema_index: int) -> Any:
+        """
+        对单个子 Schema 的提取结果进行后处理，例如优化。
+
+        Args:
+            sub_result (Any): 子 Schema 的提取结果 (通常是 SerializableGraphDocument)。
+            config (ExtractionConfig): 提取配置对象。
+            sub_schema_index (int): 子 Schema 的索引 (从 0 开始)。
+
+        Returns:
+            Any: 优化后的结果，如果优化未执行或失败，则返回原始结果。
+        """
+        # --- 修复之前的错误：使用 config.schema_name ---
+        # 注意：在这个上下文中，即使 config.schema_name 是 "自动生成"，
+        # 我们处理的 sub_schema 本身已经是拆分后的，且其 schema_mode 应该是 "约束" 的。
+        # 所以优化逻辑的判断依据是 config.optimize_graph 和结果类型。
+
+        # 检查是否需要优化以及结果是否为可处理的类型
+        if config.optimize_graph and isinstance(sub_result, SerializableGraphDocument):
+            if config.verbose:
+                logger.info(f" -> 对子 Schema {sub_schema_index + 1} 的提取结果进行优化...")
+            try:
+                # --- 实例化并调用 GraphOptimizer ---
+                # 传入当前 extractor 实例，以便 optimizer 可以访问模型等配置
+                optimizer = GraphOptimizer()
+                optimized_sub_result = optimizer.optimize_graph_document(sub_result)
+
+                if optimized_sub_result:
+                    # 如果优化成功返回了新对象，则使用它
+                    if config.verbose:
+                        opt_nodes = len(optimized_sub_result.nodes)
+                        opt_rels = len(optimized_sub_result.relationships)
+                        logger.info(
+                            f" -> 子 Schema {sub_schema_index + 1} 优化完成。优化后节点数: {opt_nodes}, 关系数: {opt_rels}")
+                    return optimized_sub_result
+                else:
+                    # 如果优化返回 None 或等效值，记录日志并返回原始结果
+                    if config.verbose:
+                        logger.info(f" -> 子 Schema {sub_schema_index + 1} 优化完成，但未返回新结果或无优化。")
+                    return sub_result  # 返回原始结果
+
+            except Exception as e:
+                # 捕获优化过程中可能出现的任何异常
+                logger.error(f" -> 优化子 Schema {sub_schema_index + 1} 的结果时出错: {e}", exc_info=True)
+                # 即使优化失败，也返回原始结果以保证流程继续
+                return sub_result
+        else:
+            # 如果未启用优化或结果类型不匹配，则直接返回原始结果
+            return sub_result
     def _handle_auto_schema_extraction(self, config: ExtractionConfig) -> Optional[Dict[str, Any]]:
         """处理自动生成 Schema 的提取流程，包括可能的拆分和合并。"""
         # 保存原始 Schema 用于此分支内的恢复
@@ -1115,7 +798,7 @@ class NarrativeGraphExtractor:
             auto_schema = self._generate_auto_schema(config.text, config.use_local, config.verbose)
             num_relationships = len(auto_schema.get("relationships", []))
 
-            if num_relationships > self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS and config.schema_mode != "无约束":
+            if num_relationships > self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS and config.schema_name != "无约束":
                 # --- 需要拆分处理 ---
                 if config.verbose:
                     logger.info(
@@ -1123,7 +806,7 @@ class NarrativeGraphExtractor:
                 sub_schemas = split_schema(auto_schema, self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS)
                 if config.verbose:
                     logger.info(f" -> Schema 已拆分为 {len(sub_schemas)} 个子 Schema。")
-
+                    logger.info(f" -> Schema: {sub_schemas}")
                 all_sub_results = []
                 total_duration_core = 0.0
                 status = 2  # 默认全部失败
@@ -1136,6 +819,9 @@ class NarrativeGraphExtractor:
 
                     sub_result, sub_duration, sub_status, sub_chunks = self._extract_internal_core_logic(
                         config, is_sub_extraction=True)
+
+                    sub_result = self._handle_sub_schema_result(sub_result, config, i)
+
                     total_duration_core += sub_duration
                     if sub_status < status:
                         status = sub_status
@@ -1199,8 +885,12 @@ class NarrativeGraphExtractor:
         if config.optimize_graph and isinstance(result, SerializableGraphDocument):
             if config.verbose:
                 logger.info(" -> 正在对提取的图谱进行全局优化...")
-            optimized_result = self.optimize_single_graph_document(
-                result)  # 注意：原代码是 self.optimize_single_graph_document
+
+                # --- 使用新的 GraphOptimizer 类 ---
+                optimizer = GraphOptimizer()  # 将当前 extractor 实例传给 optimizer
+                optimized_result = optimizer.optimize_graph_document(result)
+                # --- 优化结束 ---
+
             if config.verbose:
                 final_nodes_count_opt = len(optimized_result.nodes) if optimized_result else 0
                 final_relationships_count_opt = len(optimized_result.relationships) if optimized_result else 0
@@ -1395,115 +1085,3 @@ class NarrativeGraphExtractor:
         """使用配置对象进行提取的核心方法 (别名)"""
         return self._extract_main(config)
 
-if __name__ == "__main__":
-    import logging
-    import os
-    from rag import config  # 导入 config 来检查 CACHE_DIR
-
-    # - 1. 配置日志 -
-    logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(levelname)s] %(message)s') # 稍微格式化一下日志
-    logger = logging.getLogger(__name__)
-
-    # 打印缓存目录，方便调试
-    logger.info(f"当前配置的缓存目录 CACHE_DIR: {config.CACHE_DIR}")
-    # 打印当前工作目录，方便调试
-    logger.info(f"当前工作目录: {os.getcwd()}")
-
-    # --- 2. 初始化 NarrativeGraphExtractor ---
-    # 请根据你的实际情况修改模型名和 URL
-    # 注意：这里初始化的模型配置需要与生成缓存时的配置相匹配，否则哈希值会不同。
-    # 如果缓存是用远程模型生成的，请配置远程参数。
-    extractor = NarrativeGraphExtractor(
-        model_name="qwen3:30b-a3b-instruct-2507-q4_K_M",  # 使用你实际运行的模型
-        base_url="http://localhost:11434",
-        # 如果需要远程 API，取消下面的注释并填写信息
-        # remote_api_key="your_api_key",
-        # remote_base_url="your_remote_base_url",
-        # remote_model_name="your_remote_model_name"
-        # 其他参数如 chunk_size, num_ctx 等也应与生成缓存时一致
-    )
-    logger.info("NarrativeGraphExtractor 初始化完成。")
-
-    # --- 测试 optimize_single_graph_document ---
-    logger.info("=== 开始测试 optimize_single_graph_document 方法 ===")
-
-    # - 1. 从缓存加载数据 -
-    # 这个哈希值必须与生成缓存文件时使用的 ExtractionConfig 完全匹配
-    cache_hash = "8a9a86304720a55a06192babf8da86b044ad877ee9ff309926c331e900fb8dc7"
-    docs = extractor.load_from_cache_by_hash(cache_hash, verbose=True) # 启用详细日志
-
-    # - 2. 检查加载结果 -
-    if docs is None:
-        logger.error(f"加载缓存失败：无法找到或加载哈希值为 {cache_hash} 的缓存数据。")
-        logger.info("请确保：")
-        logger.info("1. 之前确实运行过生成此哈希对应缓存的提取流程。")
-        logger.info(f"2. 缓存目录配置正确: {config.CACHE_DIR}")
-        logger.info("3. 缓存文件未被意外删除。")
-        logger.info("4. 缓存文件没有损坏。")
-        logger.info("5. 此脚本初始化 NarrativeGraphExtractor 时使用的配置（模型、chunk_size等）与生成缓存时完全一致。")
-        logger.info("6. rag/cache_manager.py 已按要求修改，能在 graph_docs 子目录下查找文件。")
-
-        # --- 移除对不存在方法的调用 ---
-        # 原来的代码会尝试调用 extractor._create_test_data()，但该方法不存在。
-        # 现在改为提供更明确的指引或直接退出。
-        logger.error("未找到指定的缓存文件，且没有可用的后备测试数据生成方法。程序无法继续。")
-        # 如果你希望程序在找不到缓存时创建一个最小的测试数据，可以在这里实现。
-        # 但现在，我们选择直接退出。
-        exit(1) # 退出程序，因为没有数据可以处理
-
-    # - 3. 确保数据是正确的类型 -
-    if not isinstance(docs, SerializableGraphDocument):
-        logger.error(f"加载的缓存数据类型错误: {type(docs)}，期望是 SerializableGraphDocument。")
-        exit(1)
-    else:
-        logger.info("成功加载并验证了缓存数据。")
-
-    # --- 4. (可选) 显示加载的数据摘要 ---
-    # 这有助于确认加载了正确的数据
-    try:
-        nodes_count = len(docs.nodes) if docs.nodes else 0
-        rels_count = len(docs.relationships) if docs.relationships else 0
-        logger.info(f"加载的图文档包含 {nodes_count} 个节点和 {rels_count} 条关系。")
-        # 可以显示前几个节点/关系作为示例
-        # if docs.nodes:
-        #     logger.debug(f"前3个节点: {[n.id for n in docs.nodes[:3]]}")
-        # if docs.relationships:
-        #     logger.debug(f"前3条关系: [{r.source_id} -> {r.target_id} ({r.type}) for r in docs.relationships[:3]]")
-    except Exception as e:
-        logger.warning(f"无法获取加载数据的摘要信息: {e}")
-
-
-    # - 5. 调用 optimize_single_graph_document 方法 -
-    logger.info("开始调用 optimize_single_graph_document...")
-    try:
-        # 调用优化方法
-        optimized_docs = extractor.optimize_single_graph_document(docs)
-
-        if optimized_docs:
-            logger.info("optimize_single_graph_document 调用成功。")
-            # --- 6. (可选) 显示或保存优化后的结果 ---
-            try:
-                opt_nodes_count = len(optimized_docs.nodes) if optimized_docs.nodes else 0
-                opt_rels_count = len(optimized_docs.relationships) if optimized_docs.relationships else 0
-                logger.info(f"优化后的图文档包含 {opt_nodes_count} 个节点和 {opt_rels_count} 条关系。")
-
-                # 显示优化后的图文档 (可选)
-                # SerializableGraphDocument.display_graph_document(optimized_docs, title="优化后的图文档")
-
-                # 保存优化后的结果到新文件 (可选)
-                import json
-                output_filename = f"optimized_{cache_hash}.json"
-                with open(output_filename, 'w', encoding='utf-8') as f:
-                    json.dump(optimized_docs.to_dict(), f, ensure_ascii=False, indent=2)
-                logger.info(f"优化后的结果已保存到 {output_filename}")
-
-            except Exception as display_save_error:
-                logger.warning(f"显示或保存优化结果时出错: {display_save_error}")
-        else:
-            logger.warning("optimize_single_graph_document 返回了 None，可能没有找到需要优化的节点。")
-
-    except Exception as e:
-        logger.error(f"调用 optimize_single_graph_document 时发生错误: {e}", exc_info=True) # exc_info=True 打印堆栈
-        exit(1) # 发生错误时退出
-
-    logger.info("=== optimize_single_graph_document 方法测试完成 ===")

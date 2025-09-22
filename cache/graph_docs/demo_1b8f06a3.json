@@ -1,30 +1,40 @@
 {
   "nodes": [
     {
+      "color": "#FF6B6B",
       "id": "1",
-      "label": "彭刚",
-      "type": "人物",
-      "properties": {
-        "name": "彭刚",
-        "sequence_number": 1
-      }
+      "label": "1:彭刚",
+      "size": 25,
+      "title": "人物 (1)\n属性:name: 彭刚\nsequence_number: 1"
     },
     {
+      "color": "#FF6B6B",
       "id": "2",
-      "label": "彭毅",
-      "type": "人物",
-      "properties": {
-        "name": "彭毅",
-        "sequence_number": 2
-      }
+      "label": "2:彭毅",
+      "size": 25,
+      "title": "人物 (2)\n属性:name: 彭毅\nsequence_number: 2"
+    },
+    {
+      "id": "node_1758524685253",
+      "label": "新节点",
+      "x": 79,
+      "y": 42
     }
   ],
-  "relationships": [
+  "edges": [
     {
-      "source_id": "1",
-      "target_id": "2",
-      "type": "兄弟",
-      "properties": {}
+      "arrows": "to",
+      "color": "#064d8a",
+      "from": "1",
+      "title": "兄弟",
+      "to": "2",
+      "width": 2,
+      "id": "edge_1_2"
+    },
+    {
+      "from": "2",
+      "to": "node_1758524685253",
+      "id": "5c384805-1741-455a-8d7d-f363b068bbf3"
     }
   ]
 }

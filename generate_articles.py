@@ -1,6 +1,6 @@
 # generate_articles.py
 import os
-from qwen_chat_client import QwenChatClient # 确保 qwen_chat_client.py 在同一目录或 PYTHONPATH 中
+from llm.qwen_chat_client import QwenChatClient # 确保 qwen_chat_client.py 在同一目录或 PYTHONPATH 中
 
 # --- 配置 ---
 INPUT_PROMPTS_DIR = "inputs/prompts"

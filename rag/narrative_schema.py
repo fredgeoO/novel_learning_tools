@@ -7,22 +7,18 @@
 from langchain_ollama import OllamaLLM
 from langchain_openai import ChatOpenAI
 from openai import OpenAI
-import os
 from pydantic import BaseModel, Field
 from typing import List, Dict, Optional
 import hashlib
 import json
 from pathlib import Path
-from rag.config import REMOTE_API_KEY, REMOTE_BASE_URL, REMOTE_MODEL_NAME, DEFAULT_MODEL
+from config import REMOTE_API_KEY, REMOTE_BASE_URL, DEFAULT_MODEL
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
 import math
 # --- 导入定义的常量 ---
 from rag.schema_definitions import (
-    BASIC_ELEMENTS, BASIC_RELATIONSHIPS, BASIC_SCHEMA,
-    MINIMAL_ELEMENTS, MINIMAL_RELATIONSHIPS, MINIMAL_SCHEMA,
-    PLOT_ELEMENTS, PLOT_RELATIONSHIPS, PLOT_SCHEMA,
-    NO_SCHEMA, ALL_NARRATIVE_SCHEMAS, DEFAULT_SCHEMA
+    MINIMAL_ELEMENTS, MINIMAL_RELATIONSHIPS, MINIMAL_SCHEMA
 )
 
 import logging

@@ -1,8 +1,6 @@
 # automate_prompts.py
 import os
-import re
-import time
-from qwen_chat_client import QwenChatClient
+from llm.qwen_chat_client import QwenChatClient
 
 QWEN_PROMPT_TEMPLATE_FILE = os.path.join("inputs", "prompts", "qwen_chapter_prompt_template.txt")
 

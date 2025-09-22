@@ -1,0 +1,3144 @@
+{
+  "nodes": [
+    {
+      "id": "监禁室",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "天花板顶端",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "异于常人",
+      "type": "异能",
+      "properties": {}
+    },
+    {
+      "id": "限制级异能者",
+      "type": "异能",
+      "properties": {}
+    },
+    {
+      "id": "炽白灯管",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "消毒水气味",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "导师",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "福利院",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢反感",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "监控摄像头",
+      "type": "监控",
+      "properties": {}
+    },
+    {
+      "id": "广播设备",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "免疫血清注射",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "1002",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "夜晚",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "审问",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "天花板下方",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "现在",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "天花板",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "中国首都黎京",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "通风口",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "实验所",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "监控",
+      "type": "监控",
+      "properties": {}
+    },
+    {
+      "id": "无窗",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "被关在监禁室",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "一个月前",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "联合国评级序列顶点",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "快速入眠",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "自残行为",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "天花板",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "耳鸣声",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "画圈圈",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "镇静剂注入",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "干净得过头的地板",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "异能",
+      "type": "异能",
+      "properties": {}
+    },
+    {
+      "id": "指导异能掌控",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "铁皮盒子",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "放飞想象力失败",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "研究对象",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "来访实验所",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "硬邦邦的床",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "地板",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "地板",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "想象力被拘束",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "项圈电流刺激",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "军官",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "大脑坏掉的八音盒",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "全身麻痹",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "鬼地方",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "眼镜",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "指导异能",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "这一天的白昼或夜晚",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "扮演黑脸",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "驯化姬明欢",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "观察导师与军官互动",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "扮演红脸",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "不将军官刻薄当真",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "德国军服",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢警惕",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "为军官辩解",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢不惧刻薄",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "认清驯化本质",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "体罚姬明欢",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "白大褂",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "孤儿院",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "游戏",
+      "type": "游戏",
+      "properties": {}
+    },
+    {
+      "id": "打游戏",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "纸巾",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "被称作‘怪胎’",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "评定体系中最危险类别",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "这一天的白昼又或是夜晚",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "《废都物语》",
+      "type": "游戏",
+      "properties": {}
+    },
+    {
+      "id": "用纸巾包裹身体",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "回忆童年经历",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "现实影响",
+      "type": "异能",
+      "properties": {}
+    },
+    {
+      "id": "询问姬明欢童年往事",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "监控眼",
+      "type": "监控",
+      "properties": {}
+    },
+    {
+      "id": "《艾迪芬奇的记忆》",
+      "type": "游戏",
+      "properties": {}
+    },
+    {
+      "id": "异能具有自我意志",
+      "type": "异能",
+      "properties": {}
+    },
+    {
+      "id": "神迹",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "纸牌",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "异能者被视为神的子民",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "纸牌形式显现",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "疯狂沉沦",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "西方",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "电子游戏",
+      "type": "游戏",
+      "properties": {}
+    },
+    {
+      "id": "游戏关卡形式显现",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "异能觉醒讨论",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "异能失控被视为惩戒",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "白化病",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "精神系异能",
+      "type": "异能",
+      "properties": {}
+    },
+    {
+      "id": "孔佑灵",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢被关押",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "明天",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "精神系异能者",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "见面",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "面壁思过",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "被拘束",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "离开这里",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "试验所",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "谈话",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢沉默",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "见面机会",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢习以为常",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "黑暗",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "头号玩家",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "病号服少年",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "西伯利亚",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "高楼大厦天台",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "无限分裂游戏",
+      "type": "游戏",
+      "properties": {}
+    },
+    {
+      "id": "冰海",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "扭曲的身影",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "创建游戏角色",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "失重感",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "蓝",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "鳕鱼影子",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "夕阳余晖",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "下坠",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "入梦",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "无意识",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "孤月高悬",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "免疫血清",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "隔离门",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "脚步声",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "睡梦",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "编号1002",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "冷光",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "病号服",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "窗户",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "灯",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "外界",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "实验所",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "转移途中",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "可怕的地方",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "被下药",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "逃离讨厌的人",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "逃避院长",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "撒泼打滚",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "图书馆阁楼",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "中国首都",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "院长",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "禁闭室",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "黎京",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "无父无母的小屁孩儿",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢配合研究",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "大脑像坏掉的八音盒",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "电流",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "自己是否为异能者",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "自己是麻瓜",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢的辩解",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "指导姬明欢掌控异能",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "用手指在地上画圈圈",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "幽闭恐惧症",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "实验者",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "镇静剂",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "挣扎",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "患上精神分裂",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "监控器",
+      "type": "监控",
+      "properties": {}
+    },
+    {
+      "id": "导师与军官表现有趣",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢快速入眠",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "正常人",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "项圈",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "研究",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "电视机",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "温和包容",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "逆来顺受",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "难以言说的潜力",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "会毁灭世界",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢掌控异能",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "军官的体罚",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "鞭子和糖",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "黑脸角色",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢的心理反应",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢的感知",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "导师的言语",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "导师与军官的手段",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "红脸角色",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢的认知",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "军官的行为",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "姬明欢的异能",
+      "type": "异能",
+      "properties": {}
+    },
+    {
+      "id": "最危险类别",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "电脑室",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "床铺",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "科学范畴",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "失控",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "游戏关卡",
+      "type": "游戏",
+      "properties": {}
+    },
+    {
+      "id": "上帝",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "茶水",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "保温瓶",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "聋哑人女孩",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "习以为常",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "她",
+      "type": "人物",
+      "properties": {}
+    },
+    {
+      "id": "欺骗",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "躺下",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "长大以后",
+      "type": "时间",
+      "properties": {}
+    },
+    {
+      "id": "离开",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "闭眼",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "黑暗",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "梦",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "无意识的蓝",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "玻璃幕墙",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "已加载“无限分裂游戏”",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "创建“游戏角色”的环节",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "西伯利亚的冰海",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "黑暗",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "高楼大厦的天台",
+      "type": "地点",
+      "properties": {}
+    },
+    {
+      "id": "夕阳的余晖",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "鳕鱼的影子",
+      "type": "物件",
+      "properties": {}
+    },
+    {
+      "id": "孤月高悬",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "欢迎你，我们的头号玩家",
+      "type": "事件",
+      "properties": {}
+    },
+    {
+      "id": "监禁环境",
+      "type": "聚合概念",
+      "properties": {
+        "name": "监禁环境",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "实验相关",
+      "type": "聚合概念",
+      "properties": {
+        "name": "实验相关",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "监控与观察",
+      "type": "聚合概念",
+      "properties": {
+        "name": "监控与观察",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "人物关系",
+      "type": "聚合概念",
+      "properties": {
+        "name": "人物关系",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "事件经历",
+      "type": "聚合概念",
+      "properties": {
+        "name": "事件经历",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "异能与能力",
+      "type": "聚合概念",
+      "properties": {
+        "name": "异能与能力",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "物品与道具",
+      "type": "聚合概念",
+      "properties": {
+        "name": "物品与道具",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "游戏与虚拟世界",
+      "type": "聚合概念",
+      "properties": {
+        "name": "游戏与虚拟世界",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "地点与空间",
+      "type": "聚合概念",
+      "properties": {
+        "name": "地点与空间",
+        "origin_node": "姬明欢"
+      }
+    },
+    {
+      "id": "地点",
+      "type": "聚合概念",
+      "properties": {
+        "name": "地点",
+        "origin_node": "导师"
+      }
+    },
+    {
+      "id": "物件",
+      "type": "聚合概念",
+      "properties": {
+        "name": "物件",
+        "origin_node": "导师"
+      }
+    },
+    {
+      "id": "异能相关",
+      "type": "聚合概念",
+      "properties": {
+        "name": "异能相关",
+        "origin_node": "导师"
+      }
+    },
+    {
+      "id": "事件",
+      "type": "聚合概念",
+      "properties": {
+        "name": "事件",
+        "origin_node": "导师"
+      }
+    },
+    {
+      "id": "时间",
+      "type": "聚合概念",
+      "properties": {
+        "name": "时间",
+        "origin_node": "导师"
+      }
+    },
+    {
+      "id": "监控",
+      "type": "聚合概念",
+      "properties": {
+        "name": "监控",
+        "origin_node": "导师"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "姬明欢",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "限制级异能者",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "限制级异能者",
+      "target_id": "1002",
+      "type": "编号为",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "审问",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "广播设备",
+      "target_id": "天花板顶端",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "炽白灯管",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "夜晚",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "监控摄像头",
+      "target_id": "天花板下方",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "异于常人",
+      "type": "嗅觉灵敏",
+      "properties": {}
+    },
+    {
+      "source_id": "福利院",
+      "target_id": "免疫血清注射",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "免疫血清注射",
+      "target_id": "福利院",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "实验所",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "一个月前",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "一个月前",
+      "target_id": "中国首都黎京",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "中国首都黎京",
+      "target_id": "福利院",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "福利院",
+      "target_id": "姬明欢",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "实验所",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "实验所",
+      "target_id": "姬明欢",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "监控",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "监控",
+      "target_id": "天花板",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "天花板",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "广播设备",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "无窗",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "无窗",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "通风口",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "被关在监禁室",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "被关在监禁室",
+      "target_id": "现在",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "现在",
+      "target_id": "监禁室",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "实验所",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "实验所",
+      "target_id": "鬼地方",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "异能",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "研究对象",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "限制级异能者",
+      "target_id": "联合国评级序列顶点",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "自残行为",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "自残行为",
+      "target_id": "项圈电流刺激",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "项圈电流刺激",
+      "target_id": "全身麻痹",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "全身麻痹",
+      "target_id": "镇静剂注入",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "镇静剂注入",
+      "target_id": "快速入眠",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "来访实验所",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "来访实验所",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "实验所",
+      "target_id": "监控",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "天花板",
+      "target_id": "实验所",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "实验所",
+      "target_id": "铁皮盒子",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "铁皮盒子",
+      "target_id": "实验所",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "实验所",
+      "target_id": "硬邦邦的床",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "硬邦邦的床",
+      "target_id": "实验所",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "实验所",
+      "target_id": "干净得过头的地板",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "干净得过头的地板",
+      "target_id": "实验所",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "实验所",
+      "target_id": "耳鸣声",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "耳鸣声",
+      "target_id": "大脑坏掉的八音盒",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "大脑坏掉的八音盒",
+      "target_id": "姬明欢",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "想象力被拘束",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "想象力被拘束",
+      "target_id": "放飞想象力失败",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "放飞想象力失败",
+      "target_id": "画圈圈",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "画圈圈",
+      "target_id": "地板",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "地板",
+      "target_id": "实验所",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "体罚姬明欢",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "体罚姬明欢",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "姬明欢不惧刻薄",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "扮演黑脸",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "观察导师与军官互动",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "认清驯化本质",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "不将军官刻薄当真",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "这一天的白昼或夜晚",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "德国军服",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "这一天的白昼又或是夜晚",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "回忆童年经历",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "用纸巾包裹身体",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "孤儿院",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "打游戏",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "《艾迪芬奇的记忆》",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "《废都物语》",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "被称作‘怪胎’",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "纸巾",
+      "target_id": "姬明欢",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "这一天的白昼又或是夜晚",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "监控眼",
+      "target_id": "天花板",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "监控眼",
+      "target_id": "姬明欢",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "游戏",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "现实影响",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "现实影响",
+      "target_id": "评定体系中最危险类别",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏",
+      "target_id": "姬明欢",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏",
+      "target_id": "异能",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "异能觉醒讨论",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "电子游戏",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "纸牌",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "电子游戏",
+      "target_id": "异能",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "纸牌",
+      "target_id": "异能",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "异能觉醒讨论",
+      "target_id": "孤儿院",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "游戏关卡形式显现",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "纸牌形式显现",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏关卡形式显现",
+      "target_id": "电子游戏",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "纸牌形式显现",
+      "target_id": "纸牌",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "异能具有自我意志",
+      "type": "质疑",
+      "properties": {}
+    },
+    {
+      "source_id": "异能具有自我意志",
+      "target_id": "神迹",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "神迹",
+      "target_id": "西方",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "西方",
+      "target_id": "异能者被视为神的子民",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "异能者被视为神的子民",
+      "target_id": "异能失控被视为惩戒",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "异能失控被视为惩戒",
+      "target_id": "疯狂沉沦",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "面壁思过",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "孔佑灵",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "孔佑灵",
+      "target_id": "白化病",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "孔佑灵",
+      "target_id": "精神系异能",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "孔佑灵",
+      "target_id": "精神系异能者",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "面壁思过",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "孔佑灵",
+      "target_id": "被拘束",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "明天",
+      "target_id": "监禁室",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "见面",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "孔佑灵",
+      "target_id": "见面",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "谈话",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "试验所",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "谈话",
+      "target_id": "明天",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "离开这里",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "监控眼",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "监禁室",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "试验所",
+      "target_id": "监禁室",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "试验所",
+      "target_id": "谈话",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "试验所",
+      "target_id": "见面机会",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "试验所",
+      "target_id": "离开这里",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "黑暗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "监禁室",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "病号服少年",
+      "target_id": "黑暗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "失重感",
+      "target_id": "下坠",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "下坠",
+      "target_id": "高楼大厦天台",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "高楼大厦天台",
+      "target_id": "夕阳余晖",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "夕阳余晖",
+      "target_id": "扭曲的身影",
+      "type": "映出",
+      "properties": {}
+    },
+    {
+      "source_id": "扭曲的身影",
+      "target_id": "下坠",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "下坠",
+      "target_id": "冰海",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "冰海",
+      "target_id": "西伯利亚",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "西伯利亚",
+      "target_id": "孤月高悬",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "孤月高悬",
+      "target_id": "鳕鱼影子",
+      "type": "映出",
+      "properties": {}
+    },
+    {
+      "source_id": "鳕鱼影子",
+      "target_id": "冰海",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "蓝",
+      "target_id": "无意识",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "无意识",
+      "target_id": "入梦",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "入梦",
+      "target_id": "黑暗",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "无限分裂游戏",
+      "target_id": "头号玩家",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "头号玩家",
+      "target_id": "无限分裂游戏",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "无限分裂游戏",
+      "target_id": "创建游戏角色",
+      "type": "涉及",
+      "properties": {}
+    },
+    {
+      "source_id": "创建游戏角色",
+      "target_id": "无限分裂游戏",
+      "type": "发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "监控",
+      "type": "有监控",
+      "properties": {}
+    },
+    {
+      "source_id": "天花板",
+      "target_id": "通风口",
+      "type": "有",
+      "properties": {}
+    },
+    {
+      "source_id": "通风口",
+      "target_id": "外界",
+      "type": "通向",
+      "properties": {}
+    },
+    {
+      "source_id": "福利院",
+      "target_id": "黎京",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "黎京",
+      "target_id": "中国首都",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "实验所",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "窗户",
+      "type": "无窗",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "灯",
+      "type": "无光",
+      "properties": {}
+    },
+    {
+      "source_id": "灯",
+      "target_id": "监禁室",
+      "type": "被关",
+      "properties": {}
+    },
+    {
+      "source_id": "无父无母的小屁孩儿",
+      "target_id": "逃避院长",
+      "type": "曾用于",
+      "properties": {}
+    },
+    {
+      "source_id": "图书馆阁楼",
+      "target_id": "禁闭室",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "禁闭室",
+      "target_id": "可怕的地方",
+      "type": "被儿童视为",
+      "properties": {}
+    },
+    {
+      "source_id": "撒泼打滚",
+      "target_id": "逃离讨厌的人",
+      "type": "用于",
+      "properties": {}
+    },
+    {
+      "source_id": "被下药",
+      "target_id": "转移途中",
+      "type": "可能发生在",
+      "properties": {}
+    },
+    {
+      "source_id": "限制级异能者",
+      "target_id": "难以言说的潜力",
+      "type": "蕴藏",
+      "properties": {}
+    },
+    {
+      "source_id": "难以言说的潜力",
+      "target_id": "会毁灭世界",
+      "type": "预言",
+      "properties": {}
+    },
+    {
+      "source_id": "实验所",
+      "target_id": "研究",
+      "type": "进行",
+      "properties": {}
+    },
+    {
+      "source_id": "实验者",
+      "target_id": "姬明欢配合研究",
+      "type": "要求",
+      "properties": {}
+    },
+    {
+      "source_id": "实验者",
+      "target_id": "姬明欢的辩解",
+      "type": "不接受",
+      "properties": {}
+    },
+    {
+      "source_id": "铁皮盒子",
+      "target_id": "电视机",
+      "type": "缺乏",
+      "properties": {}
+    },
+    {
+      "source_id": "项圈",
+      "target_id": "电流",
+      "type": "触发",
+      "properties": {}
+    },
+    {
+      "source_id": "电流",
+      "target_id": "全身麻痹",
+      "type": "导致",
+      "properties": {}
+    },
+    {
+      "source_id": "项圈",
+      "target_id": "镇静剂",
+      "type": "注入",
+      "properties": {}
+    },
+    {
+      "source_id": "镇静剂",
+      "target_id": "姬明欢快速入眠",
+      "type": "使",
+      "properties": {}
+    },
+    {
+      "source_id": "正常人",
+      "target_id": "患上精神分裂",
+      "type": "可能",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "姬明欢的异能",
+      "type": "测试",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "姬明欢的异能",
+      "type": "唤醒",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "黑脸角色",
+      "type": "扮演",
+      "properties": {}
+    },
+    {
+      "source_id": "红脸角色",
+      "target_id": "黑脸角色",
+      "type": "对应",
+      "properties": {}
+    },
+    {
+      "source_id": "鞭子和糖",
+      "target_id": "导师与军官的手段",
+      "type": "比喻",
+      "properties": {}
+    },
+    {
+      "source_id": "德国军服",
+      "target_id": "军官",
+      "type": "穿戴于",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "姬明欢的感知",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "军官",
+      "target_id": "姬明欢的心理反应",
+      "type": "测试",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "床铺",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "床铺",
+      "target_id": "监禁室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "现实影响",
+      "target_id": "最危险类别",
+      "type": "评定为",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏",
+      "target_id": "异能",
+      "type": "关联",
+      "properties": {}
+    },
+    {
+      "source_id": "电脑室",
+      "target_id": "孤儿院",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "游戏关卡",
+      "type": "唤醒",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "纸牌",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "纸牌",
+      "type": "唤醒",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "神迹",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "神迹",
+      "target_id": "异能",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "科学范畴",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "科学范畴",
+      "target_id": "异能",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "失控",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "失控",
+      "target_id": "异能",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "异能",
+      "target_id": "上帝",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "上帝",
+      "target_id": "异能",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "孔佑灵",
+      "target_id": "精神系异能",
+      "type": "测试",
+      "properties": {}
+    },
+    {
+      "source_id": "精神系异能",
+      "target_id": "孔佑灵",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "白化病",
+      "target_id": "孔佑灵",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "明天",
+      "target_id": "见面",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "监控眼",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "试验所",
+      "target_id": "监禁室",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "试验所",
+      "target_id": "军官",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁室",
+      "target_id": "试验所",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "黑暗",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "失重感",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "高楼大厦的天台",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "玻璃幕墙",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "夕阳的余晖",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "西伯利亚的冰海",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "孤月高悬",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "鳕鱼的影子",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "无意识的蓝",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "梦",
+      "target_id": "病号服少年",
+      "type": "影响",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "监禁环境",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁环境",
+      "target_id": "监禁室",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁环境",
+      "target_id": "隔离门",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁环境",
+      "target_id": "天花板",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁环境",
+      "target_id": "地板",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁环境",
+      "target_id": "黑暗",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "监禁环境",
+      "target_id": "幽闭恐惧症",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "实验相关",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "实验所",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "试验所",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "研究对象",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "审问",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "被下药",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "挣扎",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "躺下",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "离开",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "闭眼",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "病号服",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "病号服少年",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "铁皮盒子",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "纸巾",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "纸牌",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "实验相关",
+      "target_id": "电脑室",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "监控与观察",
+      "type": "受监控",
+      "properties": {}
+    },
+    {
+      "source_id": "监控与观察",
+      "target_id": "监控摄像头",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "监控与观察",
+      "target_id": "监控器",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "监控与观察",
+      "target_id": "监控眼",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "监控与观察",
+      "target_id": "广播设备",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "人物关系",
+      "type": "关联",
+      "properties": {}
+    },
+    {
+      "source_id": "人物关系",
+      "target_id": "院长",
+      "type": "成员是",
+      "properties": {}
+    },
+    {
+      "source_id": "人物关系",
+      "target_id": "军官",
+      "type": "成员是",
+      "properties": {}
+    },
+    {
+      "source_id": "人物关系",
+      "target_id": "实验者",
+      "type": "成员是",
+      "properties": {}
+    },
+    {
+      "source_id": "人物关系",
+      "target_id": "孔佑灵",
+      "type": "成员是",
+      "properties": {}
+    },
+    {
+      "source_id": "人物关系",
+      "target_id": "聋哑人女孩",
+      "type": "成员是",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "事件经历",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "脚步声",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "睡梦",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "耳鸣声",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "自己是否为异能者",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "用手指在地上画圈圈",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "撒泼打滚",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "习以为常",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "逆来顺受",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "军官的体罚",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "导师的言语",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "见面",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件经历",
+      "target_id": "明天",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "异能与能力",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "异能与能力",
+      "target_id": "限制级异能者",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "异能与能力",
+      "target_id": "异能",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "异能与能力",
+      "target_id": "现实影响",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "异能与能力",
+      "target_id": "大脑像坏掉的八音盒",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "异能与能力",
+      "target_id": "想象力被拘束",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "物品与道具",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "免疫血清",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "消毒水气味",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "冷光",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "无父无母的小屁孩儿",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "自己是麻瓜",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "编号1002",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "游戏关卡",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "已加载“无限分裂游戏”",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "创建“游戏角色”的环节",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "物品与道具",
+      "target_id": "欢迎你，我们的头号玩家",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "游戏与虚拟世界",
+      "type": "沉浸于",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏与虚拟世界",
+      "target_id": "《废都物语》",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏与虚拟世界",
+      "target_id": "《艾迪芬奇的记忆》",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏与虚拟世界",
+      "target_id": "无限分裂游戏",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏与虚拟世界",
+      "target_id": "游戏",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "游戏与虚拟世界",
+      "target_id": "游戏关卡",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "姬明欢",
+      "target_id": "地点与空间",
+      "type": "存在于",
+      "properties": {}
+    },
+    {
+      "source_id": "地点与空间",
+      "target_id": "福利院",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "地点与空间",
+      "target_id": "孤儿院",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "地点与空间",
+      "target_id": "禁闭室",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "地点与空间",
+      "target_id": "黑暗",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "导师",
+      "target_id": "地点",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "地点",
+      "target_id": "监禁室",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "地点",
+      "target_id": "孤儿院",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "地点",
+      "target_id": "试验所",
+      "type": "包含",
+      "properties": {}
+    },
+    {
+      "source_id": "导师",
+      "target_id": "物件",
+      "type": "持有",
+      "properties": {}
+    },
+    {
+      "source_id": "物件",
+      "target_id": "消毒水气味",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "物件",
+      "target_id": "眼镜",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "物件",
+      "target_id": "白大褂",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "物件",
+      "target_id": "茶水",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "物件",
+      "target_id": "保温瓶",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "导师",
+      "target_id": "异能相关",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "异能相关",
+      "target_id": "异能",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "异能相关",
+      "target_id": "精神系异能",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "异能相关",
+      "target_id": "姬明欢的异能",
+      "type": "属于",
+      "properties": {}
+    },
+    {
+      "source_id": "导师",
+      "target_id": "事件",
+      "type": "经历",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "姬明欢反感",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "指导异能掌控",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "指导异能",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "驯化姬明欢",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "扮演红脸",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "姬明欢警惕",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "为军官辩解",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "询问姬明欢童年往事",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "异能觉醒讨论",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "姬明欢被关押",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "见面",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "离开这里",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "谈话",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "姬明欢沉默",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "见面机会",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "姬明欢习以为常",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "指导姬明欢掌控异能",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "温和包容",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "姬明欢掌控异能",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "姬明欢的心理反应",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "红脸角色",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "姬明欢的认知",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "军官的行为",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "欺骗",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "离开",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "事件",
+      "target_id": "人物关系",
+      "type": "体现为",
+      "properties": {}
+    },
+    {
+      "source_id": "导师",
+      "target_id": "时间",
+      "type": "处于",
+      "properties": {}
+    },
+    {
+      "source_id": "时间",
+      "target_id": "这一天的白昼又或是夜晚",
+      "type": "对应于",
+      "properties": {}
+    },
+    {
+      "source_id": "时间",
+      "target_id": "明天",
+      "type": "对应于",
+      "properties": {}
+    },
+    {
+      "source_id": "时间",
+      "target_id": "长大以后",
+      "type": "对应于",
+      "properties": {}
+    },
+    {
+      "source_id": "监控",
+      "target_id": "监控",
+      "type": "组成",
+      "properties": {}
+    },
+    {
+      "source_id": "监控",
+      "target_id": "监控眼",
+      "type": "组成",
+      "properties": {}
+    }
+  ]
+}

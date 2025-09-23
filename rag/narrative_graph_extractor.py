@@ -24,6 +24,7 @@ from config import (
 )
 
 from rag.config_models import ExtractionConfig
+from rag.graph_manager import GraphCacheManager
 from rag.narrative_schema import MINIMAL_SCHEMA, generate_auto_schema
 from rag.cache_manager import save_cache, load_cache, generate_cache_metadata, get_cache_key_from_config
 from rag.narrative_schema import split_schema
@@ -533,65 +534,45 @@ class NarrativeGraphExtractor:
     def _extract_main(self, config: ExtractionConfig) -> Tuple[Any, float, int, List[Any]]:
         """
         执行完整的提取流程：缓存处理 -> Schema 逻辑 -> 核心提取 -> 后处理 -> 缓存保存。
-
-        Args:
-            config (ExtractionConfig): 提取配置对象。
-
-        Returns:
-            Tuple[Any, float, int, List[Any]]:
-                - 提取结果 (SerializableGraphDocument 或类似对象)
-                - 总耗时 (秒)
-                - 状态码 (0=全部成功, 1=部分成功, 2=全部失败)
-                - 所有块的结果列表
         """
         start_time = time.time()
-        # 1. 生成缓存键 (修复：在此处生成)
-        cache_key = get_cache_key_from_config(config)
 
-        # 1. 尝试从缓存加载
-        cached_result_tuple = self._load_from_cache(config)
+        # --- 重构点 1: 使用 GraphCacheManager 加载缓存 ---
+        cached_result_tuple = GraphCacheManager.load_from_config(config)
         if cached_result_tuple is not None:
             return cached_result_tuple
 
-        # 2. 未命中缓存，准备执行提取
+        # --- 未命中缓存，执行核心提取 ---
         if config.verbose:
-            logger.info(
-                f"开始提取流程 (num_ctx={config.num_ctx}, chunk_size={config.chunk_size}, local={config.use_local})")
+            logger.info(f"开始提取流程...")
+
         token_estimate = self.estimate_tokens(config.text)
         if config.verbose:
             logger.info(f"输入文本估算 Token 数: ~{token_estimate}")
 
-        # 3. 保存原始 Schema 用于恢复
         original_allowed_nodes = self.allowed_nodes
         original_allowed_relationships = self.allowed_relationships
-
         final_result = None
-        status = 2  # 默认全部失败
+        status = 2
         all_chunk_results = []
         total_duration_core = 0.0
 
         try:
-            # 4. 根据 Schema 名称处理 Schema 和执行提取
-            #    这个函数将负责 Schema 生成、拆分、应用、核心提取、子结果合并
             extraction_result = self._handle_schema_and_extract(config)
             if extraction_result:
                 final_result = extraction_result.get('final_result')
                 total_duration_core = extraction_result.get('total_duration_core', 0.0)
                 status = extraction_result.get('status', 2)
                 all_chunk_results = extraction_result.get('all_chunk_results', [])
-                # all_extraction_results 如果需要可以在 extraction_result 中传递，或内部处理
 
-            # 5. 对最终结果进行全局优化 (这一步独立于 Schema 处理)
             final_result = self._post_process_result(final_result, config)
 
-            # 6. 计算总耗时
             end_time = time.time()
             total_duration = end_time - start_time
 
-            # 7. 保存缓存
-            self._save_result_to_cache(final_result, config, start_time, cache_key)  # cache_key 需要从 config 生成
+            # --- 重构点 2: 使用 GraphCacheManager 保存缓存 ---
+            GraphCacheManager.save_result_to_cache(final_result, config, start_time)
 
-            # 8. 记录日志
             self._log_extraction_summary(final_result, total_duration, total_duration_core, status, config)
 
             return final_result, total_duration, status, all_chunk_results
@@ -600,9 +581,7 @@ class NarrativeGraphExtractor:
             logger.error(f"提取过程中发生错误: {e}", exc_info=True)
             return None, time.time() - start_time, 2, []
         finally:
-            # 9. 确保在任何情况下都恢复原始 Schema
             self._restore_schema(original_allowed_nodes, original_allowed_relationships)
-
     # ==============================
     # 重构后的缓存加载相关方法 (简化日志)
     # ==============================
@@ -642,84 +621,8 @@ class NarrativeGraphExtractor:
             logger.error(f"处理缓存数据时发生错误 {log_context}: {e}", exc_info=True)
             return None
 
-    def load_from_cache_by_hash(self, cache_hash: str, verbose: bool = True) -> Optional[SerializableGraphDocument]:
-        """
-        根据给定的 `cache_hash` 直接加载并处理缓存，返回 `SerializableGraphDocument` 对象或 `None`。
-        """
-        start_time = time.time()
-        log_context = f"(Hash: {cache_hash})"
 
-        try:
-            # 1. 尝试加载缓存数据
-            cached_result_raw = load_cache(cache_hash)
 
-            # 2. 检查是否命中缓存
-            if cached_result_raw is None:
-                if verbose:
-                    logger.info(f"缓存未命中 {log_context}")
-                return None
-
-            if verbose:
-                logger.info(f"命中缓存 {log_context}")
-
-            # 3. 调用核心处理函数
-            processed_result = self._process_loaded_cache_data(cached_result_raw, verbose, log_context)
-
-            # 4. 计算耗时并返回结果
-            if processed_result is not None and verbose:
-                duration = time.time() - start_time
-                logger.debug(f"缓存加载与处理耗时: {duration:.4f} 秒 {log_context}")
-            # 如果处理失败，_process_loaded_cache_data 会记录警告或错误日志
-
-            return processed_result
-
-        except Exception as e:  # 捕获 load_cache 或其他操作可能抛出的意外错误
-            logger.error(f"尝试从缓存加载时发生未预期错误 {log_context}: {e}", exc_info=True)
-            return None
-
-    def _load_from_cache(self, config: ExtractionConfig) -> Optional[Tuple[Any, float, int, List[Any]]]:
-        """
-        根据 `ExtractionConfig` 生成缓存键，加载缓存，处理数据，并返回格式化的结果元组或 `None`。
-        """
-        # 1. 检查是否启用缓存
-        if not config.use_cache:
-            return None
-
-        start_time = time.time()
-        # 2. 生成缓存键
-        cache_key = get_cache_key_from_config(config)
-        log_context = f"(Key: {cache_key})"
-
-        try:
-            # 3. 尝试加载缓存
-            cached_data_raw = load_cache(cache_key)
-
-            # 4. 检查是否命中缓存
-            if cached_data_raw is None:
-                if config.verbose:
-                    logger.debug(f"缓存未命中 {log_context}")
-                return None
-
-            if config.verbose:
-                logger.info(f"命中缓存 {log_context}")
-
-            # 5. 调用核心处理函数
-            processed_data = self._process_loaded_cache_data(cached_data_raw, config.verbose, log_context)
-
-            # 6. 检查处理结果并返回
-            if processed_data is not None:
-                duration = time.time() - start_time
-                # 返回格式需与 _extract_main 成功时一致
-                return processed_data, duration, 0, []
-            else:
-                # 处理失败（类型不匹配、转换异常等）在 _process_loaded_cache_data 内已记录日志
-                if config.verbose:
-                    logger.info(f"缓存命中但处理失败 {log_context}")
-                return None
-
-        except Exception as e:
-            logger.error(f"加载或处理缓存数据时出错 {log_context}: {e}")
-            return None
 
     def _handle_schema_and_extract(self, config: ExtractionConfig) -> Optional[Dict[str, Any]]:
         """
@@ -899,19 +802,6 @@ class NarrativeGraphExtractor:
             return optimized_result
         return result
 
-    def _save_result_to_cache(self, result: Any, config: ExtractionConfig, start_time: float, cache_key: str):
-        """保存提取结果到缓存。"""
-        # 注意：cache_key 应该在 _extract_main 开头或这里生成
-        # cache_key = get_cache_key_from_config(config) # 如果不在 _extract_main 生成
-        if config.use_cache and result is not None:
-            cache_data = result
-            if isinstance(result, SerializableGraphDocument):
-                cache_data = result.to_dict()
-            # 生成元数据
-            metadata = generate_cache_metadata(**config.to_metadata_params())
-            save_cache(cache_key, cache_data, metadata)
-            if config.verbose:
-                logger.info(f"结果已缓存: {config.novel_name} - {config.chapter_name} ({cache_key}.json)")
 
     def _log_extraction_summary(self, result: Any, total_duration: float, core_duration: float, status: int,
                                 config: ExtractionConfig):

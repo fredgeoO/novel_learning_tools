@@ -298,7 +298,7 @@ const GraphCore = (function() {
         }
         edge.color.color = mappedColor;
 
-        console.log(`为边 ${edge.id} (${edgeType}) 应用颜色: ${mappedColor}`);
+        // console.log(`为边 ${edge.id} (${edgeType}) 应用颜色: ${mappedColor}`);
     }
 
     function convertVisToOriginalFormat(visNodes, visEdges) {

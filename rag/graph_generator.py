@@ -152,7 +152,7 @@ def extract_graph(
             chunk_overlap=chunk_overlap,
             merge_results=True,
             schema_name=schema_name,
-            use_cache=use_cache,
+            use_cache=use_cache, # <-- 关键：将 use_cache 传递给配置
             verbose=True
         )
 
@@ -164,45 +164,16 @@ def extract_graph(
             if not extractor.remote_api_key or not extractor.remote_base_url or not extractor.remote_model_name:
                 return {"error": "远程API配置不完整"}
 
-        # 6. 生成缓存键
-        graph_cache_key = get_cache_key_from_config(config)
-        config._cache_key = graph_cache_key
+        # 6. 执行提取（缓存逻辑由 NarrativeGraphExtractor 内部处理）
+        start_time = time.time()
+        result, duration, status, chunks = extractor.extract_with_config(config)
+        end_time = time.time()
+        duration = end_time - start_time
 
-        # 7. 检查缓存
-        if use_cache:
-            cached_result = load_cache(graph_cache_key)
-            if cached_result is not None:
-                # 标记为缓存结果
-                result, chunks = cached_result, []  # 简化处理
-                duration = 0.0
-                status = 0  # 成功
-                is_cached = True
-                logger.info(f"从缓存加载图谱: {graph_cache_key}")
-            else:
-                is_cached = False
-        else:
-            is_cached = False
+        # 7. 判断是否来自缓存 (通过检查结果对象的属性)
+        is_cached = getattr(result, '_is_from_cache', False) if result is not None else False
 
-        # 8. 执行提取（如果没用缓存或缓存不存在）
-        if not is_cached:
-            start_time = time.time()
-            result, duration, status, chunks = extractor.extract_with_config(config)
-            end_time = time.time()
-            duration = end_time - start_time
-
-        # 9. 保存结果到缓存
-        if not is_cached and result is not None:
-            # 生成元数据
-            metadata = generate_cache_metadata(**config.to_metadata_params())
-            # 添加Schema显示名称
-            schema_config = ALL_NARRATIVE_SCHEMAS.get(schema_name, DEFAULT_SCHEMA)
-            metadata["schema_display"] = schema_config.get("name", schema_name)
-
-            # 保存到缓存
-            save_cache(graph_cache_key, result, metadata)
-            logger.info(f"保存图谱到缓存: {graph_cache_key}")
-
-        # 10. 准备返回结果
+        # 8. 准备返回结果
         node_count = len(getattr(result, 'nodes', []))
         relationship_count = len(getattr(result, 'relationships', []))
         chunk_count = len(chunks) if chunks else 0
@@ -218,7 +189,7 @@ def extract_graph(
 
         return {
             "success": True,
-            "cache_key": graph_cache_key,
+            "cache_key": getattr(config, '_cache_key', 'unknown'), # 尝试从config获取，或设为'unknown'
             "status_text": f"🧠 模型: {'本地' if use_local else '远程'}模型 ({model_name}){' (缓存)' if is_cached else ''}\n"
                            f"🎨 图谱模式: {schema_display}\n"
                            f"📝 文本长度: {len(text)} 字符\n"
@@ -230,7 +201,7 @@ def extract_graph(
                            f"🔗 节点数量: {node_count}\n"
                            f"🔗 关系数量: {relationship_count}\n"
                            f"🎨 图谱模式: {schema_display}\n"
-                           f"💾 缓存Key: {graph_cache_key[:16]}...",
+                           f"💾 缓存Key: {getattr(config, '_cache_key', 'unknown')[:16]}...",
             "stats_text": f"📊 处理统计{' (来自缓存)' if is_cached else ''}:\n"
                           f"• 总耗时: {duration:.2f} 秒\n"
                           f"• 文本长度: {len(text)} 字符\n"

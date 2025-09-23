@@ -33,7 +33,7 @@ CSS_DIR = "./static/css"
 os.makedirs(CSS_DIR, exist_ok=True)
 
 # --- 初始化演示数据 ---
-demo_cache_key = ensure_demo_graph(CACHE_DIR)
+demo_cache_key = ensure_demo_graph()
 
 # 初始化图谱API蓝图
 init_graph_api(app, demo_cache_key)  # 新增初始化
@@ -243,38 +243,12 @@ def get_chapters():
     chapters = get_novel_chapters(novel_name)
     return jsonify(chapters)
 
-@app.route("/generator-iframe")
-def generator_iframe():
-    """图谱生成器页面 - 用于 iframe 嵌入"""
-    novels = get_novel_list()
-    selected_novel = novels[0] if novels else ""
-    chapters = get_novel_chapters(selected_novel) if selected_novel else []
-    selected_chapter = chapters[0] if chapters else ""
-
-    schema_choices = get_schema_choices()
-
-    return render_template(
-        "generator.html",
-        novels=novels,
-        selected_novel=selected_novel,
-        chapters=chapters,
-        selected_chapter=selected_chapter,
-        ollama_models=[],
-        default_model="",
-        remote_models=REMOTE_MODEL_CHOICES,
-        default_remote_model=REMOTE_MODEL_NAME,
-        schema_choices=schema_choices,
-        default_schema="自动生成"
-    )
-
 @app.route("/editor")
 def editor():
     """交互式图谱编辑器页面"""
     cache_key = request.args.get("cache_key", demo_cache_key)
     return render_template("graph_editor.html", cache_key=cache_key)
 
-
-# 在主程序 app.py 或 kg_interaction.py 中
 
 
 

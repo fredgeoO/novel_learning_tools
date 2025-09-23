@@ -712,7 +712,7 @@
                 setupSliderListeners();
                 setupModelTypeListener();
                 setupRefreshListener();
-                setupNovelChangeListener();
+                setupNovelChangeListener(); // <-- 绑定事件
                 setupGenerateListener();
                 setupViewGraphListener();
 
@@ -723,8 +723,18 @@
             } catch (error) {
                 console.error("应用初始化过程中发生错误:", error);
             }
+            // 确保默认显示本地模型选项
             document.getElementById('local_model_div').classList.remove('d-none');
             document.getElementById('remote_model_div').classList.add('d-none');
+
+            // --- 新增：主动触发一次 change 事件 ---
+            // 获取小说下拉框元素
+            const novelSelect = document.getElementById('novel_name');
+            // 创建并派发一个 'change' 事件
+            if (novelSelect) {
+                novelSelect.dispatchEvent(new Event('change'));
+                console.log("已主动触发小说下拉框的 change 事件以加载章节。");
+            }
         }
 
         // ========== 使用 readyState 检查确保初始化 ==========

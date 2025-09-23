@@ -78,15 +78,16 @@
                 </div>
             </div>
 
-            <!-- 生成器 Tab -->
+                      <!-- 生成器 Tab -->
             <div class="tab-pane" id="generator-tab">
-                <div id="generator-content" style="height: 100%; overflow-y: auto;">
-                    <!-- 直接使用 iframe 加载生成器页面 -->
+                <div id="generator-content" style="height: calc(100vh - 120px); overflow: hidden;">
+                    <!-- 使用 iframe 加载独立的 generator 页面 -->
                     <iframe
                         id="generator-iframe"
-                        src="/generator-iframe"
-                        style="width: 100%; height: calc(100vh - 150px); border: none; background-color: #121212;"
-                        frameborder="0">
+                        src="/generator" <!-- 关键修改：加载 /generator -->
+                        style="width: 100%; height: 100%; border: none;"
+                        frameborder="0"
+                        sandbox="allow-scripts allow-same-origin allow-forms"> <!-- 增强安全性 -->
                     </iframe>
                 </div>
             </div>
@@ -211,26 +212,11 @@ document.getElementById('mainTabs').addEventListener('click', function(e) {
             }
         }
 
-             async function loadGeneratorContent() {
-            const generatorContent = document.getElementById('generator-content');
-
-            // 如果 iframe 已经存在，直接显示
-            const iframe = generatorContent.querySelector('#generator-iframe');
-            if (iframe) {
-                return;
-            }
-
-            // 创建 iframe
-            generatorContent.innerHTML = `
-                <iframe
-                    id="generator-iframe"
-                    src="/generator-iframe"
-                    style="width: 100%; height: calc(100vh - 150px); border: none; background-color: #121212;"
-                    frameborder="0">
-                </iframe>
-            `;
+        // 因为 iframe 的 src 在 HTML 中已经设置好，会自动加载
+        async function loadGeneratorContent() {
+            // 无需通过 AJAX 加载，iframe 会自动处理
+            console.log("Generator tab activated. Content is loaded via iframe.");
         }
-
 
         // 事件监听
         document.getElementById('refresh-btn').addEventListener('click', () => {

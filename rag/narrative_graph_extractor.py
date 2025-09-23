@@ -531,7 +531,7 @@ class NarrativeGraphExtractor:
     from typing import Optional, Tuple, Any, List
     # ... 其他导入 ...
 
-    def _extract_main(self, config: ExtractionConfig) -> Tuple[Any, float, int, List[Any]]:
+    def _extract_main(self, config: ExtractionConfig) -> Tuple[Any, float, int, List[Any], str]:
         """
         执行完整的提取流程：缓存处理 -> Schema 逻辑 -> 核心提取 -> 后处理 -> 缓存保存。
         """
@@ -540,7 +540,9 @@ class NarrativeGraphExtractor:
         # --- 重构点 1: 使用 GraphCacheManager 加载缓存 ---
         cached_result_tuple = GraphCacheManager.load_from_config(config)
         if cached_result_tuple is not None:
-            return cached_result_tuple
+            # ✅ 如果命中缓存，也要返回 cache_key！
+            cache_key = get_cache_key_from_config(config)
+            return cached_result_tuple + (cache_key,)  # 在原有4个值后追加 cache_key
 
         # --- 未命中缓存，执行核心提取 ---
         if config.verbose:
@@ -575,7 +577,9 @@ class NarrativeGraphExtractor:
 
             self._log_extraction_summary(final_result, total_duration, total_duration_core, status, config)
 
-            return final_result, total_duration, status, all_chunk_results
+            # ✅ 生成 cache_key 并返回
+            cache_key = get_cache_key_from_config(config)
+            return final_result, total_duration, status, all_chunk_results, cache_key  # ✅ 第5个返回值
 
         except Exception as e:
             logger.error(f"提取过程中发生错误: {e}", exc_info=True)
@@ -971,7 +975,9 @@ class NarrativeGraphExtractor:
 
         # 如果需要保持 `extract_with_config` 的名字，也可以这样做：
 
-    def extract_with_config(self, config: ExtractionConfig) -> Tuple[Any, float, int, List[Any]]:
-        """使用配置对象进行提取的核心方法 (别名)"""
+    def extract_with_config(self, config: ExtractionConfig) -> Tuple[Any, float, int, List[Any], str]:
+        """
+        使用配置对象进行提取的核心方法
+        """
         return self._extract_main(config)
 

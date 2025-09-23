@@ -637,7 +637,7 @@
             document.getElementById('view_graph_btn').addEventListener('click', function() {
                 const cacheKey = document.getElementById('graph_cache_key').value;
                 if (cacheKey) {
-                    window.open(`/viewer?cache_key=${encodeURIComponent(cacheKey)}`, '_blank');
+                    window.open(`/?cache_key=${encodeURIComponent(cacheKey)}`, '_blank');
                 }
             });
         }

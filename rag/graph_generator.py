@@ -166,7 +166,15 @@ def extract_graph(
 
         # 6. 执行提取（缓存逻辑由 NarrativeGraphExtractor 内部处理）
         start_time = time.time()
-        result, duration, status, chunks = extractor.extract_with_config(config)
+        result, duration, status, chunks,cache_key= extractor.extract_with_config(config)
+
+        # 🚨 添加调试打印！
+        print(f"=== DEBUG: extract_graph 返回前的 cache_key ===")
+        print(f"cache_key 类型: {type(cache_key)}")
+        print(f"cache_key 值: '{cache_key}'")
+        print(f"cache_key 长度: {len(cache_key) if cache_key else 0}")
+        logger.info(f"[DEBUG] extract_graph 返回 cache_key: '{cache_key}'")
+
         end_time = time.time()
         duration = end_time - start_time
 
@@ -189,7 +197,7 @@ def extract_graph(
 
         return {
             "success": True,
-            "cache_key": getattr(config, '_cache_key', 'unknown'), # 尝试从config获取，或设为'unknown'
+            "cache_key": cache_key, # 尝试从config获取，或设为'unknown'
             "status_text": f"🧠 模型: {'本地' if use_local else '远程'}模型 ({model_name}){' (缓存)' if is_cached else ''}\n"
                            f"🎨 图谱模式: {schema_display}\n"
                            f"📝 文本长度: {len(text)} 字符\n"
@@ -201,7 +209,7 @@ def extract_graph(
                            f"🔗 节点数量: {node_count}\n"
                            f"🔗 关系数量: {relationship_count}\n"
                            f"🎨 图谱模式: {schema_display}\n"
-                           f"💾 缓存Key: {getattr(config, '_cache_key', 'unknown')[:16]}...",
+                           f"💾 缓存Key: {cache_key}",
             "stats_text": f"📊 处理统计{' (来自缓存)' if is_cached else ''}:\n"
                           f"• 总耗时: {duration:.2f} 秒\n"
                           f"• 文本长度: {len(text)} 字符\n"

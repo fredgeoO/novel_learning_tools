@@ -6,8 +6,13 @@
     font-size: 12px;
     line-height: 1.5;
     margin-bottom: 15px;
+    color: #fff; /* ✅ 关键：设置默认文字为白色 */
 }
-
+/* 同时确保 strong 标签醒目 */
+#metadata-info strong {
+    color: #66b3ff; /* 亮蓝色，更醒目 */
+    font-weight: 600;
+}
 /* 元数据项样式 */
 .detail-item {
     display: flex;
@@ -290,7 +295,13 @@
     background: linear-gradient(145deg, #5a5a5a, #4a4a4a);
     transform: translateY(-1px);
 }
+.floating-panel.hidden {
+    display: none !important;
+}
 
+.expand-btn.shown {
+    display: block !important;
+}
 /* 连接模式提示样式 */
 .connection-hint {
     position: absolute;

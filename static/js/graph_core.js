@@ -5,6 +5,7 @@ const GraphCore = (function() {
     let network, nodes, edges;
     let container;
     let currentCacheKey = null; // 用于保存/刷新
+    let currentMetadata = null; // ✅ 新增：保存图谱元数据
 
     // 状态管理
     const state = {
@@ -213,14 +214,14 @@ const GraphCore = (function() {
         if (nodeType === '未知类型' || nodeType === '未知') {
             const label = (node.label && typeof node.label === 'string') ? node.label.trim() : String(node.id);
             mappedColor = generateColorFromString(label);
-            console.log(`为节点 ${node.id} 使用 label "${label}" 生成稳定颜色: ${mappedColor}`);
+            // console.log(`为节点 ${node.id} 使用 label "${label}" 生成稳定颜色: ${mappedColor}`);
         } else {
             mappedColor = NODE_COLOR_MAP[nodeType];
             if (!mappedColor) {
                 mappedColor = generateColorFromString(nodeType);
-                console.log(`为节点 ${node.id} (${nodeType}) 生成稳定颜色: ${mappedColor}`);
+                // console.log(`为节点 ${node.id} (${nodeType}) 生成稳定颜色: ${mappedColor}`);
             } else {
-                console.log(`为节点 ${node.id} (${nodeType}) 应用预设颜色: ${mappedColor}`);
+                // console.log(`为节点 ${node.id} (${nodeType}) 应用预设颜色: ${mappedColor}`);
             }
         }
 
@@ -784,6 +785,7 @@ const GraphCore = (function() {
         }
         const graphData = apiResult.data.data;
         const physicsEnabled = apiResult.data.physics;
+        currentMetadata = apiResult.data.metadata || {}; // ✅ 保存 metadata
         console.log('graphData 结构:', graphData);
 
         if (!graphData) {
@@ -830,6 +832,7 @@ const GraphCore = (function() {
         get nodes() { return nodes; },
         get edges() { return edges; },
         get cacheKey() { return currentCacheKey; },
-        get state() { return state; }
+        get state() { return state; },
+        get metadata() { return currentMetadata; } // ✅ 新增
     };
 })();

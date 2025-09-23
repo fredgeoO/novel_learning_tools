@@ -5,8 +5,8 @@
     <title>交互式图谱编辑器</title>
     <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/graph_editor.css') }}">
-    <script src="{{ url_for('static', filename='js/graph_core.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/graph_ui.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/graph_core.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/graph_ui.js') }}" defer></script>
 </head>
 <body>
     <div id="mynetwork"></div>

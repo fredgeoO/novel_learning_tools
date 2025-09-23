@@ -57,7 +57,170 @@ class GraphUI {
             }
         });
     }
+    // graph_ui.js - 在 GraphUI 类中添加
 
+       updateMetadataDisplay() {
+    const metadataContainer = document.getElementById('metadata-info');
+    if (!metadataContainer) {
+        console.warn('未找到 #metadata-info 元素');
+        return;
+    }
+
+    // 获取节点和边数量
+    let nodeCount = 0, edgeCount = 0;
+    try {
+        if (this.graphCore && this.graphCore.nodes && this.graphCore.edges) {
+            nodeCount = this.graphCore.nodes.get().length;
+            edgeCount = this.graphCore.edges.get().length;
+        }
+    } catch (e) {
+        console.error('获取图谱数据失败:', e);
+    }
+
+    // 获取 metadata
+        const metadata = this.graphCore.metadata || {};
+
+        console.log('🔍 当前 metadata 内容:', metadata);
+        console.log('🔍 metadata keys:', Object.keys(metadata));
+
+        // ✅ 字段名映射表（英文 key → 中文显示）
+        const fieldLabels = {
+            novel_name: '📖 小说名称',
+            chapter_name: '📑 章节名称',
+            model_name: '🤖 模型名称',
+            use_local: '💾 使用本地模型',
+            num_ctx: '🧠 上下文长度',
+            chunk_size: '🧩 分块大小',
+            chunk_overlap: '🔗 分块重叠',
+            content_size: '📏 内容长度',
+            schema_name: '📋 图谱模式',
+            cache_version: '🔢 缓存版本',
+            created_at: '📅 创建时间',
+            saved_at: '💾 保存时间',
+            // 可以继续添加其他字段
+        };
+
+        // ✅ 新增：跳过列表 —— 这些字段即使存在也不显示
+        const skipFields = [
+            'cache_version',   // 不显示缓存版本
+            'schema_display',   // 不显示分块重叠
+            'use_local',       // 不显示是否本地模型
+            'saved_at'
+            // 你可以按需添加更多字段
+        ];
+
+        // 生成 metadata 字段的 HTML
+        let metadataHtml = '';
+
+        // 按你希望的顺序显示字段（可选）
+        const displayOrder = [
+            'novel_name',
+            'chapter_name',
+            'model_name',
+            'use_local',
+            'schema_name',
+            'num_ctx',
+            'chunk_size',
+            'chunk_overlap',
+            'content_size',
+            'saved_at'
+        ];
+
+        // 遍历指定顺序的字段
+        for (const key of displayOrder) {
+            // ✅ 跳过 skipFields 中的字段
+            if (skipFields.includes(key)) continue;
+            if (!(key in metadata)) continue;
+            const value = metadata[key];
+            if (value === null || value === undefined) continue;
+
+            const label = fieldLabels[key] || `🔹 ${this.capitalizeFirstLetter(key)}`;
+            let displayValue = this.formatMetadataValue(value, key);
+
+            metadataHtml += `
+                <p><strong>${this.escapeHtml(label)}：</strong> ${this.escapeHtml(displayValue)}</p>
+            `;
+        }
+
+        // 如果还有未在 displayOrder 中的字段，也显示出来（兜底）
+        for (const [key, value] of Object.entries(metadata)) {
+            if (displayOrder.includes(key)) continue; // 已在顺序中处理过
+            if (skipFields.includes(key)) continue;   // ✅ 跳过 skipFields 中的字段
+            if (value === null || value === undefined) continue;
+
+            const label = fieldLabels[key] || `🔹 ${this.capitalizeFirstLetter(key)}`;
+            let displayValue = this.formatMetadataValue(value, key);
+
+            metadataHtml += `
+                <p><strong>${this.escapeHtml(label)}：</strong> ${this.escapeHtml(displayValue)}</p>
+            `;
+        }
+
+        // 如果 metadata 为空
+        if (metadataHtml === '') {
+            metadataHtml = '<p><em>暂无元数据信息</em></p>';
+        }
+
+        // 固定显示节点数、边数、加载时间
+        const footerHtml = `
+            <p><strong>📊 节点数量：</strong> ${nodeCount}</p>
+            <p><strong>🔗 边数量：</strong> ${edgeCount}</p>
+            <p><strong>🕒 最后加载：</strong> ${new Date().toLocaleString()}</p>
+        `;
+
+        // 更新 DOM
+        metadataContainer.innerHTML = `<h5>📋 图谱信息</h5>` + metadataHtml + footerHtml;
+
+        console.log('✅ 图谱元数据已更新:', { metadata, nodeCount, edgeCount });
+    }
+    // 在 GraphUI 类内添加
+    escapeHtml(text) {
+        if (typeof text !== 'string') {
+            return String(text);
+        }
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+    capitalizeFirstLetter(string) {
+        if (typeof string !== 'string') return String(string);
+        return string.charAt(0).toUpperCase() + string.slice(1).replace(/_/g, ' ');
+    }
+    formatMetadataValue(value, key = '') {
+        // 处理布尔值
+        if (typeof value === 'boolean') {
+            return value ? '是' : '否';
+        }
+        // 处理数字
+        else if (typeof value === 'number') {
+            return value.toLocaleString(); // 1000 → "1,000"
+        }
+        // 处理 ISO 日期字符串
+        else if (typeof value === 'string' && (key.endsWith('_at') || key.includes('time') || /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/.test(value))) {
+            try {
+                const date = new Date(value);
+                if (!isNaN(date.getTime())) {
+                    return date.toLocaleString('zh-CN'); // "2025/9/15 11:37:46"
+                }
+            } catch (e) {
+                // 如果解析失败，原样返回
+            }
+        }
+        // 处理普通字符串
+        else if (typeof value === 'string') {
+            return value.trim() === '' ? '(空)' : value;
+        }
+        // 处理数组或对象
+        else if (Array.isArray(value) || (typeof value === 'object' && value !== null)) {
+            try {
+                return JSON.stringify(value, null, 2);
+            } catch (e) {
+                return String(value);
+            }
+        }
+        // 其他类型
+        return String(value);
+    }
     // --- 按钮事件绑定 ---
     bindButtonEvents() {
         setTimeout(() => {
@@ -67,6 +230,10 @@ class GraphUI {
                 {id: 'refresh-graph-btn', handler: () => this.graphCore.refreshGraph()},
                 {id: 'export-graph-btn', handler: () => this.graphCore.exportGraph()},
                 {id: 'clear-graph-btn', handler: () => this.graphCore.clearGraph()},
+                // ✅ 新增：隐藏面板按钮
+                {id: 'hide-panel-btn', handler: () => this.toggleControlPanel(false)},
+                // ✅ 新增：展开面板按钮
+                {id: 'expand-panel-btn', handler: () => this.toggleControlPanel(true)},
             ];
 
             buttonConfigs.forEach(btnConfig => {
@@ -459,6 +626,18 @@ class GraphUI {
     get state() {
         return this._state;
     }
+    toggleControlPanel(show) {
+    const panel = document.getElementById('floating-control-section');
+    const expandBtn = document.getElementById('expand-panel-btn');
+
+    if (show) {
+        panel?.classList.remove('hidden');
+        expandBtn?.classList.remove('shown');
+    } else {
+        panel?.classList.add('hidden');
+        expandBtn?.classList.add('shown');
+    }
+}
 }
 
 // 页面加载完成时初始化
@@ -477,6 +656,8 @@ document.addEventListener('DOMContentLoaded', async function() {
         try {
             await graphCore.loadGraphData(cacheKey);
             console.log('图谱数据加载完成');
+
+            graphUI.updateMetadataDisplay(); // 👈 关键！
 
             // 绑定网络图的UI事件
             if (graphCore.network) {

@@ -8,6 +8,7 @@ from rag.graph_manager import (
 )
 from rag.cache_manager import (
     load_cache,
+    load_cache_metadata,
     get_metadata_from_cache_key,
     save_cache  # <-- 新增导入
 )
@@ -196,38 +197,40 @@ def update_graph(cache_key):
 def get_graph_data():
     """获取纯图数据（用于前端交互式渲染 - Vis.js 格式）"""
     cache_key = request.args.get("cache_key", demo_cache_key)
-    # max_nodes, max_edges, hidden_types 等过滤逻辑可以保留或根据需要调整
-    # physics_enabled 也可以保留
     physics_enabled = request.args.get("physics", "true").lower() == "true"
 
     try:
+        # 1. 加载图谱数据
         graph_doc = load_cache(cache_key)
         if graph_doc is None:
             return error_response("图谱数据未找到", 404)
 
-        # 直接使用缓存中的 SerializableGraphDocument 对象
-        # 并调用新的 to_vis_dict 方法转换为 Vis.js 格式
+        # 2. 加载元数据（使用你提供的函数！）
+        metadata = load_cache_metadata(cache_key) or {}
+        logger.info(f"成功加载元数据: {list(metadata.keys())}")
+
+        # 3. 处理图谱数据格式
         if isinstance(graph_doc, dict):
-            # 如果缓存加载回来的是字典（可能之前保存的就是字典），尝试转换
             temp_graph_doc = SerializableGraphDocument.from_dict(graph_doc)
             vis_graph_data = temp_graph_doc.to_vis_dict()
         elif isinstance(graph_doc, SerializableGraphDocument):
-            # 如果是对象，直接转换
             vis_graph_data = graph_doc.to_vis_dict()
         else:
-            # 不支持的类型
             logger.error(f"缓存中图谱数据类型不支持: {type(graph_doc)}")
             return error_response("图谱数据格式不支持", 500)
 
-        return success_response(data={
-            'data': vis_graph_data, # data.data 包含 nodes 和 edges
-            'physics': physics_enabled
-        })
-    except Exception as e:
-        logger.error(f"获取图数据失败: {e}", exc_info=True) # 添加 exc_info=True 以便查看完整堆栈
-        return error_response("获取图数据失败", 500, details=str(e))
+        # 4. 构建完整响应
+        response_data = {
+            'data': vis_graph_data,
+            'physics': physics_enabled,
+            'metadata': metadata  # 👈 关键！添加 metadata
+        }
 
-# ... (其他路由) ...
+        return success_response(data=response_data)
+
+    except Exception as e:
+        logger.error(f"获取图数据失败: {e}", exc_info=True)
+        return error_response("获取图数据失败", 500, details=str(e))
 
 @graph_bp.route('/graph-frame')
 def graph_frame():

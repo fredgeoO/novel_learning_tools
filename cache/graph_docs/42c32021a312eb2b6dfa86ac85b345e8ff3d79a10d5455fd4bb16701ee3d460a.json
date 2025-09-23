@@ -2,502 +2,848 @@
   "nodes": [
     {
       "id": "何鸿燊",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何鸿燊",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "广东宝安县",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "广东宝安县",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "冼庆云",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "冼庆云",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "航运",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "航运",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "港澳",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "港澳",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "东方代理",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "东方代理",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "沙逊洋行买办",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "沙逊洋行买办",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "荷兰鹿特丹",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "荷兰鹿特丹",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "政治网络",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "政治网络",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "澳门娱乐赌博公司",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "澳门娱乐赌博公司",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "罗絮才",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "罗絮才",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "澳门",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "澳门",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "澳门博彩业独占鳌头",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "澳门博彩业独占鳌头",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "中国和犹太血统",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "中国和犹太血统",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "娱乐",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "娱乐",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "土生葡人黎婉华",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "土生葡人黎婉华",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "贸易",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "贸易",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "犹太裔荷兰人Charles Henry Maurice Bosman",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "犹太裔荷兰人Charles Henry Maurice Bosman",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "施娣",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "施娣",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "商业资源",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "商业资源",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "英国伦敦",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "英国伦敦",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "何瑞婷",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何瑞婷",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "郭茂超",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "郭茂超",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "何世光",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何世光",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "中英混血",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "中英混血",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "何福",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何福",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "香港信德集团",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "香港信德集团",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "何甘棠",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何甘棠",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "1839年8月29日",
-      "type": "时间",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "1839年8月29日",
+        "color": "#87CEEB",
+        "size": 25
+      }
     },
     {
       "id": "1921年11月25日",
-      "type": "时间",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "1921年11月25日",
+        "color": "#87CEEB",
+        "size": 25
+      }
     },
     {
       "id": "何东家族",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何东家族",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "香港",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "香港",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "豪门世家",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "豪门世家",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "何柏娟",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何柏娟",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "1873年",
-      "type": "时间",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "1873年",
+        "color": "#87CEEB",
+        "size": 25
+      }
     },
     {
       "id": "社会资本",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "社会资本",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "酒店",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "酒店",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "地产",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "地产",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "郭兴贤",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "郭兴贤",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "中国",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "中国",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "感情疏离",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "感情疏离",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "英国",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "英国",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "母系承传",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "母系承传",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "Stephen Prentice Hall",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "Stephen Prentice Hall",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "九爷",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "九爷",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "Bosman",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "Bosman",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "何东",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何东",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "波斯",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "波斯",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "何仕文",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "何仕文",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "中国广东宝安",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "中国广东宝安",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
-      "id": "豪门世家",
-      "type": "物件",
-      "properties": {}
+      "id": "豪门世家_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "豪门世家",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "第九",
-      "type": "时间",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "第九",
+        "color": "#87CEEB",
+        "size": 25
+      }
     },
     {
-      "id": "中英混血",
-      "type": "物件",
-      "properties": {}
+      "id": "中英混血_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "中英混血",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "犹太",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "犹太",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "曾祖母",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "曾祖母",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
-      "id": "何东家族",
-      "type": "物件",
-      "properties": {}
+      "id": "何东家族_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "何东家族",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "皇仁书院",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "皇仁书院",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "香港大学理学院",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "香港大学理学院",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "首届香港中学毕业会考",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "首届香港中学毕业会考",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "押船工作",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "押船工作",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "手榴弹袭击",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "手榴弹袭击",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "澳门生意",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "澳门生意",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "唱日文歌",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "唱日文歌",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "第二次世界大战",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "第二次世界大战",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "日语",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "日语",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "日本老板的秘书",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "日本老板的秘书",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "1932年至1939年",
-      "type": "时间",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "1932年至1939年",
+        "color": "#87CEEB",
+        "size": 25
+      }
     },
     {
       "id": "东南亚最大的煤油供应商",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "东南亚最大的煤油供应商",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "1941年12月8日",
-      "type": "时间",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "1941年12月8日",
+        "color": "#87CEEB",
+        "size": 25
+      }
     },
     {
       "id": "教授英语",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "教授英语",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "开办炼油厂",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "开办炼油厂",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "澳门火水（煤油）公司",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "澳门火水（煤油）公司",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "长泽上校",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "长泽上校",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "贸易行从广东进口粮食与燃料",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "贸易行从广东进口粮食与燃料",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "佳绩",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "佳绩",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "黎婉华",
-      "type": "人物",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "黎婉华",
+        "color": "#FF6B6B",
+        "size": 25
+      }
     },
     {
       "id": "爬山",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "爬山",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "我一定回来",
-      "type": "事件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "我一定回来",
+        "color": "#4682B4",
+        "size": 25
+      }
     },
     {
       "id": "炼油厂",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "炼油厂",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "100万元花红",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "100万元花红",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "政府全费奖学金",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "政府全费奖学金",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "联昌粮油公司",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "联昌粮油公司",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "澳门电灯公司",
-      "type": "物件",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "澳门电灯公司",
+        "color": "#98FB98",
+        "size": 25
+      }
     },
     {
       "id": "利玛窦宿舍",
-      "type": "地点",
-      "properties": {}
+      "type": "未知类型",
+      "properties": {
+        "label": "利玛窦宿舍",
+        "color": "#D2B48C",
+        "size": 25
+      }
     },
     {
       "id": "家族与亲属",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "家族与亲属",
-        "origin_node": "何鸿燊"
+        "label": "家族与亲属",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "澳门与地域关联",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "澳门与地域关联",
-        "origin_node": "何鸿燊"
+        "label": "澳门与地域关联",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "教育与学术经历",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "教育与学术经历",
-        "origin_node": "何鸿燊"
+        "label": "教育与学术经历",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "职业与商业活动",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "职业与商业活动",
-        "origin_node": "何鸿燊"
+        "label": "职业与商业活动",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "战争与历史事件",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "战争与历史事件",
-        "origin_node": "何鸿燊"
+        "label": "战争与历史事件",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "语言与文化经历",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "语言与文化经历",
-        "origin_node": "何鸿燊"
+        "label": "语言与文化经历",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "时间与时间节点",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "时间与时间节点",
-        "origin_node": "何鸿燊"
+        "label": "时间与时间节点",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "国籍与文化背景",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "国籍与文化背景",
-        "origin_node": "何鸿燊"
+        "label": "国籍与文化背景",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "个人经历与特殊事件",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "个人经历与特殊事件",
-        "origin_node": "何鸿燊"
+        "label": "个人经历与特殊事件",
+        "color": "#00CED1",
+        "size": 25
       }
     },
     {
       "id": "组织与机构",
-      "type": "聚合概念",
+      "type": "未知类型",
       "properties": {
-        "name": "组织与机构",
-        "origin_node": "何鸿燊"
+        "label": "组织与机构",
+        "color": "#00CED1",
+        "size": 25
       }
     }
   ],
@@ -506,685 +852,1483 @@
       "source_id": "澳门娱乐赌博公司",
       "target_id": "澳门",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门娱乐赌博公司_澳门",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "香港信德集团",
       "target_id": "航运",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_香港信德集团_航运",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "香港信德集团",
       "target_id": "地产",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_香港信德集团_地产",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "香港信德集团",
       "target_id": "酒店",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_香港信德集团_酒店",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "香港信德集团",
       "target_id": "娱乐",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_香港信德集团_娱乐",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "何东家族",
       "target_id": "港澳",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东家族_港澳",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "何东家族",
       "target_id": "政治网络",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东家族_政治网络",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "何东家族",
       "target_id": "商业资源",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东家族_商业资源",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "何东家族",
       "target_id": "社会资本",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东家族_社会资本",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "土生葡人黎婉华",
       "target_id": "澳门",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_土生葡人黎婉华_澳门",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "犹太裔荷兰人Charles Henry Maurice Bosman",
       "target_id": "荷兰鹿特丹",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_犹太裔荷兰人Charles Henry Maurice Bosman_荷兰鹿特丹",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "犹太裔荷兰人Charles Henry Maurice Bosman",
       "target_id": "1839年8月29日",
       "type": "发生在",
-      "properties": {}
+      "properties": {
+        "id": "edge_犹太裔荷兰人Charles Henry Maurice Bosman_1839年8月29日",
+        "label": "发生在",
+        "title": "发生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1E90FF"
+      }
     },
     {
       "source_id": "犹太裔荷兰人Charles Henry Maurice Bosman",
       "target_id": "东方代理",
       "type": "参与",
-      "properties": {}
+      "properties": {
+        "id": "edge_犹太裔荷兰人Charles Henry Maurice Bosman_东方代理",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
     },
     {
       "source_id": "东方代理",
       "target_id": "英国伦敦",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_东方代理_英国伦敦",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "东方代理",
       "target_id": "1873年",
       "type": "发生在",
-      "properties": {}
+      "properties": {
+        "id": "edge_东方代理_1873年",
+        "label": "发生在",
+        "title": "发生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1E90FF"
+      }
     },
     {
       "source_id": "东方代理",
       "target_id": "贸易",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_东方代理_贸易",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "施娣",
       "target_id": "广东宝安县",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_施娣_广东宝安县",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "施娣",
       "target_id": "郭兴贤",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_施娣_郭兴贤",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "施娣",
       "target_id": "何瑞婷",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_施娣_何瑞婷",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "施娣",
       "target_id": "何柏娟",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_施娣_何柏娟",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "施娣",
       "target_id": "郭茂超",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_施娣_郭茂超",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "何福",
       "target_id": "港澳",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_何福_港澳",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "何福",
       "target_id": "中国和犹太血统",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_何福_中国和犹太血统",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "罗絮才",
       "target_id": "港澳",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_罗絮才_港澳",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "罗絮才",
       "target_id": "中英混血",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_罗絮才_中英混血",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "何世光",
       "target_id": "香港",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_何世光_香港",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "何世光",
       "target_id": "沙逊洋行买办",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_何世光_沙逊洋行买办",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "冼庆云",
       "target_id": "香港",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_冼庆云_香港",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "冼庆云",
       "target_id": "豪门世家",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_冼庆云_豪门世家",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "何福",
       "target_id": "中国",
       "type": "具有血统",
-      "properties": {}
+      "properties": {
+        "id": "edge_何福_中国",
+        "label": "具有血统",
+        "title": "具有血统",
+        "width": 2,
+        "arrows": "to",
+        "color": "#7df76e"
+      }
     },
     {
       "source_id": "何福",
       "target_id": "犹太",
       "type": "具有血统",
-      "properties": {}
+      "properties": {
+        "id": "edge_何福_犹太",
+        "label": "具有血统",
+        "title": "具有血统",
+        "width": 2,
+        "arrows": "to",
+        "color": "#7df76e"
+      }
     },
     {
       "source_id": "罗絮才",
       "target_id": "中英混血",
       "type": "具有血统",
-      "properties": {}
+      "properties": {
+        "id": "edge_罗絮才_中英混血_1",
+        "label": "具有血统",
+        "title": "具有血统",
+        "width": 2,
+        "arrows": "to",
+        "color": "#7df76e"
+      }
     },
     {
       "source_id": "何世光",
       "target_id": "中英混血",
       "type": "具有血统",
-      "properties": {}
+      "properties": {
+        "id": "edge_何世光_中英混血",
+        "label": "具有血统",
+        "title": "具有血统",
+        "width": 2,
+        "arrows": "to",
+        "color": "#7df76e"
+      }
     },
     {
       "source_id": "何世光",
       "target_id": "沙逊洋行买办",
       "type": "担任职务",
-      "properties": {}
+      "properties": {
+        "id": "edge_何世光_沙逊洋行买办_1",
+        "label": "担任职务",
+        "title": "担任职务",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1ed55e"
+      }
     },
     {
       "source_id": "冼庆云",
       "target_id": "中英混血",
       "type": "具有血统",
-      "properties": {}
+      "properties": {
+        "id": "edge_冼庆云_中英混血",
+        "label": "具有血统",
+        "title": "具有血统",
+        "width": 2,
+        "arrows": "to",
+        "color": "#7df76e"
+      }
     },
     {
       "source_id": "冼庆云",
       "target_id": "豪门世家",
       "type": "出身",
-      "properties": {}
+      "properties": {
+        "id": "edge_冼庆云_豪门世家_1",
+        "label": "出身",
+        "title": "出身",
+        "width": 2,
+        "arrows": "to",
+        "color": "#3596fc"
+      }
     },
     {
       "source_id": "施娣",
       "target_id": "中国",
       "type": "是何鸿燊的曾祖母",
-      "properties": {}
+      "properties": {
+        "id": "edge_施娣_中国",
+        "label": "是何鸿燊的曾祖母",
+        "title": "是何鸿燊的曾祖母",
+        "width": 2,
+        "arrows": "to",
+        "color": "#f280d9"
+      }
     },
     {
       "source_id": "何仕文",
       "target_id": "犹太",
       "type": "是何鸿燊的曾祖父",
-      "properties": {}
+      "properties": {
+        "id": "edge_何仕文_犹太",
+        "label": "是何鸿燊的曾祖父",
+        "title": "是何鸿燊的曾祖父",
+        "width": 2,
+        "arrows": "to",
+        "color": "#f6af62"
+      }
     },
     {
       "source_id": "Stephen Prentice Hall",
       "target_id": "英国",
       "type": "是何鸿燊的外曾祖父",
-      "properties": {}
+      "properties": {
+        "id": "edge_Stephen Prentice Hall_英国",
+        "label": "是何鸿燊的外曾祖父",
+        "title": "是何鸿燊的外曾祖父",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2af2ae"
+      }
     },
     {
       "source_id": "Bosman",
       "target_id": "波斯",
       "type": "姓氏来源",
-      "properties": {}
+      "properties": {
+        "id": "edge_Bosman_波斯",
+        "label": "姓氏来源",
+        "title": "姓氏来源",
+        "width": 2,
+        "arrows": "to",
+        "color": "#92db51"
+      }
     },
     {
       "source_id": "何东",
       "target_id": "何仕文",
       "type": "是何鸿燊的家族成员",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东_何仕文",
+        "label": "是何鸿燊的家族成员",
+        "title": "是何鸿燊的家族成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#66f72c"
+      }
     },
     {
       "source_id": "何东",
       "target_id": "中国广东宝安",
       "type": "祖籍",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东_中国广东宝安",
+        "label": "祖籍",
+        "title": "祖籍",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2349f8"
+      }
     },
     {
       "source_id": "何东",
       "target_id": "母系承传",
       "type": "采用祖籍方案",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东_母系承传",
+        "label": "采用祖籍方案",
+        "title": "采用祖籍方案",
+        "width": 2,
+        "arrows": "to",
+        "color": "#34dbd3"
+      }
     },
     {
       "source_id": "何东",
       "target_id": "感情疏离",
       "type": "与父亲关系",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东_感情疏离",
+        "label": "与父亲关系",
+        "title": "与父亲关系",
+        "width": 2,
+        "arrows": "to",
+        "color": "#f68893"
+      }
     },
     {
       "source_id": "何东",
       "target_id": "曾祖母",
       "type": "祖籍认定",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东_曾祖母",
+        "label": "祖籍认定",
+        "title": "祖籍认定",
+        "width": 2,
+        "arrows": "to",
+        "color": "#2ffb8d"
+      }
     },
     {
       "source_id": "皇仁书院",
       "target_id": "香港",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_皇仁书院_香港",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "联昌粮油公司",
       "target_id": "澳门",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_联昌粮油公司_澳门",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "澳门火水（煤油）公司",
       "target_id": "澳门",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门火水（煤油）公司_澳门",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "澳门火水（煤油）公司",
       "target_id": "澳门电灯公司",
       "type": "供应",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门火水（煤油）公司_澳门电灯公司",
+        "label": "供应",
+        "title": "供应",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1802ee"
+      }
     },
     {
       "source_id": "澳门火水（煤油）公司",
       "target_id": "东南亚最大的煤油供应商",
       "type": "成为",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门火水（煤油）公司_东南亚最大的煤油供应商",
+        "label": "成为",
+        "title": "成为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#13d0ba"
+      }
     },
     {
       "source_id": "炼油厂",
       "target_id": "澳门",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_炼油厂_澳门",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "炼油厂",
       "target_id": "澳门电灯公司",
       "type": "供应",
-      "properties": {}
+      "properties": {
+        "id": "edge_炼油厂_澳门电灯公司",
+        "label": "供应",
+        "title": "供应",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1802ee"
+      }
     },
     {
       "source_id": "香港大学理学院",
       "target_id": "香港",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_香港大学理学院_香港",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "长泽上校",
       "target_id": "澳门",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_长泽上校_澳门",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "黎婉华",
       "target_id": "澳门",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_黎婉华_澳门",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "何东家族",
       "target_id": "香港",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_何东家族_香港",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "何福",
       "target_id": "香港",
       "type": "位于",
-      "properties": {}
+      "properties": {
+        "id": "edge_何福_香港",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "家族与亲属",
       "type": "拥有",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_家族与亲属",
+        "label": "拥有",
+        "title": "拥有",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DEB887"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "冼庆云",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_冼庆云",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "罗絮才",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_罗絮才",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "土生葡人黎婉华",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_土生葡人黎婉华",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "施娣",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_施娣",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "何世光",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_何世光",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "何福",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_何福",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "何甘棠",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_何甘棠",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "郭兴贤",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_郭兴贤",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "家族与亲属",
       "target_id": "黎婉华",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_家族与亲属_黎婉华",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "澳门与地域关联",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_澳门与地域关联",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "澳门与地域关联",
       "target_id": "澳门",
       "type": "体现于",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门与地域关联_澳门",
+        "label": "体现于",
+        "title": "体现于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#6414ee"
+      }
     },
     {
       "source_id": "澳门与地域关联",
       "target_id": "澳门娱乐赌博公司",
       "type": "体现于",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门与地域关联_澳门娱乐赌博公司",
+        "label": "体现于",
+        "title": "体现于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#6414ee"
+      }
     },
     {
       "source_id": "澳门与地域关联",
       "target_id": "澳门博彩业独占鳌头",
       "type": "体现于",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门与地域关联_澳门博彩业独占鳌头",
+        "label": "体现于",
+        "title": "体现于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#6414ee"
+      }
     },
     {
       "source_id": "澳门与地域关联",
       "target_id": "澳门生意",
       "type": "体现于",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门与地域关联_澳门生意",
+        "label": "体现于",
+        "title": "体现于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#6414ee"
+      }
     },
     {
       "source_id": "澳门与地域关联",
       "target_id": "澳门火水（煤油）公司",
       "type": "体现于",
-      "properties": {}
+      "properties": {
+        "id": "edge_澳门与地域关联_澳门火水（煤油）公司",
+        "label": "体现于",
+        "title": "体现于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#6414ee"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "教育与学术经历",
       "type": "经历",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_教育与学术经历",
+        "label": "经历",
+        "title": "经历",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF69B4"
+      }
     },
     {
       "source_id": "教育与学术经历",
       "target_id": "皇仁书院",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_教育与学术经历_皇仁书院",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "教育与学术经历",
       "target_id": "香港大学理学院",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_教育与学术经历_香港大学理学院",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "教育与学术经历",
       "target_id": "首届香港中学毕业会考",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_教育与学术经历_首届香港中学毕业会考",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "教育与学术经历",
       "target_id": "政府全费奖学金",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_教育与学术经历_政府全费奖学金",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "教育与学术经历",
       "target_id": "佳绩",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_教育与学术经历_佳绩",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "职业与商业活动",
       "type": "拥有",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_职业与商业活动",
+        "label": "拥有",
+        "title": "拥有",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DEB887"
+      }
     },
     {
       "source_id": "职业与商业活动",
       "target_id": "香港信德集团",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_职业与商业活动_香港信德集团",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "职业与商业活动",
       "target_id": "开办炼油厂",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_职业与商业活动_开办炼油厂",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "职业与商业活动",
       "target_id": "贸易行从广东进口粮食与燃料",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_职业与商业活动_贸易行从广东进口粮食与燃料",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "职业与商业活动",
       "target_id": "联昌粮油公司",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_职业与商业活动_联昌粮油公司",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "战争与历史事件",
       "type": "经历",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_战争与历史事件",
+        "label": "经历",
+        "title": "经历",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF69B4"
+      }
     },
     {
       "source_id": "战争与历史事件",
       "target_id": "第二次世界大战",
       "type": "发生于",
-      "properties": {}
+      "properties": {
+        "id": "edge_战争与历史事件_第二次世界大战",
+        "label": "发生于",
+        "title": "发生于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#653df5"
+      }
     },
     {
       "source_id": "战争与历史事件",
       "target_id": "1941年12月8日",
       "type": "发生于",
-      "properties": {}
+      "properties": {
+        "id": "edge_战争与历史事件_1941年12月8日",
+        "label": "发生于",
+        "title": "发生于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#653df5"
+      }
     },
     {
       "source_id": "战争与历史事件",
       "target_id": "手榴弹袭击",
       "type": "发生于",
-      "properties": {}
+      "properties": {
+        "id": "edge_战争与历史事件_手榴弹袭击",
+        "label": "发生于",
+        "title": "发生于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#653df5"
+      }
     },
     {
       "source_id": "战争与历史事件",
       "target_id": "1932年至1939年",
       "type": "发生于",
-      "properties": {}
+      "properties": {
+        "id": "edge_战争与历史事件_1932年至1939年",
+        "label": "发生于",
+        "title": "发生于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#653df5"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "语言与文化经历",
       "type": "经历",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_语言与文化经历",
+        "label": "经历",
+        "title": "经历",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF69B4"
+      }
     },
     {
       "source_id": "语言与文化经历",
       "target_id": "日语",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_语言与文化经历_日语",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "语言与文化经历",
       "target_id": "唱日文歌",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_语言与文化经历_唱日文歌",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "语言与文化经历",
       "target_id": "日本老板的秘书",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_语言与文化经历_日本老板的秘书",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "语言与文化经历",
       "target_id": "1941年12月8日",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_语言与文化经历_1941年12月8日",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "时间与时间节点",
       "type": "涉及",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_时间与时间节点",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
     },
     {
       "source_id": "时间与时间节点",
       "target_id": "1921年11月25日",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_时间与时间节点_1921年11月25日",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "时间与时间节点",
       "target_id": "1932年至1939年",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_时间与时间节点_1932年至1939年",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "时间与时间节点",
       "target_id": "1941年12月8日",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_时间与时间节点_1941年12月8日",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "时间与时间节点",
       "target_id": "第九",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_时间与时间节点_第九",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "时间与时间节点",
       "target_id": "100万元花红",
       "type": "包含",
-      "properties": {}
+      "properties": {
+        "id": "edge_时间与时间节点_100万元花红",
+        "label": "包含",
+        "title": "包含",
+        "width": 2,
+        "arrows": "to",
+        "color": "#DAA520"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "国籍与文化背景",
       "type": "关联",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_国籍与文化背景",
+        "label": "关联",
+        "title": "关联",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0aec9f"
+      }
     },
     {
       "source_id": "国籍与文化背景",
       "target_id": "中国",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_国籍与文化背景_中国",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "国籍与文化背景",
       "target_id": "英国",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_国籍与文化背景_英国",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "国籍与文化背景",
       "target_id": "犹太裔荷兰人Charles Henry Maurice Bosman",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_国籍与文化背景_犹太裔荷兰人Charles Henry Maurice Bosman",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "国籍与文化背景",
       "target_id": "犹太",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_国籍与文化背景_犹太",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "国籍与文化背景",
       "target_id": "波斯",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_国籍与文化背景_波斯",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "个人经历与特殊事件",
       "type": "经历",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_个人经历与特殊事件",
+        "label": "经历",
+        "title": "经历",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF69B4"
+      }
     },
     {
       "source_id": "个人经历与特殊事件",
       "target_id": "押船工作",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_个人经历与特殊事件_押船工作",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "个人经历与特殊事件",
       "target_id": "教授英语",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_个人经历与特殊事件_教授英语",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "个人经历与特殊事件",
       "target_id": "爬山",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_个人经历与特殊事件_爬山",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "个人经历与特殊事件",
       "target_id": "我一定回来",
       "type": "体现为",
-      "properties": {}
+      "properties": {
+        "id": "edge_个人经历与特殊事件_我一定回来",
+        "label": "体现为",
+        "title": "体现为",
+        "width": 2,
+        "arrows": "to",
+        "color": "#d01b3c"
+      }
     },
     {
       "source_id": "何鸿燊",
       "target_id": "组织与机构",
       "type": "所属",
-      "properties": {}
+      "properties": {
+        "id": "edge_何鸿燊_组织与机构",
+        "label": "所属",
+        "title": "所属",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0edd53"
+      }
     },
     {
       "source_id": "组织与机构",
       "target_id": "何东家族",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_组织与机构_何东家族",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     },
     {
       "source_id": "组织与机构",
       "target_id": "何东家族",
       "type": "成员是",
-      "properties": {}
+      "properties": {
+        "id": "edge_组织与机构_何东家族_1",
+        "label": "成员是",
+        "title": "成员是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#64b9f5"
+      }
     }
   ]
 }

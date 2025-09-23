@@ -417,10 +417,25 @@ const GraphCore = (function() {
     }
 
     function createVisNetworkOptions(physicsEnabled) {
+        // 👇 动态计算 springLength
+        const baseLength = 100; // 基础间距
+        const nodeCount = nodes.length;
+        const densityFactor = Math.sqrt(nodeCount); // 或 Math.log(nodeCount + 1)
+
+        const springLength = baseLength * (1 + densityFactor * 0.1);
+
+        console.log(`节点数量: ${nodeCount}, 自动计算 springLength: ${springLength}`);
         return {
             physics: {
                 enabled: physicsEnabled,
-                stabilization: { iterations: 100 }
+                stabilization: { iterations: 100 },
+                barnesHut: {
+                    gravitationalConstant: -2000,
+                    centralGravity: 0.1,
+                    springLength: springLength,     // 👈 增大这个值（默认约 95-200），节点间距变大
+                    springConstant: 0.04,
+                    damping: 0.09
+                },
             },
             interaction: {
                 dragNodes: true,

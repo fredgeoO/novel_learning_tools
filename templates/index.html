@@ -60,11 +60,14 @@
 
             <!-- 选择器 Tab -->
             <div class="tab-pane" id="selector-tab">
-                <div id="selector-content">
-                    <div class="text-center" style="padding: 50px;">
-                        <div class="spinner" role="status"></div>
-                        <p class="mt-2">正在加载选择器...</p>
-                    </div>
+                <div class="selector-iframe-container" style="height: calc(100vh - 50px); overflow: hidden;">
+                    <iframe
+                        id="selector-iframe"
+                        src="/selector"
+                        frameborder="0"
+                        style="width: 100%; height: 100%; border: none;"
+                        sandbox="allow-scripts allow-same-origin allow-forms">
+                    </iframe>
                 </div>
             </div>
 
@@ -80,7 +83,7 @@
 
                       <!-- 生成器 Tab -->
             <div class="tab-pane" id="generator-tab">
-                <div id="generator-content" style="height: calc(100vh - 120px); overflow: hidden;">
+                <div id="generator-content" style="height: calc(100vh - 100px); overflow: hidden;">
                     <!-- 使用 iframe 加载独立的 generator 页面 -->
                     <iframe
                         id="generator-iframe"

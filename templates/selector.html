@@ -71,7 +71,10 @@
 
             async fetchAllGraphs() {
                 const response = await fetch('/api/graphs');
-                return await response.json();
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const result = await response.json();
+                if (!result.success) throw new Error(result.message || '请求失败');
+                return result.data; // ✅ 关键！提取 data 字段
             },
 
             async fetchFilteredGraphs(novel, chapter) {
@@ -388,9 +391,17 @@
             // 加载所有图谱
             async loadAllGraphs() {
                 try {
-                    AppState.allGraphs = await ApiService.fetchAllGraphs();
+                    console.log("▶️ 请求 /api/graphs...");
+                    const data = await ApiService.fetchAllGraphs();
+                    console.log("✅ 成功加载图谱数量:", Object.keys(data).length);
+                    AppState.allGraphs = data;
                 } catch (error) {
-                    console.error('加载所有图谱数据失败:', error);
+                    console.error('❌ 加载所有图谱失败:', error);
+                    AppState.allGraphs = {};
+                    // 可选：显示错误提示
+                    if (DOMElements.cardsContainer) {
+                        UI.showError(DOMElements.cardsContainer, `图谱加载失败: ${error.message}`);
+                    }
                 }
             }
         };

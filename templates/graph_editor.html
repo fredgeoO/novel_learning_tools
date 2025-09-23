@@ -5,6 +5,8 @@
     <title>交互式图谱编辑器</title>
     <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/graph_editor.css') }}">
+    <script src="{{ url_for('static', filename='js/graph_core.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/graph_ui.js') }}"></script>
 </head>
 <body>
     <div id="mynetwork"></div>
@@ -46,20 +48,20 @@
     <div id="nodeContextMenu" class="context-menu">
         <ul>
             <li class="separator"></li>
-            <li onclick="GraphEditor.showCreateNodeInput()">➕ 新节点</li>
-            <li onclick="GraphEditor.connectToExistingNodeMode()">🔗 连接节点</li>
+            <li onclick="GraphUI.showCreateNodeInput()">➕ 新节点</li>
+            <li onclick="GraphUI.connectToExistingNodeMode()">🔗 连接节点</li>
             <li class="separator"></li>
-            <li onclick="GraphEditor.showEditNodeLabelInput()">✏️ 重命名</li>
-            <li onclick="GraphEditor.deleteSelectedNode()">❌ 删除</li>
+            <li onclick="GraphUI.showEditNodeLabelInput()">✏️ 重命名</li>
+            <li onclick="GraphUI.deleteSelectedNode()">❌ 删除</li>
         </ul>
     </div>
 
     <!-- 边右键菜单 -->
     <div id="edgeContextMenu" class="context-menu">
         <ul>
-            <li onclick="GraphEditor.deleteSelectedEdge()">❌ 删除</li>
-            <li onclick="GraphEditor.showEditEdgeLabelInput()">✏️ 重命名</li>
-            <li onclick="GraphEditor.reverseEdgeDirection()">🔄 反转</li>
+            <li onclick="GraphUI.deleteSelectedEdge()">❌ 删除</li>
+            <li onclick="GraphUI.showEditEdgeLabelInput()">✏️ 重命名</li>
+            <li onclick="GraphUI.reverseEdgeDirection()">🔄 反转</li>
         </ul>
     </div>
 
@@ -68,8 +70,8 @@
         <div>创建新节点</div>
         <input type="text" id="newNodeLabel" placeholder="输入节点名称" value="新节点">
         <div class="button-group">
-            <button onclick="GraphEditor.cancelInput()">取消</button>
-            <button onclick="GraphEditor.confirmCreateNode()">确定</button>
+            <button onclick="GraphUI.cancelInput()">取消</button>
+            <button onclick="GraphUI.confirmCreateNode()">确定</button>
         </div>
     </div>
 
@@ -78,8 +80,8 @@
         <div>编辑节点标签</div>
         <input type="text" id="editNodeLabelText" placeholder="输入节点名称">
         <div class="button-group">
-            <button onclick="GraphEditor.cancelInput()">取消</button>
-            <button onclick="GraphEditor.confirmEditNodeLabel()">确定</button>
+            <button onclick="GraphUI.cancelInput()">取消</button>
+            <button onclick="GraphUI.confirmEditNodeLabel()">确定</button>
         </div>
     </div>
 
@@ -88,8 +90,8 @@
         <div>编辑边标签</div>
         <input type="text" id="editEdgeLabelText" placeholder="输入边标签">
         <div class="button-group">
-            <button onclick="GraphEditor.cancelInput()">取消</button>
-            <button onclick="GraphEditor.confirmEditEdgeLabel()">确定</button>
+            <button onclick="GraphUI.cancelInput()">取消</button>
+            <button onclick="GraphUI.confirmEditEdgeLabel()">确定</button>
         </div>
     </div>
 
@@ -99,6 +101,6 @@
         <div style="font-size: 14px; margin-top: 8px; opacity: 0.8;">按 ESC 键取消</div>
     </div>
 
-    <script src="{{ url_for('static', filename='js/graph_editor.js') }}"></script>
+
 </body>
 </html>

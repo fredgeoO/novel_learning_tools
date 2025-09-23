@@ -1,40 +1,172 @@
 {
   "nodes": [
     {
-      "color": "#FF6B6B",
-      "id": "1",
-      "label": "1:彭刚",
-      "size": 25,
-      "title": "人物 (1)\n属性:name: 彭刚\nsequence_number: 1"
+      "id": "node_1758560300470",
+      "type": "未知类型",
+      "properties": {
+        "label": "1",
+        "color": "#a0a0c0",
+        "size": 25,
+        "x": 190,
+        "y": 84
+      }
     },
     {
-      "color": "#FF6B6B",
-      "id": "2",
-      "label": "2:彭毅",
-      "size": 25,
-      "title": "人物 (2)\n属性:name: 彭毅\nsequence_number: 2"
+      "id": "node_1758560517853",
+      "type": "未知类型",
+      "properties": {
+        "label": "加法",
+        "color": "#7fdbca",
+        "size": 25,
+        "x": 338,
+        "y": -430
+      }
     },
     {
-      "id": "node_1758524685253",
-      "label": "新节点",
-      "x": 79,
-      "y": 42
+      "id": "node_1758560533130",
+      "type": "未知类型",
+      "properties": {
+        "label": "1",
+        "color": "#a0a0c0",
+        "size": 25,
+        "x": 84,
+        "y": 48
+      }
+    },
+    {
+      "id": "node_1758560580430",
+      "type": "未知类型",
+      "properties": {
+        "label": "2",
+        "color": "#a0a0c0",
+        "size": 25,
+        "x": 129,
+        "y": 99
+      }
+    },
+    {
+      "id": "node_1758560975712",
+      "type": "未知类型",
+      "properties": {
+        "label": "任务",
+        "color": "#7fdbca",
+        "size": 25,
+        "x": 290,
+        "y": -69
+      }
+    },
+    {
+      "id": "node_1758600865400",
+      "type": "未知类型",
+      "properties": {
+        "label": "LLM",
+        "color": "#f07178",
+        "size": 25,
+        "x": 56,
+        "y": 254
+      }
+    },
+    {
+      "id": "node_1758600875493",
+      "type": "未知类型",
+      "properties": {
+        "label": "提示词",
+        "color": "#ffcb6b",
+        "size": 25,
+        "x": 195,
+        "y": 311
+      }
+    },
+    {
+      "id": "node_1758600954513",
+      "type": "未知类型",
+      "properties": {
+        "label": "结果",
+        "color": "#c3e88d",
+        "size": 25,
+        "x": 137,
+        "y": 263
+      }
     }
   ],
-  "edges": [
+  "relationships": [
     {
-      "arrows": "to",
-      "color": "#064d8a",
-      "from": "1",
-      "title": "兄弟",
-      "to": "2",
-      "width": 2,
-      "id": "edge_1_2"
+      "source_id": "node_1758560300470",
+      "target_id": "node_1758560517853",
+      "type": "赋值",
+      "properties": {
+        "id": "b1f1fb31-2d78-4fc1-9103-3b13471d526d",
+        "label": "赋值",
+        "title": "未知关系",
+        "width": 2,
+        "arrows": "to",
+        "color": "#82aaff"
+      }
     },
     {
-      "from": "2",
-      "to": "node_1758524685253",
-      "id": "5c384805-1741-455a-8d7d-f363b068bbf3"
+      "source_id": "node_1758560533130",
+      "target_id": "node_1758560517853",
+      "type": "赋值",
+      "properties": {
+        "id": "c36e9211-eed0-43bd-bc36-2301fecc0920",
+        "label": "赋值",
+        "title": "未知关系",
+        "width": 2,
+        "arrows": "to",
+        "color": "#82aaff"
+      }
+    },
+    {
+      "source_id": "node_1758560517853",
+      "target_id": "node_1758560580430",
+      "type": "等于",
+      "properties": {
+        "id": "d7ec8852-650b-49be-ab58-bb6c8b58c2c3",
+        "label": "等于",
+        "title": "等于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#c792ea"
+      }
+    },
+    {
+      "source_id": "node_1758560975712",
+      "target_id": "node_1758600865400",
+      "type": "指派",
+      "properties": {
+        "id": "0ab29b09-c121-4885-9f87-e0b9996a1b2c",
+        "label": "指派",
+        "title": "指派",
+        "width": 2,
+        "arrows": "to",
+        "color": "#89ddff"
+      }
+    },
+    {
+      "source_id": "node_1758600875493",
+      "target_id": "node_1758600865400",
+      "type": "指示",
+      "properties": {
+        "id": "58d38014-c879-404d-aa5f-e58b49ef8305",
+        "label": "指示",
+        "title": "指示",
+        "width": 2,
+        "arrows": "to",
+        "color": "#ff9cac"
+      }
+    },
+    {
+      "source_id": "node_1758600865400",
+      "target_id": "node_1758600954513",
+      "type": "获得",
+      "properties": {
+        "id": "879596d8-ed4d-43a7-a747-57e7695ddd41",
+        "label": "获得",
+        "title": "获得",
+        "width": 2,
+        "arrows": "to",
+        "color": "#c3e88d"
+      }
     }
   ]
 }

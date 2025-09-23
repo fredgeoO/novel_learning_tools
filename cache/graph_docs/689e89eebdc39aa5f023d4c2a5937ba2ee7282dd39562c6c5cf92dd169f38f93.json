@@ -838,15 +838,6 @@
       }
     },
     {
-      "id": "四大发明_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "四大发明",
-        "color": "#10d968",
-        "size": 25
-      }
-    },
-    {
       "id": "GDP",
       "type": "未知类型",
       "properties": {
@@ -861,15 +852,6 @@
       "properties": {
         "label": "社会主义国家",
         "color": "#0ae77d",
-        "size": 25
-      }
-    },
-    {
-      "id": "世界文化遗产_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "世界文化遗产",
-        "color": "#10d968",
         "size": 25
       }
     },
@@ -901,15 +883,6 @@
       }
     },
     {
-      "id": "五千年文明史_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "五千年文明史",
-        "color": "#10d968",
-        "size": 25
-      }
-    },
-    {
       "id": "14亿",
       "type": "未知类型",
       "properties": {
@@ -924,15 +897,6 @@
       "properties": {
         "label": "G20",
         "color": "#4682B4",
-        "size": 25
-      }
-    },
-    {
-      "id": "中国_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "中国",
-        "color": "#D2B48C",
         "size": 25
       }
     },
@@ -1022,60 +986,6 @@
       "type": "未知类型",
       "properties": {
         "label": "事件与社会",
-        "color": "#00CED1",
-        "size": 25
-      }
-    },
-    {
-      "id": "民族与文化_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "民族与文化",
-        "color": "#00CED1",
-        "size": 25
-      }
-    },
-    {
-      "id": "政治与制度_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "政治与制度",
-        "color": "#00CED1",
-        "size": 25
-      }
-    },
-    {
-      "id": "经济与科技_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "经济与科技",
-        "color": "#00CED1",
-        "size": 25
-      }
-    },
-    {
-      "id": "成就与国际角色_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "成就与国际角色",
-        "color": "#00CED1",
-        "size": 25
-      }
-    },
-    {
-      "id": "事件与社会_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "事件与社会",
-        "color": "#00CED1",
-        "size": 25
-      }
-    },
-    {
-      "id": "地理与自然_1",
-      "type": "未知类型",
-      "properties": {
-        "label": "地理与自然",
         "color": "#00CED1",
         "size": 25
       }

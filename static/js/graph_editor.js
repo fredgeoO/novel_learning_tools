@@ -230,175 +230,230 @@ function generateColorFromString(text) {
 }
 
 /**
- * 将后端返回的原始格式（Vis.js 格式）转换为前端使用的 Vis Network 数据，并应用默认颜色。
+ * 将后端返回的原始格式转换为前端使用的 Vis Network 数据，并应用默认颜色。
  * @param {Object} originalData - 后端返回的包含 nodes 和 edges 数组的对象。
  * @returns {Object} - 包含处理后的 nodes 和 edges 数组的对象。
  */
 function convertOriginalToVisFormat(originalData) {
-    // 添加调试信息
     console.log('转换前的原始数据:', originalData);
 
-    // 确保数据结构正确 - 数据已经是 Vis Network 格式
     if (!originalData) {
         console.warn('原始数据为空，返回空结构');
         return { nodes: [], edges: [] };
     }
 
-    // 直接使用数据，因为后端已经返回了正确的格式
-    // 但我们需要确保 nodes 和 edges 是数组
     const rawNodes = Array.isArray(originalData.nodes) ? originalData.nodes : [];
     const rawEdges = Array.isArray(originalData.edges) ? originalData.edges : [];
 
     console.log(`处理 ${rawNodes.length} 个节点和 ${rawEdges.length} 条边`);
 
-    // --- 处理节点颜色 ---
-    const processedNodes = rawNodes.map((node, index) => {
-        // 确保节点有 ID
-        if (!node || !node.id) {
-            console.warn(`节点 ${index} 缺少 ID，跳过`);
-            return null;
-        }
-
-        // 确保节点有 label
-        if (node.label === undefined || node.label === null) {
-            node.label = String(node.id); // 确保 label 是字符串
-        }
-
-        // --- 颜色处理逻辑 (针对新结构) ---
-        // 检查节点是否已有颜色（字符串或对象）
-        let hasValidColor = false;
-        if (typeof node.color === 'string' && node.color.startsWith('#')) {
-            hasValidColor = true;
-        } else if (node.color && typeof node.color === 'object') {
-            // 检查对象中是否有有效的颜色值
-            hasValidColor = Object.values(node.color).some(val => typeof val === 'string' && val.startsWith('#'));
-        } // 如果 node.color 不存在或为 null/undefined，则 hasValidColor 保持 false
-
-        if (!hasValidColor) {
-            // 节点没有颜色或颜色无效，需要分配默认颜色
-            let nodeType = '未知';
-
-            // --- 修正：从 originalData 中获取类型 ---
-            // 1. 首先检查 node.originalData.type (这是最可能的地方)
-            if (node.originalData && node.originalData.type && typeof node.originalData.type === 'string') {
-                nodeType = node.originalData.type.trim();
-            }
-            // 2. 如果上面没有，检查 node.originalData.properties.type
-            else if (node.originalData && node.originalData.properties && node.originalData.properties.type && typeof node.originalData.properties.type === 'string') {
-                nodeType = node.originalData.properties.type.trim();
-            }
-            // 3. 如果还没有，尝试从 node.originalData.id 推断（不太可能，但以防万一）
-            //    或者检查 node.title (如果存在且原始数据中有相关信息)
-            else if (node.originalData && node.originalData.id) {
-                 // 可以尝试从 ID 推断，但这通常不靠谱
-                 // 或者如果 node.title 存在且格式类似 "类型 (ID)"，可以解析
-                 if (node.title && typeof node.title === 'string') {
-                     const titleMatch = node.title.match(/^\s*([^(\s]+)\s*\(/);
-                     if (titleMatch && titleMatch[1]) {
-                         nodeType = titleMatch[1].trim();
-                     }
-                 }
-            }
-            // 4. 最后回退到检查顶层 node.type (虽然根据新数据结构不太可能有)
-            else if (node.type && typeof node.type === 'string') {
-                 nodeType = node.type.trim();
-            }
-
-
-            // 1. 首先查找预定义的颜色映射
-            let mappedColor = NODE_COLOR_MAP[nodeType];
-            if (!mappedColor) {
-                // 2. 如果没有预定义颜色，根据类型生成稳定颜色
-                mappedColor = generateColorFromString(nodeType);
-            }
-            // 应用颜色
-            node.color = mappedColor; // Vis.js 接受字符串颜色
-            console.log(`为节点 ${node.id} (${nodeType}) 应用颜色: ${mappedColor} (来自 originalData.type: ${node.originalData?.type})`);
-        } else {
-            console.log(`节点 ${node.id} 已有颜色:`, node.color);
-        }
-
-        // 确保其他必要属性存在 (如果需要的话可以设置默认值)
-        if (node.size === undefined || node.size === null) node.size = 25; // 默认大小
-
-        return node;
-    }).filter(node => node !== null); // 过滤掉无效节点
-
-    // --- 处理边颜色 (这部分保持不变，因为你提到边颜色已经生效) ---
-    const processedEdges = rawEdges.map((edge, index) => {
-        // 确保边有必要的字段
-        if (!edge || edge.from === undefined || edge.to === undefined) {
-            console.warn(`边 ${index} 缺少 from 或 to，跳过`);
-            return null;
-        }
-
-        // 确保边有 ID
-        if (edge.id === undefined || edge.id === null) {
-             edge.id = `edge_${edge.from}_${edge.to}_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-        }
-
-        // 确保边有 label (可选，如果没有则使用 type 或空字符串)
-        if (edge.label === undefined || edge.label === null) {
-            edge.label = (edge.type && typeof edge.type === 'string') ? edge.type : ''; // 如果有 type 字段，用它作为 label
-        }
-
-        // --- 颜色处理逻辑 ---
-        // 检查边是否已有颜色（字符串或对象）
-        let hasValidEdgeColor = false;
-        if (edge.color) {
-            if (typeof edge.color === 'string' && edge.color.startsWith('#')) {
-                hasValidEdgeColor = true;
-            } else if (typeof edge.color === 'object') {
-                // 检查 color 对象中 color 字段
-                if (edge.color.color && typeof edge.color.color === 'string' && edge.color.color.startsWith('#')) {
-                     hasValidEdgeColor = true;
-                }
-                // 或者 color.color.color ... (处理嵌套，虽然不太可能)
-            }
-        }
-
-        if (!hasValidEdgeColor) {
-            // 边没有颜色或颜色无效，需要分配默认颜色
-            // 假设边数据中可能有一个 'type' 或 'label' 字段来确定关系类型
-            let edgeType = '未知关系';
-            if (edge.type && typeof edge.type === 'string') {
-                edgeType = edge.type.trim();
-            } else if (edge.label && typeof edge.label === 'string') {
-                edgeType = edge.label.trim();
-            } else if (edge.originalData && edge.originalData.type) { // 检查 originalData.type
-                 edgeType = (typeof edge.originalData.type === 'string') ? edge.originalData.type.trim() : String(edge.originalData.type);
-            }
-            // 如果边对象中没有 color，或者 color 是空对象/无效值，则应用默认颜色
-            // 1. 首先查找预定义的颜色映射
-            let mappedColor = EDGE_COLOR_MAP[edgeType];
-            if (!mappedColor) {
-                // 2. 如果没有预定义颜色，根据类型生成稳定颜色
-                mappedColor = generateColorFromString(edgeType);
-            }
-            // 应用颜色 (Vis.js 边颜色结构通常是 { color: '#...' } )
-            // 确保 edge.color 是一个对象并设置 color 字段
-            if (!edge.color || typeof edge.color !== 'object') {
-                edge.color = {};
-            }
-            edge.color.color = mappedColor;
-            console.log(`为边 ${edge.id} (${edgeType}) 应用颜色: ${mappedColor}`);
-        } else {
-            console.log(`边 ${edge.id} 已有颜色:`, edge.color);
-        }
-
-        // 确保其他必要属性存在
-        if (edge.width === undefined || edge.width === null) edge.width = 2; // 默认宽度
-        if (!edge.arrows) edge.arrows = 'to'; // 默认箭头
-
-        return edge;
-    }).filter(edge => edge !== null); // 过滤掉无效边
+    const processedNodes = processNodes(rawNodes);
+    const processedEdges = processEdges(rawEdges);
 
     console.log('转换并着色后的 Vis 数据:', { nodes: processedNodes, edges: processedEdges });
-
     return {
         nodes: processedNodes,
         edges: processedEdges
     };
+}
+
+/**
+ * 处理原始节点数组，为每个节点分配颜色和大小。
+ * @param {Array} rawNodes - 原始节点数组。
+ * @returns {Array} - 处理后的节点数组。
+ */
+function processNodes(rawNodes) {
+    return rawNodes
+        .map((node, index) => {
+            if (!node || !node.id) {
+                console.warn(`节点 ${index} 缺少 ID，跳过`);
+                return null;
+            }
+
+            if (node.label === undefined || node.label === null) {
+                node.label = String(node.id);
+            }
+
+            if (node.size === undefined || node.size === null) {
+                node.size = 25;
+            }
+
+            // 只有在没有有效颜色时才进行颜色分配
+            if (!hasValidNodeColor(node)) {
+                const nodeType = determineNodeType(node);
+                applyNodeColor(node, nodeType);
+            } else {
+                console.log(`节点 ${node.id} 已有颜色:`, node.color);
+            }
+
+            return node;
+        })
+        .filter(node => node !== null);
+}
+
+/**
+ * 检查节点是否已有有效的颜色定义。
+ * @param {Object} node - 节点对象。
+ * @returns {boolean} - 如果颜色有效返回 true，否则返回 false。
+ */
+function hasValidNodeColor(node) {
+    if (typeof node.color === 'string' && node.color.startsWith('#')) {
+        return true;
+    } else if (node.color && typeof node.color === 'object') {
+        return Object.values(node.color).some(val => typeof val === 'string' && val.startsWith('#'));
+    }
+    return false;
+}
+
+/**
+ * 从节点数据中推断其类型。
+ * @param {Object} node - 节点对象。
+ * @returns {string} - 推断出的节点类型。
+ */
+function determineNodeType(node) {
+    let nodeType = '未知';
+
+    // 优先级 1: 从 originalData.type 获取
+    if (node.originalData && node.originalData.type && typeof node.originalData.type === 'string') {
+        nodeType = node.originalData.type.trim();
+    }
+    // 优先级 2: 从 originalData.properties.type 获取
+    else if (node.originalData && node.originalData.properties && node.originalData.properties.type && typeof node.originalData.properties.type === 'string') {
+        nodeType = node.originalData.properties.type.trim();
+    }
+    // 优先级 3: 从 node.title 解析
+    else if (node.title && typeof node.title === 'string') {
+        const titleMatch = node.title.match(/^\s*([^(\s]+)\s*\(/);
+        if (titleMatch && titleMatch[1]) {
+            nodeType = titleMatch[1].trim();
+        }
+    }
+    // 优先级 4: 从顶层 node.type 获取
+    else if (node.type && typeof node.type === 'string') {
+        nodeType = node.type.trim();
+    }
+
+    return nodeType;
+}
+
+/**
+ * 为节点应用颜色。
+ * @param {Object} node - 节点对象。
+ * @param {string} nodeType - 节点类型。
+ */
+function applyNodeColor(node, nodeType) {
+    let mappedColor;
+
+    if (nodeType === '未知类型' || nodeType === '未知') {
+        const label = (node.label && typeof node.label === 'string') ? node.label.trim() : String(node.id);
+        mappedColor = generateColorFromString(label);
+        console.log(`为节点 ${node.id} 使用 label "${label}" 生成稳定颜色: ${mappedColor}`);
+    } else {
+        mappedColor = NODE_COLOR_MAP[nodeType];
+        if (!mappedColor) {
+            mappedColor = generateColorFromString(nodeType);
+            console.log(`为节点 ${node.id} (${nodeType}) 生成稳定颜色: ${mappedColor}`);
+        } else {
+            console.log(`为节点 ${node.id} (${nodeType}) 应用预设颜色: ${mappedColor}`);
+        }
+    }
+
+    node.color = mappedColor;
+}
+
+/**
+ * 处理原始边数组，为每条边分配颜色。
+ * @param {Array} rawEdges - 原始边数组。
+ * @returns {Array} - 处理后的边数组。
+ */
+function processEdges(rawEdges) {
+    return rawEdges
+        .map((edge, index) => {
+            if (!edge || edge.from === undefined || edge.to === undefined) {
+                console.warn(`边 ${index} 缺少 from 或 to，跳过`);
+                return null;
+            }
+
+            if (edge.id === undefined || edge.id === null) {
+                edge.id = `edge_${edge.from}_${edge.to}_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+            }
+
+            if (edge.label === undefined || edge.label === null) {
+                edge.label = (edge.type && typeof edge.type === 'string') ? edge.type : '';
+            }
+
+            if (edge.width === undefined || edge.width === null) {
+                edge.width = 2;
+            }
+
+            if (!edge.arrows) {
+                edge.arrows = 'to';
+            }
+
+            // 只有在没有有效颜色时才进行颜色分配
+            if (!hasValidEdgeColor(edge)) {
+                const edgeType = determineEdgeType(edge);
+                applyEdgeColor(edge, edgeType);
+            } else {
+                console.log(`边 ${edge.id} 已有颜色:`, edge.color);
+            }
+
+            return edge;
+        })
+        .filter(edge => edge !== null);
+}
+
+/**
+ * 检查边是否已有有效的颜色定义。
+ * @param {Object} edge - 边对象。
+ * @returns {boolean} - 如果颜色有效返回 true，否则返回 false。
+ */
+function hasValidEdgeColor(edge) {
+    if (!edge.color) return false;
+
+    if (typeof edge.color === 'string' && edge.color.startsWith('#')) {
+        return true;
+    } else if (typeof edge.color === 'object') {
+        if (edge.color.color && typeof edge.color.color === 'string' && edge.color.color.startsWith('#')) {
+            return true;
+        }
+    }
+    return false;
+}
+
+/**
+ * 从边数据中推断其类型。
+ * @param {Object} edge - 边对象。
+ * @returns {string} - 推断出的边类型。
+ */
+function determineEdgeType(edge) {
+    if (edge.type && typeof edge.type === 'string') {
+        return edge.type.trim();
+    } else if (edge.label && typeof edge.label === 'string') {
+        return edge.label.trim();
+    } else if (edge.originalData && edge.originalData.type) {
+        return (typeof edge.originalData.type === 'string') ? edge.originalData.type.trim() : String(edge.originalData.type);
+    }
+    return '未知关系';
+}
+
+/**
+ * 为边应用颜色。
+ * @param {Object} edge - 边对象。
+ * @param {string} edgeType - 边类型。
+ */
+function applyEdgeColor(edge, edgeType) {
+    let mappedColor = EDGE_COLOR_MAP[edgeType];
+    if (!mappedColor) {
+        mappedColor = generateColorFromString(edgeType);
+    }
+
+    if (!edge.color || typeof edge.color !== 'object') {
+        edge.color = {};
+    }
+    edge.color.color = mappedColor;
+
+    console.log(`为边 ${edge.id} (${edgeType}) 应用颜色: ${mappedColor}`);
 }
     // 根据节点类型获取颜色
     function getNodeColorByType(type) {
@@ -534,136 +589,156 @@ function convertOriginalToVisFormat(originalData) {
     }
 
     // 初始化图
-    function initGraph(graphData, physicsEnabled = true) {
-        try {
-            // 转换原始格式为 Vis Network 格式
-            const visFormat = convertOriginalToVisFormat(graphData);
+function initGraph(graphData, physicsEnabled = true) {
+    try {
+        // 转换原始格式为 Vis Network 格式
+        const visFormat = convertOriginalToVisFormat(graphData);
+        console.log('Vis Network 格式数据:', visFormat);
 
-            console.log('Vis Network 格式数据:', visFormat); // 调试信息
+        // 处理重复的节点和边ID
+        const { uniqueNodes, uniqueEdges } = ensureUniqueIds(visFormat.nodes, visFormat.edges);
 
-            // 处理重复的节点ID
-            const uniqueNodes = [];
-            const nodeIdSet = new Set();
+        // 创建数据集
+        nodes = new vis.DataSet(uniqueNodes);
+        edges = new vis.DataSet(uniqueEdges);
+        const data = { nodes, edges };
 
-            if (visFormat.nodes) {
-                visFormat.nodes.forEach(node => {
-                    let nodeId = node.id;
-                    let counter = 0;
-                    while (nodeIdSet.has(nodeId)) {
-                        nodeId = `${node.id}_${++counter}`;
-                        console.warn(`节点ID冲突，重命名: ${node.id} -> ${nodeId}`);
-                    }
-                    nodeIdSet.add(nodeId);
-                    uniqueNodes.push({...node, id: nodeId});
-                });
-            }
+        // 创建网络图配置选项
+        const options = createVisNetworkOptions(physicsEnabled);
 
-            // 处理重复的边ID
-            const uniqueEdges = [];
-            const edgeIdSet = new Set();
+        container = document.getElementById('mynetwork');
+        if (container) {
+            setupNetworkContainer(container);
 
-            if (visFormat.edges) {
-                visFormat.edges.forEach(edge => {
-                    let edgeId = edge.id || `edge_${edge.from}_${edge.to}`;
-                    let counter = 0;
-                    while (edgeIdSet.has(edgeId)) {
-                        edgeId = `${edge.id || `edge_${edge.from}_${edge.to}`}_${++counter}`;
-                    }
-                    edgeIdSet.add(edgeId);
-                    uniqueEdges.push({...edge, id: edgeId});
-                });
-            }
+            // 清空容器
+            container.innerHTML = '';
 
-            // 创建数据集
-            nodes = new vis.DataSet(uniqueNodes);
-            edges = new vis.DataSet(uniqueEdges);
+            // 创建 Network
+            network = new vis.Network(container, data, options);
 
-            const data = { nodes, edges };
-
-            const options = {
-                physics: {
-                    enabled: physicsEnabled,
-                    stabilization: { iterations: 100 }
-                },
-                interaction: {
-                    dragNodes: true,
-                    dragView: true,
-                    zoomView: true,
-                    hover: true,
-                    tooltipDelay: 200
-                },
-                nodes: {
-                    shape: 'dot',
-                    font: {
-                        size: 14,
-                        color: '#ffffff',
-                        face: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif'
-                    }
-                },
-                edges: {
-                    arrows: { to: { enabled: true, scaleFactor: 0.5 } },
-                    smooth: { enabled: true },
-                    font: {
-                        size: 12,           // 字体大小
-                        color: '#CCCCCC',   // 字体颜色（更浅一些）
-                        face: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
-                        strokeWidth: 0,     // 去掉字体描边
-                        strokeColor: '#1e1e1e' // 描边颜色
-                    },
-                    // 可选：调整边的颜色和宽度
-                    color: {
-                        color: '#666666',   // 边的颜色
-                        highlight: '#999999', // 高亮时的颜色
-                        hover: '#AAAAAA'    // 悬停时的颜色
-                    },
-                    width: 1.5            // 边的宽度
+            // 可选：在 Network 创建后强制设置大小
+            setTimeout(() => {
+                if (network) {
+                    setupNetworkContainer(container); // 重新设置大小
+                    network.redraw();
                 }
-            };
+            }, 50);
 
-            container = document.getElementById('mynetwork');
-            if (container) {
-                // 确保容器在创建 Network 前就设置好大小
-                container.style.width = '100vw';
-                container.style.height = '100vh';
-                container.style.margin = '0';
-                container.style.padding = '0';
-                container.style.overflow = 'hidden';
+            bindNetworkEvents();
+            bindGlobalEvents();
 
-                // 清空容器
-                container.innerHTML = '';
-
-                // 创建 Network
-                network = new vis.Network(container, data, options);
-
-                // 可选：在 Network 创建后强制设置大小
-                setTimeout(() => {
-                    if (network) {
-                        container.style.width = '100vw';
-                        container.style.height = '100vh';
-                        network.redraw();
-                    }
-                }, 50);
-
-                bindNetworkEvents();
-                bindGlobalEvents();
-
-                // 通知浮动面板更新物理效果状态
-                setTimeout(() => {
-                    if (network) {
-                        window.dispatchEvent(new CustomEvent('physicsStatusUpdated', {
-                            detail: { enabled: network.physics.options.enabled }
-                        }));
-                    }
-                }, 100);
-            }
-        } catch (error) {
-            console.error('初始化图失败:', error);
-            const errorContainer = document.getElementById('mynetwork');
-            if (errorContainer) {
-                errorContainer.innerHTML = '<div style="text-align: center; padding: 50px; color: red; background: #1e1e1e;">初始化图失败: ' + error.message + '</div>';
-            }
+            // 通知浮动面板更新物理效果状态
+            setTimeout(() => {
+                if (network) {
+                    window.dispatchEvent(new CustomEvent('physicsStatusUpdated', {
+                        detail: { enabled: network.physics.options.enabled }
+                    }));
+                }
+            }, 100);
+        }
+    } catch (error) {
+        console.error('初始化图失败:', error);
+        const errorContainer = document.getElementById('mynetwork');
+        if (errorContainer) {
+            errorContainer.innerHTML = '<div style="text-align: center; padding: 50px; color: red; background: #1e1e1e;">初始化图失败: ' + error.message + '</div>';
         }
     }
+}
+
+/**
+ * 确保节点和边的ID唯一，处理冲突。
+ * @param {Array} nodes - 节点数组。
+ * @param {Array} edges - 边数组。
+ * @returns {Object} - 包含唯一节点和边数组的对象 { uniqueNodes, uniqueEdges }。
+ */
+function ensureUniqueIds(nodes, edges) {
+    const uniqueNodes = [];
+    const nodeIdSet = new Set();
+
+    nodes.forEach(node => {
+        let nodeId = node.id;
+        let counter = 0;
+        while (nodeIdSet.has(nodeId)) {
+            nodeId = `${node.id}_${++counter}`;
+            console.warn(`节点ID冲突，重命名: ${node.id} -> ${nodeId}`);
+        }
+        nodeIdSet.add(nodeId);
+        uniqueNodes.push({...node, id: nodeId});
+    });
+
+    const uniqueEdges = [];
+    const edgeIdSet = new Set();
+
+    edges.forEach(edge => {
+        let edgeId = edge.id || `edge_${edge.from}_${edge.to}`;
+        let counter = 0;
+        while (edgeIdSet.has(edgeId)) {
+            edgeId = `${edge.id || `edge_${edge.from}_${edge.to}`}_${++counter}`;
+        }
+        edgeIdSet.add(edgeId);
+        uniqueEdges.push({...edge, id: edgeId});
+    });
+
+    return { uniqueNodes, uniqueEdges };
+}
+
+/**
+ * 创建 vis.Network 的配置选项对象。
+ * @param {boolean} physicsEnabled - 是否启用物理引擎。
+ * @returns {Object} - 配置选项对象。
+ */
+function createVisNetworkOptions(physicsEnabled) {
+    return {
+        physics: {
+            enabled: physicsEnabled,
+            stabilization: { iterations: 100 }
+        },
+        interaction: {
+            dragNodes: true,
+            dragView: true,
+            zoomView: true,
+            hover: true,
+            tooltipDelay: 200
+        },
+        nodes: {
+            shape: 'dot',
+            font: {
+                size: 14,
+                color: '#ffffff',
+                face: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif'
+            }
+        },
+        edges: {
+            arrows: { to: { enabled: true, scaleFactor: 0.5 } },
+            smooth: { enabled: true },
+            font: {
+                size: 12,
+                color: '#CCCCCC',
+                face: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
+                strokeWidth: 0,
+                strokeColor: '#1e1e1e'
+            },
+            color: {
+                color: '#666666',
+                highlight: '#999999',
+                hover: '#AAAAAA'
+            },
+            width: 1.5
+        }
+    };
+}
+
+/**
+ * 设置网络图容器的样式。
+ * @param {HTMLElement} container - 容器元素。
+ */
+function setupNetworkContainer(container) {
+    container.style.width = '100vw';
+    container.style.height = '100vh';
+    container.style.margin = '0';
+    container.style.padding = '0';
+    container.style.overflow = 'hidden';
+}
 
     // 绑定网络事件
     function bindNetworkEvents() {
@@ -1081,99 +1156,81 @@ function convertOriginalToVisFormat(originalData) {
             debugInfo.textContent = message;
         }
     }
-        /**
-     * 突出显示指定节点及其直接连接的节点和边，淡化其他元素。
-     * @param {string|number} nodeId - 要突出显示的节点ID。
-     */
-    function highlightNodeAndConnections(nodeId) {
-        if (!nodes || !edges || !network) return;
+/**
+ * 突出显示指定节点及其直接连接的节点和边，淡化其他元素。
+ * @param {string|number} nodeId - 要突出显示的节点ID。
+ */
+function highlightNodeAndConnections(nodeId) {
+    if (!nodes || !edges || !network) return;
+    state.highlightedNode = nodeId;
 
-        state.highlightedNode = nodeId; // 设置状态
+    const allNodes = nodes.get({ returnType: "Object" });
+    const allEdges = edges.get({ returnType: "Object" });
 
-        const allNodes = nodes.get({ returnType: "Object" }); // 以对象形式获取，方便查找
-        const allEdges = edges.get({ returnType: "Object" });
+    const connectedNodeIds = new Set();
+    const connectedEdgeIds = new Set();
 
-        const connectedNodeIds = new Set(); // 存储与高亮节点直接相连的节点ID
-        const connectedEdgeIds = new Set(); // 存储与高亮节点直接相连的边ID
-
-        // 找出连接到 nodeId 的边和节点
-        for (const edgeId in allEdges) {
-            const edge = allEdges[edgeId];
-            if (edge.from === nodeId || edge.to === nodeId) {
-                connectedEdgeIds.add(edgeId);
-                connectedNodeIds.add(edge.from);
-                connectedNodeIds.add(edge.to);
-            }
+    // 找出所有直接相连的边和节点
+    for (const edgeId in allEdges) {
+        const edge = allEdges[edgeId];
+        if (edge.from === nodeId || edge.to === nodeId) {
+            connectedEdgeIds.add(edgeId);
+            connectedNodeIds.add(edge.from);
+            connectedNodeIds.add(edge.to);
         }
-
-        // 准备更新节点和边的数据
-        const nodesToUpdate = [];
-        const edgesToUpdate = [];
-
-        // 更新节点透明度
-        for (const id in allNodes) {
-            const node = allNodes[id];
-            const isHighlighted = (id === nodeId);
-            const isConnected = connectedNodeIds.has(id);
-
-            let newColor;
-            if (isHighlighted || isConnected) {
-                // 保持或恢复原始颜色（或确保不透明）
-                // 如果原始节点没有自定义 color 对象，直接使用 color 字符串或默认值
-                // 这里假设 color 是字符串或简单对象，为了简化，我们直接保留它
-                // 更精确的做法是保存原始颜色，但这里先尝试直接使用
-                // 如果之前被淡化过，需要恢复
-                if (node._originalColor) {
-                     // 如果之前保存过原始颜色，则恢复
-                     newColor = node._originalColor;
-                     delete node._originalColor; // 恢复后删除临时属性
-                } else {
-                     // 如果没有被淡化过，就用当前颜色
-                     newColor = node.color;
-                }
-            } else {
-                // 淡化不相关的节点
-                // 保存原始颜色（如果还没保存）
-                if (!node._originalColor) {
-                    node._originalColor = JSON.parse(JSON.stringify(node.color)); // 深拷贝
-                }
-                // 应用半透明效果
-                newColor = applyTransparencyToColor(node.color, 0.2);
-            }
-            nodesToUpdate.push({ id: id, color: newColor });
-        }
-
-        // 更新边透明度
-        for (const id in allEdges) {
-            const edge = allEdges[id];
-            const isHighlighted = (edge.from === nodeId || edge.to === nodeId); // 边本身连接到高亮节点
-            const isConnectedEdge = connectedEdgeIds.has(id); // 是与高亮节点直接相连的边
-
-            let newColor;
-            if (isConnectedEdge) { // 只有直接相连的边才保持或恢复
-                // 恢复原始颜色
-                if (edge._originalColor) {
-                     newColor = edge._originalColor;
-                     delete edge._originalColor; // 恢复后删除临时属性
-                } else {
-                     newColor = edge.color; // 保持当前颜色
-                }
-            } else {
-                // 淡化不相关的边
-                if (!edge._originalColor) {
-                    edge._originalColor = JSON.parse(JSON.stringify(edge.color)); // 深拷贝
-                }
-                newColor = applyTransparencyToColor(edge.color, 0.1); // 边可以更淡一些
-            }
-            edgesToUpdate.push({ id: id, color: newColor });
-        }
-
-        // 应用更新
-        if (nodesToUpdate.length > 0) nodes.update(nodesToUpdate);
-        if (edgesToUpdate.length > 0) edges.update(edgesToUpdate);
-
-        logDebug(`突出显示节点: ${nodeId} 及其直接连接`);
     }
+
+    // 更新节点透明度
+    updateElementsOpacity(allNodes, true, nodeId, connectedNodeIds, 0.2);
+    // 更新边透明度
+    updateElementsOpacity(allEdges, false, nodeId, connectedEdgeIds, 0.1);
+
+    logDebug(`突出显示节点: ${nodeId} 及其直接连接`);
+}
+/**
+ * 更新一组元素（节点或边）的透明度。
+ * @param {Object} elements - 要更新的元素对象 {id: element}。
+ * @param {boolean} isNode - 是否为节点。
+ * @param {*} highlightedId - 当前高亮的ID。
+ * @param {Set} connectedIds - 与高亮元素直接相连的ID集合。
+ * @param {number} opacity - 非相关元素的透明度。
+ */
+function updateElementsOpacity(elements, isNode, highlightedId, connectedIds, opacity) {
+    const elementsToUpdate = [];
+
+    for (const id in elements) {
+        const element = elements[id];
+        const isHighlighted = (isNode && id === highlightedId) || (!isNode && (element.from === highlightedId || element.to === highlightedId));
+        const isConnected = connectedIds.has(id);
+
+        let newColor;
+        if (isHighlighted || isConnected) {
+            // 恢复原始颜色
+            if (element._originalColor) {
+                newColor = element._originalColor;
+                delete element._originalColor;
+            } else {
+                newColor = element.color;
+            }
+        } else {
+            // 淡化颜色
+            if (!element._originalColor) {
+                element._originalColor = JSON.parse(JSON.stringify(element.color));
+            }
+            newColor = applyTransparencyToColor(element.color, opacity);
+        }
+
+        elementsToUpdate.push({ id: id, color: newColor });
+    }
+
+    if (elementsToUpdate.length > 0) {
+        if (isNode) {
+            nodes.update(elementsToUpdate);
+        } else {
+            edges.update(elementsToUpdate);
+        }
+    }
+}
 
     /**
      * 将颜色（字符串或对象）应用透明度。
@@ -1388,7 +1445,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 绑定按钮事件
 function bindButtonEvents() {
-    // 使用 setTimeout 确保DOM完全加载
     setTimeout(() => {
         const buttonConfigs = [
             {id: 'save-graph-btn', handler: GraphEditor.saveGraph},
@@ -1396,47 +1452,55 @@ function bindButtonEvents() {
             {id: 'refresh-graph-btn', handler: GraphEditor.refreshGraph},
             {id: 'export-graph-btn', handler: GraphEditor.exportGraph},
             {id: 'clear-graph-btn', handler: GraphEditor.clearGraph},
-            {id: 'toggle-physics-btn', handler: GraphEditor.togglePhysics}
+            // 注意：'toggle-physics-btn' 在HTML中不存在，实际是 'physicsToggle' (checkbox)
         ];
 
         buttonConfigs.forEach(btnConfig => {
             const element = document.getElementById(btnConfig.id);
             if (element) {
-                // 移除已存在的事件监听器（防止重复绑定）
-                const newElement = element.cloneNode(true);
-                element.parentNode.replaceChild(newElement, element);
-
-                // 添加新的事件监听器
-                newElement.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    try {
-                        btnConfig.handler.call(GraphEditor);
-                    } catch (error) {
-                        console.error(`按钮 ${btnConfig.id} 点击处理失败:`, error);
-                    }
-                });
+                bindButtonClick(element, btnConfig.handler);
             } else {
                 console.warn(`未找到按钮元素: ${btnConfig.id}`);
             }
         });
 
-        // 单独处理 physicsToggle
+        // 单独处理 physicsToggle (checkbox)
         const physicsToggle = document.getElementById('physicsToggle');
         if (physicsToggle) {
-            const newToggle = physicsToggle.cloneNode(true);
-            physicsToggle.parentNode.replaceChild(newToggle, physicsToggle);
-
-            newToggle.addEventListener('change', function(e) {
-                try {
-                    GraphEditor.togglePhysics.call(GraphEditor);
-                } catch (error) {
-                    console.error('physicsToggle 处理失败:', error);
-                }
-            });
+            bindToggleChange(physicsToggle, GraphEditor.togglePhysics);
         }
     }, 100);
 }
+function bindButtonClick(element, handler) {
+    // 移除已存在的事件监听器（防止重复绑定）
+    const newElement = element.cloneNode(true);
+    element.parentNode.replaceChild(newElement, element);
+    newElement.addEventListener('click', function(e) {
+        e.preventDefault();
+        try {
+            handler.call(GraphEditor);
+        } catch (error) {
+            console.error(`按钮 ${element.id} 点击处理失败:`, error);
+        }
+    });
+}
 
+/**
+ * 为切换开关（如checkbox）绑定变更事件。
+ * @param {HTMLElement} element - 切换开关元素。
+ * @param {Function} handler - 事件处理函数。
+ */
+function bindToggleChange(element, handler) {
+    const newElement = element.cloneNode(true);
+    element.parentNode.replaceChild(newElement, element);
+    newElement.addEventListener('change', function(e) {
+        try {
+            handler.call(GraphEditor);
+        } catch (error) {
+            console.error(`${element.id} 处理失败:`, error);
+        }
+    });
+}
 // 加载图谱数据（适配你的后端接口）
 async function loadGraphData(cacheKey) {
     try {

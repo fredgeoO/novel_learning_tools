@@ -33,7 +33,8 @@ class GraphUI {
     init() {
         this.bindGlobalEvents();
         this.bindButtonEvents();
-        this.bindNetworkVisualEvents(); // 👈 新增
+        this.bindNetworkVisualEvents();
+         this.bindContextMenuEvents();
     }
     bindNetworkVisualEvents() {
         window.addEventListener('graphInitialized', (event) => {
@@ -305,6 +306,25 @@ class GraphUI {
         // 其他类型
         return String(value);
     }
+    bindContextMenuEvents() {
+        // 绑定所有带 data-action 的元素
+        const bindActions = (container) => {
+            if (!container) return;
+            container.addEventListener('click', (e) => {
+                const action = e.target.getAttribute('data-action');
+                if (action && typeof this[action] === 'function') {
+                    e.preventDefault();
+                    this[action]();
+                }
+            });
+        };
+
+        bindActions(document.getElementById('nodeContextMenu'));
+        bindActions(document.getElementById('edgeContextMenu'));
+        bindActions(document.getElementById('createNodeInput'));
+        bindActions(document.getElementById('editNodeLabelInput'));
+        bindActions(document.getElementById('editEdgeLabelInput'));
+    }
     // --- 按钮事件绑定 ---
     bindButtonEvents() {
         setTimeout(() => {
@@ -485,7 +505,7 @@ class GraphUI {
             const titleElement = document.createElement('li');
             titleElement.className = 'menu-title';
             titleElement.textContent = `连接: ${fromNode.label || fromNode.id} → ${toNode.label || toNode.id}`;
-            titleElement.style.cssText = 'font-weight: bold; background: #f0f0f0; pointer-events: none; padding: 8px 12px;';
+            titleElement.style.cssText = 'font-weight: bold; background: #555; pointer-events: none; padding: 8px 12px;';
             ul.insertBefore(titleElement, ul.firstChild);
         }
         menu.style.display = 'block';

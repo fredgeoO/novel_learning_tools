@@ -48,20 +48,20 @@
     <div id="nodeContextMenu" class="context-menu">
         <ul>
             <li class="separator"></li>
-            <li onclick="GraphUI.showCreateNodeInput()">➕ 新节点</li>
-            <li onclick="GraphUI.connectToExistingNodeMode()">🔗 连接节点</li>
+            <li data-action="showCreateNodeInput">➕ 新节点</li>
+            <li data-action="connectToExistingNodeMode">🔗 连接节点</li>
             <li class="separator"></li>
-            <li onclick="GraphUI.showEditNodeLabelInput()">✏️ 重命名</li>
-            <li onclick="GraphUI.deleteSelectedNode()">❌ 删除</li>
+            <li data-action="showEditNodeLabelInput">✏️ 重命名</li>
+            <li data-action="deleteSelectedNode">❌ 删除</li>
         </ul>
     </div>
 
     <!-- 边右键菜单 -->
     <div id="edgeContextMenu" class="context-menu">
         <ul>
-            <li onclick="GraphUI.deleteSelectedEdge()">❌ 删除</li>
-            <li onclick="GraphUI.showEditEdgeLabelInput()">✏️ 重命名</li>
-            <li onclick="GraphUI.reverseEdgeDirection()">🔄 反转</li>
+            <li data-action="deleteSelectedEdge">❌ 删除</li>
+            <li data-action="showEditEdgeLabelInput">✏️ 重命名</li>
+            <li data-action="reverseEdgeDirection">🔄 反转</li>
         </ul>
     </div>
 
@@ -70,8 +70,8 @@
         <div>创建新节点</div>
         <input type="text" id="newNodeLabel" placeholder="输入节点名称" value="新节点">
         <div class="button-group">
-            <button onclick="GraphUI.cancelInput()">取消</button>
-            <button onclick="GraphUI.confirmCreateNode()">确定</button>
+            <button data-action="cancelInput">取消</button>
+            <button data-action="confirmCreateNode">确定</button>
         </div>
     </div>
 
@@ -80,8 +80,8 @@
         <div>编辑节点标签</div>
         <input type="text" id="editNodeLabelText" placeholder="输入节点名称">
         <div class="button-group">
-            <button onclick="GraphUI.cancelInput()">取消</button>
-            <button onclick="GraphUI.confirmEditNodeLabel()">确定</button>
+            <button data-action="cancelInput">取消</button>
+            <button data-action="confirmEditNodeLabel">确定</button>
         </div>
     </div>
 
@@ -90,8 +90,8 @@
         <div>编辑边标签</div>
         <input type="text" id="editEdgeLabelText" placeholder="输入边标签">
         <div class="button-group">
-            <button onclick="GraphUI.cancelInput()">取消</button>
-            <button onclick="GraphUI.confirmEditEdgeLabel()">确定</button>
+            <button data-action="cancelInput">取消</button>
+            <button data-action="confirmEditEdgeLabel">确定</button>
         </div>
     </div>
 

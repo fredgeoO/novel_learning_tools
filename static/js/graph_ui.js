@@ -33,8 +33,27 @@ class GraphUI {
     init() {
         this.bindGlobalEvents();
         this.bindButtonEvents();
+        this.bindNetworkVisualEvents(); // 👈 新增
     }
+    bindNetworkVisualEvents() {
+        window.addEventListener('graphInitialized', (event) => {
+            const network = event.detail.network;
+            if (network) {
+                // 悬停高亮
+                network.on("hoverNode", (params) => {
+                    if (!this.graphCore.state.highlightedNode) { // 只有在未手动高亮时才启用悬停
+                        this.highlightNodeAndConnections(params.node);
+                    }
+                });
 
+                network.on("blurNode", () => {
+                    if (this.graphCore.state.highlightedNode) {
+                        this.resetHighlight();
+                    }
+                });
+            }
+        });
+    }
     // --- 全局事件绑定 ---
     bindGlobalEvents() {
         document.addEventListener('click', (e) => {
@@ -58,7 +77,72 @@ class GraphUI {
         });
     }
     // graph_ui.js - 在 GraphUI 类中添加
+    // --- 高亮功能（移到 GraphUI） ---
+    highlightNodeAndConnections(nodeId) {
+        if (!this.graphCore.network) return;
 
+        // 获取所有节点和边
+        const allNodes = this.graphCore.nodes.get({ returnType: "Object" });
+        const allEdges = this.graphCore.edges.get({ returnType: "Object" });
+
+        // 获取直接连接的节点和边
+        const connectedEdges = this.graphCore.network.getConnectedEdges(nodeId);
+        const connectedNodes = new Set();
+        connectedEdges.forEach(edgeId => {
+            const edge = allEdges[edgeId];
+            if (edge.from === nodeId) connectedNodes.add(edge.to);
+            if (edge.to === nodeId) connectedNodes.add(edge.from);
+        });
+        connectedNodes.add(nodeId); // 包括自己
+
+        // 更新节点透明度
+        const updatedNodes = [];
+        for (const id in allNodes) {
+            const node = allNodes[id];
+            updatedNodes.push({
+                id: id,
+                opacity: connectedNodes.has(id) ? 1.0 : 0.2
+            });
+        }
+
+        // 更新边透明度
+        const updatedEdges = [];
+        for (const id in allEdges) {
+            const edge = allEdges[id];
+            const isRelevant = edge.from === nodeId || edge.to === nodeId;
+            updatedEdges.push({
+                id: id,
+                opacity: isRelevant ? 1.0 : 0.1
+            });
+        }
+
+        // 批量更新视觉状态（不修改原始数据）
+        this.graphCore.nodes.update(updatedNodes);
+        this.graphCore.edges.update(updatedEdges);
+
+        // 更新状态
+        this.graphCore.state.highlightedNode = nodeId;
+
+        console.log(`UI: 高亮节点 ${nodeId} 及其 ${connectedNodes.size - 1} 个邻居`);
+    }
+
+    resetHighlight() {
+        if (!this.graphCore.state.highlightedNode) return;
+
+        // 恢复所有节点和边为完全不透明
+        const allNodeIds = this.graphCore.nodes.getIds();
+        const allEdgeIds = this.graphCore.edges.getIds();
+
+        const resetNodes = allNodeIds.map(id => ({ id, opacity: 1.0 }));
+        const resetEdges = allEdgeIds.map(id => ({ id, opacity: 1.0 }));
+
+        this.graphCore.nodes.update(resetNodes);
+        this.graphCore.edges.update(resetEdges);
+
+        this.graphCore.state.highlightedNode = null;
+
+        console.log("UI: 已重置高亮状态");
+    }
        updateMetadataDisplay() {
     const metadataContainer = document.getElementById('metadata-info');
     if (!metadataContainer) {
@@ -290,16 +374,16 @@ class GraphUI {
     handleClick(params) {
         this.logDebug(`🖱️ 点击事件 - 节点: ${params.nodes.length}, 边: ${params.edges.length}`);
 
-        // 处理高亮逻辑
+        // 处理高亮逻辑 —— ✅ 现在调用的是 GraphUI 自己的方法
         if (params.nodes.length > 0) {
             const clickedNodeId = params.nodes[0];
             if (this.graphCore.state.highlightedNode === clickedNodeId) {
-                this.graphCore.resetHighlight();
+                this.resetHighlight(); // ✅ GraphUI 的方法
             } else {
-                this.graphCore.highlightNodeAndConnections(clickedNodeId);
+                this.highlightNodeAndConnections(clickedNodeId); // ✅ GraphUI 的方法
             }
         } else if (params.edges.length === 0 && this.graphCore.state.highlightedNode) {
-            this.graphCore.resetHighlight();
+            this.resetHighlight(); // ✅
         }
 
         // 处理上下文菜单

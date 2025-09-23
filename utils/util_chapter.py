@@ -12,10 +12,18 @@ import utils.util_number # 假设它们在同一个包内
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
 
-NOVELS_BASE_DIR = "../novels"  # 与主程序保持一致
-REPORTS_BASE_DIR = "../reports/novels"  # 对应 reports/novels 结构
-PROMPT_ANALYZER_DIR = "../inputs/prompts/analyzer"
+# 获取当前脚本所在目录的绝对路径
+CURRENT_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# 向上退一级，得到项目根目录
+PROJECT_ROOT = os.path.dirname(CURRENT_SCRIPT_DIR)
+# 拼接 novels 路径
+NOVELS_BASE_DIR = os.path.join(PROJECT_ROOT, "novels")
+
+# 同理修正其他路径
+REPORTS_BASE_DIR = os.path.join(PROJECT_ROOT, "reports", "novels")
+PROMPT_ANALYZER_DIR = os.path.join(PROJECT_ROOT, "inputs", "prompts", "analyzer")
 METADATA_FILE_PATH = os.path.join(PROMPT_ANALYZER_DIR, "metadata.json")
+SCRAPED_DATA_DIR = os.path.join(PROJECT_ROOT, "scraped_data")
 
 # --- 新增：章节状态常量 (与主程序保持一致) ---
 CHAPTER_STATUS_PENDING = "pending"
@@ -27,8 +35,6 @@ CHAPTER_STATUS_FAILED = "failed"
 chapter_cache = {}
 report_cache = {}
 novel_cache  = {}
-
-SCRAPED_DATA_DIR = "../scraped_data"
 
 
 def find_novel_synopsis(novel_name):

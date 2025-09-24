@@ -1,4 +1,5 @@
 # qwen_chat_client.py
+import json
 import time
 import tempfile
 import html2text
@@ -583,25 +584,15 @@ class QwenChatClient:
 
             if isinstance(final_response, str) and final_response:
                 print("[获取回复] 开始后处理过滤...")
-                cleaned_response = filter_qwen_output(
-                    final_response,
-                    self.INTERMEDIATE_INDICATORS,
-                    self.THINKING_COMPLETED_INDICATOR
-                )
-                if cleaned_response:
-                    original_len = len(cleaned_response)
-                    cleaned_response = cleaned_response.strip("'").strip("'")
-                    removed_len = original_len - len(cleaned_response)
-                    if removed_len > 0:
-                        print(f"[获取回复] 移除了首尾的 {removed_len} 个单引号。")
+
+                # === 新增：提取第一个合法的 JSON 对象 ===
+                cleaned_response = self._extract_json_from_text(final_response)
+
                 print("[获取回复] 内容已获取并后处理完成。")
                 return cleaned_response
-            elif isinstance(final_response, str):
-                print("[获取回复] 获取到空的回复内容。")
-                return final_response
             else:
-                print("[获取回复] 警告：获取到非字符串类型的回复内容。")
-                return str(final_response) if final_response is not None else ""
+                # 兜底：确保所有路径都有返回值
+                return final_response if isinstance(final_response, str) else ""
         except TimeoutException as e:
             error_msg = f"等待回复元素超时: {e}"
             print(f"[获取回复错误] {error_msg}")
@@ -622,14 +613,39 @@ class QwenChatClient:
         self.send_message(message, enable_thinking, enable_search)
         return self.get_response(enable_thinking=enable_thinking)
 
-
+    def _extract_json_from_text(self, text: str) -> str:
+        """
+        从任意文本中提取第一个合法的 JSON 对象（最外层 {} 匹配）
+        """
+        # 使用栈匹配最外层花括号，确保提取完整 JSON
+        start = None
+        brace_count = 0
+        for i, char in enumerate(text):
+            if char == '{':
+                if brace_count == 0:
+                    start = i
+                brace_count += 1
+            elif char == '}':
+                if brace_count > 0:
+                    brace_count -= 1
+                    if brace_count == 0 and start is not None:
+                        candidate = text[start:i+1]
+                        try:
+                            # 验证是否为合法 JSON
+                            json.loads(candidate)
+                            return candidate
+                        except json.JSONDecodeError:
+                            # 不是合法 JSON，继续找下一个 {
+                            start = None
+        # 未找到合法 JSON，返回原文（让上层手动解析尝试）
+        return text
 # --- 示例用法 ---
 if __name__ == "__main__":
     client = None
     try:
         client = QwenChatClient(headless=True, max_wait_time=5, get_response_max_wait_time=180, start_minimized=True)
         client.load_chat_page()
-        user_message_1 = "请介绍苹果,用md格式输出。"
+        user_message_1 = "请介绍量子物理,用json格式输出。"
         response_1 = client.chat(user_message_1, True, False)
         print(f"[主程序] Qwen 回复 1:\n{response_1}")
         print("\n[主程序] --- 交互完成 ---")

@@ -1,231 +1,158 @@
 # test_llm.py
-import sys
+"""
+测试并对比不同 LLM 后端的输出结果
+- 默认 Ollama 配置
+- Selenium Qwen 服务 (http://localhost:5001)
+"""
+
+import logging
+from llm.llm_core import LLMInteractionManager
+from difflib import unified_diff
 import json
-import requests
 
-sys.path.append('..')  # 添加项目根目录到路径
+# 配置日志
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-from llm.qwen_chat_client import QwenChatClient  # 导入Qwen客户端
 
-
-class SeleniumLLMInteractionManager:
-    """使用Selenium驱动Qwen网页版的LLM交互管理器"""
-
-    def __init__(self):
-        # Selenium模式不需要这些参数，但为了接口兼容性保留
-        self.default_model = "qwen-web"
-        self.ollama_base_url = "http://localhost:5001"  # Selenium服务端口
-        self.remote_api_key = None
-        self.remote_base_url = None
-
-    def expand_node_knowledge(self, node: dict, prompt: str,
-                              context_graph: dict = None) -> dict:
-        """
-        使用Selenium驱动Qwen网页版扩展节点知识
-
-        :param node: 当前节点信息
-        :param prompt: 用户提示词
-        :param context_graph: 上下文图谱（可选）
-        :return: 生成的新节点和关系
-        """
-        try:
-            # 构建发送给Qwen的完整提示词
-            full_prompt = self._build_prompt(node, prompt, context_graph)
-
-            # 调用Selenium驱动的Qwen服务
-            response_text = self._call_qwen_selenium(full_prompt)
-
-            # 解析响应为结构化数据
-            result = self._parse_response(response_text)
-
-            return result
-
-        except Exception as e:
-            print(f"调用Selenium Qwen失败: {e}")
-            return {
-                "nodes": [],
-                "relationships": [],
-                "error": f"处理失败: {str(e)}"
-            }
-
-    def _build_prompt(self, node: dict, prompt: str, context_graph: dict = None) -> str:
-        """构建发送给Qwen的提示词"""
-
-        prompt_parts = []
-
-        # 添加系统指令
-        prompt_parts.append("你是一个专业的知识图谱构建专家。请根据要求生成知识图谱数据。")
-        prompt_parts.append("")
-
-        # 当前节点信息
-        prompt_parts.append("当前节点信息：")
-        prompt_parts.append(f"节点ID: {node.get('id', '')}")
-        prompt_parts.append(f"节点标签: {node.get('label', node.get('id', ''))}")
-        prompt_parts.append(f"节点类型: {node.get('type', '')}")
-        prompt_parts.append(f"节点属性: {json.dumps(node.get('properties', {}), ensure_ascii=False)}")
-        prompt_parts.append("")
-
-        # 用户要求
-        prompt_parts.append(f"用户要求: {prompt}")
-        prompt_parts.append("")
-
-        # 上下文图谱（如果有）
-        if context_graph:
-            prompt_parts.append("上下文图谱信息：")
-            prompt_parts.append(f"节点数: {len(context_graph.get('nodes', []))}")
-            prompt_parts.append(f"关系数: {len(context_graph.get('relationships', []))}")
-            prompt_parts.append("")
-
-        # 输出格式要求
-        prompt_parts.append("请严格按照以下JSON格式输出：")
-        prompt_parts.append("""{
-    "nodes": [
-        {
-            "id": "节点名称",
-            "type": "节点类型",
-            "properties": {
-                "content": "节点相关内容说明"
-            }
+def create_sample_data():
+    """创建测试用的节点和上下文图谱"""
+    sample_node = {
+        "id": "concept_001",
+        "label": "量子纠缠",
+        "type": "物理概念",
+        "properties": {
+            "definition": "两个或多个粒子在相互作用后，其量子状态必须依据整体系统描述，即使相隔遥远。",
+            "field": "量子力学",
+            "discovered_by": "爱因斯坦、波多尔斯基、罗森 (EPR悖论)"
         }
-    ],
-    "relationships": [
-        {
-            "source_id": "源节点ID",
-            "target_id": "目标节点ID",
-            "type": "关系类型",
-            "properties": {
-                "content": "关系说明内容"
-            }
-        }
-    ]
-}""")
-        prompt_parts.append("")
-        prompt_parts.append("重要：只输出JSON数据，不要包含任何其他文本或解释！")
-
-        return "\n".join(prompt_parts)
-
-    def _call_qwen_selenium(self, prompt: str) -> str:
-        """调用Selenium驱动的Qwen服务"""
-        try:
-            # 方法1: 直接调用Selenium服务的Ollama兼容API
-            url = "http://localhost:5001/api/generate"
-
-            payload = {
-                "model": "qwen-web",
-                "prompt": prompt,
-                "stream": False,
-                "enable_thinking": True,
-                "enable_search": True
-            }
-
-            response = requests.post(url, json=payload, timeout=300)
-            response.raise_for_status()
-
-            result = response.json()
-            return result.get('response', '')
-
-        except Exception as e:
-            print(f"通过API调用Selenium Qwen失败: {e}")
-            print("尝试直接使用QwenChatClient...")
-
-            # 方法2: 直接使用QwenChatClient（备用方案）
-            client = None
-            try:
-                client = QwenChatClient(
-                    headless=True,
-                    get_response_max_wait_time=400,
-                    max_wait_time=10,
-                    start_minimized=True
-                )
-                client.load_chat_page()
-                response_text = client.chat(prompt, enable_thinking=True, enable_search=True)
-                return response_text
-            finally:
-                if client:
-                    try:
-                        client.close()
-                    except:
-                        pass
-
-    def _parse_response(self, response_text: str) -> dict:
-        """解析Qwen响应为结构化数据"""
-        try:
-            # 清理响应文本
-            clean_response = response_text.strip()
-
-            # 尝试提取JSON部分
-            start = clean_response.find('{')
-            end = clean_response.rfind('}') + 1
-
-            if start != -1 and end > start:
-                json_str = clean_response[start:end]
-                json_data = json.loads(json_str)
-
-                # 确保必要字段存在
-                if 'nodes' not in json_data:
-                    json_data['nodes'] = []
-                if 'relationships' not in json_data:
-                    json_data['relationships'] = []
-                if 'error' not in json_data:
-                    json_data['error'] = None
-
-                return json_data
-            else:
-                raise ValueError("响应中未找到有效的JSON格式")
-
-        except Exception as e:
-            print(f"解析响应失败: {e}")
-            return {
-                "nodes": [],
-                "relationships": [],
-                "error": f"解析响应失败: {str(e)}"
-            }
-
-
-def test_llm_expansion():
-    """测试LLM节点扩展功能"""
-
-    # 创建Selenium LLM管理器实例
-    llm_manager = SeleniumLLMInteractionManager()
-
-    # 测试数据
-    test_node = {
-        "id": "中国",
-        "label": "中国",
-        "type": "国家",
-        "properties": {}
     }
 
-    test_prompt = "给一些有关这个国家的历史事件 3个就好，接着根据这3个节点继续发散思维（创建新节点）下去，展开。"
+    sample_context_graph = {
+        "nodes": [
+            {"id": "concept_002", "label": "量子力学", "type": "学科"},
+            {"id": "person_001", "label": "爱因斯坦", "type": "人物"}
+        ],
+        "relationships": [
+            {
+                "source_id": "concept_001",
+                "target_id": "concept_002",
+                "type": "属于",
+                "properties": {"content": "量子纠缠是量子力学中的现象"}
+            }
+        ]
+    }
+    return sample_node, sample_context_graph
 
-    print("=== 测试Selenium驱动的LLM节点扩展 ===")
-    print(f"输入节点: {test_node}")
-    print(f"提示词: {test_prompt}")
-    print("正在调用Selenium驱动的Qwen...")
 
-    try:
-        # 调用扩展功能
-        result = llm_manager.expand_node_knowledge(test_node, test_prompt)
+def run_single_test(llm_manager, node, context_graph, question_type="通用"):
+    """运行单个测试并返回结果对象"""
+    if question_type == "通用":
+        return llm_manager.generate_graph_from_question(node, "量子纠缠在量子计算中有什么作用？", context_graph)
+    elif question_type == "解释":
+        return llm_manager.explain_meaning(node, context_graph)
+    elif question_type == "理据":
+        return llm_manager.analyze_justification(node, context_graph)
+    elif question_type == "可能性":
+        return llm_manager.explore_possibility(node, context_graph)
+    else:
+        raise ValueError("未知问题类型")
 
-        print("\n=== LLM响应结果 ===")
-        print(f"错误信息: {result.get('error', 'None')}")
-        print(f"生成节点数: {len(result.get('nodes', []))}")
-        print(f"生成关系数: {len(result.get('relationships', []))}")
 
-        print("\n=== 生成的节点 ===")
-        for i, node in enumerate(result.get('nodes', [])):
-            print(f"{i + 1}. ID: {node.get('id', 'N/A')}, 类型: {node.get('type', 'N/A')}")
-            print(f"   内容: {node.get('properties', {}).get('content', 'N/A')}")
+def serialize_response(response) -> str:
+    """将 LLMGraphResponse 转为可比较的 JSON 字符串（用于 diff）"""
+    data = {
+        "nodes": [
+            {
+                "id": n.id,
+                "type": n.type,
+                "content": n.properties.get("content", "")[:200]  # 截断长文本
+            }
+            for n in response.nodes
+        ],
+        "relationships": [
+            {
+                "source": r.source_id,
+                "target": r.target_id,
+                "type": r.type,
+                "content": r.properties.get("content", "")[:200]
+            }
+            for r in response.relationships
+        ],
+        "error": response.error
+    }
+    return json.dumps(data, ensure_ascii=False, indent=2)
 
-        print("\n=== 生成的关系 ===")
-        for i, rel in enumerate(result.get('relationships', [])):
-            print(
-                f"{i + 1}. {rel.get('source_id', 'N/A')} --[{rel.get('type', 'N/A')}]--> {rel.get('target_id', 'N/A')}")
-            print(f"   内容: {rel.get('properties', {}).get('content', 'N/A')}")
 
-    except Exception as e:
-        print(f"测试失败: {e}")
+def compare_responses(resp1, resp2, name1="配置A", name2="配置B"):
+    """对比两个响应的结构化差异"""
+    str1 = serialize_response(resp1).splitlines(keepends=True)
+    str2 = serialize_response(resp2).splitlines(keepends=True)
+
+    diff = list(unified_diff(str1, str2, fromfile=name1, tofile=name2, lineterm=''))
+
+    if diff:
+        print("\n🔍 结果差异对比:")
+        print("-" * 60)
+        for line in diff:
+            print(line.rstrip())
+        print("-" * 60)
+    else:
+        print("✅ 两组结果完全一致！")
+
+
+def _print_summary(response, name="结果"):
+    """打印简要摘要"""
+    if response.error:
+        print(f"❌ [{name}] 错误: {response.error}")
+        return {"nodes": 0, "rels": 0, "error": True}
+    else:
+        nodes = len(response.nodes)
+        rels = len(response.relationships)
+        print(f"✅ [{name}] 节点数: {nodes}, 关系数: {rels}")
+        return {"nodes": nodes, "rels": rels, "error": False}
+
+
+def main():
+    sample_node, sample_context_graph = create_sample_data()
+
+    # === 初始化两个 LLM 实例 ===
+    default_llm = LLMInteractionManager()
+    qwen_llm = LLMInteractionManager(
+        default_model="qwen-web",
+        ollama_base_url="http://localhost:5001"
+    )
+
+    test_types = ["通用", "解释", "理据", "可能性"]
+
+    for test_type in test_types:
+        print("\n" + "=" * 90)
+        print(f"🧪 正在测试: {test_type}")
+        print("=" * 90)
+
+        # 获取两个后端的结果
+        try:
+            resp_default = run_single_test(default_llm, sample_node, sample_context_graph, test_type)
+        except Exception as e:
+            resp_default = type('obj', (), {'error': f"异常: {e}", 'nodes': [], 'relationships': []})()
+
+        try:
+            resp_qwen = run_single_test(qwen_llm, sample_node, sample_context_graph, test_type)
+        except Exception as e:
+            resp_qwen = type('obj', (), {'error': f"异常: {e}", 'nodes': [], 'relationships': []})()
+
+        # 打印摘要
+        summary1 = _print_summary(resp_default, "Ollama 默认")
+        summary2 = _print_summary(resp_qwen, "Selenium Qwen")
+
+        # 如果两者都成功，进行详细对比
+        if not summary1["error"] and not summary2["error"]:
+            compare_responses(resp_default, resp_qwen, "Ollama 默认", "Selenium Qwen")
+        else:
+            print("⚠️  跳过详细对比（至少一个结果出错）")
+
+    print("\n🏁 所有对比测试完成！")
 
 
 if __name__ == "__main__":
-    test_llm_expansion()
+    main()

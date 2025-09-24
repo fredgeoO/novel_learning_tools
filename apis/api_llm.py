@@ -1,11 +1,11 @@
-# api_llm.py
 """
 LLM API模块 - 提供LLM交互的RESTful接口
 """
 
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request
 import logging
 from llm.llm_core import llm_manager  # 从核心模块导入管理器
+from utils.util_responses import success_response, error_response  # ✅ 导入统一响应工具
 
 logger = logging.getLogger(__name__)
 
@@ -46,55 +46,31 @@ def expand_node():
         context_graph = data.get('context_graph')
 
         if not node or not prompt:
-            return jsonify({
-                "error": "缺少必要的参数：node或prompt",
-                "success": False
-            }), 400
+            return error_response("缺少必要的参数：node或prompt", 400)
 
         # 调用LLM处理
         result = llm_manager.expand_node_knowledge(node, prompt, context_graph)
 
-        # 返回结果
-        response_data = result.dict()
-        response_data["success"] = True
-        return jsonify(response_data)
+        # 返回成功响应
+        return success_response(data=result.dict(), message="节点知识扩展成功")
 
     except Exception as e:
         logger.error(f"处理节点扩展请求时出错: {e}")
-        return jsonify({
-            "error": f"处理请求时出错: {str(e)}",
-            "nodes": [],
-            "relationships": [],
-            "success": False
-        }), 500
+        return error_response(
+            message=f"处理请求时出错: {str(e)}",
+            status_code=500,
+            details={
+                "nodes": [],
+                "relationships": []
+            }
+        )
 
 
 @llm_bp.route('/health', methods=['GET'])
 def health_check():
     """健康检查"""
-    return jsonify({
+    health_data = {
         "status": "healthy",
-        "default_model": llm_manager.default_model,
-        "success": True
-    })
-
-
-# 响应辅助函数
-def success_response(data=None, message="操作成功"):
-    return jsonify({
-        "success": True,
-        "message": message,
-        "data": data
-    })
-
-
-def error_response(message, status_code=400, details=None):
-    response = {
-        "success": False,
-        "error": {
-            "code": status_code,
-            "message": message,
-            "details": details
-        }
+        "default_model": llm_manager.default_model
     }
-    return jsonify(response), status_code
+    return success_response(data=health_data, message="服务健康")

@@ -1,4 +1,4 @@
-# util_responses.py
+# utils/util_responses.py
 from flask import jsonify
 
 def success_response(data=None, message="操作成功"):

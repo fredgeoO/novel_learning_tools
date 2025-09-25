@@ -239,3 +239,5 @@ class LLMInteractionManager:
                 relationships=[],
                 error=f"解析响应失败: {str(e)}"
             )
+
+

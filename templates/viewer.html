@@ -3,8 +3,428 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>📖 知识图谱查看器</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 小说叙事分析浏览器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/viewer.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <!-- 其余内容保持不变 -->
+
+    <div class="main-container">
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <div>
+                <label>🏷️ 选择分类</label>
+                <select id="categorySelector">
+                    <option value="全部">全部</option>
+                </select>
+
+                <label>📚 选择小说</label>
+                <select id="novelSelector" disabled>
+                    <option value="">请选择分类</option>
+                </select>
+
+                <label>📄 选择章节</label>
+                <select id="chapterSelector" disabled>
+                    <option value="">请选择小说</option>
+                </select>
+
+                <label>📊 选择分析报告</label>
+                <select id="reportSelector" disabled>
+                    <option value="">请选择章节</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" id="onlyWithReports"> 🔍 仅显示有分析的内容
+                </label>
+            </div>
+
+            <div class="management-section">
+                <h3>⚠️ 管理工具</h3>
+                <button id="deleteReportBtn" disabled>🗑️ 删除当前报告</button>
+                <div id="deleteConfirm">
+                    <p>⚠️ 确定要删除当前选中的报告吗？此操作不可逆。</p>
+                    <button id="confirmDelete" class="btn-danger">✅ 确认删除</button>
+                    <button id="cancelDelete">❌ 取消</button>
+                </div>
+                <div id="deleteStatus"></div>
+            </div>
+
+            <div class="history-section">
+                <h3>🕒 浏览历史</h3>
+                <div id="historyList">
+                    <p>加载中...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主内容区 - 改为左右布局 -->
+        <div class="main-content">
+            <!-- 左右并排的两个面板 -->
+            <div class="content-split">
+                <div class="panel left-panel" id="chapterContent">
+                    <h2>📖 原文章节</h2>
+                    <p>请在左侧选择一本小说和一个章节开始阅读。</p>
+                </div>
+                <div class="panel right-panel" id="analysisContent">
+                    <h2>🤖 AI 分析报告</h2>
+                    <p>选择章节后，AI 分析结果将在此显示。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局状态
+        const state = {
+            novel: null,
+            chapter: null,
+            report: null
+        };
+
+        // 工具函数
+        async function apiGet(url) {
+            const res = await fetch(url);
+            if (!res.ok) throw new Error(`API 错误: ${res.status}`);
+            return await res.json();
+        }
+
+        async function apiDelete(url) {
+            const res = await fetch(url, { method: 'DELETE' });
+            if (!res.ok) throw new Error(`API 错误: ${res.status}`);
+            return await res.json();
+        }
+
+        function updateUrl() {
+            const { novel, chapter, report } = state;
+            if (novel && chapter && report) {
+                const url = new URL(window.location);
+                url.searchParams.set('novel', novel);
+                url.searchParams.set('chapter', chapter.replace('.txt', ''));
+                url.searchParams.set('report', report.replace('.txt', ''));
+                window.history.replaceState({}, '', url);
+            }
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadCategories();
+            await loadHistory();
+
+            // 从 URL 参数加载
+            const urlParams = new URLSearchParams(window.location.search);
+            const novelParam = urlParams.get('novel');
+            const chapterParam = urlParams.get('chapter');
+            const reportParam = urlParams.get('report');
+
+            if (novelParam && chapterParam && reportParam) {
+                // 延迟加载以确保下拉框已填充
+                setTimeout(async () => {
+                    await loadNovels('全部');
+                    const novelSel = document.getElementById('novelSelector');
+                    if ([...novelSel.options].some(opt => opt.value === novelParam)) {
+                        novelSel.value = novelParam;
+                        await onNovelChange();
+                        const chapterSel = document.getElementById('chapterSelector');
+                        const fullChapter = chapterParam + '.txt';
+                        if ([...chapterSel.options].some(opt => opt.value === fullChapter)) {
+                            chapterSel.value = fullChapter;
+                            await onChapterChange();
+                            const reportSel = document.getElementById('reportSelector');
+                            const fullReport = reportParam + '.txt';
+                            if ([...reportSel.options].some(opt => opt.value === fullReport)) {
+                                reportSel.value = fullReport;
+                                await onReportChange();
+                            }
+                        }
+                    }
+                }, 800);
+            }
+
+            // 绑定事件
+            document.getElementById('categorySelector').addEventListener('change', onCategoryChange);
+            document.getElementById('onlyWithReports').addEventListener('change', onCategoryChange);
+            document.getElementById('novelSelector').addEventListener('change', onNovelChange);
+            document.getElementById('chapterSelector').addEventListener('change', onChapterChange);
+            document.getElementById('reportSelector').addEventListener('change', onReportChange);
+            document.getElementById('deleteReportBtn').addEventListener('click', showDeleteConfirm);
+            document.getElementById('cancelDelete').addEventListener('click', hideDeleteConfirm);
+            document.getElementById('confirmDelete').addEventListener('click', deleteReport);
+        });
+
+        // API 加载函数
+        async function loadCategories() {
+            try {
+                const data = await apiGet('/api/novels/categories');
+                const sel = document.getElementById('categorySelector');
+                data.categories.forEach(cat => {
+                    const opt = document.createElement('option');
+                    opt.value = cat;
+                    opt.textContent = cat;
+                    sel.appendChild(opt);
+                });
+            } catch (e) {
+                console.error('加载分类失败:', e);
+            }
+        }
+
+        async function loadNovels(category = '全部', onlyWithReports = false) {
+            try {
+                const query = new URLSearchParams({
+                    category: category,
+                    only_with_reports: onlyWithReports
+                });
+                const data = await apiGet(`/api/novels/list?${query}`);
+                const sel = document.getElementById('novelSelector');
+                sel.innerHTML = '';
+                data.novels.forEach(novel => {
+                    const opt = document.createElement('option');
+                    opt.value = novel;
+                    opt.textContent = novel;
+                    sel.appendChild(opt);
+                });
+                sel.disabled = data.novels.length === 0;
+            } catch (e) {
+                console.error('加载小说失败:', e);
+            }
+        }
+
+        async function onCategoryChange() {
+            const category = document.getElementById('categorySelector').value;
+            const onlyWithReports = document.getElementById('onlyWithReports').checked;
+            await loadNovels(category, onlyWithReports);
+        }
+
+        async function onNovelChange() {
+            const novel = document.getElementById('novelSelector').value;
+            if (!novel) return;
+            state.novel = novel;
+
+            const onlyWithReports = document.getElementById('onlyWithReports').checked;
+            try {
+                const data = await apiGet(`/api/novels/${encodeURIComponent(novel)}/chapters?only_with_reports=${onlyWithReports}`);
+                const sel = document.getElementById('chapterSelector');
+                sel.innerHTML = '';
+                data.chapters.forEach(chap => {
+                    const opt = document.createElement('option');
+                    opt.value = chap;
+                    opt.textContent = chap.replace('.txt', '');
+                    sel.appendChild(opt);
+                });
+                sel.disabled = data.chapters.length === 0;
+                if (data.chapters.length > 0) {
+                    sel.value = data.chapters[0];
+                    state.chapter = data.chapters[0];
+                    onChapterChange();
+                }
+            } catch (e) {
+                console.error('加载章节失败:', e);
+            }
+        }
+
+        async function onChapterChange() {
+            const novel = document.getElementById('novelSelector').value;
+            const chapter = document.getElementById('chapterSelector').value;
+            if (!novel || !chapter) return;
+            state.chapter = chapter;
+
+            try {
+                const reportsData = await apiGet(`/api/novels/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/reports`);
+                const sel = document.getElementById('reportSelector');
+                sel.innerHTML = '';
+                reportsData.reports.forEach(rep => {
+                    const opt = document.createElement('option');
+                    opt.value = rep;
+                    opt.textContent = rep.replace('.txt', '');
+                    sel.appendChild(opt);
+                });
+                sel.disabled = reportsData.reports.length === 0;
+                document.getElementById('deleteReportBtn').disabled = reportsData.reports.length === 0;
+
+                if (reportsData.reports.length > 0) {
+                    sel.value = reportsData.reports[0];
+                    state.report = reportsData.reports[0];
+                    onReportChange();
+                }
+
+                // === 修改这里：替换最后两行 ===
+                const contentData = await apiGet(`/api/novels/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/content`);
+
+                // 使用新的显示函数（支持 Markdown 和空行处理）
+                displayChapterContent(contentData.chapter_content || '无内容');
+                displayAnalysisContent(contentData.report_content || '暂无分析报告');
+
+                updateUrl();
+            } catch (e) {
+                console.error('加载内容失败:', e);
+            }
+        }
+
+        async function onReportChange() {
+            const novel = document.getElementById('novelSelector').value;
+            const chapter = document.getElementById('chapterSelector').value;
+            const report = document.getElementById('reportSelector').value;
+            if (!novel || !chapter || !report) return;
+            state.report = report;
+
+            try {
+                const data = await apiGet(`/api/novels/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/report/${encodeURIComponent(report)}`);
+
+                displayAnalysisContent(data.content || '报告内容为空');
+
+                updateUrl();
+            } catch (e) {
+                console.error('加载报告失败:', e);
+            }
+        }
+
+        // 删除逻辑
+        function showDeleteConfirm() {
+            document.getElementById('deleteConfirm').style.display = 'block';
+            document.getElementById('deleteStatus').textContent = '';
+        }
+
+        function hideDeleteConfirm() {
+            document.getElementById('deleteConfirm').style.display = 'none';
+        }
+
+        async function deleteReport() {
+            const { novel, chapter, report } = state;
+            if (!novel || !chapter || !report) return;
+
+            try {
+                await apiDelete(`/api/novels/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/report/${encodeURIComponent(report)}`);
+                document.getElementById('deleteStatus').innerHTML = '<span class="success">✅ 报告已删除。</span>';
+                // 重新加载章节（会刷新报告列表）
+                onChapterChange();
+            } catch (e) {
+                document.getElementById('deleteStatus').innerHTML = `<span class="error">❌ 删除失败: ${e.message}</span>`;
+            }
+            hideDeleteConfirm();
+        }
+
+        // 历史记录
+        async function loadHistory() {
+            try {
+                const data = await apiGet('/api/novels/history');
+                const container = document.getElementById('historyList');
+                if (data.history && data.history.length > 0) {
+                    container.innerHTML = '';
+                    data.history.forEach((item, index) => {
+                        const btn = document.createElement('button');
+                        btn.className = 'history-button';
+                        btn.textContent = item.display;
+                        btn.onclick = () => loadHistoryItem(index);
+                        container.appendChild(btn);
+                    });
+                } else {
+                    container.innerHTML = '<p>暂无浏览历史</p>';
+                }
+            } catch (e) {
+                console.error('加载历史失败:', e);
+                document.getElementById('historyList').innerHTML = '<p>加载失败</p>';
+            }
+        }
+
+        async function loadHistoryItem(index) {
+            try {
+                const item = await apiGet(`/api/novels/history/${index}`);
+                document.getElementById('novelSelector').value = item.novel;
+                onNovelChange().then(() => {
+                    const chapterSel = document.getElementById('chapterSelector');
+                    if ([...chapterSel.options].some(opt => opt.value === item.chapter)) {
+                        chapterSel.value = item.chapter;
+                        onChapterChange();
+                    }
+                });
+            } catch (e) {
+                alert('加载历史项失败: ' + e.message);
+            }
+        }
+         // === 新增：文本预处理函数 ===
+        function preprocessText(text) {
+            if (!text) return '';
+
+            // 1. 移除开头和结尾的空白
+            let processed = text.trim();
+
+            // 2. 将多个连续空行压缩为单个空行
+            // 匹配两个或更多连续的换行符
+            processed = processed.replace(/\n{3,}/g, '\n\n');
+
+            return processed;
+        }
+
+        // === 新增：安全的 Markdown 渲染函数 ===
+        function renderMarkdown(text) {
+            if (!text) return '';
+
+            // 预处理文本
+            const processedText = preprocessText(text);
+
+            // 配置 marked.js
+            marked.setOptions({
+                breaks: true, // 将单个换行符转换为 <br>
+                gfm: true,    // 启用 GitHub 风格的 Markdown
+                sanitize: false, // 不要自动转义 HTML（假设内容可信）
+                renderer: new marked.Renderer()
+            });
+
+            try {
+                return marked.parse(processedText);
+            } catch (e) {
+                console.warn('Markdown 渲染失败，回退到纯文本:', e);
+                // 如果 Markdown 解析失败，返回预处理后的纯文本
+                return `<pre class="raw-text-content">${escapeHtml(processedText)}</pre>`;
+            }
+        }
+
+        // === 新增：HTML 转义函数 ===
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // === 修改：内容显示函数 ===
+        function displayChapterContent(content) {
+            const container = document.getElementById('chapterContent');
+
+            // 检查内容是否是 Markdown（包含 #, *, - 等）
+            if (isMarkdownContent(content)) {
+                container.innerHTML = `<div class="markdown-content">${renderMarkdown(content)}</div>`;
+            } else {
+                // 预处理纯文本（压缩空行）
+                const processed = preprocessText(content);
+                container.innerHTML = `<pre class="raw-text-content">${escapeHtml(processed)}</pre>`;
+            }
+        }
+
+        function displayAnalysisContent(content) {
+            const container = document.getElementById('analysisContent');
+
+            // AI 分析报告通常是 Markdown，直接渲染
+            container.innerHTML = `<div class="markdown-content">${renderMarkdown(content)}</div>`;
+        }
+        // === 新增：检测是否为 Markdown 内容 ===
+        function isMarkdownContent(text) {
+            if (!text) return false;
+
+            // 检查常见的 Markdown 语法
+            const markdownPatterns = [
+                /^#{1,6}\s/,           // 标题
+                /^\s*[\-\*\+]\s/,      // 无序列表
+                /^\s*\d+\.\s/,         // 有序列表
+                /`[^`]*`/,             // 行内代码
+                /\*\*.*?\*\*/,         // 粗体
+                /\*.*?\*/,             // 斜体
+                /\[.*?\]\(.*?\)/,      // 链接
+                /^>/,                  // 引用
+                /\|.*?\|/              // 表格
+            ];
+
+            return markdownPatterns.some(pattern => pattern.test(text));
+        }
+    </script>
+</body>
+</html>

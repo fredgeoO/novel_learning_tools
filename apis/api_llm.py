@@ -1,10 +1,11 @@
+# apis\api_llm.py
 """
 LLM API模块 - 提供LLM交互的RESTful接口
 """
 
 from flask import Blueprint, request
 import logging
-from llm.llm_core import llm_manager  # 从核心模块导入管理器
+from llm.llm_core import LLMInteractionManager  # 从核心模块导入管理器
 from utils.util_responses import success_response, error_response  # ✅ 导入统一响应工具
 
 logger = logging.getLogger(__name__)
@@ -12,6 +13,7 @@ logger = logging.getLogger(__name__)
 # 创建蓝图
 llm_bp = Blueprint('llm', __name__, url_prefix='/api/llm')
 
+llm_manager = LLMInteractionManager()
 
 def init_llm_api(app):
     """初始化LLM API"""
@@ -47,6 +49,7 @@ def expand_node():
 
         if not node or not prompt:
             return error_response("缺少必要的参数：node或prompt", 400)
+
 
         # 调用LLM处理
         result = llm_manager.expand_node_knowledge(node, prompt, context_graph)

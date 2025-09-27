@@ -13,12 +13,14 @@ from utils import util_number
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
 
-# 获取当前脚本所在目录的绝对路径
-CURRENT_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-# 向上退一级，得到项目根目录
-PROJECT_ROOT = os.path.dirname(CURRENT_SCRIPT_DIR)
-# 拼接 novels 路径
+# 获取当前文件所在目录
+UTIL_DIR = os.path.dirname(os.path.abspath(__file__))
+# 项目根目录 = utils/ 的父目录
+PROJECT_ROOT = os.path.dirname(UTIL_DIR)
+
+# 定义绝对路径
 NOVELS_BASE_DIR = os.path.join(PROJECT_ROOT, "novels")
+BROWSE_HISTORY_FILE = os.path.join(PROJECT_ROOT, "browse_history.json")
 
 # 同理修正其他路径
 REPORTS_BASE_DIR = os.path.join(PROJECT_ROOT, "reports", "novels")
@@ -26,7 +28,9 @@ PROMPT_ANALYZER_DIR = os.path.join(PROJECT_ROOT, "inputs", "prompts", "analyzer"
 METADATA_FILE_PATH = os.path.join(PROMPT_ANALYZER_DIR, "metadata.json")
 SCRAPED_DATA_DIR = os.path.join(PROJECT_ROOT, "scraped_data")
 
-# --- 新增：章节状态常量 (与主程序保持一致) ---
+print(f"[util_chapter] Novels dir: {NOVELS_BASE_DIR}")  # 调试用
+
+
 CHAPTER_STATUS_PENDING = "pending"
 CHAPTER_STATUS_DOWNLOADED = "downloaded"
 CHAPTER_STATUS_FAILED = "failed"

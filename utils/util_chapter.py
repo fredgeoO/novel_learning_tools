@@ -6,6 +6,7 @@ import json
 import logging
 
 import utils.util_number # 假设它们在同一个包内
+from utils import util_number
 
 # --- 配置 ---
 # 日志配置 (如果主程序已有，可以考虑移除或简化)

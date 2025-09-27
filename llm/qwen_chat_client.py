@@ -80,7 +80,7 @@ class QwenChatClient:
     THINKING_COMPLETED_INDICATOR = "思考与搜索已完成"
     INTERMEDIATE_INDICATORS = ["正在思考与搜索", "tokens 预算"]
     DEFAULT_MAX_WAIT_TIME = 5
-    DEFAULT_GET_RESPONSE_MAX_WAIT_TIME = 120
+    DEFAULT_GET_RESPONSE_MAX_WAIT_TIME = 300
     DEFAULT_START_MINIMIZED = False
     DEFAULT_HEADLESS = False
     INITIAL_PAGE_LOAD_TIMEOUT = 30
@@ -661,13 +661,12 @@ if __name__ == "__main__":
         client = QwenChatClient(headless=True, max_wait_time=5, get_response_max_wait_time=180, start_minimized=True)
         client.load_chat_page()
         user_message_1 = "请介绍量子物理,用json格式输出。"
-        response_1 = client.chat(user_message_1, True, False)
-        # print(f"[主程序] Qwen 回复 1:\n{response_1}")
-        # print("\n[主程序] --- 交互完成 ---")
+        response_1 = client.chat(user_message_1, False, False)
+        print(f"[主程序] Qwen 回复 1:\n{response_1}")
     except Exception as e:
-        # print(f"[主程序错误] 运行出错: {e}")
+        print(f"[主程序错误] 运行出错: {e}")
         import traceback
-        # traceback.print_exc()
+        traceback.print_exc()
     finally:
         if client:
             # print("[主程序] 正在关闭浏览器...")

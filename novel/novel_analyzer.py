@@ -16,7 +16,7 @@ REPORTS_BASE_DIR = "../reports/novels"
 OLLAMA_MODEL_NAME = config.DEFAULT_MODEL
 
 QWEN_HEADLESS = True
-QWEN_MAX_WAIT_TIME = 5
+QWEN_MAX_WAIT_TIME = 10
 QWEN_GET_RESPONSE_MAX_WAIT_TIME = 1000
 QWEN_START_MINIMIZED = True
 
@@ -39,7 +39,7 @@ def ensure_directory_exists(dir_path):
     if not os.path.exists(dir_path):
         try:
             os.makedirs(dir_path)
-            tqdm.write(f"已创建目录: {dir_path}")
+            # tqdm.write(f"已创建目录: {dir_path}")
         except Exception as e:
             tqdm.write(f"创建目录 '{dir_path}' 时出错: {e}")
             return False
@@ -67,14 +67,12 @@ async def call_qwen_web_model(prompt: str) -> str:
             )
             client.load_chat_page()
             #tqdm.write("[Qwen Web] 浏览器启动并加载页面完成。")
-            response = client.chat(prompt, True, False)
+            response_qwen = client.chat(prompt, True, False)
             #tqdm.write("[Qwen Web] 消息发送并接收回复完成。")
-            return response
+            return response_qwen
         except Exception as e:
             error_msg = f"[Qwen Web 错误] 调用模型时出错: {e}"
-            #tqdm.write(error_msg)
-            import traceback
-            #tqdm.write(traceback.format_exc())
+            tqdm.write(error_msg)
             return error_msg
         finally:
             if client and client.driver:
@@ -118,7 +116,7 @@ async def analyze_chapter(novel_name: str, chapter_filename: str, prompt_name: s
         return False
 
     full_prompt = prompt_template.replace("[粘贴文本内容]", chapter_content)
-    # tqdm.write(f"[准备] 指令已生成，总长度: {len(full_prompt)} 字符")
+    #tqdm.write(f"[准备] 指令已生成，总长度: {len(full_prompt)} 字符")
 
     ai_response = ""
     if model_type.lower() == "ollama":
@@ -130,7 +128,7 @@ async def analyze_chapter(novel_name: str, chapter_filename: str, prompt_name: s
         return False
 
     if not ai_response or "错误" in ai_response:
-        tqdm.write("错误: 未能从 AI 模型获取有效回复。")
+        # tqdm.write("错误: 未能从 AI 模型获取有效回复。")
         return False
 
     filtered_response = filter_think_tags(ai_response)
@@ -183,7 +181,7 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         tqdm.write("警告: 未从月票榜文件中解析出任何小说名称。")
         return
 
-    tqdm.write(f"选取的前 {len(selected_novels)} 本小说: {selected_novels}")
+    #tqdm.write(f"选取的前 {len(selected_novels)} 本小说: {selected_novels}")
 
     if not os.path.exists(PROMPTS_BASE_DIR):
         tqdm.write(f"警告: 提示词目录不存在: {PROMPTS_BASE_DIR}")
@@ -231,7 +229,8 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         )
         exists = os.path.exists(report_path)
         if exists:
-            tqdm.write(f"[跳过] 报告已存在: {report_path}")
+            pass
+            # tqdm.write(f"[跳过] 报告已存在: {report_path}")
         return exists
 
     async def run_single_task(task):
@@ -241,7 +240,7 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         tasks=tasks_to_run,
         task_func=run_single_task,
         skip_if_exists=should_skip,
-        max_concurrent=8,
+        max_concurrent=16,
         min_interval=5.0,
         rate_limit_key="qwen_web"
     )

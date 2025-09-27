@@ -78,7 +78,7 @@ def load_novels_simple(
         # 对文档使用默认编码（无 prompt）
         doc_embeddings = embed_model.encode(
             documents,
-            batch_size=1,  # 根据 GPU 调整
+            batch_size=8,  # 根据 GPU 调整
             show_progress_bar=True
         )
 

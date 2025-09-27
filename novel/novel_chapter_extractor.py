@@ -39,6 +39,7 @@ import html
 from urllib.parse import urljoin, urlparse
 from typing import Tuple, Optional, Dict, Any, List
 
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -831,7 +832,7 @@ def main():
 
         # 5. 执行预检查 (使用工具模块中的函数)
         # 注意：chapter_utils.should_process_novel_by_name 返回布尔值
-        need_processing = utils_chapter.should_process_novel_by_name(
+        need_processing = util_chapter.should_process_novel_by_name(
             bookname=bookname,
             save_base_dir=SAVE_BASE_DIR
         )

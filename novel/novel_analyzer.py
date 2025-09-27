@@ -1,9 +1,11 @@
 import os
 import asyncio
 import re
+
 from llm.qwen_chat_client import QwenChatClient
 from utils.util_chapter import get_chapter_list
-from test.local_llm_client import OllamaClient  # 导入新的本地LLM客户端
+from utils.util_async_executor import run_limited_async_tasks  # ← 新增导入
+import config
 
 # --- 配置 ---
 NOVELS_BASE_DIR = "../novels"
@@ -11,13 +13,15 @@ PROMPTS_BASE_DIR = "../inputs/prompts/analyzer"
 REPORTS_BASE_DIR = "../reports/novels"
 
 # --- AI 模型配置 ---
-OLLAMA_MODEL_NAME = "qwen3:30b"
+OLLAMA_MODEL_NAME = config.DEFAULT_MODEL
 
 # Qwen Web 配置
 QWEN_HEADLESS = True
 QWEN_MAX_WAIT_TIME = 5
 QWEN_GET_RESPONSE_MAX_WAIT_TIME = 1000
 QWEN_START_MINIMIZED = True
+
+# 注意：已移除 _last_qwen_request_time、_qwen_rate_limit_lock 等全局变量！
 
 def read_file_content(file_path, description="文件"):
     """安全地读取文件内容"""
@@ -43,57 +47,51 @@ def ensure_directory_exists(dir_path):
     return True
 
 def filter_think_tags(text: str) -> str:
-    """过滤掉 <think>...</think> 标签及其内容"""
+    """过滤掉  <think>...<think>  标签及其内容"""
     filtered_text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
     filtered_text = re.sub(r'\n\s*\n', '\n\n', filtered_text).strip()
     return filtered_text
 
 # --- AI 调用函数 ---
 
-async def call_ollama_model(prompt: str) -> str:
-    """调用本地 Ollama 模型（使用新的客户端）"""
-    try:
-        print(f"[Ollama] 正在调用模型 '{OLLAMA_MODEL_NAME}'...")
-        # 创建客户端实例
-        client = OllamaClient(model_name=OLLAMA_MODEL_NAME, remove_think_tags=False)
-        # 同步调用（在async函数中可以直接调用）
-        response = client.generate(prompt)
-        print(f"[Ollama] 模型调用成功。")
-        return response
-    except Exception as e:
-        error_msg = f"[Ollama 错误] 调用模型时出错: {e}"
-        print(error_msg)
-        return error_msg
 
 async def call_qwen_web_model(prompt: str) -> str:
-    """调用网页版 Qwen 模型"""
-    client = None
-    try:
-        print("[Qwen Web] 正在启动浏览器...")
-        client = QwenChatClient(
-            headless=QWEN_HEADLESS,
-            max_wait_time=QWEN_MAX_WAIT_TIME,
-            get_response_max_wait_time=QWEN_GET_RESPONSE_MAX_WAIT_TIME,
-            start_minimized=QWEN_START_MINIMIZED
-        )
-        client.load_chat_page()
-        print("[Qwen Web] 浏览器启动并加载页面完成。")
+    """调用网页版 Qwen 模型（放入线程池）"""
+    # 注意：限速逻辑已移至 util_async_executor，此处只负责执行
+    def _sync_call():
+        client = None
+        try:
+            print("[Qwen Web] 正在启动浏览器...")
+            client = QwenChatClient(
+                headless=QWEN_HEADLESS,
+                max_wait_time=QWEN_MAX_WAIT_TIME,
+                get_response_max_wait_time=QWEN_GET_RESPONSE_MAX_WAIT_TIME,
+                start_minimized=QWEN_START_MINIMIZED
+            )
+            client.load_chat_page()
+            print("[Qwen Web] 浏览器启动并加载页面完成。")
+            response = client.chat(prompt, True, False)
+            print("[Qwen Web] 消息发送并接收回复完成。")
+            return response
+        except Exception as e:
+            error_msg = f"[Qwen Web 错误] 调用模型时出错: {e}"
+            print(error_msg)
+            import traceback
+            traceback.print_exc()
+            return error_msg
+        finally:
+            if client and client.driver:
+                print("[Qwen Web] 正在关闭浏览器...")
+                client.close()
+                print("[Qwen Web] 浏览器已关闭。")
 
-        print("[Qwen Web] 正在发送消息...")
-        response = client.chat(prompt, True, False)
-        print("[Qwen Web] 消息发送并接收回复完成。")
+    try:
+        response = await asyncio.to_thread(_sync_call)
         return response
     except Exception as e:
-        error_msg = f"[Qwen Web 错误] 调用模型时出错: {e}"
+        error_msg = f"[Qwen Web 异步包装错误]: {e}"
         print(error_msg)
-        import traceback
-        traceback.print_exc()
         return error_msg
-    finally:
-        if client and client.driver:
-            print("[Qwen Web] 正在关闭浏览器...")
-            client.close()
-            print("[Qwen Web] 浏览器已关闭。")
 
 # --- 主分析函数 ---
 
@@ -136,7 +134,7 @@ async def analyze_chapter(novel_name: str, chapter_filename: str, prompt_name: s
     # 5. 调用 AI 模型
     ai_response = ""
     if model_type.lower() == "ollama":
-        ai_response = await call_ollama_model(full_prompt)
+        pass
     elif model_type.lower() == "qwen_web":
         ai_response = await call_qwen_web_model(full_prompt)
     else:
@@ -243,72 +241,45 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
 
     print(f"共生成 {len(tasks_to_run)} 个分析任务。")
 
-    # 4. 异步执行所有任务
-    semaphore = asyncio.Semaphore(5)
+    # === 使用通用执行器 ===
+    def should_skip(task):
+        novel = task["novel_name"]
+        chapter = task["chapter_filename"]
+        prompt = task["prompt_name"]
+        report_path = os.path.join(
+            REPORTS_BASE_DIR,
+            novel,
+            os.path.splitext(chapter)[0],
+            f"{prompt}.txt"
+        )
+        exists = os.path.exists(report_path)
+        if exists:
+            print(f"[跳过] 报告已存在: {report_path}")
+        return exists
 
-    async def limited_analyze(task):
-        async with semaphore:
-            await analyze_chapter(**task)
+    async def run_single_task(task):
+        return await analyze_chapter(**task)
 
-    coroutines = [limited_analyze(task) for task in tasks_to_run]
-    await asyncio.gather(*coroutines)
+    # 执行！
+    results = await run_limited_async_tasks(
+        tasks=tasks_to_run,
+        task_func=run_single_task,
+        skip_if_exists=should_skip,
+        max_concurrent=8,          # 根据机器调整（64GB 内存可设 8~12）
+        min_interval=5.0,          # 每 5 秒最多 1 个真实请求（你原设为 5）
+        rate_limit_key="qwen_web"  # 限速命名空间
+    )
 
-    print("\n--- 所有大规模分析任务执行完毕 ---")
+    success_count = sum(results)
+    print(f"\n--- 所有大规模分析任务执行完毕: {success_count}/{len(tasks_to_run)} 成功 ---")
 
 # --- 示例用法 / 批量处理入口 ---
 async def main():
-    """主函数，可以在这里定义要分析的任务列表"""
-
-    # --- 单个任务示例 ---
-    # success = await analyze_chapter(
-    #     novel_name="苟在初圣魔门当人材",
-    #     chapter_filename="第一章 百世书.txt",
-    #     prompt_name="会话与内心独白分析", # 不需要 .txt
-    #     model_type="qwen_web" # 使用网页版 Qwen
-    # )
-    # if success:
-    #     print("分析任务成功完成。")
-    # else:
-    #     print("分析任务失败。")
-
-    # --- 批量任务示例 ---
-    # tasks = [
-    #     {
-    #         "novel_name": "苟在初圣魔门当人材",
-    #         "chapter_filename": "第一章 百世书.txt",
-    #         "prompt_name": "会话与内心独白分析",
-    #         "model_type": "qwen_web" # <-- 改为使用 qwen_web
-    #     },
-    #     {
-    #         "novel_name": "苟在初圣魔门当人材",
-    #         "chapter_filename": "第一章 百世书.txt",
-    #         "prompt_name": "叙事功能单元分析法",
-    #         "model_type": "qwen_web" # <-- 改为使用 qwen_web
-    #     },
-    #     # 可以添加更多任务，混合使用不同模型
-    #     # {
-    #     #     "novel_name": "苟在初圣魔门当人材",
-    #     #     "chapter_filename": "第一章 百世书.txt",
-    #     #     "prompt_name": "全景叙事分析",
-    #     #     "model_type": "ollama" # <-- 也可以使用 ollama
-    #     # },
-    # ]
-
-    # for i, task in enumerate(tasks):
-    #     print(f"\n>>> 执行任务 {i+1}/{len(tasks)} <<<")
-    #     await analyze_chapter(**task)
-    #     # 可选：在任务之间添加短暂延迟，避免过于频繁的请求
-    #     # await asyncio.sleep(2) # 例如，等待2秒
-
     await process_top_novels_and_chapters(
-        model_type="qwen_web",  # 可改为 "ollama"
-        top_n=100,  # 处理前100本小说
-        chapters_per_novel=100  # 每本处理100章
+        model_type="qwen_web",
+        top_n=100,
+        chapters_per_novel=100
     )
 
-    print("\n--- 所有分析任务执行完毕 ---")
-
-
 if __name__ == "__main__":
-    # 运行异步主函数
     asyncio.run(main())

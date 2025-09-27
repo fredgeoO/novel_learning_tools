@@ -1,4 +1,6 @@
 # qwen_chat_client.py
+import atexit
+import glob
 import json
 import time
 import tempfile
@@ -18,7 +20,21 @@ from selenium.common.exceptions import (
     StaleElementReferenceException,
     ElementClickInterceptedException,
 )
+import uuid
 
+
+def cleanup_temp_profiles():
+    temp_dir = tempfile.gettempdir()
+    pattern = os.path.join(temp_dir, "qwen_selenium_profile_*")
+    for folder in glob.glob(pattern):
+        try:
+            shutil.rmtree(folder)
+            print(f"[清理] 已删除临时目录: {folder}")
+        except Exception as e:
+            print(f"[清理警告] 无法删除 {folder}: {e}")
+
+
+atexit.register(cleanup_temp_profiles)
 
 def filter_qwen_output(text: str, intermediate_indicators, thinking_completed_indicator) -> str:
     """过滤掉 Qwen 输出中的中间状态信息"""
@@ -96,35 +112,21 @@ class QwenChatClient:
         self._create_driver()
 
     def _setup_user_data_dir(self):
-        """设置用户数据目录，基于时间检查清理旧目录。"""
+        """为每个实例创建唯一的用户数据目录"""
         system_temp_dir = tempfile.gettempdir()
-        fixed_user_data_dir_path = os.path.join(system_temp_dir, self.FIXED_TEMP_DIR_NAME)
-
-        if os.path.exists(fixed_user_data_dir_path):
-            try:
-                dir_mtime = os.path.getmtime(fixed_user_data_dir_path)
-                current_time = time.time()
-                age_seconds = current_time - dir_mtime
-
-                if age_seconds > self.PROFILE_MAX_AGE_SECONDS:
-                    shutil.rmtree(fixed_user_data_dir_path)
-                    print(
-                        f"[初始化] 已删除超时的用户数据目录 ({age_seconds:.0f}秒 > {self.PROFILE_MAX_AGE_SECONDS}秒): {fixed_user_data_dir_path}")
-                else:
-                    print(
-                        f"[初始化] 用户数据目录较新 ({age_seconds:.0f}秒 <= {self.PROFILE_MAX_AGE_SECONDS}秒)，保留: {fixed_user_data_dir_path}")
-            except Exception as e:
-                print(f"[初始化警告] 检查或删除遗留用户数据目录失败 {fixed_user_data_dir_path}: {e}")
+        unique_dir_name = f"qwen_selenium_profile_{uuid.uuid4().hex[:8]}"
+        user_data_dir_path = os.path.join(system_temp_dir, unique_dir_name)
 
         try:
-            os.makedirs(fixed_user_data_dir_path, exist_ok=True)
-            print(f"[初始化] 已准备用户数据目录: {fixed_user_data_dir_path}")
+            os.makedirs(user_data_dir_path, exist_ok=True)
+            print(f"[初始化] 已创建独立用户数据目录: {user_data_dir_path}")
         except Exception as e:
-            print(f"[初始化错误] 准备用户数据目录失败 {fixed_user_data_dir_path}: {e}")
+            print(f"[初始化错误] 创建用户数据目录失败: {e}")
             raise
 
-        self.user_data_dir = fixed_user_data_dir_path
-        return fixed_user_data_dir_path
+        self.user_data_dir = user_data_dir_path
+        return user_data_dir_path
+
 
     def _create_driver(self):
         """创建并配置 WebDriver 实例。"""

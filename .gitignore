@@ -3,10 +3,11 @@
 /db/
 *.error_navigation
 /cache/*.*
+/test/test/*.*
+/novels.zip
+/browse_history.json
 /test/test/chroma_qwen3/99e29d31-f236-4c5c-91d4-0bb5a51789dc/data_level0.bin
 /test/test/chroma_qwen3/99e29d31-f236-4c5c-91d4-0bb5a51789dc/header.bin
 /test/test/chroma_qwen3/99e29d31-f236-4c5c-91d4-0bb5a51789dc/length.bin
 /test/test/chroma_qwen3/99e29d31-f236-4c5c-91d4-0bb5a51789dc/link_lists.bin
 /test/test/chroma_qwen3/chroma.sqlite3
-/novels.zip
-/browse_history.json

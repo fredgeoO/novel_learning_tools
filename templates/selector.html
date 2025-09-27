@@ -309,16 +309,15 @@
         },
 
         selectGraph(cacheKey) {
-            const url = `/?cache_key=${encodeURIComponent(cacheKey)}`;
-
-            if (window.self !== window.top) {
-                try {
-                    window.top.location.href = url;
-                } catch (e) {
-                    window.location.href = url;
-                }
+            // 尝试通知父页面切换到图谱视图并加载 cacheKey
+            if (window.parent !== window) {
+                window.parent.postMessage({
+                    type: 'SELECT_GRAPH',
+                    cacheKey: cacheKey
+                }, '*'); // 生产环境应指定 origin
             } else {
-                window.location.href = url;
+                // 独立页面 fallback
+                window.location.href = `/?cache_key=${encodeURIComponent(cacheKey)}`;
             }
         },
 

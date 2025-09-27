@@ -100,134 +100,87 @@
         </div>
     </div>
 
-    <script>
-      // 全局变量
-const cacheKey = '{{ cache_key }}';
+<script>
+// 全局变量：从模板获取初始 cache_key（用于首次加载）
+const initialCacheKey = '{{ cache_key }}';
 
-// Tab 状态管理
+// Tab 状态管理（现在可以移除 selectorLoaded，因为用 iframe）
 const tabState = {
-    selectorLoaded: false,
     generatorLoaded: false
 };
 
 // Tab 切换功能
 document.getElementById('mainTabs').addEventListener('click', function(e) {
     e.preventDefault();
+    if (e.target.classList.contains('nav-link')) {
+        const tabName = e.target.getAttribute('data-tab');
 
-            if (e.target.classList.contains('nav-link')) {
-                const tabName = e.target.getAttribute('data-tab');
-
-                // 更新活动状态
-                document.querySelectorAll('#mainTabs .nav-link').forEach(link => {
-                    link.classList.remove('active');
-                });
-                e.target.classList.add('active');
-
-                // 切换内容面板
-                document.querySelectorAll('.tab-pane').forEach(panel => {
-                    panel.classList.remove('active');
-                });
-                document.getElementById(`${tabName}-tab`).classList.add('active');
-
-                // 根据需要加载内容（但不重复加载）
-                switch(tabName) {
-                    case 'selector':
-                        if (!tabState.selectorLoaded) {
-                            loadSelectorContent();
-                            tabState.selectorLoaded = true;
-                        }
-                        break;
-                    case 'generator':
-                        if (!tabState.generatorLoaded) {
-                            loadGeneratorContent();
-                            tabState.generatorLoaded = true;
-                        }
-                        break;
-                    case 'graph':
-                        // 图谱视图已经在页面中，无需重载
-                        break;
-                }
-            }
+        // 更新活动状态
+        document.querySelectorAll('#mainTabs .nav-link').forEach(link => {
+            link.classList.remove('active');
         });
+        e.target.classList.add('active');
 
-        // 加载选择器内容
-        async function loadSelectorContent() {
-            const selectorContent = document.getElementById('selector-content');
-
-            // 如果已经加载过内容（不是初始的加载中状态），直接返回
-            if (selectorContent.querySelector('.main-layout')) {
-                return;
-            }
-
-            // 显示加载状态
-            selectorContent.innerHTML = `
-                <div class="text-center" style="padding: 50px;">
-                    <div class="spinner" role="status"></div>
-                    <p class="mt-2">正在加载选择器...</p>
-                </div>
-            `;
-
-            try {
-                const response = await fetch('/selector');
-                const html = await response.text();
-                selectorContent.innerHTML = html;
-
-                // 执行加载后的初始化脚本
-                const scripts = selectorContent.querySelectorAll('script');
-                scripts.forEach(script => {
-                    if (script.src) {
-                        const newScript = document.createElement('script');
-                        newScript.src = script.src;
-                        document.head.appendChild(newScript);
-                    } else {
-                        // 使用立即执行函数避免作用域问题
-                        (function() {
-                            eval(script.innerHTML);
-                        })();
-                    }
-                });
-            } catch (error) {
-                selectorContent.innerHTML =
-                    `<div class="alert alert-danger">加载失败: ${error.message}</div>`;
-            }
-        }
-
-        async function loadGraphContent() {
-            const iframe = document.getElementById('pyvis-iframe');
-            if (iframe) {
-                iframe.src = `/editor?cache_key=${encodeURIComponent(cacheKey)}`;
-
-                // 通知 iframe 更新 cacheKey
-                iframe.onload = function() {
-                    try {
-                        iframe.contentWindow.postMessage({
-                            type: 'updateCacheKey',
-                            cacheKey: cacheKey
-                        }, '*');
-                    } catch (e) {
-                        console.log('无法向 iframe 发送消息:', e);
-                    }
-                };
-            }
-        }
-
-        // 因为 iframe 的 src 在 HTML 中已经设置好，会自动加载
-        async function loadGeneratorContent() {
-            // 无需通过 AJAX 加载，iframe 会自动处理
-            console.log("Generator tab activated. Content is loaded via iframe.");
-        }
-
-        // 事件监听
-        document.getElementById('refresh-btn').addEventListener('click', () => {
-            loadGraphContent();
-
+        // 切换内容面板
+        document.querySelectorAll('.tab-pane').forEach(panel => {
+            panel.classList.remove('active');
         });
+        document.getElementById(`${tabName}-tab`).classList.add('active');
+    }
+});
 
-        // 初始化
-        document.addEventListener('DOMContentLoaded', () => {
-            loadGraphContent();
+// 加载图谱内容
+function loadGraphContent(cacheKey) {
+    const iframe = document.getElementById('pyvis-iframe');
+    if (iframe) {
+        iframe.src = `/editor?cache_key=${encodeURIComponent(cacheKey || '')}`;
+    }
+}
 
+// 初始化：处理 URL 参数
+function initFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlCacheKey = urlParams.get('cache_key');
+
+    // 优先使用 URL 中的 cache_key，否则用模板传入的
+    const cacheKeyToUse = urlCacheKey || initialCacheKey;
+
+    if (cacheKeyToUse) {
+        loadGraphContent(cacheKeyToUse);
+        // 注意：我们不强制切换 Tab，因为用户可能想停留在其他 Tab
+        // 但图谱 iframe 会正确加载
+    }
+}
+
+// 监听来自 selector iframe 的消息
+window.addEventListener('message', function(event) {
+    if (event.data.type === 'SELECT_GRAPH') {
+        const cacheKey = event.data.cacheKey;
+
+        // 1. 切换到 "graph" Tab
+        document.querySelectorAll('#mainTabs .nav-link').forEach(link => {
+            link.classList.remove('active');
         });
-    </script>
+        document.querySelector('#mainTabs .nav-link[data-tab="graph"]').classList.add('active');
+
+        document.querySelectorAll('.tab-pane').forEach(panel => {
+            panel.classList.remove('active');
+        });
+        document.getElementById('graph-tab').classList.add('active');
+
+        // 2. 更新图谱
+        loadGraphContent(cacheKey);
+
+        // 3. 更新 URL
+        const newUrl = `${window.location.origin}/?cache_key=${encodeURIComponent(cacheKey)}`;
+        window.history.pushState({}, '', newUrl);
+    }
+});
+
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+    initFromURL();
+});
+</script>
 </body>
 </html>

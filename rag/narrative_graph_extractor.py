@@ -32,6 +32,10 @@ from rag.graph_optimizer import GraphOptimizer
 
 # --- 配置日志 ---
 logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 
 # --- 默认配置 (使用从 config.py 导入的值) ---
 # 删除原来的 DEFAULT_* = ... 定义，改用导入的值并可以（可选地）重命名以避免混淆
@@ -211,6 +215,8 @@ class NarrativeGraphExtractor:
         if verbose:
             chunk_tokens = self.estimate_tokens(chunk_text)
             logger.info(f"  -> 处理块 {chunk_index + 1}/{total_chunks} (估算 Token 数: ~{chunk_tokens})")
+            preview = chunk_text[:100].replace('\n', ' ')
+            logger.debug(f"  -> 块 {chunk_index + 1} 内容预览: '{preview}...'")
 
         try:
             chunk_graph_docs = graph_transformer.convert_to_graph_documents([single_doc])
@@ -239,7 +245,9 @@ class NarrativeGraphExtractor:
 
         except Exception as e:
             if verbose:
-                logger.error(f"      -> 块 {chunk_index + 1} 转换出错: {e}")
+                logger.error(f"      -> 块 {chunk_index + 1} 转换出错: {e}", exc_info=True)
+            else:
+                logger.error(f"块 {chunk_index + 1} 转换失败", exc_info=True)
 
         return result_graph_doc, chunk_nodes_count, chunk_relationships_count, global_mention_counter
 
@@ -536,6 +544,7 @@ class NarrativeGraphExtractor:
         执行完整的提取流程：缓存处理 -> Schema 逻辑 -> 核心提取 -> 后处理 -> 缓存保存。
         """
         start_time = time.time()
+        cache_key = get_cache_key_from_config(config)
 
         # --- 重构点 1: 使用 GraphCacheManager 加载缓存 ---
         cached_result_tuple = GraphCacheManager.load_from_config(config)
@@ -583,7 +592,7 @@ class NarrativeGraphExtractor:
 
         except Exception as e:
             logger.error(f"提取过程中发生错误: {e}", exc_info=True)
-            return None, time.time() - start_time, 2, []
+            return None, time.time() - start_time, 2, [], cache_key
         finally:
             self._restore_schema(original_allowed_nodes, original_allowed_relationships)
     # ==============================
@@ -713,14 +722,14 @@ class NarrativeGraphExtractor:
                 sub_schemas = split_schema(auto_schema, self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS)
                 if config.verbose:
                     logger.info(f" -> Schema 已拆分为 {len(sub_schemas)} 个子 Schema。")
-                    logger.info(f" -> Schema: {sub_schemas}")
+                    logger.debug(f" -> Schema: {sub_schemas}")
                 all_sub_results = []
                 total_duration_core = 0.0
                 status = 2  # 默认全部失败
 
                 for i, sub_schema in enumerate(sub_schemas):
                     if config.verbose:
-                        logger.info(f" -> 处理子 Schema {i + 1}/{len(sub_schemas)}: {sub_schema['name']}")
+                        logger.info(f" -> 开始处理子 Schema {i + 1}/{len(sub_schemas)}: {sub_schema['name']}")
                     self.allowed_nodes = sub_schema["elements"]
                     self.allowed_relationships = sub_schema["relationships"]
 
@@ -739,6 +748,9 @@ class NarrativeGraphExtractor:
                     logger.info(f" -> 正在合并 {len(all_sub_results)} 个子 Schema 的提取结果...")
                 final_result = self._merge_graph_documents(all_sub_results)
                 # 注意：优化移到 _post_process_result
+
+                if config.verbose:
+                    logger.info(f" -> 子 Schema 合并完成。")
 
                 return {
                     'final_result': final_result,
@@ -824,90 +836,58 @@ class NarrativeGraphExtractor:
 
     def _extract_internal_core_logic(self, config: ExtractionConfig, is_sub_extraction: bool = False) -> Tuple[
         Any, float, int, List[Any]]:
-        """
-        核心提取逻辑：分割 -> 处理 -> 合并。
-
-        Args:
-            config (ExtractionConfig): 提取配置对象。
-            is_sub_extraction (bool): 是否为子 Schema 提取。
-
-        Returns:
-            Tuple[Any, float, int, List[Any]]: 提取结果、核心耗时、状态、块结果列表。
-        """
         start_time_core = time.time()
-        # total_nodes = 0  # 这些计数器可能在其他地方有用，但在此简化
-        # total_relationships = 0
-
-        # 1. 分割文本
         split_docs = self._split_text(config.text, config.chunk_size, config.chunk_overlap)
+        graph_transformer = self._create_graph_transformer(config)
 
-        # 2. 初始化 GraphTransformer
-        graph_transformer = self._create_graph_transformer(
-            config)  # 注意：这里可能需要重构 _create_graph_transformer 以减少 config 依赖
+        # 初始化用于跨块标准化的状态
+        node_id_map: Dict[str, str] = {}
+        normalized_nodes: Dict[str, SerializableNode] = {}
+        global_mention_counter = 0
 
-        # 3. 处理每个块并记录顺序
-        all_chunk_results = []
+        all_serializable_results = []
         successful_chunks = 0
-        # global_mention_counter = 0 # 如果需要全局计数
-        # node_id_map = {} # 如果需要节点映射
-        # normalized_nodes = {} # 如果需要节点标准化
+        total_chunks = len(split_docs)
 
         for i, doc_chunk in enumerate(split_docs):
             single_doc = Document(page_content=doc_chunk.page_content)
             try:
-                # graph_document = self._process_single_chunk(single_doc, config) # 如果 _process_single_chunk 也被重构
-                # 原有逻辑:
-                graph_document = graph_transformer.convert_to_graph_documents([single_doc])[0]
-                # ... (后续处理逻辑，如节点合并等，如果在 _process_single_chunk 外部) ...
-                all_chunk_results.append(graph_document)
-                successful_chunks += 1
-                # ... (更新计数器等) ...
+                result_graph_doc, _, _, global_mention_counter = self._process_single_chunk(
+                    chunk_index=i,
+                    total_chunks=total_chunks,
+                    single_doc=single_doc,
+                    graph_transformer=graph_transformer,
+                    node_id_map=node_id_map,
+                    normalized_nodes=normalized_nodes,
+                    global_mention_counter=global_mention_counter,
+                    verbose=config.verbose
+                )
+                if result_graph_doc is not None:
+                    all_serializable_results.append(result_graph_doc)
+                    successful_chunks += 1
+                else:
+                    # 可选：添加空图文档以保持块顺序
+                    all_serializable_results.append(SerializableGraphDocument(nodes=[], relationships=[]))
             except Exception as e:
-                logger.error(f"处理块 {i + 1}/{len(split_docs)} 时出错: {e}")
-                # 可以选择跳过错误块或添加空结果
-                all_chunk_results.append(SerializableGraphDocument(nodes=[], relationships=[]))
+                logger.error(f"处理块 {i + 1}/{total_chunks} 时出错: {e}", exc_info=True)
+                all_serializable_results.append(SerializableGraphDocument(nodes=[], relationships=[]))
 
-        # 4. 合并结果
-        final_result = None
-        if config.merge_results and all_chunk_results:
-            if config.verbose:
-                logger.info(f" -> 正在合并 {len(all_chunk_results)} 个块的结果...")
-            final_result = self._merge_graph_documents(all_chunk_results)  # <- 在这里合并
-
-            # 注意：全局优化已移至 _extract_main 中
-
-            final_nodes_count = len(final_result.nodes) if final_result else 0
-            final_relationships_count = len(final_result.relationships) if final_result else 0
-            if config.verbose:
-                logger.info(f" -> 合并完成。最终节点数: {final_nodes_count}, 最终关系数: {final_relationships_count}")
+        # 合并结果
+        if config.merge_results and all_serializable_results:
+            final_result = self._merge_graph_documents(all_serializable_results)
         else:
-            # ... (处理未合并的情况) ...
-            final_result = all_chunk_results[0] if all_chunk_results else SerializableGraphDocument(nodes=[],
-                                                                                                    relationships=[])
-
-            # 注意：全局优化已移至 _extract_main 中
-
-            final_nodes_count = len(final_result.nodes)
-            final_relationships_count = len(final_result.relationships)
-            if config.verbose:
-                logger.info(
-                    f" -> 未启用合并或无结果。最终节点数: {final_nodes_count}, 最终关系数: {final_relationships_count}")
+            # 如果不合并，返回第一个（或拼接？根据需求）
+            final_result = all_serializable_results[0] if all_serializable_results else SerializableGraphDocument(
+                nodes=[], relationships=[])
 
         end_time_core = time.time()
         total_duration_core = end_time_core - start_time_core
+        status = 0 if successful_chunks == total_chunks else (1 if successful_chunks > 0 else 2)
 
-        # status: 0=全部成功, 1=部分成功, 2=全部失败
-        status = 0 if successful_chunks == len(split_docs) else (1 if successful_chunks > 0 else 2)
-        if config.verbose and not is_sub_extraction:  # 避免子提取时重复打印
-            logger.info(f" -> 所有块处理完成! "
-                        f"成功处理 {successful_chunks}/{len(split_docs)} 个块。")
-            # f"总计节点数: {total_nodes}, 总计关系数: {total_relationships}。") # 如果需要总计数
+        if config.verbose and not is_sub_extraction:
+            logger.info(f" -> 所有块处理完成! 成功处理 {successful_chunks}/{total_chunks} 个块。")
 
-        return final_result, total_duration_core, status, all_chunk_results
-
-        # ==============================
-        # 简化后的公共接口方法
-        # ==============================
+        return final_result, total_duration_core, status, all_serializable_results
 
     def extract(
             self,
@@ -980,4 +960,3 @@ class NarrativeGraphExtractor:
         使用配置对象进行提取的核心方法
         """
         return self._extract_main(config)
-

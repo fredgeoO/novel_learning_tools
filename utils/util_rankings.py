@@ -2,24 +2,27 @@
 import os
 import re
 
-# --- 获取绝对路径 ---
-# 获取当前文件所在目录
-UTIL_DIR = os.path.dirname(os.path.abspath(__file__))
-# 项目根目录 = utils/ 的父目录
-PROJECT_ROOT = os.path.dirname(UTIL_DIR)
+# --- 使用 config.py 的路径配置 ---
+# 从 config.py 获取项目根目录
+try:
+    from config import PROJECT_ROOT
+except ImportError:
+    # 如果 config.py 不在项目根目录，回退到原来的逻辑
+    UTIL_DIR = os.path.dirname(os.path.abspath(__file__))
+    PROJECT_ROOT = os.path.dirname(UTIL_DIR)
 
-# ✅ 使用绝对路径
+# ✅ 使用 config.py 中定义的项目根目录
 from utils.util_chapter import NOVELS_BASE_DIR
 RANKING_FILE = os.path.join(PROJECT_ROOT, "scraped_data", "所有分类月票榜汇总.txt")
 
-print(f"[util_rankings] Novels dir: {NOVELS_BASE_DIR}")
-print(f"[util_rankings] Ranking file: {RANKING_FILE}")
 
 
 # --- 原有逻辑保持不变 ---
 def parse_ranking_file(filepath=RANKING_FILE):
     if not os.path.exists(filepath):
         print(f"警告: 榜单文件 '{filepath}' 不存在。")
+        print(f"当前工作目录: {os.getcwd()}")
+        print(f"绝对路径检查: 文件存在 = {os.path.exists(filepath)}")
         return {}
     rankings = {}
     current_category = None
@@ -63,6 +66,8 @@ def get_novel_list(filter_by_category=None, only_with_reports=False):
     # ✅ 现在 NOVELS_BASE_DIR 是绝对路径，安全！
     if not os.path.exists(NOVELS_BASE_DIR):
         print(f"警告: 小说根目录 '{NOVELS_BASE_DIR}' 不存在。")
+        print(f"当前工作目录: {os.getcwd()}")
+        print(f"绝对路径检查: 目录存在 = {os.path.exists(NOVELS_BASE_DIR)}")
         return []
 
     try:

@@ -7,7 +7,7 @@ from typing import Any, Dict, Optional, List
 from datetime import datetime
 from rag.config_models import ExtractionConfig
 
-# --- 修改 1: 从 inputs/rag/config.py 导入 CACHE_DIR ---
+# --- 修改 1: 从 rag/config.py 导入 CACHE_DIR ---
 
 from config import CACHE_DIR
 
@@ -259,7 +259,7 @@ def get_cache_stats() -> Dict[str, Any]:
     total_size = 0
     for key, entry in cache_entries.items():
         # 计算数据文件大小
-        data_path = os.path.join(CACHE_DIR, f"{key}.json")
+        data_path = os.path.join(GRAPH_CACHE_DIR, f"{key}.json")
         if os.path.exists(data_path):
             total_size += os.path.getsize(data_path)
 

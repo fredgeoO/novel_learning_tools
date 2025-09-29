@@ -32,6 +32,7 @@ from config import (
 # --- 导入缓存管理器 ---
 from rag.cache_manager import load_cache, GRAPH_CACHE_DIR  # 用于加载测试数据
 
+# print("GRAPH_CACHE_DIR: " + GRAPH_CACHE_DIR)
 # --- 配置日志 ---
 logger = logging.getLogger(__name__)
 
@@ -99,7 +100,7 @@ class GraphOptimizer:
         use_local_effectively = local if local is not None else not self.use_remote_api
 
         if not use_local_effectively and self.use_remote_api:
-            logger.info(f"Using remote OpenAI-compatible API: {self.remote_model_name} at {self.remote_base_url}")
+            # logger.info(f"Using remote OpenAI-compatible API: {self.remote_model_name} at {self.remote_base_url}")
             return ChatOpenAI(
                 model=self.remote_model_name,
                 openai_api_key=self.remote_api_key,
@@ -921,7 +922,7 @@ if __name__ == "__main__":
     )
 
     logger.info("GraphOptimizer 初始化完成。")
-    cache_hash = "8a9a86304720a55a06192babf8da86b044ad877ee9ff309926c331e900fb8dc7"
+    cache_hash = "f8add0022114fd2185b53a08d50885f6b78fcf783a2fff354a83353a48c1ea2c"
 
     logger.info("=== 开始测试 GraphOptimizer.optimize_graph_document (迭代版本) ===")
 

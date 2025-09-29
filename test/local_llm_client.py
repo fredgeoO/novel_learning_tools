@@ -5,8 +5,8 @@ import math
 
 
 class OllamaClient:
-    def __init__(self, base_url="http://localhost:11434", model_name="qwen3:30b",
-                 remove_think_tags=True, context_length=32768):
+    def __init__(self, base_url="http://localhost:11434", model_name="qwen3:30b-a3b-instruct-2507-q4_K_M",
+                 remove_think_tags=True, context_length=16384):
         self.base_url = base_url.rstrip('/')
         self.model_name = model_name
         self.remove_think_tags = remove_think_tags

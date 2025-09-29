@@ -12,6 +12,7 @@ from config import *
 logging.basicConfig(level=logging.INFO) # 或 logging.DEBUG
 logger = logging.getLogger(__name__)
 
+from utils import utils_chapter
 class TestGroupRelatedNodesIntegration(unittest.TestCase):
 
 

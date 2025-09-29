@@ -30,6 +30,20 @@ novels_bp = Blueprint('novels', __name__, url_prefix='/api/novels')
 
 def init_novels_api(app):
     """初始化小说 API 蓝图"""
+    # 从 config.py 获取路径配置
+    try:
+        from config import PROJECT_ROOT, BROWSE_HISTORY_FILE, REPORTS_BASE_DIR
+        app.config['PROJECT_ROOT'] = PROJECT_ROOT
+        app.config['BROWSE_HISTORY_FILE'] = BROWSE_HISTORY_FILE
+        app.config['REPORTS_BASE_DIR'] = REPORTS_BASE_DIR
+    except ImportError as e:
+        logger.error(f"无法导入 config.py: {e}")
+        # 如果 config.py 不可用，使用默认路径（与 util_chapter 保持一致）
+        PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        app.config['PROJECT_ROOT'] = PROJECT_ROOT
+        app.config['BROWSE_HISTORY_FILE'] = os.path.join(PROJECT_ROOT, "browse_history.json")
+        app.config['REPORTS_BASE_DIR'] = os.path.join(PROJECT_ROOT, "reports", "novels")
+
     app.register_blueprint(novels_bp)
     logger.info("小说 API 蓝图已注册")
 
@@ -85,6 +99,8 @@ def api_get_categories():
         return jsonify({"categories": categories})
     except Exception as e:
         logger.error(f"获取分类失败: {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "获取分类失败"}), 500
 
 
@@ -102,6 +118,8 @@ def api_get_novels():
         return jsonify({"novels": novels})
     except Exception as e:
         logger.error(f"获取小说列表失败: {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "获取小说列表失败"}), 500
 
 
@@ -117,6 +135,8 @@ def api_get_chapters(novel_name):
         return jsonify({"chapters": chapters})
     except Exception as e:
         logger.error(f"获取章节列表失败 (小说: {novel_name}): {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "获取章节列表失败"}), 500
 
 
@@ -128,6 +148,8 @@ def api_get_reports(novel_name, chapter):
         return jsonify({"reports": reports})
     except Exception as e:
         logger.error(f"获取报告列表失败 ({novel_name}/{chapter}): {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "获取报告列表失败"}), 500
 
 
@@ -143,6 +165,8 @@ def api_get_content(novel_name, chapter):
         })
     except Exception as e:
         logger.error(f"加载内容失败 ({novel_name}/{chapter}): {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "加载内容失败"}), 500
 
 
@@ -154,6 +178,8 @@ def api_load_report(novel_name, chapter, report_name):
         return jsonify({"content": content})
     except Exception as e:
         logger.error(f"加载报告失败 ({novel_name}/{chapter}/{report_name}): {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "加载报告失败"}), 500
 
 
@@ -171,6 +197,8 @@ def api_delete_report(novel_name, chapter, report_name):
             return jsonify({"error": "报告不存在"}), 404
     except Exception as e:
         logger.error(f"删除报告失败 ({novel_name}/{chapter}/{report_name}): {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "删除报告失败"}), 500
 
 
@@ -182,6 +210,8 @@ def api_get_history():
         return jsonify({"history": history})
     except Exception as e:
         logger.error(f"获取浏览历史失败: {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "获取历史失败"}), 500
 
 
@@ -196,4 +226,6 @@ def api_get_history_item(index):
             return jsonify({"error": "历史索引无效"}), 400
     except Exception as e:
         logger.error(f"获取历史项失败 (index={index}): {e}")
+        import traceback
+        traceback.print_exc()
         return jsonify({"error": "获取历史项失败"}), 500

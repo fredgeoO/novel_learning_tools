@@ -118,3 +118,75 @@
             width: 100%;
             height: 100%;
         }
+        /* Tab 导航栏样式 */
+.nav-tabs {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--card-bg); /* ✅ 深色背景 */
+    border-bottom: 1px solid var(--card-border); /* ✅ 与边框一致 */
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: var(--text-secondary); /* ✅ 次级文字色 */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: var(--text-primary); /* ✅ 悬停时用主文字色 */
+    background-color: #2d2d2d;  /* ✅ 悬停背景 */
+}
+
+.nav-link.active {
+    color: var(--primary);       /* ✅ 激活时用主色调 */
+    border-bottom: 2px solid var(--primary); /* ✅ 下划线用主色调 */
+    background-color: rgba(100, 181, 246, 0.1); /* ✅ 激活背景微蓝 */
+}
+
+/* Tab 内容面板样式 */
+.tab-content {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    background-color: var(--dark-bg); /* ✅ 与全局背景一致 */
+}
+
+.tab-pane {
+    display: none;
+    flex: 1;
+    overflow: hidden;
+}
+
+.tab-pane.active {
+    display: flex; /* ✅ 使用 flex 以适应 iframe 布局 */
+}
+
+/* Tab 容器 */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--dark-bg); /* ✅ 与全局背景一致 */
+    color: var(--text-primary);       /* ✅ 与全局文字一致 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header 区域 */
+.header {
+    flex-shrink: 0;
+    background-color: var(--card-bg);    /* ✅ 与卡片背景一致 */
+    padding: 0px;
+    border-bottom: 1px solid var(--card-border); /* ✅ 与边框一致 */
+}

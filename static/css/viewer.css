@@ -315,3 +315,76 @@ body {
     padding-bottom: 8px;
     border-bottom: 1px solid var(--card-border);
 }
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    padding: 0 24px; /* 与面板内边距对齐 */
+}
+
+.nav-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    background-color: #2d2d2d; /* 与 select / button 一致 */
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+    min-width: 100px;
+    text-align: center;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background-color: #3a3a3a; /* 稍亮一点，表示悬停 */
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+/* 内嵌导航按钮容器 —— 靠边对齐 */
+.inner-nav {
+    display: flex;
+    justify-content: space-between; /* ✅ 关键：左对齐第一个，右对齐最后一个 */
+    align-items: center;
+    margin: 12px 0;
+    width: 100%;
+}
+
+/* 移除旧的 top/bottom margin 覆盖（如果存在） */
+.inner-nav.top-nav {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.inner-nav.bottom-nav {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+/* 按钮样式 —— 完全匹配你的深色主题 */
+.nav-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    background-color: #2d2d2d;
+    color: var(--text-primary);
+    cursor: pointer;
+    min-width: 90px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background-color: #3a3a3a;
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

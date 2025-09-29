@@ -81,12 +81,6 @@ def selector():
     return render_template("selector.html")
 
 
-@app.route("/text")
-def text_view():
-    cache_key = request.args.get("cache_key", demo_cache_key)
-    return render_template("text_view.html", cache_key=cache_key)
-
-
 @app.route("/editor")
 def editor():
     cache_key = request.args.get("cache_key", demo_cache_key)

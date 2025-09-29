@@ -1,0 +1,14 @@
+{
+  "novel_name": "苟在初圣魔门当人材",
+  "chapter_name": "第五章 这个仇我记下了",
+  "model_name": "qwen3:30b-a3b-instruct-2507-q4_K_M",
+  "use_local": true,
+  "num_ctx": 16384,
+  "chunk_size": 1024,
+  "chunk_overlap": 192,
+  "content_size": 3043,
+  "schema_name": "极简",
+  "cache_version": "1.1",
+  "created_at": "2025-09-28T12:18:48.597252",
+  "saved_at": "2025-09-28T12:18:48.599253"
+}

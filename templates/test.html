@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本卡片分割器</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .control-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .cards-container {
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .card.active {
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        }
+
+        .card-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .card-content {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .card-counter {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin: 20px 0;
+        }
+
+        .page-button {
+            padding: 5px 10px;
+            background: #e9ecef;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .page-button.active {
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📖 文本卡片分割器</h1>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="text-input">输入文本：</label>
+                <textarea id="text-input" rows="6" placeholder="粘贴你的文本内容...">这是第一段有意义的内容。
+它包含完整的语义信息。
+
+这是第二段内容。
+同样表达了一个完整的想法。
+
+第1章 新的开始
+这里是第一章的内容，描述了故事的开端。
+
+第2章 故事发展
+故事在这里继续发展...
+
+第3章 故事高潮
+这是故事的高潮部分，情节紧张刺激。
+
+第4章 结局
+故事在这里迎来结局，所有谜团得到解答。</textarea>
+            </div>
+
+            <div class="control-group">
+                <label for="split-method">分割方法：</label>
+                <select id="split-method">
+                    <option value="paragraph">按段落分割</option>
+                    <option value="chapter">按章节分割</option>
+                    <option value="length">按字数分割</option>
+                    <option value="smart">智能分割</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="max-chars">最大字符数（按字数分割时）：</label>
+                <input type="number" id="max-chars" value="500" min="100" max="2000">
+            </div>
+
+            <button id="split-btn">分割文本</button>
+            <button id="reset-btn">重置</button>
+        </div>
+
+        <div class="card-counter">
+            <span id="card-info">共 0 张卡片</span>
+        </div>
+
+        <div class="cards-container" id="cards-container">
+            <!-- 卡片将在这里生成 -->
+        </div>
+
+        <div class="pagination" id="pagination">
+            <!-- 分页按钮将在这里生成 -->
+        </div>
+    </div>
+
+    <script>
+        class TextCardSplitter {
+            constructor(text) {
+                this.text = text;
+            }
+
+            // 按段落分割
+            splitByParagraphs() {
+                return this.text
+                    .split(/\n\s*\n/)  // 以空行为分隔
+                    .filter(paragraph => paragraph.trim().length > 0)
+                    .map((content, index) => ({
+                        id: index,
+                        content: content.trim(),
+                        type: 'paragraph'
+                    }));
+            }
+
+            // 按章节分割
+            splitByChapters() {
+                const chapterRegex = /第[一二三四五六七八九十\d]+[章节]/g;
+                const parts = this.text.split(chapterRegex);
+
+                const chapters = [];
+                let matches = [...this.text.matchAll(chapterRegex)];
+
+                parts.slice(1).forEach((content, index) => {
+                    if (content.trim()) {
+                        const chapterTitle = matches[index] ? matches[index][0] : `第${index + 1}章`;
+                        chapters.push({
+                            id: index,
+                            title: chapterTitle,
+                            content: content.trim(),
+                            type: 'chapter'
+                        });
+                    }
+                });
+
+                return chapters;
+            }
+
+            // 按字符数分割
+            splitByLength(maxChars = 500) {
+                const sentences = this.text.match(/[^。！？\n]+[。！？\n]?/g) || [];
+                const cards = [];
+                let currentCard = '';
+                let cardId = 0;
+
+                for (const sentence of sentences) {
+                    const testCard = currentCard + sentence;
+
+                    if (testCard.length > maxChars && currentCard.length >= 100) {
+                        if (currentCard.trim()) {
+                            cards.push({
+                                id: cardId++,
+                                content: currentCard.trim(),
+                                type: 'length-based'
+                            });
+                        }
+                        currentCard = sentence;
+                    } else {
+                        currentCard += sentence;
+                    }
+                }
+
+                if (currentCard.trim()) {
+                    cards.push({
+                        id: cardId++,
+                        content: currentCard.trim(),
+                        type: 'length-based'
+                    });
+                }
+
+                return cards;
+            }
+
+            // 智能分割
+            splitSmartly() {
+                const paragraphs = this.text
+                    .split(/\n\s*\n/)
+                    .filter(p => p.trim().length > 0);
+
+                const cards = [];
+                let currentCard = '';
+                let cardId = 0;
+
+                for (const paragraph of paragraphs) {
+                    const testCard = currentCard + '\n\n' + paragraph;
+
+                    if (testCard.length > 800 && currentCard.length > 200) {
+                        if (currentCard.trim()) {
+                            cards.push({
+                                id: cardId++,
+                                content: currentCard.trim(),
+                                type: 'smart'
+                            });
+                        }
+                        currentCard = paragraph;
+                    } else {
+                        currentCard = testCard.trim();
+                    }
+                }
+
+                if (currentCard.trim()) {
+                    cards.push({
+                        id: cardId++,
+                        content: currentCard.trim(),
+                        type: 'smart'
+                    });
+                }
+
+                return cards;
+            }
+        }
+
+        class CardRenderer {
+            constructor(containerId) {
+                this.container = document.getElementById(containerId);
+                this.cards = [];
+                this.currentPage = 0;
+                this.cardsPerPage = 5; // 每页显示的卡片数
+            }
+
+            render(cards) {
+                this.cards = cards;
+                this.updateCardInfo();
+                this.renderPagination();
+                this.showPage(this.currentPage);
+            }
+
+            updateCardInfo() {
+                document.getElementById('card-info').textContent =
+                    `共 ${this.cards.length} 张卡片`;
+            }
+
+            renderPagination() {
+                const pagination = document.getElementById('pagination');
+                pagination.innerHTML = '';
+
+                if (this.cards.length <= this.cardsPerPage) {
+                    pagination.style.display = 'none';
+                    return;
+                }
+
+                pagination.style.display = 'flex';
+                const totalPages = Math.ceil(this.cards.length / this.cardsPerPage);
+
+                for (let i = 0; i < totalPages; i++) {
+                    const button = document.createElement('button');
+                    button.className = `page-button ${i === this.currentPage ? 'active' : ''}`;
+                    button.textContent = i + 1;
+                    button.onclick = () => this.showPage(i);
+                    pagination.appendChild(button);
+                }
+            }
+
+            showPage(pageIndex) {
+                this.currentPage = pageIndex;
+                this.container.innerHTML = '';
+
+                const startIndex = pageIndex * this.cardsPerPage;
+                const endIndex = Math.min(startIndex + this.cardsPerPage, this.cards.length);
+                const pageCards = this.cards.slice(startIndex, endIndex);
+
+                pageCards.forEach((card, index) => {
+                    const cardElement = this.createCardElement(card, startIndex + index);
+                    this.container.appendChild(cardElement);
+                });
+
+                // 更新分页按钮状态
+                this.updatePaginationButtons();
+            }
+
+            createCardElement(card, globalIndex) {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'card';
+                cardElement.dataset.index = globalIndex;
+
+                cardElement.innerHTML = `
+                    <div class="card-header">#${globalIndex + 1} ${card.title || '段落'}</div>
+                    <div class="card-content">${this.escapeHtml(card.content)}</div>
+                `;
+
+                // 添加点击事件
+                cardElement.onclick = (e) => {
+                    if (e.target !== cardElement) return;
+
+                    // 切换激活状态
+                    const allCards = document.querySelectorAll('.card');
+                    allCards.forEach(c => c.classList.remove('active'));
+                    cardElement.classList.add('active');
+
+                    console.log('选中卡片:', card);
+                };
+
+                return cardElement;
+            }
+
+            updatePaginationButtons() {
+                const buttons = document.querySelectorAll('.page-button');
+                buttons.forEach((button, index) => {
+                    button.classList.toggle('active', index === this.currentPage);
+                });
+            }
+
+            escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+        }
+
+        class TextCardApp {
+            constructor() {
+                this.cardRenderer = new CardRenderer('cards-container');
+                this.setupEventListeners();
+            }
+
+            setupEventListeners() {
+                document.getElementById('split-btn').onclick = () => this.splitText();
+                document.getElementById('reset-btn').onclick = () => this.reset();
+            }
+
+            splitText() {
+                const text = document.getElementById('text-input').value;
+                const method = document.getElementById('split-method').value;
+                const maxChars = parseInt(document.getElementById('max-chars').value);
+
+                if (!text.trim()) {
+                    alert('请输入文本内容');
+                    return;
+                }
+
+                const splitter = new TextCardSplitter(text);
+                let cards = [];
+
+                switch (method) {
+                    case 'paragraph':
+                        cards = splitter.splitByParagraphs();
+                        break;
+                    case 'chapter':
+                        cards = splitter.splitByChapters();
+                        break;
+                    case 'length':
+                        cards = splitter.splitByLength(maxChars);
+                        break;
+                    case 'smart':
+                        cards = splitter.splitSmartly();
+                        break;
+                }
+
+                this.cardRenderer.render(cards);
+            }
+
+            reset() {
+                document.getElementById('text-input').value = '';
+                document.getElementById('cards-container').innerHTML = '';
+                document.getElementById('card-info').textContent = '共 0 张卡片';
+                document.getElementById('pagination').innerHTML = '';
+                document.getElementById('pagination').style.display = 'none';
+            }
+        }
+
+        // 初始化应用
+        document.addEventListener('DOMContentLoaded', () => {
+            new TextCardApp();
+        });
+    </script>
+</body>
+</html>

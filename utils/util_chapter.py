@@ -13,10 +13,13 @@ from utils import util_number
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] [%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
 
-# 获取当前文件所在目录
-UTIL_DIR = os.path.dirname(os.path.abspath(__file__))
-# 项目根目录 = utils/ 的父目录
-PROJECT_ROOT = os.path.dirname(UTIL_DIR)
+# --- 使用 config.py 的路径配置 ---
+try:
+    from config import PROJECT_ROOT
+except ImportError:
+    # 如果 config.py 不在项目根目录，回退到原来的逻辑
+    UTIL_DIR = os.path.dirname(os.path.abspath(__file__))
+    PROJECT_ROOT = os.path.dirname(UTIL_DIR)
 
 # 定义绝对路径
 NOVELS_BASE_DIR = os.path.join(PROJECT_ROOT, "novels")
@@ -28,8 +31,9 @@ PROMPT_ANALYZER_DIR = os.path.join(PROJECT_ROOT, "inputs", "prompts", "analyzer"
 METADATA_FILE_PATH = os.path.join(PROMPT_ANALYZER_DIR, "metadata.json")
 SCRAPED_DATA_DIR = os.path.join(PROJECT_ROOT, "scraped_data")
 
+print(f"[util_chapter] Project root (from config): {PROJECT_ROOT}")
 print(f"[util_chapter] Novels dir: {NOVELS_BASE_DIR}")  # 调试用
-
+print(f"[util_chapter] REPORTS_BASE_DIR: {REPORTS_BASE_DIR}")  # 调试用
 
 CHAPTER_STATUS_PENDING = "pending"
 CHAPTER_STATUS_DOWNLOADED = "downloaded"

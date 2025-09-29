@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-
     <div class="main-container">
         <!-- 侧边栏 -->
         <div class="sidebar">
@@ -63,12 +62,41 @@
             <!-- 左右并排的两个面板 -->
             <div class="content-split">
                 <div class="panel left-panel" id="chapterContent">
-                    <h2>📖 原文章节</h2>
-                    <p>请在左侧选择一本小说和一个章节开始阅读。</p>
+                    <!-- 章节顶部导航 -->
+                    <div class="inner-nav top-nav">
+                        <button class="nav-btn prev-chapter-btn">⬅️ 上一章</button>
+                        <button class="nav-btn next-chapter-btn">下一章 ➡️</button>
+                    </div>
+
+                    <div id="chapterContentInner">
+                        <h2>📖 原文章节</h2>
+                        <p>请在左侧选择一本小说和一个章节开始阅读。</p>
+                    </div>
+
+                    <!-- 章节底部导航 -->
+                    <div class="inner-nav bottom-nav">
+                        <button class="nav-btn prev-chapter-btn">⬅️ 上一章</button>
+                        <button class="nav-btn next-chapter-btn">下一章 ➡️</button>
+                    </div>
                 </div>
+
                 <div class="panel right-panel" id="analysisContent">
-                    <h2>🤖 AI 分析报告</h2>
-                    <p>选择章节后，AI 分析结果将在此显示。</p>
+                    <!-- 报告顶部导航 -->
+                    <div class="inner-nav top-nav">
+                        <button class="nav-btn prev-report-btn">⬆️ 上一份报告</button>
+                        <button class="nav-btn next-report-btn">下一份报告 ⬇️</button>
+                    </div>
+
+                    <div id="analysisContentInner">
+                        <h2>🤖 AI 分析报告</h2>
+                        <p>选择章节后，AI 分析结果将在此显示。</p>
+                    </div>
+
+                    <!-- 报告底部导航 -->
+                    <div class="inner-nav bottom-nav">
+                        <button class="nav-btn prev-report-btn">⬆️ 上一份报告</button>
+                        <button class="nav-btn next-report-btn">下一份报告 ⬇️</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,18 +107,22 @@
         const state = {
             novel: null,
             chapter: null,
-            report: null
+            report: null,
+            chapterList: [],
+            reportList: []
         };
 
         // 工具函数
         async function apiGet(url) {
-            const res = await fetch(url);
+            const fullUrl = url.startsWith('/api/novels') ? url : '/api/novels' + url;
+            const res = await fetch(fullUrl);
             if (!res.ok) throw new Error(`API 错误: ${res.status}`);
             return await res.json();
         }
 
         async function apiDelete(url) {
-            const res = await fetch(url, { method: 'DELETE' });
+            const fullUrl = url.startsWith('/api/novels') ? url : '/api/novels' + url;
+            const res = await fetch(fullUrl, { method: 'DELETE' });
             if (!res.ok) throw new Error(`API 错误: ${res.status}`);
             return await res.json();
         }
@@ -106,8 +138,74 @@
             }
         }
 
-        // 初始化
+        // ===== 导航相关函数 =====
+        function navigateChapter(direction) {
+            const idx = state.chapterList.indexOf(state.chapter);
+            const newIndex = idx + direction;
+            if (newIndex >= 0 && newIndex < state.chapterList.length) {
+                const newChapter = state.chapterList[newIndex];
+                document.getElementById('chapterSelector').value = newChapter;
+                state.chapter = newChapter;
+                onChapterChange();
+            }
+        }
+
+        function navigateReport(direction) {
+            const idx = state.reportList.indexOf(state.report);
+            const newIndex = idx + direction;
+            if (newIndex >= 0 && newIndex < state.reportList.length) {
+                const newReport = state.reportList[newIndex];
+                document.getElementById('reportSelector').value = newReport;
+                state.report = newReport;
+                onReportChange();
+            }
+        }
+
+        function updateNavButtons() {
+            const { chapter, report, chapterList, reportList } = state;
+
+            const chapterIndex = chapterList.indexOf(chapter);
+            const reportIndex = reportList.indexOf(report);
+
+            const canPrevChapter = chapterIndex > 0;
+            const canNextChapter = chapterIndex >= 0 && chapterIndex < chapterList.length - 1;
+            const canPrevReport = reportIndex > 0;
+            const canNextReport = reportIndex >= 0 && reportIndex < reportList.length - 1;
+
+            // 更新所有章节按钮
+            document.querySelectorAll('.prev-chapter-btn').forEach(btn => {
+                btn.disabled = !canPrevChapter;
+            });
+            document.querySelectorAll('.next-chapter-btn').forEach(btn => {
+                btn.disabled = !canNextChapter;
+            });
+
+            // 更新所有报告按钮
+            document.querySelectorAll('.prev-report-btn').forEach(btn => {
+                btn.disabled = !canPrevReport;
+            });
+            document.querySelectorAll('.next-report-btn').forEach(btn => {
+                btn.disabled = !canNextReport;
+            });
+        }
+
+        // ===== 初始化逻辑 =====
         document.addEventListener('DOMContentLoaded', async () => {
+            // === 绑定导航按钮事件 ===
+            document.querySelectorAll('.prev-chapter-btn').forEach(btn => {
+                btn.addEventListener('click', () => navigateChapter(-1));
+            });
+            document.querySelectorAll('.next-chapter-btn').forEach(btn => {
+                btn.addEventListener('click', () => navigateChapter(1));
+            });
+            document.querySelectorAll('.prev-report-btn').forEach(btn => {
+                btn.addEventListener('click', () => navigateReport(-1));
+            });
+            document.querySelectorAll('.next-report-btn').forEach(btn => {
+                btn.addEventListener('click', () => navigateReport(1));
+            });
+
+            // === 其他初始化逻辑 ===
             await loadCategories();
             await loadHistory();
 
@@ -118,7 +216,6 @@
             const reportParam = urlParams.get('report');
 
             if (novelParam && chapterParam && reportParam) {
-                // 延迟加载以确保下拉框已填充
                 setTimeout(async () => {
                     await loadNovels('全部');
                     const novelSel = document.getElementById('novelSelector');
@@ -141,7 +238,7 @@
                 }, 800);
             }
 
-            // 绑定事件
+            // 绑定下拉框事件
             document.getElementById('categorySelector').addEventListener('change', onCategoryChange);
             document.getElementById('onlyWithReports').addEventListener('change', onCategoryChange);
             document.getElementById('novelSelector').addEventListener('change', onNovelChange);
@@ -152,10 +249,10 @@
             document.getElementById('confirmDelete').addEventListener('click', deleteReport);
         });
 
-        // API 加载函数
+        // ===== API 加载函数 =====
         async function loadCategories() {
             try {
-                const data = await apiGet('/api/novels/categories');
+                const data = await apiGet('/categories');
                 const sel = document.getElementById('categorySelector');
                 data.categories.forEach(cat => {
                     const opt = document.createElement('option');
@@ -174,7 +271,7 @@
                     category: category,
                     only_with_reports: onlyWithReports
                 });
-                const data = await apiGet(`/api/novels/list?${query}`);
+                const data = await apiGet(`/list?${query}`);
                 const sel = document.getElementById('novelSelector');
                 sel.innerHTML = '';
                 data.novels.forEach(novel => {
@@ -202,9 +299,10 @@
 
             const onlyWithReports = document.getElementById('onlyWithReports').checked;
             try {
-                const data = await apiGet(`/api/novels/${encodeURIComponent(novel)}/chapters?only_with_reports=${onlyWithReports}`);
+                const data = await apiGet(`/${encodeURIComponent(novel)}/chapters?only_with_reports=${onlyWithReports}`);
                 const sel = document.getElementById('chapterSelector');
                 sel.innerHTML = '';
+                state.chapterList = data.chapters;
                 data.chapters.forEach(chap => {
                     const opt = document.createElement('option');
                     opt.value = chap;
@@ -229,9 +327,10 @@
             state.chapter = chapter;
 
             try {
-                const reportsData = await apiGet(`/api/novels/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/reports`);
+                const reportsData = await apiGet(`/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/reports`);
                 const sel = document.getElementById('reportSelector');
                 sel.innerHTML = '';
+                state.reportList = reportsData.reports;
                 reportsData.reports.forEach(rep => {
                     const opt = document.createElement('option');
                     opt.value = rep;
@@ -247,14 +346,12 @@
                     onReportChange();
                 }
 
-                // === 修改这里：替换最后两行 ===
-                const contentData = await apiGet(`/api/novels/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/content`);
-
-                // 使用新的显示函数（支持 Markdown 和空行处理）
+                const contentData = await apiGet(`/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/content`);
                 displayChapterContent(contentData.chapter_content || '无内容');
                 displayAnalysisContent(contentData.report_content || '暂无分析报告');
 
                 updateUrl();
+                updateNavButtons(); // 更新按钮状态
             } catch (e) {
                 console.error('加载内容失败:', e);
             }
@@ -268,17 +365,16 @@
             state.report = report;
 
             try {
-                const data = await apiGet(`/api/novels/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/report/${encodeURIComponent(report)}`);
-
+                const data = await apiGet(`/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/report/${encodeURIComponent(report)}`);
                 displayAnalysisContent(data.content || '报告内容为空');
-
                 updateUrl();
+                updateNavButtons(); // 更新按钮状态
             } catch (e) {
                 console.error('加载报告失败:', e);
             }
         }
 
-        // 删除逻辑
+        // ===== 删除逻辑 =====
         function showDeleteConfirm() {
             document.getElementById('deleteConfirm').style.display = 'block';
             document.getElementById('deleteStatus').textContent = '';
@@ -293,9 +389,8 @@
             if (!novel || !chapter || !report) return;
 
             try {
-                await apiDelete(`/api/novels/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/report/${encodeURIComponent(report)}`);
+                await apiDelete(`/${encodeURIComponent(novel)}/${encodeURIComponent(chapter)}/report/${encodeURIComponent(report)}`);
                 document.getElementById('deleteStatus').innerHTML = '<span class="success">✅ 报告已删除。</span>';
-                // 重新加载章节（会刷新报告列表）
                 onChapterChange();
             } catch (e) {
                 document.getElementById('deleteStatus').innerHTML = `<span class="error">❌ 删除失败: ${e.message}</span>`;
@@ -303,10 +398,10 @@
             hideDeleteConfirm();
         }
 
-        // 历史记录
+        // ===== 历史记录 =====
         async function loadHistory() {
             try {
-                const data = await apiGet('/api/novels/history');
+                const data = await apiGet('/history');
                 const container = document.getElementById('historyList');
                 if (data.history && data.history.length > 0) {
                     container.innerHTML = '';
@@ -328,7 +423,7 @@
 
         async function loadHistoryItem(index) {
             try {
-                const item = await apiGet(`/api/novels/history/${index}`);
+                const item = await apiGet(`/history/${index}`);
                 document.getElementById('novelSelector').value = item.novel;
                 onNovelChange().then(() => {
                     const chapterSel = document.getElementById('chapterSelector');
@@ -341,32 +436,22 @@
                 alert('加载历史项失败: ' + e.message);
             }
         }
-         // === 新增：文本预处理函数 ===
+
+        // ===== 内容显示函数 =====
         function preprocessText(text) {
             if (!text) return '';
-
-            // 1. 移除开头和结尾的空白
             let processed = text.trim();
-
-            // 2. 将多个连续空行压缩为单个空行
-            // 匹配两个或更多连续的换行符
             processed = processed.replace(/\n{3,}/g, '\n\n');
-
             return processed;
         }
 
-        // === 新增：安全的 Markdown 渲染函数 ===
         function renderMarkdown(text) {
             if (!text) return '';
-
-            // 预处理文本
             const processedText = preprocessText(text);
-
-            // 配置 marked.js
             marked.setOptions({
-                breaks: true, // 将单个换行符转换为 <br>
-                gfm: true,    // 启用 GitHub 风格的 Markdown
-                sanitize: false, // 不要自动转义 HTML（假设内容可信）
+                breaks: true,
+                gfm: true,
+                sanitize: false,
                 renderer: new marked.Renderer()
             });
 
@@ -374,43 +459,33 @@
                 return marked.parse(processedText);
             } catch (e) {
                 console.warn('Markdown 渲染失败，回退到纯文本:', e);
-                // 如果 Markdown 解析失败，返回预处理后的纯文本
                 return `<pre class="raw-text-content">${escapeHtml(processedText)}</pre>`;
             }
         }
 
-        // === 新增：HTML 转义函数 ===
         function escapeHtml(text) {
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
         }
 
-        // === 修改：内容显示函数 ===
         function displayChapterContent(content) {
-            const container = document.getElementById('chapterContent');
-
-            // 检查内容是否是 Markdown（包含 #, *, - 等）
+            const container = document.getElementById('chapterContentInner');
             if (isMarkdownContent(content)) {
                 container.innerHTML = `<div class="markdown-content">${renderMarkdown(content)}</div>`;
             } else {
-                // 预处理纯文本（压缩空行）
                 const processed = preprocessText(content);
                 container.innerHTML = `<pre class="raw-text-content">${escapeHtml(processed)}</pre>`;
             }
         }
 
         function displayAnalysisContent(content) {
-            const container = document.getElementById('analysisContent');
-
-            // AI 分析报告通常是 Markdown，直接渲染
+            const container = document.getElementById('analysisContentInner');
             container.innerHTML = `<div class="markdown-content">${renderMarkdown(content)}</div>`;
         }
-        // === 新增：检测是否为 Markdown 内容 ===
+
         function isMarkdownContent(text) {
             if (!text) return false;
-
-            // 检查常见的 Markdown 语法
             const markdownPatterns = [
                 /^#{1,6}\s/,           // 标题
                 /^\s*[\-\*\+]\s/,      // 无序列表
@@ -422,7 +497,6 @@
                 /^>/,                  // 引用
                 /\|.*?\|/              // 表格
             ];
-
             return markdownPatterns.some(pattern => pattern.test(text));
         }
     </script>

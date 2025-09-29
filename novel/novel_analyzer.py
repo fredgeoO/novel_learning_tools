@@ -204,7 +204,7 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
             continue
 
         chapter_files = all_chapter_files[:chapters_per_novel]
-        tqdm.write(f"小说 '{novel_name}' 选取章节: {chapter_files}")
+        # tqdm.write(f"小说 '{novel_name}' 选取章节: {chapter_files}")
 
         for chapter_filename in chapter_files:
             for prompt_name in prompt_names:
@@ -240,7 +240,7 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         tasks=tasks_to_run,
         task_func=run_single_task,
         skip_if_exists=should_skip,
-        max_concurrent=16,
+        max_concurrent=10,
         min_interval=5.0,
         rate_limit_key="qwen_web"
     )
@@ -252,8 +252,8 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
 async def main():
     await process_top_novels_and_chapters(
         model_type="qwen_web",
-        top_n=100,
-        chapters_per_novel=100
+        top_n=1400,
+        chapters_per_novel=3
     )
 
 

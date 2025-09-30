@@ -1,166 +1,146 @@
-# test_group_related_nodes_integration.py
-import unittest
-import logging
-from typing import List
-
-# 假设你的模块结构如下，请根据实际情况调整导入路径
-from rag.narrative_graph_extractor import NarrativeGraphExtractor, SerializableNode, SerializableGraphDocument
-from rag.config_models import ExtractionConfig
-from rag.narrative_schema import generate_auto_schema
-from config import *
-# --- 配置日志 (可选，方便调试) ---
-logging.basicConfig(level=logging.INFO) # 或 logging.DEBUG
-logger = logging.getLogger(__name__)
-
-from utils import utils_chapter
-class TestGroupRelatedNodesIntegration(unittest.TestCase):
+from rag.narrative_graph_extractor import NarrativeGraphExtractor
 
 
-    @classmethod
-    def setUpClass(cls):
-        """在所有测试方法运行前执行一次，用于准备共享资源"""
-        # 1. 初始化 NarrativeGraphExtractor
-        # 使用一个较小的、快速的本地模型进行测试
-        cls.extractor = NarrativeGraphExtractor(
-            model_name= DEFAULT_MODEL, # 使用一个小模型进行快速测试
-            base_url= DEFAULT_BASE_URL,
-            # 可以根据需要调整其他参数，如 temperature
-        )
-        logger.info("NarrativeGraphExtractor 初始化完成。")
+def main():
+    """
+    主函数：用于测试 NarrativeGraphExtractor 的基本功能
+    """
+    import json
+    from datetime import datetime
 
-        novel_name= "111.测试文档"
-        chapter_filename="04.何鸿燊 (1).txt"
-        # 2. 准备示例文本 (用于生成 Schema 和图谱)
-        # 使用一段能生成较复杂关系的文本
-        cls.sample_text = utils_chapter.load_chapter_content(
-            novel_name=novel_name,chapter_filename=chapter_filename)
+    # 示例小说文本
+    sample_text = """
+    在遥远的艾尔多拉大陆上，有一个名叫林风的年轻剑士。
+    他拥有一把传说中的圣剑"破晓"，剑身闪烁着金色的光芒。
+    林风的师父是大陆上最强大的法师阿尔萨斯，他教会了林风许多魔法。
+    阿尔萨斯告诉林风，黑暗魔王萨格拉斯正在威胁着大陆的和平。
+    为了阻止萨格拉斯的阴谋，林风踏上了寻找三件神器的旅程。
+    在旅途中，他遇到了精灵公主艾莉娅，她拥有治愈魔法。
+    艾莉娅告诉林风，暗影军团正在围攻精灵王国。
+    林风决定先去救援精灵王国，与艾莉娅一起对抗暗影军团。
+    在战斗中，林风发现暗影军团的首领竟然是他失散多年的哥哥雷恩。
+    雷恩被黑暗力量腐蚀，已经忘记了过去的兄弟情谊。
+    林风必须在拯救哥哥和保护大陆之间做出艰难的选择。
+    """
 
-        # 3. 生成 Schema (使用真实 LLM)
-        logger.info("开始调用 LLM 生成 Schema...")
-        cls.auto_schema = generate_auto_schema(
-            text_content=cls.sample_text,
-            model_name=cls.extractor.model_name,
-            is_local=True, # 假设使用本地 Ollama
-            base_url=cls.extractor.base_url,
-            use_cache=False # 测试时禁用缓存以确保调用真实 LLM
-        )
-        logger.info(f"Schema 生成完成: {cls.auto_schema['name']}")
-        logger.info(f"Schema 元素: {cls.auto_schema['elements']}")
-        logger.info(f"Schema 关系: {cls.auto_schema['relationships']}")
+    print("=" * 60)
+    print("NarrativeGraphExtractor 测试")
+    print("=" * 60)
+    print(f"测试时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print()
 
-        # 4. 使用 Schema 和文本提取图谱 (使用真实 LLM)
-        # 创建配置对象
-        cls.config = ExtractionConfig(
-            novel_name=novel_name,
-            chapter_name=chapter_filename.replace(".txt", ""),
-            text=cls.sample_text,
-            model_name=cls.extractor.model_name,
-            base_url=cls.extractor.base_url,
-            use_local=True,
-            # --- 关键：设置较低的 max_connections 以便更容易触发优化 ---
-            max_connections=3, # 例如，连接数超过3就优化
-            # --- 关键：启用图优化 ---
-            optimize_graph=True,
-            use_cache=False, # 测试时禁用缓存
-            verbose=True # 打开日志看过程
-        )
+    # 创建提取器配置
+    from rag.config_models import ExtractionConfig
 
-        # 执行提取 (这会调用 _group_related_nodes 如果 optimize_graph=True 且有高连接节点)
-        logger.info("开始调用 LLM 提取图谱...")
-        # 直接调用 _extract_internal_core 来控制流程，或者使用 extract_with_config
-        # 使用 extract_with_config 更接近真实流程
-        cls.graph_result, cls.duration, cls.status, cls.chunks = cls.extractor.extract_with_config(cls.config)
-        logger.info(f"图谱提取完成。节点数: {len(cls.graph_result.nodes)}, 关系数: {len(cls.graph_result.relationships)}")
-        # 可以打印图谱内容查看
-        # cls.extractor.display_graph_document(cls.graph_result, "提取的原始图谱")
+    config = ExtractionConfig(
+        novel_name="测试小说",
+        chapter_name="第一章",
+        text=sample_text,
+        model_name="qwen3:30b-a3b-instruct-2507-q4_K_M",  # 根据你的本地模型调整
+        base_url="http://localhost:11434",  # 根据你的Ollama地址调整
+        temperature=0.1,
+        num_ctx=4096,
+        use_local=True,  # 使用本地模型
+        chunk_size=1000,
+        chunk_overlap=200,
+        merge_results=True,
+        verbose=True,
+        schema_name="极简",  # 可以尝试 "基础", "完整", "自动生成", "无约束"
+        use_cache=True,
+        optimize_graph=True
+    )
 
-    def test_find_and_group_high_degree_node(self):
-        """测试查找高连接度节点并对其进行分组"""
-        # 1. 确保图谱已生成
-        self.assertIsNotNone(self.graph_result)
-        self.assertIsInstance(self.graph_result, SerializableGraphDocument)
+    print("配置信息:")
+    print(f"  - 小说名: {config.novel_name}")
+    print(f"  - 章节名: {config.chapter_name}")
+    print(f"  - 模型: {config.model_name}")
+    print(f"  - 本地模型: {config.use_local}")
+    print(f"  - Schema: {config.schema_name}")
+    print(f"  - 文本长度: {len(config.text)} 字符")
+    print()
 
-        # 2. 计算节点连接度
-        node_connections = {}
-        for rel in self.graph_result.relationships:
-            node_connections[rel.source_id] = node_connections.get(rel.source_id, 0) + 1
-            node_connections[rel.target_id] = node_connections.get(rel.target_id, 0) + 1
+    # 创建提取器
+    try:
+        extractor = NarrativeGraphExtractor.from_config(config)
+        print("✅ 提取器创建成功")
+    except Exception as e:
+        print(f"❌ 提取器创建失败: {e}")
+        return
 
-        logger.info(f"计算出的节点连接度: {node_connections}")
+    print()
+    print("开始提取...")
+    print("-" * 40)
 
-        # 3. 查找高连接度节点
-        high_degree_nodes: List[SerializableNode] = []
-        for node in self.graph_result.nodes:
-            connection_count = node_connections.get(node.id, 0)
-            if connection_count > self.config.max_connections:
-                high_degree_nodes.append(node)
-                logger.info(f"发现高连接度节点: {node.id} (连接数: {connection_count})")
+    try:
+        # 执行提取
+        result, duration, status, chunk_results, cache_key = extractor._extract_main(config)
 
-        # 4. 断言至少找到一个高连接度节点 (确保测试有效)
-        # 如果没有找到，可能需要调整 sample_text 或 max_connections
-        self.assertGreater(len(high_degree_nodes), 0, "测试文本和配置未能生成高连接度节点，无法测试 _group_related_nodes。")
+        print("-" * 40)
+        print("提取完成!")
+        print(f"状态码: {status} ({'成功' if status == 0 else '部分成功' if status == 1 else '失败'})")
+        print(f"总耗时: {duration:.2f} 秒")
+        print(f"缓存键: {cache_key}")
 
-        # 5. 选择第一个高连接度节点进行测试
-        main_node = high_degree_nodes[0]
-        logger.info(f"选择主节点进行分组测试: {main_node.id}")
+        if result:
+            print(f"节点数量: {len(result.nodes)}")
+            print(f"关系数量: {len(result.relationships)}")
+            print()
 
-        # 6. 找出与主节点相关的节点
-        related_relations = [
-            rel for rel in self.graph_result.relationships
-            if rel.source_id == main_node.id or rel.target_id == main_node.id
-        ]
-        related_node_ids = set()
-        for rel in related_relations:
-            if rel.source_id == main_node.id:
-                related_node_ids.add(rel.target_id)
+            # 显示节点信息
+            print("提取的节点:")
+            for i, node in enumerate(result.nodes[:10]):  # 只显示前10个
+                print(f"  {i + 1}. ID: '{node.id}', Type: '{node.type}', Properties: {node.properties}")
+            if len(result.nodes) > 10:
+                print(f"  ... 还有 {len(result.nodes) - 10} 个节点")
+
+            print()
+
+            # 显示关系信息
+            print("提取的关系:")
+            for i, rel in enumerate(result.relationships[:10]):  # 只显示前10个
+                print(f"  {i + 1}. {rel.source_id} --[{rel.type}]--> {rel.target_id}")
+            if len(result.relationships) > 10:
+                print(f"  ... 还有 {len(result.relationships) - 10} 个关系")
+
+            print()
+
+            # 显示块处理信息
+            print(f"处理的文本块数量: {len(chunk_results)}")
+            successful_chunks = sum(1 for r in chunk_results if r and len(r.nodes) > 0)
+            print(f"成功处理的块数量: {successful_chunks}")
+
+        else:
+            print("❌ 提取结果为空")
+
+    except Exception as e:
+        print(f"❌ 提取过程中发生错误: {e}")
+        import traceback
+        traceback.print_exc()
+
+    print()
+    print("=" * 60)
+    print("测试完成")
+    print("=" * 60)
+
+    # 额外测试：不同Schema模式
+    print("\n额外测试：不同Schema模式")
+    schemas_to_test = ["极简", "基础", "自动生成"]
+
+    for schema_name in schemas_to_test:
+        print(f"\n测试 Schema: {schema_name}")
+        try:
+            config.schema_name = schema_name
+            temp_extractor = NarrativeGraphExtractor.from_config(config)
+            result, duration, status, _, _ = temp_extractor._extract_main(config)
+
+            if result:
+                print(f"  节点数: {len(result.nodes)}, 关系数: {len(result.relationships)}, 耗时: {duration:.2f}s")
             else:
-                related_node_ids.add(rel.source_id)
-        related_nodes = [
-            n for n in self.graph_result.nodes if n.id in related_node_ids
-        ]
-        logger.info(f"找到 {len(related_nodes)} 个相关节点: {[n.id for n in related_nodes]}")
+                print(f"  提取失败")
 
-        # 7. 调用 _group_related_nodes (使用真实 LLM)
-        logger.info(f"调用 _group_related_nodes 对主节点 '{main_node.id}' 的相关节点进行分组...")
-        grouping_result = self.extractor._group_related_nodes(
-            main_node=main_node,
-            related_nodes=related_nodes,
-            config=self.config,
-            use_cache=False # 测试时禁用缓存以确保调用真实 LLM
-        )
-
-        # 8. 验证返回结果
-        from rag.narrative_graph_extractor import AggregateGroupingResponse # 确保导入
-        self.assertIsInstance(grouping_result, AggregateGroupingResponse)
-        logger.info(f"_group_related_nodes 返回结果: {grouping_result}")
-
-        # 9. 验证分组内容 (基本检查)
-        self.assertIsNotNone(grouping_result.groups)
-        self.assertIsInstance(grouping_result.groups, list)
-        self.assertGreater(len(grouping_result.groups), 0, "LLM 应该至少生成一个分组。")
-
-        for i, group in enumerate(grouping_result.groups):
-            logger.info(f"  分组 {i+1}: {group.group_name} ({len(group.node_ids)} 个成员)")
-            self.assertIsInstance(group.aggregate_node_id, str)
-            self.assertTrue(group.aggregate_node_id, "聚合节点 ID 不应为空")
-            self.assertIsInstance(group.group_name, str)
-            self.assertTrue(group.group_name, "分组名称不应为空")
-            self.assertIsInstance(group.description, str)
-            self.assertIsInstance(group.node_ids, list)
-            self.assertGreater(len(group.node_ids), 0, "每个分组应至少包含一个节点")
-            # 检查 node_ids 是否都在 related_nodes 中
-            related_node_id_set = {n.id for n in related_nodes}
-            for nid in group.node_ids:
-                self.assertIn(nid, related_node_id_set, f"分组中的节点ID '{nid}' 不在相关节点列表中")
-
-            # 检查新添加的字段
-            self.assertIsInstance(group.aggregate_relationship_type, str)
-            self.assertTrue(group.aggregate_relationship_type, "聚合关系类型不应为空")
-            self.assertIsInstance(group.member_relationship_type, str)
-            self.assertTrue(group.member_relationship_type, "成员关系类型不应为空")
-
-        logger.info("高连接度节点分组测试通过。")
+        except Exception as e:
+            print(f"  测试失败: {e}")
 
 
-if __name__ == '__main__':
-    unittest.main()
+if __name__ == "__main__":
+    main()

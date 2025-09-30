@@ -10,7 +10,7 @@ from urllib.parse import urljoin
 BASE_URL = "https://www.qidian.com"
 TARGET_BOOKS = 100
 HEADLESS = True
-OUTPUT_DIR = "scraped_data" # 定义保存文件的主目录
+OUTPUT_DIR = "scraped_data_2025_9_30" # 定义保存文件的主目录
 
 # --- 定义小说分类 ---
 # 分类ID参考起点网页源码和常识
@@ -96,7 +96,7 @@ async def fetch_books_from_page(crawler, page_url, crawler_config, page_number):
     )
     return success, data_or_error
 
-async def scrape_books_for_category(crawler, category_id, category_name, crawler_config, target_count, year="2025", month="08"):
+async def scrape_books_for_category(crawler, category_id, category_name, crawler_config, target_count, year="2025", month="09"):
     """爬取指定分类的月票榜前N本书。"""
     print(f"\n--- 开始爬取 {category_name} (ID: {category_id}) 的月票榜 ---")
     all_books = []

@@ -151,25 +151,11 @@ def generate_auto_schema(
         parser = JsonOutputParser(pydantic_object=SchemaModel)
 
         # 创建 PromptTemplate，在提示词中加入格式化指令
+        with open("c:\\Users\\zgw31\\PycharmProjects\\AI\\rag\\prompts\\generate_auto_schema.txt", "r", encoding="utf-8") as f:
+            template = f.read()
+
         prompt_template = PromptTemplate(
-            template="""
-            生成知识图谱Schema（基于基础schema扩展）：
-            基础节点：{minimal_elements}
-            基础关系：{minimal_relationships}
-
-            文本内容:
-            {text_content}
-
-            要求：
-            - 所有名称使用中文二字词
-            - 节点与关系要是简单词汇
-            - 保留所有基础元素
-            - 节点5-8个，关系5-8个
-            - 仅输出JSON格式
-
-            {format_instructions}
-            """,
-            input_variables=["text_content", "minimal_elements", "minimal_relationships"],
+            template=template,
             partial_variables={"format_instructions": parser.get_format_instructions()}
         )
 

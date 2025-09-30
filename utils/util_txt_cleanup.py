@@ -77,7 +77,7 @@ def rename_safe_dirs_and_files(root_path: str):
 # ===== 主程序 =====
 if __name__ == "__main__":
     # 脚本在 utils/，目标是 ../reports/novels/
-    reports_novels = Path(__file__).parent.parent / "reports" / "novels"
+    reports_novels = Path(__file__).parent.parent / "novels"
     print(f"🔧 开始清洗路径: {reports_novels.resolve()}")
     rename_safe_dirs_and_files(str(reports_novels))
     print("✅ 清洗完成！")

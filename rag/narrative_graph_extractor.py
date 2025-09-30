@@ -1,4 +1,4 @@
-# inputs/rag/narrative_graph_extractor.py
+# rag/narrative_graph_extractor.py
 import logging
 import os
 import time
@@ -164,7 +164,6 @@ class NarrativeGraphExtractor:
                 openai_api_base=self.remote_base_url.strip(),
                 temperature=self.temperature,
                 max_tokens=num_ctx,
-
             )
         else:
             logger.info(f"Using local Ollama model: {self.model_name}")
@@ -173,7 +172,6 @@ class NarrativeGraphExtractor:
                 base_url=self.base_url,
                 temperature=self.temperature,
                 num_ctx=num_ctx
-
             )
 
     def _process_single_chunk(
@@ -254,7 +252,7 @@ class NarrativeGraphExtractor:
     def _create_graph_transformer(self, config: Optional[ExtractionConfig] = None) -> LLMGraphTransformer:
         """创建并返回配置好的 LLMGraphTransformer 实例。"""
         num_ctx = config.num_ctx if config and config.num_ctx else self.default_num_ctx
-        local= config.use_local
+        local = config.use_local
         llm = self._create_llm(num_ctx, local=local)
 
         return LLMGraphTransformer(
@@ -436,8 +434,6 @@ class NarrativeGraphExtractor:
         )
         return dynamic_threshold
 
-
-
     # ==============================
     # 公共接口方法
     # ==============================
@@ -477,11 +473,11 @@ class NarrativeGraphExtractor:
                 schema_mode="无约束" if is_unrestricted else "约束"
             )
 
-    def extract_with_config(self, config: ExtractionConfig) -> Tuple[Any, float, int, List[Any]]:
+    def extract_with_config(self, config: ExtractionConfig) -> Tuple[Any, float, int, List[Any], str]:
         """
         使用配置对象进行提取的核心方法
         """
-        return self._extract_with_cache_internal(config)
+        return self._extract_main(config)
 
     # ==============================
     # 内部核心方法
@@ -495,8 +491,6 @@ class NarrativeGraphExtractor:
         # 直接使用 self 的属性，这些属性在 from_config 时已根据 is_local 设置
         if is_local:
             model_name_to_use = self.model_name
-            # 假设 generate_auto_schema 内部知道如何处理本地模型，
-            # 或者我们传递 is_local 让它知道
             base_url_to_use = self.base_url
             api_key_to_use = None  # 本地通常不需要
             logger.debug(f"使用本地模型生成Schema: {model_name_to_use} at {base_url_to_use}")
@@ -510,23 +504,15 @@ class NarrativeGraphExtractor:
                 api_key_to_use = None
             else:
                 model_name_to_use = self.remote_model_name
-                # 这些信息传递给 generate_auto_schema，它可能需要
                 base_url_to_use = self.remote_base_url
                 api_key_to_use = self.remote_api_key
                 logger.debug(f"使用远程模型生成Schema: {model_name_to_use} at {base_url_to_use}")
 
         # 调用 rag.narrative_schema.generate_auto_schema
-        # 只传递必要的信息，包括指示本地/远程的 is_local 标志
-        # 如果 generate_auto_schema 需要 base_url/api_key，它应该能从 self 的属性推断
-        # 或者我们在这里传递，但根据你的要求，我们假设它能处理好
-        # 我们传递 is_local 让它知道应该使用哪种配置
         auto_schema = generate_auto_schema(
             text_content=text,
             model_name=model_name_to_use,
-            # --- 修改/新增的参数传递 ---
             is_local=is_local,  # 关键：传递 is_local 标志
-            # 注意：不再显式传递 base_url 和 api_key，假设 generate_auto_schema 能处理
-
             use_cache=True
         )
 
@@ -535,9 +521,6 @@ class NarrativeGraphExtractor:
                 f"自动schema生成完成: {auto_schema['name']} - {len(auto_schema['elements'])}元素, {len(auto_schema['relationships'])}关系")
 
         return auto_schema
-
-    from typing import Optional, Tuple, Any, List
-    # ... 其他导入 ...
 
     def _extract_main(self, config: ExtractionConfig) -> Tuple[Any, float, int, List[Any], str]:
         """
@@ -595,6 +578,7 @@ class NarrativeGraphExtractor:
             return None, time.time() - start_time, 2, [], cache_key
         finally:
             self._restore_schema(original_allowed_nodes, original_allowed_relationships)
+
     # ==============================
     # 重构后的缓存加载相关方法 (简化日志)
     # ==============================
@@ -634,9 +618,6 @@ class NarrativeGraphExtractor:
             logger.error(f"处理缓存数据时发生错误 {log_context}: {e}", exc_info=True)
             return None
 
-
-
-
     def _handle_schema_and_extract(self, config: ExtractionConfig) -> Optional[Dict[str, Any]]:
         """
         根据 config.schema_name 处理 Schema 逻辑并执行核心提取。
@@ -667,18 +648,12 @@ class NarrativeGraphExtractor:
         Returns:
             Any: 优化后的结果，如果优化未执行或失败，则返回原始结果。
         """
-        # --- 修复之前的错误：使用 config.schema_name ---
-        # 注意：在这个上下文中，即使 config.schema_name 是 "自动生成"，
-        # 我们处理的 sub_schema 本身已经是拆分后的，且其 schema_mode 应该是 "约束" 的。
-        # 所以优化逻辑的判断依据是 config.optimize_graph 和结果类型。
-
         # 检查是否需要优化以及结果是否为可处理的类型
         if config.optimize_graph and isinstance(sub_result, SerializableGraphDocument):
             if config.verbose:
                 logger.info(f" -> 对子 Schema {sub_schema_index + 1} 的提取结果进行优化...")
             try:
                 # --- 实例化并调用 GraphOptimizer ---
-                # 传入当前 extractor 实例，以便 optimizer 可以访问模型等配置
                 optimizer = GraphOptimizer()
                 optimized_sub_result = optimizer.optimize_graph_document(sub_result)
 
@@ -704,6 +679,70 @@ class NarrativeGraphExtractor:
         else:
             # 如果未启用优化或结果类型不匹配，则直接返回原始结果
             return sub_result
+
+    def _extract_auto_schema_with_splitting(self, config: ExtractionConfig, auto_schema: Dict) -> Dict[str, Any]:
+        """处理自动Schema的拆分提取逻辑"""
+        all_sub_results = []
+        total_duration_core = 0.0
+        status = 2  # 默认全部失败
+        sub_schemas = split_schema(auto_schema, self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS)
+
+        if config.verbose:
+            logger.info(f" -> Schema 已拆分为 {len(sub_schemas)} 个子 Schema。")
+
+        for i, sub_schema in enumerate(sub_schemas):
+            if config.verbose:
+                logger.info(f" -> 开始处理子 Schema {i + 1}/{len(sub_schemas)}: {sub_schema['name']}")
+
+            # 临时设置当前子schema
+            self.allowed_nodes = sub_schema["elements"]
+            self.allowed_relationships = sub_schema["relationships"]
+
+            sub_result, sub_duration, sub_status, sub_chunks = self._extract_internal_core_logic(
+                config, is_sub_extraction=True)
+
+            sub_result = self._handle_sub_schema_result(sub_result, config, i)
+
+            total_duration_core += sub_duration
+            if sub_status < status:
+                status = sub_status
+            all_sub_results.append(sub_result)
+
+        if config.verbose:
+            logger.info(f" -> 所有子 Schema 处理完成。")
+            logger.info(f" -> 正在合并 {len(all_sub_results)} 个子 Schema 的提取结果...")
+
+        final_result = self._merge_graph_documents(all_sub_results)
+
+        if config.verbose:
+            logger.info(f" -> 子 Schema 合并完成。")
+
+        return {
+            'final_result': final_result,
+            'total_duration_core': total_duration_core,
+            'status': status,
+            'all_chunk_results': []  # 合并后通常不保留子块结果
+        }
+
+    def _extract_auto_schema_without_splitting(self, config: ExtractionConfig, auto_schema: Dict) -> Dict[str, Any]:
+        """处理自动Schema的非拆分提取逻辑"""
+        if config.verbose:
+            logger.info(
+                f" -> 自动Schema包含 {len(auto_schema.get('relationships', []))} 个关系，未超过阈值 {self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS}，直接使用。")
+
+        self.allowed_nodes = auto_schema["elements"]
+        self.allowed_relationships = auto_schema["relationships"]
+
+        final_result, total_duration_core, status, all_chunk_results = self._extract_internal_core_logic(
+            config, is_sub_extraction=False)
+
+        return {
+            'final_result': final_result,
+            'total_duration_core': total_duration_core,
+            'status': status,
+            'all_chunk_results': all_chunk_results
+        }
+
     def _handle_auto_schema_extraction(self, config: ExtractionConfig) -> Optional[Dict[str, Any]]:
         """处理自动生成 Schema 的提取流程，包括可能的拆分和合并。"""
         # 保存原始 Schema 用于此分支内的恢复
@@ -714,69 +753,18 @@ class NarrativeGraphExtractor:
             auto_schema = self._generate_auto_schema(config.text, config.use_local, config.verbose)
             num_relationships = len(auto_schema.get("relationships", []))
 
+            # 简化决策逻辑：使用单独的方法处理拆分和非拆分情况
             if num_relationships > self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS and config.schema_name != "无约束":
-                # --- 需要拆分处理 ---
+                # 需要拆分处理
                 if config.verbose:
                     logger.info(
                         f" -> 自动Schema包含 {num_relationships} 个关系，超过阈值 {self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS}，将进行拆分处理。")
-                sub_schemas = split_schema(auto_schema, self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS)
-                if config.verbose:
-                    logger.info(f" -> Schema 已拆分为 {len(sub_schemas)} 个子 Schema。")
-                    logger.debug(f" -> Schema: {sub_schemas}")
-                all_sub_results = []
-                total_duration_core = 0.0
-                status = 2  # 默认全部失败
-
-                for i, sub_schema in enumerate(sub_schemas):
-                    if config.verbose:
-                        logger.info(f" -> 开始处理子 Schema {i + 1}/{len(sub_schemas)}: {sub_schema['name']}")
-                    self.allowed_nodes = sub_schema["elements"]
-                    self.allowed_relationships = sub_schema["relationships"]
-
-                    sub_result, sub_duration, sub_status, sub_chunks = self._extract_internal_core_logic(
-                        config, is_sub_extraction=True)
-
-                    sub_result = self._handle_sub_schema_result(sub_result, config, i)
-
-                    total_duration_core += sub_duration
-                    if sub_status < status:
-                        status = sub_status
-                    all_sub_results.append(sub_result)
-
-                if config.verbose:
-                    logger.info(f" -> 所有子 Schema 处理完成。")
-                    logger.info(f" -> 正在合并 {len(all_sub_results)} 个子 Schema 的提取结果...")
-                final_result = self._merge_graph_documents(all_sub_results)
-                # 注意：优化移到 _post_process_result
-
-                if config.verbose:
-                    logger.info(f" -> 子 Schema 合并完成。")
-
-                return {
-                    'final_result': final_result,
-                    'total_duration_core': total_duration_core,
-                    'status': status,
-                    'all_chunk_results': []  # 合并后通常不保留子块结果
-                }
-
+                result = self._extract_auto_schema_with_splitting(config, auto_schema)
             else:
-                # --- 不需要拆分，直接处理 ---
-                if config.verbose:
-                    logger.info(
-                        f" -> 自动Schema包含 {num_relationships} 个关系，未超过阈值 {self.SCHEMA_SPLIT_THRESHOLD_RELATIONSHIPS}，直接使用。")
-                self.allowed_nodes = auto_schema["elements"]
-                self.allowed_relationships = auto_schema["relationships"]
+                # 不需要拆分，直接处理
+                result = self._extract_auto_schema_without_splitting(config, auto_schema)
 
-                final_result, total_duration_core, status, all_chunk_results = self._extract_internal_core_logic(
-                    config, is_sub_extraction=False)
-                # 注意：优化移到 _post_process_result
-
-                return {
-                    'final_result': final_result,
-                    'total_duration_core': total_duration_core,
-                    'status': status,
-                    'all_chunk_results': all_chunk_results
-                }
+            return result
 
         finally:
             # 恢复此分支开始前的 Schema
@@ -805,19 +793,18 @@ class NarrativeGraphExtractor:
             if config.verbose:
                 logger.info(" -> 正在对提取的图谱进行全局优化...")
 
-                # --- 使用新的 GraphOptimizer 类 ---
-                optimizer = GraphOptimizer()  # 将当前 extractor 实例传给 optimizer
-                optimized_result = optimizer.optimize_graph_document(result)
-                # --- 优化结束 ---
+            # --- 使用新的 GraphOptimizer 类 ---
+            optimizer = GraphOptimizer()  # 将当前 extractor 实例传给 optimizer
+            optimized_result = optimizer.optimize_graph_document(result)
+            # --- 优化结束 ---
 
-            if config.verbose:
-                final_nodes_count_opt = len(optimized_result.nodes) if optimized_result else 0
-                final_relationships_count_opt = len(optimized_result.relationships) if optimized_result else 0
-                logger.info(
+
+            final_nodes_count_opt = len(optimized_result.nodes) if optimized_result else 0
+            final_relationships_count_opt = len(optimized_result.relationships) if optimized_result else 0
+            logger.info(
                     f" -> 全局优化完成。节点数: {final_nodes_count_opt}, 关系数: {final_relationships_count_opt}")
             return optimized_result
         return result
-
 
     def _log_extraction_summary(self, result: Any, total_duration: float, core_duration: float, status: int,
                                 config: ExtractionConfig):
@@ -948,9 +935,11 @@ class NarrativeGraphExtractor:
             # allowed_nodes 和 allowed_relationships 通常由 schema_name 决定，这里不直接传
         )
         # 调用新的统一主入口
-        return self._extract_main(config)
+        result = self._extract_main(config)
+        # 移除 cache_key（第5个返回值），只返回前4个
+        return result[:4]
 
-        # 如果需要保持 `extract_with_cache` 的名字作为别名，可以这样做：
+        # 如果需要保持 `extract_with_config` 的名字作为别名，可以这样做：
         # extract_with_cache = extract # 简单别名，因为 extract 现在已经包含了缓存逻辑
 
         # 如果需要保持 `extract_with_config` 的名字，也可以这样做：
@@ -960,3 +949,4 @@ class NarrativeGraphExtractor:
         使用配置对象进行提取的核心方法
         """
         return self._extract_main(config)
+

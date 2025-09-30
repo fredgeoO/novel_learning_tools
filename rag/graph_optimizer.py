@@ -7,20 +7,17 @@ import uuid
 import os
 from datetime import datetime
 from typing import List, Dict, Tuple, Optional, Any, Set
-from langchain_core.messages import AIMessage
-from langchain_core.output_parsers import JsonOutputParser
-from langchain_core.prompts import PromptTemplate
-# --- 导入所需模块 (与 NarrativeGraphExtractor 保持一致) ---
 from langchain_openai import ChatOpenAI
 from langchain_ollama import OllamaLLM
-# --- 导入共享的数据结构和配置 ---
 from rag.graph_types import (
     SerializableNode,
     SerializableRelationship,
     SerializableGraphDocument,
-    AggregateGroupingResponse, ReconnectionResponse
+    # AggregateGroupingResponse, # 不再需要
+    # ReconnectionResponse, # 暂时不使用
+    # BatchReconnectionResponse, # 暂时不使用
+    # BatchReconnectionSuggestion # 暂时不使用
 )
-# --- 导入共享配置 ---
 from config import (
     DEFAULT_MODEL as CONFIG_DEFAULT_MODEL,
     DEFAULT_BASE_URL as CONFIG_DEFAULT_BASE_URL,
@@ -29,10 +26,8 @@ from config import (
     DEFAULT_CHUNK_SIZE as CONFIG_DEFAULT_CHUNK_SIZE,
     DEFAULT_CHUNK_OVERLAP as CONFIG_DEFAULT_CHUNK_OVERLAP,
 )
-# --- 导入缓存管理器 ---
 from rag.cache_manager import load_cache, GRAPH_CACHE_DIR  # 用于加载测试数据
 
-# print("GRAPH_CACHE_DIR: " + GRAPH_CACHE_DIR)
 # --- 配置日志 ---
 logger = logging.getLogger(__name__)
 
@@ -51,7 +46,7 @@ class GraphOptimizer:
 
     def __init__(
             self,
-            # --- LLM 配置参数 ---
+            # --- LLM 配置参数 (用于聚合节点命名) ---
             model_name: str = DEFAULT_MODEL,
             base_url: str = DEFAULT_BASE_URL,
             temperature: float = DEFAULT_TEMPERATURE,
@@ -100,7 +95,7 @@ class GraphOptimizer:
         use_local_effectively = local if local is not None else not self.use_remote_api
 
         if not use_local_effectively and self.use_remote_api:
-            # logger.info(f"Using remote OpenAI-compatible API: {self.remote_model_name} at {self.remote_base_url}")
+            logger.info(f"Using remote OpenAI-compatible API: {self.remote_model_name} at {self.remote_base_url}")
             return ChatOpenAI(
                 model=self.remote_model_name,
                 openai_api_key=self.remote_api_key,
@@ -152,96 +147,90 @@ class GraphOptimizer:
         )
         return dynamic_threshold
 
-    def _group_related_nodes(
-            self,
-            main_node: SerializableNode,
-            related_nodes: List[SerializableNode],
-    ) -> AggregateGroupingResponse:
+    def _detect_communities(self, graph: SerializableGraphDocument) -> Dict[str, int]:
         """
-        使用LLM对高连接度节点的相关节点进行语义分组，以减少直接连接数。
+        使用 NetworkX 和 Louvain 算法检测图的社区。
+        Args:
+            graph (SerializableGraphDocument): 输入的图文档。
+        Returns:
+            Dict[str, int]: 节点ID到社区ID的映射。
         """
-        llm = self._create_llm(num_ctx=self.default_num_ctx)
-
-        related_nodes_info = "\n".join([
-            f"节点{idx + 1}: ID={n.id}, 类型={n.type}, 属性={json.dumps(n.properties, ensure_ascii=False)}"
-            for idx, n in enumerate(related_nodes)
-        ])
-        main_node_props = json.dumps(main_node.properties, ensure_ascii=False)
-
-        prompt_template = PromptTemplate(
-            template="""
-            你是一个图谱优化专家。图谱中存在一个节点（称为主节点），它与过多的其他节点（相关节点）直接相连，导致图结构复杂。
-            你的任务是优化这个结构。
-            主节点信息：
-            - ID: {main_node_id}
-            - 类型: {main_node_type}
-            - 属性: {main_node_properties}
-            相关节点列表 (这些节点都直接连接到主节点)：
-            {related_nodes_info}
-            优化任务：
-            1.  分析所有“相关节点”的语义、类型和属性。
-            2.  将这些“相关节点”分成2-7个语义上内聚的组，分组数量取决于相关节点的数量，平均10个相关节点才增加1个内聚的组。分组的目标是减少主节点的直接连接数。
-            3.  每个分组应围绕一个清晰的主题或概念。
-            4.  为每个组生成以下信息：
-                - **group_name**: 一个能概括该组核心语义的中文词语（例如“背景”、“事件”、“组织”）。**这个名称将直接用作新聚合节点的 ID 和其 `name` 属性的值。**
-                - **node_ids**: 属于该组的相关节点的ID列表。
-                - **aggregate_relationship_type**: 描述“主节点”与这个新“聚合概念”之间关系的最合适的中文词语（如“涉及”、“拥有”、“经历”）。
-                - **member_relationship_type**: 描述新“聚合概念”与其“成员节点”之间关系的最合适的中文词语（如“包含”、“导致”、“体现”）。
-            **输出要求**：
-            - **严格遵守指令，只输出最终的JSON格式结果，不要添加任何解释、前言或后语。**
-            - **确保生成的JSON格式完全正确且有效。**
-            - **仔细核对，确保所有要求的信息都已包含在输出中。**
-            - **严格遵循以下JSON结构定义：**
-            {format_instructions}
-            """,
-            input_variables=[
-                "main_node_id",
-                "main_node_type",
-                "main_node_properties",
-                "related_nodes_info"
-            ],
-            partial_variables={
-                "format_instructions": JsonOutputParser(
-                    pydantic_object=AggregateGroupingResponse).get_format_instructions()
-            }
-        )
-        chain = prompt_template | llm
-        response = chain.invoke({
-            "main_node_id": main_node.id,
-            "main_node_type": main_node.type,
-            "main_node_properties": main_node_props,
-            "related_nodes_info": related_nodes_info
-        })
-
-        if isinstance(response, AIMessage):
-            response = response.content
-        if isinstance(response, str):
-            think_index = response.find("</think>")
-            if think_index != -1:
-                response = response[think_index + len("</think>"):]
-            response = response.strip()
-
+        import networkx as nx
         try:
-            parser = JsonOutputParser(pydantic_object=AggregateGroupingResponse)
-            result = parser.invoke(response)
-            if isinstance(result, dict):
-                result = AggregateGroupingResponse(**result)
-            return result
-        except Exception as e:
-            error_msg = f"为节点 '{main_node.id}' 调用 LLM 进行分组时失败。原始错误: {e}"
-            logger.error(error_msg)
-            raise RuntimeError(error_msg) from e
+            # 尝试导入 python-louvain (community)
+            import community as community_louvain
+        except ImportError:
+            try:
+                # 尝试导入 nx_cugraph (如果可用且支持 louvain)
+                import nx_cugraph as nxcg
+                logger.info("Using nx_cugraph for community detection.")
+                networkx_func = nxcg.community.louvain_communities
+            except ImportError:
+                # 如果都失败，抛出错误
+                logger.error("Neither 'community' (python-louvain) nor 'nx_cugraph' is available for community detection.")
+                logger.error("Please install one: 'pip install python-louvain' or 'pip install nx-cugraph'")
+                raise ImportError("Community detection library not found.")
+
+            # 使用 nx_cugraph
+            G_nx = nx.Graph()
+            for rel in graph.relationships:
+                # Louvain 算法通常处理无向图，我们将其视为无向
+                G_nx.add_edge(rel.source_id, rel.target_id)
+
+            # nx_cugraph 的 louvain 返回的是 frozenset 的列表
+            communities = networkx_func(G_nx)
+            partition = {}
+            for community_id, community_nodes in enumerate(communities):
+                for node_id in community_nodes:
+                    partition[node_id] = community_id
+            return partition
+
+        # 使用 python-louvain
+        logger.info("Using python-louvain for community detection.")
+        G_nx = nx.Graph()
+        for rel in graph.relationships:
+            # Louvain 算法通常处理无向图，我们将其视为无向
+            G_nx.add_edge(rel.source_id, rel.target_id)
+
+        partition = community_louvain.best_partition(G_nx)
+        return partition
+
+    def _group_nodes_evenly(self, nodes: List[SerializableNode], max_group_size: int) -> List[List[SerializableNode]]:
+        """
+        将节点列表均匀地分成多个组，每组不超过指定大小
+        Args:
+            nodes: 要分组的节点列表
+            max_group_size: 每组的最大节点数
+        Returns:
+            分组后的节点列表的列表
+        """
+        if not nodes or max_group_size <= 0:
+            return []
+
+        # 如果总节点数小于等于最大组大小，直接返回一个组
+        if len(nodes) <= max_group_size:
+            return [nodes]
+
+        # 均匀分组
+        groups = []
+        for i in range(0, len(nodes), max_group_size):
+            group = nodes[i:i + max_group_size]
+            groups.append(group)
+
+        return groups
 
     def _optimize_single_iteration(
             self,
             graph_doc: SerializableGraphDocument,
             min_hub_degree: int,
+            max_aggregate_group_size: int = 5  # 新增参数：聚合组的最大大小
     ) -> Tuple[SerializableGraphDocument, bool]:
         """
         对图文档进行单次优化：处理当前所有度数 >= min_hub_degree 的节点。
         Args:
             graph_doc (SerializableGraphDocument): 输入的图文档。
             min_hub_degree (int): 用于确定高连接度节点的固定的最小度数阈值。
+            max_aggregate_group_size (int): 每个聚合组的最大节点数，用于均匀分组。
         Returns:
             Tuple[SerializableGraphDocument, bool]: 优化后的图文档和一个布尔值，
                                                     指示本次调用是否实际处理了任何节点。
@@ -304,56 +293,71 @@ class GraphOptimizer:
                 logger.warning(f"  节点 '{node.id}' 被标记为高连接度，但未找到相关节点。跳过。")
                 continue
 
-            # 4. 调用分组函数
-            try:
-                grouping_result = self._group_related_nodes(main_node=node, related_nodes=related_nodes)
-            except Exception as e:
-                logger.error(f"为节点 '{node.id}' 分组失败: {e}")
-                continue  # 跳过这个节点，继续处理下一个
+            # 4. 使用均匀分组策略，而不是社区检测
+            # 将相关节点均匀分组
+            evenly_grouped_nodes = self._group_nodes_evenly(related_nodes, max_aggregate_group_size)
 
-            # 5. 创建中间聚合节点和关系，并收集已聚合的节点ID
+            logger.debug(
+                f"  节点 '{node.id}' 的相关节点被均匀分为 {len(evenly_grouped_nodes)} 个组，每组最多 {max_aggregate_group_size} 个节点。")
+
+            if not evenly_grouped_nodes:
+                logger.info(f"  节点 '{node.id}' 的相关节点无法分组，跳过聚合。")
+                continue
+
+            # 5. 为每个组创建聚合节点和关系，并收集已聚合的节点ID
             groups_created_for_this_node = 0
-            aggregated_node_ids = set()  # <-- 新增：记录所有被聚合的节点ID
+            aggregated_node_ids = set()  # 记录所有被聚合的节点ID
 
-            for group in grouping_result.groups:
-                aggregate_node_id = group.group_name
+            for group_idx, nodes_in_group in enumerate(evenly_grouped_nodes):
+                # 生成聚合节点ID (使用枢纽节点ID和组索引)
+                aggregate_node_id = f"{node.id}_agg_{group_idx:03d}"  # 格式: 原节点ID_agg_000, agg_001, ...
+
+                # 使用原始节点的名称作为聚合节点的名称
+                original_name = node.properties.get("name", node.id)  # 优先使用name属性，否则使用id
+                aggregate_node_name = f"{original_name}_聚合_{group_idx:03d}"
+
                 aggregate_node = SerializableNode(
                     id=aggregate_node_id,
-                    type="聚合概念",
+                    type="聚合节点",
                     properties={
-                        "name": group.group_name,
-                        "origin_node": node.id
+                        "name": aggregate_node_name,
+                        "origin_hub_node": node.id,
+                        "group_index": group_idx,
+                        "member_count": len(nodes_in_group),
+                        "max_group_size": max_aggregate_group_size  # 记录参数
                     }
                 )
                 optimized_graph.nodes.append(aggregate_node)
-                logger.debug(f" 创建聚合节点: ID='{aggregate_node_id}', Name='{group.group_name}'")
+                logger.debug(
+                    f" 创建聚合节点: ID='{aggregate_node_id}', Name='{aggregate_node_name}', Group={group_idx}, Members={len(nodes_in_group)}")
 
+                # 创建枢纽节点到聚合节点的关系
                 new_rel_to_aggregate = SerializableRelationship(
                     source_id=node.id,
                     target_id=aggregate_node_id,
-                    type=group.aggregate_relationship_type,
-                    properties={}
+                    type="聚合连接",
+                    properties={"group_index": group_idx}
                 )
                 optimized_graph.relationships.append(new_rel_to_aggregate)
-                logger.debug(f" 创建关系: '{node.id}' --({group.aggregate_relationship_type})--> '{aggregate_node_id}'")
+                logger.debug(f" 创建关系: '{node.id}' --(聚合连接)--> '{aggregate_node_id}'")
 
-                for member_node_id in group.node_ids:
+                # 创建聚合节点到其成员节点的关系
+                for member_node in nodes_in_group:
                     new_rel_to_member = SerializableRelationship(
                         source_id=aggregate_node_id,
-                        target_id=member_node_id,
-                        type=group.member_relationship_type,
+                        target_id=member_node.id,
+                        type="包含成员",
                         properties={}
                     )
                     optimized_graph.relationships.append(new_rel_to_member)
-                    logger.debug(
-                        f" 创建关系: '{aggregate_node_id}' --({group.member_relationship_type})--> '{member_node_id}'")
-                    aggregated_node_ids.add(member_node_id)  # <-- 记录被聚合的节点
+                    logger.debug(f" 创建关系: '{aggregate_node_id}' --(包含成员)--> '{member_node.id}'")
+                    aggregated_node_ids.add(member_node.id)  # 记录被聚合的节点
 
                 groups_created_for_this_node += 1
 
-            logger.info(f" 为节点 '{node.id}' 创建了 {groups_created_for_this_node} 个聚合组。")
+            logger.info(f" 为节点 '{node.id}' 创建了 {groups_created_for_this_node} 个均匀聚合组。")
 
-            # 6. 删除原主节点与【已聚合节点】之间的直接关系
+            # 6. 删除原枢纽节点与【已聚合节点】之间的直接关系
             if aggregated_node_ids:
                 initial_rel_count = len(optimized_graph.relationships)
                 optimized_graph.relationships = [
@@ -368,442 +372,16 @@ class GraphOptimizer:
             else:
                 logger.info(f"  节点 '{node.id}' 没有生成任何聚合组，未删除任何关系。")
 
-            # 7. 识别未被聚合的节点（将成为孤立节点）
-            unaggregated_node_ids = related_node_ids - aggregated_node_ids
-            if unaggregated_node_ids:
-                logger.debug(
-                    f"  节点 '{node.id}' 有 {len(unaggregated_node_ids)} 个未被聚合的节点，将由后续步骤处理: {unaggregated_node_ids}")
-            else:
-                logger.debug(f"  节点 '{node.id}' 的所有相关节点均已聚合。")
-
-            # 8. 调用孤立节点重连逻辑（处理 unaggregated_node_ids）
-            self._reconnect_orphaned_nodes(optimized_graph, unaggregated_node_ids)
-
         logger.info(
             f"单次优化迭代完成。总共处理了 {len(high_degree_nodes)} 个高连接度节点。")
         return optimized_graph, was_modified
 
-    def _sample_candidate_nodes(
-            self,
-            graph: SerializableGraphDocument,
-            exclude_node_id: str,
-            max_candidates: int = 30
-    ) -> List[SerializableNode]:
-        """
-        采样候选连接节点，优先选择连接数多的节点。
-
-        Args:
-            graph: 当前图文档
-            exclude_node_id: 需要排除的节点ID（通常是孤立节点本身）
-            max_candidates: 最大候选节点数
-
-        Returns:
-            按连接数降序排列的候选节点列表
-        """
-        # 1. 计算每个节点的连接数
-        node_degree = {}
-        for rel in graph.relationships:
-            node_degree[rel.source_id] = node_degree.get(rel.source_id, 0) + 1
-            node_degree[rel.target_id] = node_degree.get(rel.target_id, 0) + 1
-
-        # 2. 过滤并排序候选节点
-        candidate_nodes = [
-            n for n in graph.nodes
-            if n.id != exclude_node_id
-        ]
-
-        # 按连接数降序排序
-        candidate_nodes.sort(
-            key=lambda n: node_degree.get(n.id, 0),
-            reverse=True
-        )
-
-        # 3. 限制数量
-        return candidate_nodes[:max_candidates]
-
-    def _find_connection_targets(
-            self,
-            graph: SerializableGraphDocument,
-            node: SerializableNode
-    ) -> List[Tuple[str, str]]:
-        """
-        使用LLM为孤立节点寻找可能的连接目标。
-        返回: [(target_node_id, relationship_type), ...]
-        """
-        llm = self._create_llm(num_ctx=self.default_num_ctx)
-
-        # 使用新的采样方法
-        candidate_nodes = self._sample_candidate_nodes(graph, node.id, max_candidates=30)
-
-        # 构建候选节点信息
-        other_nodes_info = "\n".join([
-            f"节点ID: {n.id}, 类型: {n.type}, 属性: {json.dumps(n.properties, ensure_ascii=False)}, 连接数: {sum(1 for rel in graph.relationships if rel.source_id == n.id or rel.target_id == n.id)}"
-            for n in candidate_nodes
-        ])
-
-        node_props = json.dumps(node.properties, ensure_ascii=False)
-
-        prompt_template = PromptTemplate(
-            template="""
-            你是一个知识图谱专家。图谱中有一个节点意外变成了孤立节点，需要为其重新建立有意义的连接。
-
-            孤立节点信息：
-            - ID: {node_id}
-            - 类型: {node_type}
-            - 属性: {node_properties}
-
-            图中其他可连接的节点列表（按重要性排序）：
-            {other_nodes_info}
-
-            任务：
-            1. 分析孤立节点的语义和属性
-            2. 在其他节点中找出1-3个最有可能与该节点建立连接的节点
-            3. 为每对节点建议一个合适的中文关系类型
-
-            输出要求：
-            - 严格遵守以下JSON格式
-            - 只输出JSON，不要添加任何解释
-            - 如果找不到合适的连接，返回空数组
-            {format_instructions}
-            """,
-            input_variables=["node_id", "node_type", "node_properties", "other_nodes_info"],
-            partial_variables={
-                "format_instructions": JsonOutputParser(
-                    pydantic_object=ReconnectionResponse
-                ).get_format_instructions()
-            }
-        )
-
-        chain = prompt_template | llm
-        response = chain.invoke({
-            "node_id": node.id,
-            "node_type": node.type,
-            "node_properties": node_props,
-            "other_nodes_info": other_nodes_info
-        })
-
-        # 解析响应并返回结果
-        try:
-            if isinstance(response, AIMessage):
-                response = response.content
-            if isinstance(response, str):
-                response = response.strip()
-
-            parser = JsonOutputParser(pydantic_object=ReconnectionResponse)
-            result = parser.invoke(response)
-
-            if isinstance(result, dict):
-                result = ReconnectionResponse(**result)
-
-            return [(suggestion.target_node_id, suggestion.relationship_type)
-                    for suggestion in result.suggestions]
-        except Exception as e:
-            logger.error(f"为节点 '{node.id}' 寻找连接目标时失败: {e}")
-            return []
-
-    def _find_connected_component(self, graph: SerializableGraphDocument, start_node_id: str, visited: Set[str]) -> Set[
-        str]:
-        """
-        使用 BFS 找到包含 start_node_id 的连通分量的所有节点 ID
-        """
-        from collections import deque
-
-        component = set()
-        queue = deque([start_node_id])
-        visited.add(start_node_id)
-        component.add(start_node_id)
-
-        # 构建邻接表以提高效率
-        adjacency = {}
-        for rel in graph.relationships:
-            adjacency.setdefault(rel.source_id, set()).add(rel.target_id)
-            adjacency.setdefault(rel.target_id, set()).add(rel.source_id)
-
-        while queue:
-            current = queue.popleft()
-            neighbors = adjacency.get(current, set())
-            for neighbor in neighbors:
-                if neighbor not in visited:
-                    visited.add(neighbor)
-                    component.add(neighbor)
-                    queue.append(neighbor)
-
-        return component
-
-    def _find_all_connected_components(self, graph: SerializableGraphDocument) -> List[Set[str]]:
-        """
-        找出图中所有的连通分量
-        """
-        visited = set()
-        components = []
-        all_node_ids = {node.id for node in graph.nodes}
-
-        for node_id in all_node_ids:
-            if node_id not in visited:
-                component = self._find_connected_component(graph, node_id, visited)
-                components.append(component)
-
-        return components
-
-    def _reconnect_orphaned_nodes(
-            self,
-            graph: SerializableGraphDocument,
-            potentially_orphaned_node_ids: Set[str]  # 可选参数
-    ) -> None:
-        """
-        检查节点是否变成孤立节点或孤立连通分量，如果是，则尝试为其建立新的连接。
-
-        Args:
-            graph: 当前图文档
-            potentially_orphaned_node_ids:
-                - 如果提供非空集合：只检查这些节点是否孤立并处理
-                - 如果为空集合：检查全图所有节点，找出并处理所有孤立节点和孤立连通分量
-        """
-
-        # 确定要检查的节点范围
-        if potentially_orphaned_node_ids:
-            # 局部模式：只检查指定的节点
-            candidate_node_ids = potentially_orphaned_node_ids
-            logger.debug(f"局部模式：检查 {len(candidate_node_ids)} 个候选节点是否孤立")
-        else:
-            # 全局模式：检查全图所有节点
-            candidate_node_ids = {node.id for node in graph.nodes}
-            logger.debug("全局模式：检查全图所有节点是否孤立")
-
-        # 找出当前图中所有有连接的节点
-        connected_node_ids = set()
-        for rel in graph.relationships:
-            connected_node_ids.add(rel.source_id)
-            connected_node_ids.add(rel.target_id)
-
-        # 找出真正的孤立节点（在候选范围内但没有连接的节点）
-        orphaned_node_ids = candidate_node_ids - connected_node_ids
-
-        if orphaned_node_ids:
-            logger.info(f"发现 {len(orphaned_node_ids)} 个孤立节点: {orphaned_node_ids}")
-
-            # 为每个孤立节点寻找新的连接
-            for node_id in orphaned_node_ids:
-                node = next((n for n in graph.nodes if n.id == node_id), None)
-                if not node:
-                    continue
-
-                # 使用改进的策略寻找连接目标
-                connected_targets = self._find_connection_targets(graph, node)
-
-                if connected_targets:
-                    for target_id, rel_type in connected_targets:
-                        new_rel = SerializableRelationship(
-                            source_id=node_id,
-                            target_id=target_id,
-                            type=rel_type,
-                            properties={}
-                        )
-                        graph.relationships.append(new_rel)
-                        logger.debug(
-                            f"为孤立节点 '{node_id}' 重新建立了连接: '{node_id}' --({rel_type})--> '{target_id}'")
-                else:
-                    logger.warning(f"无法为孤立节点 '{node_id}' 找到合适的连接目标。")
-
-        # ✅ 处理孤立的连通分量
-        if not potentially_orphaned_node_ids:  # 只在全局模式下处理连通分量
-            self._reconnect_isolated_components(graph)
-
-    def _reconnect_isolated_components(self, graph: SerializableGraphDocument) -> None:
-        """
-        检测并重新连接孤立的连通分量
-        """
-        components = self._find_all_connected_components(graph)
-
-        if len(components) <= 1:
-            logger.debug("图是连通的，无需处理孤立连通分量。")
-            return
-
-        logger.info(f"发现 {len(components)} 个连通分量。")
-
-        # 找到最大的连通分量作为"主图"
-        components.sort(key=len, reverse=True)
-        main_component = components[0]
-        isolated_components = components[1:]
-
-        logger.info(f"主连通分量包含 {len(main_component)} 个节点。")
-        logger.info(f"发现 {len(isolated_components)} 个孤立连通分量。")
-
-        # 为每个孤立连通分量选择一个代表节点并连接
-        for i, component in enumerate(isolated_components):
-            # 选择度数最高的节点作为代表（或者可以随机选择）
-            node_degree = {}
-            for rel in graph.relationships:
-                if rel.source_id in component:
-                    node_degree[rel.source_id] = node_degree.get(rel.source_id, 0) + 1
-                if rel.target_id in component:
-                    node_degree[rel.target_id] = node_degree.get(rel.target_id, 0) + 1
-
-            if not node_degree:
-                # 如果这个连通分量只有一个节点且无边（理论上不会出现，但做防御性编程）
-                representative_node_id = next(iter(component))
-            else:
-                representative_node_id = max(node_degree.keys(), key=lambda x: node_degree[x])
-
-            logger.info(f"孤立连通分量 {i + 1} (大小: {len(component)}) 选择代表节点: '{representative_node_id}'")
-
-            # 获取代表节点的完整对象
-            representative_node = next((n for n in graph.nodes if n.id == representative_node_id), None)
-            if not representative_node:
-                logger.warning(f"无法找到代表节点 '{representative_node_id}'，跳过该连通分量。")
-                continue
-
-            # 使用 LLM 为该代表节点寻找与主图的连接
-            connected_targets = self._find_connection_targets_for_component(
-                graph, representative_node, main_component
-            )
-
-            if connected_targets:
-                for target_id, rel_type in connected_targets:
-                    new_rel = SerializableRelationship(
-                        source_id=representative_node_id,
-                        target_id=target_id,
-                        type=rel_type,
-                        properties={}
-                    )
-                    graph.relationships.append(new_rel)
-                    logger.debug(
-                        f"为孤立连通分量的代表节点 '{representative_node_id}' 建立连接: '{representative_node_id}' --({rel_type})--> '{target_id}'")
-            else:
-                logger.warning(f"无法为孤立连通分量的代表节点 '{representative_node_id}' 找到合适的连接目标。")
-
-    def _remove_remaining_isolated_nodes(self, graph: SerializableGraphDocument) -> None:
-        """
-        删除经过所有重连尝试后仍然孤立的节点
-        """
-        # 找出当前图中所有有连接的节点
-        connected_node_ids = set()
-        for rel in graph.relationships:
-                connected_node_ids.add(rel.source_id)
-                connected_node_ids.add(rel.target_id)
-
-        # 找出所有孤立节点
-        all_node_ids = {node.id for node in graph.nodes}
-        isolated_node_ids = all_node_ids - connected_node_ids
-
-        if not isolated_node_ids:
-            logger.info("没有发现需要删除的孤立节点。")
-            return
-
-        logger.info(f"发现 {len(isolated_node_ids)} 个仍然孤立的节点，将被删除: {isolated_node_ids}")
-
-        # 删除孤立节点
-        original_node_count = len(graph.nodes)
-        graph.nodes = [node for node in graph.nodes if node.id not in isolated_node_ids]
-
-        # 注意：这些节点已经是孤立的，所以 relationships 中应该没有涉及它们的边
-        # 但为了保险起见，还是清理一下（防御性编程）
-        graph.relationships = [
-            rel for rel in graph.relationships
-            if rel.source_id not in isolated_node_ids and rel.target_id not in isolated_node_ids
-        ]
-
-        removed_count = original_node_count - len(graph.nodes)
-        logger.info(f"成功删除 {removed_count} 个孤立节点。")
-    def _find_connection_targets_for_component(
-            self,
-            graph: SerializableGraphDocument,
-            node: SerializableNode,
-            main_component: Set[str]
-    ) -> List[Tuple[str, str]]:
-        """
-        为连通分量的代表节点寻找与主图的连接目标
-        限制候选节点只能来自主图
-        """
-        llm = self._create_llm(num_ctx=self.default_num_ctx)
-
-        # 限制候选节点为主图中的节点
-        candidate_nodes = [
-            n for n in graph.nodes
-            if n.id in main_component
-        ]
-
-        # 按连接数排序（优先选择连接多的节点）
-        node_degree = {}
-        for rel in graph.relationships:
-            if rel.source_id in main_component:
-                node_degree[rel.source_id] = node_degree.get(rel.source_id, 0) + 1
-            if rel.target_id in main_component:
-                node_degree[rel.target_id] = node_degree.get(rel.target_id, 0) + 1
-
-        candidate_nodes.sort(
-            key=lambda n: node_degree.get(n.id, 0),
-            reverse=True
-        )
-
-        # 取前30个作为候选
-        candidate_nodes = candidate_nodes[:30]
-
-        # 构建候选节点信息
-        other_nodes_info = "\n".join([
-            f"节点ID: {n.id}, 类型: {n.type}, 属性: {json.dumps(n.properties, ensure_ascii=False)}, 连接数: {node_degree.get(n.id, 0)}"
-            for n in candidate_nodes
-        ])
-
-        node_props = json.dumps(node.properties, ensure_ascii=False)
-
-        prompt_template = PromptTemplate(
-            template="""
-            你是一个知识图谱专家。图谱中有一个连通分量意外与主图断开连接，需要为其代表节点建立有意义的连接以重新融入主图。
-
-            代表节点信息（来自孤立连通分量）：
-            - ID: {node_id}
-            - 类型: {node_type}
-            - 属性: {node_properties}
-
-            主图中的候选连接节点列表（按重要性排序）：
-            {other_nodes_info}
-
-            任务：
-            1. 分析代表节点的语义和属性
-            2. 在主图节点中找出1-3个最有可能与该节点建立连接的节点
-            3. 为每对节点建议一个合适的中文关系类型
-
-            输出要求：
-            - 严格遵守以下JSON格式
-            - 只输出JSON，不要添加任何解释
-            - 如果找不到合适的连接，返回空数组
-            {format_instructions}
-            """,
-            input_variables=["node_id", "node_type", "node_properties", "other_nodes_info"],
-            partial_variables={
-                "format_instructions": JsonOutputParser(
-                    pydantic_object=ReconnectionResponse
-                ).get_format_instructions()
-            }
-        )
-
-        chain = prompt_template | llm
-        response = chain.invoke({
-            "node_id": node.id,
-            "node_type": node.type,
-            "node_properties": node_props,
-            "other_nodes_info": other_nodes_info
-        })
-
-        # 解析响应并返回结果
-        try:
-            if isinstance(response, AIMessage):
-                response = response.content
-            if isinstance(response, str):
-                response = response.strip()
-
-            parser = JsonOutputParser(pydantic_object=ReconnectionResponse)
-            result = parser.invoke(response)
-
-            if isinstance(result, dict):
-                result = ReconnectionResponse(**result)
-
-            return [(suggestion.target_node_id, suggestion.relationship_type)
-                    for suggestion in result.suggestions]
-        except Exception as e:
-            logger.error(f"为连通分量代表节点 '{node.id}' 寻找连接目标时失败: {e}")
-            return []
+    # --- 暂时移除孤立节点处理相关方法 ---
+    # _sample_candidate_nodes, _find_connection_targets, _find_connected_component,
+    # _find_all_connected_components, _reconnect_orphaned_nodes, _reconnect_isolated_components,
+    # _remove_remaining_isolated_nodes, _find_connection_targets_for_component,
+    # _reconnect_component_representatives_batch, _find_connection_targets_batch,
+    # _sample_candidate_nodes_batch 等方法在此版本中被移除。
 
     def _remove_self_loops(self, graph: SerializableGraphDocument) -> None:
         """
@@ -823,21 +401,23 @@ class GraphOptimizer:
             logger.info(f"删除了 {removed_count} 个自我指涉的连接。")
         else:
             logger.debug("未发现自我指涉的连接。")
+
     def optimize_graph_document(
             self,
             graph_doc: SerializableGraphDocument,
-            min_hub_degree: int = 50,  # 默认停止条件：所有节点度数 < 20
-            max_iterations: int = 3,  # 默认最大迭代次数
+            min_hub_degree: int = 20,
+            max_iterations: int = 3,
+            max_aggregate_group_size: int = 5,  # 新增参数
             verbose: bool = True
     ) -> SerializableGraphDocument:
         """
         迭代优化图文档，直到所有节点的度数都小于 min_hub_degree 或达到最大迭代次数。
         Args:
             graph_doc (SerializableGraphDocument): 输入的图文档。
-            min_hub_degree (int): 停止优化的度数阈值。当所有节点度数都小于此值时停止。
-                                  默认为 10。
-            max_iterations (int): 最大迭代次数，防止无限循环。默认为 10。
-            verbose (bool): 是否打印详细日志。默认为 True。
+            min_hub_degree (int): 停止优化的度数阈值。
+            max_iterations (int): 最大迭代次数。
+            max_aggregate_group_size (int): 每个聚合组的最大节点数。
+            verbose (bool): 是否打印详细日志。
         Returns:
             SerializableGraphDocument: 优化后的图文档。
         """
@@ -848,21 +428,23 @@ class GraphOptimizer:
             logger.info(f"开始迭代优化图文档...")
             logger.info(f"停止条件: 所有节点度数 < {min_hub_degree}")
             logger.info(f"最大迭代次数: {max_iterations}")
+            logger.info(f"最大聚合组大小: {max_aggregate_group_size}")
 
         while iteration < max_iterations:
             if verbose:
                 logger.info(f"--- 开始第 {iteration + 1} 轮优化 ---")
 
-            # 执行单次优化
+            # 执行单次优化（传入新的参数）
             optimized_graph, was_modified = self._optimize_single_iteration(
                 current_graph,
-                min_hub_degree
+                min_hub_degree,
+                max_aggregate_group_size
             )
 
             # 更新当前图
             current_graph = optimized_graph
 
-            # --- 停止条件 1: 检查是否没有节点被修改 (即没有找到 >= min_hub_degree 的节点) ---
+            # --- 停止条件 1: 检查是否没有节点被修改 ---
             if not was_modified:
                 if verbose:
                     logger.info(f"第 {iteration + 1} 轮优化未发现需要处理的节点 (所有节点度数 < {min_hub_degree})。")
@@ -879,20 +461,10 @@ class GraphOptimizer:
         if iteration >= max_iterations and verbose:
             logger.info(f"已达到最大迭代次数 {max_iterations}，停止优化。")
 
-        # ✅ 在所有迭代完成后，统一处理全图孤立节点
-        if verbose:
-            logger.info("开始全局孤立节点检查和处理...")
-        self._reconnect_orphaned_nodes(current_graph, set())  # 传空集触发全局模式
-
-        # ✅ 清理自我指涉的连接
+        # --- 清理自我指涉的连接 ---
         if verbose:
             logger.info("开始清理自我指涉的连接...")
         self._remove_self_loops(current_graph)
-
-        # ✅ 最后一步：删除仍然孤立的节点
-        if verbose:
-            logger.info("开始清理仍然孤立的节点...")
-        self._remove_remaining_isolated_nodes(current_graph)
 
         if verbose:
             final_nodes_count = len(current_graph.nodes)
@@ -922,11 +494,9 @@ if __name__ == "__main__":
     )
 
     logger.info("GraphOptimizer 初始化完成。")
-    cache_hash = "f8add0022114fd2185b53a08d50885f6b78fcf783a2fff354a83353a48c1ea2c"
+    cache_hash = "1f84331574d494ccd2ac92839548626db371e3f21a480ba4490d601ac06600c6"
 
-    logger.info("=== 开始测试 GraphOptimizer.optimize_graph_document (迭代版本) ===")
-
-
+    logger.info("=== 开始测试 GraphOptimizer.optimize_graph_document (社区检测版本) ===")
 
     docs_raw = load_cache(cache_hash)
     docs = None
@@ -960,12 +530,12 @@ if __name__ == "__main__":
     except Exception as e:
         logger.warning(f"无法获取加载数据的摘要信息: {e}")
 
-    logger.info("开始调用 optimize_graph_document (迭代版本)...")
+    logger.info("开始调用 optimize_graph_document (社区检测版本)...")
     try:
         optimized_docs = optimizer.optimize_graph_document(docs)
 
         if optimized_docs:
-            logger.info("optimize_graph_document (迭代版本) 调用成功。")
+            logger.info("optimize_graph_document (社区检测版本) 调用成功。")
             try:
                 opt_nodes_count = len(optimized_docs.nodes) if optimized_docs.nodes else 0
                 opt_rels_count = len(optimized_docs.relationships) if optimized_docs.relationships else 0
@@ -977,7 +547,7 @@ if __name__ == "__main__":
                 # 方式一：基于原始 hash 和时间戳/UUID 生成新 key
                 timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
                 unique_suffix = uuid.uuid4().hex[:8]  # 取前8位作为简短唯一标识
-                optimized_cache_key = f"optimized_iter_{cache_hash}_{timestamp_str}_{unique_suffix}"
+                optimized_cache_key = f"optimized_community_{cache_hash}_{timestamp_str}_{unique_suffix}"
 
                 # 方式二：如果希望使用 UUID 作为主要标识
                 # optimized_cache_key = f"optimized_{uuid.uuid4().hex}"
@@ -1006,15 +576,16 @@ if __name__ == "__main__":
                 new_metadata = {
                     "source_cache_key": cache_hash,  # 记录来源
                     "optimization_params": {
-                        "min_hub_degree": 15,
-                        "max_iterations": 2,
+                        "min_hub_degree": 30, # 使用实际使用的参数
+                        "max_iterations": 3,  # 使用实际使用的参数
+                        "optimization_method": "community_detection_based_aggregation"
                     },
                     "final_stats": {
                         "nodes_count": opt_nodes_count,
                         "relationships_count": opt_rels_count,
                     },
                     "created_at": datetime.now().isoformat(),
-                    "description": f"Optimized version of graph {cache_hash}",
+                    "description": f"Optimized version of graph {cache_hash} using community detection.",
                     # 继承原始元数据的部分字段 (可选)
                     "novel_name": original_metadata.get("novel_name", ""),
                     "chapter_name": original_metadata.get("chapter_name", ""),
@@ -1026,7 +597,8 @@ if __name__ == "__main__":
                     # 可以添加优化器相关信息
                     "optimizer_info": {
                         "optimizer_type": "GraphOptimizer",
-                        "min_hub_degree_used": 15,
+                        "min_hub_degree_used": 30, # 记录实际使用的参数
+                        "method": "community_detection"
                     }
                 }
                 with open(output_metadata_path, 'w', encoding='utf-8') as f:
@@ -1041,4 +613,4 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"调用 optimize_graph_document 时发生错误: {e}", exc_info=True)
         exit(1)
-    logger.info("=== GraphOptimizer.optimize_graph_document (迭代版本) 测试完成 ===")
+    logger.info("=== GraphOptimizer.optimize_graph_document (社区检测版本) 测试完成 ===")

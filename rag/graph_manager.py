@@ -34,6 +34,11 @@ class GraphCacheManager:
     """
 
     @staticmethod
+    def get_cache_key(config) -> str:
+        """从 ExtractionConfig 对象生成缓存键。"""
+        return get_cache_key_from_config(config)
+
+    @staticmethod
     def _process_loaded_cache_data(loaded_data: Any, verbose: bool = False, log_context: str = "") -> Optional[
         SerializableGraphDocument]:
         """
@@ -99,7 +104,7 @@ class GraphCacheManager:
 
         start_time = time.time()
         # 2. 生成缓存键
-        cache_key = get_cache_key_from_config(config)
+        cache_key = cls.get_cache_key(config)
         log_context = f"(Key: {cache_key})"
 
         try:
@@ -134,7 +139,7 @@ class GraphCacheManager:
         if not config.use_cache or result is None:
             return
 
-        cache_key = get_cache_key_from_config(config)
+        cache_key = cls.get_cache_key(config)
         cache_data = result.to_dict() if isinstance(result, SerializableGraphDocument) else result
         metadata = generate_cache_metadata(**config.to_metadata_params())
 

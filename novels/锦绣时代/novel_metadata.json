@@ -1,0 +1,32 @@
+{
+    "novel_id": "1046196674",
+    "bookname": "锦绣时代",
+    "save_dir": "../novels\\锦绣时代",
+    "chapters": [
+        {
+            "title": "第一章 漫长冬日",
+            "link": "https://www.qidian.com/chapter/1046196674/857431927/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第二章 苦夏挽歌",
+            "link": "https://www.qidian.com/chapter/1046196674/857431829/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第三章 新新世界",
+            "link": "https://www.qidian.com/chapter/1046196674/857432467/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第四章 人在江湖",
+            "link": "https://www.qidian.com/chapter/1046196674/858125263/",
+            "status": "downloaded"
+        },
+        {
+            "title": "第五章 出师不利",
+            "link": "https://www.qidian.com/chapter/1046196674/858446486/",
+            "status": "downloaded"
+        }
+    ]
+}

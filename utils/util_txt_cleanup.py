@@ -8,7 +8,7 @@ def sanitize_name(name: str) -> str:
     清洗文件或文件夹名，移除 Windows 非法字符，并处理多余标点
     """
     # Windows 非法字符：\ / : * ? " < > |
-    # 注意：中文标点如 ？ “ ” 等虽合法，但为安全可替换或保留
+    # 注意：中文标点如 ？ " " 等虽合法，但为安全可替换或保留
     # 这里我们只处理真正非法的英文符号 + 过多的点/空格
 
     # 替换非法字符为空格（或你可以用下划线 _）
@@ -27,6 +27,33 @@ def sanitize_name(name: str) -> str:
         name = "unnamed"
 
     return name
+
+
+def delete_small_txt_files(root_path: str, size_limit: int = 3072) -> int:
+    """
+    删除指定路径下小于指定大小（字节）的txt文件
+    默认删除小于3KB（3072字节）的txt文件
+    返回删除的文件数量
+    """
+    root = Path(root_path).resolve()
+    if not root.exists():
+        print(f"❌ 路径不存在: {root}")
+        return 0
+
+    deleted_count = 0
+
+    # 遍历所有txt文件
+    for txt_file in root.rglob("*.txt"):
+        try:
+            file_size = txt_file.stat().st_size
+            if file_size < size_limit:
+                print(f"🗑️  删除小文件: {txt_file} (大小: {file_size} 字节)")
+                txt_file.unlink()  # 删除文件
+                deleted_count += 1
+        except Exception as e:
+            print(f"❌ 删除文件失败 {txt_file}: {e}")
+
+    return deleted_count
 
 
 def rename_safe_dirs_and_files(root_path: str):
@@ -79,5 +106,13 @@ if __name__ == "__main__":
     # 脚本在 utils/，目标是 ../reports/novels/
     reports_novels = Path(__file__).parent.parent / "novels"
     print(f"🔧 开始清洗路径: {reports_novels.resolve()}")
+
+    # 先删除小txt文件
+    print("\n🔍 开始删除小于3KB的txt文件...")
+    deleted_count = delete_small_txt_files(str(reports_novels), size_limit=3072)
+    print(f"✅ 删除了 {deleted_count} 个小txt文件")
+
+    # 再进行文件名清洗
+    print("\n🔍 开始清洗文件名...")
     rename_safe_dirs_and_files(str(reports_novels))
-    print("✅ 清洗完成！")
+    print("✅ 全部操作完成！")

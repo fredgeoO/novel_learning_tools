@@ -1,0 +1,238 @@
+{
+  "nodes": [
+    {
+      "id": "黑暗力量",
+      "type": "事件",
+      "properties": {
+        "name": "黑暗力量",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "拯救哥哥与保护大陆",
+      "type": "事件",
+      "properties": {
+        "name": "拯救哥哥与保护大陆",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "金色的光芒",
+      "type": "事件",
+      "properties": {
+        "name": "金色的光芒",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "暗影军团首领",
+      "type": "事件",
+      "properties": {
+        "name": "暗影军团首领",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "精灵王国",
+      "type": "地点",
+      "properties": {
+        "name": "精灵王国",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "黑暗魔王萨格拉斯",
+      "type": "人物",
+      "properties": {
+        "name": "黑暗魔王萨格拉斯",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "艾尔多拉大陆",
+      "type": "地点",
+      "properties": {
+        "name": "艾尔多拉大陆",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "魔法",
+      "type": "事件",
+      "properties": {
+        "name": "魔法",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "寻找三件神器",
+      "type": "事件",
+      "properties": {
+        "name": "寻找三件神器",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "治愈魔法",
+      "type": "事件",
+      "properties": {
+        "name": "治愈魔法",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "暗影军团围攻精灵王国",
+      "type": "事件",
+      "properties": {
+        "name": "暗影军团围攻精灵王国",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "圣剑\"破晓\"",
+      "type": "物件",
+      "properties": {
+        "name": "圣剑\"破晓\"",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "阿尔萨斯",
+      "type": "人物",
+      "properties": {
+        "name": "阿尔萨斯",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "林风",
+      "type": "人物",
+      "properties": {
+        "name": "林风",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "精灵公主艾莉娅",
+      "type": "人物",
+      "properties": {
+        "name": "精灵公主艾莉娅",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "雷恩",
+      "type": "人物",
+      "properties": {
+        "name": "雷恩",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "对抗暗影军团",
+      "type": "事件",
+      "properties": {
+        "name": "对抗暗影军团",
+        "sequence_number": 17
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "林风",
+      "target_id": "圣剑\"破晓\"",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "圣剑\"破晓\"",
+      "target_id": "金色的光芒",
+      "type": "闪烁着",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "阿尔萨斯",
+      "type": "师从",
+      "properties": {}
+    },
+    {
+      "source_id": "阿尔萨斯",
+      "target_id": "魔法",
+      "type": "教授",
+      "properties": {}
+    },
+    {
+      "source_id": "阿尔萨斯",
+      "target_id": "黑暗魔王萨格拉斯",
+      "type": "警告",
+      "properties": {}
+    },
+    {
+      "source_id": "黑暗魔王萨格拉斯",
+      "target_id": "艾尔多拉大陆",
+      "type": "威胁",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "寻找三件神器",
+      "type": "踏上旅程",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "精灵公主艾莉娅",
+      "type": "遇到",
+      "properties": {}
+    },
+    {
+      "source_id": "精灵公主艾莉娅",
+      "target_id": "治愈魔法",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "精灵公主艾莉娅",
+      "target_id": "暗影军团围攻精灵王国",
+      "type": "告知",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "精灵王国",
+      "type": "决定救援",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "对抗暗影军团",
+      "type": "参与",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "雷恩",
+      "type": "发现",
+      "properties": {}
+    },
+    {
+      "source_id": "雷恩",
+      "target_id": "暗影军团首领",
+      "type": "是",
+      "properties": {}
+    },
+    {
+      "source_id": "雷恩",
+      "target_id": "黑暗力量",
+      "type": "被腐蚀",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "拯救哥哥与保护大陆",
+      "type": "面临选择",
+      "properties": {}
+    }
+  ]
+}

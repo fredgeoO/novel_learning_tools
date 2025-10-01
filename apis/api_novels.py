@@ -108,11 +108,12 @@ def api_get_categories():
 def api_get_novels():
     """获取小说列表"""
     try:
-        category = request.args.get('category', '全部')
+        # 注意：不再设置默认值 '全部'，保留 None 表示“未指定分类”
+        category = request.args.get('category', None)
         only_with_reports = request.args.get('only_with_reports', 'false').lower() == 'true'
 
         novels = get_novel_list(
-            filter_by_category=None if category == '全部' else category,
+            filter_by_category=category,  # 直接传入，包括 "全部" 或 None
             only_with_reports=only_with_reports
         )
         return jsonify({"novels": novels})
@@ -121,7 +122,6 @@ def api_get_novels():
         import traceback
         traceback.print_exc()
         return jsonify({"error": "获取小说列表失败"}), 500
-
 
 @novels_bp.route('/<novel_name>/chapters', methods=['GET'])
 def api_get_chapters(novel_name):

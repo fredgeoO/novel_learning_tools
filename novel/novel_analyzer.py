@@ -240,8 +240,8 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         tasks=tasks_to_run,
         task_func=run_single_task,
         skip_if_exists=should_skip,
-        max_concurrent=4,
-        min_interval=5.0,
+        max_concurrent=16,
+        min_interval=2.5,
         rate_limit_key="qwen_web"
     )
 
@@ -253,7 +253,7 @@ async def main():
     await process_top_novels_and_chapters(
         model_type="qwen_web",
         top_n=1400,
-        chapters_per_novel=3
+        chapters_per_novel=100
     )
 
 

@@ -1,0 +1,170 @@
+{
+  "nodes": [
+    {
+      "id": "黑暗力量",
+      "type": "事件",
+      "properties": {
+        "name": "黑暗力量",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "圣剑\"破晓\"",
+      "type": "神器",
+      "properties": {
+        "name": "圣剑\"破晓\"",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "暗影军团",
+      "type": "军团",
+      "properties": {
+        "name": "暗影军团",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "精灵王国",
+      "type": "地点",
+      "properties": {
+        "name": "精灵王国",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "魔法",
+      "type": "事件",
+      "properties": {
+        "name": "魔法",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "治愈魔法",
+      "type": "事件",
+      "properties": {
+        "name": "治愈魔法",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "阿尔萨斯",
+      "type": "人物",
+      "properties": {
+        "name": "阿尔萨斯",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "林风",
+      "type": "人物",
+      "properties": {
+        "name": "林风",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "雷恩",
+      "type": "人物",
+      "properties": {
+        "name": "雷恩",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "艾莉娅",
+      "type": "人物",
+      "properties": {
+        "name": "艾莉娅",
+        "sequence_number": 10
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "林风",
+      "target_id": "圣剑\"破晓\"",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "圣剑\"破晓\"",
+      "target_id": "林风",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "暗影军团",
+      "type": "对抗",
+      "properties": {}
+    },
+    {
+      "source_id": "暗影军团",
+      "target_id": "林风",
+      "type": "对抗",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "雷恩",
+      "type": "对抗",
+      "properties": {}
+    },
+    {
+      "source_id": "雷恩",
+      "target_id": "林风",
+      "type": "对抗",
+      "properties": {}
+    },
+    {
+      "source_id": "阿尔萨斯",
+      "target_id": "魔法",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "阿尔萨斯",
+      "target_id": "林风",
+      "type": "教导",
+      "properties": {}
+    },
+    {
+      "source_id": "艾莉娅",
+      "target_id": "治愈魔法",
+      "type": "拥有",
+      "properties": {}
+    },
+    {
+      "source_id": "暗影军团",
+      "target_id": "精灵王国",
+      "type": "围攻",
+      "properties": {}
+    },
+    {
+      "source_id": "精灵王国",
+      "target_id": "暗影军团",
+      "type": "被围攻",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "精灵王国",
+      "type": "前往",
+      "properties": {}
+    },
+    {
+      "source_id": "林风",
+      "target_id": "精灵王国",
+      "type": "决定救援",
+      "properties": {}
+    },
+    {
+      "source_id": "雷恩",
+      "target_id": "黑暗力量",
+      "type": "被腐蚀",
+      "properties": {}
+    }
+  ]
+}

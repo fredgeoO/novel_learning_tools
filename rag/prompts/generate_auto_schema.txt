@@ -1,0 +1,15 @@
+生成知识图谱Schema（基于基础schema扩展）：
+基础节点：{minimal_elements}
+基础关系：{minimal_relationships}
+
+文本内容:
+{text_content}
+
+要求：
+- 所有名称使用中文二字词
+- 节点与关系要是简单词汇
+- 保留所有基础元素
+- 节点5-8个，关系5-8个
+- 仅输出JSON格式
+
+{format_instructions}

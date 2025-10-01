@@ -1,0 +1,1296 @@
+{
+  "nodes": [
+    {
+      "id": "从小受到良好教育",
+      "type": "教育情况",
+      "properties": {
+        "name": "从小受到良好教育",
+        "sequence_number": 1
+      }
+    },
+    {
+      "id": "设计与制造直流电器",
+      "type": "业务",
+      "properties": {
+        "name": "设计与制造直流电器",
+        "sequence_number": 2
+      }
+    },
+    {
+      "id": "电气公司",
+      "type": "公司",
+      "properties": {
+        "name": "电气公司",
+        "sequence_number": 3
+      }
+    },
+    {
+      "id": "1879年3月14日",
+      "type": "时间",
+      "properties": {
+        "name": "1879年3月14日",
+        "sequence_number": 4
+      }
+    },
+    {
+      "id": "销售员和工程师",
+      "type": "职业",
+      "properties": {
+        "name": "销售员和工程师",
+        "sequence_number": 5
+      }
+    },
+    {
+      "id": "赫尔曼",
+      "type": "人物",
+      "properties": {
+        "name": "赫尔曼",
+        "sequence_number": 6
+      }
+    },
+    {
+      "id": "世俗阿什肯纳兹犹太人家庭",
+      "type": "家庭类型",
+      "properties": {
+        "name": "世俗阿什肯纳兹犹太人家庭",
+        "sequence_number": 7
+      }
+    },
+    {
+      "id": "1939年邀请马娅移民美国",
+      "type": "时间事件",
+      "properties": {
+        "name": "1939年邀请马娅移民美国",
+        "sequence_number": 8
+      }
+    },
+    {
+      "id": "放弃德国国籍，成为无国籍人",
+      "type": "国籍状态",
+      "properties": {
+        "name": "放弃德国国籍，成为无国籍人",
+        "sequence_number": 9
+      }
+    },
+    {
+      "id": "避免从军",
+      "type": "规避行为",
+      "properties": {
+        "name": "避免从军",
+        "sequence_number": 10
+      }
+    },
+    {
+      "id": "搬去帕维亚与家人会合",
+      "type": "迁移目的",
+      "properties": {
+        "name": "搬去帕维亚与家人会合",
+        "sequence_number": 11
+      }
+    },
+    {
+      "id": "1951年因动脉硬化去世",
+      "type": "时间事件",
+      "properties": {
+        "name": "1951年因动脉硬化去世",
+        "sequence_number": 12
+      }
+    },
+    {
+      "id": "获得7年良好教育",
+      "type": "教育结果",
+      "properties": {
+        "name": "获得7年良好教育",
+        "sequence_number": 13
+      }
+    },
+    {
+      "id": "大约在那时期开始学习拉小提琴",
+      "type": "学习经历",
+      "properties": {
+        "name": "大约在那时期开始学习拉小提琴",
+        "sequence_number": 14
+      }
+    },
+    {
+      "id": "《论在磁场里乙太状态的研究》",
+      "type": "论文名称",
+      "properties": {
+        "name": "《论在磁场里乙太状态的研究》",
+        "sequence_number": 15
+      }
+    },
+    {
+      "id": "德意志帝国符腾堡王国乌尔姆",
+      "type": "地点",
+      "properties": {
+        "name": "德意志帝国符腾堡王国乌尔姆",
+        "sequence_number": 16
+      }
+    },
+    {
+      "id": "5岁进入天主教小学",
+      "type": "教育阶段",
+      "properties": {
+        "name": "5岁进入天主教小学",
+        "sequence_number": 17
+      }
+    },
+    {
+      "id": "没有朋友",
+      "type": "社交情况",
+      "properties": {
+        "name": "没有朋友",
+        "sequence_number": 18
+      }
+    },
+    {
+      "id": "卢伊特波尔德高级文理中学",
+      "type": "学校",
+      "properties": {
+        "name": "卢伊特波尔德高级文理中学",
+        "sequence_number": 19
+      }
+    },
+    {
+      "id": "爱因斯坦对物理学产生浓厚兴趣",
+      "type": "心理影响",
+      "properties": {
+        "name": "爱因斯坦对物理学产生浓厚兴趣",
+        "sequence_number": 20
+      }
+    },
+    {
+      "id": "有被丢弃的感觉",
+      "type": "心理状态",
+      "properties": {
+        "name": "有被丢弃的感觉",
+        "sequence_number": 21
+      }
+    },
+    {
+      "id": "新泽西州普林斯顿默瑟县",
+      "type": "地点",
+      "properties": {
+        "name": "新泽西州普林斯顿默瑟县",
+        "sequence_number": 22
+      }
+    },
+    {
+      "id": "马娅",
+      "type": "人物",
+      "properties": {
+        "name": "马娅",
+        "sequence_number": 23
+      }
+    },
+    {
+      "id": "4岁或5岁时收到指南针",
+      "type": "事件",
+      "properties": {
+        "name": "4岁或5岁时收到指南针",
+        "sequence_number": 24
+      }
+    },
+    {
+      "id": "1894年公司被迫关闭",
+      "type": "时间事件",
+      "properties": {
+        "name": "1894年公司被迫关闭",
+        "sequence_number": 25
+      }
+    },
+    {
+      "id": "1880年举家迁往慕尼黑",
+      "type": "时间事件",
+      "properties": {
+        "name": "1880年举家迁往慕尼黑",
+        "sequence_number": 26
+      }
+    },
+    {
+      "id": "16岁时撰写第一篇理论物理论文",
+      "type": "学术成果",
+      "properties": {
+        "name": "16岁时撰写第一篇理论物理论文",
+        "sequence_number": 27
+      }
+    },
+    {
+      "id": "保利娜·科赫",
+      "type": "人物",
+      "properties": {
+        "name": "保利娜·科赫",
+        "sequence_number": 28
+      }
+    },
+    {
+      "id": "全家搬至意大利帕维亚",
+      "type": "时间事件",
+      "properties": {
+        "name": "全家搬至意大利帕维亚",
+        "sequence_number": 29
+      }
+    },
+    {
+      "id": "住在远房亲戚家里",
+      "type": "居住状态",
+      "properties": {
+        "name": "住在远房亲戚家里",
+        "sequence_number": 30
+      }
+    },
+    {
+      "id": "爱因斯坦",
+      "type": "人物",
+      "properties": {
+        "name": "爱因斯坦",
+        "sequence_number": 31
+      }
+    },
+    {
+      "id": "1946年中风卧床",
+      "type": "健康事件",
+      "properties": {
+        "name": "1946年中风卧床",
+        "sequence_number": 32
+      }
+    },
+    {
+      "id": "爱因斯坦的父亲",
+      "type": "人物",
+      "properties": {
+        "name": "爱因斯坦的父亲",
+        "sequence_number": 33
+      }
+    },
+    {
+      "id": "难以忍受严格专制的校风与机械式学习方式",
+      "type": "教育体验",
+      "properties": {
+        "name": "难以忍受严格专制的校风与机械式学习方式",
+        "sequence_number": 34
+      }
+    },
+    {
+      "id": "指南针",
+      "type": "物品",
+      "properties": {
+        "name": "指南针",
+        "sequence_number": 35
+      }
+    },
+    {
+      "id": "钢琴造诣深厚",
+      "type": "特长",
+      "properties": {
+        "name": "钢琴造诣深厚",
+        "sequence_number": 36
+      }
+    },
+    {
+      "id": "2岁后才学会使用字词",
+      "type": "发展特征",
+      "properties": {
+        "name": "2岁后才学会使用字词",
+        "sequence_number": 37
+      }
+    },
+    {
+      "id": "说话前先小声自言自语",
+      "type": "行为习惯",
+      "properties": {
+        "name": "说话前先小声自言自语",
+        "sequence_number": 38
+      }
+    },
+    {
+      "id": "共度愉快时光",
+      "type": "人际关系",
+      "properties": {
+        "name": "共度愉快时光",
+        "sequence_number": 39
+      }
+    },
+    {
+      "id": "注重数学、科学、拉丁文与希腊文",
+      "type": "课程内容",
+      "properties": {
+        "name": "注重数学、科学、拉丁文与希腊文",
+        "sequence_number": 40
+      }
+    },
+    {
+      "id": "摄于1886年，童年的爱因斯坦与妹妹马娅",
+      "type": "照片描述",
+      "properties": {
+        "name": "摄于1886年，童年的爱因斯坦与妹妹马娅",
+        "sequence_number": 41
+      }
+    },
+    {
+      "id": "8岁转学到卢伊特波尔德高级文理中学",
+      "type": "教育阶段",
+      "properties": {
+        "name": "8岁转学到卢伊特波尔德高级文理中学",
+        "sequence_number": 42
+      }
+    },
+    {
+      "id": "妹妹马娅",
+      "type": "人物",
+      "properties": {
+        "name": "妹妹马娅",
+        "sequence_number": 43
+      }
+    },
+    {
+      "id": "借口身体不适离开学校",
+      "type": "行为选择",
+      "properties": {
+        "name": "借口身体不适离开学校",
+        "sequence_number": 44
+      }
+    },
+    {
+      "id": "挚友",
+      "type": "人际关系",
+      "properties": {
+        "name": "挚友",
+        "sequence_number": 45
+      }
+    },
+    {
+      "id": "不遵循犹太教规的阿什肯纳兹犹太人",
+      "type": "宗教信仰",
+      "properties": {
+        "name": "不遵循犹太教规的阿什肯纳兹犹太人",
+        "sequence_number": 46
+      }
+    },
+    {
+      "id": "1895年入学考试",
+      "type": "事件",
+      "properties": {
+        "name": "1895年入学考试",
+        "sequence_number": 47
+      }
+    },
+    {
+      "id": "约斯特·温特勒",
+      "type": "人物",
+      "properties": {
+        "name": "约斯特·温特勒",
+        "sequence_number": 48
+      }
+    },
+    {
+      "id": "第四名",
+      "type": "排名",
+      "properties": {
+        "name": "第四名",
+        "sequence_number": 49
+      }
+    },
+    {
+      "id": "唯一女性",
+      "type": "身份",
+      "properties": {
+        "name": "唯一女性",
+        "sequence_number": 50
+      }
+    },
+    {
+      "id": "隔年9月",
+      "type": "时间",
+      "properties": {
+        "name": "隔年9月",
+        "sequence_number": 51
+      }
+    },
+    {
+      "id": "瑞士高中毕业考试",
+      "type": "事件",
+      "properties": {
+        "name": "瑞士高中毕业考试",
+        "sequence_number": 52
+      }
+    },
+    {
+      "id": "瑞士阿劳",
+      "type": "地点",
+      "properties": {
+        "name": "瑞士阿劳",
+        "sequence_number": 53
+      }
+    },
+    {
+      "id": "阿劳州立中学",
+      "type": "学校",
+      "properties": {
+        "name": "阿劳州立中学",
+        "sequence_number": 54
+      }
+    },
+    {
+      "id": "物理与数学最高分6分",
+      "type": "成绩",
+      "properties": {
+        "name": "物理与数学最高分6分",
+        "sequence_number": 55
+      }
+    },
+    {
+      "id": "4.0",
+      "type": "分数",
+      "properties": {
+        "name": "4.0",
+        "sequence_number": 56
+      }
+    },
+    {
+      "id": "未毕业",
+      "type": "状态",
+      "properties": {
+        "name": "未毕业",
+        "sequence_number": 57
+      }
+    },
+    {
+      "id": "16岁",
+      "type": "年龄",
+      "properties": {
+        "name": "16岁",
+        "sequence_number": 58
+      }
+    },
+    {
+      "id": "1896年进入苏黎世联邦理工学院师范系数理科学习物理",
+      "type": "事件",
+      "properties": {
+        "name": "1896年进入苏黎世联邦理工学院师范系数理科学习物理",
+        "sequence_number": 59
+      }
+    },
+    {
+      "id": "无证据证明米列娃·马利奇有实质贡献",
+      "type": "结论",
+      "properties": {
+        "name": "无证据证明米列娃·马利奇有实质贡献",
+        "sequence_number": 60
+      }
+    },
+    {
+      "id": "必须留级一年",
+      "type": "要求",
+      "properties": {
+        "name": "必须留级一年",
+        "sequence_number": 61
+      }
+    },
+    {
+      "id": "苏黎世联邦理工学院师范系",
+      "type": "学院",
+      "properties": {
+        "name": "苏黎世联邦理工学院师范系",
+        "sequence_number": 62
+      }
+    },
+    {
+      "id": "继承电机工程事业",
+      "type": "职业",
+      "properties": {
+        "name": "继承电机工程事业",
+        "sequence_number": 63
+      }
+    },
+    {
+      "id": "数学",
+      "type": "学科",
+      "properties": {
+        "name": "数学",
+        "sequence_number": 64
+      }
+    },
+    {
+      "id": "认为大材小用",
+      "type": "态度",
+      "properties": {
+        "name": "认为大材小用",
+        "sequence_number": 65
+      }
+    },
+    {
+      "id": "未通过文科部分",
+      "type": "结果",
+      "properties": {
+        "name": "未通过文科部分",
+        "sequence_number": 66
+      }
+    },
+    {
+      "id": "瑞士苏黎世联邦理工学院院长",
+      "type": "人物",
+      "properties": {
+        "name": "瑞士苏黎世联邦理工学院院长",
+        "sequence_number": 67
+      }
+    },
+    {
+      "id": "物理",
+      "type": "学科",
+      "properties": {
+        "name": "物理",
+        "sequence_number": 68
+      }
+    },
+    {
+      "id": "爱情火花",
+      "type": "关系",
+      "properties": {
+        "name": "爱情火花",
+        "sequence_number": 69
+      }
+    },
+    {
+      "id": "4.9",
+      "type": "分数",
+      "properties": {
+        "name": "4.9",
+        "sequence_number": 70
+      }
+    },
+    {
+      "id": "1905年论文",
+      "type": "论文",
+      "properties": {
+        "name": "1905年论文",
+        "sequence_number": 71
+      }
+    },
+    {
+      "id": "教学文凭",
+      "type": "文凭",
+      "properties": {
+        "name": "教学文凭",
+        "sequence_number": 72
+      }
+    },
+    {
+      "id": "完成高中学业",
+      "type": "建议",
+      "properties": {
+        "name": "完成高中学业",
+        "sequence_number": 73
+      }
+    },
+    {
+      "id": "数理科高分",
+      "type": "成绩",
+      "properties": {
+        "name": "数理科高分",
+        "sequence_number": 74
+      }
+    },
+    {
+      "id": "米列娃·马利奇",
+      "type": "人物",
+      "properties": {
+        "name": "米列娃·马利奇",
+        "sequence_number": 75
+      }
+    },
+    {
+      "id": "比爱因斯坦大三岁",
+      "type": "年龄",
+      "properties": {
+        "name": "比爱因斯坦大三岁",
+        "sequence_number": 76
+      }
+    },
+    {
+      "id": "教授",
+      "type": "职业",
+      "properties": {
+        "name": "教授",
+        "sequence_number": 77
+      }
+    },
+    {
+      "id": "物理历史学者",
+      "type": "人物",
+      "properties": {
+        "name": "物理历史学者",
+        "sequence_number": 78
+      }
+    },
+    {
+      "id": "玛莉",
+      "type": "人物",
+      "properties": {
+        "name": "玛莉",
+        "sequence_number": 79
+      }
+    },
+    {
+      "id": "瑞士苏黎世联邦理工学院",
+      "type": "学校",
+      "properties": {
+        "name": "瑞士苏黎世联邦理工学院",
+        "sequence_number": 80
+      }
+    },
+    {
+      "id": "电机工程事业",
+      "type": "职业",
+      "properties": {
+        "name": "电机工程事业",
+        "sequence_number": 81
+      }
+    },
+    {
+      "id": "约斯特·温特勒家中",
+      "type": "住所",
+      "properties": {
+        "name": "约斯特·温特勒家中",
+        "sequence_number": 82
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_000",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_000",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 0,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_001",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_001",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 1,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_002",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_002",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 2,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_003",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_003",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 3,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_004",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_004",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 4,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_005",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_005",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 5,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_006",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_006",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 6,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_007",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_007",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 7,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_008",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_008",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 8,
+        "member_count": 5,
+        "max_group_size": 5
+      }
+    },
+    {
+      "id": "爱因斯坦_agg_009",
+      "type": "聚合节点",
+      "properties": {
+        "name": "爱因斯坦_聚合_009",
+        "origin_hub_node": "爱因斯坦",
+        "group_index": 9,
+        "member_count": 1,
+        "max_group_size": 5
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "赫尔曼",
+      "target_id": "销售员和工程师",
+      "type": "职业",
+      "properties": {}
+    },
+    {
+      "source_id": "保利娜·科赫",
+      "target_id": "从小受到良好教育",
+      "type": "教育背景",
+      "properties": {}
+    },
+    {
+      "source_id": "保利娜·科赫",
+      "target_id": "钢琴造诣深厚",
+      "type": "特长",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦的父亲",
+      "target_id": "电气公司",
+      "type": "经营企业",
+      "properties": {}
+    },
+    {
+      "source_id": "电气公司",
+      "target_id": "设计与制造直流电器",
+      "type": "业务范围",
+      "properties": {}
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "挚友",
+      "type": "与爱因斯坦关系",
+      "properties": {}
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "新泽西州普林斯顿默瑟县",
+      "type": "居住地",
+      "properties": {}
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "1946年中风卧床",
+      "type": "健康状况",
+      "properties": {}
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "1951年因动脉硬化去世",
+      "type": "去世时间",
+      "properties": {}
+    },
+    {
+      "source_id": "指南针",
+      "target_id": "爱因斯坦对物理学产生浓厚兴趣",
+      "type": "激发兴趣",
+      "properties": {}
+    },
+    {
+      "source_id": "卢伊特波尔德高级文理中学",
+      "target_id": "注重数学、科学、拉丁文与希腊文",
+      "type": "教育内容",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦的父亲",
+      "target_id": "1894年公司被迫关闭",
+      "type": "公司关闭",
+      "properties": {}
+    },
+    {
+      "source_id": "1895年入学考试",
+      "target_id": "瑞士苏黎世联邦理工学院",
+      "type": "举办于",
+      "properties": {}
+    },
+    {
+      "source_id": "瑞士苏黎世联邦理工学院院长",
+      "target_id": "完成高中学业",
+      "type": "建议",
+      "properties": {}
+    },
+    {
+      "source_id": "阿劳州立中学",
+      "target_id": "瑞士阿劳",
+      "type": "位于",
+      "properties": {}
+    },
+    {
+      "source_id": "约斯特·温特勒",
+      "target_id": "教授",
+      "type": "担任职务",
+      "properties": {}
+    },
+    {
+      "source_id": "玛莉",
+      "target_id": "约斯特·温特勒",
+      "type": "父亲",
+      "properties": {}
+    },
+    {
+      "source_id": "瑞士高中毕业考试",
+      "target_id": "隔年9月",
+      "type": "考试时间",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦的父亲",
+      "target_id": "继承电机工程事业",
+      "type": "期望",
+      "properties": {}
+    },
+    {
+      "source_id": "苏黎世联邦理工学院师范系",
+      "target_id": "物理",
+      "type": "开设专业",
+      "properties": {}
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "比爱因斯坦大三岁",
+      "type": "年龄",
+      "properties": {}
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "唯一女性",
+      "type": "班级身份",
+      "properties": {}
+    },
+    {
+      "source_id": "教学文凭",
+      "target_id": "4.9",
+      "type": "平均分数",
+      "properties": {}
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "4.0",
+      "type": "平均分数",
+      "properties": {}
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "未毕业",
+      "type": "毕业状态",
+      "properties": {}
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "必须留级一年",
+      "type": "留级要求",
+      "properties": {}
+    },
+    {
+      "source_id": "1905年论文",
+      "target_id": "米列娃·马利奇",
+      "type": "合作人物",
+      "properties": {}
+    },
+    {
+      "source_id": "物理历史学者",
+      "target_id": "无证据证明米列娃·马利奇有实质贡献",
+      "type": "研究结论",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_000",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 0
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_000",
+      "target_id": "1879年3月14日",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_000",
+      "target_id": "世俗阿什肯纳兹犹太人家庭",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_000",
+      "target_id": "1939年邀请马娅移民美国",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_000",
+      "target_id": "放弃德国国籍，成为无国籍人",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_000",
+      "target_id": "避免从军",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_001",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 1
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_001",
+      "target_id": "搬去帕维亚与家人会合",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_001",
+      "target_id": "获得7年良好教育",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_001",
+      "target_id": "大约在那时期开始学习拉小提琴",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_001",
+      "target_id": "《论在磁场里乙太状态的研究》",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_001",
+      "target_id": "德意志帝国符腾堡王国乌尔姆",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_002",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 2
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_002",
+      "target_id": "5岁进入天主教小学",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_002",
+      "target_id": "没有朋友",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_002",
+      "target_id": "有被丢弃的感觉",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_002",
+      "target_id": "4岁或5岁时收到指南针",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_002",
+      "target_id": "1880年举家迁往慕尼黑",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_003",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 3
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_003",
+      "target_id": "16岁时撰写第一篇理论物理论文",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_003",
+      "target_id": "全家搬至意大利帕维亚",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_003",
+      "target_id": "住在远房亲戚家里",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_003",
+      "target_id": "难以忍受严格专制的校风与机械式学习方式",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_003",
+      "target_id": "2岁后才学会使用字词",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_004",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 4
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_004",
+      "target_id": "说话前先小声自言自语",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_004",
+      "target_id": "共度愉快时光",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_004",
+      "target_id": "摄于1886年，童年的爱因斯坦与妹妹马娅",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_004",
+      "target_id": "8岁转学到卢伊特波尔德高级文理中学",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_004",
+      "target_id": "妹妹马娅",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_005",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 5
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_005",
+      "target_id": "借口身体不适离开学校",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_005",
+      "target_id": "不遵循犹太教规的阿什肯纳兹犹太人",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_005",
+      "target_id": "1895年入学考试",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_005",
+      "target_id": "第四名",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_005",
+      "target_id": "瑞士高中毕业考试",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_006",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 6
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_006",
+      "target_id": "阿劳州立中学",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_006",
+      "target_id": "物理与数学最高分6分",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_006",
+      "target_id": "16岁",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_006",
+      "target_id": "1896年进入苏黎世联邦理工学院师范系数理科学习物理",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_006",
+      "target_id": "数学",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_007",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 7
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_007",
+      "target_id": "认为大材小用",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_007",
+      "target_id": "未通过文科部分",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_007",
+      "target_id": "物理",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_007",
+      "target_id": "爱情火花",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_007",
+      "target_id": "1905年论文",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_008",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 8
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_008",
+      "target_id": "教学文凭",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_008",
+      "target_id": "数理科高分",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_008",
+      "target_id": "米列娃·马利奇",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_008",
+      "target_id": "玛莉",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦_agg_008",
+      "target_id": "电机工程事业",
+      "type": "包含成员",
+      "properties": {}
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "爱因斯坦_agg_009",
+      "type": "聚合连接",
+      "properties": {
+        "group_index": 9
+      }
+    },
+    {
+      "source_id": "爱因斯坦_agg_009",
+      "target_id": "约斯特·温特勒家中",
+      "type": "包含成员",
+      "properties": {}
+    }
+  ]
+}

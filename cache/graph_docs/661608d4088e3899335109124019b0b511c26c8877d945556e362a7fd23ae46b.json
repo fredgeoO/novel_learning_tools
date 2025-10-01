@@ -1,0 +1,2114 @@
+{
+  "nodes": [
+    {
+      "id": "爱因斯坦的母亲",
+      "type": "未知类型",
+      "properties": {
+        "label": "爱因斯坦的母亲",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "马娅",
+      "type": "未知类型",
+      "properties": {
+        "label": "马娅",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "爱因斯坦的父亲",
+      "type": "未知类型",
+      "properties": {
+        "label": "爱因斯坦的父亲",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "成为无国籍人",
+      "type": "未知类型",
+      "properties": {
+        "label": "成为无国籍人",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "电气公司",
+      "type": "未知类型",
+      "properties": {
+        "label": "电气公司",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "指南针",
+      "type": "未知类型",
+      "properties": {
+        "label": "指南针",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "1879年3月14日",
+      "type": "未知类型",
+      "properties": {
+        "label": "1879年3月14日",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "玛莉",
+      "type": "未知类型",
+      "properties": {
+        "label": "玛莉",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "马娅移民美国",
+      "type": "未知类型",
+      "properties": {
+        "label": "马娅移民美国",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "比马娅早四年去世",
+      "type": "未知类型",
+      "properties": {
+        "label": "比马娅早四年去世",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "卢伊特波尔德高级文理中学",
+      "type": "未知类型",
+      "properties": {
+        "label": "卢伊特波尔德高级文理中学",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "放弃德国国籍",
+      "type": "未知类型",
+      "properties": {
+        "label": "放弃德国国籍",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "1951年",
+      "type": "未知类型",
+      "properties": {
+        "label": "1951年",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "慕尼黑",
+      "type": "未知类型",
+      "properties": {
+        "label": "慕尼黑",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "保利娜·科赫",
+      "type": "未知类型",
+      "properties": {
+        "label": "保利娜·科赫",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "去世",
+      "type": "未知类型",
+      "properties": {
+        "label": "去世",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "瑞士苏黎世联邦理工学院入学考试",
+      "type": "未知类型",
+      "properties": {
+        "label": "瑞士苏黎世联邦理工学院入学考试",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "天主教小学",
+      "type": "未知类型",
+      "properties": {
+        "label": "天主教小学",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "《论在磁场里乙太状态的研究》",
+      "type": "未知类型",
+      "properties": {
+        "label": "《论在磁场里乙太状态的研究》",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "爱因斯坦的妹妹",
+      "type": "未知类型",
+      "properties": {
+        "label": "爱因斯坦的妹妹",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "温特勒的女儿",
+      "type": "未知类型",
+      "properties": {
+        "label": "温特勒的女儿",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "爱因斯坦",
+      "type": "未知类型",
+      "properties": {
+        "label": "爱因斯坦",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "1894年",
+      "type": "未知类型",
+      "properties": {
+        "label": "1894年",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "德意志帝国符腾堡王国乌尔姆",
+      "type": "未知类型",
+      "properties": {
+        "label": "德意志帝国符腾堡王国乌尔姆",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "新泽西州普林斯顿默瑟县",
+      "type": "未知类型",
+      "properties": {
+        "label": "新泽西州普林斯顿默瑟县",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "通过瑞士高中毕业考试",
+      "type": "未知类型",
+      "properties": {
+        "label": "通过瑞士高中毕业考试",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "1939年",
+      "type": "未知类型",
+      "properties": {
+        "label": "1939年",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "拉小提琴",
+      "type": "未知类型",
+      "properties": {
+        "label": "拉小提琴",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "中风卧床",
+      "type": "未知类型",
+      "properties": {
+        "label": "中风卧床",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "爱因斯坦对物理学产生兴趣",
+      "type": "未知类型",
+      "properties": {
+        "label": "爱因斯坦对物理学产生兴趣",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "赫尔曼",
+      "type": "未知类型",
+      "properties": {
+        "label": "赫尔曼",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "摄于1886年，童年的爱因斯坦与妹妹马娅",
+      "type": "未知类型",
+      "properties": {
+        "label": "摄于1886年，童年的爱因斯坦与妹妹马娅",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "阿劳州立中学",
+      "type": "未知类型",
+      "properties": {
+        "label": "阿劳州立中学",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "瑞士阿劳",
+      "type": "未知类型",
+      "properties": {
+        "label": "瑞士阿劳",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "米列娃·马利奇留级一年",
+      "type": "未知类型",
+      "properties": {
+        "label": "米列娃·马利奇留级一年",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "米列娃·马利奇",
+      "type": "未知类型",
+      "properties": {
+        "label": "米列娃·马利奇",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "1905年论文",
+      "type": "未知类型",
+      "properties": {
+        "label": "1905年论文",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "与爱因斯坦的爱情关系",
+      "type": "未知类型",
+      "properties": {
+        "label": "与爱因斯坦的爱情关系",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "电机工程事业",
+      "type": "未知类型",
+      "properties": {
+        "label": "电机工程事业",
+        "color": "#98FB98",
+        "size": 25
+      }
+    },
+    {
+      "id": "获得教学文凭",
+      "type": "未知类型",
+      "properties": {
+        "label": "获得教学文凭",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "苏黎世联邦理工学院师范系数理科学习物理",
+      "type": "未知类型",
+      "properties": {
+        "label": "苏黎世联邦理工学院师范系数理科学习物理",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "苏黎世联邦理工学院",
+      "type": "未知类型",
+      "properties": {
+        "label": "苏黎世联邦理工学院",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "与米列娃·马利奇的爱情关系",
+      "type": "未知类型",
+      "properties": {
+        "label": "与米列娃·马利奇的爱情关系",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "对电机工程事业不感兴趣",
+      "type": "未知类型",
+      "properties": {
+        "label": "对电机工程事业不感兴趣",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "1896年",
+      "type": "未知类型",
+      "properties": {
+        "label": "1896年",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "1900年",
+      "type": "未知类型",
+      "properties": {
+        "label": "1900年",
+        "color": "#87CEEB",
+        "size": 25
+      }
+    },
+    {
+      "id": "物理最高分",
+      "type": "未知类型",
+      "properties": {
+        "label": "物理最高分",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "文科部分未通过",
+      "type": "未知类型",
+      "properties": {
+        "label": "文科部分未通过",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "德国国籍",
+      "type": "未知类型",
+      "properties": {
+        "label": "德国国籍",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "学习障碍",
+      "type": "未知类型",
+      "properties": {
+        "label": "学习障碍",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "磁针行为",
+      "type": "未知类型",
+      "properties": {
+        "label": "磁针行为",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "妹妹马娅",
+      "type": "未知类型",
+      "properties": {
+        "label": "妹妹马娅",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "入学考试",
+      "type": "未知类型",
+      "properties": {
+        "label": "入学考试",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "字词",
+      "type": "未知类型",
+      "properties": {
+        "label": "字词",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "数理科高分",
+      "type": "未知类型",
+      "properties": {
+        "label": "数理科高分",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "高中毕业考试通过",
+      "type": "未知类型",
+      "properties": {
+        "label": "高中毕业考试通过",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "拉丁文",
+      "type": "未知类型",
+      "properties": {
+        "label": "拉丁文",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "教授约斯特·温特勒",
+      "type": "未知类型",
+      "properties": {
+        "label": "教授约斯特·温特勒",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "钢琴",
+      "type": "未知类型",
+      "properties": {
+        "label": "钢琴",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "最高分6分",
+      "type": "未知类型",
+      "properties": {
+        "label": "最高分6分",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "数学",
+      "type": "未知类型",
+      "properties": {
+        "label": "数学",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "物理学",
+      "type": "未知类型",
+      "properties": {
+        "label": "物理学",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "数学最高分",
+      "type": "未知类型",
+      "properties": {
+        "label": "数学最高分",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "慕尼黑学校",
+      "type": "未知类型",
+      "properties": {
+        "label": "慕尼黑学校",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "意大利帕维亚",
+      "type": "未知类型",
+      "properties": {
+        "label": "意大利帕维亚",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "《论在磁场里乙太状态的研究》_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "《论在磁场里乙太状态的研究》",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "优良成绩",
+      "type": "未知类型",
+      "properties": {
+        "label": "优良成绩",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "无国籍人",
+      "type": "未知类型",
+      "properties": {
+        "label": "无国籍人",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "6分",
+      "type": "未知类型",
+      "properties": {
+        "label": "6分",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "第一篇理论物理论文",
+      "type": "未知类型",
+      "properties": {
+        "label": "第一篇理论物理论文",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "科学",
+      "type": "未知类型",
+      "properties": {
+        "label": "科学",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "7年良好教育",
+      "type": "未知类型",
+      "properties": {
+        "label": "7年良好教育",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "良好教育",
+      "type": "未知类型",
+      "properties": {
+        "label": "良好教育",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "远房亲戚家",
+      "type": "未知类型",
+      "properties": {
+        "label": "远房亲戚家",
+        "color": "#D2B48C",
+        "size": 25
+      }
+    },
+    {
+      "id": "说话",
+      "type": "未知类型",
+      "properties": {
+        "label": "说话",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "家人",
+      "type": "未知类型",
+      "properties": {
+        "label": "家人",
+        "color": "#FF6B6B",
+        "size": 25
+      }
+    },
+    {
+      "id": "小声自言自语",
+      "type": "未知类型",
+      "properties": {
+        "label": "小声自言自语",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "希腊文",
+      "type": "未知类型",
+      "properties": {
+        "label": "希腊文",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "从军",
+      "type": "未知类型",
+      "properties": {
+        "label": "从军",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "高分",
+      "type": "未知类型",
+      "properties": {
+        "label": "高分",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "最高分",
+      "type": "未知类型",
+      "properties": {
+        "label": "最高分",
+        "color": "#4682B4",
+        "size": 25
+      }
+    },
+    {
+      "id": "agg_爱因斯坦_comm_0",
+      "type": "未知类型",
+      "properties": {
+        "label": "爱因斯坦",
+        "color": "#da1be4",
+        "size": 25
+      }
+    },
+    {
+      "id": "agg_爱因斯坦_comm_2",
+      "type": "未知类型",
+      "properties": {
+        "label": "爱因斯坦",
+        "color": "#da1be4",
+        "size": 25
+      }
+    },
+    {
+      "id": "agg_爱因斯坦_comm_1",
+      "type": "未知类型",
+      "properties": {
+        "label": "爱因斯坦",
+        "color": "#da1be4",
+        "size": 25
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "德意志帝国符腾堡王国乌尔姆",
+      "type": "出生在",
+      "properties": {
+        "id": "edge_爱因斯坦_德意志帝国符腾堡王国乌尔姆",
+        "label": "出生在",
+        "title": "出生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#3a35d9"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "1879年3月14日",
+      "type": "发生在",
+      "properties": {
+        "id": "edge_爱因斯坦_1879年3月14日",
+        "label": "发生在",
+        "title": "发生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1E90FF"
+      }
+    },
+    {
+      "source_id": "赫尔曼",
+      "target_id": "爱因斯坦的父亲",
+      "type": "是",
+      "properties": {
+        "id": "edge_赫尔曼_爱因斯坦的父亲",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "保利娜·科赫",
+      "target_id": "爱因斯坦的母亲",
+      "type": "是",
+      "properties": {
+        "id": "edge_保利娜·科赫_爱因斯坦的母亲",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "爱因斯坦的父亲",
+      "target_id": "电气公司",
+      "type": "经营",
+      "properties": {
+        "id": "edge_爱因斯坦的父亲_电气公司",
+        "label": "经营",
+        "title": "经营",
+        "width": 2,
+        "arrows": "to",
+        "color": "#32fa57"
+      }
+    },
+    {
+      "source_id": "电气公司",
+      "target_id": "慕尼黑",
+      "type": "位于",
+      "properties": {
+        "id": "edge_电气公司_慕尼黑",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "慕尼黑",
+      "type": "迁往",
+      "properties": {
+        "id": "edge_爱因斯坦_慕尼黑",
+        "label": "迁往",
+        "title": "迁往",
+        "width": 2,
+        "arrows": "to",
+        "color": "#33e2f9"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "天主教小学",
+      "type": "参与",
+      "properties": {
+        "id": "edge_爱因斯坦_天主教小学",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "卢伊特波尔德高级文理中学",
+      "type": "参与",
+      "properties": {
+        "id": "edge_爱因斯坦_卢伊特波尔德高级文理中学",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "卢伊特波尔德高级文理中学",
+      "target_id": "慕尼黑",
+      "type": "位于",
+      "properties": {
+        "id": "edge_卢伊特波尔德高级文理中学_慕尼黑",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "放弃德国国籍",
+      "type": "导致",
+      "properties": {
+        "id": "edge_爱因斯坦_放弃德国国籍",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "成为无国籍人",
+      "type": "导致",
+      "properties": {
+        "id": "edge_爱因斯坦_成为无国籍人",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "《论在磁场里乙太状态的研究》",
+      "type": "撰写",
+      "properties": {
+        "id": "edge_爱因斯坦_《论在磁场里乙太状态的研究》",
+        "label": "撰写",
+        "title": "撰写",
+        "width": 2,
+        "arrows": "to",
+        "color": "#339efb"
+      }
+    },
+    {
+      "source_id": "《论在磁场里乙太状态的研究》",
+      "target_id": "1894年",
+      "type": "发生在",
+      "properties": {
+        "id": "edge_《论在磁场里乙太状态的研究》_1894年",
+        "label": "发生在",
+        "title": "发生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1E90FF"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "瑞士苏黎世联邦理工学院入学考试",
+      "type": "参与",
+      "properties": {
+        "id": "edge_爱因斯坦_瑞士苏黎世联邦理工学院入学考试",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "阿劳州立中学",
+      "type": "参与",
+      "properties": {
+        "id": "edge_爱因斯坦_阿劳州立中学",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "阿劳州立中学",
+      "target_id": "瑞士阿劳",
+      "type": "位于",
+      "properties": {
+        "id": "edge_阿劳州立中学_瑞士阿劳",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "玛莉",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_爱因斯坦_玛莉",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "玛莉",
+      "target_id": "温特勒的女儿",
+      "type": "是",
+      "properties": {
+        "id": "edge_玛莉_温特勒的女儿",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "通过瑞士高中毕业考试",
+      "type": "导致",
+      "properties": {
+        "id": "edge_爱因斯坦_通过瑞士高中毕业考试",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "指南针",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_爱因斯坦_指南针",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "指南针",
+      "target_id": "爱因斯坦对物理学产生兴趣",
+      "type": "导致",
+      "properties": {
+        "id": "edge_指南针_爱因斯坦对物理学产生兴趣",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "拉小提琴",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_爱因斯坦_拉小提琴",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "爱因斯坦的妹妹",
+      "type": "是",
+      "properties": {
+        "id": "edge_马娅_爱因斯坦的妹妹",
+        "label": "是",
+        "title": "是",
+        "width": 2,
+        "arrows": "to",
+        "color": "#00f571"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "马娅移民美国",
+      "type": "邀请",
+      "properties": {
+        "id": "edge_爱因斯坦_马娅移民美国",
+        "label": "邀请",
+        "title": "邀请",
+        "width": 2,
+        "arrows": "to",
+        "color": "#190af6"
+      }
+    },
+    {
+      "source_id": "马娅移民美国",
+      "target_id": "1939年",
+      "type": "发生在",
+      "properties": {
+        "id": "edge_马娅移民美国_1939年",
+        "label": "发生在",
+        "title": "发生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1E90FF"
+      }
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "新泽西州普林斯顿默瑟县",
+      "type": "居住在",
+      "properties": {
+        "id": "edge_马娅_新泽西州普林斯顿默瑟县",
+        "label": "居住在",
+        "title": "居住在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#6b4eea"
+      }
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "中风卧床",
+      "type": "导致",
+      "properties": {
+        "id": "edge_马娅_中风卧床",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "去世",
+      "type": "导致",
+      "properties": {
+        "id": "edge_马娅_去世",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "1951年",
+      "type": "发生在",
+      "properties": {
+        "id": "edge_马娅_1951年",
+        "label": "发生在",
+        "title": "发生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1E90FF"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "比马娅早四年去世",
+      "type": "导致",
+      "properties": {
+        "id": "edge_爱因斯坦_比马娅早四年去世",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "摄于1886年，童年的爱因斯坦与妹妹马娅",
+      "target_id": "爱因斯坦",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_摄于1886年，童年的爱因斯坦与妹妹马娅_爱因斯坦",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "摄于1886年，童年的爱因斯坦与妹妹马娅",
+      "target_id": "马娅",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_摄于1886年，童年的爱因斯坦与妹妹马娅_马娅",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "苏黎世联邦理工学院师范系数理科学习物理",
+      "type": "参与",
+      "properties": {
+        "id": "edge_爱因斯坦_苏黎世联邦理工学院师范系数理科学习物理",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "1905年论文",
+      "type": "参与",
+      "properties": {
+        "id": "edge_爱因斯坦_1905年论文",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "苏黎世联邦理工学院师范系数理科学习物理",
+      "type": "参与",
+      "properties": {
+        "id": "edge_米列娃·马利奇_苏黎世联邦理工学院师范系数理科学习物理",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "1905年论文",
+      "type": "参与",
+      "properties": {
+        "id": "edge_米列娃·马利奇_1905年论文",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "1896年",
+      "type": "发生在",
+      "properties": {
+        "id": "edge_爱因斯坦_1896年",
+        "label": "发生在",
+        "title": "发生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1E90FF"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "1900年",
+      "type": "发生在",
+      "properties": {
+        "id": "edge_爱因斯坦_1900年",
+        "label": "发生在",
+        "title": "发生在",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1E90FF"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "苏黎世联邦理工学院",
+      "type": "位于",
+      "properties": {
+        "id": "edge_爱因斯坦_苏黎世联邦理工学院",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "苏黎世联邦理工学院",
+      "type": "位于",
+      "properties": {
+        "id": "edge_米列娃·马利奇_苏黎世联邦理工学院",
+        "label": "位于",
+        "title": "位于",
+        "width": 2,
+        "arrows": "to",
+        "color": "#A0522D"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "电机工程事业",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_爱因斯坦_电机工程事业",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "对电机工程事业不感兴趣",
+      "type": "导致",
+      "properties": {
+        "id": "edge_爱因斯坦_对电机工程事业不感兴趣",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "获得教学文凭",
+      "type": "参与",
+      "properties": {
+        "id": "edge_爱因斯坦_获得教学文凭",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "获得教学文凭",
+      "type": "参与",
+      "properties": {
+        "id": "edge_米列娃·马利奇_获得教学文凭",
+        "label": "参与",
+        "title": "参与",
+        "width": 2,
+        "arrows": "to",
+        "color": "#104E8B"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "米列娃·马利奇留级一年",
+      "type": "导致",
+      "properties": {
+        "id": "edge_爱因斯坦_米列娃·马利奇留级一年",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "米列娃·马利奇留级一年",
+      "type": "导致",
+      "properties": {
+        "id": "edge_米列娃·马利奇_米列娃·马利奇留级一年",
+        "label": "导致",
+        "title": "导致",
+        "width": 2,
+        "arrows": "to",
+        "color": "#FF4500"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "与米列娃·马利奇的爱情关系",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_爱因斯坦_与米列娃·马利奇的爱情关系",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "米列娃·马利奇",
+      "target_id": "与爱因斯坦的爱情关系",
+      "type": "涉及",
+      "properties": {
+        "id": "edge_米列娃·马利奇_与爱因斯坦的爱情关系",
+        "label": "涉及",
+        "title": "涉及",
+        "width": 2,
+        "arrows": "to",
+        "color": "#228B22"
+      }
+    },
+    {
+      "source_id": "马娅",
+      "target_id": "新泽西州普林斯顿默瑟县",
+      "type": "居住",
+      "properties": {
+        "id": "edge_马娅_新泽西州普林斯顿默瑟县_1",
+        "label": "居住",
+        "title": "居住",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1bb8f9"
+      }
+    },
+    {
+      "source_id": "赫尔曼",
+      "target_id": "慕尼黑",
+      "type": "居住",
+      "properties": {
+        "id": "edge_赫尔曼_慕尼黑",
+        "label": "居住",
+        "title": "居住",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1bb8f9"
+      }
+    },
+    {
+      "source_id": "赫尔曼",
+      "target_id": "电气公司",
+      "type": "经营",
+      "properties": {
+        "id": "edge_赫尔曼_电气公司",
+        "label": "经营",
+        "title": "经营",
+        "width": 2,
+        "arrows": "to",
+        "color": "#32fa57"
+      }
+    },
+    {
+      "source_id": "保利娜·科赫",
+      "target_id": "慕尼黑",
+      "type": "居住",
+      "properties": {
+        "id": "edge_保利娜·科赫_慕尼黑",
+        "label": "居住",
+        "title": "居住",
+        "width": 2,
+        "arrows": "to",
+        "color": "#1bb8f9"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "agg_爱因斯坦_comm_0",
+      "type": "属于社区聚合",
+      "properties": {
+        "id": "edge_爱因斯坦_agg_爱因斯坦_comm_0",
+        "label": "属于社区聚合",
+        "title": "属于社区聚合",
+        "width": 2,
+        "arrows": "to",
+        "color": "#e055d1"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "物理最高分",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_物理最高分",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "文科部分未通过",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_文科部分未通过",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "指南针",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_指南针",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "德国国籍",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_德国国籍",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "学习障碍",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_学习障碍",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "1879年3月14日",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_1879年3月14日",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "磁针行为",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_磁针行为",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "妹妹马娅",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_妹妹马娅",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "玛莉",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_玛莉",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "入学考试",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_入学考试",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "字词",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_字词",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "数理科高分",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_数理科高分",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "卢伊特波尔德高级文理中学",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_卢伊特波尔德高级文理中学",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "高中毕业考试通过",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_高中毕业考试通过",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "拉丁文",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_拉丁文",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "瑞士苏黎世联邦理工学院入学考试",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_瑞士苏黎世联邦理工学院入学考试",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "教授约斯特·温特勒",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_教授约斯特·温特勒",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "钢琴",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_钢琴",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "天主教小学",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_天主教小学",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "最高分6分",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_最高分6分",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "数学",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_数学",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "物理学",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_物理学",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "数学最高分",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_数学最高分",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "慕尼黑学校",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_慕尼黑学校",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "意大利帕维亚",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_意大利帕维亚",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "《论在磁场里乙太状态的研究》",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_《论在磁场里乙太状态的研究》",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "优良成绩",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_优良成绩",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "无国籍人",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_无国籍人",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "德意志帝国符腾堡王国乌尔姆",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_德意志帝国符腾堡王国乌尔姆",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "6分",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_6分",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "第一篇理论物理论文",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_第一篇理论物理论文",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "科学",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_科学",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "拉小提琴",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_拉小提琴",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "7年良好教育",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_7年良好教育",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "良好教育",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_良好教育",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "远房亲戚家",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_远房亲戚家",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "说话",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_说话",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "家人",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_家人",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "小声自言自语",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_小声自言自语",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "希腊文",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_希腊文",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "从军",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_从军",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "高分",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_高分",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "阿劳州立中学",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_阿劳州立中学",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "瑞士阿劳",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_瑞士阿劳",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_0",
+      "target_id": "最高分",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_0_最高分",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "agg_爱因斯坦_comm_2",
+      "type": "属于社区聚合",
+      "properties": {
+        "id": "edge_爱因斯坦_agg_爱因斯坦_comm_2",
+        "label": "属于社区聚合",
+        "title": "属于社区聚合",
+        "width": 2,
+        "arrows": "to",
+        "color": "#e055d1"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_2",
+      "target_id": "马娅",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_2_马娅",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_2",
+      "target_id": "新泽西州普林斯顿默瑟县",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_2_新泽西州普林斯顿默瑟县",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    },
+    {
+      "source_id": "爱因斯坦",
+      "target_id": "agg_爱因斯坦_comm_1",
+      "type": "属于社区聚合",
+      "properties": {
+        "id": "edge_爱因斯坦_agg_爱因斯坦_comm_1",
+        "label": "属于社区聚合",
+        "title": "属于社区聚合",
+        "width": 2,
+        "arrows": "to",
+        "color": "#e055d1"
+      }
+    },
+    {
+      "source_id": "agg_爱因斯坦_comm_1",
+      "target_id": "慕尼黑",
+      "type": "包含成员",
+      "properties": {
+        "id": "edge_agg_爱因斯坦_comm_1_慕尼黑",
+        "label": "包含成员",
+        "title": "包含成员",
+        "width": 2,
+        "arrows": "to",
+        "color": "#0b6cfc"
+      }
+    }
+  ]
+}

@@ -61,9 +61,8 @@ def get_categories():
 
 
 def get_novel_list(filter_by_category=None, only_with_reports=False):
-    from utils.util_chapter import has_any_reports  # 保持原有导入
+    from utils.util_chapter import has_any_reports
 
-    # ✅ 现在 NOVELS_BASE_DIR 是绝对路径，安全！
     if not os.path.exists(NOVELS_BASE_DIR):
         print(f"警告: 小说根目录 '{NOVELS_BASE_DIR}' 不存在。")
         print(f"当前工作目录: {os.getcwd()}")
@@ -79,14 +78,18 @@ def get_novel_list(filter_by_category=None, only_with_reports=False):
         if only_with_reports:
             local_novels = {n for n in local_novels if has_any_reports(n)}
 
-        if filter_by_category and filter_by_category != "全部":
-            category_novels = RANKINGS_CACHE.get(filter_by_category, [])
-            return [n for n in category_novels if n in local_novels]
-        else:
-            all_in_rank = RANKINGS_CACHE.get("全部", [])
-            sorted_novels = [n for n in all_in_rank if n in local_novels]
-            remaining = sorted(local_novels - set(sorted_novels))
-            return sorted_novels + remaining
+        # 情况1: 明确指定了分类（包括 "全部"）
+        if filter_by_category is not None:
+            # 直接使用该分类的榜单，仅保留本地存在的
+            ranked_novels = RANKINGS_CACHE.get(filter_by_category, [])
+            return [n for n in ranked_novels if n in local_novels]
+
+        # 情况2: 未指定分类（filter_by_category is None）
+        # 此时才展示：“全部”榜单中的本地小说 + 其他本地小说（按字母排序）
+        all_ranked = RANKINGS_CACHE.get("全部", [])
+        in_rank_and_local = [n for n in all_ranked if n in local_novels]
+        remaining_local = sorted(local_novels - set(in_rank_and_local))
+        return in_rank_and_local + remaining_local
 
     except Exception as e:
         print(f"获取小说列表时出错: {e}")

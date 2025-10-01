@@ -1,0 +1,507 @@
+{
+    "novel_id": "1019561325",
+    "bookname": "妖魔哪里走",
+    "save_dir": "../novels\\妖魔哪里走",
+    "chapters": [
+        {
+            "title": "1.听天监",
+            "link": "https://www.qidian.com/chapter/1019561325/529404017/",
+            "status": "downloaded"
+        },
+        {
+            "title": "2.造化炉",
+            "link": "https://www.qidian.com/chapter/1019561325/529486186/",
+            "status": "failed"
+        },
+        {
+            "title": "3.太阴断魂刀",
+            "link": "https://www.qidian.com/chapter/1019561325/529486485/",
+            "status": "failed"
+        },
+        {
+            "title": "4.食气鬼",
+            "link": "https://www.qidian.com/chapter/1019561325/529678216/",
+            "status": "downloaded"
+        },
+        {
+            "title": "5.殓房",
+            "link": "https://www.qidian.com/chapter/1019561325/529678722/",
+            "status": "downloaded"
+        },
+        {
+            "title": "6.天官赐福丹",
+            "link": "https://www.qidian.com/chapter/1019561325/529948701/",
+            "status": "downloaded"
+        },
+        {
+            "title": "7.驿所寻鬼",
+            "link": "https://www.qidian.com/chapter/1019561325/529950094/",
+            "status": "downloaded"
+        },
+        {
+            "title": "8.古怪钟氏",
+            "link": "https://www.qidian.com/chapter/1019561325/530151297/",
+            "status": "downloaded"
+        },
+        {
+            "title": "9.祟钱",
+            "link": "https://www.qidian.com/chapter/1019561325/530151733/",
+            "status": "downloaded"
+        },
+        {
+            "title": "10.婴灵",
+            "link": "https://www.qidian.com/chapter/1019561325/530323994/",
+            "status": "downloaded"
+        },
+        {
+            "title": "11.阴差跑了",
+            "link": "https://www.qidian.com/chapter/1019561325/530324973/",
+            "status": "downloaded"
+        },
+        {
+            "title": "12.背有凶神",
+            "link": "https://www.qidian.com/chapter/1019561325/530553326/",
+            "status": "downloaded"
+        },
+        {
+            "title": "13.青铜钟",
+            "link": "https://www.qidian.com/chapter/1019561325/530554116/",
+            "status": "downloaded"
+        },
+        {
+            "title": "14.十年功力",
+            "link": "https://www.qidian.com/chapter/1019561325/530989026/",
+            "status": "downloaded"
+        },
+        {
+            "title": "15.秘辛",
+            "link": "https://www.qidian.com/chapter/1019561325/530989786/",
+            "status": "downloaded"
+        },
+        {
+            "title": "16.纸上蛤蟆",
+            "link": "https://www.qidian.com/chapter/1019561325/531501690/",
+            "status": "downloaded"
+        },
+        {
+            "title": "17.夜拍门",
+            "link": "https://www.qidian.com/chapter/1019561325/531502520/",
+            "status": "downloaded"
+        },
+        {
+            "title": "18.游星",
+            "link": "https://www.qidian.com/chapter/1019561325/531726753/",
+            "status": "downloaded"
+        },
+        {
+            "title": "19.爹上门",
+            "link": "https://www.qidian.com/chapter/1019561325/531727916/",
+            "status": "downloaded"
+        },
+        {
+            "title": "20.衣锦还乡",
+            "link": "https://www.qidian.com/chapter/1019561325/531921199/",
+            "status": "downloaded"
+        },
+        {
+            "title": "21.陆氏",
+            "link": "https://www.qidian.com/chapter/1019561325/531921458/",
+            "status": "downloaded"
+        },
+        {
+            "title": "22.同人卦",
+            "link": "https://www.qidian.com/chapter/1019561325/532064420/",
+            "status": "downloaded"
+        },
+        {
+            "title": "23.我答应",
+            "link": "https://www.qidian.com/chapter/1019561325/532064451/",
+            "status": "downloaded"
+        },
+        {
+            "title": "24.斩赌鬼",
+            "link": "https://www.qidian.com/chapter/1019561325/532219010/",
+            "status": "downloaded"
+        },
+        {
+            "title": "25.黑龙抬棺",
+            "link": "https://www.qidian.com/chapter/1019561325/532219260/",
+            "status": "downloaded"
+        },
+        {
+            "title": "26.看我眼色行事",
+            "link": "https://www.qidian.com/chapter/1019561325/532431473/",
+            "status": "downloaded"
+        },
+        {
+            "title": "27.鬼藏宝",
+            "link": "https://www.qidian.com/chapter/1019561325/532431563/",
+            "status": "downloaded"
+        },
+        {
+            "title": "28.山傀",
+            "link": "https://www.qidian.com/chapter/1019561325/532680170/",
+            "status": "downloaded"
+        },
+        {
+            "title": "29.黄家小姐",
+            "link": "https://www.qidian.com/chapter/1019561325/532680454/",
+            "status": "downloaded"
+        },
+        {
+            "title": "30.跳塔姑娘",
+            "link": "https://www.qidian.com/chapter/1019561325/532999391/",
+            "status": "failed"
+        },
+        {
+            "title": "31.闺房候鬼",
+            "link": "https://www.qidian.com/chapter/1019561325/532999481/",
+            "status": "downloaded"
+        },
+        {
+            "title": "32.侯门如海",
+            "link": "https://www.qidian.com/chapter/1019561325/533198571/",
+            "status": "downloaded"
+        },
+        {
+            "title": "33.看，飞刀",
+            "link": "https://www.qidian.com/chapter/1019561325/533198895/",
+            "status": "downloaded"
+        },
+        {
+            "title": "34.案子没结束",
+            "link": "https://www.qidian.com/chapter/1019561325/533466317/",
+            "status": "downloaded"
+        },
+        {
+            "title": "35.外甥",
+            "link": "https://www.qidian.com/chapter/1019561325/533466519/",
+            "status": "downloaded"
+        },
+        {
+            "title": "36.满院飘香",
+            "link": "https://www.qidian.com/chapter/1019561325/533624616/",
+            "status": "downloaded"
+        },
+        {
+            "title": "37.消失的人",
+            "link": "https://www.qidian.com/chapter/1019561325/533624838/",
+            "status": "downloaded"
+        },
+        {
+            "title": "38.意外来客",
+            "link": "https://www.qidian.com/chapter/1019561325/533825113/",
+            "status": "downloaded"
+        },
+        {
+            "title": "39.十级浮屠",
+            "link": "https://www.qidian.com/chapter/1019561325/533825408/",
+            "status": "downloaded"
+        },
+        {
+            "title": "40.入塔",
+            "link": "https://www.qidian.com/chapter/1019561325/534000913/",
+            "status": "downloaded"
+        },
+        {
+            "title": "41.阴路关",
+            "link": "https://www.qidian.com/chapter/1019561325/534001311/",
+            "status": "downloaded"
+        },
+        {
+            "title": "42.双鱼玉佩",
+            "link": "https://www.qidian.com/chapter/1019561325/534206295/",
+            "status": "downloaded"
+        },
+        {
+            "title": "43.再查医馆",
+            "link": "https://www.qidian.com/chapter/1019561325/534206440/",
+            "status": "downloaded"
+        },
+        {
+            "title": "44.脸呢",
+            "link": "https://www.qidian.com/chapter/1019561325/534559336/",
+            "status": "downloaded"
+        },
+        {
+            "title": "45.合半颅",
+            "link": "https://www.qidian.com/chapter/1019561325/534560819/",
+            "status": "downloaded"
+        },
+        {
+            "title": "46.真言",
+            "link": "https://www.qidian.com/chapter/1019561325/534883059/",
+            "status": "downloaded"
+        },
+        {
+            "title": "47.邀请函",
+            "link": "https://www.qidian.com/chapter/1019561325/534883198/",
+            "status": "downloaded"
+        },
+        {
+            "title": "48.吉祥县",
+            "link": "https://www.qidian.com/chapter/1019561325/534883276/",
+            "status": "downloaded"
+        },
+        {
+            "title": "49.我替陛下分忧",
+            "link": "https://www.qidian.com/chapter/1019561325/535032179/",
+            "status": "downloaded"
+        },
+        {
+            "title": "50.案件互换",
+            "link": "https://www.qidian.com/chapter/1019561325/535032322/",
+            "status": "downloaded"
+        },
+        {
+            "title": "51.周家屯子",
+            "link": "https://www.qidian.com/chapter/1019561325/535164358/",
+            "status": "downloaded"
+        },
+        {
+            "title": "52.童子煞",
+            "link": "https://www.qidian.com/chapter/1019561325/535164433/",
+            "status": "downloaded"
+        },
+        {
+            "title": "53.守夜",
+            "link": "https://www.qidian.com/chapter/1019561325/535164617/",
+            "status": "downloaded"
+        },
+        {
+            "title": "54.小鬼风",
+            "link": "https://www.qidian.com/chapter/1019561325/535294481/",
+            "status": "downloaded"
+        },
+        {
+            "title": "55.天怒人怨",
+            "link": "https://www.qidian.com/chapter/1019561325/535294569/",
+            "status": "downloaded"
+        },
+        {
+            "title": "56.满门抄斩",
+            "link": "https://www.qidian.com/chapter/1019561325/535466149/",
+            "status": "downloaded"
+        },
+        {
+            "title": "57.谁告诉它的",
+            "link": "https://www.qidian.com/chapter/1019561325/535466315/",
+            "status": "downloaded"
+        },
+        {
+            "title": "58.童谣",
+            "link": "https://www.qidian.com/chapter/1019561325/535466392/",
+            "status": "downloaded"
+        },
+        {
+            "title": "59.因果，如是",
+            "link": "https://www.qidian.com/chapter/1019561325/535574240/",
+            "status": "failed"
+        },
+        {
+            "title": "60.我愿受罚",
+            "link": "https://www.qidian.com/chapter/1019561325/535574405/",
+            "status": "downloaded"
+        },
+        {
+            "title": "61.舅舅要奖你",
+            "link": "https://www.qidian.com/chapter/1019561325/535792516/",
+            "status": "downloaded"
+        },
+        {
+            "title": "62.玄猫",
+            "link": "https://www.qidian.com/chapter/1019561325/535792658/",
+            "status": "downloaded"
+        },
+        {
+            "title": "63.自是浮生无可说",
+            "link": "https://www.qidian.com/chapter/1019561325/535792759/",
+            "status": "downloaded"
+        },
+        {
+            "title": "64.灵官冲厄",
+            "link": "https://www.qidian.com/chapter/1019561325/535976481/",
+            "status": "downloaded"
+        },
+        {
+            "title": "65.书生惨",
+            "link": "https://www.qidian.com/chapter/1019561325/535976530/",
+            "status": "downloaded"
+        },
+        {
+            "title": "66.街头",
+            "link": "https://www.qidian.com/chapter/1019561325/536127709/",
+            "status": "downloaded"
+        },
+        {
+            "title": "67.哪里不对",
+            "link": "https://www.qidian.com/chapter/1019561325/536127836/",
+            "status": "downloaded"
+        },
+        {
+            "title": "68.第一次会审",
+            "link": "https://www.qidian.com/chapter/1019561325/536127915/",
+            "status": "downloaded"
+        },
+        {
+            "title": "69.它们想出去",
+            "link": "https://www.qidian.com/chapter/1019561325/536286243/",
+            "status": "downloaded"
+        },
+        {
+            "title": "70.方相氏",
+            "link": "https://www.qidian.com/chapter/1019561325/536287338/",
+            "status": "downloaded"
+        },
+        {
+            "title": "71.大人请留步",
+            "link": "https://www.qidian.com/chapter/1019561325/536443745/",
+            "status": "downloaded"
+        },
+        {
+            "title": "72.那件案子",
+            "link": "https://www.qidian.com/chapter/1019561325/536444256/",
+            "status": "downloaded"
+        },
+        {
+            "title": "73.蜃炭镇秽",
+            "link": "https://www.qidian.com/chapter/1019561325/536444348/",
+            "status": "downloaded"
+        },
+        {
+            "title": "74.客上门",
+            "link": "https://www.qidian.com/chapter/1019561325/536587612/",
+            "status": "downloaded"
+        },
+        {
+            "title": "75.讨命鬼",
+            "link": "https://www.qidian.com/chapter/1019561325/536587661/",
+            "status": "downloaded"
+        },
+        {
+            "title": "76.人没啦",
+            "link": "https://www.qidian.com/chapter/1019561325/536746142/",
+            "status": "downloaded"
+        },
+        {
+            "title": "77.黑猫上坟",
+            "link": "https://www.qidian.com/chapter/1019561325/536746213/",
+            "status": "downloaded"
+        },
+        {
+            "title": "78.养猪妖",
+            "link": "https://www.qidian.com/chapter/1019561325/536746299/",
+            "status": "downloaded"
+        },
+        {
+            "title": "79.唤魂",
+            "link": "https://www.qidian.com/chapter/1019561325/537075675/",
+            "status": "downloaded"
+        },
+        {
+            "title": "80.群鬼拜祭",
+            "link": "https://www.qidian.com/chapter/1019561325/537075833/",
+            "status": "downloaded"
+        },
+        {
+            "title": "81.墓碑",
+            "link": "https://www.qidian.com/chapter/1019561325/537279219/",
+            "status": "downloaded"
+        },
+        {
+            "title": "82.炼骨境",
+            "link": "https://www.qidian.com/chapter/1019561325/537281787/",
+            "status": "downloaded"
+        },
+        {
+            "title": "83.秦晋劫",
+            "link": "https://www.qidian.com/chapter/1019561325/537348066/",
+            "status": "downloaded"
+        },
+        {
+            "title": "84.香客",
+            "link": "https://www.qidian.com/chapter/1019561325/537518807/",
+            "status": "downloaded"
+        },
+        {
+            "title": "85.阴车",
+            "link": "https://www.qidian.com/chapter/1019561325/537518906/",
+            "status": "downloaded"
+        },
+        {
+            "title": "86.详查案情",
+            "link": "https://www.qidian.com/chapter/1019561325/537629403/",
+            "status": "downloaded"
+        },
+        {
+            "title": "87.一定有隐情",
+            "link": "https://www.qidian.com/chapter/1019561325/537629551/",
+            "status": "downloaded"
+        },
+        {
+            "title": "88.东孟村庄",
+            "link": "https://www.qidian.com/chapter/1019561325/537631372/",
+            "status": "downloaded"
+        },
+        {
+            "title": "89.找到正主",
+            "link": "https://www.qidian.com/chapter/1019561325/537767014/",
+            "status": "downloaded"
+        },
+        {
+            "title": "90.候阴车",
+            "link": "https://www.qidian.com/chapter/1019561325/537768202/",
+            "status": "downloaded"
+        },
+        {
+            "title": "91.我猜错了",
+            "link": "https://www.qidian.com/chapter/1019561325/537947923/",
+            "status": "downloaded"
+        },
+        {
+            "title": "92.古怪少年",
+            "link": "https://www.qidian.com/chapter/1019561325/537949752/",
+            "status": "downloaded"
+        },
+        {
+            "title": "93.周仲生",
+            "link": "https://www.qidian.com/chapter/1019561325/537950970/",
+            "status": "downloaded"
+        },
+        {
+            "title": "94.老牛流泪",
+            "link": "https://www.qidian.com/chapter/1019561325/538431561/",
+            "status": "downloaded"
+        },
+        {
+            "title": "95.举头三尺",
+            "link": "https://www.qidian.com/chapter/1019561325/538432154/",
+            "status": "downloaded"
+        },
+        {
+            "title": "96.别演啦",
+            "link": "https://www.qidian.com/chapter/1019561325/538755127/",
+            "status": "downloaded"
+        },
+        {
+            "title": "97.当道的屋",
+            "link": "https://www.qidian.com/chapter/1019561325/538755229/",
+            "status": "downloaded"
+        },
+        {
+            "title": "98.上门乞丐",
+            "link": "https://www.qidian.com/chapter/1019561325/538755666/",
+            "status": "downloaded"
+        },
+        {
+            "title": "99.震妖邪",
+            "link": "https://www.qidian.com/chapter/1019561325/538960683/",
+            "status": "downloaded"
+        },
+        {
+            "title": "100.雪岭白牛",
+            "link": "https://www.qidian.com/chapter/1019561325/538960873/",
+            "status": "downloaded"
+        }
+    ]
+}

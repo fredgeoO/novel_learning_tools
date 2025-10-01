@@ -1,0 +1,73 @@
+[错误类型: unexpected]
+[未知错误] Message: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6dd601eb5+80197]
+	GetHandleVerifier [0x0x7ff6dd601f10+80288]
+	(No symbol) [0x0x7ff6dd3802fa]
+	(No symbol) [0x0x7ff6dd36d78d]
+	(No symbol) [0x0x7ff6dd36d47b]
+	(No symbol) [0x0x7ff6dd36afec]
+	(No symbol) [0x0x7ff6dd36ba6b]
+	(No symbol) [0x0x7ff6dd37aa7e]
+	(No symbol) [0x0x7ff6dd390e31]
+	(No symbol) [0x0x7ff6dd3980da]
+	(No symbol) [0x0x7ff6dd36c21e]
+	(No symbol) [0x0x7ff6dd390b66]
+	(No symbol) [0x0x7ff6dd4286d2]
+	(No symbol) [0x0x7ff6dd400153]
+	(No symbol) [0x0x7ff6dd3c8b02]
+	(No symbol) [0x0x7ff6dd3c98d3]
+	GetHandleVerifier [0x0x7ff6dd8be83d+2949837]
+	GetHandleVerifier [0x0x7ff6dd8b8c6a+2926330]
+	GetHandleVerifier [0x0x7ff6dd8d86c7+3055959]
+	GetHandleVerifier [0x0x7ff6dd61cfee+191102]
+	GetHandleVerifier [0x0x7ff6dd6250af+224063]
+	GetHandleVerifier [0x0x7ff6dd60af64+117236]
+	GetHandleVerifier [0x0x7ff6dd60b119+117673]
+	GetHandleVerifier [0x0x7ff6dd5f10a8+11064]
+	BaseThreadInitThunk [0x0x7ffa331f257d+29]
+	RtlUserThreadStart [0x0x7ffa346eaf08+40]
+
+Traceback (most recent call last):
+  File "C:\Users\zgw31\PycharmProjects\AI\novel\novel_chapter_extractor.py", line 572, in _process_chapter_content
+    page_html = self.driver.page_source
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zgw31\PycharmProjects\AI\venv11\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 597, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zgw31\PycharmProjects\AI\venv11\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\zgw31\PycharmProjects\AI\venv11\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=140.0.7339.208)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6dd601eb5+80197]
+	GetHandleVerifier [0x0x7ff6dd601f10+80288]
+	(No symbol) [0x0x7ff6dd3802fa]
+	(No symbol) [0x0x7ff6dd36d78d]
+	(No symbol) [0x0x7ff6dd36d47b]
+	(No symbol) [0x0x7ff6dd36afec]
+	(No symbol) [0x0x7ff6dd36ba6b]
+	(No symbol) [0x0x7ff6dd37aa7e]
+	(No symbol) [0x0x7ff6dd390e31]
+	(No symbol) [0x0x7ff6dd3980da]
+	(No symbol) [0x0x7ff6dd36c21e]
+	(No symbol) [0x0x7ff6dd390b66]
+	(No symbol) [0x0x7ff6dd4286d2]
+	(No symbol) [0x0x7ff6dd400153]
+	(No symbol) [0x0x7ff6dd3c8b02]
+	(No symbol) [0x0x7ff6dd3c98d3]
+	GetHandleVerifier [0x0x7ff6dd8be83d+2949837]
+	GetHandleVerifier [0x0x7ff6dd8b8c6a+2926330]
+	GetHandleVerifier [0x0x7ff6dd8d86c7+3055959]
+	GetHandleVerifier [0x0x7ff6dd61cfee+191102]
+	GetHandleVerifier [0x0x7ff6dd6250af+224063]
+	GetHandleVerifier [0x0x7ff6dd60af64+117236]
+	GetHandleVerifier [0x0x7ff6dd60b119+117673]
+	GetHandleVerifier [0x0x7ff6dd5f10a8+11064]
+	BaseThreadInitThunk [0x0x7ffa331f257d+29]
+	RtlUserThreadStart [0x0x7ffa346eaf08+40]
+
+

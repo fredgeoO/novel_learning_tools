@@ -7,6 +7,7 @@ from llm.qwen_chat_client import QwenChatClient
 from utils.util_chapter import get_chapter_list
 from utils.util_async_executor import run_limited_async_tasks
 import config
+from utils.util_temp_cleanup import clean_temp_folders_by_keywords_and_age
 
 # --- 配置 ---
 NOVELS_BASE_DIR = "../novels"
@@ -248,8 +249,18 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
     success_count = sum(results)
     tqdm.write(f"\n--- 所有大规模分析任务执行完毕: {success_count}/{len(tasks_to_run)} 成功 ---")
 
-
+async def temp_cleanup_loop():
+    while True:
+        try:
+            await asyncio.to_thread(clean_temp_folders_by_keywords_and_age)
+        except Exception as e:
+            tqdm.write(f"[清理器异常] {e}")
+        await asyncio.sleep(30 * 60)
 async def main():
+
+
+    cleanup_task = asyncio.create_task(temp_cleanup_loop())
+
     await process_top_novels_and_chapters(
         model_type="qwen_web",
         top_n=1400,

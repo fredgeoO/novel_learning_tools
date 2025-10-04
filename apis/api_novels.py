@@ -188,7 +188,9 @@ def api_delete_report(novel_name, chapter, report_name):
     """删除指定报告"""
     try:
         reports_base = current_app.config['REPORTS_BASE_DIR']
-        report_path = os.path.join(reports_base, novel_name, chapter, report_name)
+        clean_chapter = chapter.removesuffix('.txt')
+        report_path = os.path.join(reports_base, novel_name, clean_chapter, report_name)
+        # print("report_path: " + report_path)
         if os.path.exists(report_path):
             os.remove(report_path)
             logger.info(f"报告已删除: {report_path}")
@@ -196,7 +198,7 @@ def api_delete_report(novel_name, chapter, report_name):
         else:
             return jsonify({"error": "报告不存在"}), 404
     except Exception as e:
-        logger.error(f"删除报告失败 ({novel_name}/{chapter}/{report_name}): {e}")
+        logger.error(f"删除报告失败 ({novel_name}/{clean_chapter}/{report_name}): {e}")
         import traceback
         traceback.print_exc()
         return jsonify({"error": "删除报告失败"}), 500

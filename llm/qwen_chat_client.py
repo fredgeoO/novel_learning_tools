@@ -135,6 +135,11 @@ class QwenChatClient:
         if self.headless:
             chrome_options.add_argument("--headless=new")
         chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+        chrome_options.add_argument('--disable-application-cache')
+        chrome_options.add_argument('--disable-gpu-shader-disk-cache')
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument('--disk-cache-size=1')  # 最小化缓存
+        chrome_options.add_argument('--media-cache-size=1')
         chrome_options.add_argument("--disable-infobars")
         chrome_options.add_argument("--lang=zh-CN")
         chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])

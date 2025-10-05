@@ -7,6 +7,7 @@ from llm.qwen_chat_client import QwenChatClient
 from utils.util_chapter import get_chapter_list
 from utils.util_async_executor import run_limited_async_tasks
 import config
+from utils.util_rankings import get_top_novels_and_chapters
 from utils.util_temp_cleanup import clean_temp_folders_by_keywords_and_age
 
 # --- 配置 ---
@@ -153,37 +154,17 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
     tqdm.write(f"处理前 {top_n} 本小说，每本分析前 {chapters_per_novel} 章")
     tqdm.write("-" * 30)
 
-    ranking_file = "../scraped_data/所有分类月票榜汇总.txt"
-    ranking_content = read_file_content(ranking_file, "月票榜文件")
-    if not ranking_content:
-        tqdm.write("无法读取月票榜文件，终止任务。")
+    # 使用ranking工具获取小说和章节
+    selected_chapters_map = get_top_novels_and_chapters(top_n, chapters_per_novel)
+
+    if not selected_chapters_map:
+        tqdm.write("没有获取到任何小说和章节，终止任务。")
         return
 
-    novel_names = []
-    lines = ranking_content.splitlines()
-    in_any_category = False
+    selected_novels = list(selected_chapters_map.keys())
+    tqdm.write(f"选取的前 {len(selected_novels)} 本小说: {selected_novels}")
 
-    for line in lines:
-        line = line.strip()
-        if line.startswith("====") and line.endswith("===="):
-            in_any_category = True
-            continue
-        if in_any_category:
-            match = re.match(r'^\s*\d+\.\s*《(.+?)》\s*-', line)
-            if match:
-                novel_name = match.group(1).strip()
-                if novel_name and novel_name not in novel_names:
-                    novel_names.append(novel_name)
-                if len(novel_names) >= top_n:
-                    break
-
-    selected_novels = novel_names[:top_n]
-    if not selected_novels:
-        tqdm.write("警告: 未从月票榜文件中解析出任何小说名称。")
-        return
-
-    #tqdm.write(f"选取的前 {len(selected_novels)} 本小说: {selected_novels}")
-
+    # 检查提示词目录
     if not os.path.exists(PROMPTS_BASE_DIR):
         tqdm.write(f"警告: 提示词目录不存在: {PROMPTS_BASE_DIR}")
         return
@@ -197,15 +178,10 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
 
     tqdm.write(f"加载了 {len(prompt_names)} 个提示词: {prompt_names}")
 
+    # 在主文件中生成分析任务（包含模型和prompt逻辑）
     tasks_to_run = []
     for novel_name in selected_novels:
-        all_chapter_files = get_chapter_list(novel_name)
-        if not all_chapter_files:
-            tqdm.write(f"警告: 小说 '{novel_name}' 没有找到或没有可分析的章节文件。")
-            continue
-
-        chapter_files = all_chapter_files[:chapters_per_novel]
-        # tqdm.write(f"小说 '{novel_name}' 选取章节: {chapter_files}")
+        chapter_files = selected_chapters_map[novel_name]
 
         for chapter_filename in chapter_files:
             for prompt_name in prompt_names:
@@ -242,13 +218,12 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         task_func=run_single_task,
         skip_if_exists=should_skip,
         max_concurrent=16,
-        min_interval=2.5,
+        min_interval=5,
         rate_limit_key="qwen_web"
     )
 
     success_count = sum(results)
     tqdm.write(f"\n--- 所有大规模分析任务执行完毕: {success_count}/{len(tasks_to_run)} 成功 ---")
-
 async def temp_cleanup_loop():
     while True:
         try:

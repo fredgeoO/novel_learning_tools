@@ -162,6 +162,8 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         return
 
     selected_novels = list(selected_chapters_map.keys())
+    selected_novels.sort(key=lambda name: not has_priority_keyword(name, PRIORITY_KEYWORDS))
+
     tqdm.write(f"选取的前 {len(selected_novels)} 本小说: {selected_novels}")
 
     # 检查提示词目录
@@ -218,7 +220,7 @@ async def process_top_novels_and_chapters(model_type: str = "qwen_web", top_n: i
         task_func=run_single_task,
         skip_if_exists=should_skip,
         max_concurrent=16,
-        min_interval=5,
+        min_interval=6,
         rate_limit_key="qwen_web"
     )
 
@@ -231,6 +233,13 @@ async def temp_cleanup_loop():
         except Exception as e:
             tqdm.write(f"[清理器异常] {e}")
         await asyncio.sleep(30 * 60)
+
+
+PRIORITY_KEYWORDS = ["赛博", "废土"]
+def has_priority_keyword(novel_name: str, keywords: list) -> bool:
+    """判断小说名是否包含任一优先关键词"""
+    return any(keyword in novel_name for keyword in keywords)
+
 async def main():
 
 
